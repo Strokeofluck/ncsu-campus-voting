@@ -23,6 +23,8 @@ The charts compare ballot volume, age composition, individual ages 18 through 24
 
 The interactive report includes this campus-only table above the charts. [Download the campus-site CSV](data/processed/comparison/campus_site_matched_counts.csv).
 
+**[Verify every highlighted figure against its source and arithmetic](https://strokeofluck.github.io/ncsu-campus-voting/verify-figures.html).** The reference page links to the real NCSBE download entries and labels the site totals and percentages as project calculations from official records.
+
 | Site / year | All ages | Ages 18–24 | Ages 18–22 | 18–24 share | Same-day registration |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Talley Student Union · 2022 | 4,863 | 1,259 | 970 | 25.9% | 204 |
