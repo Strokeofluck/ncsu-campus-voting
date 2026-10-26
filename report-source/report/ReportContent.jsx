@@ -4,11 +4,10 @@ const num=n=>Number(n).toLocaleString('en-US');
 const short=n=>n>=1000?`${(n/1000).toFixed(1)}k`:num(n);
 const one=n=>Number(n).toFixed(1);
 const signed=n=>`${n>0?'+':''}${one(n)}`;
-const signedCount=n=>`${n>0?'+':''}${num(n)}`;
 export function ReportContent(){
  const {snapshot,visible,appTitle,canEdit,mode,setAppTitle}=useDataApp();
  const [baseline,setBaseline]=useState(2024),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
- const [ageBaseline,setAgeBaseline]=useState(2024);
+ const [ageBaseline,setAgeBaseline]=useState(2022);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
@@ -25,9 +24,10 @@ export function ReportContent(){
  const ageChanges=[...new Set(ageChangeSource.map(r=>r.value))].map(age=>{
   const previous=ageChangeSource.find(r=>r.year===ageBaseline&&r.value===age),current=ageChangeSource.find(r=>r.year===2026&&r.value===age);
   if(!previous||!current)return null;
-  return {age,baselineYear:ageBaseline,baselineVotes:previous.votes,currentVotes:current.votes,voteChange:current.votes-previous.votes,voteGrowth:previous.votes>0?(current.votes/previous.votes-1)*100:null,baselineShare:previous.share,currentShare:current.share,shareChange:current.share-previous.share};
+  return {age,baselineYear:ageBaseline,baselineVotes:previous.votes,currentVotes:current.votes,baselineShare:previous.share,currentShare:current.share,shareChange:current.share-previous.share};
  }).filter(Boolean).sort((left,right)=>(parseInt(left.age,10)||Infinity)-(parseInt(right.age,10)||Infinity)||left.age.localeCompare(right.age));
- const ageLeader=ageChanges.reduce((leader,row)=>!leader||row.shareChange>leader.shareChange?row:leader,null);
+ const ageFocus=ageChanges.find(row=>row.age==='18–24');
+ const agePreviousTotal=get(ageBaseline,'Campus site').all_ages,ageCurrentTotal=get(2026,'Campus site').all_ages;
  const ageRows=['18–24','25–34','35–44','45–64','65+','Unknown / outside range'].flatMap(value=>ages.filter(r=>r.value===value).map(r=>({age:value,year:String(r.year),'Ballots (%)':r.share})));
  const shareRows=[{year:String(baseline),'Campus share (%)':share22},{year:'2026','Campus share (%)':share26}];
  const moveRows=[{site:`Talley (${baseline})`,votes:a.age_18_24},{site:'Western (2026)',votes:b.age_18_24}];
@@ -65,13 +65,23 @@ export function ReportContent(){
 College-age voters represented **${one(a.age_18_24_share)}% at Talley (${baseline})** and **${one(b.age_18_24_share)}% at Western Boulevard (2026)**, a change of ${signed(b.age_18_24_share-a.age_18_24_share)} percentage points. This compares composition within each site, alongside the absolute ballot counts above. Site users also include staff, neighbors and other Wake voters.`}/>
   </ReportSection>
   {visible('voting-ages')&&<EvidenceChart id="voting-ages" queryId="demographics" title="Age composition at each campus site" description={`Talley in 2022 and 2024; Western Boulevard in 2026. Share of each site’s accepted ballots in the first ${days} early-voting days. 2024 was presidential; 2022 and 2026 are midterms.`} rows={ageRows} sourceRows={ages} spec={{type:'bar',x:'age',y:'Ballots (%)',series:'year',stackable:false,startAtZero:true,valueDecimals:1}} height={330}/>}
-  <DataComponent id="voting-age-changes" queryId="demographics" kind="table" title="Talley → Western Boulevard: age-group changes" sourceRows={ageChangeSource} displayRows={ageChanges}
-   description={`Western Boulevard in 2026 versus Talley in ${ageBaseline}; matched first ${days} early-voting days. Changes are 2026 minus ${ageBaseline}. Rows are ordered from youngest to oldest. Percent changes use the baseline ballot count; percentage-point changes use each year's share of all site ballots.`}
-   headerControls={<Dropdown label="Compare" showLabel value={String(ageBaseline)} choices={['2024','2022']} choiceLabels={{'2024':'Talley 2024 → Western 2026','2022':'Talley 2022 → Western 2026'}} onChange={value=>setAgeBaseline(Number(value))}/>}>
-   <RichNarrative id="voting-age-changes:scope" className="voting-age-scope" value={`**Polling locations compared:** Talley Student Union (${ageBaseline}) → Western Boulevard Business Services (2026). Only accepted early-voting ballots cast at these two sites are included. Both periods cover the first ${days} early-voting days.`}/>
-   {ageLeader&&<p className="voting-age-result" data-reviewed-rows aria-live="polite"><strong>{ageLeader.age}</strong> has the largest gain in ballot share: <strong>{signed(ageLeader.shareChange)} percentage points</strong> at Western Boulevard versus Talley in {ageBaseline}.</p>}
-   <div className="voting-table-scroll" role="region" aria-label={`Age-group changes, Talley ${ageBaseline} to Western Boulevard 2026`} tabIndex={0}><table className="voting-table voting-age-change-table"><thead><tr><th scope="col" aria-sort="ascending">Age group</th><th scope="col">Talley<br/>{ageBaseline}<br/>ballots</th><th scope="col">Western Blvd<br/>2026<br/>ballots</th><th scope="col">Ballot<br/>change</th><th scope="col">Ballot<br/>change (%)</th><th scope="col">Talley<br/>{ageBaseline}<br/>share</th><th scope="col">Western Blvd<br/>2026<br/>share</th><th scope="col">Share change<br/>(percentage points)</th></tr></thead><tbody data-reviewed-rows>{ageChanges.map(r=><tr key={r.age} className={r.age===ageLeader?.age?'voting-age-leader':undefined}><th scope="row">{r.age}</th><td>{num(r.baselineVotes)}</td><td>{num(r.currentVotes)}</td><td>{signedCount(r.voteChange)}</td><td>{r.voteGrowth===null?'—':`${signed(r.voteGrowth)}%`}</td><td>{one(r.baselineShare)}%</td><td>{one(r.currentShare)}%</td><td className="voting-age-ranked">{signed(r.shareChange)}</td></tr>)}</tbody></table></div>
-   <RichNarrative id="voting-age-changes:note" className="voting-age-note" value={`Rows stay in age order, youngest to oldest, for both comparison years. The highlighted row has the largest gain in ballot share. A group's share can rise even when its ballot count falls. Talley shares use all accepted ballots at Talley in the selected year; Western Boulevard shares use all accepted ballots at Western Boulevard in 2026. Changes are Western Boulevard minus Talley, calculated before rounding. ${ageBaseline===2024?'2024 was presidential; 2026 is a midterm.':'2022 and 2026 are both midterms.'} 2026 is preliminary through October 25. These are site users, not verified students or a student turnout rate.`}/>
+  <DataComponent id="voting-age-changes" queryId="demographics" kind="table" title="Talley → Western Boulevard: share of ballots by age" sourceRows={ageChangeSource} displayRows={ageChanges}
+   description={`Compare each age group's proportion of site voting when election totals differ. Both periods cover the first ${days} early-voting days. Differences are percentage points, not percent growth.`}
+   headerControls={<Dropdown label="Compare" showLabel value={String(ageBaseline)} choices={['2022','2024']} choiceLabels={{'2022':'Talley 2022 → Western 2026 · midterms','2024':'Talley 2024 → Western 2026 · presidential / midterm'}} onChange={value=>setAgeBaseline(Number(value))}/>}>
+   <RichNarrative id="voting-age-changes:scope" className="voting-age-scope" value={`**Talley Student Union (${ageBaseline}) → Western Boulevard Business Services (2026).** Each percentage uses all accepted ballots at that site in that year. ${ageBaseline===2022?'Both elections are midterms.':'2024 was presidential; 2026 is a midterm.'}`}/>
+   {ageFocus&&<p className="voting-age-result" data-reviewed-rows aria-live="polite">Ages <strong>18–24</strong> made up <strong>{one(ageFocus.baselineShare)}% → {one(ageFocus.currentShare)}%</strong> of site ballots: <strong>{signed(ageFocus.shareChange)} percentage points</strong>.</p>}
+   <div className="voting-table-scroll" role="region" aria-label={`Age-group ballot shares, Talley ${ageBaseline} to Western Boulevard 2026`} tabIndex={0}>
+    <table className="voting-table voting-age-change-table">
+     <thead><tr><th scope="col" aria-sort="ascending">Age group</th><th scope="col">Share of site ballots<span className="voting-share-sites">Talley {ageBaseline} → Western Blvd 2026</span></th><th scope="col">Difference<span className="voting-share-sites">percentage points</span></th></tr></thead>
+     <tbody data-reviewed-rows>{ageChanges.map(r=><tr key={r.age} className={r.age==='18–24'?'voting-age-focus':undefined}>
+      <th scope="row">{r.age}</th>
+      <td><span className="voting-share-pair"><span>{one(r.baselineShare)}%</span><span className="voting-share-arrow" aria-hidden="true">→</span><strong>{one(r.currentShare)}%</strong></span><span className="voting-share-counts">{num(r.baselineVotes)} → {num(r.currentVotes)} ballots</span></td>
+      <td className="voting-age-ranked">{signed(r.shareChange)}</td>
+     </tr>)}</tbody>
+    </table>
+   </div>
+   <p className="voting-age-denominators" data-reviewed-rows>Total site ballots: <strong>Talley {ageBaseline}: {num(agePreviousTotal)}</strong> · <strong>Western Boulevard 2026: {num(ageCurrentTotal)}</strong>.</p>
+   <RichNarrative id="voting-age-changes:note" className="voting-age-note" value={`Shares compare the age mix despite different ballot totals; they do not adjust away election-cycle or population differences. These are voters using each site, not a fixed group of residents or verified students. A lower share can reflect more older voters, younger voters choosing other sites, or lower participation; this table alone cannot identify the move's effect on turnout. 2026 is preliminary through October 25. Rows stay in age order; ages 18–24 are highlighted. Differences use unrounded shares.`}/>
   </DataComponent>
   <ReportSection id="voting-college-detail-intro" queryId="demographics" sourceRows={exactAges} title="A closer look at college-age voters" showHeading={false}><RichNarrative id="voting-college-detail-intro:body" value="## A closer look at college-age voters
 

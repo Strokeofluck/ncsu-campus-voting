@@ -10848,8 +10848,8 @@
             ]
           },
           {
-            "label": "Age-group changes",
-            "definition": "Campus site age-group table compares Western Boulevard in 2026 with selected Talley baseline (2024 or 2022), using the first 11 early-voting days in each year. Ballot change = 2026 votes minus baseline votes. Ballot change (%) = (2026 votes / baseline votes - 1) * 100, unavailable when baseline votes are zero. Share = age-group ballots / all accepted site ballots in that year * 100. Share change (percentage points) = 2026 share minus baseline share, calculated before rounding. Rows are sorted by age, youngest to oldest, for both baselines. The row with the largest share gain is highlighted without changing the age order.",
+            "label": "Age-group ballot shares",
+            "definition": "Talley Student Union in selected baseline year (2022 by default, also 2024) compared with Western Boulevard Business Services in 2026. First 11 early-voting days in each year. Share = age-group accepted ballots / all accepted ballots at that site in that year * 100. The single share column displays Talley share followed by Western Boulevard share; subordinate counts preserve the underlying ballots. Difference = 2026 share minus baseline share, in percentage points, calculated before rounding. Age order is fixed; ages 18-24 are highlighted. This measures the composition of site users, not countywide share, registered-voter turnout, or a causal effect of the move. 2022 and 2026 are midterms; 2024 is presidential.",
             "componentIds": [
               "voting-age-changes"
             ]
