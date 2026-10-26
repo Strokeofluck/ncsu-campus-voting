@@ -19,6 +19,18 @@ College-age ballots at the site were **62.2% lower than in the matched 2024 peri
 
 The charts compare ballot volume, age composition, individual ages 18 through 24, daily cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The older 2022 midterm baseline remains available.
 
+### Exact campus-site counts, all three years
+
+The interactive report includes this campus-only table above the charts. [Download the campus-site CSV](data/processed/comparison/campus_site_matched_counts.csv).
+
+| Site / year | All ages | Ages 18–24 | Ages 18–22 | 18–24 share | Same-day registration |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Talley Student Union · 2022 | 4,863 | 1,259 | 970 | 25.9% | 204 |
+| Talley Student Union · 2024 | 12,990 | 4,939 | 3,983 | 38.0% | 842 |
+| Western Boulevard · 2026 | 7,463 | 1,866 | 1,448 | 25.0% | 297 |
+
+Each row covers the first 11 early-voting days. Dates are October 20–30, 2022; October 17–27, 2024; and October 15–25, 2026. 2026 is preliminary. Same-day registrations include all ages. The age share is a share of site ballots; 2024 was presidential and the other two elections are midterms.
+
 ![Age composition at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-age-mix.png)
 
 ![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-college-ages.png)

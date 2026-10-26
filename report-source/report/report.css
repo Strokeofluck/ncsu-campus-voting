@@ -364,4 +364,6 @@
 .voting-report .voting-table th,.voting-report .voting-table td { padding:11px 12px; text-align:right; border-bottom:1px solid var(--border); }
 .voting-report .voting-table th:first-child { text-align:left; }
 .voting-report .voting-table thead th { font-size:12px; color:var(--text-secondary); }
+.voting-report .voting-campus-table th { white-space:normal; }
+.voting-report .voting-campus-table th:first-child { min-width:140px; }
 @media(max-width:620px) { .voting-report .voting-facts { grid-template-columns:1fr; } .voting-report .voting-controls label { flex-wrap:wrap; } }

@@ -8,6 +8,7 @@ export function ReportContent(){
  const {snapshot,visible,appTitle,canEdit,mode,setAppTitle}=useDataApp();
  const [baseline,setBaseline]=useState(2024),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
+ const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
  const a=get(baseline,'Campus site'),b=get(2026,'Campus site'),w=get(baseline,'Wake County'),z=get(2026,'Wake County');
  const paired=summaries.filter(r=>r.year===baseline||r.year===2026),isPair=y=>y===baseline||y===2026;
@@ -44,6 +45,10 @@ export function ReportContent(){
    <MetricCard id="campus-youth-share" queryId="summary" sourceRows={paired.filter(r=>r.scope!=='Other Wake sites')} title="Share of Wake college-age votes" value={`${one(share26)}%`} comparison={`${one(share26-share22)} percentage points`} deltaTone="neutral" description="Campus site ÷ all Wake ballots, ages 18–24"/>
    <MetricCard id="campus-all-count" queryId="summary" sourceRows={paired.filter(r=>r.scope==='Campus site')} title="All ballots at campus site" value={short(b.all_ages)} comparison={`${signed(growth(b.all_ages,a.all_ages))}% vs ${baseline}`} deltaTone="neutral" description={`All ages; matched first ${days} days`}/>
   </div>
+  <DataComponent id="voting-campus-exact-table" queryId="summary" kind="table" title="Talley and its replacement: exact campus-site counts" sourceRows={campusRows} displayRows={campusRows}>
+   <div className="voting-table-scroll"><table className="voting-table voting-campus-table"><thead><tr><th>Site / year</th><th>All ages</th><th>Ages 18–24</th><th>Ages 18–22</th><th>18–24 share</th><th>Same-day registration</th></tr></thead><tbody data-reviewed-rows>{campusRows.map(r=><tr key={r.year}><th>{r.year===2026?'Western Boulevard':'Talley Student Union'} · {r.year}</th><td>{num(r.all_ages)}</td><td>{num(r.age_18_24)}</td><td>{num(r.age_18_22)}</td><td>{one(r.age_18_24_share)}%</td><td>{num(r.same_day_registration)}</td></tr>)}</tbody></table></div>
+   <RichNarrative id="voting-campus-exact-table:note" value="First 11 early-voting days in each year. Talley: Oct 20–30, 2022 and Oct 17–27, 2024. Western Boulevard Business Services: Oct 15–25, 2026 (preliminary). Same-day registration includes all ages. The 18–24 share is a share of site ballots. 2024 was presidential; 2022 and 2026 are midterms."/>
+  </DataComponent>
   {visible('voting-move-counts')&&<EvidenceChart id="voting-move-counts" queryId="summary" title="Talley versus the replacement site: college-age ballots" description={`Ages 18–24. Talley: ${period}. Western Boulevard: October 15–25, 2026. Both windows contain ${days} days. ${baseline===2024?'Presidential vs midterm election.':'Both are midterm elections.'}`} rows={moveRows} sourceRows={paired.filter(r=>r.scope==='Campus site')} spec={{type:'horizontalBar',x:'site',y:'votes',stackable:false,startAtZero:true,valueDecimals:0}} height={300}/>}
   <ReportSection id="voting-age-intro" title="How the campus site’s age mix changed" queryId="summary" sourceRows={paired.filter(r=>r.scope==='Campus site')} showHeading={false}>
    <RichNarrative id="voting-age-intro:body" value={`## How the campus site's age mix changed

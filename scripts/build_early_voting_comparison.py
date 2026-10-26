@@ -101,6 +101,8 @@ def main():
     result={'as_of':args.cutoff_date.isoformat(),'retrieved_at':source_meta[-1]['downloaded_at'],'source_last_modified':source_meta[-1]['last_modified'],'matched_days':n,'site_mapping':SITE,'sources':source_meta,'summary':summary,'metrics':metrics,'full_file_context':full,'qa':qa,'daily':daily_rows,'demographics':demo_rows,'sites':site_rows}
     (output/'comparison.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     for file,rows in [('matched_summary.csv',summary),('matched_daily.csv',daily_rows),('matched_demographics.csv',demo_rows),('matched_sites.csv',site_rows)]:write_csv(output/file,rows)
+    campus_rows=[{'year':r['year'],'site_name':SITE[r['year']],**{k:v for k,v in r.items() if k not in {'year','scope'}}} for r in summary if r['scope']=='Campus site']
+    write_csv(output/'campus_site_matched_counts.csv',campus_rows)
     print(json.dumps({'as_of':result['as_of'],'summary':summary,'metrics':metrics},ensure_ascii=True,indent=2))
 
 if __name__=='__main__':main()
