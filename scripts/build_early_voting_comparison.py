@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild aggregate-only, matched-day 2022/2026 early-voting comparisons.
+"""Rebuild aggregate-only, matched-day 2022/2024/2026 early-voting comparisons.
 
 Run after scripts/download_early_voting_sources.py, or supply --raw-dir.
 No names, addresses, registration numbers, or voter identifiers are exported.
@@ -11,9 +11,10 @@ from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-START={2022:date(2022,10,20),2026:date(2026,10,15)}
-ELECTION={2022:'20221108',2026:'20261103'}
-SITE={2022:'TA - NCSU TALLEY STUDENT CENTER',2026:'NCSU WESTERN BLVD BUSINESS SERVICES'}
+YEARS=[2022,2024,2026]
+START={2022:date(2022,10,20),2024:date(2024,10,17),2026:date(2026,10,15)}
+ELECTION={2022:'20221108',2024:'20241105',2026:'20261103'}
+SITE={2022:'TA - NCSU TALLEY STUDENT CENTER',2024:'TA - NCSU TALLEY STUDENT CENTER',2026:'NCSU WESTERN BLVD BUSINESS SERVICES'}
 AGE_GROUPS=['18–24','25–34','35–44','45–64','65+','Unknown / outside range']
 
 def age_group(age):
@@ -36,8 +37,8 @@ def main():
     if not 1<=n<=17:raise ValueError('Cutoff must fall within the 17-day 2026 early-voting period')
     output=args.output_dir;output.mkdir(parents=True,exist_ok=True)
     daily=Counter(); demos=Counter(); sdr=Counter();sites=Counter();qa={};full={};source_meta=json.loads((args.raw_dir/'source_manifest.json').read_text())
-    for year in [2022,2026]:
-        seen=set();total=0;campus=0;types=Counter();statuses=Counter();days=Counter();bad_age=0
+    for year in YEARS:
+        seen=set();total=0;campus=0;types=Counter();statuses=Counter();days=Counter();bad_age=0;full_youth=Counter()
         path=args.raw_dir/f'wake_{ELECTION[year]}.csv'
         with path.open(encoding='latin-1',newline='') as f:
             reader=csv.DictReader(f)
@@ -59,28 +60,31 @@ def main():
                 try:age=int(r['age'].strip())
                 except ValueError:age=None
                 ag=age_group(age);bad_age+=ag==AGE_GROUPS[-1]
+                if is_campus and age is not None:
+                    if 18<=age<=24:full_youth['18_24']+=1
+                    if 18<=age<=22:full_youth['18_22']+=1
                 if day>n:continue
                 cohorts=['All ages']+(['18–24'] if age is not None and 18<=age<=24 else [])+(['18–22'] if age is not None and 18<=age<=22 else [])
                 scopes=['Wake County', 'Campus site' if is_campus else 'Other Wake sites']
                 for scope in scopes:
                     for cohort in cohorts:daily[(year,day,scope,cohort)]+=1
-                    for dim,value in [('age_group',ag),('party',r['voter_party_code'].strip()),('race',r['race'].strip()),('ethnicity',r['ethnicity'].strip()),('gender',r['gender'].strip())]:demos[(year,scope,dim,value or 'Unknown')]+=1
+                    for dim,value in [('age_group',ag),('age',str(age) if age is not None else 'Unknown'),('party',r['voter_party_code'].strip()),('race',r['race'].strip()),('ethnicity',r['ethnicity'].strip()),('gender',r['gender'].strip())]:demos[(year,scope,dim,value or 'Unknown')]+=1
                     if r['sdr'].strip().upper() in {'Y','YES'}:sdr[(year,scope)]+=1
                 for cohort in cohorts:sites[(year,name,cohort)]+=1
         if year==2022 and (campus!=10390 or total!=219169):raise ValueError('2022 does not match locked project baseline')
         if SITE[year] not in [k[1] for k in sites if k[0]==year]:raise ValueError('Campus site missing; review mapping')
         qa[str(year)]={'accepted_early_unique_ncid':len(seen),'accepted_early_rows':total,'duplicate_accepted_ncid':0,'accepted_early_by_date':dict(sorted(days.items())),'early_statuses_before_filter':dict(statuses),'unknown_or_outside_range_age':bad_age}
-        full[str(year)]={'wake_accepted_early':total,'campus_accepted_early':campus}
+        full[str(year)]={'wake_accepted_early':total,'campus_accepted_early':campus,'campus_age_18_24':full_youth['18_24'],'campus_age_18_22':full_youth['18_22']}
     latest=max(qa['2026']['accepted_early_by_date'])
     if args.cutoff_date.isoformat()>latest:raise ValueError('Requested cutoff exceeds latest observed 2026 voting date')
     def count(year,scope,cohort):return sum(daily[(year,d,scope,cohort)] for d in range(1,n+1))
     summary=[]
-    for year in [2022,2026]:
+    for year in YEARS:
         for scope in ['Campus site','Wake County','Other Wake sites']:
             total=count(year,scope,'All ages')
             summary.append({'year':year,'scope':scope,'start_date':START[year].isoformat(),'end_date':(START[year]+timedelta(days=n-1)).isoformat(),'matched_days':n,'all_ages':total,'age_18_24':count(year,scope,'18–24'),'age_18_22':count(year,scope,'18–22'),'age_18_24_share':pct(count(year,scope,'18–24'),total),'same_day_registration':sdr[(year,scope)]})
     daily_rows=[]
-    for year in [2022,2026]:
+    for year in YEARS:
         for scope in ['Campus site','Wake County','Other Wake sites']:
             for cohort in ['All ages','18–24','18–22']:
                 cumulative=0
@@ -92,6 +96,8 @@ def main():
     def row(y,scope):return next(x for x in summary if x['year']==y and x['scope']==scope)
     c22=row(2022,'Campus site');c26=row(2026,'Campus site');w22=row(2022,'Wake County');w26=row(2026,'Wake County')
     metrics={'campus_total_change_pct':pct(c26['all_ages']-c22['all_ages'],c22['all_ages']),'campus_youth_change_pct':pct(c26['age_18_24']-c22['age_18_24'],c22['age_18_24']),'wake_youth_change_pct':pct(w26['age_18_24']-w22['age_18_24'],w22['age_18_24']),'campus_youth_share_change_pp':c26['age_18_24_share']-c22['age_18_24_share'],'campus_share_wake_youth_2022':pct(c22['age_18_24'],w22['age_18_24']),'campus_share_wake_youth_2026':pct(c26['age_18_24'],w26['age_18_24'])}
+    c24=row(2024,'Campus site');w24=row(2024,'Wake County')
+    metrics['versus_2024']={'campus_youth_change_pct':pct(c26['age_18_24']-c24['age_18_24'],c24['age_18_24']),'campus_total_change_pct':pct(c26['all_ages']-c24['all_ages'],c24['all_ages']),'wake_youth_change_pct':pct(w26['age_18_24']-w24['age_18_24'],w24['age_18_24']),'campus_youth_share_change_pp':c26['age_18_24_share']-c24['age_18_24_share'],'campus_share_wake_youth_2024':pct(c24['age_18_24'],w24['age_18_24'])}
     result={'as_of':args.cutoff_date.isoformat(),'retrieved_at':source_meta[-1]['downloaded_at'],'source_last_modified':source_meta[-1]['last_modified'],'matched_days':n,'site_mapping':SITE,'sources':source_meta,'summary':summary,'metrics':metrics,'full_file_context':full,'qa':qa,'daily':daily_rows,'demographics':demo_rows,'sites':site_rows}
     (output/'comparison.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     for file,rows in [('matched_summary.csv',summary),('matched_daily.csv',daily_rows),('matched_demographics.csv',demo_rows),('matched_sites.csv',site_rows)]:write_csv(output/file,rows)

@@ -4,7 +4,25 @@ Updated October 26, 2026. Voting records through October 25; preliminary.
 
 The question is whether moving the NC State early-voting site from Talley Student Union to Western Boulevard Business Services changed college-age voting patterns.
 
-## What is observed
+## 2024 Talley versus the new 2026 location
+
+The report now defaults to the requested 2024 presidential-election comparison. It retains 2022 as an alternative midterm baseline. Both selectors update the site counts, cumulative curves, county share, age distribution and individual ages 18–24 charts together.
+
+Match **October 17–27, 2024** with **October 15–25, 2026**, each the first 11 calendar days from opening Thursday through the second Sunday.
+
+| Measure | Talley, 2024 | Western Boulevard, 2026 | Change |
+| --- | ---: | ---: | ---: |
+| Accepted early ballots, all ages | 12,990 | 7,463 | −42.5% |
+| Accepted early ballots, ages 18–24 | 4,939 | 1,866 | −62.2% |
+| Ages 18–24 share of site ballots | 38.0% | 25.0% | −13.0 percentage points |
+| Site share of Wake’s 18–24 early ballots | 21.5% | 14.8% | −6.7 percentage points |
+| Accepted early ballots, ages 18–22 | 3,983 | 1,448 | −63.6% |
+
+Wake County’s 18–24 early ballots were 22,931 in the matched 2024 window and 12,583 in 2026 (−45.1%). At other Wake sites they were 17,992 and 10,717 (−40.4%). Thus college-age early voting fell across Wake as well as at the campus site, and the decrease at the campus site was larger.
+
+**2024 is a presidential election and 2026 is a midterm.** The charts do not adjust away that difference or estimate the move’s effect. College-age counts are site users, not an enrolled-student cohort. The full 17-day 2024 source contains 21,624 accepted Talley ballots across all ages; that full total is not used in matched-period percentage changes. Exact-age counts and shares are exported as `dimension=age` in `matched_demographics.csv`.
+
+## Retained 2022 midterm comparison
 
 Match the first 11 days of each midterm: October 20–30, 2022 and October 15–25, 2026. Both windows begin Thursday and end Sunday. Ages 18–24 are a proxy for college age, not confirmed students.
 
@@ -26,10 +44,11 @@ This does not establish that moving the site reduced or increased student partic
 
 - [NCSBE official data catalog](https://www.ncsbe.gov/results-data/absentee-and-provisional-data).
 - [2022 county archive](https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip).
+- [2024 county archive](https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip).
 - [2026 county archive](https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip).
 - [NC State’s 2026 early-voting listing](https://packthepolls.dasa.ncsu.edu/event/2026-general-early-voting/) identifies the replacement site, Western Boulevard Business Services, 1220 Varsity Drive.
 
-Select `county_desc=WAKE`, early-voting request types `ONE-STOP`, `ONE STOP` or `EARLY VOTING`, and return status exactly `ACCEPTED`. Site labels are exact matches: `TA - NCSU TALLEY STUDENT CENTER` (2022) and `NCSU WESTERN BLVD BUSINESS SERVICES` (2026). Other sites means all Wake early-voting sites except that year’s campus site. Wake totals contain the campus site and must not be added to it.
+Select `county_desc=WAKE`, early-voting request types `ONE-STOP`, `ONE STOP` or `EARLY VOTING`, and return status exactly `ACCEPTED`. Site labels are exact matches: `TA - NCSU TALLEY STUDENT CENTER` (2022 and 2024) and `NCSU WESTERN BLVD BUSINESS SERVICES` (2026). Other sites means all Wake early-voting sites except that year’s campus site. Wake totals contain the campus site and must not be added to it.
 
 Use `ballot_rtn_dt` for the calendar day; subtract each election’s opening date to align days. Use the supplied `age` field with inclusive bounds 18–24 and 18–22. No birthday or enrollment information is inferred. Same-day registrations count `sdr` equal to Y/YES across all ages in the matched period. Unknown age is kept as its own category if present. Source text is decoded as Latin-1; relevant keys and categorical fields are ASCII.
 
@@ -43,7 +62,7 @@ python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-25
 python scripts/validate_early_voting_comparison.py
 ```
 
-The cutoff is explicit: use a complete voting day covered by the new file, never the unfinished current day. Downloads preserve source freshness and archive hashes in ignored raw storage; `comparison.json` retains the non-personal manifest with the aggregate results. The 2022 baseline is cached with hash validation; 2026 is always downloaded again. The pipeline fails on missing columns, a missing campus site, duplicate accepted voter identifiers, invalid voting dates or a changed locked baseline.
+The cutoff is explicit: use a complete voting day covered by the new file, never the unfinished current day. Downloads preserve source freshness and archive hashes in ignored raw storage; `comparison.json` retains the non-personal manifest with the aggregate results. Historical baselines are cached with hash validation; 2026 is always downloaded again. `--years 2024` downloads just the additional historical source while preserving the other manifest entries. The pipeline fails on missing columns, a missing campus site, duplicate accepted voter identifiers, invalid voting dates or a changed locked 2022 baseline. No independent 2024 or 2026 site-total reconciliation with a separate Wake publication has been completed.
 
 All CSVs and JSON in `data/processed/comparison/` contain aggregates only. Raw names, addresses, voter identifiers and voter-level files remain under ignored `data/raw/`. The 2022 full-period baseline is unchanged at 10,390 Talley ballots and 219,169 Wake ballots.
 

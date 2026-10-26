@@ -2,9 +2,9 @@
 
 ## Scope
 
-Keep the main comparison simple: **2022 general election vs. 2026 general election**.
+Retain **2022 general election vs. 2026 general election** as the same-cycle midterm comparison.
 
-Do not use 2024 as a primary comparison. The 2024 presidential election can be revisited later only if there is a specific reporting reason.
+The requested October 26 update adds **2024 Talley vs. 2026 Western Boulevard** as the default demographic/site comparison, with a visible presidential-versus-midterm caveat. Readers can select 2022 as the baseline. Match the first 11 early-voting days rather than complete historical elections against partial 2026. This comparison describes site use and cannot identify the move's causal effect.
 
 ## Question
 

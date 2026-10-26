@@ -2,7 +2,26 @@
 
 Data and reporting workspace for a Technician follow-up on voting at NC State.
 
-The main comparison is intentionally simple: **2022 general election vs. 2026 general election**. Early voting and Election Day are kept separate because the voting rules and source data are different.
+The interactive report compares **Talley Student Union in 2024 with Western Boulevard Business Services in 2026**, using the same first 11 early-voting days. **2024 was a presidential election; 2026 is a midterm.** A selector retains the 2022-to-2026 midterm comparison. Early voting and Election Day are kept separate.
+
+## 2024 Talley versus the new 2026 location
+
+**[Open the interactive demographic charts](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Methods and all three years](docs/2026-early-voting-update.md)
+
+| Campus-site measure, matched first 11 days | Talley, 2024 | Western Boulevard, 2026 |
+| --- | ---: | ---: |
+| Accepted ballots, ages 18–24 | 4,939 | 1,866 |
+| Ages 18–24 share of all site ballots | 38.0% | 25.0% |
+| Site share of Wake's 18–24 early ballots | 21.5% | 14.8% |
+| Accepted ballots, all ages | 12,990 | 7,463 |
+
+College-age ballots at the site were **62.2% lower than in the matched 2024 period**, while Wake County's college-age ballots were **45.1% lower**. The site’s college-age share fell **13.0 percentage points**. This descriptive comparison cannot isolate the location move from presidential-versus-midterm participation or other changes. Ages 18–24 are an age proxy, not verified NC State students.
+
+The charts compare ballot volume, age composition, individual ages 18 through 24, daily cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The older 2022 midterm baseline remains available.
+
+![Age composition at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-age-mix.png)
+
+![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-college-ages.png)
 
 ## October 26, 2026 update: Talley to Western Boulevard
 

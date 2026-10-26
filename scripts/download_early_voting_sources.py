@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Download official sources to ignored raw storage; export no voter-level data.
 
-Always refetch 2026. Cache the historical 2022 source unless --refresh-baseline.
+Always refetch 2026. Cache historical sources unless --refresh-baseline.
 """
 import argparse,hashlib,json,shutil,urllib.request,zipfile
 from datetime import datetime,timezone
@@ -12,14 +12,16 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--raw-dir',type=Path,default=ROOT/'data/raw/early_voting')
     p.add_argument('--refresh-baseline',action='store_true')
+    p.add_argument('--years',nargs='+',type=int,choices=[2022,2024,2026],default=[2022,2024,2026])
     args=p.parse_args();root=args.raw_dir;root.mkdir(parents=True,exist_ok=True)
     manifest_path=root/'source_manifest.json'
     old={x['url']:x for x in json.loads(manifest_path.read_text())} if manifest_path.exists() else {}
-    manifest=[]
-    for date in ['20221108','20261103']:
+    manifest={url:dict(info) for url,info in old.items()}
+    election={2022:'20221108',2024:'20241105',2026:'20261103'}
+    for date in [election[year] for year in args.years]:
         url=f'https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/{date[:4]}_{date[4:6]}_{date[6:]}/absentee_county_{date}.zip'
         archive=root/f'absentee_county_{date}.zip';cache=old.get(url)
-        if date=='20221108' and archive.exists() and cache and not args.refresh_baseline:
+        if date!='20261103' and archive.exists() and cache and not args.refresh_baseline:
             if hashlib.sha256(archive.read_bytes()).hexdigest()!=cache['sha256']:raise ValueError('Cached baseline hash mismatch')
             info=dict(cache)
         else:
@@ -35,7 +37,7 @@ def main():
             hits=[name for name in z.namelist() if 'wake' in Path(name).name.lower() and name.lower().endswith('.csv')]
             if len(hits)!=1:raise ValueError('Expected exactly one Wake County CSV')
             (root/f'wake_{date}.csv').write_bytes(z.read(hits[0]));info['member']=hits[0]
-        manifest.append(info)
-    manifest_path.write_text(json.dumps(manifest,indent=2),encoding='utf-8')
+        manifest[url]=info
+    manifest_path.write_text(json.dumps([manifest[url] for url in sorted(manifest)],indent=2),encoding='utf-8')
     print('Official sources saved to ignored data/raw/early_voting; manifest includes freshness and SHA-256.')
 if __name__=='__main__':main()
