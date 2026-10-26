@@ -373,3 +373,5 @@
 .voting-report .voting-age-change-table .voting-age-ranked { font-weight:700; }
 .voting-report .voting-age-note { margin-top:16px; }
 @media(max-width:620px) { .voting-report .voting-facts { grid-template-columns:1fr; } .voting-report .voting-controls label { flex-wrap:wrap; } }
+
+.voting-report .voting-age-scope { margin-bottom:16px; }
