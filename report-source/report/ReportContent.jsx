@@ -18,7 +18,7 @@ export function ReportContent(){
  const plotRows=trendRows.map(r=>({...r,yearLabel:String(r.year)}));
  const indexSource=daily.filter(r=>r.cohort==='18–24'&&isPair(r.year));
  const indexRows=indexSource.filter(r=>r.year===2026).map(r=>{const base=indexSource.find(v=>v.year===baseline&&v.scope===r.scope&&v.day===r.day);return{day:r.day,scope:r.scope,index:base?.cumulative?r.cumulative/base.cumulative*100:null};});
- const ages=demos.filter(r=>r.scope==='Campus site'&&r.dimension==='age_group'&&isPair(r.year));
+ const ages=demos.filter(r=>r.scope==='Campus site'&&r.dimension==='age_group');
  const ageRows=['18–24','25–34','35–44','45–64','65+','Unknown / outside range'].flatMap(value=>ages.filter(r=>r.value===value).map(r=>({age:value,year:String(r.year),'Ballots (%)':r.share})));
  const shareRows=[{year:String(baseline),'Campus share (%)':share22},{year:'2026','Campus share (%)':share26}];
  const moveRows=[{site:`Talley (${baseline})`,votes:a.age_18_24},{site:'Western (2026)',votes:b.age_18_24}];
@@ -55,7 +55,7 @@ export function ReportContent(){
 
 College-age voters represented **${one(a.age_18_24_share)}% at Talley (${baseline})** and **${one(b.age_18_24_share)}% at Western Boulevard (2026)**, a change of ${signed(b.age_18_24_share-a.age_18_24_share)} percentage points. This compares composition within each site, alongside the absolute ballot counts above. Site users also include staff, neighbors and other Wake voters.`}/>
   </ReportSection>
-  {visible('voting-ages')&&<EvidenceChart id="voting-ages" queryId="demographics" title="Age composition at each campus site" description={`Share of all accepted early-voting ballots at Talley (${baseline}) and Western Boulevard (2026), matched first ${days} days. ${baseline===2024?'Presidential vs midterm election; this does not isolate the location move.':'Both are midterm elections; this does not isolate the location move.'}`} rows={ageRows} sourceRows={ages} spec={{type:'bar',x:'age',y:'Ballots (%)',series:'year',stackable:false,startAtZero:true,valueDecimals:1}} height={330}/>}
+  {visible('voting-ages')&&<EvidenceChart id="voting-ages" queryId="demographics" title="Age composition at each campus site" description={`Talley in 2022 and 2024; Western Boulevard in 2026. Share of each site’s accepted ballots in the first ${days} early-voting days. 2024 was presidential; 2022 and 2026 are midterms.`} rows={ageRows} sourceRows={ages} spec={{type:'bar',x:'age',y:'Ballots (%)',series:'year',stackable:false,startAtZero:true,valueDecimals:1}} height={330}/>}
   <ReportSection id="voting-college-detail-intro" queryId="demographics" sourceRows={exactAges} title="A closer look at college-age voters" showHeading={false}><RichNarrative id="voting-college-detail-intro:body" value="## A closer look at college-age voters
 
 See each age from 18 through 24 at the old and new sites. Switch between ballot counts and each age's share of all site ballots to distinguish volume from demographic composition."/></ReportSection>

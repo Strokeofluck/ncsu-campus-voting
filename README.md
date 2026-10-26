@@ -33,7 +33,7 @@ The interactive report includes this campus-only table above the charts. [Downlo
 
 Each row covers the first 11 early-voting days. Dates are October 20–30, 2022; October 17–27, 2024; and October 15–25, 2026. 2026 is preliminary. Same-day registrations include all ages. The age share is a share of site ballots; 2024 was presidential and the other two elections are midterms.
 
-![Age composition at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-age-mix.png)
+![Age composition at Talley in 2022 and 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/campus-age-composition-2022-2024-2026.png)
 
 ![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-college-ages.png)
 
