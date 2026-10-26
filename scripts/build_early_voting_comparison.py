@@ -39,7 +39,7 @@ def campus_age_changes(demo_rows):
             if year!=2026 or previous is None:continue
             delta=current['votes']-previous['votes']
             rows.append({'age':age,'baseline_year':baseline,'comparison_year':2026,'baseline_ballots':previous['votes'],'ballots_2026':current['votes'],'ballot_change':delta,'ballot_change_pct':pct(delta,previous['votes']),'baseline_share_pct':previous['share'],'share_2026_pct':current['share'],'share_change_pp':current['share']-previous['share']})
-        changes.extend(sorted(rows,key=lambda r:r['share_change_pp'],reverse=True))
+        changes.extend(sorted(rows,key=lambda r:next((i for i,age in enumerate(AGE_GROUPS) if age==r['age']),len(AGE_GROUPS))))
     return changes
 
 def main():

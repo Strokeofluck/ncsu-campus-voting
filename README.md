@@ -19,7 +19,7 @@ College-age ballots at the site were **62.2% lower than in the matched 2024 peri
 
 The charts compare ballot volume, age composition, individual ages 18 through 24, daily cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The older 2022 midterm baseline remains available.
 
-Directly below the age-composition chart, a ranked age-group table switches between **2026 versus 2024** and **2026 versus 2022**. Rank by change in ballot share (percentage points), number of ballots, or percentage growth in ballots. Exact counts sit beside the shares so an increased share is not mistaken for more ballots. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
+Directly below the age-composition chart, an age-group table switches between **2026 versus 2024** and **2026 versus 2022**. Rows stay in age order from 18–24 through 65+ for both comparisons; the table shows changes in ballot share (percentage points), number of ballots, and percentage growth in ballots. Exact counts sit beside the shares so an increased share is not mistaken for more ballots. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
 
 ### Exact campus-site counts, all three years
 
