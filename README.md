@@ -16,6 +16,8 @@ The latest NCSBE file covers early voting through **October 25**. Compare the fi
 
 More college-age ballots were recorded at the replacement site, while countywide college-age early voting grew faster. These preliminary records cannot establish the move's causal effect on NC State student participation: ages 18–24 are an age proxy, enrollment and eligible-student denominators are unavailable, and mail/Election Day voting is outside this comparison.
 
+![Talley versus Western Boulevard: accepted early ballots from ages 18–24, matched first 11 days](docs/images/talley-to-western-comparison.png)
+
 Rebuild the aggregate comparison:
 
 ```bash
