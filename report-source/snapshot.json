@@ -1,0 +1,7500 @@
+{
+  "surface": "report",
+  "title": "The move from Talley: college-age ballots rose, county share fell",
+  "generatedAt": "2026-10-26T13:24:21Z",
+  "status": "reviewed",
+  "buildStatus": "complete",
+  "filters": [],
+  "queries": {
+    "summary": {
+      "rows": [
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "start_date": "2022-10-20",
+          "end_date": "2022-10-30",
+          "matched_days": 11,
+          "all_ages": 4863,
+          "age_18_24": 1259,
+          "age_18_22": 970,
+          "age_18_24_share": 25.88936870244705,
+          "same_day_registration": 204
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "start_date": "2022-10-20",
+          "end_date": "2022-10-30",
+          "matched_days": 11,
+          "all_ages": 115255,
+          "age_18_24": 5412,
+          "age_18_22": 3864,
+          "age_18_24_share": 4.695674808034359,
+          "same_day_registration": 1123
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "start_date": "2022-10-20",
+          "end_date": "2022-10-30",
+          "matched_days": 11,
+          "all_ages": 110392,
+          "age_18_24": 4153,
+          "age_18_22": 2894,
+          "age_18_24_share": 3.7620479744909052,
+          "same_day_registration": 919
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "start_date": "2026-10-15",
+          "end_date": "2026-10-25",
+          "matched_days": 11,
+          "all_ages": 7463,
+          "age_18_24": 1866,
+          "age_18_22": 1448,
+          "age_18_24_share": 25.00334985930591,
+          "same_day_registration": 297
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "start_date": "2026-10-15",
+          "end_date": "2026-10-25",
+          "matched_days": 11,
+          "all_ages": 189922,
+          "age_18_24": 12583,
+          "age_18_22": 8810,
+          "age_18_24_share": 6.625351460073083,
+          "same_day_registration": 1797
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "start_date": "2026-10-15",
+          "end_date": "2026-10-25",
+          "matched_days": 11,
+          "all_ages": 182459,
+          "age_18_24": 10717,
+          "age_18_22": 7362,
+          "age_18_24_share": 5.873648326473345,
+          "same_day_registration": 1500
+        }
+      ],
+      "source": {
+        "label": "NCSBE accepted Wake County early-voting records; matched first 11 days",
+        "provider": "North Carolina State Board of Elections",
+        "files": [
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip"
+        ],
+        "executedAt": "2026-10-26T13:24:21Z",
+        "period": "2022-10-20 through 2022-10-30 versus 2026-10-15 through 2026-10-25",
+        "filters": [
+          "county_desc = WAKE",
+          "ballot_req_type in ONE-STOP, ONE STOP, EARLY VOTING",
+          "ballot_rtn_status = ACCEPTED",
+          "First 11 calendar days from each early-voting opening Thursday"
+        ],
+        "caveats": [
+          "2026 is preliminary. Ages 18–24 are an age proxy, not confirmed NC State students.",
+          "Ballot counts and composition, not registered-voter turnout rates. No causal impact is identified.",
+          "2022 finalized records versus 2026 live records; historical daily reporting lags cannot be reconstructed."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Official NCSBE downloads",
+            "detail": "Downloaded official absentee-by-county ZIP files; source Last-Modified and archive SHA-256 recorded in comparison.json."
+          },
+          {
+            "title": "Reproducible aggregation",
+            "detail": "scripts/build_early_voting_comparison.py --cutoff-date 2026-10-25; exact site mappings, unique accepted ncid check, aligned day index; export only aggregates."
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "College-age proxy",
+            "definition": "Source age field 18–24 inclusive, not verified enrollment."
+          },
+          {
+            "label": "Campus site",
+            "definition": "Talley Student Center in 2022; Western Boulevard Business Services in 2026."
+          },
+          {
+            "label": "Matched-day growth index",
+            "definition": "2026 cumulative accepted ballots through day d divided by 2022 cumulative accepted ballots through the same day, multiplied by 100. Not a turnout rate.",
+            "componentIds": [
+              "voting-growth-index"
+            ]
+          }
+        ]
+      }
+    },
+    "daily": {
+      "rows": [
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 389,
+          "cumulative": 389
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 441,
+          "cumulative": 830
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 342,
+          "cumulative": 1172
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 313,
+          "cumulative": 1485
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 426,
+          "cumulative": 1911
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 445,
+          "cumulative": 2356
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 503,
+          "cumulative": 2859
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 481,
+          "cumulative": 3340
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 611,
+          "cumulative": 3951
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 476,
+          "cumulative": 4427
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 436,
+          "cumulative": 4863
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 95,
+          "cumulative": 95
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 106,
+          "cumulative": 201
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 60,
+          "cumulative": 261
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 75,
+          "cumulative": 336
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 132,
+          "cumulative": 468
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 152,
+          "cumulative": 620
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 154,
+          "cumulative": 774
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 136,
+          "cumulative": 910
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 178,
+          "cumulative": 1088
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 81,
+          "cumulative": 1169
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 90,
+          "cumulative": 1259
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 74,
+          "cumulative": 74
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 90,
+          "cumulative": 164
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 43,
+          "cumulative": 207
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 59,
+          "cumulative": 266
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 110,
+          "cumulative": 376
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 120,
+          "cumulative": 496
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 124,
+          "cumulative": 620
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 98,
+          "cumulative": 718
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 141,
+          "cumulative": 859
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 50,
+          "cumulative": 909
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 61,
+          "cumulative": 970
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 12062,
+          "cumulative": 12062
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 12588,
+          "cumulative": 24650
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 6873,
+          "cumulative": 31523
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 5769,
+          "cumulative": 37292
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 12539,
+          "cumulative": 49831
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 11844,
+          "cumulative": 61675
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 12120,
+          "cumulative": 73795
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 11995,
+          "cumulative": 85790
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 13897,
+          "cumulative": 99687
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 8484,
+          "cumulative": 108171
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 7084,
+          "cumulative": 115255
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 395,
+          "cumulative": 395
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 520,
+          "cumulative": 915
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 464,
+          "cumulative": 1379
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 509,
+          "cumulative": 1888
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 439,
+          "cumulative": 2327
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 393,
+          "cumulative": 2720
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 449,
+          "cumulative": 3169
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 463,
+          "cumulative": 3632
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 701,
+          "cumulative": 4333
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 572,
+          "cumulative": 4905
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 507,
+          "cumulative": 5412
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 285,
+          "cumulative": 285
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 404,
+          "cumulative": 689
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 361,
+          "cumulative": 1050
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 392,
+          "cumulative": 1442
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 320,
+          "cumulative": 1762
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 262,
+          "cumulative": 2024
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 304,
+          "cumulative": 2328
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 302,
+          "cumulative": 2630
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 491,
+          "cumulative": 3121
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 397,
+          "cumulative": 3518
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 346,
+          "cumulative": 3864
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 11673,
+          "cumulative": 11673
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 12147,
+          "cumulative": 23820
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 6531,
+          "cumulative": 30351
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 5456,
+          "cumulative": 35807
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 12113,
+          "cumulative": 47920
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 11399,
+          "cumulative": 59319
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 11617,
+          "cumulative": 70936
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 11514,
+          "cumulative": 82450
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 13286,
+          "cumulative": 95736
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 8008,
+          "cumulative": 103744
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 6648,
+          "cumulative": 110392
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 300,
+          "cumulative": 300
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 414,
+          "cumulative": 714
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 404,
+          "cumulative": 1118
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 434,
+          "cumulative": 1552
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 307,
+          "cumulative": 1859
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 241,
+          "cumulative": 2100
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 295,
+          "cumulative": 2395
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 327,
+          "cumulative": 2722
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 523,
+          "cumulative": 3245
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 491,
+          "cumulative": 3736
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 417,
+          "cumulative": 4153
+        },
+        {
+          "year": 2022,
+          "day": 1,
+          "date": "2022-10-20",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 211,
+          "cumulative": 211
+        },
+        {
+          "year": 2022,
+          "day": 2,
+          "date": "2022-10-21",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 314,
+          "cumulative": 525
+        },
+        {
+          "year": 2022,
+          "day": 3,
+          "date": "2022-10-22",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 318,
+          "cumulative": 843
+        },
+        {
+          "year": 2022,
+          "day": 4,
+          "date": "2022-10-23",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 333,
+          "cumulative": 1176
+        },
+        {
+          "year": 2022,
+          "day": 5,
+          "date": "2022-10-24",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 210,
+          "cumulative": 1386
+        },
+        {
+          "year": 2022,
+          "day": 6,
+          "date": "2022-10-25",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 142,
+          "cumulative": 1528
+        },
+        {
+          "year": 2022,
+          "day": 7,
+          "date": "2022-10-26",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 180,
+          "cumulative": 1708
+        },
+        {
+          "year": 2022,
+          "day": 8,
+          "date": "2022-10-27",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 204,
+          "cumulative": 1912
+        },
+        {
+          "year": 2022,
+          "day": 9,
+          "date": "2022-10-28",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 350,
+          "cumulative": 2262
+        },
+        {
+          "year": 2022,
+          "day": 10,
+          "date": "2022-10-29",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 347,
+          "cumulative": 2609
+        },
+        {
+          "year": 2022,
+          "day": 11,
+          "date": "2022-10-30",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 285,
+          "cumulative": 2894
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 831,
+          "cumulative": 831
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 803,
+          "cumulative": 1634
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 467,
+          "cumulative": 2101
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 398,
+          "cumulative": 2499
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 684,
+          "cumulative": 3183
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 725,
+          "cumulative": 3908
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 734,
+          "cumulative": 4642
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 729,
+          "cumulative": 5371
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 1004,
+          "cumulative": 6375
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 571,
+          "cumulative": 6946
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Campus site",
+          "cohort": "All ages",
+          "votes": 517,
+          "cumulative": 7463
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 155,
+          "cumulative": 155
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 152,
+          "cumulative": 307
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 73,
+          "cumulative": 380
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 68,
+          "cumulative": 448
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 129,
+          "cumulative": 577
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 190,
+          "cumulative": 767
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 229,
+          "cumulative": 996
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 251,
+          "cumulative": 1247
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 338,
+          "cumulative": 1585
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 140,
+          "cumulative": 1725
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Campus site",
+          "cohort": "18–24",
+          "votes": 141,
+          "cumulative": 1866
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 124,
+          "cumulative": 124
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 115,
+          "cumulative": 239
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 47,
+          "cumulative": 286
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 49,
+          "cumulative": 335
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 90,
+          "cumulative": 425
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 160,
+          "cumulative": 585
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 177,
+          "cumulative": 762
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 202,
+          "cumulative": 964
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 277,
+          "cumulative": 1241
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 93,
+          "cumulative": 1334
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Campus site",
+          "cohort": "18–22",
+          "votes": 114,
+          "cumulative": 1448
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 21739,
+          "cumulative": 21739
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 22189,
+          "cumulative": 43928
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 12197,
+          "cumulative": 56125
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 9861,
+          "cumulative": 65986
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 21776,
+          "cumulative": 87762
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 20451,
+          "cumulative": 108213
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 19279,
+          "cumulative": 127492
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 18195,
+          "cumulative": 145687
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 21125,
+          "cumulative": 166812
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 12874,
+          "cumulative": 179686
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Wake County",
+          "cohort": "All ages",
+          "votes": 10236,
+          "cumulative": 189922
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 895,
+          "cumulative": 895
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1206,
+          "cumulative": 2101
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1061,
+          "cumulative": 3162
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 869,
+          "cumulative": 4031
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1154,
+          "cumulative": 5185
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1164,
+          "cumulative": 6349
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 962,
+          "cumulative": 7311
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1044,
+          "cumulative": 8355
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1591,
+          "cumulative": 9946
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1375,
+          "cumulative": 11321
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Wake County",
+          "cohort": "18–24",
+          "votes": 1262,
+          "cumulative": 12583
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 636,
+          "cumulative": 636
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 855,
+          "cumulative": 1491
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 761,
+          "cumulative": 2252
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 653,
+          "cumulative": 2905
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 783,
+          "cumulative": 3688
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 812,
+          "cumulative": 4500
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 623,
+          "cumulative": 5123
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 684,
+          "cumulative": 5807
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 1114,
+          "cumulative": 6921
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 996,
+          "cumulative": 7917
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Wake County",
+          "cohort": "18–22",
+          "votes": 893,
+          "cumulative": 8810
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 20908,
+          "cumulative": 20908
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 21386,
+          "cumulative": 42294
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 11730,
+          "cumulative": 54024
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 9463,
+          "cumulative": 63487
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 21092,
+          "cumulative": 84579
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 19726,
+          "cumulative": 104305
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 18545,
+          "cumulative": 122850
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 17466,
+          "cumulative": 140316
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 20121,
+          "cumulative": 160437
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 12303,
+          "cumulative": 172740
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Other Wake sites",
+          "cohort": "All ages",
+          "votes": 9719,
+          "cumulative": 182459
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 740,
+          "cumulative": 740
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 1054,
+          "cumulative": 1794
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 988,
+          "cumulative": 2782
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 801,
+          "cumulative": 3583
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 1025,
+          "cumulative": 4608
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 974,
+          "cumulative": 5582
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 733,
+          "cumulative": 6315
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 793,
+          "cumulative": 7108
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 1253,
+          "cumulative": 8361
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 1235,
+          "cumulative": 9596
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Other Wake sites",
+          "cohort": "18–24",
+          "votes": 1121,
+          "cumulative": 10717
+        },
+        {
+          "year": 2026,
+          "day": 1,
+          "date": "2026-10-15",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 512,
+          "cumulative": 512
+        },
+        {
+          "year": 2026,
+          "day": 2,
+          "date": "2026-10-16",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 740,
+          "cumulative": 1252
+        },
+        {
+          "year": 2026,
+          "day": 3,
+          "date": "2026-10-17",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 714,
+          "cumulative": 1966
+        },
+        {
+          "year": 2026,
+          "day": 4,
+          "date": "2026-10-18",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 604,
+          "cumulative": 2570
+        },
+        {
+          "year": 2026,
+          "day": 5,
+          "date": "2026-10-19",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 693,
+          "cumulative": 3263
+        },
+        {
+          "year": 2026,
+          "day": 6,
+          "date": "2026-10-20",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 652,
+          "cumulative": 3915
+        },
+        {
+          "year": 2026,
+          "day": 7,
+          "date": "2026-10-21",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 446,
+          "cumulative": 4361
+        },
+        {
+          "year": 2026,
+          "day": 8,
+          "date": "2026-10-22",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 482,
+          "cumulative": 4843
+        },
+        {
+          "year": 2026,
+          "day": 9,
+          "date": "2026-10-23",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 837,
+          "cumulative": 5680
+        },
+        {
+          "year": 2026,
+          "day": 10,
+          "date": "2026-10-24",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 903,
+          "cumulative": 6583
+        },
+        {
+          "year": 2026,
+          "day": 11,
+          "date": "2026-10-25",
+          "scope": "Other Wake sites",
+          "cohort": "18–22",
+          "votes": 779,
+          "cumulative": 7362
+        }
+      ],
+      "source": {
+        "label": "NCSBE accepted Wake County early-voting records; matched first 11 days",
+        "provider": "North Carolina State Board of Elections",
+        "files": [
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip"
+        ],
+        "executedAt": "2026-10-26T13:24:21Z",
+        "period": "2022-10-20 through 2022-10-30 versus 2026-10-15 through 2026-10-25",
+        "filters": [
+          "county_desc = WAKE",
+          "ballot_req_type in ONE-STOP, ONE STOP, EARLY VOTING",
+          "ballot_rtn_status = ACCEPTED",
+          "First 11 calendar days from each early-voting opening Thursday"
+        ],
+        "caveats": [
+          "2026 is preliminary. Ages 18–24 are an age proxy, not confirmed NC State students.",
+          "Ballot counts and composition, not registered-voter turnout rates. No causal impact is identified.",
+          "2022 finalized records versus 2026 live records; historical daily reporting lags cannot be reconstructed."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Official NCSBE downloads",
+            "detail": "Downloaded official absentee-by-county ZIP files; source Last-Modified and archive SHA-256 recorded in comparison.json."
+          },
+          {
+            "title": "Reproducible aggregation",
+            "detail": "scripts/build_early_voting_comparison.py --cutoff-date 2026-10-25; exact site mappings, unique accepted ncid check, aligned day index; export only aggregates."
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "College-age proxy",
+            "definition": "Source age field 18–24 inclusive, not verified enrollment."
+          },
+          {
+            "label": "Campus site",
+            "definition": "Talley Student Center in 2022; Western Boulevard Business Services in 2026."
+          },
+          {
+            "label": "Matched-day growth index",
+            "definition": "2026 cumulative accepted ballots through day d divided by 2022 cumulative accepted ballots through the same day, multiplied by 100. Not a turnout rate.",
+            "componentIds": [
+              "voting-growth-index"
+            ]
+          }
+        ]
+      }
+    },
+    "demographics": {
+      "rows": [
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "18–24",
+          "votes": 1259,
+          "share": 25.88936870244705
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "25–34",
+          "votes": 928,
+          "share": 19.08287065597368
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "35–44",
+          "votes": 544,
+          "share": 11.186510384536295
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "45–64",
+          "votes": 1342,
+          "share": 27.596134073617108
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 790,
+          "share": 16.245116183425868
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 116,
+          "share": 2.38535883199671
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 3507,
+          "share": 72.11597779148674
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 1240,
+          "share": 25.498663376516554
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "gender",
+          "value": "F",
+          "votes": 2142,
+          "share": 44.04688463911166
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "gender",
+          "value": "M",
+          "votes": 2190,
+          "share": 45.033929673041335
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "gender",
+          "value": "U",
+          "votes": 531,
+          "share": 10.919185687847008
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 2280,
+          "share": 46.88463911165947
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 1,
+          "share": 0.02056343820686819
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 20,
+          "share": 0.41126876413736374
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "REP",
+          "votes": 507,
+          "share": 10.42566317088217
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 2055,
+          "share": 42.257865515114126
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 160,
+          "share": 3.29015011309891
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 290,
+          "share": 5.963397079991775
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 7,
+          "share": 0.1439440674480773
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 151,
+          "share": 3.1050791692370963
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 41,
+          "share": 0.8431009664815957
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 533,
+          "share": 10.960312564260745
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 3681,
+          "share": 75.6940160394818
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "18–24",
+          "votes": 4153,
+          "share": 3.7620479744909052
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "25–34",
+          "votes": 8597,
+          "share": 7.78770200739184
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "35–44",
+          "votes": 12959,
+          "share": 11.739075295311254
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "45–64",
+          "votes": 43708,
+          "share": 39.59344880063773
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 40975,
+          "share": 37.117725922168276
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 2162,
+          "share": 1.9584752518298427
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 83051,
+          "share": 75.23280672512502
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 25179,
+          "share": 22.80871802304515
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "gender",
+          "value": "F",
+          "votes": 56685,
+          "share": 51.34882962533517
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "gender",
+          "value": "M",
+          "votes": 48222,
+          "share": 43.68251322559606
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "gender",
+          "value": "U",
+          "votes": 5485,
+          "share": 4.968657149068773
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 46727,
+          "share": 42.328248423798826
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 7,
+          "share": 0.006341039205739547
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 333,
+          "share": 0.301652293644467
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "REP",
+          "votes": 25404,
+          "share": 23.01253714037249
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 37921,
+          "share": 34.35122110297848
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 2881,
+          "share": 2.609790564533662
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 19880,
+          "share": 18.00855134430031
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 194,
+          "share": 0.17573737227335315
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+          "votes": 5,
+          "share": 0.00452931371838539
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 3096,
+          "share": 2.8045510544242336
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 516,
+          "share": 0.4674251757373723
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 6288,
+          "share": 5.696064932241467
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 77532,
+          "share": 70.23335024277121
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "18–24",
+          "votes": 5412,
+          "share": 4.695674808034359
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "25–34",
+          "votes": 9525,
+          "share": 8.26428354518242
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "35–44",
+          "votes": 13503,
+          "share": 11.71576070452475
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "45–64",
+          "votes": 45050,
+          "share": 39.08724133443235
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 41765,
+          "share": 36.23703960782613
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 2278,
+          "share": 1.9764869203071451
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 86558,
+          "share": 75.10129712376903
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 26419,
+          "share": 22.92221595592382
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "gender",
+          "value": "F",
+          "votes": 58827,
+          "share": 51.040735759836885
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "gender",
+          "value": "M",
+          "votes": 50412,
+          "share": 43.73953407661273
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "gender",
+          "value": "U",
+          "votes": 6016,
+          "share": 5.2197301635503885
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 49007,
+          "share": 42.520498026116
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 8,
+          "share": 0.006941130536636155
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 353,
+          "share": 0.3062773849290703
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "REP",
+          "votes": 25911,
+          "share": 22.481454166847424
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 39976,
+          "share": 34.684829291570864
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 3041,
+          "share": 2.6384972452388182
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 20170,
+          "share": 17.500325365493904
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 201,
+          "share": 0.1743959047329834
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+          "votes": 5,
+          "share": 0.0043382065853975965
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 3247,
+          "share": 2.8172313565571994
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 557,
+          "share": 0.48327621361329226
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 6821,
+          "share": 5.9181814237994015
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 81213,
+          "share": 70.463754283979
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "18–24",
+          "votes": 1866,
+          "share": 25.00334985930591
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "25–34",
+          "votes": 1375,
+          "share": 18.424226182500334
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "35–44",
+          "votes": 869,
+          "share": 11.644110947340211
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "45–64",
+          "votes": 1879,
+          "share": 25.177542543213185
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 1474,
+          "share": 19.750770467640358
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 298,
+          "share": 3.993032292643709
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 4617,
+          "share": 61.865201661530214
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 2548,
+          "share": 34.141766045826074
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "gender",
+          "value": "F",
+          "votes": 3497,
+          "share": 46.857831971057216
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "gender",
+          "value": "M",
+          "votes": 3216,
+          "share": 43.09259011121533
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "gender",
+          "value": "U",
+          "votes": 750,
+          "share": 10.049577917727456
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 3473,
+          "share": 46.53624547768994
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 10,
+          "share": 0.13399437223636607
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 13,
+          "share": 0.1741926839072759
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "REP",
+          "votes": 434,
+          "share": 5.815355755058287
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 3533,
+          "share": 47.34021171110813
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 342,
+          "share": 4.5826075304837195
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 626,
+          "share": 8.388047701996516
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 20,
+          "share": 0.26798874447273213
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 347,
+          "share": 4.649604716601902
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 52,
+          "share": 0.6967707356291036
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 844,
+          "share": 11.309125016749297
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 5232,
+          "share": 70.10585555406674
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "18–24",
+          "votes": 10717,
+          "share": 5.873648326473345
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "25–34",
+          "votes": 17931,
+          "share": 9.827413281887985
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "35–44",
+          "votes": 22972,
+          "share": 12.590225749346429
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "45–64",
+          "votes": 65598,
+          "share": 35.95218651861514
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 65241,
+          "share": 35.7565261236771
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 6342,
+          "share": 3.4758493688993144
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 125033,
+          "share": 68.52662789996657
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 51084,
+          "share": 27.99752273113412
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "gender",
+          "value": "F",
+          "votes": 95382,
+          "share": 52.27585375344598
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "gender",
+          "value": "M",
+          "votes": 76035,
+          "share": 41.672375711803745
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "gender",
+          "value": "U",
+          "votes": 11042,
+          "share": 6.051770534750273
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 80220,
+          "share": 43.96604168607742
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 78,
+          "share": 0.04274932998646271
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 468,
+          "share": 0.25649597991877626
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "REP",
+          "votes": 27361,
+          "share": 14.995697663584696
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 74332,
+          "share": 40.739015340432644
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 7482,
+          "share": 4.1006472687014615
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 35663,
+          "share": 19.545760965477175
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 417,
+          "share": 0.22854449492762757
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+          "votes": 13,
+          "share": 0.007124888331077119
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 8504,
+          "share": 4.6607731051907555
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 825,
+          "share": 0.45215637485681714
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 12663,
+          "share": 6.940189302802273
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 116892,
+          "share": 64.06480359971282
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "18–24",
+          "votes": 12583,
+          "share": 6.625351460073083
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "25–34",
+          "votes": 19306,
+          "share": 10.16522572424469
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "35–44",
+          "votes": 23841,
+          "share": 12.553048093427828
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "45–64",
+          "votes": 67477,
+          "share": 35.52879603205526
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 66715,
+          "share": 35.12757869019914
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 6640,
+          "share": 3.496172112762081
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 129650,
+          "share": 68.26486662945841
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 53632,
+          "share": 28.238961257779508
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "gender",
+          "value": "F",
+          "votes": 98879,
+          "share": 52.06295215930751
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "gender",
+          "value": "M",
+          "votes": 79251,
+          "share": 41.72818314887164
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "gender",
+          "value": "U",
+          "votes": 11792,
+          "share": 6.208864691820853
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 83693,
+          "share": 44.067038047198324
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 88,
+          "share": 0.04633481113299144
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 481,
+          "share": 0.25326186539737366
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "REP",
+          "votes": 27795,
+          "share": 14.634955402744284
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 77865,
+          "share": 40.998409873527024
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 7824,
+          "share": 4.119585935278693
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 36289,
+          "share": 19.107317740967346
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 437,
+          "share": 0.23009445983087795
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+          "votes": 13,
+          "share": 0.006844915281010099
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 8851,
+          "share": 4.660334242478491
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 877,
+          "share": 0.46176851549583514
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 13507,
+          "share": 7.111866976969493
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 122124,
+          "share": 64.30218721369826
+        }
+      ],
+      "source": {
+        "label": "NCSBE accepted Wake County early-voting records; matched first 11 days",
+        "provider": "North Carolina State Board of Elections",
+        "files": [
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip"
+        ],
+        "executedAt": "2026-10-26T13:24:21Z",
+        "period": "2022-10-20 through 2022-10-30 versus 2026-10-15 through 2026-10-25",
+        "filters": [
+          "county_desc = WAKE",
+          "ballot_req_type in ONE-STOP, ONE STOP, EARLY VOTING",
+          "ballot_rtn_status = ACCEPTED",
+          "First 11 calendar days from each early-voting opening Thursday"
+        ],
+        "caveats": [
+          "2026 is preliminary. Ages 18–24 are an age proxy, not confirmed NC State students.",
+          "Ballot counts and composition, not registered-voter turnout rates. No causal impact is identified.",
+          "2022 finalized records versus 2026 live records; historical daily reporting lags cannot be reconstructed."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Official NCSBE downloads",
+            "detail": "Downloaded official absentee-by-county ZIP files; source Last-Modified and archive SHA-256 recorded in comparison.json."
+          },
+          {
+            "title": "Reproducible aggregation",
+            "detail": "scripts/build_early_voting_comparison.py --cutoff-date 2026-10-25; exact site mappings, unique accepted ncid check, aligned day index; export only aggregates."
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "College-age proxy",
+            "definition": "Source age field 18–24 inclusive, not verified enrollment."
+          },
+          {
+            "label": "Campus site",
+            "definition": "Talley Student Center in 2022; Western Boulevard Business Services in 2026."
+          },
+          {
+            "label": "Matched-day growth index",
+            "definition": "2026 cumulative accepted ballots through day d divided by 2022 cumulative accepted ballots through the same day, multiplied by 100. Not a turnout rate.",
+            "componentIds": [
+              "voting-growth-index"
+            ]
+          }
+        ]
+      }
+    },
+    "sites": {
+      "rows": [
+        {
+          "year": 2022,
+          "site_name": "AV - AVERY STREET RECREATION CENTER ANNEX",
+          "cohort": "18–22",
+          "votes": 136
+        },
+        {
+          "year": 2022,
+          "site_name": "AV - AVERY STREET RECREATION CENTER ANNEX",
+          "cohort": "18–24",
+          "votes": 204
+        },
+        {
+          "year": 2022,
+          "site_name": "AV - AVERY STREET RECREATION CENTER ANNEX",
+          "cohort": "All ages",
+          "votes": 6470
+        },
+        {
+          "year": 2022,
+          "site_name": "CA - HERBERT C. YOUNG COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 310
+        },
+        {
+          "year": 2022,
+          "site_name": "CA - HERBERT C. YOUNG COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 456
+        },
+        {
+          "year": 2022,
+          "site_name": "CA - HERBERT C. YOUNG COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 10883
+        },
+        {
+          "year": 2022,
+          "site_name": "CH - JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 143
+        },
+        {
+          "year": 2022,
+          "site_name": "CH - JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 227
+        },
+        {
+          "year": 2022,
+          "site_name": "CH - JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 6387
+        },
+        {
+          "year": 2022,
+          "site_name": "CS - CARY SENIOR CENTER",
+          "cohort": "18–22",
+          "votes": 380
+        },
+        {
+          "year": 2022,
+          "site_name": "CS - CARY SENIOR CENTER",
+          "cohort": "18–24",
+          "votes": 518
+        },
+        {
+          "year": 2022,
+          "site_name": "CS - CARY SENIOR CENTER",
+          "cohort": "All ages",
+          "votes": 10486
+        },
+        {
+          "year": 2022,
+          "site_name": "GREEN ROAD COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 147
+        },
+        {
+          "year": 2022,
+          "site_name": "GREEN ROAD COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 221
+        },
+        {
+          "year": 2022,
+          "site_name": "GREEN ROAD COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 6312
+        },
+        {
+          "year": 2022,
+          "site_name": "HS - HOLLY SPRINGS - HUNT COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 248
+        },
+        {
+          "year": 2022,
+          "site_name": "HS - HOLLY SPRINGS - HUNT COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 347
+        },
+        {
+          "year": 2022,
+          "site_name": "HS - HOLLY SPRINGS - HUNT COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 7449
+        },
+        {
+          "year": 2022,
+          "site_name": "HT - HILLTOP NEEDMORE TOWN PARK AND PRESERVE",
+          "cohort": "18–22",
+          "votes": 202
+        },
+        {
+          "year": 2022,
+          "site_name": "HT - HILLTOP NEEDMORE TOWN PARK AND PRESERVE",
+          "cohort": "18–24",
+          "votes": 271
+        },
+        {
+          "year": 2022,
+          "site_name": "HT - HILLTOP NEEDMORE TOWN PARK AND PRESERVE",
+          "cohort": "All ages",
+          "votes": 9046
+        },
+        {
+          "year": 2022,
+          "site_name": "JB - JOHN M. BROWN COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 345
+        },
+        {
+          "year": 2022,
+          "site_name": "JB - JOHN M. BROWN COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 463
+        },
+        {
+          "year": 2022,
+          "site_name": "JB - JOHN M. BROWN COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 10045
+        },
+        {
+          "year": 2022,
+          "site_name": "LL - LAKE LYNN COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 225
+        },
+        {
+          "year": 2022,
+          "site_name": "LL - LAKE LYNN COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 382
+        },
+        {
+          "year": 2022,
+          "site_name": "LL - LAKE LYNN COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 11269
+        },
+        {
+          "year": 2022,
+          "site_name": "NR - NORTHERN REGIONAL CENTER",
+          "cohort": "18–22",
+          "votes": 305
+        },
+        {
+          "year": 2022,
+          "site_name": "NR - NORTHERN REGIONAL CENTER",
+          "cohort": "18–24",
+          "votes": 397
+        },
+        {
+          "year": 2022,
+          "site_name": "NR - NORTHERN REGIONAL CENTER",
+          "cohort": "All ages",
+          "votes": 11115
+        },
+        {
+          "year": 2022,
+          "site_name": "OP - OPTIMIST PARK COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 193
+        },
+        {
+          "year": 2022,
+          "site_name": "OP - OPTIMIST PARK COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 305
+        },
+        {
+          "year": 2022,
+          "site_name": "OP - OPTIMIST PARK COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 9049
+        },
+        {
+          "year": 2022,
+          "site_name": "SOUTHEAST RALEIGH YMCA",
+          "cohort": "18–22",
+          "votes": 73
+        },
+        {
+          "year": 2022,
+          "site_name": "SOUTHEAST RALEIGH YMCA",
+          "cohort": "18–24",
+          "votes": 99
+        },
+        {
+          "year": 2022,
+          "site_name": "SOUTHEAST RALEIGH YMCA",
+          "cohort": "All ages",
+          "votes": 2305
+        },
+        {
+          "year": 2022,
+          "site_name": "TA - NCSU TALLEY STUDENT CENTER",
+          "cohort": "18–22",
+          "votes": 970
+        },
+        {
+          "year": 2022,
+          "site_name": "TA - NCSU TALLEY STUDENT CENTER",
+          "cohort": "18–24",
+          "votes": 1259
+        },
+        {
+          "year": 2022,
+          "site_name": "TA - NCSU TALLEY STUDENT CENTER",
+          "cohort": "All ages",
+          "votes": 4863
+        },
+        {
+          "year": 2022,
+          "site_name": "WAKE COUNTY BOARD OF ELECTIONS OFFICE",
+          "cohort": "18–22",
+          "votes": 105
+        },
+        {
+          "year": 2022,
+          "site_name": "WAKE COUNTY BOARD OF ELECTIONS OFFICE",
+          "cohort": "18–24",
+          "votes": 153
+        },
+        {
+          "year": 2022,
+          "site_name": "WAKE COUNTY BOARD OF ELECTIONS OFFICE",
+          "cohort": "All ages",
+          "votes": 5063
+        },
+        {
+          "year": 2022,
+          "site_name": "WD - WENDELL COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 82
+        },
+        {
+          "year": 2022,
+          "site_name": "WD - WENDELL COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 110
+        },
+        {
+          "year": 2022,
+          "site_name": "WD - WENDELL COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 4513
+        },
+        {
+          "year": 2026,
+          "site_name": "ABBOTTS CREEK COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 646
+        },
+        {
+          "year": 2026,
+          "site_name": "ABBOTTS CREEK COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 918
+        },
+        {
+          "year": 2026,
+          "site_name": "ABBOTTS CREEK COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 14405
+        },
+        {
+          "year": 2026,
+          "site_name": "AVERY STREET RECREATION CENTER ANNEX",
+          "cohort": "18–22",
+          "votes": 310
+        },
+        {
+          "year": 2026,
+          "site_name": "AVERY STREET RECREATION CENTER ANNEX",
+          "cohort": "18–24",
+          "votes": 465
+        },
+        {
+          "year": 2026,
+          "site_name": "AVERY STREET RECREATION CENTER ANNEX",
+          "cohort": "All ages",
+          "votes": 9265
+        },
+        {
+          "year": 2026,
+          "site_name": "BEECH BLUFF COUNTY PARK",
+          "cohort": "18–22",
+          "votes": 120
+        },
+        {
+          "year": 2026,
+          "site_name": "BEECH BLUFF COUNTY PARK",
+          "cohort": "18–24",
+          "votes": 170
+        },
+        {
+          "year": 2026,
+          "site_name": "BEECH BLUFF COUNTY PARK",
+          "cohort": "All ages",
+          "votes": 3200
+        },
+        {
+          "year": 2026,
+          "site_name": "CARY SENIOR CENTER",
+          "cohort": "18–22",
+          "votes": 796
+        },
+        {
+          "year": 2026,
+          "site_name": "CARY SENIOR CENTER",
+          "cohort": "18–24",
+          "votes": 1153
+        },
+        {
+          "year": 2026,
+          "site_name": "CARY SENIOR CENTER",
+          "cohort": "All ages",
+          "votes": 16360
+        },
+        {
+          "year": 2026,
+          "site_name": "HERBERT C. YOUNG COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 537
+        },
+        {
+          "year": 2026,
+          "site_name": "HERBERT C. YOUNG COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 866
+        },
+        {
+          "year": 2026,
+          "site_name": "HERBERT C. YOUNG COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 14752
+        },
+        {
+          "year": 2026,
+          "site_name": "HILLTOP NEEDMORE TOWN PARK CLUBHOUSE",
+          "cohort": "18–22",
+          "votes": 366
+        },
+        {
+          "year": 2026,
+          "site_name": "HILLTOP NEEDMORE TOWN PARK CLUBHOUSE",
+          "cohort": "18–24",
+          "votes": 485
+        },
+        {
+          "year": 2026,
+          "site_name": "HILLTOP NEEDMORE TOWN PARK CLUBHOUSE",
+          "cohort": "All ages",
+          "votes": 10626
+        },
+        {
+          "year": 2026,
+          "site_name": "JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 440
+        },
+        {
+          "year": 2026,
+          "site_name": "JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 688
+        },
+        {
+          "year": 2026,
+          "site_name": "JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 12356
+        },
+        {
+          "year": 2026,
+          "site_name": "JOHN M. BROWN COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 842
+        },
+        {
+          "year": 2026,
+          "site_name": "JOHN M. BROWN COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 1151
+        },
+        {
+          "year": 2026,
+          "site_name": "JOHN M. BROWN COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 16523
+        },
+        {
+          "year": 2026,
+          "site_name": "JOYNER PARK COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 624
+        },
+        {
+          "year": 2026,
+          "site_name": "JOYNER PARK COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 820
+        },
+        {
+          "year": 2026,
+          "site_name": "JOYNER PARK COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 13738
+        },
+        {
+          "year": 2026,
+          "site_name": "KNIGHTDALE RECREATION CENTER",
+          "cohort": "18–22",
+          "votes": 354
+        },
+        {
+          "year": 2026,
+          "site_name": "KNIGHTDALE RECREATION CENTER",
+          "cohort": "18–24",
+          "votes": 523
+        },
+        {
+          "year": 2026,
+          "site_name": "KNIGHTDALE RECREATION CENTER",
+          "cohort": "All ages",
+          "votes": 8998
+        },
+        {
+          "year": 2026,
+          "site_name": "LAKE LYNN COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 499
+        },
+        {
+          "year": 2026,
+          "site_name": "LAKE LYNN COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 732
+        },
+        {
+          "year": 2026,
+          "site_name": "LAKE LYNN COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 15375
+        },
+        {
+          "year": 2026,
+          "site_name": "LAUREL HILLS COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 298
+        },
+        {
+          "year": 2026,
+          "site_name": "LAUREL HILLS COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 533
+        },
+        {
+          "year": 2026,
+          "site_name": "LAUREL HILLS COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 9212
+        },
+        {
+          "year": 2026,
+          "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
+          "cohort": "18–22",
+          "votes": 1448
+        },
+        {
+          "year": 2026,
+          "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
+          "cohort": "18–24",
+          "votes": 1866
+        },
+        {
+          "year": 2026,
+          "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
+          "cohort": "All ages",
+          "votes": 7463
+        },
+        {
+          "year": 2026,
+          "site_name": "OPTIMIST PARK COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 320
+        },
+        {
+          "year": 2026,
+          "site_name": "OPTIMIST PARK COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 518
+        },
+        {
+          "year": 2026,
+          "site_name": "OPTIMIST PARK COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 11346
+        },
+        {
+          "year": 2026,
+          "site_name": "W.E. HUNT RECREATION CENTER",
+          "cohort": "18–22",
+          "votes": 510
+        },
+        {
+          "year": 2026,
+          "site_name": "W.E. HUNT RECREATION CENTER",
+          "cohort": "18–24",
+          "votes": 671
+        },
+        {
+          "year": 2026,
+          "site_name": "W.E. HUNT RECREATION CENTER",
+          "cohort": "All ages",
+          "votes": 10302
+        },
+        {
+          "year": 2026,
+          "site_name": "WAKE COUNTY COMMONS BUILDING",
+          "cohort": "18–22",
+          "votes": 200
+        },
+        {
+          "year": 2026,
+          "site_name": "WAKE COUNTY COMMONS BUILDING",
+          "cohort": "18–24",
+          "votes": 338
+        },
+        {
+          "year": 2026,
+          "site_name": "WAKE COUNTY COMMONS BUILDING",
+          "cohort": "All ages",
+          "votes": 5519
+        },
+        {
+          "year": 2026,
+          "site_name": "WAKE TECH COMMUNITY COLLEGE",
+          "cohort": "18–22",
+          "votes": 291
+        },
+        {
+          "year": 2026,
+          "site_name": "WAKE TECH COMMUNITY COLLEGE",
+          "cohort": "18–24",
+          "votes": 393
+        },
+        {
+          "year": 2026,
+          "site_name": "WAKE TECH COMMUNITY COLLEGE",
+          "cohort": "All ages",
+          "votes": 3959
+        },
+        {
+          "year": 2026,
+          "site_name": "WENDELL COMMUNITY CENTER",
+          "cohort": "18–22",
+          "votes": 209
+        },
+        {
+          "year": 2026,
+          "site_name": "WENDELL COMMUNITY CENTER",
+          "cohort": "18–24",
+          "votes": 293
+        },
+        {
+          "year": 2026,
+          "site_name": "WENDELL COMMUNITY CENTER",
+          "cohort": "All ages",
+          "votes": 6523
+        }
+      ],
+      "source": {
+        "label": "NCSBE accepted Wake County early-voting records; matched first 11 days",
+        "provider": "North Carolina State Board of Elections",
+        "files": [
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip"
+        ],
+        "executedAt": "2026-10-26T13:24:21Z",
+        "period": "2022-10-20 through 2022-10-30 versus 2026-10-15 through 2026-10-25",
+        "filters": [
+          "county_desc = WAKE",
+          "ballot_req_type in ONE-STOP, ONE STOP, EARLY VOTING",
+          "ballot_rtn_status = ACCEPTED",
+          "First 11 calendar days from each early-voting opening Thursday"
+        ],
+        "caveats": [
+          "2026 is preliminary. Ages 18–24 are an age proxy, not confirmed NC State students.",
+          "Ballot counts and composition, not registered-voter turnout rates. No causal impact is identified.",
+          "2022 finalized records versus 2026 live records; historical daily reporting lags cannot be reconstructed."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Official NCSBE downloads",
+            "detail": "Downloaded official absentee-by-county ZIP files; source Last-Modified and archive SHA-256 recorded in comparison.json."
+          },
+          {
+            "title": "Reproducible aggregation",
+            "detail": "scripts/build_early_voting_comparison.py --cutoff-date 2026-10-25; exact site mappings, unique accepted ncid check, aligned day index; export only aggregates."
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "College-age proxy",
+            "definition": "Source age field 18–24 inclusive, not verified enrollment."
+          },
+          {
+            "label": "Campus site",
+            "definition": "Talley Student Center in 2022; Western Boulevard Business Services in 2026."
+          },
+          {
+            "label": "Matched-day growth index",
+            "definition": "2026 cumulative accepted ballots through day d divided by 2022 cumulative accepted ballots through the same day, multiplied by 100. Not a turnout rate.",
+            "componentIds": [
+              "voting-growth-index"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "as_of": "2026-10-25",
+    "retrieved_at": "Mon, 26 Oct 2026 13:24:21 GMT",
+    "source_last_modified": "Mon, 26 Oct 2026 09:23:23 GMT",
+    "matched_days": 11,
+    "site_mapping": {
+      "2022": "TA - NCSU TALLEY STUDENT CENTER",
+      "2026": "NCSU WESTERN BLVD BUSINESS SERVICES"
+    },
+    "sources": [
+      {
+        "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+        "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+        "downloaded_at": "Mon, 26 Oct 2026 13:24:16 GMT",
+        "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+        "bytes": 99765322,
+        "member": "WAKE_absentee_20221108.csv"
+      },
+      {
+        "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+        "last_modified": "Mon, 26 Oct 2026 09:23:23 GMT",
+        "downloaded_at": "Mon, 26 Oct 2026 13:24:21 GMT",
+        "sha256": "14ad25264718d9f5dfd99e2c4cd8617a711a4459e8fb45cb91dd69525fb185cf",
+        "bytes": 69073551,
+        "member": "WAKE_absentee_20261103.csv"
+      }
+    ],
+    "summary": [
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "start_date": "2022-10-20",
+        "end_date": "2022-10-30",
+        "matched_days": 11,
+        "all_ages": 4863,
+        "age_18_24": 1259,
+        "age_18_22": 970,
+        "age_18_24_share": 25.88936870244705,
+        "same_day_registration": 204
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "start_date": "2022-10-20",
+        "end_date": "2022-10-30",
+        "matched_days": 11,
+        "all_ages": 115255,
+        "age_18_24": 5412,
+        "age_18_22": 3864,
+        "age_18_24_share": 4.695674808034359,
+        "same_day_registration": 1123
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "start_date": "2022-10-20",
+        "end_date": "2022-10-30",
+        "matched_days": 11,
+        "all_ages": 110392,
+        "age_18_24": 4153,
+        "age_18_22": 2894,
+        "age_18_24_share": 3.7620479744909052,
+        "same_day_registration": 919
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "start_date": "2026-10-15",
+        "end_date": "2026-10-25",
+        "matched_days": 11,
+        "all_ages": 7463,
+        "age_18_24": 1866,
+        "age_18_22": 1448,
+        "age_18_24_share": 25.00334985930591,
+        "same_day_registration": 297
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "start_date": "2026-10-15",
+        "end_date": "2026-10-25",
+        "matched_days": 11,
+        "all_ages": 189922,
+        "age_18_24": 12583,
+        "age_18_22": 8810,
+        "age_18_24_share": 6.625351460073083,
+        "same_day_registration": 1797
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "start_date": "2026-10-15",
+        "end_date": "2026-10-25",
+        "matched_days": 11,
+        "all_ages": 182459,
+        "age_18_24": 10717,
+        "age_18_22": 7362,
+        "age_18_24_share": 5.873648326473345,
+        "same_day_registration": 1500
+      }
+    ],
+    "metrics": {
+      "campus_total_change_pct": 53.46493933785729,
+      "campus_youth_change_pct": 48.212867355043684,
+      "wake_youth_change_pct": 132.50184774575018,
+      "campus_youth_share_change_pp": -0.8860188431411409,
+      "campus_share_wake_youth_2022": 23.26311899482631,
+      "campus_share_wake_youth_2026": 14.829531908130017
+    },
+    "full_file_context": {
+      "2022": {
+        "wake_accepted_early": 219169,
+        "campus_accepted_early": 10390
+      },
+      "2026": {
+        "wake_accepted_early": 189922,
+        "campus_accepted_early": 7463
+      }
+    },
+    "qa": {
+      "2022": {
+        "accepted_early_unique_ncid": 219169,
+        "accepted_early_rows": 219169,
+        "duplicate_accepted_ncid": 0,
+        "accepted_early_by_date": {
+          "2022-10-20": 12062,
+          "2022-10-21": 12588,
+          "2022-10-22": 6873,
+          "2022-10-23": 5769,
+          "2022-10-24": 12539,
+          "2022-10-25": 11844,
+          "2022-10-26": 12120,
+          "2022-10-27": 11995,
+          "2022-10-28": 13897,
+          "2022-10-29": 8484,
+          "2022-10-30": 7084,
+          "2022-10-31": 12580,
+          "2022-11-01": 14170,
+          "2022-11-02": 15911,
+          "2022-11-03": 18291,
+          "2022-11-04": 24113,
+          "2022-11-05": 18849
+        },
+        "early_statuses_before_filter": {
+          "ACCEPTED": 219169,
+          "CANCELLED": 316,
+          "WRONG VOTER": 4,
+          "NOT VOTED": 1
+        },
+        "unknown_or_outside_range_age": 0
+      },
+      "2026": {
+        "accepted_early_unique_ncid": 189922,
+        "accepted_early_rows": 189922,
+        "duplicate_accepted_ncid": 0,
+        "accepted_early_by_date": {
+          "2026-10-15": 21739,
+          "2026-10-16": 22189,
+          "2026-10-17": 12197,
+          "2026-10-18": 9861,
+          "2026-10-19": 21776,
+          "2026-10-20": 20451,
+          "2026-10-21": 19279,
+          "2026-10-22": 18195,
+          "2026-10-23": 21125,
+          "2026-10-24": 12874,
+          "2026-10-25": 10236
+        },
+        "early_statuses_before_filter": {
+          "ACCEPTED": 189922,
+          "CANCELLED": 252
+        },
+        "unknown_or_outside_range_age": 0
+      }
+    },
+    "daily": [
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 389,
+        "cumulative": 389
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 441,
+        "cumulative": 830
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 342,
+        "cumulative": 1172
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 313,
+        "cumulative": 1485
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 426,
+        "cumulative": 1911
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 445,
+        "cumulative": 2356
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 503,
+        "cumulative": 2859
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 481,
+        "cumulative": 3340
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 611,
+        "cumulative": 3951
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 476,
+        "cumulative": 4427
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 436,
+        "cumulative": 4863
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 95,
+        "cumulative": 95
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 106,
+        "cumulative": 201
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 60,
+        "cumulative": 261
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 75,
+        "cumulative": 336
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 132,
+        "cumulative": 468
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 152,
+        "cumulative": 620
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 154,
+        "cumulative": 774
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 136,
+        "cumulative": 910
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 178,
+        "cumulative": 1088
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 81,
+        "cumulative": 1169
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 90,
+        "cumulative": 1259
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 74,
+        "cumulative": 74
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 90,
+        "cumulative": 164
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 43,
+        "cumulative": 207
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 59,
+        "cumulative": 266
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 110,
+        "cumulative": 376
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 120,
+        "cumulative": 496
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 124,
+        "cumulative": 620
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 98,
+        "cumulative": 718
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 141,
+        "cumulative": 859
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 50,
+        "cumulative": 909
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 61,
+        "cumulative": 970
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 12062,
+        "cumulative": 12062
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 12588,
+        "cumulative": 24650
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 6873,
+        "cumulative": 31523
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 5769,
+        "cumulative": 37292
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 12539,
+        "cumulative": 49831
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 11844,
+        "cumulative": 61675
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 12120,
+        "cumulative": 73795
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 11995,
+        "cumulative": 85790
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 13897,
+        "cumulative": 99687
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 8484,
+        "cumulative": 108171
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 7084,
+        "cumulative": 115255
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 395,
+        "cumulative": 395
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 520,
+        "cumulative": 915
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 464,
+        "cumulative": 1379
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 509,
+        "cumulative": 1888
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 439,
+        "cumulative": 2327
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 393,
+        "cumulative": 2720
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 449,
+        "cumulative": 3169
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 463,
+        "cumulative": 3632
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 701,
+        "cumulative": 4333
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 572,
+        "cumulative": 4905
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 507,
+        "cumulative": 5412
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 285,
+        "cumulative": 285
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 404,
+        "cumulative": 689
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 361,
+        "cumulative": 1050
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 392,
+        "cumulative": 1442
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 320,
+        "cumulative": 1762
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 262,
+        "cumulative": 2024
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 304,
+        "cumulative": 2328
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 302,
+        "cumulative": 2630
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 491,
+        "cumulative": 3121
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 397,
+        "cumulative": 3518
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 346,
+        "cumulative": 3864
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 11673,
+        "cumulative": 11673
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 12147,
+        "cumulative": 23820
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 6531,
+        "cumulative": 30351
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 5456,
+        "cumulative": 35807
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 12113,
+        "cumulative": 47920
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 11399,
+        "cumulative": 59319
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 11617,
+        "cumulative": 70936
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 11514,
+        "cumulative": 82450
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 13286,
+        "cumulative": 95736
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 8008,
+        "cumulative": 103744
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 6648,
+        "cumulative": 110392
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 300,
+        "cumulative": 300
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 414,
+        "cumulative": 714
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 404,
+        "cumulative": 1118
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 434,
+        "cumulative": 1552
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 307,
+        "cumulative": 1859
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 241,
+        "cumulative": 2100
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 295,
+        "cumulative": 2395
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 327,
+        "cumulative": 2722
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 523,
+        "cumulative": 3245
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 491,
+        "cumulative": 3736
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 417,
+        "cumulative": 4153
+      },
+      {
+        "year": 2022,
+        "day": 1,
+        "date": "2022-10-20",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 211,
+        "cumulative": 211
+      },
+      {
+        "year": 2022,
+        "day": 2,
+        "date": "2022-10-21",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 314,
+        "cumulative": 525
+      },
+      {
+        "year": 2022,
+        "day": 3,
+        "date": "2022-10-22",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 318,
+        "cumulative": 843
+      },
+      {
+        "year": 2022,
+        "day": 4,
+        "date": "2022-10-23",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 333,
+        "cumulative": 1176
+      },
+      {
+        "year": 2022,
+        "day": 5,
+        "date": "2022-10-24",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 210,
+        "cumulative": 1386
+      },
+      {
+        "year": 2022,
+        "day": 6,
+        "date": "2022-10-25",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 142,
+        "cumulative": 1528
+      },
+      {
+        "year": 2022,
+        "day": 7,
+        "date": "2022-10-26",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 180,
+        "cumulative": 1708
+      },
+      {
+        "year": 2022,
+        "day": 8,
+        "date": "2022-10-27",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 204,
+        "cumulative": 1912
+      },
+      {
+        "year": 2022,
+        "day": 9,
+        "date": "2022-10-28",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 350,
+        "cumulative": 2262
+      },
+      {
+        "year": 2022,
+        "day": 10,
+        "date": "2022-10-29",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 347,
+        "cumulative": 2609
+      },
+      {
+        "year": 2022,
+        "day": 11,
+        "date": "2022-10-30",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 285,
+        "cumulative": 2894
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 831,
+        "cumulative": 831
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 803,
+        "cumulative": 1634
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 467,
+        "cumulative": 2101
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 398,
+        "cumulative": 2499
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 684,
+        "cumulative": 3183
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 725,
+        "cumulative": 3908
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 734,
+        "cumulative": 4642
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 729,
+        "cumulative": 5371
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 1004,
+        "cumulative": 6375
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 571,
+        "cumulative": 6946
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Campus site",
+        "cohort": "All ages",
+        "votes": 517,
+        "cumulative": 7463
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 155,
+        "cumulative": 155
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 152,
+        "cumulative": 307
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 73,
+        "cumulative": 380
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 68,
+        "cumulative": 448
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 129,
+        "cumulative": 577
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 190,
+        "cumulative": 767
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 229,
+        "cumulative": 996
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 251,
+        "cumulative": 1247
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 338,
+        "cumulative": 1585
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 140,
+        "cumulative": 1725
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Campus site",
+        "cohort": "18–24",
+        "votes": 141,
+        "cumulative": 1866
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 124,
+        "cumulative": 124
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 115,
+        "cumulative": 239
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 47,
+        "cumulative": 286
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 49,
+        "cumulative": 335
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 90,
+        "cumulative": 425
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 160,
+        "cumulative": 585
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 177,
+        "cumulative": 762
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 202,
+        "cumulative": 964
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 277,
+        "cumulative": 1241
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 93,
+        "cumulative": 1334
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Campus site",
+        "cohort": "18–22",
+        "votes": 114,
+        "cumulative": 1448
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 21739,
+        "cumulative": 21739
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 22189,
+        "cumulative": 43928
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 12197,
+        "cumulative": 56125
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 9861,
+        "cumulative": 65986
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 21776,
+        "cumulative": 87762
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 20451,
+        "cumulative": 108213
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 19279,
+        "cumulative": 127492
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 18195,
+        "cumulative": 145687
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 21125,
+        "cumulative": 166812
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 12874,
+        "cumulative": 179686
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Wake County",
+        "cohort": "All ages",
+        "votes": 10236,
+        "cumulative": 189922
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 895,
+        "cumulative": 895
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1206,
+        "cumulative": 2101
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1061,
+        "cumulative": 3162
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 869,
+        "cumulative": 4031
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1154,
+        "cumulative": 5185
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1164,
+        "cumulative": 6349
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 962,
+        "cumulative": 7311
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1044,
+        "cumulative": 8355
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1591,
+        "cumulative": 9946
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1375,
+        "cumulative": 11321
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Wake County",
+        "cohort": "18–24",
+        "votes": 1262,
+        "cumulative": 12583
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 636,
+        "cumulative": 636
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 855,
+        "cumulative": 1491
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 761,
+        "cumulative": 2252
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 653,
+        "cumulative": 2905
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 783,
+        "cumulative": 3688
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 812,
+        "cumulative": 4500
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 623,
+        "cumulative": 5123
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 684,
+        "cumulative": 5807
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 1114,
+        "cumulative": 6921
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 996,
+        "cumulative": 7917
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Wake County",
+        "cohort": "18–22",
+        "votes": 893,
+        "cumulative": 8810
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 20908,
+        "cumulative": 20908
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 21386,
+        "cumulative": 42294
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 11730,
+        "cumulative": 54024
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 9463,
+        "cumulative": 63487
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 21092,
+        "cumulative": 84579
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 19726,
+        "cumulative": 104305
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 18545,
+        "cumulative": 122850
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 17466,
+        "cumulative": 140316
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 20121,
+        "cumulative": 160437
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 12303,
+        "cumulative": 172740
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Other Wake sites",
+        "cohort": "All ages",
+        "votes": 9719,
+        "cumulative": 182459
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 740,
+        "cumulative": 740
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 1054,
+        "cumulative": 1794
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 988,
+        "cumulative": 2782
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 801,
+        "cumulative": 3583
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 1025,
+        "cumulative": 4608
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 974,
+        "cumulative": 5582
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 733,
+        "cumulative": 6315
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 793,
+        "cumulative": 7108
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 1253,
+        "cumulative": 8361
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 1235,
+        "cumulative": 9596
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Other Wake sites",
+        "cohort": "18–24",
+        "votes": 1121,
+        "cumulative": 10717
+      },
+      {
+        "year": 2026,
+        "day": 1,
+        "date": "2026-10-15",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 512,
+        "cumulative": 512
+      },
+      {
+        "year": 2026,
+        "day": 2,
+        "date": "2026-10-16",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 740,
+        "cumulative": 1252
+      },
+      {
+        "year": 2026,
+        "day": 3,
+        "date": "2026-10-17",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 714,
+        "cumulative": 1966
+      },
+      {
+        "year": 2026,
+        "day": 4,
+        "date": "2026-10-18",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 604,
+        "cumulative": 2570
+      },
+      {
+        "year": 2026,
+        "day": 5,
+        "date": "2026-10-19",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 693,
+        "cumulative": 3263
+      },
+      {
+        "year": 2026,
+        "day": 6,
+        "date": "2026-10-20",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 652,
+        "cumulative": 3915
+      },
+      {
+        "year": 2026,
+        "day": 7,
+        "date": "2026-10-21",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 446,
+        "cumulative": 4361
+      },
+      {
+        "year": 2026,
+        "day": 8,
+        "date": "2026-10-22",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 482,
+        "cumulative": 4843
+      },
+      {
+        "year": 2026,
+        "day": 9,
+        "date": "2026-10-23",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 837,
+        "cumulative": 5680
+      },
+      {
+        "year": 2026,
+        "day": 10,
+        "date": "2026-10-24",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 903,
+        "cumulative": 6583
+      },
+      {
+        "year": 2026,
+        "day": 11,
+        "date": "2026-10-25",
+        "scope": "Other Wake sites",
+        "cohort": "18–22",
+        "votes": 779,
+        "cumulative": 7362
+      }
+    ],
+    "demographics": [
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "18–24",
+        "votes": 1259,
+        "share": 25.88936870244705
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "25–34",
+        "votes": 928,
+        "share": 19.08287065597368
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "35–44",
+        "votes": 544,
+        "share": 11.186510384536295
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "45–64",
+        "votes": 1342,
+        "share": 27.596134073617108
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "65+",
+        "votes": 790,
+        "share": 16.245116183425868
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "ethnicity",
+        "value": "HISPANIC or LATINO",
+        "votes": 116,
+        "share": 2.38535883199671
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "ethnicity",
+        "value": "NOT HISPANIC or NOT LATINO",
+        "votes": 3507,
+        "share": 72.11597779148674
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "ethnicity",
+        "value": "UNDESIGNATED",
+        "votes": 1240,
+        "share": 25.498663376516554
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "gender",
+        "value": "F",
+        "votes": 2142,
+        "share": 44.04688463911166
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "gender",
+        "value": "M",
+        "votes": 2190,
+        "share": 45.033929673041335
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "gender",
+        "value": "U",
+        "votes": 531,
+        "share": 10.919185687847008
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "DEM",
+        "votes": 2280,
+        "share": 46.88463911165947
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "GRE",
+        "votes": 1,
+        "share": 0.02056343820686819
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "LIB",
+        "votes": 20,
+        "share": 0.41126876413736374
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "REP",
+        "votes": 507,
+        "share": 10.42566317088217
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "UNA",
+        "votes": 2055,
+        "share": 42.257865515114126
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "ASIAN",
+        "votes": 160,
+        "share": 3.29015011309891
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "BLACK or AFRICAN AMERICAN",
+        "votes": 290,
+        "share": 5.963397079991775
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "INDIAN AMERICAN or ALASKA NATIVE",
+        "votes": 7,
+        "share": 0.1439440674480773
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "OTHER",
+        "votes": 151,
+        "share": 3.1050791692370963
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "TWO or MORE RACES",
+        "votes": 41,
+        "share": 0.8431009664815957
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "UNDESIGNATED",
+        "votes": 533,
+        "share": 10.960312564260745
+      },
+      {
+        "year": 2022,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "WHITE",
+        "votes": 3681,
+        "share": 75.6940160394818
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "18–24",
+        "votes": 4153,
+        "share": 3.7620479744909052
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "25–34",
+        "votes": 8597,
+        "share": 7.78770200739184
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "35–44",
+        "votes": 12959,
+        "share": 11.739075295311254
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "45–64",
+        "votes": 43708,
+        "share": 39.59344880063773
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "65+",
+        "votes": 40975,
+        "share": 37.117725922168276
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "ethnicity",
+        "value": "HISPANIC or LATINO",
+        "votes": 2162,
+        "share": 1.9584752518298427
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "ethnicity",
+        "value": "NOT HISPANIC or NOT LATINO",
+        "votes": 83051,
+        "share": 75.23280672512502
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "ethnicity",
+        "value": "UNDESIGNATED",
+        "votes": 25179,
+        "share": 22.80871802304515
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "gender",
+        "value": "F",
+        "votes": 56685,
+        "share": 51.34882962533517
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "gender",
+        "value": "M",
+        "votes": 48222,
+        "share": 43.68251322559606
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "gender",
+        "value": "U",
+        "votes": 5485,
+        "share": 4.968657149068773
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "DEM",
+        "votes": 46727,
+        "share": 42.328248423798826
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "GRE",
+        "votes": 7,
+        "share": 0.006341039205739547
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "LIB",
+        "votes": 333,
+        "share": 0.301652293644467
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "REP",
+        "votes": 25404,
+        "share": 23.01253714037249
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "UNA",
+        "votes": 37921,
+        "share": 34.35122110297848
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "ASIAN",
+        "votes": 2881,
+        "share": 2.609790564533662
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "BLACK or AFRICAN AMERICAN",
+        "votes": 19880,
+        "share": 18.00855134430031
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "INDIAN AMERICAN or ALASKA NATIVE",
+        "votes": 194,
+        "share": 0.17573737227335315
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+        "votes": 5,
+        "share": 0.00452931371838539
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "OTHER",
+        "votes": 3096,
+        "share": 2.8045510544242336
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "TWO or MORE RACES",
+        "votes": 516,
+        "share": 0.4674251757373723
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "UNDESIGNATED",
+        "votes": 6288,
+        "share": 5.696064932241467
+      },
+      {
+        "year": 2022,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "WHITE",
+        "votes": 77532,
+        "share": 70.23335024277121
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "18–24",
+        "votes": 5412,
+        "share": 4.695674808034359
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "25–34",
+        "votes": 9525,
+        "share": 8.26428354518242
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "35–44",
+        "votes": 13503,
+        "share": 11.71576070452475
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "45–64",
+        "votes": 45050,
+        "share": 39.08724133443235
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "65+",
+        "votes": 41765,
+        "share": 36.23703960782613
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "ethnicity",
+        "value": "HISPANIC or LATINO",
+        "votes": 2278,
+        "share": 1.9764869203071451
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "ethnicity",
+        "value": "NOT HISPANIC or NOT LATINO",
+        "votes": 86558,
+        "share": 75.10129712376903
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "ethnicity",
+        "value": "UNDESIGNATED",
+        "votes": 26419,
+        "share": 22.92221595592382
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "gender",
+        "value": "F",
+        "votes": 58827,
+        "share": 51.040735759836885
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "gender",
+        "value": "M",
+        "votes": 50412,
+        "share": 43.73953407661273
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "gender",
+        "value": "U",
+        "votes": 6016,
+        "share": 5.2197301635503885
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "DEM",
+        "votes": 49007,
+        "share": 42.520498026116
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "GRE",
+        "votes": 8,
+        "share": 0.006941130536636155
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "LIB",
+        "votes": 353,
+        "share": 0.3062773849290703
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "REP",
+        "votes": 25911,
+        "share": 22.481454166847424
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "UNA",
+        "votes": 39976,
+        "share": 34.684829291570864
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "ASIAN",
+        "votes": 3041,
+        "share": 2.6384972452388182
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "BLACK or AFRICAN AMERICAN",
+        "votes": 20170,
+        "share": 17.500325365493904
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "INDIAN AMERICAN or ALASKA NATIVE",
+        "votes": 201,
+        "share": 0.1743959047329834
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+        "votes": 5,
+        "share": 0.0043382065853975965
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "OTHER",
+        "votes": 3247,
+        "share": 2.8172313565571994
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "TWO or MORE RACES",
+        "votes": 557,
+        "share": 0.48327621361329226
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "UNDESIGNATED",
+        "votes": 6821,
+        "share": 5.9181814237994015
+      },
+      {
+        "year": 2022,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "WHITE",
+        "votes": 81213,
+        "share": 70.463754283979
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "18–24",
+        "votes": 1866,
+        "share": 25.00334985930591
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "25–34",
+        "votes": 1375,
+        "share": 18.424226182500334
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "35–44",
+        "votes": 869,
+        "share": 11.644110947340211
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "45–64",
+        "votes": 1879,
+        "share": 25.177542543213185
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "age_group",
+        "value": "65+",
+        "votes": 1474,
+        "share": 19.750770467640358
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "ethnicity",
+        "value": "HISPANIC or LATINO",
+        "votes": 298,
+        "share": 3.993032292643709
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "ethnicity",
+        "value": "NOT HISPANIC or NOT LATINO",
+        "votes": 4617,
+        "share": 61.865201661530214
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "ethnicity",
+        "value": "UNDESIGNATED",
+        "votes": 2548,
+        "share": 34.141766045826074
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "gender",
+        "value": "F",
+        "votes": 3497,
+        "share": 46.857831971057216
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "gender",
+        "value": "M",
+        "votes": 3216,
+        "share": 43.09259011121533
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "gender",
+        "value": "U",
+        "votes": 750,
+        "share": 10.049577917727456
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "DEM",
+        "votes": 3473,
+        "share": 46.53624547768994
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "GRE",
+        "votes": 10,
+        "share": 0.13399437223636607
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "LIB",
+        "votes": 13,
+        "share": 0.1741926839072759
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "REP",
+        "votes": 434,
+        "share": 5.815355755058287
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "party",
+        "value": "UNA",
+        "votes": 3533,
+        "share": 47.34021171110813
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "ASIAN",
+        "votes": 342,
+        "share": 4.5826075304837195
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "BLACK or AFRICAN AMERICAN",
+        "votes": 626,
+        "share": 8.388047701996516
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "INDIAN AMERICAN or ALASKA NATIVE",
+        "votes": 20,
+        "share": 0.26798874447273213
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "OTHER",
+        "votes": 347,
+        "share": 4.649604716601902
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "TWO or MORE RACES",
+        "votes": 52,
+        "share": 0.6967707356291036
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "UNDESIGNATED",
+        "votes": 844,
+        "share": 11.309125016749297
+      },
+      {
+        "year": 2026,
+        "scope": "Campus site",
+        "dimension": "race",
+        "value": "WHITE",
+        "votes": 5232,
+        "share": 70.10585555406674
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "18–24",
+        "votes": 10717,
+        "share": 5.873648326473345
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "25–34",
+        "votes": 17931,
+        "share": 9.827413281887985
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "35–44",
+        "votes": 22972,
+        "share": 12.590225749346429
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "45–64",
+        "votes": 65598,
+        "share": 35.95218651861514
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "age_group",
+        "value": "65+",
+        "votes": 65241,
+        "share": 35.7565261236771
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "ethnicity",
+        "value": "HISPANIC or LATINO",
+        "votes": 6342,
+        "share": 3.4758493688993144
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "ethnicity",
+        "value": "NOT HISPANIC or NOT LATINO",
+        "votes": 125033,
+        "share": 68.52662789996657
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "ethnicity",
+        "value": "UNDESIGNATED",
+        "votes": 51084,
+        "share": 27.99752273113412
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "gender",
+        "value": "F",
+        "votes": 95382,
+        "share": 52.27585375344598
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "gender",
+        "value": "M",
+        "votes": 76035,
+        "share": 41.672375711803745
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "gender",
+        "value": "U",
+        "votes": 11042,
+        "share": 6.051770534750273
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "DEM",
+        "votes": 80220,
+        "share": 43.96604168607742
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "GRE",
+        "votes": 78,
+        "share": 0.04274932998646271
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "LIB",
+        "votes": 468,
+        "share": 0.25649597991877626
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "REP",
+        "votes": 27361,
+        "share": 14.995697663584696
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "party",
+        "value": "UNA",
+        "votes": 74332,
+        "share": 40.739015340432644
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "ASIAN",
+        "votes": 7482,
+        "share": 4.1006472687014615
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "BLACK or AFRICAN AMERICAN",
+        "votes": 35663,
+        "share": 19.545760965477175
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "INDIAN AMERICAN or ALASKA NATIVE",
+        "votes": 417,
+        "share": 0.22854449492762757
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+        "votes": 13,
+        "share": 0.007124888331077119
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "OTHER",
+        "votes": 8504,
+        "share": 4.6607731051907555
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "TWO or MORE RACES",
+        "votes": 825,
+        "share": 0.45215637485681714
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "UNDESIGNATED",
+        "votes": 12663,
+        "share": 6.940189302802273
+      },
+      {
+        "year": 2026,
+        "scope": "Other Wake sites",
+        "dimension": "race",
+        "value": "WHITE",
+        "votes": 116892,
+        "share": 64.06480359971282
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "18–24",
+        "votes": 12583,
+        "share": 6.625351460073083
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "25–34",
+        "votes": 19306,
+        "share": 10.16522572424469
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "35–44",
+        "votes": 23841,
+        "share": 12.553048093427828
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "45–64",
+        "votes": 67477,
+        "share": 35.52879603205526
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "age_group",
+        "value": "65+",
+        "votes": 66715,
+        "share": 35.12757869019914
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "ethnicity",
+        "value": "HISPANIC or LATINO",
+        "votes": 6640,
+        "share": 3.496172112762081
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "ethnicity",
+        "value": "NOT HISPANIC or NOT LATINO",
+        "votes": 129650,
+        "share": 68.26486662945841
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "ethnicity",
+        "value": "UNDESIGNATED",
+        "votes": 53632,
+        "share": 28.238961257779508
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "gender",
+        "value": "F",
+        "votes": 98879,
+        "share": 52.06295215930751
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "gender",
+        "value": "M",
+        "votes": 79251,
+        "share": 41.72818314887164
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "gender",
+        "value": "U",
+        "votes": 11792,
+        "share": 6.208864691820853
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "DEM",
+        "votes": 83693,
+        "share": 44.067038047198324
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "GRE",
+        "votes": 88,
+        "share": 0.04633481113299144
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "LIB",
+        "votes": 481,
+        "share": 0.25326186539737366
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "REP",
+        "votes": 27795,
+        "share": 14.634955402744284
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "party",
+        "value": "UNA",
+        "votes": 77865,
+        "share": 40.998409873527024
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "ASIAN",
+        "votes": 7824,
+        "share": 4.119585935278693
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "BLACK or AFRICAN AMERICAN",
+        "votes": 36289,
+        "share": 19.107317740967346
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "INDIAN AMERICAN or ALASKA NATIVE",
+        "votes": 437,
+        "share": 0.23009445983087795
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+        "votes": 13,
+        "share": 0.006844915281010099
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "OTHER",
+        "votes": 8851,
+        "share": 4.660334242478491
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "TWO or MORE RACES",
+        "votes": 877,
+        "share": 0.46176851549583514
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "UNDESIGNATED",
+        "votes": 13507,
+        "share": 7.111866976969493
+      },
+      {
+        "year": 2026,
+        "scope": "Wake County",
+        "dimension": "race",
+        "value": "WHITE",
+        "votes": 122124,
+        "share": 64.30218721369826
+      }
+    ],
+    "sites": [
+      {
+        "year": 2022,
+        "site_name": "AV - AVERY STREET RECREATION CENTER ANNEX",
+        "cohort": "18–22",
+        "votes": 136
+      },
+      {
+        "year": 2022,
+        "site_name": "AV - AVERY STREET RECREATION CENTER ANNEX",
+        "cohort": "18–24",
+        "votes": 204
+      },
+      {
+        "year": 2022,
+        "site_name": "AV - AVERY STREET RECREATION CENTER ANNEX",
+        "cohort": "All ages",
+        "votes": 6470
+      },
+      {
+        "year": 2022,
+        "site_name": "CA - HERBERT C. YOUNG COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 310
+      },
+      {
+        "year": 2022,
+        "site_name": "CA - HERBERT C. YOUNG COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 456
+      },
+      {
+        "year": 2022,
+        "site_name": "CA - HERBERT C. YOUNG COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 10883
+      },
+      {
+        "year": 2022,
+        "site_name": "CH - JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 143
+      },
+      {
+        "year": 2022,
+        "site_name": "CH - JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 227
+      },
+      {
+        "year": 2022,
+        "site_name": "CH - JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 6387
+      },
+      {
+        "year": 2022,
+        "site_name": "CS - CARY SENIOR CENTER",
+        "cohort": "18–22",
+        "votes": 380
+      },
+      {
+        "year": 2022,
+        "site_name": "CS - CARY SENIOR CENTER",
+        "cohort": "18–24",
+        "votes": 518
+      },
+      {
+        "year": 2022,
+        "site_name": "CS - CARY SENIOR CENTER",
+        "cohort": "All ages",
+        "votes": 10486
+      },
+      {
+        "year": 2022,
+        "site_name": "GREEN ROAD COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 147
+      },
+      {
+        "year": 2022,
+        "site_name": "GREEN ROAD COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 221
+      },
+      {
+        "year": 2022,
+        "site_name": "GREEN ROAD COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 6312
+      },
+      {
+        "year": 2022,
+        "site_name": "HS - HOLLY SPRINGS - HUNT COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 248
+      },
+      {
+        "year": 2022,
+        "site_name": "HS - HOLLY SPRINGS - HUNT COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 347
+      },
+      {
+        "year": 2022,
+        "site_name": "HS - HOLLY SPRINGS - HUNT COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 7449
+      },
+      {
+        "year": 2022,
+        "site_name": "HT - HILLTOP NEEDMORE TOWN PARK AND PRESERVE",
+        "cohort": "18–22",
+        "votes": 202
+      },
+      {
+        "year": 2022,
+        "site_name": "HT - HILLTOP NEEDMORE TOWN PARK AND PRESERVE",
+        "cohort": "18–24",
+        "votes": 271
+      },
+      {
+        "year": 2022,
+        "site_name": "HT - HILLTOP NEEDMORE TOWN PARK AND PRESERVE",
+        "cohort": "All ages",
+        "votes": 9046
+      },
+      {
+        "year": 2022,
+        "site_name": "JB - JOHN M. BROWN COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 345
+      },
+      {
+        "year": 2022,
+        "site_name": "JB - JOHN M. BROWN COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 463
+      },
+      {
+        "year": 2022,
+        "site_name": "JB - JOHN M. BROWN COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 10045
+      },
+      {
+        "year": 2022,
+        "site_name": "LL - LAKE LYNN COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 225
+      },
+      {
+        "year": 2022,
+        "site_name": "LL - LAKE LYNN COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 382
+      },
+      {
+        "year": 2022,
+        "site_name": "LL - LAKE LYNN COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 11269
+      },
+      {
+        "year": 2022,
+        "site_name": "NR - NORTHERN REGIONAL CENTER",
+        "cohort": "18–22",
+        "votes": 305
+      },
+      {
+        "year": 2022,
+        "site_name": "NR - NORTHERN REGIONAL CENTER",
+        "cohort": "18–24",
+        "votes": 397
+      },
+      {
+        "year": 2022,
+        "site_name": "NR - NORTHERN REGIONAL CENTER",
+        "cohort": "All ages",
+        "votes": 11115
+      },
+      {
+        "year": 2022,
+        "site_name": "OP - OPTIMIST PARK COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 193
+      },
+      {
+        "year": 2022,
+        "site_name": "OP - OPTIMIST PARK COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 305
+      },
+      {
+        "year": 2022,
+        "site_name": "OP - OPTIMIST PARK COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 9049
+      },
+      {
+        "year": 2022,
+        "site_name": "SOUTHEAST RALEIGH YMCA",
+        "cohort": "18–22",
+        "votes": 73
+      },
+      {
+        "year": 2022,
+        "site_name": "SOUTHEAST RALEIGH YMCA",
+        "cohort": "18–24",
+        "votes": 99
+      },
+      {
+        "year": 2022,
+        "site_name": "SOUTHEAST RALEIGH YMCA",
+        "cohort": "All ages",
+        "votes": 2305
+      },
+      {
+        "year": 2022,
+        "site_name": "TA - NCSU TALLEY STUDENT CENTER",
+        "cohort": "18–22",
+        "votes": 970
+      },
+      {
+        "year": 2022,
+        "site_name": "TA - NCSU TALLEY STUDENT CENTER",
+        "cohort": "18–24",
+        "votes": 1259
+      },
+      {
+        "year": 2022,
+        "site_name": "TA - NCSU TALLEY STUDENT CENTER",
+        "cohort": "All ages",
+        "votes": 4863
+      },
+      {
+        "year": 2022,
+        "site_name": "WAKE COUNTY BOARD OF ELECTIONS OFFICE",
+        "cohort": "18–22",
+        "votes": 105
+      },
+      {
+        "year": 2022,
+        "site_name": "WAKE COUNTY BOARD OF ELECTIONS OFFICE",
+        "cohort": "18–24",
+        "votes": 153
+      },
+      {
+        "year": 2022,
+        "site_name": "WAKE COUNTY BOARD OF ELECTIONS OFFICE",
+        "cohort": "All ages",
+        "votes": 5063
+      },
+      {
+        "year": 2022,
+        "site_name": "WD - WENDELL COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 82
+      },
+      {
+        "year": 2022,
+        "site_name": "WD - WENDELL COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 110
+      },
+      {
+        "year": 2022,
+        "site_name": "WD - WENDELL COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 4513
+      },
+      {
+        "year": 2026,
+        "site_name": "ABBOTTS CREEK COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 646
+      },
+      {
+        "year": 2026,
+        "site_name": "ABBOTTS CREEK COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 918
+      },
+      {
+        "year": 2026,
+        "site_name": "ABBOTTS CREEK COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 14405
+      },
+      {
+        "year": 2026,
+        "site_name": "AVERY STREET RECREATION CENTER ANNEX",
+        "cohort": "18–22",
+        "votes": 310
+      },
+      {
+        "year": 2026,
+        "site_name": "AVERY STREET RECREATION CENTER ANNEX",
+        "cohort": "18–24",
+        "votes": 465
+      },
+      {
+        "year": 2026,
+        "site_name": "AVERY STREET RECREATION CENTER ANNEX",
+        "cohort": "All ages",
+        "votes": 9265
+      },
+      {
+        "year": 2026,
+        "site_name": "BEECH BLUFF COUNTY PARK",
+        "cohort": "18–22",
+        "votes": 120
+      },
+      {
+        "year": 2026,
+        "site_name": "BEECH BLUFF COUNTY PARK",
+        "cohort": "18–24",
+        "votes": 170
+      },
+      {
+        "year": 2026,
+        "site_name": "BEECH BLUFF COUNTY PARK",
+        "cohort": "All ages",
+        "votes": 3200
+      },
+      {
+        "year": 2026,
+        "site_name": "CARY SENIOR CENTER",
+        "cohort": "18–22",
+        "votes": 796
+      },
+      {
+        "year": 2026,
+        "site_name": "CARY SENIOR CENTER",
+        "cohort": "18–24",
+        "votes": 1153
+      },
+      {
+        "year": 2026,
+        "site_name": "CARY SENIOR CENTER",
+        "cohort": "All ages",
+        "votes": 16360
+      },
+      {
+        "year": 2026,
+        "site_name": "HERBERT C. YOUNG COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 537
+      },
+      {
+        "year": 2026,
+        "site_name": "HERBERT C. YOUNG COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 866
+      },
+      {
+        "year": 2026,
+        "site_name": "HERBERT C. YOUNG COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 14752
+      },
+      {
+        "year": 2026,
+        "site_name": "HILLTOP NEEDMORE TOWN PARK CLUBHOUSE",
+        "cohort": "18–22",
+        "votes": 366
+      },
+      {
+        "year": 2026,
+        "site_name": "HILLTOP NEEDMORE TOWN PARK CLUBHOUSE",
+        "cohort": "18–24",
+        "votes": 485
+      },
+      {
+        "year": 2026,
+        "site_name": "HILLTOP NEEDMORE TOWN PARK CLUBHOUSE",
+        "cohort": "All ages",
+        "votes": 10626
+      },
+      {
+        "year": 2026,
+        "site_name": "JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 440
+      },
+      {
+        "year": 2026,
+        "site_name": "JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 688
+      },
+      {
+        "year": 2026,
+        "site_name": "JOHN CHAVIS MEMORIAL PARK COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 12356
+      },
+      {
+        "year": 2026,
+        "site_name": "JOHN M. BROWN COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 842
+      },
+      {
+        "year": 2026,
+        "site_name": "JOHN M. BROWN COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 1151
+      },
+      {
+        "year": 2026,
+        "site_name": "JOHN M. BROWN COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 16523
+      },
+      {
+        "year": 2026,
+        "site_name": "JOYNER PARK COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 624
+      },
+      {
+        "year": 2026,
+        "site_name": "JOYNER PARK COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 820
+      },
+      {
+        "year": 2026,
+        "site_name": "JOYNER PARK COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 13738
+      },
+      {
+        "year": 2026,
+        "site_name": "KNIGHTDALE RECREATION CENTER",
+        "cohort": "18–22",
+        "votes": 354
+      },
+      {
+        "year": 2026,
+        "site_name": "KNIGHTDALE RECREATION CENTER",
+        "cohort": "18–24",
+        "votes": 523
+      },
+      {
+        "year": 2026,
+        "site_name": "KNIGHTDALE RECREATION CENTER",
+        "cohort": "All ages",
+        "votes": 8998
+      },
+      {
+        "year": 2026,
+        "site_name": "LAKE LYNN COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 499
+      },
+      {
+        "year": 2026,
+        "site_name": "LAKE LYNN COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 732
+      },
+      {
+        "year": 2026,
+        "site_name": "LAKE LYNN COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 15375
+      },
+      {
+        "year": 2026,
+        "site_name": "LAUREL HILLS COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 298
+      },
+      {
+        "year": 2026,
+        "site_name": "LAUREL HILLS COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 533
+      },
+      {
+        "year": 2026,
+        "site_name": "LAUREL HILLS COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 9212
+      },
+      {
+        "year": 2026,
+        "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
+        "cohort": "18–22",
+        "votes": 1448
+      },
+      {
+        "year": 2026,
+        "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
+        "cohort": "18–24",
+        "votes": 1866
+      },
+      {
+        "year": 2026,
+        "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
+        "cohort": "All ages",
+        "votes": 7463
+      },
+      {
+        "year": 2026,
+        "site_name": "OPTIMIST PARK COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 320
+      },
+      {
+        "year": 2026,
+        "site_name": "OPTIMIST PARK COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 518
+      },
+      {
+        "year": 2026,
+        "site_name": "OPTIMIST PARK COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 11346
+      },
+      {
+        "year": 2026,
+        "site_name": "W.E. HUNT RECREATION CENTER",
+        "cohort": "18–22",
+        "votes": 510
+      },
+      {
+        "year": 2026,
+        "site_name": "W.E. HUNT RECREATION CENTER",
+        "cohort": "18–24",
+        "votes": 671
+      },
+      {
+        "year": 2026,
+        "site_name": "W.E. HUNT RECREATION CENTER",
+        "cohort": "All ages",
+        "votes": 10302
+      },
+      {
+        "year": 2026,
+        "site_name": "WAKE COUNTY COMMONS BUILDING",
+        "cohort": "18–22",
+        "votes": 200
+      },
+      {
+        "year": 2026,
+        "site_name": "WAKE COUNTY COMMONS BUILDING",
+        "cohort": "18–24",
+        "votes": 338
+      },
+      {
+        "year": 2026,
+        "site_name": "WAKE COUNTY COMMONS BUILDING",
+        "cohort": "All ages",
+        "votes": 5519
+      },
+      {
+        "year": 2026,
+        "site_name": "WAKE TECH COMMUNITY COLLEGE",
+        "cohort": "18–22",
+        "votes": 291
+      },
+      {
+        "year": 2026,
+        "site_name": "WAKE TECH COMMUNITY COLLEGE",
+        "cohort": "18–24",
+        "votes": 393
+      },
+      {
+        "year": 2026,
+        "site_name": "WAKE TECH COMMUNITY COLLEGE",
+        "cohort": "All ages",
+        "votes": 3959
+      },
+      {
+        "year": 2026,
+        "site_name": "WENDELL COMMUNITY CENTER",
+        "cohort": "18–22",
+        "votes": 209
+      },
+      {
+        "year": 2026,
+        "site_name": "WENDELL COMMUNITY CENTER",
+        "cohort": "18–24",
+        "votes": 293
+      },
+      {
+        "year": 2026,
+        "site_name": "WENDELL COMMUNITY CENTER",
+        "cohort": "All ages",
+        "votes": 6523
+      }
+    ]
+  },
+  "id": "report:280801c5-2e0b-43cf-b10c-322b5c90a10e",
+  "report": {
+    "asOf": "2026-10-25"
+  }
+}
