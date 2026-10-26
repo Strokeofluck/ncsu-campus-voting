@@ -10846,6 +10846,13 @@
             "componentIds": [
               "voting-college-age-detail"
             ]
+          },
+          {
+            "label": "Age-group changes",
+            "definition": "Campus site age-group table compares Western Boulevard in 2026 with selected Talley baseline (2024 or 2022), using the first 11 early-voting days in each year. Ballot change = 2026 votes minus baseline votes. Ballot change (%) = (2026 votes / baseline votes - 1) * 100, unavailable when baseline votes are zero. Share = age-group ballots / all accepted site ballots in that year * 100. Share change (percentage points) = 2026 share minus baseline share, calculated before rounding. Table can rank descending by share change, ballot change, or ballot change (%).",
+            "componentIds": [
+              "voting-age-changes"
+            ]
           }
         ]
       }

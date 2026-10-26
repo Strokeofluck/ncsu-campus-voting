@@ -28,6 +28,20 @@ def write_csv(path,rows):
     with path.open('w',encoding='utf-8',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 
+def campus_age_changes(demo_rows):
+    """Match the report table: 2026 minus each Talley baseline, before rounding."""
+    ages={(r['year'],r['value']):r for r in demo_rows if r['scope']=='Campus site' and r['dimension']=='age_group'}
+    changes=[]
+    for baseline in (2024,2022):
+        rows=[]
+        for (year,age),current in ages.items():
+            previous=ages.get((baseline,age))
+            if year!=2026 or previous is None:continue
+            delta=current['votes']-previous['votes']
+            rows.append({'age':age,'baseline_year':baseline,'comparison_year':2026,'baseline_ballots':previous['votes'],'ballots_2026':current['votes'],'ballot_change':delta,'ballot_change_pct':pct(delta,previous['votes']),'baseline_share_pct':previous['share'],'share_2026_pct':current['share'],'share_change_pp':current['share']-previous['share']})
+        changes.extend(sorted(rows,key=lambda r:r['share_change_pp'],reverse=True))
+    return changes
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--raw-dir',type=Path,default=ROOT/'data/raw/early_voting')
@@ -103,6 +117,7 @@ def main():
     for file,rows in [('matched_summary.csv',summary),('matched_daily.csv',daily_rows),('matched_demographics.csv',demo_rows),('matched_sites.csv',site_rows)]:write_csv(output/file,rows)
     campus_rows=[{'year':r['year'],'site_name':SITE[r['year']],**{k:v for k,v in r.items() if k not in {'year','scope'}}} for r in summary if r['scope']=='Campus site']
     write_csv(output/'campus_site_matched_counts.csv',campus_rows)
+    write_csv(output/'age_group_changes.csv',campus_age_changes(demo_rows))
     print(json.dumps({'as_of':result['as_of'],'summary':summary,'metrics':metrics},ensure_ascii=True,indent=2))
 
 if __name__=='__main__':main()
