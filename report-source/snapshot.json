@@ -10849,9 +10849,16 @@
           },
           {
             "label": "Age-group ballot shares",
-            "definition": "Talley Student Union in selected baseline year (2022 by default, also 2024) compared with Western Boulevard Business Services in 2026. First 11 early-voting days in each year. Share = age-group accepted ballots / all accepted ballots at that site in that year * 100. The single share column displays Talley share followed by Western Boulevard share; subordinate counts preserve the underlying ballots. Difference = 2026 share minus baseline share, in percentage points, calculated before rounding. Age order is fixed; ages 18-24 are highlighted. This measures the composition of site users, not countywide share, registered-voter turnout, or a causal effect of the move. 2022 and 2026 are midterms; 2024 is presidential.",
+            "definition": "Talley Student Union in selected baseline year (2022 by default, also 2024) compared with Western Boulevard Business Services in 2026. First 11 early-voting days in each year. Share = age-group accepted ballots / all accepted ballots at that site in that year * 100. The single share column displays Talley share followed by Western Boulevard share; subordinate counts preserve the underlying ballots. Difference = 2026 share minus baseline share, in percentage points, calculated before rounding. Age order is fixed; ages 18-24 are highlighted. This measures the composition of site users, not countywide share, registered-voter turnout, or a causal effect of the move. 2022 and 2026 are midterms; 2024 is presidential. Each displayed share includes the visible numerator, denominator, and multiplication by 100. The all-site-ballots row is the denominator and sums each mutually exclusive age group.",
             "componentIds": [
               "voting-age-changes"
+            ]
+          },
+          {
+            "label": "Voter-profile ballot shares",
+            "definition": "Source party registration, gender, race, and ethnicity are selectable, separate exhaustive breakdowns of accepted campus-site ballots for the same selected historical baseline and 2026. Share = category ballots / all accepted ballots at that site in that year * 100; difference is 2026 share minus baseline share in percentage points before rounding. Party registration groups DEM, REP, UNA separately and sums all remaining parties into Other registered parties. All recorded unknown or undesignated categories remain included. A category absent in one year is zero after its full dimension reconciles to that year site total. No reviewed source rows change. These characteristics do not identify candidate choice, student enrollment, or the causal effect of the polling-site move.",
+            "componentIds": [
+              "voting-voter-profile"
             ]
           }
         ]

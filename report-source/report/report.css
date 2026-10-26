@@ -383,3 +383,7 @@
 .voting-report .voting-age-denominators { margin:14px 0 0; color:var(--text-secondary); font-size:12px; line-height:1.6; }
 .voting-report .voting-age-change-table th,.voting-report .voting-age-change-table td { padding:15px 12px; }
 .voting-report .voting-age-change-table td:last-child { font-size:15px; }
+
+.voting-report .voting-share-math { line-height:1.7; }
+.voting-report .voting-age-change-table tfoot th,.voting-report .voting-age-change-table tfoot td { border-top:2px solid var(--border); font-weight:600; }
+.voting-report .voting-profile-table th:first-child { white-space:normal; min-width:120px; max-width:200px; }
