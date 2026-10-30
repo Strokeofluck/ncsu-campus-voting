@@ -4,6 +4,8 @@ const num=n=>Number(n).toLocaleString('en-US');
 const short=n=>n>=1000?`${(n/1000).toFixed(1)}k`:num(n);
 const one=n=>Number(n).toFixed(1);
 const signed=n=>`${n>0?'+':''}${one(n)}`;
+const dateLabel=value=>new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(`${value}T12:00:00Z`));
+const dateRange=row=>`${dateLabel(row.start_date)} – ${dateLabel(row.end_date)}`;
 function ShareMath({previous,current,previousTotal,currentTotal}){
  const before=previous/previousTotal*100,after=current/currentTotal*100;
  return <><span className="voting-share-pair"><span>{one(before)}%</span><span className="voting-share-arrow" aria-hidden="true">→</span><strong>{one(after)}%</strong></span><span className="voting-share-counts voting-share-math">Talley: {num(previous)} ÷ {num(previousTotal)} × 100 = {one(before)}%<br/>Western: {num(current)} ÷ {num(currentTotal)} × 100 = {one(after)}%</span></>;
@@ -17,7 +19,7 @@ export function ReportContent(){
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
  const a=get(baseline,'Campus site'),b=get(2026,'Campus site'),w=get(baseline,'Wake County'),z=get(2026,'Wake County');
  const paired=summaries.filter(r=>r.year===baseline||r.year===2026),isPair=y=>y===baseline||y===2026;
- const period=baseline===2024?'October 17–27, 2024':'October 20–30, 2022';
+ const period=dateRange(a),currentPeriod=dateRange(b),cutoff=dateLabel(b.end_date);
  const growth=(n,o)=>(n/o-1)*100,share22=a.age_18_24/w.age_18_24*100,share26=b.age_18_24/z.age_18_24*100,days=b.matched_days;
  const trendRows=daily.filter(r=>r.scope===scope&&r.cohort===cohort&&isPair(r.year));
  const plotRows=trendRows.map(r=>({...r,yearLabel:String(r.year)}));
@@ -67,9 +69,9 @@ export function ReportContent(){
   </div>
   <DataComponent id="voting-campus-exact-table" queryId="summary" kind="table" title="Talley and its replacement: exact campus-site counts" sourceRows={campusRows} displayRows={campusRows}>
    <div className="voting-table-scroll"><table className="voting-table voting-campus-table"><thead><tr><th>Site / year</th><th>All ages</th><th>Ages 18–24</th><th>Ages 18–22</th><th>18–24 share</th><th>Same-day registration</th></tr></thead><tbody data-reviewed-rows>{campusRows.map(r=><tr key={r.year}><th>{r.year===2026?'Western Boulevard':'Talley Student Union'} · {r.year}</th><td>{num(r.all_ages)}</td><td>{num(r.age_18_24)}</td><td>{num(r.age_18_22)}</td><td>{one(r.age_18_24_share)}%</td><td>{num(r.same_day_registration)}</td></tr>)}</tbody></table></div>
-   <RichNarrative id="voting-campus-exact-table:note" value="First 11 early-voting days in each year. Talley: Oct 20–30, 2022 and Oct 17–27, 2024. Western Boulevard Business Services: Oct 15–25, 2026 (preliminary). Same-day registration includes all ages. The 18–24 share is a share of site ballots. 2024 was presidential; 2022 and 2026 are midterms. [Verify each figure against the source and arithmetic](https://strokeofluck.github.io/ncsu-campus-voting/verify-figures.html)."/>
+   <RichNarrative id="voting-campus-exact-table:note" value={`First ${days} early-voting days in each year. Talley: ${dateRange(get(2022,'Campus site'))} and ${dateRange(get(2024,'Campus site'))}. Western Boulevard Business Services: ${currentPeriod} (preliminary). Same-day registration includes all ages. The 18–24 share is a share of site ballots. 2024 was presidential; 2022 and 2026 are midterms. [Verify each figure against the source and arithmetic](https://strokeofluck.github.io/ncsu-campus-voting/verify-figures.html).`}/>
   </DataComponent>
-  {visible('voting-move-counts')&&<EvidenceChart id="voting-move-counts" queryId="summary" title="Talley versus the replacement site: college-age ballots" description={`Ages 18–24. Talley: ${period}. Western Boulevard: October 15–25, 2026. Both windows contain ${days} days. ${baseline===2024?'Presidential vs midterm election.':'Both are midterm elections.'}`} rows={moveRows} sourceRows={paired.filter(r=>r.scope==='Campus site')} spec={{type:'horizontalBar',x:'site',y:'votes',stackable:false,startAtZero:true,valueDecimals:0}} height={300}/>}
+  {visible('voting-move-counts')&&<EvidenceChart id="voting-move-counts" queryId="summary" title="Talley versus the replacement site: college-age ballots" description={`Ages 18–24. Talley: ${period}. Western Boulevard: ${currentPeriod}. Both windows contain ${days} days. ${baseline===2024?'Presidential vs midterm election.':'Both are midterm elections.'}`} rows={moveRows} sourceRows={paired.filter(r=>r.scope==='Campus site')} spec={{type:'horizontalBar',x:'site',y:'votes',stackable:false,startAtZero:true,valueDecimals:0}} height={300}/>}
   <ReportSection id="voting-age-intro" title="How the campus site’s age mix changed" queryId="summary" sourceRows={paired.filter(r=>r.scope==='Campus site')} showHeading={false}>
    <RichNarrative id="voting-age-intro:body" value={`## How the campus site's age mix changed
 
@@ -92,7 +94,7 @@ College-age voters represented **${one(a.age_18_24_share)}% at Talley (${baselin
      <tfoot data-reviewed-rows><tr><th scope="row">All site ballots</th><td><ShareMath previous={agePreviousTotal} current={ageCurrentTotal} previousTotal={agePreviousTotal} currentTotal={ageCurrentTotal}/></td><td>0.0</td></tr></tfoot>
     </table>
    </div>
-   <RichNarrative id="voting-age-changes:note" className="voting-age-note" value={`Shares compare the age mix despite different ballot totals; they do not adjust away election-cycle or population differences. These are voters using each site, not a fixed group of residents or verified students. A lower share can reflect more older voters, younger voters choosing other sites, or lower participation; this table alone cannot identify the move's effect on turnout. 2026 is preliminary through October 25. Rows stay in age order; ages 18–24 are highlighted. Differences use unrounded shares.`}/>
+   <RichNarrative id="voting-age-changes:note" className="voting-age-note" value={`Shares compare the age mix despite different ballot totals; they do not adjust away election-cycle or population differences. These are voters using each site, not a fixed group of residents or verified students. A lower share can reflect more older voters, younger voters choosing other sites, or lower participation; this table alone cannot identify the move's effect on turnout. 2026 is preliminary through ${cutoff}. Rows stay in age order; ages 18–24 are highlighted. Differences use unrounded shares.`}/>
   </DataComponent>
   <DataComponent id="voting-voter-profile" queryId="demographics" kind="table" title="Other characteristics of voters at the two sites" sourceRows={profileSource} displayRows={profileRows}
    description={`Talley ${ageBaseline} → Western Boulevard 2026; first ${days} early-voting days. Uses the same comparison year selected in the age table above. Each characteristic is a separate breakdown of all site ballots.`}
@@ -105,7 +107,7 @@ College-age voters represented **${one(a.age_18_24_share)}% at Talley (${baselin
      <tfoot data-reviewed-rows><tr><th scope="row">All site ballots</th><td><ShareMath previous={agePreviousTotal} current={ageCurrentTotal} previousTotal={agePreviousTotal} currentTotal={ageCurrentTotal}/></td><td>0.0</td></tr></tfoot>
     </table>
    </div>
-   <RichNarrative id="voting-voter-profile:note" className="voting-age-note" value={`${profileNote} Categories within this selected breakdown add to 100% before rounding; do not add categories across different characteristics. An absent category is shown as zero only where the complete source breakdown reconciles to the site total. This shows site users and their recorded characteristics, not student identity or the move's causal effect. 2026 is preliminary through October 25.`}/>
+   <RichNarrative id="voting-voter-profile:note" className="voting-age-note" value={`${profileNote} Categories within this selected breakdown add to 100% before rounding; do not add categories across different characteristics. An absent category is shown as zero only where the complete source breakdown reconciles to the site total. This shows site users and their recorded characteristics, not student identity or the move's causal effect. 2026 is preliminary through ${cutoff}.`}/>
   </DataComponent>
   <ReportSection id="voting-college-detail-intro" queryId="demographics" sourceRows={exactAges} title="A closer look at college-age voters" showHeading={false}><RichNarrative id="voting-college-detail-intro:body" value="## A closer look at college-age voters
 
@@ -119,7 +121,7 @@ See each age from 18 through 24 at the old and new sites. Switch between ballot 
    <label>Location <select value={scope} onChange={e=>setScope(e.target.value)}>{['Campus site','Wake County','Other Wake sites'].map(v=><option key={v}>{v}</option>)}</select></label>
    <label>Voters <select value={cohort} onChange={e=>setCohort(e.target.value)}>{['18–24','18–22','All ages'].map(v=><option key={v}>{v}</option>)}</select></label>
   </div>
-  {visible('voting-cumulative')&&<EvidenceChart id="voting-cumulative" queryId="daily" title="Cumulative accepted early-voting ballots" description={`${scope} · ${cohort==='All ages'?'all ages':`ages ${cohort}`} · first ${days} days. Talley: ${period}; Western Boulevard: Oct 15–25, 2026.`} rows={plotRows} sourceRows={trendRows} spec={{type:'line',x:'day',y:'cumulative',series:'yearLabel',stackable:false,startAtZero:true,xLabel:'Day of early voting',valueDecimals:0}} height={340}/>}
+  {visible('voting-cumulative')&&<EvidenceChart id="voting-cumulative" queryId="daily" title="Cumulative accepted early-voting ballots" description={`${scope} · ${cohort==='All ages'?'all ages':`ages ${cohort}`} · first ${days} days. Talley: ${period}; Western Boulevard: ${currentPeriod}.`} rows={plotRows} sourceRows={trendRows} spec={{type:'line',x:'day',y:'cumulative',series:'yearLabel',stackable:false,startAtZero:true,xLabel:'Day of early voting',valueDecimals:0}} height={340}/>}
   <ReportSection id="voting-relative-intro" title="How the campus pattern compares with Wake County" queryId="summary" sourceRows={paired} showHeading={false}>
    <RichNarrative id="voting-relative-intro:body" value={`## How the campus pattern compares with Wake County
 
@@ -144,11 +146,11 @@ For a stronger impact analysis, complete early voting and include finalized mail
 
 [Official NCSBE downloads](https://www.ncsbe.gov/results-data/absentee-and-provisional-data) supply all three years. [NC State’s event listing](https://packthepolls.dasa.ncsu.edu/event/2026-general-early-voting/) identifies the new site.
 
-- **Matched dates:** October 20–30, 2022; October 17–27, 2024; October 15–25, 2026. Each window is the first ${days} calendar days, Thursday through Sunday. All historical charts use matched windows, not complete historical elections against partial 2026.
+- **Matched dates:** ${dateRange(get(2022,'Campus site'))}; ${dateRange(get(2024,'Campus site'))}; ${currentPeriod}. Each window is the first ${days} calendar days, aligned from opening Thursday. All historical charts use matched windows, not complete historical elections against partial 2026.
 - **Cycle:** 2024 is a presidential general election. 2022 and 2026 are midterm general elections. Matching calendar days cannot remove cycle effects or differences in site hours and availability.
 - **Population:** Wake records with an early-voting request type and return status exactly ACCEPTED. Talley is the exact source site TA - NCSU TALLEY STUDENT CENTER in 2022/2024; the new site is NCSU WESTERN BLVD BUSINESS SERVICES in 2026. Mail, cancelled and other-status ballots are excluded.
 - **Demographics:** use the source age field, 18–24 inclusive as the principal proxy and 18–22 as a sensitivity check. Individual ages 18–24 are shown separately. Percentage charts divide each age count by all accepted ballots at that year's campus site. Student enrollment and registered-voter turnout rates are unavailable.
-- **Freshness and checks:** 2026 records are through October 25 from the October 26 morning file; 2022 and 2024 records are finalized. Historical daily reporting lag is not reconstructed. The 2022 locked totals reproduce 10,390 Talley and 219,169 Wake ballots. All three years have no duplicate accepted voter identifiers, and days, scopes, ages and demographic totals reconcile. No independent 2024/2026 site-total reconciliation against a separate Wake publication has been completed. Only aggregates are published.
+- **Freshness and checks:** 2026 records are through ${cutoff}; the source archive was last modified ${snapshot.comparison.source_last_modified}; 2022 and 2024 records are finalized. Historical daily reporting lag is not reconstructed. The 2022 locked totals reproduce 10,390 Talley and 219,169 Wake ballots. All three years have no duplicate accepted voter identifiers, and days, scopes, ages and demographic totals reconcile. No independent 2024/2026 site-total reconciliation against a separate Wake publication has been completed. Only aggregates are published.
 
 [Data, archive hashes and reporting methods](https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/docs/2026-early-voting-update.md) · [Downloadable aggregate tables](https://github.com/Strokeofluck/ncsu-campus-voting/tree/main/data/processed/comparison)`}/>
   </ReportSection>

@@ -5,13 +5,13 @@
       "year": 2022,
       "site_name": "TA - NCSU TALLEY STUDENT CENTER",
       "start_date": "2022-10-20",
-      "end_date": "2022-10-30",
+      "end_date": "2022-11-02",
       "actual": {
-        "all_ages": 4863,
-        "age_18_24": 1259,
-        "age_18_22": 970,
-        "same_day_registration": 204,
-        "age_18_24_share": 25.88936870244705
+        "all_ages": 7007,
+        "age_18_24": 2057,
+        "age_18_22": 1590,
+        "same_day_registration": 378,
+        "age_18_24_share": 29.356357927786497
       },
       "daily": {
         "2022-10-20": 389,
@@ -24,7 +24,10 @@
         "2022-10-27": 481,
         "2022-10-28": 611,
         "2022-10-29": 476,
-        "2022-10-30": 436
+        "2022-10-30": 436,
+        "2022-10-31": 505,
+        "2022-11-01": 724,
+        "2022-11-02": 915
       },
       "daily_metrics": [
         {
@@ -103,25 +106,47 @@
           "age_18_24": 90,
           "age_18_22": 61,
           "same_day_registration": 23
+        },
+        {
+          "date": "2022-10-31",
+          "all_ages": 505,
+          "age_18_24": 180,
+          "age_18_22": 138,
+          "same_day_registration": 35
+        },
+        {
+          "date": "2022-11-01",
+          "all_ages": 724,
+          "age_18_24": 245,
+          "age_18_22": 192,
+          "same_day_registration": 51
+        },
+        {
+          "date": "2022-11-02",
+          "all_ages": 915,
+          "age_18_24": 373,
+          "age_18_22": 290,
+          "same_day_registration": 88
         }
       ],
       "ages_18_24": {
-        "18": 118,
-        "19": 199,
-        "20": 213,
-        "21": 236,
-        "22": 204,
-        "23": 163,
-        "24": 126
+        "18": 181,
+        "19": 331,
+        "20": 352,
+        "21": 385,
+        "22": 341,
+        "23": 257,
+        "24": 210
       },
       "status_counts_before_accepted_filter": {
-        "ACCEPTED": 4863,
-        "CANCELLED": 11
+        "ACCEPTED": 7007,
+        "CANCELLED": 14
       },
       "source": {
         "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
         "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
-        "downloaded_at": "Mon, 26 Oct 2026 13:24:16 GMT",
+        "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+        "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
         "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
         "bytes": 99765322,
         "member": "WAKE_absentee_20221108.csv",
@@ -133,13 +158,13 @@
       "year": 2024,
       "site_name": "TA - NCSU TALLEY STUDENT CENTER",
       "start_date": "2024-10-17",
-      "end_date": "2024-10-27",
+      "end_date": "2024-10-30",
       "actual": {
-        "all_ages": 12990,
-        "age_18_24": 4939,
-        "age_18_22": 3983,
-        "same_day_registration": 842,
-        "age_18_24_share": 38.02155504234026
+        "all_ages": 17339,
+        "age_18_24": 7194,
+        "age_18_22": 5888,
+        "same_day_registration": 1467,
+        "age_18_24_share": 41.490282023184726
       },
       "daily": {
         "2024-10-17": 1308,
@@ -152,7 +177,10 @@
         "2024-10-24": 1418,
         "2024-10-25": 1465,
         "2024-10-26": 917,
-        "2024-10-27": 690
+        "2024-10-27": 690,
+        "2024-10-28": 1468,
+        "2024-10-29": 1442,
+        "2024-10-30": 1439
       },
       "daily_metrics": [
         {
@@ -231,27 +259,48 @@
           "age_18_24": 252,
           "age_18_22": 186,
           "same_day_registration": 59
+        },
+        {
+          "date": "2024-10-28",
+          "all_ages": 1468,
+          "age_18_24": 705,
+          "age_18_22": 595,
+          "same_day_registration": 182
+        },
+        {
+          "date": "2024-10-29",
+          "all_ages": 1442,
+          "age_18_24": 761,
+          "age_18_22": 638,
+          "same_day_registration": 214
+        },
+        {
+          "date": "2024-10-30",
+          "all_ages": 1439,
+          "age_18_24": 789,
+          "age_18_22": 672,
+          "same_day_registration": 229
         }
       ],
       "ages_18_24": {
-        "18": 559,
-        "19": 894,
-        "20": 1006,
-        "21": 912,
-        "22": 612,
-        "23": 481,
-        "24": 475
+        "18": 839,
+        "19": 1306,
+        "20": 1467,
+        "21": 1374,
+        "22": 902,
+        "23": 650,
+        "24": 656
       },
       "status_counts_before_accepted_filter": {
-        "ACCEPTED": 12990,
-        "CANCELLED": 34,
-        "SDR-FAILED VERIFICATION": 3
+        "ACCEPTED": 17339,
+        "CANCELLED": 46,
+        "SDR-FAILED VERIFICATION": 4
       },
       "source": {
         "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
         "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
-        "downloaded_at": "Mon, 26 Oct 2026 13:47:51 GMT",
-        "retrieved_at_utc": "2026-10-26T13:48:01.647157+00:00",
+        "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+        "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
         "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
         "bytes": 207093835,
         "member": "WAKE_absentee_20241105.csv",
@@ -263,18 +312,18 @@
       "year": 2026,
       "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
       "start_date": "2026-10-15",
-      "end_date": "2026-10-25",
+      "end_date": "2026-10-28",
       "actual": {
-        "all_ages": 7463,
-        "age_18_24": 1866,
-        "age_18_22": 1448,
-        "same_day_registration": 297,
-        "age_18_24_share": 25.00334985930591
+        "all_ages": 10498,
+        "age_18_24": 2966,
+        "age_18_22": 2316,
+        "same_day_registration": 535,
+        "age_18_24_share": 28.253000571537434
       },
       "daily": {
         "2026-10-15": 831,
         "2026-10-16": 803,
-        "2026-10-17": 467,
+        "2026-10-17": 466,
         "2026-10-18": 398,
         "2026-10-19": 684,
         "2026-10-20": 725,
@@ -282,7 +331,10 @@
         "2026-10-22": 729,
         "2026-10-23": 1004,
         "2026-10-24": 571,
-        "2026-10-25": 517
+        "2026-10-25": 517,
+        "2026-10-26": 937,
+        "2026-10-27": 971,
+        "2026-10-28": 1128
       },
       "daily_metrics": [
         {
@@ -301,10 +353,10 @@
         },
         {
           "date": "2026-10-17",
-          "all_ages": 467,
-          "age_18_24": 73,
+          "all_ages": 466,
+          "age_18_24": 72,
           "age_18_22": 47,
-          "same_day_registration": 10
+          "same_day_registration": 9
         },
         {
           "date": "2026-10-18",
@@ -361,29 +413,52 @@
           "age_18_24": 141,
           "age_18_22": 114,
           "same_day_registration": 33
+        },
+        {
+          "date": "2026-10-26",
+          "all_ages": 937,
+          "age_18_24": 299,
+          "age_18_22": 231,
+          "same_day_registration": 60
+        },
+        {
+          "date": "2026-10-27",
+          "all_ages": 971,
+          "age_18_24": 328,
+          "age_18_22": 267,
+          "same_day_registration": 70
+        },
+        {
+          "date": "2026-10-28",
+          "all_ages": 1128,
+          "age_18_24": 474,
+          "age_18_22": 370,
+          "same_day_registration": 109
         }
       ],
       "ages_18_24": {
-        "18": 150,
-        "19": 280,
-        "20": 359,
-        "21": 374,
-        "22": 285,
-        "23": 223,
-        "24": 195
+        "18": 237,
+        "19": 429,
+        "20": 568,
+        "21": 607,
+        "22": 475,
+        "23": 363,
+        "24": 287
       },
       "status_counts_before_accepted_filter": {
-        "ACCEPTED": 7463,
-        "CANCELLED": 17
+        "ACCEPTED": 10498,
+        "CANCELLED": 26,
+        "SDR-FAILED VERIFICATION": 1
       },
       "source": {
         "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
-        "last_modified": "Mon, 26 Oct 2026 09:23:23 GMT",
-        "downloaded_at": "Mon, 26 Oct 2026 13:24:21 GMT",
-        "sha256": "14ad25264718d9f5dfd99e2c4cd8617a711a4459e8fb45cb91dd69525fb185cf",
-        "bytes": 69073551,
+        "last_modified": "Thu, 29 Oct 2026 09:25:32 GMT",
+        "downloaded_at": "Fri, 30 Oct 2026 03:11:32 GMT",
+        "retrieved_at_utc": "2026-10-30T03:11:35.032440+00:00",
+        "sha256": "6ebb3c3cb9c11a37ae54a88230deffc27c521df2cdfa45be2eb11b2a1138b3b3",
+        "bytes": 93599261,
         "member": "WAKE_absentee_20261103.csv",
-        "wake_csv_sha256": "f905fec0219e65652602ecb90a180f45674ba6393fb3e4aa04d2f1cb0365d282"
+        "wake_csv_sha256": "dcf14b2c5c3e1e8c95bb02d1ced21c4478b68e5a14cb74954d5f66499023f8ef"
       },
       "verification": "Exact match to published aggregate table; original archive hash verified"
     }

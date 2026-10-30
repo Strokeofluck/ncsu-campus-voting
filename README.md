@@ -2,66 +2,62 @@
 
 Data and reporting workspace for a Technician follow-up on voting at NC State.
 
-The interactive report compares **Talley Student Union in 2024 with Western Boulevard Business Services in 2026**, using the same first 11 early-voting days. **2024 was a presidential election; 2026 is a midterm.** A selector retains the 2022-to-2026 midterm comparison. Early voting and Election Day are kept separate.
+**[Open the interactive report](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Findings and methods](docs/2026-early-voting-update.md) · [References](references.html)
 
-## 2024 Talley versus the new 2026 location
+## October 29, 2026 update: Talley to Western Boulevard
 
-**[Open the interactive demographic charts](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Methods and all three years](docs/2026-early-voting-update.md)
+The latest downloaded NCSBE file covers voting through **October 28, 2026**. The report compares **Talley Student Union in 2024 with Western Boulevard Business Services in 2026**, using the same first **14 early-voting days**. **2024 was presidential; 2026 is a midterm.** A selector retains the 2022-to-2026 midterm comparison. Early voting and Election Day remain separate.
 
-| Campus-site measure, matched first 11 days | Talley, 2024 | Western Boulevard, 2026 |
-| --- | ---: | ---: |
-| Accepted ballots, ages 18–24 | 4,939 | 1,866 |
-| Ages 18–24 share of all site ballots | 38.0% | 25.0% |
-| Site share of Wake's 18–24 early ballots | 21.5% | 14.8% |
-| Accepted ballots, all ages | 12,990 | 7,463 |
+| Measure | Talley, 2024 | Western Boulevard, 2026 | Change |
+| --- | ---: | ---: | ---: |
+| Accepted early ballots, all ages | 17,339 | 10,498 | -39.5% |
+| Accepted early ballots, ages 18–24 | 7,194 | 2,966 | -58.8% |
+| Ages 18–24 share of site ballots | 41.5% | 28.3% | -13.2 percentage points |
+| Site share of Wake’s 18–24 early ballots | 22.2% | 17.0% | -5.2 percentage points |
+| Accepted early ballots, ages 18–22 | 5,888 | 2,316 | -60.7% |
 
-College-age ballots at the site were **62.2% lower than in the matched 2024 period**, while Wake County's college-age ballots were **45.1% lower**. The site’s college-age share fell **13.0 percentage points**. This descriptive comparison cannot isolate the location move from presidential-versus-midterm participation or other changes. Ages 18–24 are an age proxy, not verified NC State students.
-
-The charts compare ballot volume, age composition, individual ages 18 through 24, daily cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The older 2022 midterm baseline remains available.
-
-Directly below the age-composition chart, an age-group table switches between **2026 versus 2024** and **2026 versus 2022**. Rows stay in age order from 18–24 through 65+ for both comparisons; the table shows changes in ballot share (percentage points), number of ballots, and percentage growth in ballots. Exact counts sit beside the shares so an increased share is not mistaken for more ballots. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
+College-age ballots at the campus site were **58.8% lower** than in the matched 2024 period, while Wake County’s college-age ballots were **46.1% lower**. The site’s college-age share fell **13.2 percentage points**. These descriptive comparisons cannot isolate the move from election-cycle or other changes. Ages 18–24 are an age proxy, not verified NC State students.
 
 ### Exact campus-site counts, all three years
 
-The interactive report includes this campus-only table above the charts. [Download the campus-site CSV](data/processed/comparison/campus_site_matched_counts.csv).
-
-**[Verify every highlighted figure against its source and arithmetic](https://strokeofluck.github.io/ncsu-campus-voting/verify-figures.html).** The reference page links to the real NCSBE download entries and labels the site totals and percentages as project calculations from official records.
-
 | Site / year | All ages | Ages 18–24 | Ages 18–22 | 18–24 share | Same-day registration |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Talley Student Union · 2022 | 4,863 | 1,259 | 970 | 25.9% | 204 |
-| Talley Student Union · 2024 | 12,990 | 4,939 | 3,983 | 38.0% | 842 |
-| Western Boulevard · 2026 | 7,463 | 1,866 | 1,448 | 25.0% | 297 |
+| Talley Student Union · 2022 | 7,007 | 2,057 | 1,590 | 29.4% | 378 |
+| Talley Student Union · 2024 | 17,339 | 7,194 | 5,888 | 41.5% | 1,467 |
+| Western Boulevard · 2026 | 10,498 | 2,966 | 2,316 | 28.3% | 535 |
 
-Each row covers the first 11 early-voting days. Dates are October 20–30, 2022; October 17–27, 2024; and October 15–25, 2026. 2026 is preliminary. Same-day registrations include all ages. The age share is a share of site ballots; 2024 was presidential and the other two elections are midterms.
+Dates: **October 20, 2022–November 2, 2022**; **October 17, 2024–October 30, 2024**; **October 15, 2026–October 28, 2026**. Each row covers 14 days. 2026 is preliminary; same-day registrations include all ages. The 18–24 share uses all site ballots as its denominator.
 
-![Age composition at Talley in 2022 and 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/campus-age-composition-2022-2024-2026.png)
+**[Verify every highlighted figure against its source and arithmetic](https://strokeofluck.github.io/ncsu-campus-voting/verify-figures.html).** Campus totals and percentages are project calculations from NCSBE records. [Download the campus-site CSV](data/processed/comparison/campus_site_matched_counts.csv).
 
-![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 11 days](docs/images/talley-2024-vs-western-2026-college-ages.png)
+![Age composition at Talley in 2022 and 2024 and Western Boulevard in 2026, matched first 14 days](docs/images/campus-age-composition-2022-2024-2026.png)
 
-## October 26, 2026 update: Talley to Western Boulevard
+The report compares ballot volume, age composition, individual ages 18 through 24, cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The age-group table switches between 2026 versus 2024 and 2026 versus 2022, keeping rows in age order and showing the count and denominator behind each share. Party registration, gender, race and ethnicity remain separate selectable site-user breakdowns. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
 
-**[Open the interactive comparison](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Findings and methods](docs/2026-early-voting-update.md) · [Aggregate downloads](data/processed/comparison/)
+![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 14 days](docs/images/talley-2024-vs-western-2026-college-ages.png)
 
-The latest NCSBE file covers early voting through **October 25**. Compare the first **11 days** of 2022 Talley voting with the first 11 days at **NCSU Western Boulevard Business Services**, 1220 Varsity Drive.
+### Retained 2022 midterm comparison
 
-- Ages 18–24 at the campus site: **1,259 → 1,866 (+48.2%)**.
-- Campus site share of Wake's 18–24 early ballots: **23.3% → 14.8% (−8.4 percentage points)**.
-- Ages 18–24 share of the site's own ballots: **25.9% → 25.0%**.
+- Campus-site ballots, ages 18–24: **2,057 → 2,966 (+44.2%)**.
+- Campus site share of Wake’s 18–24 early ballots: **26.3% → 17.0% (-9.3 percentage points)**.
+- Ages 18–24 share of the site’s ballots: **29.4% → 28.3%**.
 
-More college-age ballots were recorded at the replacement site, while countywide college-age early voting grew faster. These preliminary records cannot establish the move's causal effect on NC State student participation: ages 18–24 are an age proxy, enrollment and eligible-student denominators are unavailable, and mail/Election Day voting is outside this comparison.
+More college-age ballots were recorded at the replacement site, while countywide college-age early voting grew faster. The records cannot establish the move’s causal effect on student participation: enrollment and eligible-student denominators are unavailable, and mail/Election Day voting is outside this comparison.
 
-![Talley versus Western Boulevard: accepted early ballots from ages 18–24, matched first 11 days](docs/images/talley-to-western-comparison.png)
+![Talley versus Western Boulevard: accepted early ballots from ages 18–24, matched first 14 days](docs/images/talley-to-western-comparison.png)
 
-Rebuild the aggregate comparison:
+### Rebuild the comparison
 
 ```bash
 python scripts/download_early_voting_sources.py
-python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-25
+python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-28
 python scripts/validate_early_voting_comparison.py
+python scripts/audit_campus_figures.py
+python scripts/build_reference_page.py
+python scripts/refresh_report_snapshot.py
 ```
 
-The cutoff is a complete voting day, not the time this page was opened. The report is a dated snapshot and does not fetch live data. The locked full-period 2022 baseline is preserved. Raw voter-level data stay ignored.
+Use a complete voting day covered by the downloaded file. The report is a dated snapshot and does not fetch live data. After refreshing the snapshot, rebuild the interactive app and update date-specific narrative and chart exports as described in [report-source/README.md](report-source/README.md). Raw voter-level data stay ignored; the locked full-period 2022 baseline remains unchanged.
 
 ## Main research questions
 

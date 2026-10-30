@@ -6,7 +6,9 @@ root=Path(__file__).resolve().parents[1]
 raw=root/'data/raw/early_voting'
 data=json.loads((root/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
 proof=[]
-for year,date,site,start,end in [(2022,'20221108','TA - NCSU TALLEY STUDENT CENTER','2022-10-20','2022-10-30'),(2024,'20241105','TA - NCSU TALLEY STUDENT CENTER','2024-10-17','2024-10-27'),(2026,'20261103','NCSU WESTERN BLVD BUSINESS SERVICES','2026-10-15','2026-10-25')]:
+for expected in [r for r in data['summary'] if r['scope']=='Campus site']:
+    year=expected['year'];date={2022:'20221108',2024:'20241105',2026:'20261103'}[year]
+    site=data['site_mapping'][str(year)];start=expected['start_date'];end=expected['end_date']
     daily=Counter();ages=Counter();statuses=Counter();sdr=0;daily_youth=Counter();daily_narrow=Counter();daily_sdr=Counter()
     with (raw/f'wake_{date}.csv').open(encoding='latin-1',newline='') as f:
         for row in csv.DictReader(f):
