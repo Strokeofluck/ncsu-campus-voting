@@ -79,3 +79,11 @@ These percentages are project calculations. The NCSBE catalog does not print the
 Over the first 14 days, 2026 reached 68.3% of the matched 2024 all-age Wake count and 53.9% of its ages 18–24 count. At the campus site the corresponding ratios are 60.5% and 41.2%. These are counts of accepted in-person early ballots, not turnout rates, forecasts or statistical-significance thresholds. A large midterm increase is reportable without requiring a presidential-election total to be reached.
 
 Rebuild the per-figure evidence with `python scripts/build_figure_sources.py` after rebuilding the comparison and running the campus audit. The source HTML template is maintained at `report-source/figure-source.html`.
+
+### Original-file previews
+
+The evidence page also previews the original ZIP member list and CSV header, plus the first eight date/site groups of the selected population. The grouped extract retains only `county_desc`, `ballot_req_type`, `ballot_rtn_status`, `ballot_rtn_dt` and `site_name` from original CSV cells, adding a count of matching records. It is clearly labelled a filtered grouped preview, not the full original CSV or individual voter rows. All matching records are counted even when only eight groups are displayed.
+
+`python scripts/build_source_previews.py` verifies both original archive and extracted/member CSV hashes, streams the source records, and independently checks every preview selection against the reviewed aggregates. It writes `data/processed/comparison/source_previews.json`. Personal names, addresses, voter identifiers and original individual rows remain unpublished. Original column headings are metadata only.
+
+An expandable iframe loads the original election directory directly from `https://dl.ncsbe.gov/`. It is a live government page, separate from the verified snapshot extract, and may show a newer version of the 2026 archive. Direct official ZIP and catalog links remain available.

@@ -16,7 +16,8 @@ def filters(y,scope):
     conditions=['county_desc = WAKE','ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING','ballot_rtn_status = ACCEPTED',f"{r['start_date']} ≤ ballot_rtn_dt ≤ {r['end_date']} (inclusive)"]+([] if scope=='Wake County' else [f"site_name {'=' if scope=='Campus site' else '≠'} {d['site_mapping'][str(y)]}"])
     return [f'{y}: {condition}' for condition in conditions]
 def source(y):
-    return {'year':y,**sources[y],'catalog':f'https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text={y}%20Nov%20'+{2022:'08',2024:'05',2026:'03'}[y]+',Absentee%20by%20County'}
+    folder=sources[y]['url'].split('/ENRS/')[1].rsplit('/',1)[0]
+    return {'year':y,**sources[y],'listing_url':f'https://dl.ncsbe.gov/?prefix=ENRS/{folder}/','catalog':f'https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text={y}%20Nov%20'+{2022:'08',2024:'05',2026:'03'}[y]+',Absentee%20by%20County'}
 def add(key,label,value,unit,formula,inputs,years,where,breakdown=None):
     assert key not in records,key
     assert math.isfinite(value)
@@ -37,6 +38,7 @@ for (year,scope),r in summaries.items():
             formula=f'Count accepted records satisfying the filters = {r[field]:,}'
             inputs=[inp(f'{label}, {scope}, {year}',r[field])]
         add(key,f'{label} · {scope} · {year}',r[field],'%' if is_share else 'ballots',formula,inputs,[year],where)
+        records[key]['selections']=[{'year':year,'scope':scope,'field':'age_18_24' if is_share else field}]
 
 demographic_lookup={}
 category_names={'DEM':'Democratic','REP':'Republican','UNA':'Unaffiliated','OTHER_PARTIES':'Other registered parties','F':'Female (F)','M':'Male (M)','U':'Not specified (U)'}
@@ -73,6 +75,7 @@ for year in (2022,2024,2026):
             display='All site ballots' if dim=='all' else category_names.get(value,value)
             inputs=[inp(f'{display}, accepted ballots',count),inp('All accepted campus-site ballots',total,target=sid(year,'Campus site','all_ages'))]
             add(did(year,dim,value),f'{display} · {"Western Boulevard" if year==2026 else "Talley"} · {year}',rate,'%',f'{count:,} ÷ {total:,} × 100 = {rate:.6f}%',inputs,[year],where,breakdown)
+            records[did(year,dim,value)]['selections']=[{'year':year,'scope':'Campus site','dimension':dim,'value':value}]
             demographic_lookup[year,dim,value]=(count,total,rate)
 
 for base in (2022,2024):
@@ -95,6 +98,17 @@ for year in (2022,2024,2026):
     campus=summaries[year,'Campus site']['age_18_24'];county=summaries[year,'Wake County']['age_18_24'];share=campus/county*100
     add(f'county-share-{year}',f'Campus site share of Wake’s ages 18–24 early ballots · {year}',share,'%',f'{campus:,} ÷ {county:,} × 100 = {share:.6f}%',
         [inp('Campus-site ballots, ages 18–24',campus,target=sid(year,'Campus site','age_18_24')),inp('Wake County ballots, ages 18–24',county,target=sid(year,'Wake County','age_18_24'))],[year],filters(year,'Wake County')+['18 ≤ source age ≤ 24; numerator also matches the campus-site label'])
+def selections(record):
+    if 'selections' in record:return record['selections']
+    found={}
+    for item in record['inputs']:
+        if item.get('target'):
+            for selection in selections(records[item['target']]):found[json.dumps(selection,sort_keys=True)]=selection
+    record['selections']=list(found.values())
+    return record['selections']
+def preview_key(selection):
+    return f"{selection['year']}-{slug(selection['scope'])}-{slug(selection.get('field',selection.get('dimension')))}-{slug(selection.get('value','all'))}"
+for record in records.values():record['preview_keys']=[preview_key(s) for s in selections(record)]
 payload={'classification':'Project calculations from official NCSBE ballot records; not values printed on the official catalog page','as_of':d['as_of'],'records':records}
 json_text=json.dumps(payload,ensure_ascii=False,indent=2)
 (ROOT/'data/processed/comparison/figure_sources.json').write_text(json_text+'\n',encoding='utf-8')

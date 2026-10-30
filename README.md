@@ -36,7 +36,7 @@ Dates: **October 20, 2022–November 2, 2022**; **October 17, 2024–October 30,
 
 ![Age composition at Talley in 2022 and 2024 and Western Boulevard in 2026, matched first 14 days](docs/images/campus-age-composition-2022-2024-2026.png)
 
-Underlined figures in the exact-count, age, voter-profile and benchmark tables open a dedicated evidence page showing the selected calculation, exact inputs, record filters, original CSV member and NCSBE download. The executive-summary figures are linked too. [Example: verify the 2024 ages 18–24 share](figure-source.html#demographic-2024-age-group-18-24). NCSBE does not print these calculated percentages on its download catalog; the official archive is the underlying record source.
+Underlined figures in the exact-count, age, voter-profile and benchmark tables open a dedicated evidence page showing the selected calculation, exact inputs, record filters, original CSV member and NCSBE download. The executive-summary figures are linked too. [Example: verify the 2024 ages 18–24 share](figure-source.html#demographic-2024-age-group-18-24). Choose **Preview the original file** to see the actual ZIP member list and CSV header, a filtered grouped extract retaining original field values, and an embedded live NCSBE file listing. Names, addresses and voter IDs are omitted. NCSBE does not print these calculated percentages on its download catalog; the official archive is the underlying record source.
 
 The report compares ballot volume, age composition, individual ages 18 through 24, cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The age-group table switches between 2026 versus 2024 and 2026 versus 2022, keeping rows in age order and showing the count and denominator behind each share. Party registration, gender, race and ethnicity remain separate selectable site-user breakdowns. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
 
@@ -61,6 +61,7 @@ python scripts/validate_early_voting_comparison.py
 python scripts/audit_campus_figures.py
 python scripts/build_reference_page.py
 python scripts/build_figure_sources.py
+python scripts/build_source_previews.py
 python scripts/refresh_report_snapshot.py
 ```
 
