@@ -19,6 +19,42 @@
   <h2 class="section">Early voting</h2>
 
   <div class="card">
+    <span class="tag">OFFICIAL DOWNLOAD FOLDER</span>
+    <h3>NCSBE — November 3, 2026 election data</h3>
+    <p class="highlight">Official directory containing the 2026 absentee / early-voting source already used by this project.</p>
+    <p><a href="https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/">Browse the 2026 election download folder</a>. The directory contains ballot records, county and statewide counts, demographic request statistics, polling places and other election files. These files serve different purposes; the campus-site comparison uses the by-county absentee archive below.</p>
+    <p><a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data">NCSBE file descriptions and update schedule</a>. Absentee data include in-person early voting; during early voting, records for ballots cast are added the following day. A file's modification date is not itself the last voting date covered.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">PRIMARY DATA</span>
+    <h3>NCSBE — 2026 Nov. 3 Absentee / Early Voting by County</h3>
+    <p class="highlight">Main ballot-record source for the Western Boulevard early-voting comparison.</p>
+    <p>The download script extracts <code>WAKE_absentee_20261103.csv</code>. The comparison keeps accepted Wake County in-person early-voting records and matches <code>site_name=NCSU WESTERN BLVD BUSINESS SERVICES</code>. Site, voting date, age, same-day registration and other demographic fields support the published aggregates. Countywide summary files alone do not supply this site's exact-age comparison.</p>
+    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip">Direct 2026 by-county ZIP</a><br>
+    <a href="https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/scripts/download_early_voting_sources.py">Project download script</a><br>
+    <a href="docs/2026-early-voting-update.md">Comparison filters, matched dates and limitations</a></p>
+    <p class="note"><strong>Published snapshot:</strong> The current comparison was downloaded October 26, 2026 and covers voting through October 25, using the first 11 early-voting days in each year. The source archive is updated; opening this reference or the report does not refresh its figures. Raw voter-level data stay out of the public repository.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">PRIMARY DATA</span>
+    <h3>NCSBE — 2024 Nov. 5 Absentee / Early Voting by County</h3>
+    <p class="highlight">Main ballot-record source for the 2024 Talley comparison.</p>
+    <p>The comparison extracts the Wake County CSV, keeps accepted in-person early-voting records and matches <code>TA - NCSU TALLEY STUDENT CENTER</code>. The published matched window is October 17–27, 2024. This presidential-election baseline differs from the 2022 and 2026 midterms.</p>
+    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip">Direct 2024 by-county ZIP</a><br>
+    <a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data">NCSBE official download catalog</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">SITE RECORD</span>
+    <h3>NC State — 2026 early-voting location</h3>
+    <p>NC State identifies the 2026 campus early-voting site as Western Boulevard Business Services, <strong>1220 Varsity Drive</strong>. Use this university listing for the location; use the NCSBE ballot records for participation and demographics.</p>
+    <p><a href="https://packthepolls.dasa.ncsu.edu/faqs/">Pack the Polls — 2026 election FAQs</a></p>
+    <p class="note">The ballot records do not identify NC State enrollment or establish that the location change caused a change in student participation. Ages 18–24 are a college-age proxy, not a verified student population.</p>
+  </div>
+
+  <div class="card">
     <span class="tag">PRIMARY DATA</span>
     <h3>NCSBE — 2022 Nov. 8 Absentee / Early Voting by County</h3>
     <p class="highlight">Main voter-level source for the 2022 Talley early-voting baseline.</p>
