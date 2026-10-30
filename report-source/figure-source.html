@@ -18,10 +18,14 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere}.preview-jump{display:inline-blo
   container.append(el('p','Loading the verified original-file preview…',{class:'preview-status',role:'status'}));
   try{
    const data=await previewData();if(host.dataset.figureId!==record.id)return;container.replaceChildren();
-   container.append(el('h2','Preview the original file'),el('p','The extract below comes from the exact NCSBE CSV used for this figure. Original field names and values are retained; matching records are grouped into counts. Names, addresses and voter IDs are omitted. This is a filtered preview, not the full CSV.'));
+   container.append(el('h2','Preview the actual original CSV'),el('p','Load the actual Wake County CSV below. The viewer reads it directly from the official ZIP, shows original individual records and checks whether the CSV bytes match this report’s snapshot. Use “All original records” or “Show all original columns” to explore the full file.'));
    for(const source of record.sources){
     const metadata=data.sources[String(source.year)];if(!metadata||metadata.sha256!==source.sha256||metadata.wake_csv_sha256!==source.wake_csv_sha256)throw Error('Preview snapshot differs from this figure');
     const section=el('section',undefined,{class:'preview-file'});section.append(el('h3',source.year+' · '+metadata.member,{class:'file-caption'}));
+    const sourceLinks=el('p');sourceLinks.append(el('a','Official source page: '+source.listing_url,{href:source.listing_url,target:'_blank',rel:'noopener'}),el('br'),el('a','Original ZIP file: '+source.url,{href:source.url,target:'_blank',rel:'noopener'}));section.append(sourceLinks);
+    const viewerUrl=`csv-viewer.html?year=${source.year}&figure=${encodeURIComponent(record.id)}`;
+    const csvFrame=el('iframe',undefined,{title:`Actual original ${source.year} Wake CSV`,src:viewerUrl,loading:'lazy',class:'actual-csv-viewer'});csvFrame.style.height='760px';section.append(csvFrame,el('a','Open the actual CSV viewer in a full tab',{href:viewerUrl,target:'_blank',rel:'noopener'}));
+    section.append(el('h3','Saved snapshot: grouped cross-check'),el('p','The counts below are a separate grouped extract from the saved report snapshot. They are not the individual CSV rows shown in the live viewer above.'));
     section.append(el('p',`${metadata.filename} · ${(metadata.archive_bytes/1048576).toFixed(1)} MiB · ${metadata.zip_entries.length} files in ZIP · ${metadata.source_rows.toLocaleString()} ballot records in the Wake CSV`,{class:'muted'}));
     section.append(el('p','The original archive and the Wake CSV were checked against the snapshot hashes shown below before generating this preview.',{class:'muted'}));
     for(const key of record.preview_keys){
@@ -48,7 +52,7 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere}.preview-jump{display:inline-blo
   document.title=r.label+' | Exact figure source';host.id=r.id;
   host.append(el('p','PROJECT CALCULATION FROM OFFICIAL RECORDS',{class:'muted'}),el('h1',r.label),el('p',`First ${r.matched_days} early-voting days in each year · 2026 evidence through ${r.cutoff}`,{class:'muted'}));
   const result=el('p',undefined,{class:'result'});result.append(el('mark',format(r.value,r.unit)));host.append(result,el('p',r.formula,{class:'arithmetic'}));
-  const originalPreview=el('section',undefined,{class:'original-file-preview',id:`original-preview-${r.id}`}),jump=el('button','Preview the original file ↓',{type:'button',class:'preview-jump','aria-controls':`original-preview-${r.id}`});jump.addEventListener('click',()=>originalPreview.scrollIntoView({block:'start',behavior:'smooth'}));host.append(jump);
+  const originalPreview=el('section',undefined,{class:'original-file-preview',id:`original-preview-${r.id}`}),jump=el('button','Preview the actual CSV ↓',{type:'button',class:'preview-jump','aria-controls':`original-preview-${r.id}`});jump.addEventListener('click',()=>originalPreview.scrollIntoView({block:'start',behavior:'smooth'}));host.append(jump);
   host.append(el('p','This figure is calculated from the NCSBE ballot records. The official catalog does not print this aggregate or percentage, and the ZIP has no browser link to an individual row. The exact record filters, inputs and original archive are shown below.',{class:'notice'}));
   host.append(table(r.inputs,'Exact inputs'));
   host.append(originalPreview);showOriginalPreviews(r,originalPreview);
@@ -59,7 +63,7 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere}.preview-jump{display:inline-blo
    const links=el('p');links.append(el('a','Download the original '+s.year+' ZIP',{href:s.url}));links.append(document.createTextNode(' · '));links.append(el('a','Locate this archive on the official NCSBE page',{href:s.catalog,target:'_blank',rel:'noopener'}));section.append(links);
    const dl=el('dl');for(const [label,value]of [['CSV inside the ZIP',s.member],['Source last modified (UTC)',s.last_modified],['Downloaded (UTC)',s.downloaded_at],['Archive SHA-256',s.sha256],['Wake CSV SHA-256',s.wake_csv_sha256]]){dl.append(el('dt',label));const dd=el('dd');dd.append(el('code',value));dl.append(dd);}section.append(dl);host.append(section);
   }
-  host.append(el('p','The live NCSBE download can be replaced as records are updated. The hashes identify the exact snapshot used here; they are not a government digital signature. Only aggregate inputs are published on this project.',{class:'muted'}));
+  host.append(el('p','The live NCSBE download can be replaced as records are updated. The hashes identify the exact snapshot used here; they are not a government digital signature. This repository stores only aggregate inputs; the CSV viewer reads original records directly from NCSBE into your browser.',{class:'muted'}));
   window.scrollTo(0,0);
  }
  window.addEventListener('hashchange',render);render();

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Original NCSBE CSV viewer</title>
+<style>
+:root{color-scheme:light dark;--paper:light-dark(#fff,#171717);--ink:light-dark(#172126,#eee);--line:light-dark(#d8dfe1,#444);--link:light-dark(#075c84,#9acfff)}*{box-sizing:border-box}body{margin:0;padding:18px;background:var(--paper);color:var(--ink);font:14px/1.5 system-ui,sans-serif}h1{font-size:20px;margin:0 0 8px}a{color:var(--link);overflow-wrap:anywhere}button,select,input{font:inherit;padding:7px;max-width:100%}button{cursor:pointer}button:disabled{cursor:default}p{margin:10px 0}.links{display:grid;gap:6px}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:12px 0}.grid{overflow:auto;max-height:360px;border:1px solid var(--line)}table{border-collapse:separate;border-spacing:0;font-size:12px;white-space:nowrap;width:100%}th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left}thead th{position:sticky;top:0;background:var(--paper);z-index:1}tbody th{font-weight:400}code{overflow-wrap:anywhere;font-size:11px}summary{cursor:pointer}#status{min-height:22px}pre{max-height:300px;overflow:auto;font-size:12px}label{display:flex;align-items:center;gap:6px}[hidden]{display:none!important}.verified{border-left:3px solid #27824f;padding-left:10px}.changed{border-left:3px solid #cb8921;padding-left:10px}
+</style></head><body>
+<h1 id="title">Original Wake County CSV</h1>
+<div class="links"><a id="source-page" target="_blank" rel="noopener">Official NCSBE source page</a><a id="source-file" target="_blank" rel="noopener">Original ZIP file URL</a></div>
+<p>This viewer reads the actual Wake CSV directly from NCSBE’s ZIP. Each displayed row is one original record, with its original CSV row number. The file stays in your browser.</p>
+<button id="load" disabled>Load actual CSV from NCSBE</button>
+<p id="status" role="status" aria-live="polite">Loading source details…</p>
+<div id="loaded" hidden>
+ <p id="verification"></p>
+ <div class="controls"><label>Records <select id="scope" aria-label="Records"><option value="figure">Figure’s selected records</option><option value="all">All original records</option></select></label><label><input type="checkbox" id="all-columns">Show all original columns</label></div>
+ <p>For a share, the selected records are the numerator cohort. The figure reference gives the denominator and exact filters.</p>
+ <p id="summary"></p>
+ <div class="grid" tabindex="0" role="region" aria-label="Actual original CSV records"><table id="csv-table"></table></div>
+ <div class="controls"><button id="previous">Previous 50</button><button id="next">Next 50</button><label>Page <input id="page" type="number" min="1" value="1" style="width:85px"></label><span id="pages"></span></div>
+ <details id="raw-details"><summary>View these rows as original CSV text</summary><p>Exact source text for this page, including every original column.</p><pre id="raw"></pre></details>
+ <details><summary>Verify the original CSV bytes</summary><p id="hash"></p></details>
+</div>
+<script src="csv-viewer.js"></script></body></html>

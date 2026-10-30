@@ -67,6 +67,8 @@ python scripts/refresh_report_snapshot.py
 
 Use a complete voting day covered by the downloaded file. The report is a dated snapshot and does not fetch live data. After refreshing the snapshot, rebuild the interactive app and update date-specific narrative and chart exports as described in [report-source/README.md](report-source/README.md). Raw voter-level data stay ignored; the locked full-period 2022 baseline remains unchanged.
 
+Clickable figure references also embed an [actual original CSV viewer](csv-viewer.html?year=2024&figure=demographic-2024-age-group-18-24). On request, it reads the Wake County CSV directly from the live official NCSBE ZIP into the visitor's browser, checks its hash against the report snapshot, and offers original rows, all original columns, CSV text and pagination. Links open both the official file listing and the original ZIP URL. This supplemental live viewer does not change the report's saved figures; individual records are never added to this repository.
+
 ## Main research questions
 
 - How many people used the NC State early-voting site in 2022 and 2026?
