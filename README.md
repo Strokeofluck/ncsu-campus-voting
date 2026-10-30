@@ -6,7 +6,11 @@ Data and reporting workspace for a Technician follow-up on voting at NC State.
 
 ## October 29, 2026 update: Talley to Western Boulevard
 
-The latest downloaded NCSBE file covers voting through **October 28, 2026**. The report compares **Talley Student Union in 2024 with Western Boulevard Business Services in 2026**, using the same first **14 early-voting days**. **2024 was presidential; 2026 is a midterm.** A selector retains the 2022-to-2026 midterm comparison. Early voting and Election Day remain separate.
+The latest downloaded NCSBE file covers voting through **October 28, 2026**. The report opens with **Talley Student Union in 2022 versus Western Boulevard Business Services in 2026**, using the same first **14 early-voting days**. **2022 and 2026 are midterms.** A selector retains 2024 as a presidential-election benchmark. Early voting and Election Day remain separate.
+
+The primary midterm comparison shows **44.2% more ages 18–24 ballots at the campus site** and **123.0% more across Wake County** than in 2022. All-age Wake early voting grew **61.6%**.
+
+### Retained 2024 presidential-election benchmark
 
 | Measure | Talley, 2024 | Western Boulevard, 2026 | Change |
 | --- | ---: | ---: | ---: |
@@ -32,6 +36,8 @@ Dates: **October 20, 2022–November 2, 2022**; **October 17, 2024–October 30,
 
 ![Age composition at Talley in 2022 and 2024 and Western Boulevard in 2026, matched first 14 days](docs/images/campus-age-composition-2022-2024-2026.png)
 
+Underlined figures in the exact-count, age, voter-profile and benchmark tables open a dedicated evidence page showing the selected calculation, exact inputs, record filters, original CSV member and NCSBE download. The executive-summary figures are linked too. [Example: verify the 2024 ages 18–24 share](figure-source.html#demographic-2024-age-group-18-24). NCSBE does not print these calculated percentages on its download catalog; the official archive is the underlying record source.
+
 The report compares ballot volume, age composition, individual ages 18 through 24, cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The age-group table switches between 2026 versus 2024 and 2026 versus 2022, keeping rows in age order and showing the count and denominator behind each share. Party registration, gender, race and ethnicity remain separate selectable site-user breakdowns. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
 
 ![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 14 days](docs/images/talley-2024-vs-western-2026-college-ages.png)
@@ -54,6 +60,7 @@ python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-28
 python scripts/validate_early_voting_comparison.py
 python scripts/audit_campus_figures.py
 python scripts/build_reference_page.py
+python scripts/build_figure_sources.py
 python scripts/refresh_report_snapshot.py
 ```
 

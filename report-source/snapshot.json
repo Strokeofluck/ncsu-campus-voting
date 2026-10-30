@@ -1,7 +1,7 @@
 {
   "surface": "report",
-  "title": "Talley vs Western Boulevard: college-age voting in 2024 and 2026",
-  "generatedAt": "2026-10-30T03:13:56.537347+00:00",
+  "title": "Talley vs Western Boulevard: college-age voting in the 2022 and 2026 midterms",
+  "generatedAt": "2026-10-30T03:58:21.674Z",
   "status": "reviewed",
   "buildStatus": "complete",
   "filters": [],
@@ -170,6 +170,15 @@
             "definition": "Accepted ballots of the given age divided by all ages at that same year’s campus site, times 100.",
             "componentIds": [
               "voting-college-age-detail"
+            ]
+          },
+          {
+            "label": "2024 presidential benchmark",
+            "definition": "For the same first 14 early-voting days: 2026 accepted ballot count divided by 2024 accepted ballot count, times 100; separately for Wake County and campus sites, for all ages and ages 18–24. This is a ballot-volume ratio, not a registered-voter turnout rate, target or forecast.",
+            "componentIds": [
+              "voting-benchmark-context",
+              "voting-2024-benchmark",
+              "voting-benchmark-table"
             ]
           }
         ]

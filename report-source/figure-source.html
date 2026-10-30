@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Exact figure source | NC State campus voting</title>
+<style>
+:root{color-scheme:light dark;--paper:light-dark(#fff,#171717);--ink:light-dark(#172126,#eee);--secondary:light-dark(#53626a,#bdbdbd);--line:light-dark(#d8dfe1,#444);--link:light-dark(#075c84,#9acfff);--highlight:light-dark(#fff2b5,#4b421b)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}main{max-width:900px;margin:auto;padding:28px 24px 70px}nav{display:flex;flex-wrap:wrap;gap:20px}a{color:var(--link);text-underline-offset:3px}h1{font-size:clamp(28px,5vw,42px);line-height:1.2;letter-spacing:-.025em;margin:25px 0 12px}h2{font-size:22px;margin:32px 0 10px}h3{font-size:17px;margin:24px 0 8px}.muted{color:var(--secondary)}.result{font-size:40px;line-height:1.2;font-weight:700;margin:20px 0}mark{display:inline-block;padding:6px 10px;background:var(--highlight);color:var(--ink);border-radius:5px}.arithmetic{font:16px/1.8 ui-monospace,monospace;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid var(--line);padding:12px 10px;text-align:left}td:last-child{text-align:right;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:600;margin:12px 0}details{margin:18px 0;border-block:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600}code{font-size:13px;overflow-wrap:anywhere}li{margin:7px 0}dl{display:grid;grid-template-columns:160px minmax(0,1fr);gap:9px 16px}dt{font-weight:600}dd{margin:0;overflow-wrap:anywhere}.source{border-top:1px solid var(--line);padding-top:14px;margin-top:20px}footer{border-top:1px solid var(--line);margin-top:36px;padding-top:16px}.notice{border-left:3px solid var(--line);padding-left:14px}.table-wrap{overflow-x:auto}@media(max-width:600px){main{padding:20px 16px 50px}dl{grid-template-columns:1fr;gap:4px}dd{margin-bottom:10px}th,td{padding:10px 6px}.result{font-size:34px}}
+</style></head><body><main><nav><a href="index.html">← Interactive report</a><a href="verify-figures.html">Campus count verification</a><a href="references.html">All references</a></nav><section id="figure" aria-live="polite"></section><footer><p>Source data: North Carolina State Board of Elections. 2026 is preliminary; ages 18–24 are a college-age proxy, not verified NC State students. These counts do not establish the move’s causal effect.</p><p><a href="data/processed/comparison/figure_sources.json">Download the aggregate evidence records</a> · <a href="https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/scripts/build_figure_sources.py">Read the calculation-source generator</a></p></footer></main>
+<script type="application/json" id="figure-data">__FIGURE_SOURCES_JSON__</script>
+<script>
+(()=>{
+ const payload=JSON.parse(document.getElementById('figure-data').textContent),host=document.getElementById('figure');
+ const el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
+ const format=(value,unit)=>unit==='%'?value.toFixed(1)+'%':unit==='percentage points'?(value>0?'+':'')+value.toFixed(1)+' percentage points':value.toLocaleString('en-US');
+ function table(rows,title){const table=el('table');table.append(el('caption',title));const body=el('tbody');for(const r of rows){const tr=el('tr'),name=el('th',r.label,{scope:'row'}),value=el('td');const text=format(r.value,r.unit);if(r.target)value.append(el('a',text,{href:'#'+r.target}));else value.textContent=text;tr.append(name,value);body.append(tr);}table.append(body);return table;}
+ function render(){
+  const key=decodeURIComponent(location.hash.slice(1)),r=payload.records[key];host.replaceChildren();host.dataset.figureId=key;
+  if(!r){host.append(el('h1','Choose a figure from the report'),el('p','Use an underlined number in a report table to open its exact inputs and original source.'));return;}
+  document.title=r.label+' | Exact figure source';host.id=r.id;
+  host.append(el('p','PROJECT CALCULATION FROM OFFICIAL RECORDS',{class:'muted'}),el('h1',r.label),el('p',`First ${r.matched_days} early-voting days in each year · 2026 evidence through ${r.cutoff}`,{class:'muted'}));
+  const result=el('p',undefined,{class:'result'});result.append(el('mark',format(r.value,r.unit)));host.append(result,el('p',r.formula,{class:'arithmetic'}));
+  host.append(el('p','This figure is calculated from the NCSBE ballot records. The official catalog does not print this aggregate or percentage, and the ZIP has no browser link to an individual row. The exact record filters, inputs and original archive are shown below.',{class:'notice'}));
+  host.append(table(r.inputs,'Exact inputs'));
+  if(r.breakdown.length){const details=el('details');details.append(el('summary','Show the records’ aggregate breakdown behind the numerator'),table(r.breakdown,'Numerator breakdown'));host.append(details);}
+  host.append(el('h2','Exact record selection'));const list=el('ul');for(const filter of r.filters)list.append(el('li',filter));host.append(list);
+  host.append(el('h2','Original NCSBE source files'));
+  for(const s of r.sources){const section=el('section',undefined,{class:'source'});section.append(el('h3',String(s.year)+' official absentee / early-voting archive'));
+   const links=el('p');links.append(el('a','Download the original '+s.year+' ZIP',{href:s.url}));links.append(document.createTextNode(' · '));links.append(el('a','Locate this archive on the official NCSBE page',{href:s.catalog,target:'_blank',rel:'noopener'}));section.append(links);
+   const dl=el('dl');for(const [label,value]of [['CSV inside the ZIP',s.member],['Source last modified (UTC)',s.last_modified],['Downloaded (UTC)',s.downloaded_at],['Archive SHA-256',s.sha256],['Wake CSV SHA-256',s.wake_csv_sha256]]){dl.append(el('dt',label));const dd=el('dd');dd.append(el('code',value));dl.append(dd);}section.append(dl);host.append(section);
+  }
+  host.append(el('p','The live NCSBE download can be replaced as records are updated. The hashes identify the exact snapshot used here; they are not a government digital signature. Only aggregate inputs are published on this project.',{class:'muted'}));
+  window.scrollTo(0,0);
+ }
+ window.addEventListener('hashchange',render);render();
+})();
+</script></body></html>

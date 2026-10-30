@@ -138,6 +138,503 @@
         "23": 257,
         "24": 210
       },
+      "demographics": [
+        {
+          "dimension": "age",
+          "value": "18",
+          "votes": 181
+        },
+        {
+          "dimension": "age",
+          "value": "19",
+          "votes": 331
+        },
+        {
+          "dimension": "age",
+          "value": "20",
+          "votes": 352
+        },
+        {
+          "dimension": "age",
+          "value": "21",
+          "votes": 385
+        },
+        {
+          "dimension": "age",
+          "value": "22",
+          "votes": 341
+        },
+        {
+          "dimension": "age",
+          "value": "23",
+          "votes": 257
+        },
+        {
+          "dimension": "age",
+          "value": "24",
+          "votes": 210
+        },
+        {
+          "dimension": "age",
+          "value": "25",
+          "votes": 181
+        },
+        {
+          "dimension": "age",
+          "value": "26",
+          "votes": 170
+        },
+        {
+          "dimension": "age",
+          "value": "27",
+          "votes": 184
+        },
+        {
+          "dimension": "age",
+          "value": "28",
+          "votes": 139
+        },
+        {
+          "dimension": "age",
+          "value": "29",
+          "votes": 137
+        },
+        {
+          "dimension": "age",
+          "value": "30",
+          "votes": 117
+        },
+        {
+          "dimension": "age",
+          "value": "31",
+          "votes": 120
+        },
+        {
+          "dimension": "age",
+          "value": "32",
+          "votes": 111
+        },
+        {
+          "dimension": "age",
+          "value": "33",
+          "votes": 116
+        },
+        {
+          "dimension": "age",
+          "value": "34",
+          "votes": 98
+        },
+        {
+          "dimension": "age",
+          "value": "35",
+          "votes": 81
+        },
+        {
+          "dimension": "age",
+          "value": "36",
+          "votes": 78
+        },
+        {
+          "dimension": "age",
+          "value": "37",
+          "votes": 83
+        },
+        {
+          "dimension": "age",
+          "value": "38",
+          "votes": 74
+        },
+        {
+          "dimension": "age",
+          "value": "39",
+          "votes": 77
+        },
+        {
+          "dimension": "age",
+          "value": "40",
+          "votes": 68
+        },
+        {
+          "dimension": "age",
+          "value": "41",
+          "votes": 66
+        },
+        {
+          "dimension": "age",
+          "value": "42",
+          "votes": 76
+        },
+        {
+          "dimension": "age",
+          "value": "43",
+          "votes": 83
+        },
+        {
+          "dimension": "age",
+          "value": "44",
+          "votes": 65
+        },
+        {
+          "dimension": "age",
+          "value": "45",
+          "votes": 68
+        },
+        {
+          "dimension": "age",
+          "value": "46",
+          "votes": 62
+        },
+        {
+          "dimension": "age",
+          "value": "47",
+          "votes": 68
+        },
+        {
+          "dimension": "age",
+          "value": "48",
+          "votes": 78
+        },
+        {
+          "dimension": "age",
+          "value": "49",
+          "votes": 60
+        },
+        {
+          "dimension": "age",
+          "value": "50",
+          "votes": 75
+        },
+        {
+          "dimension": "age",
+          "value": "51",
+          "votes": 97
+        },
+        {
+          "dimension": "age",
+          "value": "52",
+          "votes": 108
+        },
+        {
+          "dimension": "age",
+          "value": "53",
+          "votes": 84
+        },
+        {
+          "dimension": "age",
+          "value": "54",
+          "votes": 81
+        },
+        {
+          "dimension": "age",
+          "value": "55",
+          "votes": 94
+        },
+        {
+          "dimension": "age",
+          "value": "56",
+          "votes": 107
+        },
+        {
+          "dimension": "age",
+          "value": "57",
+          "votes": 95
+        },
+        {
+          "dimension": "age",
+          "value": "58",
+          "votes": 117
+        },
+        {
+          "dimension": "age",
+          "value": "59",
+          "votes": 117
+        },
+        {
+          "dimension": "age",
+          "value": "60",
+          "votes": 114
+        },
+        {
+          "dimension": "age",
+          "value": "61",
+          "votes": 106
+        },
+        {
+          "dimension": "age",
+          "value": "62",
+          "votes": 108
+        },
+        {
+          "dimension": "age",
+          "value": "63",
+          "votes": 86
+        },
+        {
+          "dimension": "age",
+          "value": "64",
+          "votes": 85
+        },
+        {
+          "dimension": "age",
+          "value": "65",
+          "votes": 81
+        },
+        {
+          "dimension": "age",
+          "value": "66",
+          "votes": 84
+        },
+        {
+          "dimension": "age",
+          "value": "67",
+          "votes": 76
+        },
+        {
+          "dimension": "age",
+          "value": "68",
+          "votes": 77
+        },
+        {
+          "dimension": "age",
+          "value": "69",
+          "votes": 79
+        },
+        {
+          "dimension": "age",
+          "value": "70",
+          "votes": 79
+        },
+        {
+          "dimension": "age",
+          "value": "71",
+          "votes": 54
+        },
+        {
+          "dimension": "age",
+          "value": "72",
+          "votes": 65
+        },
+        {
+          "dimension": "age",
+          "value": "73",
+          "votes": 61
+        },
+        {
+          "dimension": "age",
+          "value": "74",
+          "votes": 62
+        },
+        {
+          "dimension": "age",
+          "value": "75",
+          "votes": 72
+        },
+        {
+          "dimension": "age",
+          "value": "76",
+          "votes": 52
+        },
+        {
+          "dimension": "age",
+          "value": "77",
+          "votes": 31
+        },
+        {
+          "dimension": "age",
+          "value": "78",
+          "votes": 27
+        },
+        {
+          "dimension": "age",
+          "value": "79",
+          "votes": 18
+        },
+        {
+          "dimension": "age",
+          "value": "80",
+          "votes": 13
+        },
+        {
+          "dimension": "age",
+          "value": "81",
+          "votes": 18
+        },
+        {
+          "dimension": "age",
+          "value": "82",
+          "votes": 10
+        },
+        {
+          "dimension": "age",
+          "value": "83",
+          "votes": 15
+        },
+        {
+          "dimension": "age",
+          "value": "84",
+          "votes": 7
+        },
+        {
+          "dimension": "age",
+          "value": "85",
+          "votes": 8
+        },
+        {
+          "dimension": "age",
+          "value": "86",
+          "votes": 3
+        },
+        {
+          "dimension": "age",
+          "value": "87",
+          "votes": 3
+        },
+        {
+          "dimension": "age",
+          "value": "88",
+          "votes": 8
+        },
+        {
+          "dimension": "age",
+          "value": "89",
+          "votes": 4
+        },
+        {
+          "dimension": "age",
+          "value": "90",
+          "votes": 5
+        },
+        {
+          "dimension": "age",
+          "value": "91",
+          "votes": 2
+        },
+        {
+          "dimension": "age",
+          "value": "92",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "94",
+          "votes": 1
+        },
+        {
+          "dimension": "age_group",
+          "value": "18\u201324",
+          "votes": 2057
+        },
+        {
+          "dimension": "age_group",
+          "value": "25\u201334",
+          "votes": 1373
+        },
+        {
+          "dimension": "age_group",
+          "value": "35\u201344",
+          "votes": 751
+        },
+        {
+          "dimension": "age_group",
+          "value": "45\u201364",
+          "votes": 1810
+        },
+        {
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 1016
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 171
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 4904
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 1932
+        },
+        {
+          "dimension": "gender",
+          "value": "F",
+          "votes": 3085
+        },
+        {
+          "dimension": "gender",
+          "value": "M",
+          "votes": 3037
+        },
+        {
+          "dimension": "gender",
+          "value": "U",
+          "votes": 885
+        },
+        {
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 3208
+        },
+        {
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 3
+        },
+        {
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 31
+        },
+        {
+          "dimension": "party",
+          "value": "REP",
+          "votes": 758
+        },
+        {
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 3007
+        },
+        {
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 256
+        },
+        {
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 418
+        },
+        {
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 12
+        },
+        {
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 213
+        },
+        {
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 58
+        },
+        {
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 890
+        },
+        {
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 5160
+        }
+      ],
       "status_counts_before_accepted_filter": {
         "ACCEPTED": 7007,
         "CANCELLED": 14
@@ -152,7 +649,7 @@
         "member": "WAKE_absentee_20221108.csv",
         "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85"
       },
-      "verification": "Exact match to published aggregate table; original archive hash verified"
+      "verification": "Exact match to published aggregate table and every campus demographic breakdown; original archive and member hashes verified"
     },
     {
       "year": 2024,
@@ -291,6 +788,533 @@
         "23": 650,
         "24": 656
       },
+      "demographics": [
+        {
+          "dimension": "age",
+          "value": "18",
+          "votes": 839
+        },
+        {
+          "dimension": "age",
+          "value": "19",
+          "votes": 1306
+        },
+        {
+          "dimension": "age",
+          "value": "20",
+          "votes": 1467
+        },
+        {
+          "dimension": "age",
+          "value": "21",
+          "votes": 1374
+        },
+        {
+          "dimension": "age",
+          "value": "22",
+          "votes": 902
+        },
+        {
+          "dimension": "age",
+          "value": "23",
+          "votes": 650
+        },
+        {
+          "dimension": "age",
+          "value": "24",
+          "votes": 656
+        },
+        {
+          "dimension": "age",
+          "value": "25",
+          "votes": 577
+        },
+        {
+          "dimension": "age",
+          "value": "26",
+          "votes": 520
+        },
+        {
+          "dimension": "age",
+          "value": "27",
+          "votes": 416
+        },
+        {
+          "dimension": "age",
+          "value": "28",
+          "votes": 341
+        },
+        {
+          "dimension": "age",
+          "value": "29",
+          "votes": 309
+        },
+        {
+          "dimension": "age",
+          "value": "30",
+          "votes": 274
+        },
+        {
+          "dimension": "age",
+          "value": "31",
+          "votes": 280
+        },
+        {
+          "dimension": "age",
+          "value": "32",
+          "votes": 252
+        },
+        {
+          "dimension": "age",
+          "value": "33",
+          "votes": 234
+        },
+        {
+          "dimension": "age",
+          "value": "34",
+          "votes": 196
+        },
+        {
+          "dimension": "age",
+          "value": "35",
+          "votes": 192
+        },
+        {
+          "dimension": "age",
+          "value": "36",
+          "votes": 185
+        },
+        {
+          "dimension": "age",
+          "value": "37",
+          "votes": 188
+        },
+        {
+          "dimension": "age",
+          "value": "38",
+          "votes": 163
+        },
+        {
+          "dimension": "age",
+          "value": "39",
+          "votes": 152
+        },
+        {
+          "dimension": "age",
+          "value": "40",
+          "votes": 178
+        },
+        {
+          "dimension": "age",
+          "value": "41",
+          "votes": 165
+        },
+        {
+          "dimension": "age",
+          "value": "42",
+          "votes": 150
+        },
+        {
+          "dimension": "age",
+          "value": "43",
+          "votes": 133
+        },
+        {
+          "dimension": "age",
+          "value": "44",
+          "votes": 153
+        },
+        {
+          "dimension": "age",
+          "value": "45",
+          "votes": 146
+        },
+        {
+          "dimension": "age",
+          "value": "46",
+          "votes": 149
+        },
+        {
+          "dimension": "age",
+          "value": "47",
+          "votes": 179
+        },
+        {
+          "dimension": "age",
+          "value": "48",
+          "votes": 192
+        },
+        {
+          "dimension": "age",
+          "value": "49",
+          "votes": 175
+        },
+        {
+          "dimension": "age",
+          "value": "50",
+          "votes": 173
+        },
+        {
+          "dimension": "age",
+          "value": "51",
+          "votes": 153
+        },
+        {
+          "dimension": "age",
+          "value": "52",
+          "votes": 164
+        },
+        {
+          "dimension": "age",
+          "value": "53",
+          "votes": 175
+        },
+        {
+          "dimension": "age",
+          "value": "54",
+          "votes": 218
+        },
+        {
+          "dimension": "age",
+          "value": "55",
+          "votes": 189
+        },
+        {
+          "dimension": "age",
+          "value": "56",
+          "votes": 181
+        },
+        {
+          "dimension": "age",
+          "value": "57",
+          "votes": 181
+        },
+        {
+          "dimension": "age",
+          "value": "58",
+          "votes": 168
+        },
+        {
+          "dimension": "age",
+          "value": "59",
+          "votes": 159
+        },
+        {
+          "dimension": "age",
+          "value": "60",
+          "votes": 163
+        },
+        {
+          "dimension": "age",
+          "value": "61",
+          "votes": 145
+        },
+        {
+          "dimension": "age",
+          "value": "62",
+          "votes": 163
+        },
+        {
+          "dimension": "age",
+          "value": "63",
+          "votes": 151
+        },
+        {
+          "dimension": "age",
+          "value": "64",
+          "votes": 176
+        },
+        {
+          "dimension": "age",
+          "value": "65",
+          "votes": 153
+        },
+        {
+          "dimension": "age",
+          "value": "66",
+          "votes": 132
+        },
+        {
+          "dimension": "age",
+          "value": "67",
+          "votes": 118
+        },
+        {
+          "dimension": "age",
+          "value": "68",
+          "votes": 128
+        },
+        {
+          "dimension": "age",
+          "value": "69",
+          "votes": 107
+        },
+        {
+          "dimension": "age",
+          "value": "70",
+          "votes": 111
+        },
+        {
+          "dimension": "age",
+          "value": "71",
+          "votes": 83
+        },
+        {
+          "dimension": "age",
+          "value": "72",
+          "votes": 110
+        },
+        {
+          "dimension": "age",
+          "value": "73",
+          "votes": 85
+        },
+        {
+          "dimension": "age",
+          "value": "74",
+          "votes": 81
+        },
+        {
+          "dimension": "age",
+          "value": "75",
+          "votes": 88
+        },
+        {
+          "dimension": "age",
+          "value": "76",
+          "votes": 75
+        },
+        {
+          "dimension": "age",
+          "value": "77",
+          "votes": 75
+        },
+        {
+          "dimension": "age",
+          "value": "78",
+          "votes": 59
+        },
+        {
+          "dimension": "age",
+          "value": "79",
+          "votes": 44
+        },
+        {
+          "dimension": "age",
+          "value": "80",
+          "votes": 44
+        },
+        {
+          "dimension": "age",
+          "value": "81",
+          "votes": 37
+        },
+        {
+          "dimension": "age",
+          "value": "82",
+          "votes": 22
+        },
+        {
+          "dimension": "age",
+          "value": "83",
+          "votes": 31
+        },
+        {
+          "dimension": "age",
+          "value": "84",
+          "votes": 12
+        },
+        {
+          "dimension": "age",
+          "value": "85",
+          "votes": 27
+        },
+        {
+          "dimension": "age",
+          "value": "86",
+          "votes": 16
+        },
+        {
+          "dimension": "age",
+          "value": "87",
+          "votes": 18
+        },
+        {
+          "dimension": "age",
+          "value": "88",
+          "votes": 3
+        },
+        {
+          "dimension": "age",
+          "value": "89",
+          "votes": 3
+        },
+        {
+          "dimension": "age",
+          "value": "90",
+          "votes": 6
+        },
+        {
+          "dimension": "age",
+          "value": "91",
+          "votes": 7
+        },
+        {
+          "dimension": "age",
+          "value": "92",
+          "votes": 7
+        },
+        {
+          "dimension": "age",
+          "value": "93",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "94",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "95",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "98",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "99",
+          "votes": 1
+        },
+        {
+          "dimension": "age_group",
+          "value": "18\u201324",
+          "votes": 7194
+        },
+        {
+          "dimension": "age_group",
+          "value": "25\u201334",
+          "votes": 3399
+        },
+        {
+          "dimension": "age_group",
+          "value": "35\u201344",
+          "votes": 1659
+        },
+        {
+          "dimension": "age_group",
+          "value": "45\u201364",
+          "votes": 3400
+        },
+        {
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 1687
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 666
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 10004
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 6669
+        },
+        {
+          "dimension": "gender",
+          "value": "F",
+          "votes": 7463
+        },
+        {
+          "dimension": "gender",
+          "value": "M",
+          "votes": 6988
+        },
+        {
+          "dimension": "gender",
+          "value": "U",
+          "votes": 2888
+        },
+        {
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 6544
+        },
+        {
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 34
+        },
+        {
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 45
+        },
+        {
+          "dimension": "party",
+          "value": "NLB",
+          "votes": 34
+        },
+        {
+          "dimension": "party",
+          "value": "REP",
+          "votes": 2024
+        },
+        {
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 8658
+        },
+        {
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 937
+        },
+        {
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 1137
+        },
+        {
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 49
+        },
+        {
+          "dimension": "race",
+          "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+          "votes": 4
+        },
+        {
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 729
+        },
+        {
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 147
+        },
+        {
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 3014
+        },
+        {
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 11322
+        }
+      ],
       "status_counts_before_accepted_filter": {
         "ACCEPTED": 17339,
         "CANCELLED": 46,
@@ -306,7 +1330,7 @@
         "member": "WAKE_absentee_20241105.csv",
         "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352"
       },
-      "verification": "Exact match to published aggregate table; original archive hash verified"
+      "verification": "Exact match to published aggregate table and every campus demographic breakdown; original archive and member hashes verified"
     },
     {
       "year": 2026,
@@ -445,6 +1469,538 @@
         "23": 363,
         "24": 287
       },
+      "demographics": [
+        {
+          "dimension": "age",
+          "value": "18",
+          "votes": 237
+        },
+        {
+          "dimension": "age",
+          "value": "19",
+          "votes": 429
+        },
+        {
+          "dimension": "age",
+          "value": "20",
+          "votes": 568
+        },
+        {
+          "dimension": "age",
+          "value": "21",
+          "votes": 607
+        },
+        {
+          "dimension": "age",
+          "value": "22",
+          "votes": 475
+        },
+        {
+          "dimension": "age",
+          "value": "23",
+          "votes": 363
+        },
+        {
+          "dimension": "age",
+          "value": "24",
+          "votes": 287
+        },
+        {
+          "dimension": "age",
+          "value": "25",
+          "votes": 280
+        },
+        {
+          "dimension": "age",
+          "value": "26",
+          "votes": 275
+        },
+        {
+          "dimension": "age",
+          "value": "27",
+          "votes": 296
+        },
+        {
+          "dimension": "age",
+          "value": "28",
+          "votes": 212
+        },
+        {
+          "dimension": "age",
+          "value": "29",
+          "votes": 209
+        },
+        {
+          "dimension": "age",
+          "value": "30",
+          "votes": 174
+        },
+        {
+          "dimension": "age",
+          "value": "31",
+          "votes": 142
+        },
+        {
+          "dimension": "age",
+          "value": "32",
+          "votes": 149
+        },
+        {
+          "dimension": "age",
+          "value": "33",
+          "votes": 145
+        },
+        {
+          "dimension": "age",
+          "value": "34",
+          "votes": 144
+        },
+        {
+          "dimension": "age",
+          "value": "35",
+          "votes": 138
+        },
+        {
+          "dimension": "age",
+          "value": "36",
+          "votes": 152
+        },
+        {
+          "dimension": "age",
+          "value": "37",
+          "votes": 150
+        },
+        {
+          "dimension": "age",
+          "value": "38",
+          "votes": 114
+        },
+        {
+          "dimension": "age",
+          "value": "39",
+          "votes": 118
+        },
+        {
+          "dimension": "age",
+          "value": "40",
+          "votes": 89
+        },
+        {
+          "dimension": "age",
+          "value": "41",
+          "votes": 96
+        },
+        {
+          "dimension": "age",
+          "value": "42",
+          "votes": 111
+        },
+        {
+          "dimension": "age",
+          "value": "43",
+          "votes": 93
+        },
+        {
+          "dimension": "age",
+          "value": "44",
+          "votes": 118
+        },
+        {
+          "dimension": "age",
+          "value": "45",
+          "votes": 88
+        },
+        {
+          "dimension": "age",
+          "value": "46",
+          "votes": 104
+        },
+        {
+          "dimension": "age",
+          "value": "47",
+          "votes": 112
+        },
+        {
+          "dimension": "age",
+          "value": "48",
+          "votes": 111
+        },
+        {
+          "dimension": "age",
+          "value": "49",
+          "votes": 115
+        },
+        {
+          "dimension": "age",
+          "value": "50",
+          "votes": 122
+        },
+        {
+          "dimension": "age",
+          "value": "51",
+          "votes": 129
+        },
+        {
+          "dimension": "age",
+          "value": "52",
+          "votes": 142
+        },
+        {
+          "dimension": "age",
+          "value": "53",
+          "votes": 113
+        },
+        {
+          "dimension": "age",
+          "value": "54",
+          "votes": 107
+        },
+        {
+          "dimension": "age",
+          "value": "55",
+          "votes": 142
+        },
+        {
+          "dimension": "age",
+          "value": "56",
+          "votes": 158
+        },
+        {
+          "dimension": "age",
+          "value": "57",
+          "votes": 105
+        },
+        {
+          "dimension": "age",
+          "value": "58",
+          "votes": 131
+        },
+        {
+          "dimension": "age",
+          "value": "59",
+          "votes": 122
+        },
+        {
+          "dimension": "age",
+          "value": "60",
+          "votes": 130
+        },
+        {
+          "dimension": "age",
+          "value": "61",
+          "votes": 136
+        },
+        {
+          "dimension": "age",
+          "value": "62",
+          "votes": 147
+        },
+        {
+          "dimension": "age",
+          "value": "63",
+          "votes": 115
+        },
+        {
+          "dimension": "age",
+          "value": "64",
+          "votes": 133
+        },
+        {
+          "dimension": "age",
+          "value": "65",
+          "votes": 116
+        },
+        {
+          "dimension": "age",
+          "value": "66",
+          "votes": 150
+        },
+        {
+          "dimension": "age",
+          "value": "67",
+          "votes": 119
+        },
+        {
+          "dimension": "age",
+          "value": "68",
+          "votes": 135
+        },
+        {
+          "dimension": "age",
+          "value": "69",
+          "votes": 95
+        },
+        {
+          "dimension": "age",
+          "value": "70",
+          "votes": 108
+        },
+        {
+          "dimension": "age",
+          "value": "71",
+          "votes": 101
+        },
+        {
+          "dimension": "age",
+          "value": "72",
+          "votes": 110
+        },
+        {
+          "dimension": "age",
+          "value": "73",
+          "votes": 123
+        },
+        {
+          "dimension": "age",
+          "value": "74",
+          "votes": 95
+        },
+        {
+          "dimension": "age",
+          "value": "75",
+          "votes": 97
+        },
+        {
+          "dimension": "age",
+          "value": "76",
+          "votes": 73
+        },
+        {
+          "dimension": "age",
+          "value": "77",
+          "votes": 75
+        },
+        {
+          "dimension": "age",
+          "value": "78",
+          "votes": 76
+        },
+        {
+          "dimension": "age",
+          "value": "79",
+          "votes": 76
+        },
+        {
+          "dimension": "age",
+          "value": "80",
+          "votes": 54
+        },
+        {
+          "dimension": "age",
+          "value": "81",
+          "votes": 45
+        },
+        {
+          "dimension": "age",
+          "value": "82",
+          "votes": 37
+        },
+        {
+          "dimension": "age",
+          "value": "83",
+          "votes": 35
+        },
+        {
+          "dimension": "age",
+          "value": "84",
+          "votes": 26
+        },
+        {
+          "dimension": "age",
+          "value": "85",
+          "votes": 24
+        },
+        {
+          "dimension": "age",
+          "value": "86",
+          "votes": 19
+        },
+        {
+          "dimension": "age",
+          "value": "87",
+          "votes": 21
+        },
+        {
+          "dimension": "age",
+          "value": "88",
+          "votes": 13
+        },
+        {
+          "dimension": "age",
+          "value": "89",
+          "votes": 10
+        },
+        {
+          "dimension": "age",
+          "value": "90",
+          "votes": 6
+        },
+        {
+          "dimension": "age",
+          "value": "91",
+          "votes": 4
+        },
+        {
+          "dimension": "age",
+          "value": "92",
+          "votes": 8
+        },
+        {
+          "dimension": "age",
+          "value": "93",
+          "votes": 4
+        },
+        {
+          "dimension": "age",
+          "value": "94",
+          "votes": 3
+        },
+        {
+          "dimension": "age",
+          "value": "95",
+          "votes": 3
+        },
+        {
+          "dimension": "age",
+          "value": "96",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "97",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "98",
+          "votes": 1
+        },
+        {
+          "dimension": "age",
+          "value": "99",
+          "votes": 1
+        },
+        {
+          "dimension": "age_group",
+          "value": "18\u201324",
+          "votes": 2966
+        },
+        {
+          "dimension": "age_group",
+          "value": "25\u201334",
+          "votes": 2026
+        },
+        {
+          "dimension": "age_group",
+          "value": "35\u201344",
+          "votes": 1179
+        },
+        {
+          "dimension": "age_group",
+          "value": "45\u201364",
+          "votes": 2462
+        },
+        {
+          "dimension": "age_group",
+          "value": "65+",
+          "votes": 1865
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "HISPANIC or LATINO",
+          "votes": 439
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "NOT HISPANIC or NOT LATINO",
+          "votes": 6285
+        },
+        {
+          "dimension": "ethnicity",
+          "value": "UNDESIGNATED",
+          "votes": 3774
+        },
+        {
+          "dimension": "gender",
+          "value": "F",
+          "votes": 4902
+        },
+        {
+          "dimension": "gender",
+          "value": "M",
+          "votes": 4412
+        },
+        {
+          "dimension": "gender",
+          "value": "U",
+          "votes": 1184
+        },
+        {
+          "dimension": "party",
+          "value": "DEM",
+          "votes": 4765
+        },
+        {
+          "dimension": "party",
+          "value": "GRE",
+          "votes": 18
+        },
+        {
+          "dimension": "party",
+          "value": "LIB",
+          "votes": 22
+        },
+        {
+          "dimension": "party",
+          "value": "REP",
+          "votes": 676
+        },
+        {
+          "dimension": "party",
+          "value": "UNA",
+          "votes": 5017
+        },
+        {
+          "dimension": "race",
+          "value": "ASIAN",
+          "votes": 491
+        },
+        {
+          "dimension": "race",
+          "value": "BLACK or AFRICAN AMERICAN",
+          "votes": 869
+        },
+        {
+          "dimension": "race",
+          "value": "INDIAN AMERICAN or ALASKA NATIVE",
+          "votes": 30
+        },
+        {
+          "dimension": "race",
+          "value": "NATIVE HAWAIIAN or PACIFIC ISLANDER",
+          "votes": 1
+        },
+        {
+          "dimension": "race",
+          "value": "OTHER",
+          "votes": 505
+        },
+        {
+          "dimension": "race",
+          "value": "TWO or MORE RACES",
+          "votes": 85
+        },
+        {
+          "dimension": "race",
+          "value": "UNDESIGNATED",
+          "votes": 1308
+        },
+        {
+          "dimension": "race",
+          "value": "WHITE",
+          "votes": 7209
+        }
+      ],
       "status_counts_before_accepted_filter": {
         "ACCEPTED": 10498,
         "CANCELLED": 26,
@@ -460,7 +2016,7 @@
         "member": "WAKE_absentee_20261103.csv",
         "wake_csv_sha256": "dcf14b2c5c3e1e8c95bb02d1ced21c4478b68e5a14cb74954d5f66499023f8ef"
       },
-      "verification": "Exact match to published aggregate table; original archive hash verified"
+      "verification": "Exact match to published aggregate table and every campus demographic breakdown; original archive and member hashes verified"
     }
   ]
 }
