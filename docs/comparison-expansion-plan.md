@@ -60,3 +60,5 @@ Separate site use, population composition, location/method substitution and over
 - [Report authoring source](../report-source/README.md)
 
 Continue in the same report and repository. Preserve its identity, existing figures, source links, baseline selector and verified aggregate data. Refresh all dependent dates and figures together. Keep raw names, addresses, voter IDs and individual rows out of public commits and exports. If the next environment lacks GitHub write access or the required report build tooling, provide a concrete patch and calculations without claiming the live page was updated.
+
+Residential precinct and ZIP-code aggregates are now available in the report and `matched_geography.csv`, with age bands and named-site versus other-Wake counts. These are independent yearly location-use groups; precinct changes and missing population denominators prevent treating them as resident turnout or individual switching estimates.

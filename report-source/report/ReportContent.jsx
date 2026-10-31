@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { GeographyExplorer } from './GeographyExplorer.jsx';
 import { EvidenceChart, DataComponent, Dropdown, MetricCard, ReportSection, RichNarrative, useDataApp } from '../../data-app-public.jsx';
 const num=n=>Number(n).toLocaleString('en-US');
 const short=n=>n>=1000?`${(n/1000).toFixed(1)}k`:num(n);
@@ -46,7 +47,7 @@ export function ReportContent(){
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const [ageBaseline,setAgeBaseline]=useState(2022),[profileDimension,setProfileDimension]=useState('party');
  const [partyScope,setPartyScope]=useState('Campus site'),[partyCohort,setPartyCohort]=useState('All ages');
- useEffect(()=>{if(window.location.hash==='#party-trends')document.getElementById('party-trends')?.scrollIntoView({block:'start'});},[]);
+ useEffect(()=>{const id=window.location.hash.slice(1);if(['party-trends','voter-origins'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
@@ -105,7 +106,7 @@ export function ReportContent(){
  const benchmarks=['Wake County','Campus site'].flatMap(location=>['all_ages','age_18_24'].map(field=>({location,field,label:`${location==='Campus site'?'Talley / Western Boulevard':'Wake County'} · ${field==='all_ages'?'all ages':'ages 18–24'}`,previous:get(2022,location)[field],presidential:get(2024,location)[field],current:get(2026,location)[field],share2024:get(2026,location)[field]/get(2024,location)[field]*100,growth2022:growth(get(2026,location)[field],get(2022,location)[field])})));
  const previews={'https://www.ncsbe.gov/results-data/absentee-and-provisional-data':{title:'NCSBE absentee and early-voting data',summary:'Official download catalog explaining absentee records and early-voting ballots. This analysis uses Wake County records from the 2022, 2024 and 2026 general-election archives.',source:'North Carolina State Board of Elections',approvedForReport:true}};
  return <article className="report-content voting-report" aria-label="NC State early-voting comparison">
-  <nav className="voting-page-nav" aria-label="Page links"><a href="references.html">References ↗</a></nav>
+  <nav className="voting-page-nav" aria-label="Page links"><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
   <header className="report-hero">
    <RichNarrative id="voting:eyebrow" value="NC STATE · TALLEY → WESTERN BOULEVARD" className="voting-eyebrow"/>
    <h1 data-data-app-title contentEditable={canEdit&&mode==='edit'} suppressContentEditableWarning onBlur={canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined}>{appTitle}</h1>
@@ -228,6 +229,7 @@ Running totals for ${partyCohort==='All ages'?'all ages':`ages ${partyCohort}`} 
     <a href="data/processed/comparison/matched_sdr_daily.csv" download>Download daily same-day-registration counts (.csv)</a>
    </DataComponent>
   </div>
+  <GeographyExplorer/>
   <ReportSection id="voting-relative-intro" title="How the campus pattern compares with Wake County" queryId="summary" sourceRows={paired} showHeading={false}>
    <RichNarrative id="voting-relative-intro:body" value={`## How the campus pattern compares with Wake County
 
@@ -268,9 +270,9 @@ For a stronger impact analysis, complete early voting and include finalized mail
 
 **The central question is participation:** did changing the location alter college-age residents’ probability of voting? Site use, within-site age mix and countywide site share are useful evidence, but they answer different questions. Same-day registration is supporting context.
 
-**Available in the current snapshot:** exact counts and changes for all ages, ages 18–24, ages 18–22 and same-day registration; age-group and individual-age distributions; party registration, gender, race and ethnicity as separate site-user breakdowns; same-day registration by age band with daily counts, running totals and cohort shares; daily and cumulative ballot counts; and campus, other-site and countywide comparisons. The new download adds counts, absolute differences, percentage growth, shares of each scope and shares of the same cohort’s Wake ballots for both historical baselines.
+**Available in the current snapshot:** exact counts and changes for all ages, ages 18–24, ages 18–22 and same-day registration; age-group and individual-age distributions; party registration, gender, race and ethnicity as separate site-user breakdowns; same-day registration by age band with daily counts, running totals and cohort shares; residential precinct and ZIP groups with named-site versus other-Wake counts and shares; daily and cumulative ballot counts; and campus, other-site and countywide comparisons. The new download adds counts, absolute differences, percentage growth, shares of each scope and shares of the same cohort’s Wake ballots for both historical baselines.
 
-**Additional breakdowns to calculate from the original records:** age by recorded demographic category and residential precincts of site users. Verify field availability and completeness before publishing these cuts; they have not been calculated in this report. Keep small groups and unknown values visible without exposing individual voters.
+**Additional breakdowns to calculate from the original records:** age by recorded demographic category and each individual age’s same-day-registration count. Verify field availability and completeness before publishing these cuts; they have not been calculated in this report. Keep small groups and unknown values visible without exposing individual voters.
 
 **Additional evidence needed:** verified site hours and dates for ballots per open hour; official walking, transit, parking and accessibility information; registered college-age residents in consistent campus-area boundaries; and voting history covering every early-voting site, mail and Election Day. A residential turnout measure needs a matching registered-population denominator. Campus-area residents are not automatically NC State students.
 

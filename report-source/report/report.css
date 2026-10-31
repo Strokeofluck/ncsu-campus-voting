@@ -412,3 +412,10 @@
 .voting-report .voting-final-count {display:block;font-size:15px;}
 .voting-report .voting-final-detail {display:block;margin-top:4px;font-size:12px;font-weight:400;color:var(--secondary);}
 @media(max-width:1099px){.voting-report .voting-final-summary{width:100%;}}
+
+.voting-report .voting-page-nav {gap:20px;flex-wrap:wrap;}
+.voting-report .voting-geography-controls input {border:1px solid var(--border);border-radius:7px;padding:9px 10px;background:var(--surface);color:var(--text);font:inherit;min-width:0;max-width:100%;}
+.voting-report .voting-geography-pagination {display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:14px;margin:16px 0;font-size:13px;}
+.voting-report .voting-geography-pagination button {border:1px solid var(--border);border-radius:7px;padding:9px 12px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer;}
+.voting-report .voting-geography-pagination button:disabled {opacity:.5;cursor:default;}
+.voting-report .voting-final-table tfoot {border-top:2px solid var(--border);}

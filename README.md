@@ -26,6 +26,8 @@ The campus site's college-age count increased **2,999 → 4,214**. Its college-a
 
 The report now includes a broader count table and [24 downloadable comparisons](data/processed/comparison/expanded_matched_comparisons.csv), covering both historical baselines, all three scopes and four ballot cohorts. [The expansion plan](docs/comparison-expansion-plan.md) distinguishes calculations available now from further original-record cuts and evidence needed to assess the move's effect on participation. College-age participation is the central question; same-day registration supplies supporting context.
 
+[Explore residential precincts and ZIP codes](https://strokeofluck.github.io/ncsu-campus-voting/?view=1#voter-origins): compare Talley/Western Boulevard with other Wake sites for each area and age band. The searchable table and count/share chart retain all three years; area changes describe location use, not resident turnout. [Download aggregate geography](data/processed/comparison/matched_geography.csv).
+
 ### Same-day registration grew more slowly than total campus-site voting
 
 Over the same first 16 days, campus-site same-day registrations rose from **646 to 877 (+35.8%)**, while all accepted ballots rose from **9,339 to 13,266 (+42.0%)**. Same-day registration's share of site ballots edged down from **6.9% to 6.6%**, a **0.3 percentage-point decline**. Both counts increased; the change in share is modest. This includes all ages and does not identify students or establish an effect of the location move.
