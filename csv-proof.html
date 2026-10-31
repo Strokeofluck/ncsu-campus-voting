@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CSV records and calculation | Campus voting</title>
+<style>
+:root{color-scheme:light dark;--paper:light-dark(#fff,#171717);--ink:light-dark(#18232c,#eee);--muted:light-dark(#52606d,#bdbdbd);--line:light-dark(#d8dfe5,#484848);--accent:light-dark(#124d79,#a4d5ff);--fill:light-dark(#edf4fa,#253440)}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,sans-serif}main{max-width:1250px;padding:24px;margin:auto}h1{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:20px 0 12px}h2{font-size:22px}a{color:var(--accent)}button,select{font:inherit;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:9px 12px}button{cursor:pointer}button:disabled{cursor:default;opacity:.55}button[aria-selected=true],#load{background:var(--accent);color:var(--paper);border-color:var(--accent)}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.muted{color:var(--muted)}.toolbar,nav,[role=tablist]{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:16px 0}.panel{border:1px solid var(--line);border-radius:8px;padding:18px}.result{padding:14px;background:var(--fill);font-size:18px;border-radius:6px}code{font-size:14px;overflow-wrap:anywhere}.scroll{overflow:auto;max-height:570px;border:1px solid var(--line)}table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}th{background:var(--fill);position:sticky;top:0}td.math{white-space:normal;min-width:200px}.calcs td:first-child{white-space:normal;min-width:220px}.count{text-align:right;background:var(--fill)}[hidden]{display:none!important}details{margin-top:18px}#source-info{overflow-wrap:anywhere}.warning{border-left:4px solid #bd7734;padding-left:12px}@media(max-width:600px){main{padding:16px}.panel{padding:12px}.toolbar{align-items:stretch}.toolbar label{width:100%}select{max-width:100%}th,td{padding:8px}}
+</style></head><body><main>
+<nav><a href="index.html">Interactive report</a><a id="evidence" href="figure-source.html">Exact figure source</a></nav>
+<h1 id="title">CSV records and calculation</h1>
+<p>Follow the number from the official CSV to the counted records and the arithmetic. Each matching ballot adds 1 to the count.</p>
+<p><a href="data/processed/comparison/campus_age_calculations.csv" download>Download age-comparison results and formula text (.csv)</a></p>
+<p class="muted">CSV downloads contain results and formula text. The three tabs below let you inspect the full official CSV, the records selected for this figure, and the calculation. Original records load directly from NCSBE into your browser.</p>
+<button id="load" disabled>Load official CSVs and recount</button><p id="status" role="status" aria-live="polite">Preparing the saved calculation…</p>
+<div role="tablist" aria-label="Trace the calculation">
+<button role="tab" id="tab-original" aria-controls="original" aria-selected="true">1. Original CSV</button>
+<button role="tab" id="tab-selected" aria-controls="selected" aria-selected="false" tabindex="-1">2. Rows used</button>
+<button role="tab" id="tab-calculation" aria-controls="calculation" aria-selected="false" tabindex="-1">3. Calculation</button>
+</div>
+<section class="panel" id="original" role="tabpanel" aria-labelledby="tab-original">
+<h2>Original CSV</h2><p class="muted">Original order and column values. Record numbers include the header as record 1. These are CSV records, which may span physical text lines.</p>
+<div class="toolbar"><label>Source year <select id="year"></select></label><label><input type="checkbox" id="all-columns"> Show all original columns</label></div>
+<div id="source-info"></div><div id="original-grid"></div>
+</section>
+<section class="panel" id="selected" role="tabpanel" aria-labelledby="tab-selected" hidden>
+<h2>Rows used in the count</h2><label>Count to inspect <select id="selection"></select></label><p id="filter"></p>
+<p class="muted">The numerator and denominator are separate selections. Every matching record contributes 1. The running count is its position among all matching records, including records on other pages.</p><div id="selected-grid"></div>
+</section>
+<section class="panel" id="calculation" role="tabpanel" aria-labelledby="tab-calculation" hidden><h2>The math</h2><p id="calculation-status"></p><div id="math"></div><p class="muted">Shares use count ÷ total × 100. Changes in shares subtract the unrounded percentages and are measured in percentage points. 2026 records are preliminary.</p></section>
+<details><summary>Source verification</summary><div id="hashes">Load the original CSVs to compare their SHA-256 hashes with the saved report snapshot.</div></details>
+</main><script src="csv-proof-model.js"></script><script src="csv-proof.js"></script></body></html>

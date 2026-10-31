@@ -4,6 +4,10 @@ Data and reporting workspace for a Technician follow-up on voting at NC State.
 
 **[Open the interactive report](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Findings and methods](docs/2026-early-voting-update.md) · [References](references.html)
 
+**[Preview original CSV rows, running counts and calculations](https://strokeofluck.github.io/ncsu-campus-voting/csv-proof.html?figure=change-2022-age-group-18-24).** The three tabs separate the original Wake County CSV, the rows used for each numerator or denominator, and the arithmetic. Choose **Load official CSVs and recount** to count the original NCSBE records locally in your browser. The last matching row shows the final count. Source hashes and every intermediate result must match before the preview calls the recount verified.
+
+[Download calculation results and literal formula text](data/processed/comparison/campus_age_calculations.csv). This CSV contains only the same eight aggregate comparison rows shown in the report, for all three years. Shares, growth and percentage-point changes match the report's one-decimal display. The workbook formulas retain unrounded precision. Formulas in the CSV are literal text; working spreadsheet formulas require the separate source-tab workbook supplied with this update. The public site does not host that workbook or its detailed grouped source extract. Original ZIP links are available in the browser preview.
+
 ## October 31, 2026 update: Talley to Western Boulevard
 
 The latest downloaded NCSBE file covers voting through **October 30, 2026**. The report opens with **Talley Student Union in 2022 versus Western Boulevard Business Services in 2026**, using the same first **16 early-voting days**. **2022 and 2026 are midterms.** A selector retains 2024 as a presidential-election benchmark. Early voting and Election Day remain separate.
