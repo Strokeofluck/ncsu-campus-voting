@@ -5,6 +5,7 @@ from datetime import datetime,timezone
 from pathlib import Path
 from build_registration_comparison import write_comparison
 from build_comparison_metrics import write_metrics
+from build_party_trends import add_party_trends
 
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
@@ -41,5 +42,6 @@ summary_source['metricDefinitions']=[m for m in summary_source['metricDefinition
 snapshot['queries']['summary']['methods'].append({'language':'python','code':'python scripts/build_comparison_metrics.py\n# Exports 24 matched comparisons with counts, absolute and relative changes, scope shares, and county shares using explicit denominators.'})
 # Built-in formats remain available; plugin destinations are resolved at build time.
 snapshot['exportPreferences']={'selected':None,'destinations':snapshot.get('exportPreferences',{}).get('destinations',[])}
+add_party_trends(snapshot,data)
 path.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Report {snapshot["id"]}: {days} matched days through {cutoff}')

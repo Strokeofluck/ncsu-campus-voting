@@ -2,6 +2,8 @@
 
 Data and reporting workspace for a Technician follow-up on voting at NC State.
 
+[Explore cumulative ballots by party registration](https://strokeofluck.github.io/ncsu-campus-voting/?view=1#party-trends). Choose 2022, 2024 or 2026; campus, other Wake sites or countywide; and all ages, 18–24 or 18–22. Unaffiliated registrations stay separate from other registered parties. The exact totals and [daily counts with running totals](data/processed/comparison/matched_party_daily.csv) accompany the chart. These are accepted in-person early ballots in the matched windows, not candidate choices.
+
 **[Open the interactive report](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Findings and methods](docs/2026-early-voting-update.md) · [References](references.html)
 
 The [reporting reference page](https://strokeofluck.github.io/ncsu-campus-voting/references.html) follows the layout of the portfolio’s “Your vote, step by step” project. Switch historical baselines and choose **Check math** to inspect a figure inline on the same page. The native CSV workspace opens on Calculation, without an iframe or nested window, and provides original records, running counts and the originals-plus-Excel download. Official sources, matched windows, snapshot hashes, selection rules and earlier reporting references remain together on the page. Rebuild it with `python scripts/build_reporting_references.py` after updating the reviewed snapshot.

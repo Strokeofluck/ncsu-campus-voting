@@ -24,6 +24,8 @@
   min-width: 0;
 }
 
+.voting-party-section {display:grid;gap:24px;min-width:0;scroll-margin-top:100px;}
+
 .report-sortable-sections {
   display: grid;
   gap: 40px;

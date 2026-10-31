@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { EvidenceChart, DataComponent, Dropdown, MetricCard, ReportSection, RichNarrative, useDataApp } from '../../data-app-public.jsx';
 const num=n=>Number(n).toLocaleString('en-US');
 const short=n=>n>=1000?`${(n/1000).toFixed(1)}k`:num(n);
@@ -28,6 +28,8 @@ export function ReportContent(){
  const {snapshot,visible,appTitle,canEdit,mode,setAppTitle}=useDataApp();
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const [ageBaseline,setAgeBaseline]=useState(2022),[profileDimension,setProfileDimension]=useState('party');
+ const [partyYear,setPartyYear]=useState(2026),[partyScope,setPartyScope]=useState('Campus site'),[partyCohort,setPartyCohort]=useState('All ages');
+ useEffect(()=>{if(window.location.hash==='#party-trends')document.getElementById('party-trends')?.scrollIntoView({block:'start'});},[]);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
@@ -48,6 +50,10 @@ export function ReportContent(){
  const expandedRows=['Campus site','Wake County','Other Wake sites'].flatMap(location=>[['All ages','all_ages'],['Ages 18–24','age_18_24'],['Ages 18–22','age_18_22'],['Same-day registration (all ages)','same_day_registration']].map(([metric,field])=>{const previous=get(baseline,location)[field],current=get(2026,location)[field];return{scope:location,metric,field,baselineYear:baseline,baselineBallots:previous,currentBallots:current,ballotChange:current-previous,changePct:growth(current,previous)};}));
  const trendRows=daily.filter(r=>r.scope===scope&&r.cohort===cohort&&isPair(r.year));
  const plotRows=trendRows.map(r=>({...r,yearLabel:String(r.year)}));
+ const partyRows=snapshot.queries.party_daily.rows.filter(r=>r.year===partyYear&&r.scope===partyScope&&r.cohort===partyCohort);
+ const partyFinal=partyRows.filter(r=>r.day===days),partyTotal=partyFinal.reduce((n,r)=>n+r.cumulative,0);
+ const partyWindow=get(partyYear,partyScope),partyLocation=partyScope==='Campus site'?(partyYear===2026?'Western Boulevard':'Talley Student Union'):partyScope;
+ const partyColors={Democratic:'#3388cc',Republican:'#d56732',Unaffiliated:'#2a9d7c','Other registered parties':'#929292','Not specified':'#a482c1'};
  const indexSource=daily.filter(r=>r.cohort==='18–24'&&isPair(r.year));
  const indexRows=indexSource.filter(r=>r.year===2026).map(r=>{const base=indexSource.find(v=>v.year===baseline&&v.scope===r.scope&&v.day===r.day);return{day:r.day,scope:r.scope,index:base?.cumulative?r.cumulative/base.cumulative*100:null};});
  const ages=demos.filter(r=>r.scope==='Campus site'&&r.dimension==='age_group');
@@ -165,6 +171,25 @@ See each age from 18 through 24 at the old and new sites. Switch between ballot 
    <label>Voters <select value={cohort} onChange={e=>setCohort(e.target.value)}>{['18–24','18–22','All ages'].map(v=><option key={v}>{v}</option>)}</select></label>
   </div>
   {visible('voting-cumulative')&&<EvidenceChart id="voting-cumulative" queryId="daily" title="Cumulative accepted early-voting ballots" description={`${scope} · ${cohort==='All ages'?'all ages':`ages ${cohort}`} · first ${days} days. Talley: ${period}; Western Boulevard: ${currentPeriod}.`} rows={plotRows} sourceRows={trendRows} spec={{type:'line',x:'day',y:'cumulative',series:'yearLabel',stackable:false,startAtZero:true,xLabel:'Day of early voting',valueDecimals:0}} height={340}/>}
+  <div id="party-trends" className="voting-party-section">
+   <ReportSection id="voting-party-intro" title="How early ballots built up by party registration" queryId="party_daily" sourceRows={partyRows} showHeading={false}>
+    <RichNarrative id="voting-party-intro:body" value={`## How early ballots built up by party registration
+
+Each line adds the day's accepted early ballots to the previous days. Party registration identifies the voter's registration, not their candidate choices. Unaffiliated voters stay separate from other registered parties.`}/>
+   </ReportSection>
+   <div className="voting-controls">
+    <label>Party chart year <select value={partyYear} onChange={e=>setPartyYear(Number(e.target.value))}>{[2022,2024,2026].map(y=><option key={y} value={y}>{y} · {y===2024?'presidential':'midterm'}</option>)}</select></label>
+    <label>Party chart location <select value={partyScope} onChange={e=>setPartyScope(e.target.value)}>{['Campus site','Wake County','Other Wake sites'].map(v=><option key={v}>{v}</option>)}</select></label>
+    <label>Party chart voters <select value={partyCohort} onChange={e=>setPartyCohort(e.target.value)}>{['All ages','18–24','18–22'].map(v=><option key={v}>{v}</option>)}</select></label>
+   </div>
+   {visible('voting-party-trend')&&<EvidenceChart id="voting-party-trend" queryId="party_daily" title={`${partyLocation} ${partyYear}: cumulative early ballots by party registration`} description={`${partyCohort==='All ages'?'All ages':`Ages ${partyCohort}`} · ${dateRange(partyWindow)}. Accepted in-person early ballots only.`} rows={partyRows} sourceRows={partyRows} spec={{type:'line',x:'date',y:'cumulative',series:'party_registration',colors:partyColors,stackable:false,startAtZero:true,valueDecimals:0,yLabel:'Ballots'}} height={380}>
+    <RichNarrative id="voting-party-trend:note" value={`${partyCohort==='All ages'?'All ages':`Ages ${partyCohort}`} · ${dateRange(partyWindow)} · first ${days} days only. Party registration does not reveal candidate choices.`}/>
+   </EvidenceChart>}
+   <DataComponent id="voting-party-totals" queryId="party_daily" kind="table" title={`Party totals through ${dateLabel(partyWindow.end_date)}`} sourceRows={partyRows} displayRows={partyFinal}>
+    <div className="voting-table-scroll"><table className="voting-table"><thead><tr><th>Party registration</th><th>Cumulative ballots</th><th>Share of selected ballots</th></tr></thead><tbody data-reviewed-rows>{partyFinal.map(r=><tr key={r.party_registration}><th>{r.party_registration}</th><td>{num(r.cumulative)}</td><td>{partyTotal?`${one(r.cumulative/partyTotal*100)}%`:'Unavailable'}</td></tr>)}<tr><th>All selected ballots</th><td>{num(partyTotal)}</td><td>{partyTotal?'100.0%':'Unavailable'}</td></tr></tbody></table></div>
+    <a href="data/processed/comparison/matched_party_daily.csv" download>Download daily counts and running totals (.csv)</a>
+   </DataComponent>
+  </div>
   <ReportSection id="voting-relative-intro" title="How the campus pattern compares with Wake County" queryId="summary" sourceRows={paired} showHeading={false}>
    <RichNarrative id="voting-relative-intro:body" value={`## How the campus pattern compares with Wake County
 
