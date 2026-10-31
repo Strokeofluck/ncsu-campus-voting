@@ -47,7 +47,7 @@ export function ReportContent(){
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const [ageBaseline,setAgeBaseline]=useState(2022),[profileDimension,setProfileDimension]=useState('party');
  const [partyScope,setPartyScope]=useState('Campus site'),[partyCohort,setPartyCohort]=useState('All ages');
- useEffect(()=>{const id=window.location.hash.slice(1);if(['party-trends','voter-origins'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
+ useEffect(()=>{const id=window.location.hash.slice(1);if(['party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
@@ -106,7 +106,7 @@ export function ReportContent(){
  const benchmarks=['Wake County','Campus site'].flatMap(location=>['all_ages','age_18_24'].map(field=>({location,field,label:`${location==='Campus site'?'Talley / Western Boulevard':'Wake County'} · ${field==='all_ages'?'all ages':'ages 18–24'}`,previous:get(2022,location)[field],presidential:get(2024,location)[field],current:get(2026,location)[field],share2024:get(2026,location)[field]/get(2024,location)[field]*100,growth2022:growth(get(2026,location)[field],get(2022,location)[field])})));
  const previews={'https://www.ncsbe.gov/results-data/absentee-and-provisional-data':{title:'NCSBE absentee and early-voting data',summary:'Official download catalog explaining absentee records and early-voting ballots. This analysis uses Wake County records from the 2022, 2024 and 2026 general-election archives.',source:'North Carolina State Board of Elections',approvedForReport:true}};
  return <article className="report-content voting-report" aria-label="NC State early-voting comparison">
-  <nav className="voting-page-nav" aria-label="Page links"><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
+  <nav className="voting-page-nav" aria-label="Page links"><a href="#precinct-map">Precinct map</a><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
   <header className="report-hero">
    <RichNarrative id="voting:eyebrow" value="NC STATE · TALLEY → WESTERN BOULEVARD" className="voting-eyebrow"/>
    <h1 data-data-app-title contentEditable={canEdit&&mode==='edit'} suppressContentEditableWarning onBlur={canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined}>{appTitle}</h1>

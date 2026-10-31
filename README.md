@@ -144,3 +144,5 @@ python scripts/build_2022_election_day.py
 ```
 
 GitHub Actions also rebuilds each side separately when its script or workflow changes. Raw voter-level data are not committed to this public repository.
+
+[Open the precinct map](https://strokeofluck.github.io/ncsu-campus-voting/?view=1#precinct-map): current Wake GIS polygons and official NC State site coordinates, age/year controls, keyboard and pointer tooltips, and a selected-precinct panel comparing all three years. The light street map and detail interaction follow the housing-affordability article’s approach. Historical ballots join by recorded code; current shapes do not reconstruct earlier boundaries. Missing outlines are disclosed, not merged.

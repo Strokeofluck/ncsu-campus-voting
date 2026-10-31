@@ -8,6 +8,7 @@ from build_comparison_metrics import write_metrics
 from build_party_trends import add_party_trends
 from build_sdr_trends import add_sdr_trends
 from build_geography import add_geography
+from build_precinct_map import add_precinct_map
 
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
@@ -47,5 +48,6 @@ snapshot['exportPreferences']={'selected':None,'destinations':snapshot.get('expo
 add_party_trends(snapshot,data)
 add_sdr_trends(snapshot,data)
 add_geography(snapshot,data)
+add_precinct_map(snapshot)
 path.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Report {snapshot["id"]}: {days} matched days through {cutoff}')

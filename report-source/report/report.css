@@ -419,3 +419,38 @@
 .voting-report .voting-geography-pagination button {border:1px solid var(--border);border-radius:7px;padding:9px 12px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer;}
 .voting-report .voting-geography-pagination button:disabled {opacity:.5;cursor:default;}
 .voting-report .voting-final-table tfoot {border-top:2px solid var(--border);}
+
+.voting-report .voting-map-block {width:min(1240px,calc(100vw - 80px));justify-self:center;min-width:0;scroll-margin-top:100px;}
+.voting-report .voting-map-layout {display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:start;}
+.voting-report .voting-map-canvas-column {min-width:0;}
+.voting-report .voting-precinct-leaflet {height:580px;width:100%;border:1px solid var(--border);border-radius:12px;isolation:isolate;z-index:0;background:#e9edf0;}
+.voting-report .voting-map-toolbar {display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+.voting-report :is(.voting-map-toolbar,.voting-map-site-key) button {border:1px solid var(--border);border-radius:7px;padding:8px 11px;background:var(--surface);color:var(--text);font:inherit;font-size:13px;cursor:pointer;}
+.voting-report .voting-map-toolbar button:disabled {opacity:.5;cursor:default;}
+.voting-report .voting-map-boundary-note,.voting-report .voting-map-coverage {color:var(--secondary);font-size:13px;line-height:1.55;}
+.voting-report .voting-map-legend {font-size:13px;line-height:1.5;margin-top:12px;}
+.voting-report .voting-map-color-scale {display:flex;flex-wrap:wrap;gap:10px;margin-top:6px;}
+.voting-report .voting-map-color-scale span {display:flex;gap:4px;align-items:center;}
+.voting-report .voting-map-color-scale i {display:inline-block;width:17px;height:13px;border:1px solid #617080;}
+.voting-report .voting-map-site-key {display:flex;gap:9px;flex-wrap:wrap;margin-top:12px;}
+.voting-report .voting-map-site-key button {display:flex;align-items:center;gap:7px;text-align:left;}
+.voting-report .voting-map-key-dot {display:inline-flex;align-items:center;justify-content:center;border-radius:50%;width:21px;height:21px;min-width:21px;color:white;font-weight:700;}
+.voting-report .voting-map-key-talley {background:#224f8f;}
+.voting-report .voting-map-key-western {background:#ad4516;}
+.voting-report .voting-map-pin {background:transparent;border:0;}
+.voting-report .voting-map-pin span {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 9px #0007;color:#fff;font:700 15px/1 Arial,sans-serif;box-sizing:border-box;}
+.voting-report .voting-map-pin-talley span {background:#224f8f;}
+.voting-report .voting-map-pin-western span {background:#ad4516;}
+.voting-report .voting-map-tooltip {background:#fff;color:#182735;border:1px solid #a4afb8;border-radius:7px;box-shadow:0 2px 12px #0003;padding:10px 12px;font-size:13px;line-height:1.5;max-width:280px;white-space:normal;}
+.voting-report .voting-map-tooltip-content strong {display:block;margin-bottom:5px;font-size:14px;}
+.voting-report .voting-precinct-leaflet .leaflet-interactive:focus {outline:none;stroke:#e36d31;stroke-width:4;}
+.voting-report .voting-map-detail {padding:16px;border:1px solid var(--border);border-radius:12px;font-size:14px;line-height:1.55;}
+.voting-report .voting-map-detail h3 {margin:0;font-size:18px;}
+.voting-report .voting-map-detail>p {margin:7px 0 14px;}
+.voting-report .voting-map-year {margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-variant-numeric:tabular-nums;}
+.voting-report .voting-map-year h4 {margin:0 0 6px;font-size:14px;}
+.voting-report .voting-map-year small {font-size:12px;color:var(--secondary);}
+.voting-report .voting-map-share-track {height:7px;background:#b9c0c5;border-radius:4px;margin:9px 0 5px;overflow:hidden;}
+.voting-report .voting-map-share-track span {display:block;height:100%;background:#3182bd;}
+@media(max-width:1099px){.voting-report .voting-map-block{width:100%;}.voting-report .voting-map-layout{grid-template-columns:1fr;}.voting-report .voting-map-detail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}.voting-report .voting-map-detail>h3,.voting-report .voting-map-detail>p{grid-column:1/-1;}.voting-report .voting-map-year{margin-top:0;}}
+@media(max-width:620px){.voting-report .voting-precinct-leaflet{height:430px;}.voting-report .voting-map-detail{display:block;}.voting-report .voting-map-year{margin-top:14px;}}
