@@ -29,8 +29,8 @@ College-age site ballots increased 40.5%; the within-site age mix was almost unc
 
 ## Further cuts requiring original-record calculations
 
-- Same-day registration by age group and each age 18–24, including its share of each corresponding age cohort's ballots.
-- Same-day registrations by date, weekday/weekend and site; age by party, race, ethnicity or gender where fields are complete enough.
+- Same-day registration for each individual age 18–24. Grouped age bands, daily running counts and same-cohort shares are now available in the report.
+- Weekday/weekend registration comparisons; age by party, race, ethnicity or gender where fields are complete enough. Daily same-day-registration counts by location and age band are now available.
 - Counts and composition by residential precinct for campus-site users, keeping voting location distinct from residence.
 - Campus-area residents using other early-voting locations, where residence geography can be defined consistently and linked to accepted ballots.
 

@@ -6,6 +6,7 @@ from pathlib import Path
 from build_registration_comparison import write_comparison
 from build_comparison_metrics import write_metrics
 from build_party_trends import add_party_trends
+from build_sdr_trends import add_sdr_trends
 
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
@@ -43,5 +44,6 @@ snapshot['queries']['summary']['methods'].append({'language':'python','code':'py
 # Built-in formats remain available; plugin destinations are resolved at build time.
 snapshot['exportPreferences']={'selected':None,'destinations':snapshot.get('exportPreferences',{}).get('destinations',[])}
 add_party_trends(snapshot,data)
+add_sdr_trends(snapshot,data)
 path.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Report {snapshot["id"]}: {days} matched days through {cutoff}')

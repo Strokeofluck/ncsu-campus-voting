@@ -3,14 +3,14 @@
   "kind": "separate-data-v1",
   "html": {
     "path": "index.html",
-    "sha256": "6b88fa9a83a3de122f2f0d11ac5e5e77827bb507376cecc2dd60aa1c87f97ce0",
-    "bytes": 2953696
+    "sha256": "a92594591dd94c76695ba66a06393bcbff82041fbf575dc90d08e7e999a56db7",
+    "bytes": 2961855
   },
   "snapshot": {
-    "path": "snapshot.f36cc87c42cf69deefad1d2ee068c2ed950b2153172767b9048406735d9438dd.json",
-    "sha256": "f36cc87c42cf69deefad1d2ee068c2ed950b2153172767b9048406735d9438dd",
-    "bytes": 1961968
+    "path": "snapshot.59f7ba19e6270a290e6a988f6d90cb3564da8a1bfc802b3bf8c5d24d2dfef905.json",
+    "sha256": "59f7ba19e6270a290e6a988f6d90cb3564da8a1bfc802b3bf8c5d24d2dfef905",
+    "bytes": 2303989
   },
   "runtimeSha256": "b1771584910da746d0cf1b967a4889fee226053d841596104b457a04a2dd3d91",
-  "sourceSnapshotSha256": "f36cc87c42cf69deefad1d2ee068c2ed950b2153172767b9048406735d9438dd"
+  "sourceSnapshotSha256": "59f7ba19e6270a290e6a988f6d90cb3564da8a1bfc802b3bf8c5d24d2dfef905"
 }

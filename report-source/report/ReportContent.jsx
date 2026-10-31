@@ -28,6 +28,19 @@ function ShareMath({previous,current,previousTotal,currentTotal,previousYear,dim
  const beforeId=demographicId(previousYear,dimension,value),afterId=demographicId(2026,dimension,value);
  return <><span className="voting-share-pair"><FigureLink id={beforeId} label={`${value}, Talley ${previousYear}, share`}>{one(before)}%</FigureLink><span className="voting-share-arrow" aria-hidden="true">→</span><strong><FigureLink id={afterId} label={`${value}, Western 2026, share`}>{one(after)}%</FigureLink></strong></span><span className="voting-share-counts voting-share-math">Talley: <FigureLink id={beforeId} label={`${value}, Talley ${previousYear}, ballots`}>{num(previous)}</FigureLink> ÷ <FigureLink id={summaryId(previousYear,'Campus site','all_ages')} label={`All ballots, Talley ${previousYear}`}>{num(previousTotal)}</FigureLink> × 100 = <FigureLink id={beforeId} label={`${value}, Talley ${previousYear}, share`}>{one(before)}%</FigureLink><br/>Western: <FigureLink id={afterId} label={`${value}, Western 2026, ballots`}>{num(current)}</FigureLink> ÷ <FigureLink id={summaryId(2026,'Campus site','all_ages')} label="All ballots, Western 2026">{num(currentTotal)}</FigureLink> × 100 = <FigureLink id={afterId} label={`${value}, Western 2026, share`}>{one(after)}%</FigureLink></span></>;
 }
+const ratio=(count,total)=>total>0?count/total*100:null;
+const finalSigned=n=>{const rounded=Number(one(n));return `${rounded>0?'+':''}${one(rounded)}`;};
+const pctOrNA=value=>value===null?'N/A':`${one(value)}%`;
+function FinalCount({count,total}){return <><span className="voting-final-count">{num(count)}</span><span className="voting-final-detail">{pctOrNA(ratio(count,total))}</span></>;}
+function FinalChange({current,previous,currentTotal,previousTotal,isTotal=false}){
+ const difference=current-previous,growth=previous>0?difference/previous*100:null,before=ratio(previous,previousTotal),after=ratio(current,currentTotal);
+ return <><span className="voting-final-count">{difference>0?'+':''}{num(difference)} ballots</span><span className="voting-final-detail">{growth===null?'Growth N/A':`${finalSigned(growth)}% growth`}</span>{!isTotal&&<span className="voting-final-detail">{before===null||after===null?'Share change N/A':`${finalSigned(after-before)} pp share`}</span>}</>;
+}
+function finalResultRows(rows,totals){return [...rows,{party:'All selected ballots',...totals}].map(row=>({...row,...Object.fromEntries([2022,2024,2026].map(year=>[`share_${year}`,ratio(row[year],totals[year])])),...Object.fromEntries([2022,2024].flatMap(year=>[[`ballot_change_vs_${year}`,row[2026]-row[year]],[`growth_pct_vs_${year}`,row[year]>0?(row[2026]-row[year])/row[year]*100:null],[`share_change_pp_vs_${year}`,totals[year]>0&&totals[2026]>0?ratio(row[2026],totals[2026])-ratio(row[year],totals[year]):null]]))}));}
+function FinalTotalsTable({years,scope,totals,rows}){
+ const values=[...rows,{party:'All selected ballots',...totals,isTotal:true}];
+ return <div className="voting-table-scroll"><table className="voting-table voting-final-table"><thead><tr><th>Measure</th>{years.map(year=><th key={year}>{scopeName(scope,year)}<br/>{year}<span className="voting-final-detail">Ballots · share</span></th>)}<th>2026 versus 2022</th><th>2026 versus 2024</th></tr></thead><tbody data-reviewed-rows>{values.map(r=><tr key={r.party}><th scope="row">{r.party}</th>{years.map(year=><td key={year}><FinalCount count={r[year]} total={totals[year]}/></td>)}{[2022,2024].map(year=><td key={year}><FinalChange current={r[2026]} previous={r[year]} currentTotal={totals[2026]} previousTotal={totals[year]} isTotal={r.isTotal}/></td>)}</tr>)}</tbody></table></div>;
+}
 export function ReportContent(){
  const {snapshot,visible,appTitle,canEdit,mode,setAppTitle}=useDataApp();
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
@@ -60,6 +73,10 @@ export function ReportContent(){
  const partyTotals=Object.fromEntries(partyYears.map(year=>[year,partyFinal.filter(r=>r.year===year).reduce((n,r)=>n+r.cumulative,0)]));
  const partySummary=partyNames.map(party=>({party,...Object.fromEntries(partyYears.map(year=>[year,partyFinal.find(r=>r.year===year&&r.party_registration===party)?.cumulative??0]))}));
  const partyBands=['18–24','25–34','35–44','45–64','65+',...(snapshot.queries.party_daily.rows.some(r=>r.cohort==='Unknown / outside range'&&r.votes>0)?['Unknown / outside range']:[])];
+ const sdrRows=snapshot.queries.sdr_daily.rows.filter(r=>r.scope===partyScope&&r.cohort===partyCohort);
+ const sdrFinal=sdrRows.filter(r=>r.day===days);
+ const sdrSummary=[{party:'Same-day registration',...Object.fromEntries(partyYears.map(year=>[year,sdrFinal.find(r=>r.year===year)?.cumulative??0]))}];
+ const sdrPlot=sdrRows.map(r=>({...r,yearLabel:`${r.year} · ${scopeName(partyScope,r.year)}`}));
  const partyColors={Democratic:'#3388cc',Republican:'#d56732',Unaffiliated:'#2a9d7c','Other registered parties':'#929292','Not specified':'#a482c1'};
  const indexSource=daily.filter(r=>r.cohort==='18–24'&&isPair(r.year));
  const indexRows=indexSource.filter(r=>r.year===2026).map(r=>{const base=indexSource.find(v=>v.year===baseline&&v.scope===r.scope&&v.day===r.day);return{day:r.day,scope:scopeName(r.scope,2026),index:base?.cumulative?r.cumulative/base.cumulative*100:null};});
@@ -88,6 +105,7 @@ export function ReportContent(){
  const benchmarks=['Wake County','Campus site'].flatMap(location=>['all_ages','age_18_24'].map(field=>({location,field,label:`${location==='Campus site'?'Talley / Western Boulevard':'Wake County'} · ${field==='all_ages'?'all ages':'ages 18–24'}`,previous:get(2022,location)[field],presidential:get(2024,location)[field],current:get(2026,location)[field],share2024:get(2026,location)[field]/get(2024,location)[field]*100,growth2022:growth(get(2026,location)[field],get(2022,location)[field])})));
  const previews={'https://www.ncsbe.gov/results-data/absentee-and-provisional-data':{title:'NCSBE absentee and early-voting data',summary:'Official download catalog explaining absentee records and early-voting ballots. This analysis uses Wake County records from the 2022, 2024 and 2026 general-election archives.',source:'North Carolina State Board of Elections',approvedForReport:true}};
  return <article className="report-content voting-report" aria-label="NC State early-voting comparison">
+  <nav className="voting-page-nav" aria-label="Page links"><a href="references.html">References ↗</a></nav>
   <header className="report-hero">
    <RichNarrative id="voting:eyebrow" value="NC STATE · TALLEY → WESTERN BOULEVARD" className="voting-eyebrow"/>
    <h1 data-data-app-title contentEditable={canEdit&&mode==='edit'} suppressContentEditableWarning onBlur={canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined}>{appTitle}</h1>
@@ -192,9 +210,22 @@ Compare Talley Student Union in 2022 and 2024 with Western Boulevard Business Se
    <div className="voting-party-grid">{partyYears.map(year=>{const id=year===2026?'voting-party-trend':`voting-party-trend-${year}`,rows=partyRows.filter(r=>r.year===year).map(r=>({...r,shared_ceiling:partyCeiling}));return visible(id)&&<EvidenceChart key={year} id={id} queryId="party_daily" title={`${year} · ${partyScope==='Campus site'&&year===2026?'Western Boulevard':scopeName(partyScope,year)}`} description={`Cumulative early ballots by party registration · ${partyCohort==='All ages'?'all ages':`ages ${partyCohort}`}`} rows={rows} sourceRows={partyRows} spec={{type:'line',x:'day',y:'cumulative',series:'party_registration',colors:partyColors,stackable:false,startAtZero:true,valueDecimals:0,xLabel:'Day of early voting',yLabel:'Ballots',annotations:partyCeiling>0?[{id:'party-shared-ceiling',kind:'benchmark',measure:'Democratic',field:'shared_ceiling',label:'Shared ceiling'}]:[]}} height={300}>
     <RichNarrative id={`${id}:note`} value={`${scopeName(partyScope,year)} · ${partyCohort==='All ages'?'All ages':`Ages ${partyCohort}`} · ${shortDate(get(year,partyScope).start_date)}–${shortDate(get(year,partyScope).end_date)}, ${year}. ${num(partyTotals[year])} early ballots. Registration does not reveal candidate choices.`}/>
    </EvidenceChart>;})}</div>
-   <DataComponent id="voting-party-totals" queryId="party_daily" kind="table" title="Exact party totals across the three years" sourceRows={partyRows} displayRows={partySummary}>
-    <div className="voting-table-scroll"><table className="voting-table"><thead><tr><th>Party registration</th>{partyYears.map(year=><th key={year}>{scopeName(partyScope,year)}<br/>{year}</th>)}</tr></thead><tbody data-reviewed-rows>{partySummary.map(r=><tr key={r.party}><th>{r.party}</th>{partyYears.map(year=><td key={year}>{num(r[year])}</td>)}</tr>)}<tr><th>All selected ballots</th>{partyYears.map(year=><td key={year}>{num(partyTotals[year])}</td>)}</tr></tbody></table></div>
+   <DataComponent id="voting-party-totals" queryId="party_daily" kind="table" title="Final party numbers at a glance" className="voting-final-summary" sourceRows={partyRows} displayRows={finalResultRows(partySummary,partyTotals)}>
+    <RichNarrative id="voting-party-totals:scope" value={`First ${days} early-voting days · ${partyCohort==='All ages'?'All ages':`Ages ${partyCohort}`}. Each share is that party’s ballots divided by all selected ballots in the same year.`}/>
+    <FinalTotalsTable years={partyYears} scope={partyScope} totals={partyTotals} rows={partySummary}/>
+    <RichNarrative id="voting-party-totals:math" value="Growth compares ballot counts. Share changes are percentage points (pp), calculated before rounding. N/A means the starting count or denominator is zero."/>
     <a href="data/processed/comparison/matched_party_daily.csv" download>Download daily counts and running totals (.csv)</a>
+   </DataComponent>
+   <ReportSection id="voting-sdr-intro" queryId="sdr_daily" title="Same-day registration across the three years" sourceRows={sdrRows} showHeading={false}>
+    <RichNarrative id="voting-sdr-intro:body" value={`## Same-day registration across the three years
+
+Running totals for ${partyCohort==='All ages'?'all ages':`ages ${partyCohort}`} at ${pairedScopeName(partyScope)}. Uses the age and location selected above. These ballots are included in total ballots.`}/>
+   </ReportSection>
+   {visible('voting-sdr-trend')&&<EvidenceChart id="voting-sdr-trend" queryId="sdr_daily" title="Cumulative same-day-registration ballots" description={`First ${days} early-voting days · ${partyCohort==='All ages'?'all ages':`ages ${partyCohort}`} · ${pairedScopeName(partyScope)}`} rows={sdrPlot} sourceRows={sdrRows} spec={{type:'line',x:'day',y:'cumulative',series:'yearLabel',stackable:false,startAtZero:true,valueDecimals:0,xLabel:'Day of early voting',yLabel:'Same-day-registration ballots'}} height={320}/>}
+   <DataComponent id="voting-sdr-totals" queryId="sdr_daily" kind="table" title="Final same-day-registration numbers" className="voting-final-summary" sourceRows={sdrRows} displayRows={finalResultRows(sdrSummary,partyTotals)}>
+    <FinalTotalsTable years={partyYears} scope={partyScope} totals={partyTotals} rows={sdrSummary}/>
+    <RichNarrative id="voting-sdr-totals:math" value={`Registration share = same-day-registration ballots ÷ all ballots in the selected age group and location × 100. Share changes are percentage points (pp). 2024 was presidential; 2022 and 2026 are midterms. 2026 is preliminary through ${cutoff}.`}/>
+    <a href="data/processed/comparison/matched_sdr_daily.csv" download>Download daily same-day-registration counts (.csv)</a>
    </DataComponent>
   </div>
   <ReportSection id="voting-relative-intro" title="How the campus pattern compares with Wake County" queryId="summary" sourceRows={paired} showHeading={false}>
@@ -237,9 +268,9 @@ For a stronger impact analysis, complete early voting and include finalized mail
 
 **The central question is participation:** did changing the location alter college-age residents’ probability of voting? Site use, within-site age mix and countywide site share are useful evidence, but they answer different questions. Same-day registration is supporting context.
 
-**Available in the current snapshot:** exact counts and changes for all ages, ages 18–24, ages 18–22 and same-day registration; age-group and individual-age distributions; party registration, gender, race and ethnicity as separate site-user breakdowns; daily and cumulative counts; and campus, other-site and countywide comparisons. The new download adds counts, absolute differences, percentage growth, shares of each scope and shares of the same cohort’s Wake ballots for both historical baselines.
+**Available in the current snapshot:** exact counts and changes for all ages, ages 18–24, ages 18–22 and same-day registration; age-group and individual-age distributions; party registration, gender, race and ethnicity as separate site-user breakdowns; same-day registration by age band with daily counts, running totals and cohort shares; daily and cumulative ballot counts; and campus, other-site and countywide comparisons. The new download adds counts, absolute differences, percentage growth, shares of each scope and shares of the same cohort’s Wake ballots for both historical baselines.
 
-**Additional breakdowns to calculate from the original records:** same-day registration by age, daily registration counts, age by recorded demographic category, and residential precincts of site users. Verify field availability and completeness before publishing these cuts; they have not been calculated in this report. Keep small groups and unknown values visible without exposing individual voters.
+**Additional breakdowns to calculate from the original records:** age by recorded demographic category and residential precincts of site users. Verify field availability and completeness before publishing these cuts; they have not been calculated in this report. Keep small groups and unknown values visible without exposing individual voters.
 
 **Additional evidence needed:** verified site hours and dates for ballots per open hour; official walking, transit, parking and accessibility information; registered college-age residents in consistent campus-area boundaries; and voting history covering every early-voting site, mail and Election Day. A residential turnout measure needs a matching registered-population denominator. Campus-area residents are not automatically NC State students.
 

@@ -400,3 +400,15 @@
 .voting-report .voting-figure-link { color:inherit; text-decoration-line:underline; text-decoration-style:dotted; text-underline-offset:4px; }
 .voting-report .voting-figure-link:hover { text-decoration-style:solid; }
 .voting-report .voting-figure-link:focus-visible { outline:2px solid var(--text); outline-offset:4px; }
+
+.voting-report .voting-page-nav {display:flex;justify-content:flex-end;}
+.voting-report .voting-page-nav a {color:var(--text);font-size:14px;text-underline-offset:4px;}
+.voting-report .voting-final-summary {width:min(1240px,calc(100vw - 80px));justify-self:center;min-width:0;}
+.voting-report .voting-final-table {font-variant-numeric:tabular-nums;}
+.voting-report .voting-final-table thead th {white-space:normal;min-width:140px;vertical-align:bottom;}
+.voting-report .voting-final-table th:first-child {min-width:150px;white-space:normal;}
+.voting-report .voting-final-table td {vertical-align:top;}
+.voting-report .voting-final-table tbody tr:last-child {border-top:2px solid var(--border);}
+.voting-report .voting-final-count {display:block;font-size:15px;}
+.voting-report .voting-final-detail {display:block;margin-top:4px;font-size:12px;font-weight:400;color:var(--secondary);}
+@media(max-width:1099px){.voting-report .voting-final-summary{width:100%;}}
