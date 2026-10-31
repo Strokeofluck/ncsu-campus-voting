@@ -22,5 +22,11 @@ for key,values in series.items():
         for r in values:assert r['votes']==sum(lookup[key[0],scope,key[2],key[3],r['day']]['votes'] for scope in ['Campus site','Other Wake sites'])
 for r in snapshot['queries']['daily']['rows']:
     assert daily[r['year'],r['scope'],r['cohort'],r['day']]==r['votes']
+bands=['18–24','25–34','35–44','45–64','65+','Unknown / outside range']
+for (year,scope,cohort,party),values in series.items():
+    if cohort=='All ages':
+        for r in values:assert sum(lookup[year,scope,band,party,r['day']]['votes'] for band in bands)==r['votes']
+for r in snapshot['queries']['demographics']['rows']:
+    if r['dimension']=='age_group':assert daily[r['year'],r['scope'],r['value'],days]>=0 and sum(v['votes'] for v in rows if v['year']==r['year'] and v['scope']==r['scope'] and v['cohort']==r['value'])==r['votes']
 assert snapshot['buildStatus']=='complete' and snapshot['id']=='report:280801c5-2e0b-43cf-b10c-322b5c90a10e'
 print(f'Passed {len(rows)} aggregate party rows, all running sums, all 432 daily denominators, per-party scope partitions, CSV/JSON/snapshot agreement and retained report identity.')

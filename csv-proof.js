@@ -1,5 +1,6 @@
 'use strict';
 (()=>{
+ const displayLabel=text=>{const years=[...new Set((String(text).match(/\b(?:2022|2024|2026)\b/g)||[]))];const site=years.length===1?(years[0]==='2026'?'Western Boulevard Business Services':'Talley Student Union'):'Talley Student Union → Western Boulevard Business Services';return String(text).replaceAll('Campus site',site);};
  function create(root,options={}){
  const prefix=root.dataset.proofPrefix||'', $=id=>root.querySelector('#'+prefix+id),el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
  const fmt=(n,unit)=>!Number.isFinite(n)?'Unavailable':unit==='ballots'?n.toLocaleString('en-US'):n.toFixed(1)+(unit==='%'?'%':' percentage points');
@@ -15,7 +16,7 @@
   for(const step of results.filter(s=>s.operation!=='identity')){
    const r=step.refsValues,n=n=>Number.isFinite(n)?n.toLocaleString('en-US',{maximumFractionDigits:6}):'unavailable';
    const formula=step.operation==='count'?'Count matching original records':step.operation==='difference'?`${n(r[1])} − ${n(r[0])}`:step.operation==='growth'?`(${n(r[1])} − ${n(r[0])}) ÷ ${n(r[0])} × 100`:`${n(r[0])} ÷ ${n(r[1])} × 100`;
-   const tr=el('tr');tr.append(el('td',step.label),el('td',formula,{class:'math'}),el('td',fmt(step.expected,step.unit)),el('td',loaded?fmt(step.value,step.unit)+(step.matches?' · matches':' · differs'):'Not loaded'));body.append(tr);
+   const tr=el('tr');tr.append(el('td',displayLabel(step.label)),el('td',formula,{class:'math'}),el('td',fmt(step.expected,step.unit)),el('td',loaded?fmt(step.value,step.unit)+(step.matches?' · matches':' · differs'):'Not loaded'));body.append(tr);
   }table.append(body);scroll.append(table);host.append(scroll);
  }
  function sourceInfo(){
@@ -25,7 +26,7 @@
  function chosen(){return plan.counts[Number($('selection').value)||0];}
  function filterInfo(){
   const s=chosen().selection,w=context.summary.find(r=>r.year===s.year&&r.scope===s.scope);
-  $('filter').textContent=`${s.year} · ${s.scope} · ${w.start_date} through ${w.end_date}, inclusive. WAKE, accepted early-voting records. `+(s.scope==='Campus site'?`Site: ${context.site_mapping[s.year]}. `:s.scope==='Other Wake sites'?`Excludes ${context.site_mapping[s.year]}. `:'All Wake sites. ')+(s.dimension?`${s.dimension}: ${s.value}.`:s.field==='all_ages'?'All ages.':s.field==='same_day_registration'?'sdr is Y or YES, all ages.':s.field==='age_18_22'?'Age 18 through 22.':'Age 18 through 24.');
+  $('filter').textContent=`${s.year} · ${displayLabel(`${s.scope} ${s.year}`).replace(` ${s.year}`,'')} · ${w.start_date} through ${w.end_date}, inclusive. WAKE, accepted early-voting records. `+(s.scope==='Campus site'?`Site: ${context.site_mapping[s.year]}. `:s.scope==='Other Wake sites'?`Excludes ${context.site_mapping[s.year]}. `:'All Wake sites. ')+(s.dimension?`${s.dimension}: ${s.value}.`:s.field==='all_ages'?'All ages.':s.field==='same_day_registration'?'sdr is Y or YES, all ages.':s.field==='age_18_22'?'Age 18 through 22.':'Age 18 through 24.');
  }
  function page(){
   if(!loaded||active==='calculation')return;
@@ -86,9 +87,9 @@
   if(worker){worker.terminate();worker=null;}counts=null;loaded=false;verified=false;pages={original:0,selected:0};request++;
   plan=CsvProof.buildPlan(payload.records,id);$('year').replaceChildren();$('selection').replaceChildren();
   exportSources=[2022,2024,2026].map(year=>payload.records[`summary-${year}-campus-site-all-ages`].sources[0]);
-  $('download-workbook').disabled=false;$('title').textContent=record.label;if($('evidence'))$('evidence').href='figure-source.html#'+encodeURIComponent(id);
+  $('download-workbook').disabled=false;$('title').textContent=displayLabel(record.label);if($('evidence'))$('evidence').href='figure-source.html#'+encodeURIComponent(id);
   for(const source of record.sources)$('year').append(el('option',String(source.year),{value:source.year}));
-  plan.counts.forEach((c,i)=>$('selection').append(el('option',`${c.label} · saved count ${c.expected.toLocaleString()}`,{value:i})));
+  plan.counts.forEach((c,i)=>$('selection').append(el('option',`${displayLabel(c.label)} · saved count ${c.expected.toLocaleString()}`,{value:i})));
   sourceInfo();filterInfo();showMath();$('status').textContent='Saved calculation ready. Load the originals to verify every count.';$('status').className='';$('load').disabled=false;$('load').textContent='Load official CSVs and recount';
   $('hashes').textContent='Load the original CSVs to compare their SHA-256 hashes with the saved report snapshot.';
   for(const id of ['original-grid','selected-grid'])$(id).replaceChildren(el('p','Load the official CSVs to see the original rows and running counts.',{class:'muted'}));

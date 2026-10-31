@@ -12,7 +12,7 @@
  function choose(figure,scroll){
   const record=data.records[figure];if(!record)return;selected=figure;
   proof.setFigure(figure);
-  $('selected-title').textContent=record.label;$('source-details').href='figure-source.html#'+encodeURIComponent(figure);
+  $('selected-title').textContent=record.label.replaceAll('Campus site','Talley Student Union → Western Boulevard Business Services');$('source-details').href='figure-source.html#'+encodeURIComponent(figure);
   for(const row of $('comparison-rows').rows)row.classList.toggle('is-selected',row.dataset.figure===figure);
   history.replaceState(null,'','?baseline='+baseline+'&figure='+encodeURIComponent(figure)+(scroll?'#csv':location.hash));
   if(scroll)$('csv').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
@@ -20,9 +20,9 @@
  function render(){
   const previous=summary(baseline,'Campus site'),current=summary(2026,'Campus site'),wakePrevious=summary(baseline,'Wake County'),wakeCurrent=summary(2026,'Wake County');
   const share=(year,group)=>data.records[`demographic-${year}-age-group-${group}`].value;
-  const rows=[['all','Campus site · all ages',previous.all_ages,current.all_ages,'ballots'],['college','Campus site · ages 18–24',previous.age_18_24,current.age_18_24,'ballots'],['share','College-age share of site ballots',share(baseline,'18-24'),share(2026,'18-24'),'%'],['older','65+ share of site ballots',share(baseline,'65'),share(2026,'65'),'%'],['county','Wake County · ages 18–24',wakePrevious.age_18_24,wakeCurrent.age_18_24,'ballots']];
+  const rows=[['all','Talley → Western Boulevard · all ages',previous.all_ages,current.all_ages,'ballots'],['college','Talley → Western Boulevard · ages 18–24',previous.age_18_24,current.age_18_24,'ballots'],['share','College-age share of site ballots',share(baseline,'18-24'),share(2026,'18-24'),'%'],['older','65+ share of site ballots',share(baseline,'65'),share(2026,'65'),'%'],['county','Wake County · ages 18–24',wakePrevious.age_18_24,wakeCurrent.age_18_24,'ballots']];
   $('previous-header').textContent=String(baseline);$('baseline').value=String(baseline);
-  $('period-note').textContent=`Talley: ${date(previous.start_date)}–${date(previous.end_date)}. Western Boulevard: ${date(current.start_date)}–${date(current.end_date)}. `+(baseline===2022?'Both elections are midterms.':'2024 was a presidential election; 2026 is a midterm.');
+  $('period-note').textContent=`Talley Student Union: ${date(previous.start_date)}–${date(previous.end_date)}. Western Boulevard Business Services: ${date(current.start_date)}–${date(current.end_date)}. `+(baseline===2022?'Both elections are midterms.':'2024 was a presidential election; 2026 is a midterm.');
   $('comparison-rows').replaceChildren();
   for(const [kind,label,before,after,unit]of rows){
    const record=data.records[id(kind)],tr=el('tr',undefined,{'data-kind':kind,'data-figure':record.id});

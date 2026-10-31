@@ -39,8 +39,8 @@ def link(figure,text,label):
 
 rows=[]
 for kind,label,field,scope,unit,share_group in [
- ('all','Campus site · all ages','all_ages','Campus site','ballots',None),
- ('college','Campus site · ages 18–24','age_18_24','Campus site','ballots',None),
+ ('all','Talley → Western Boulevard · all ages','all_ages','Campus site','ballots',None),
+ ('college','Talley → Western Boulevard · ages 18–24','age_18_24','Campus site','ballots',None),
  ('share','College-age share of site ballots',None,'Campus site','%','18-24'),
  ('older','65+ share of site ballots',None,'Campus site','%','65'),
  ('county','Wake County · ages 18–24','age_18_24','Wake County','ballots',None)]:

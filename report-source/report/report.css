@@ -24,7 +24,10 @@
   min-width: 0;
 }
 
-.voting-party-section {display:grid;gap:24px;min-width:0;scroll-margin-top:100px;}
+.voting-report {grid-template-columns:minmax(0,1fr);}
+.voting-party-section {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0;scroll-margin-top:100px;}
+.voting-party-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;width:min(1240px,calc(100vw - 80px));justify-self:center;}
+@media(max-width:1099px){.voting-party-grid{grid-template-columns:1fr;width:100%;}}
 
 .report-sortable-sections {
   display: grid;
@@ -359,8 +362,8 @@
 .voting-report .report-deck { font-size:18px; line-height:1.6; color:var(--text-secondary); }
 .voting-report .voting-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:28px 0 38px; }
 .voting-report .voting-controls { display:flex; flex-wrap:wrap; gap:18px; margin:20px 0 14px; }
-.voting-report .voting-controls label { display:flex; align-items:center; gap:9px; font-size:14px; font-weight:600; }
-.voting-report .voting-controls select { border:1px solid var(--border); border-radius:7px; padding:9px 28px 9px 10px; background:var(--surface); color:var(--text); font:inherit; }
+.voting-report .voting-controls label { display:flex; align-items:center; gap:9px; font-size:14px; font-weight:600; max-width:100%; }
+.voting-report .voting-controls select { border:1px solid var(--border); border-radius:7px; padding:9px 28px 9px 10px; background:var(--surface); color:var(--text); font:inherit; min-width:0; max-width:100%; }
 .voting-report .voting-table-scroll { overflow-x:auto; }
 .voting-report .voting-table { width:100%; border-collapse:collapse; font-size:13px; white-space:nowrap; }
 .voting-report .voting-table th,.voting-report .voting-table td { padding:11px 12px; text-align:right; border-bottom:1px solid var(--border); }

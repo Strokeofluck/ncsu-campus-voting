@@ -2,7 +2,7 @@
 
 Data and reporting workspace for a Technician follow-up on voting at NC State.
 
-[Explore cumulative ballots by party registration](https://strokeofluck.github.io/ncsu-campus-voting/?view=1#party-trends). Choose 2022, 2024 or 2026; campus, other Wake sites or countywide; and all ages, 18–24 or 18–22. Unaffiliated registrations stay separate from other registered parties. The exact totals and [daily counts with running totals](data/processed/comparison/matched_party_daily.csv) accompany the chart. These are accepted in-person early ballots in the matched windows, not candidate choices.
+[Compare cumulative ballots by party registration](https://strokeofluck.github.io/ncsu-campus-voting/?view=1#party-trends) in three simultaneous charts: Talley Student Union in 2022 and 2024, and Western Boulevard Business Services in 2026. Shared controls select all ages or separate age bands (18–24, 25–34, 35–44, 45–64 and 65+), plus the named locations, other Wake sites or countywide. Unknown/outside-range ages remain available when observed. A shared ceiling guide gives the three charts matching vertical scales and aligned day 1–16 positions. Unaffiliated registrations stay separate from other registered parties. Exact totals and [daily counts with running totals](data/processed/comparison/matched_party_daily.csv) accompany the charts. Legacy 18–22 sensitivity rows stay in the data download, outside the non-overlapping age menu. These are accepted in-person early ballots, not candidate choices.
 
 **[Open the interactive report](https://strokeofluck.github.io/ncsu-campus-voting/)** · [Findings and methods](docs/2026-early-voting-update.md) · [References](references.html)
 
