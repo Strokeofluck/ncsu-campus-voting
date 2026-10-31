@@ -35,7 +35,7 @@ def value(number,unit):return f'{number:.1f}%' if unit=='%' else f'{number:,}'
 def change(number,unit):return f'{number:+.1f}'+('%' if unit=='%' else ' pp')
 def link(figure,text,label):
     assert figure in records,figure
-    return f'<a class="figure-link" data-figure="{figure}" href="csv-proof.html?figure={figure}&amp;tab=calculation" target="_blank" rel="noopener" aria-label="{escape(label,quote=True)}">{escape(text)}</a>'
+    return f'<a class="figure-link" data-figure="{figure}" href="csv-proof.html?figure={figure}&amp;tab=calculation" aria-label="{escape(label,quote=True)}">{escape(text)}</a>'
 
 rows=[]
 for kind,label,field,scope,unit,share_group in [
@@ -63,7 +63,16 @@ assert all(key in records for key in required)
 payload={'summary':comparison['summary'],'records':{key:{k:records[key][k] for k in ['id','label','value','unit']} for key in sorted(required)},'matched_days':comparison['matched_days'],'as_of':comparison['as_of']}
 period='Talley: '+nice(summary(2022,'Campus site')['start_date'])+'–'+nice(summary(2022,'Campus site')['end_date'])+'. Western Boulevard: '+nice(summary(2026,'Campus site')['start_date'])+'–'+nice(summary(2026,'Campus site')['end_date'])+'. Both elections are midterms.'
 template=(ROOT/'report-source/references.html').read_text(encoding='utf-8')
-replacements={'__MATCHED_DAYS__':str(comparison['matched_days']),'__CUTOFF__':nice(comparison['as_of']),'__PERIOD_NOTE__':period,'__INITIAL_ROWS__':'\n'.join(rows),'__SOURCE_CARDS__':'\n'.join(sources),'__REFERENCE_LIBRARY__':library.read_text(encoding='utf-8'),'__REFERENCE_DATA__':json.dumps(payload,ensure_ascii=False).replace('<','\\u003c')}
+proof=(ROOT/'csv-proof.html').read_text(encoding='utf-8')
+workspace=re.search(r'<main\b[^>]*>([\s\S]*?)</main>',proof).group(1)
+workspace=re.sub(r'<nav>[\s\S]*?</nav>','',workspace)
+workspace=re.sub(r'<h1 id="title">[\s\S]*?</h1>','<span id="title" hidden></span>',workspace)
+workspace=re.sub(r'<p>Follow the number[\s\S]*?</p>','',workspace)
+workspace=re.sub(r'<p class="muted">The Excel workbook uses[\s\S]*?</p>','',workspace)
+workspace=re.sub(r'id="([^"]+)"',lambda m:'id="proof-'+m[1]+'"',workspace)
+workspace=re.sub(r'(aria-controls|aria-labelledby)="([^"]+)"',lambda m:m[1]+'="'+' '.join('proof-'+value for value in m[2].split())+'"',workspace)
+workspace='<div id="csv-workspace" class="csv-workspace" data-csv-proof data-proof-prefix="proof-">'+workspace+'</div>'
+replacements={'__MATCHED_DAYS__':str(comparison['matched_days']),'__CUTOFF__':nice(comparison['as_of']),'__PERIOD_NOTE__':period,'__INITIAL_ROWS__':'\n'.join(rows),'__SOURCE_CARDS__':'\n'.join(sources),'__REFERENCE_LIBRARY__':library.read_text(encoding='utf-8'),'__REFERENCE_DATA__':json.dumps(payload,ensure_ascii=False).replace('<','\\u003c'),'__CSV_WORKSPACE__':workspace}
 for key,text in replacements.items():
     assert key in template,key
     template=template.replace(key,text)

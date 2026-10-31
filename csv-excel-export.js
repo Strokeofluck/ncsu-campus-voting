@@ -2,6 +2,9 @@
 (function(root){
  'use strict';
  const names=['0 Original files','1 Source rows','2 Filter flags','3 Counts','4 Math'];
+ const sheetNames=[names[0],'Copy 2022','Copy 2024','Copy 2026',...names.slice(1)];
+ const column=index=>{let s='';for(let n=index+1;n;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;};
+ const sourceFormula=(year,column,record)=>{const ref=`'Copy ${year}'!${column}${record}`;return `=IF(${ref}="","",${ref})`;};
  const fields=['county_desc','ballot_req_type','ballot_rtn_status','ballot_rtn_dt','site_name','age','sdr'];
  const bands=[[18,24,'18–24'],[25,34,'25–34'],[35,44,'35–44'],[45,64,'45–64'],[65,120,'65+']];
  const xml=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -46,7 +49,7 @@
   });
  }
  function totals(flags){return [flags.reduce((n,r)=>n+r[10],0),...bands.map(([lo,hi])=>flags.filter(r=>r[10]===1&&typeof r[8]==='number'&&r[8]>=lo&&r[8]<=hi).length),flags.filter(r=>r[10]===1&&typeof r[8]==='number'&&r[8]>=18&&r[8]<=22).length,flags.filter(r=>r[10]===1&&r[9]===1).length];}
- async function workbook(template,datasets,context,JSZip){
+ async function workbook(template,datasets,context,JSZip,streaming){
   if(datasets.length!==3||datasets.map(d=>d.source.year).join(',')!=='2022,2024,2026')throw Error('The workbook requires all three source years');
   const flags=datasets.map(d=>evaluateRows(d,context)),counts=flags.map(totals);
   for(let j=0;j<datasets.length;j++){
@@ -55,8 +58,9 @@
    if(counts[j].some((value,i)=>value!==expected[i]))throw Error('Original '+year+' record counts differ from the report; workbook export stopped');
   }
   const zip=await JSZip.loadAsync(template),last=datasets.reduce((n,d)=>n+d.rows.length,5),stats={};
+  const parts=zip.file('xl/worksheets/sheet8.xml')?[1,5,6,7,8]:[1,2,3,4,5];
   for(let sheet=1;sheet<=5;sheet++){
-   const filename=`xl/worksheets/sheet${sheet}.xml`;let text=await zip.file(filename).async('string');
+   const filename=`xl/worksheets/sheet${parts[sheet-1]}.xml`;let text=await zip.file(filename).async('string');
    const p=(text.match(/<([\w]+:)?worksheet\b/)||[])[1]||'';
    const allRows=[...text.matchAll(new RegExp(`<${p}row\\b[^>]*\\br="(\\d+)"[\\s\\S]*?<\\/${p}row>`,'g'))];
    const head=allRows.filter(r=>Number(r[1])<6).map(r=>r[0]).join('');
@@ -71,9 +75,12 @@
    const row=(r,values,formulas=[])=>`<${p}row r="${r}" ht="22" customHeight="1">${values.map((v,i)=>cell(String.fromCharCode(65+i)+r,v,formulas[i])).join('')}</${p}row>`;
    let body='';
    if(sheet===1){
-    body=datasets.map((d,i)=>{const w=context.summary.find(r=>r.year===d.source.year&&r.scope==='Campus site');return row(i+6,[d.source.year,d.source.member,'Open unchanged CSV',context.site_mapping[d.source.year],dateSerial(w.start_date),dateSerial(w.end_date),d.total,d.rows.length,'Official NCSBE archive',d.source.wake_csv_sha256],[null,null,`=HYPERLINK("originals/${d.source.member}","Open unchanged CSV")`,null,null,null,null,null,`=HYPERLINK("${d.source.url}","Official NCSBE archive")`,null]);}).join('');
+    body=datasets.map((d,i)=>{const w=context.summary.find(r=>r.year===d.source.year&&r.scope==='Campus site');return row(i+6,[d.source.year,d.source.member,'Open untouched CSV',context.site_mapping[d.source.year],dateSerial(w.start_date),dateSerial(w.end_date),d.total,d.rows.length,'Official NCSBE archive',d.source.wake_csv_sha256,'Open full Excel copy'],[null,null,`=HYPERLINK("../01 Original files/${d.source.year}/${d.source.member}","Open untouched CSV")`,null,null,null,null,null,`=HYPERLINK("${d.source.url}","Official NCSBE archive")`,null,`=HYPERLINK("#'Copy ${d.source.year}'!A1","Open full Excel copy")`]);}).join('');
    }else if(sheet===2||sheet===3){
-    let r=6;const parts=[head];for(let j=0;j<datasets.length;j++)for(let i=0;i<datasets[j].rows.length;i++,r++)parts.push(sheet===2?row(r,datasets[j].rows[i]):row(r,flags[j][i],flagFormulas(r)));body=parts.join('');
+    let r=6;const bodyParts=[head];for(let j=0;j<datasets.length;j++)for(let i=0;i<datasets[j].rows.length;i++,r++){
+     const d=datasets[j],values=d.rows[i],sourceFormulas=d.headers?[null,null,...fields.map(field=>sourceFormula(d.source.year,column(d.headers.indexOf(field)),values[1]))]:[];
+     bodyParts.push(sheet===2?row(r,values,sourceFormulas):row(r,flags[j][i],flagFormulas(r)));
+    }body=bodyParts.join('');
    }else if(sheet===4){
     const labels=['All site ballots',...bands.map(b=>b[2]),'18–22 (overlaps 18–24)','Same-day registration (all ages)'];
     body=labels.map((label,i)=>row(i+6,[label,i>=1&&i<=5?bands[i-1][0]:i===6?18:'',i>=1&&i<=5?bands[i-1][1]:i===6?22:'',...counts.map(c=>c[i])],[null,null,null,...countFormulas(i+6,last)])).join('');
@@ -83,7 +90,7 @@
    }
    const first=sheet===2||sheet===3?'':head;
    text=text.replace(new RegExp(`<${p}sheetData[^>]*>[\\s\\S]*?<\\/${p}sheetData>`),()=>`<${p}sheetData>${first}${body}${tail}</${p}sheetData>`);
-   const end=sheet===1?8:sheet<=3?last:19,col=sheet===1?'J':sheet===2?'I':sheet===3?'N':sheet===4?'F':'J';
+   const end=sheet===1?8:sheet<=3?last:19,col=sheet===1?'K':sheet===2?'I':sheet===3?'N':sheet===4?'F':'J';
    text=text.replace(new RegExp(`<${p}dimension\\b[^>]*/>`),`<${p}dimension ref="A1:${col}${end}"/>`);
    if(sheet===2||sheet===3){
     text=text.replace(/sqref="([A-Z]+)6:([A-Z]+)13"/g,(_,a,b)=>`sqref="${a}6:${b}${last}"`);
@@ -97,8 +104,17 @@
   if(new RegExp(`<${p}calcPr\\b`).test(workbookXml))workbookXml=workbookXml.replace(new RegExp(`<${p}calcPr\\b[^>]*(?:/>|>[\\s\\S]*?<\\/${p}calcPr>)`),calc);
   else workbookXml=workbookXml.replace(`</${p}workbook>`,calc+`</${p}workbook>`);
   zip.file('xl/workbook.xml',workbookXml);
+  if(streaming){
+   const archive=new streaming.Stream.Archive(),raw=new Map(datasets.map(d=>[d.rawEntry.name,d.rawEntry]));
+   for(const filename of Object.keys(zip.files)){
+    if(zip.files[filename].dir)continue;
+    if(raw.has(filename)){archive.add(raw.get(filename));continue;}
+    const entry=streaming.Stream.packed(filename,streaming.Pako);entry.push(await zip.file(filename).async('uint8array'));archive.add(entry.finish());
+   }
+   return {bytes:archive.finish(),counts,stats};
+  }
   return {bytes:await zip.generateAsync({type:'uint8array',compression:'DEFLATE',compressionOptions:{level:3}}),counts,stats};
  }
- root.CsvExcel={names,fields,bands,flagFormulas,countFormulas,mathFormulas,evaluateRows,totals,workbook,dateSerial};
+ root.CsvExcel={names,sheetNames,column,sourceFormula,fields,bands,flagFormulas,countFormulas,mathFormulas,evaluateRows,totals,workbook,dateSerial};
  if(typeof module!=='undefined')module.exports=root.CsvExcel;
 })(globalThis);

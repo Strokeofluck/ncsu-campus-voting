@@ -1,6 +1,6 @@
 /* Reads one member of the official ZIP using HTTP ranges; nothing is uploaded. */
 'use strict';
-importScripts('vendor/pako_inflate.min.js');
+importScripts('vendor/pako_inflate.min.js','csv-original-copy.js');
 let csv='',headers=[],bounds,selected=[],total=0;
 const say=text=>postMessage({type:'status',text});
 const view=bytes=>new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
@@ -37,19 +37,10 @@ async function wakeBytes(source){
 }
 // CSV parser preserves quoted commas, escaped quotes and embedded line breaks.
 function cells(line){
- const result=[];let value='',quoted=false;
- for(let i=0;i<line.length;i++){
-  const c=line[i];if(c==='"'){if(quoted&&line[i+1]==='"'){value+='"';i++;}else quoted=!quoted;}
-  else if(c===','&&!quoted){result.push(value);value='';}else value+=c;
- }result.push(value);return result;
+ return CsvOriginalCopy.cells(line);
 }
 function indexRecords(text){
- const out=[];let quoted=false,start=0;
- for(let i=0;i<text.length;i++){
-  if(text[i]==='"')quoted=!quoted;
-  if(text[i]==='\n'&&!quoted){let end=i;if(text[end-1]==='\r')end--;if(end>start)out.push(start,end);start=i+1;}
- }
- if(start<text.length)out.push(start,text.length);if(quoted)throw Error('Unclosed quoted CSV field');return new Uint32Array(out);
+ return CsvOriginalCopy.indexRecords(text);
 }
 function rowAt(index){return csv.slice(bounds[index*2],bounds[index*2+1]);}
 function matches(values,s,context){

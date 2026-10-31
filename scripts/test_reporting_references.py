@@ -42,8 +42,10 @@ for href in page.links:
     if url.scheme or url.netloc:continue
     if url.path:assert (ROOT/unquote(url.path)).is_file(),href
     elif url.fragment:assert unquote(url.fragment) in page.ids,href
-assert len(page.iframes)==1
-assert 'tab=calculation' in page.iframes[0]['src']
+assert not page.iframes
+assert 'csv-workspace' in page.ids and 'proof-math' in page.ids
+assert 'proof-tab-calculation' in page.ids and 'proof-download-workbook' in page.ids
+assert 'browser-preview' not in html and 'Open calculation in a full tab' not in html
 library=(ROOT/'report-source/reference-library.html').read_text(encoding='utf-8')
 for expected in ['EarlyVotingSitesWithTurnout.pdf','history_stats_20221108.zip','polling_place_20221108.csv','157482/news/heres-who-voted-early-in-talley-student-union','docs/election-day-methodology.md']:
     assert expected in library and expected in html,expected

@@ -1,8 +1,10 @@
 'use strict';
 (()=>{
- const $=id=>document.getElementById(id),el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
+ function create(root,options={}){
+ const prefix=root.dataset.proofPrefix||'', $=id=>root.querySelector('#'+prefix+id),el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
  const fmt=(n,unit)=>!Number.isFinite(n)?'Unavailable':unit==='ballots'?n.toLocaleString('en-US'):n.toFixed(1)+(unit==='%'?'%':' percentage points');
  let plan,record,context,worker,exportSources,exportUrl,counts=null,verified=false,active='original',request=0,loaded=false,pages={original:0,selected:0};
+ let payload,wantedFigure=options.figure||new URLSearchParams(location.search).get('figure')||'change-2022-age-group-18-24';
  const normalColumns=['county_desc','ballot_req_type','ballot_rtn_status','ballot_rtn_dt','site_name','age','sdr'];
  function showMath(){
   const results=CsvProof.calculate(plan,counts),last=results.find(r=>r.id===plan.id),host=$('math');host.replaceChildren();
@@ -51,7 +53,7 @@
  $('year').onchange=()=>{pages.original=0;sourceInfo();page();};$('all-columns').onchange=page;$('selection').onchange=()=>{pages.selected=0;filterInfo();page();};
  $('download-workbook').onclick=()=>{
   $('download-workbook').disabled=true;$('download-status').textContent='Downloading and checking all three original government CSVs…';
-  const exporter=new Worker('csv-excel-worker.js');
+  const exporter=new Worker('csv-excel-worker.js?v=full-copy-3');
   const failed=message=>{$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
   exporter.onmessage=({data})=>{
    if(data.type==='status')$('download-status').textContent=data.text;
@@ -59,7 +61,7 @@
    if(data.type==='download'){
     if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([data.bytes],{type:'application/zip'}));
     const link=el('a','Save originals + Excel ZIP',{href:exportUrl,download:data.filename});
-    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP, then open the workbook and follow tabs 0–4.'));
+    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP. Open Excel in 02 Working copy, then follow Original files → full Copy tabs → Source rows → Filter flags → Counts → Math.'));
     $('download-workbook').disabled=false;exporter.terminate();link.click();
    }
   };exporter.onerror=()=>failed('The export worker could not run.');exporter.postMessage({sources:exportSources,context});
@@ -79,14 +81,22 @@
   };worker.onerror=()=>{$('status').textContent='The original-file worker could not run. Saved calculations and downloads remain available.';$('load').disabled=false;worker.terminate();};
   worker.postMessage({type:'load',sources:record.sources,counts:plan.counts,context});
  };
- Promise.all([fetch('data/processed/comparison/figure_sources.json').then(r=>{if(!r.ok)throw Error('Figure data unavailable');return r.json();}),fetch('data/processed/comparison/comparison.json').then(r=>{if(!r.ok)throw Error('Comparison unavailable');return r.json();})]).then(([payload,data])=>{
-  const id=new URLSearchParams(location.search).get('figure')||'change-2022-age-group-18-24';record=payload.records[id];if(!record)throw Error('Choose a figure from the report');context=data;plan=CsvProof.buildPlan(payload.records,id);
+ function renderFigure(id){
+  record=payload.records[id];if(!record)throw Error('Choose a figure from the report');
+  if(worker){worker.terminate();worker=null;}counts=null;loaded=false;verified=false;pages={original:0,selected:0};request++;
+  plan=CsvProof.buildPlan(payload.records,id);$('year').replaceChildren();$('selection').replaceChildren();
   exportSources=[2022,2024,2026].map(year=>payload.records[`summary-${year}-campus-site-all-ages`].sources[0]);
-  $('download-workbook').disabled=false;$('title').textContent=record.label;$('evidence').href='figure-source.html#'+encodeURIComponent(id);
+  $('download-workbook').disabled=false;$('title').textContent=record.label;if($('evidence'))$('evidence').href='figure-source.html#'+encodeURIComponent(id);
   for(const source of record.sources)$('year').append(el('option',String(source.year),{value:source.year}));
   plan.counts.forEach((c,i)=>$('selection').append(el('option',`${c.label} · saved count ${c.expected.toLocaleString()}`,{value:i})));
-  sourceInfo();filterInfo();showMath();$('status').textContent='Saved calculation ready. Load the originals to verify every count.';$('load').disabled=false;
-  for(const id of ['original-grid','selected-grid'])$(id).append(el('p','Load the official CSVs to see the original rows and running counts.',{class:'muted'}));
-  const initialTab=new URLSearchParams(location.search).get('tab');if(['original','selected','calculation'].includes(initialTab))switchTab(initialTab);
- }).catch(error=>{$('status').textContent=error.message;});
+  sourceInfo();filterInfo();showMath();$('status').textContent='Saved calculation ready. Load the originals to verify every count.';$('status').className='';$('load').disabled=false;$('load').textContent='Load official CSVs and recount';
+  $('hashes').textContent='Load the original CSVs to compare their SHA-256 hashes with the saved report snapshot.';
+  for(const id of ['original-grid','selected-grid'])$(id).replaceChildren(el('p','Load the official CSVs to see the original rows and running counts.',{class:'muted'}));
+  const initialTab=options.initialTab||new URLSearchParams(location.search).get('tab');switchTab(['original','selected','calculation'].includes(initialTab)?initialTab:'original');
+ }
+ const ready=Promise.all([fetch('data/processed/comparison/figure_sources.json').then(r=>{if(!r.ok)throw Error('Figure data unavailable');return r.json();}),fetch('data/processed/comparison/comparison.json').then(r=>{if(!r.ok)throw Error('Comparison unavailable');return r.json();})]).then(([figures,data])=>{payload=figures;context=data;renderFigure(wantedFigure);}).catch(error=>{$('status').textContent=error.message;});
+ return {ready,setFigure(id){wantedFigure=id;if(payload)renderFigure(id);}};
+ }
+ window.CsvProofView={create};
+ const standalone=document.querySelector('main[data-csv-proof]');if(standalone)create(standalone);
 })();

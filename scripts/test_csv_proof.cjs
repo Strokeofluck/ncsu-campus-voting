@@ -1,5 +1,8 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),model=require(path.join(root,'csv-proof-model.js'));
+const csvParser=require(path.join(root,'csv-original-copy.js'));
+assert.deepEqual(csvParser.cells('a,unquoted "literal" text,"comma, and ""quote""",0001'),['a','unquoted "literal" text','comma, and "quote"','0001']);
+assert.equal(csvParser.indexRecords('a,b\r\n1,unquoted "odd quote\r\n2,"two\nlines"\r\n').length/2,3);
 const records=JSON.parse(fs.readFileSync(path.join(root,'data/processed/comparison/figure_sources.json'),'utf8')).records;
 for(const id of Object.keys(records)){
  const plan=model.buildPlan(records,id),steps=model.calculate(plan);

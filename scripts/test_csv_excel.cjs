@@ -16,7 +16,7 @@ assert(plan.flagFormulas(7)[12].includes('M6+K7'));
 assert(plan.countFormulas(7,45403).every(f=>f.startsWith('=COUNTIFS(')&&f.includes('$45403')));
 assert(plan.mathFormulas(7)[9].includes('(G7-C7)*100'));
 const template=JSON.parse(fs.readFileSync(path.join(root,'csv-excel-template.json'),'utf8'));
-assert.deepEqual(template.sheetNames,plan.names);assert(Buffer.from(template.base64,'base64').subarray(0,2).equals(Buffer.from('PK')));
+assert.deepEqual(template.sheetNames,plan.sheetNames);assert.equal(template.fullCopies,true);assert(Buffer.from(template.base64,'base64').subarray(0,2).equals(Buffer.from('PK')));
 (async()=>{
  await assert.rejects(()=>plan.workbook(null,[],context,null),/requires all three/);
  await assert.rejects(()=>plan.workbook(null,[2022,2024,2026].map(y=>({source:{year:y},rows:[]})),context,null),/counts differ/);
