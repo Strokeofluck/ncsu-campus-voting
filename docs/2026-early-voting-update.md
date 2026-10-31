@@ -18,6 +18,22 @@ Match the first 16 days of each midterm: **October 20, 2022–November 4, 2022**
 
 Wake County’s 18–24 early ballots increased from 11,287 to 22,980 (+103.6%). At all other Wake sites combined, they increased from 8,288 to 18,766 (+126.4%). Campus-site voting grew, but its share of the county's college-age early votes fell. The younger 18–22 proxy gives a similar site growth result.
 
+## Same-day registration grew more slowly than all site ballots
+
+The campus-site count rose from **646 to 877 (+35.8%)**, alongside an increase from **9,339 to 13,266 accepted early ballots (+42.0%)**. Both counts grew. Same-day registration's share of site ballots fell slightly, from **6.9% to 6.6% (-0.3 percentage points)**. This is a modest composition change, not evidence that registration counts fell or that the move reduced student registration.
+
+| Measure | Talley, 2022 | Western Boulevard, 2026 | Change |
+| --- | ---: | ---: | ---: |
+| Accepted early ballots, all ages | 9,339 | 13,266 | +42.0% |
+| Accepted ballots with same-day registration, all ages | 646 | 877 | +35.8% |
+| Same-day registration share of site ballots | 6.9% | 6.6% | -0.3 percentage points |
+
+The same-day indicator counts accepted records with `sdr` equal to Y or YES; it includes all ages. Share = same-day-registration ballots ÷ all accepted site ballots × 100. Changes use unrounded shares: (877 ÷ 13,266 × 100) − (646 ÷ 9,339 × 100) = -0.306344 percentage points. The measure does not count all new voter registrations or identify NC State students. Same-day-registration ballots are a subset of all ballots; do not add the measures.
+
+The report's baseline selector also updates this comparison. Against matched 2024, same-day registrations fell 57.9%, all ballots fell 34.8%, and same-day share declined from 10.2% to 6.6% (-3.6 percentage points); that comparison spans a presidential election and a midterm.
+
+[Download exact comparisons](../data/processed/comparison/same_day_registration_comparison.csv) · [Inspect the share change and original source inputs](../figure-source.html#sdr-share-change-2022-campus-site). Run `python scripts/build_registration_comparison.py` to reproduce the derived comparison from the validated summary; `scripts/refresh_report_snapshot.py` also refreshes this CSV.
+
 ## 2024 presidential-election benchmark
 
 The report defaults to the 2022-to-2026 midterm comparison and retains 2024 as a presidential-election benchmark. Selectors update counts, cumulative curves, county share, age distribution and individual ages 18–24 charts together.

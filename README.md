@@ -10,6 +10,14 @@ The latest downloaded NCSBE file covers voting through **October 30, 2026**. The
 
 The primary midterm comparison shows **40.5% more ages 18–24 ballots at the campus site** and **103.6% more across Wake County** than in 2022. All-age Wake early voting grew **55.1%**.
 
+### Same-day registration grew more slowly than total campus-site voting
+
+Over the same first 16 days, campus-site same-day registrations rose from **646 to 877 (+35.8%)**, while all accepted ballots rose from **9,339 to 13,266 (+42.0%)**. Same-day registration's share of site ballots edged down from **6.9% to 6.6%**, a **0.3 percentage-point decline**. Both counts increased; the change in share is modest. This includes all ages and does not identify students or establish an effect of the location move.
+
+![Growth in all ballots and same-day registration at the campus site, 2026 versus matched 2022](docs/images/same-day-registration-growth.png)
+
+[Exact same-day-registration comparison, both historical baselines and all scopes](data/processed/comparison/same_day_registration_comparison.csv) · [Verify the share change and its inputs](figure-source.html#sdr-share-change-2022-campus-site).
+
 ### Retained 2024 presidential-election benchmark
 
 | Measure | Talley, 2024 | Western Boulevard, 2026 | Change |
@@ -24,13 +32,13 @@ College-age ballots at the campus site were **52.9% lower** than in the matched 
 
 ### Exact campus-site counts, all three years
 
-| Site / year | All ages | Ages 18–24 | Ages 18–22 | 18–24 share | Same-day registration |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Talley Student Union · 2022 | 9,339 | 2,999 | 2,313 | 32.1% | 646 |
-| Talley Student Union · 2024 | 20,350 | 8,950 | 7,410 | 44.0% | 2,084 |
-| Western Boulevard · 2026 | 13,266 | 4,214 | 3,340 | 31.8% | 877 |
+| Site / year | All ages | Ages 18–24 | Ages 18–22 | 18–24 share | Same-day registration | Same-day share |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Talley Student Union · 2022 | 9,339 | 2,999 | 2,313 | 32.1% | 646 | 6.9% |
+| Talley Student Union · 2024 | 20,350 | 8,950 | 7,410 | 44.0% | 2,084 | 10.2% |
+| Western Boulevard · 2026 | 13,266 | 4,214 | 3,340 | 31.8% | 877 | 6.6% |
 
-Dates: **October 20, 2022–November 4, 2022**; **October 17, 2024–November 1, 2024**; **October 15, 2026–October 30, 2026**. Each row covers 16 days. 2026 is preliminary; same-day registrations include all ages. The 18–24 share uses all site ballots as its denominator.
+Dates: **October 20, 2022–November 4, 2022**; **October 17, 2024–November 1, 2024**; **October 15, 2026–October 30, 2026**. Each row covers 16 days. 2026 is preliminary; same-day registrations include all ages. Both shares use all site ballots as the denominator. Same-day-registration ballots are included in all ballots and must not be added to them.
 
 **[Verify every highlighted figure against its source and arithmetic](https://strokeofluck.github.io/ncsu-campus-voting/verify-figures.html).** Campus totals and percentages are project calculations from NCSBE records. [Download the campus-site CSV](data/processed/comparison/campus_site_matched_counts.csv).
 

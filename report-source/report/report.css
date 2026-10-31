@@ -366,6 +366,8 @@
 .voting-report .voting-table thead th { font-size:12px; color:var(--text-secondary); }
 .voting-report .voting-campus-table th { white-space:normal; }
 .voting-report .voting-campus-table th:first-child { min-width:140px; }
+.voting-report .voting-registration-table th { white-space:normal; }
+.voting-report .voting-registration-table th:first-child { min-width:130px; }
 .voting-report .voting-age-result { margin:0 0 16px; font-size:15px; line-height:1.6; }
 .voting-report .voting-age-change-table { min-width:390px; font-variant-numeric:tabular-nums; }
 .voting-report .voting-age-change-table thead th { white-space:normal; vertical-align:bottom; }

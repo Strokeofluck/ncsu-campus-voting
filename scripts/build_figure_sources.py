@@ -40,6 +40,24 @@ for (year,scope),r in summaries.items():
         add(key,f'{label} · {scope} · {year}',r[field],'%' if is_share else 'ballots',formula,inputs,[year],where)
         records[key]['selections']=[{'year':year,'scope':scope,'field':'age_18_24' if is_share else field}]
 
+for (year,scope),r in summaries.items():
+    count=r['same_day_registration'];total=r['all_ages'];rate=count/total*100
+    add(f'sdr-share-{year}-{slug(scope)}',f'Same-day registration share of all ballots · {scope} · {year}',rate,'%',
+        f'{count:,} ÷ {total:,} × 100 = {rate:.6f}%',
+        [inp('Accepted ballots with same-day registration, all ages',count,target=sid(year,scope,'same_day_registration')),
+         inp('All accepted early ballots, same scope and period',total,target=sid(year,scope,'all_ages'))],
+        [year],filters(year,scope)+['sdr ∈ Y, YES for the numerator; all ages in numerator and denominator'])
+for base in (2022,2024):
+    for scope in ['Campus site','Wake County','Other Wake sites']:
+        old=summaries[base,scope];new=summaries[2026,scope]
+        before=old['same_day_registration']/old['all_ages']*100
+        after=new['same_day_registration']/new['all_ages']*100
+        add(f'sdr-share-change-{base}-{slug(scope)}',f'Same-day registration share · {scope} · change from {base} to 2026',after-before,'percentage points',
+            f"({new['same_day_registration']:,} ÷ {new['all_ages']:,} × 100) − ({old['same_day_registration']:,} ÷ {old['all_ages']:,} × 100) = {after-before:+.6f} percentage points",
+            [inp(f'{base} same-day share',before,'%',f'sdr-share-{base}-{slug(scope)}'),
+             inp('2026 same-day share',after,'%',f'sdr-share-2026-{slug(scope)}')],
+            [base,2026],filters(base,scope)+filters(2026,scope)+['sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares'])
+
 demographic_lookup={}
 category_names={'DEM':'Democratic','REP':'Republican','UNA':'Unaffiliated','OTHER_PARTIES':'Other registered parties','F':'Female (F)','M':'Male (M)','U':'Not specified (U)'}
 for year in (2022,2024,2026):

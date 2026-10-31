@@ -1,7 +1,7 @@
 {
   "surface": "report",
   "title": "Talley vs Western Boulevard: college-age voting in the 2022 and 2026 midterms",
-  "generatedAt": "2026-10-31T17:32:09.032420+00:00",
+  "generatedAt": "2026-10-31T17:45:00.519461+00:00",
   "status": "reviewed",
   "buildStatus": "complete",
   "filters": [],
@@ -180,6 +180,17 @@
               "voting-2024-benchmark",
               "voting-benchmark-table"
             ]
+          },
+          {
+            "label": "Same-day registration versus ballot volume",
+            "definition": "All accepted campus-site early ballots, all ages, over the matched first 16 days. Same-day registration counts records with sdr equal to Y or YES. Share = same-day-registration ballots / all site ballots * 100. Count change = (2026 count / selected baseline count - 1) * 100; share change = 2026 unrounded share - baseline unrounded share, in percentage points. Registration ballots are a subset of all ballots; do not add them. The measure does not identify students or count all new voter registrations. Source cohorts and counts are unchanged.",
+            "componentIds": [
+              "voting-summary",
+              "voting-campus-exact-table",
+              "voting-registration-intro",
+              "voting-registration-growth",
+              "voting-registration-counts"
+            ]
           }
         ]
       },
@@ -187,6 +198,10 @@
         {
           "language": "python",
           "code": "python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-30\npython scripts/validate_early_voting_comparison.py\npython scripts/audit_campus_figures.py\npython scripts/refresh_report_snapshot.py"
+        },
+        {
+          "language": "python",
+          "code": "python scripts/build_registration_comparison.py\n# Exports exact counts, growth rates and shares for both historical baselines; share differences use unrounded inputs."
         }
       ]
     },

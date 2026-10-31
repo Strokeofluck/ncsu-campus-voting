@@ -3,9 +3,11 @@
 import json,re
 from datetime import datetime,timezone
 from pathlib import Path
+from build_registration_comparison import write_comparison
 
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
+write_comparison(data)
 path=ROOT/'report-source/snapshot.json'
 snapshot=json.loads(path.read_text(encoding='utf-8'))
 days=data['matched_days']; cutoff=data['as_of']
@@ -24,6 +26,12 @@ for key,field in [('summary','summary'),('daily','daily'),('demographics','demog
     for definition in source.get('metricDefinitions',[]):
         definition['definition']=re.sub(r'(?i)(first )\d+( early-voting days)',lambda m:f'{m[1]}{days}{m[2]}',definition['definition'])
     query['methods']=[{'language':'python','code':f'python scripts/build_early_voting_comparison.py --cutoff-date {cutoff}\npython scripts/validate_early_voting_comparison.py\npython scripts/audit_campus_figures.py\npython scripts/refresh_report_snapshot.py'}]
+summary_source=snapshot['queries']['summary']['source']
+summary_source['metricDefinitions']=[m for m in summary_source.get('metricDefinitions',[]) if m.get('label')!='Same-day registration versus ballot volume']+[
+    {'label':'Same-day registration versus ballot volume',
+     'definition':'All accepted campus-site early ballots, all ages, over the matched first '+str(days)+' days. Same-day registration counts records with sdr equal to Y or YES. Share = same-day-registration ballots / all site ballots * 100. Count change = (2026 count / selected baseline count - 1) * 100; share change = 2026 unrounded share - baseline unrounded share, in percentage points. Registration ballots are a subset of all ballots; do not add them. The measure does not identify students or count all new voter registrations. Source cohorts and counts are unchanged.',
+     'componentIds':['voting-summary','voting-campus-exact-table','voting-registration-intro','voting-registration-growth','voting-registration-counts']}]
+snapshot['queries']['summary']['methods'].append({'language':'python','code':'python scripts/build_registration_comparison.py\n# Exports exact counts, growth rates and shares for both historical baselines; share differences use unrounded inputs.'})
 # Built-in formats remain available; plugin destinations are resolved at build time.
 snapshot['exportPreferences']={'selected':None,'destinations':snapshot.get('exportPreferences',{}).get('destinations',[])}
 path.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

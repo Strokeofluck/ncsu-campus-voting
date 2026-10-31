@@ -2291,6 +2291,1124 @@
         "2026-other-wake-sites-same-day-registration-all"
       ]
     },
+    "sdr-share-2022-campus-site": {
+      "id": "sdr-share-2022-campus-site",
+      "label": "Same-day registration share of all ballots · Campus site · 2022",
+      "value": 6.917228825356034,
+      "unit": "%",
+      "formula": "646 ÷ 9,339 × 100 = 6.917229%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 646,
+          "unit": "ballots",
+          "target": "summary-2022-campus-site-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 9339,
+          "unit": "ballots",
+          "target": "summary-2022-campus-site-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2022,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+          "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
+          "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+          "bytes": 99765322,
+          "member": "WAKE_absentee_20221108.csv",
+          "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2022: county_desc = WAKE",
+        "2022: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2022: ballot_rtn_status = ACCEPTED",
+        "2022: 2022-10-20 ≤ ballot_rtn_dt ≤ 2022-11-04 (inclusive)",
+        "2022: site_name = TA - NCSU TALLEY STUDENT CENTER",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2022-campus-site-same-day-registration-all",
+        "2022-campus-site-all-ages-all"
+      ]
+    },
+    "sdr-share-2022-wake-county": {
+      "id": "sdr-share-2022-wake-county",
+      "label": "Same-day registration share of all ballots · Wake County · 2022",
+      "value": 1.600938498402556,
+      "unit": "%",
+      "formula": "3,207 ÷ 200,320 × 100 = 1.600938%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 3207,
+          "unit": "ballots",
+          "target": "summary-2022-wake-county-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 200320,
+          "unit": "ballots",
+          "target": "summary-2022-wake-county-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2022,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+          "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
+          "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+          "bytes": 99765322,
+          "member": "WAKE_absentee_20221108.csv",
+          "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2022: county_desc = WAKE",
+        "2022: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2022: ballot_rtn_status = ACCEPTED",
+        "2022: 2022-10-20 ≤ ballot_rtn_dt ≤ 2022-11-04 (inclusive)",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2022-wake-county-same-day-registration-all",
+        "2022-wake-county-all-ages-all"
+      ]
+    },
+    "sdr-share-2022-other-wake-sites": {
+      "id": "sdr-share-2022-other-wake-sites",
+      "label": "Same-day registration share of all ballots · Other Wake sites · 2022",
+      "value": 1.3409710913651096,
+      "unit": "%",
+      "formula": "2,561 ÷ 190,981 × 100 = 1.340971%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 2561,
+          "unit": "ballots",
+          "target": "summary-2022-other-wake-sites-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 190981,
+          "unit": "ballots",
+          "target": "summary-2022-other-wake-sites-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2022,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+          "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
+          "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+          "bytes": 99765322,
+          "member": "WAKE_absentee_20221108.csv",
+          "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2022: county_desc = WAKE",
+        "2022: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2022: ballot_rtn_status = ACCEPTED",
+        "2022: 2022-10-20 ≤ ballot_rtn_dt ≤ 2022-11-04 (inclusive)",
+        "2022: site_name ≠ TA - NCSU TALLEY STUDENT CENTER",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2022-other-wake-sites-same-day-registration-all",
+        "2022-other-wake-sites-all-ages-all"
+      ]
+    },
+    "sdr-share-2024-campus-site": {
+      "id": "sdr-share-2024-campus-site",
+      "label": "Same-day registration share of all ballots · Campus site · 2024",
+      "value": 10.24078624078624,
+      "unit": "%",
+      "formula": "2,084 ÷ 20,350 × 100 = 10.240786%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 2084,
+          "unit": "ballots",
+          "target": "summary-2024-campus-site-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 20350,
+          "unit": "ballots",
+          "target": "summary-2024-campus-site-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2024,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
+          "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+          "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
+          "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
+          "bytes": 207093835,
+          "member": "WAKE_absentee_20241105.csv",
+          "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2024: county_desc = WAKE",
+        "2024: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2024: ballot_rtn_status = ACCEPTED",
+        "2024: 2024-10-17 ≤ ballot_rtn_dt ≤ 2024-11-01 (inclusive)",
+        "2024: site_name = TA - NCSU TALLEY STUDENT CENTER",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2024,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2024,
+          "scope": "Campus site",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2024-campus-site-same-day-registration-all",
+        "2024-campus-site-all-ages-all"
+      ]
+    },
+    "sdr-share-2024-wake-county": {
+      "id": "sdr-share-2024-wake-county",
+      "label": "Same-day registration share of all ballots · Wake County · 2024",
+      "value": 2.260861638731584,
+      "unit": "%",
+      "formula": "9,921 ÷ 438,815 × 100 = 2.260862%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 9921,
+          "unit": "ballots",
+          "target": "summary-2024-wake-county-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 438815,
+          "unit": "ballots",
+          "target": "summary-2024-wake-county-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2024,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
+          "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+          "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
+          "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
+          "bytes": 207093835,
+          "member": "WAKE_absentee_20241105.csv",
+          "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2024: county_desc = WAKE",
+        "2024: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2024: ballot_rtn_status = ACCEPTED",
+        "2024: 2024-10-17 ≤ ballot_rtn_dt ≤ 2024-11-01 (inclusive)",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2024,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2024,
+          "scope": "Wake County",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2024-wake-county-same-day-registration-all",
+        "2024-wake-county-all-ages-all"
+      ]
+    },
+    "sdr-share-2024-other-wake-sites": {
+      "id": "sdr-share-2024-other-wake-sites",
+      "label": "Same-day registration share of all ballots · Other Wake sites · 2024",
+      "value": 1.8727970081129843,
+      "unit": "%",
+      "formula": "7,837 ÷ 418,465 × 100 = 1.872797%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 7837,
+          "unit": "ballots",
+          "target": "summary-2024-other-wake-sites-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 418465,
+          "unit": "ballots",
+          "target": "summary-2024-other-wake-sites-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2024,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
+          "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+          "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
+          "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
+          "bytes": 207093835,
+          "member": "WAKE_absentee_20241105.csv",
+          "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2024: county_desc = WAKE",
+        "2024: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2024: ballot_rtn_status = ACCEPTED",
+        "2024: 2024-10-17 ≤ ballot_rtn_dt ≤ 2024-11-01 (inclusive)",
+        "2024: site_name ≠ TA - NCSU TALLEY STUDENT CENTER",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2024,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2024,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2024-other-wake-sites-same-day-registration-all",
+        "2024-other-wake-sites-all-ages-all"
+      ]
+    },
+    "sdr-share-2026-campus-site": {
+      "id": "sdr-share-2026-campus-site",
+      "label": "Same-day registration share of all ballots · Campus site · 2026",
+      "value": 6.610884969093925,
+      "unit": "%",
+      "formula": "877 ÷ 13,266 × 100 = 6.610885%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 877,
+          "unit": "ballots",
+          "target": "summary-2026-campus-site-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 13266,
+          "unit": "ballots",
+          "target": "summary-2026-campus-site-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "2026: site_name = NCSU WESTERN BLVD BUSINESS SERVICES",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2026-campus-site-same-day-registration-all",
+        "2026-campus-site-all-ages-all"
+      ]
+    },
+    "sdr-share-2026-wake-county": {
+      "id": "sdr-share-2026-wake-county",
+      "label": "Same-day registration share of all ballots · Wake County · 2026",
+      "value": 1.5207926399557214,
+      "unit": "%",
+      "formula": "4,726 ÷ 310,759 × 100 = 1.520793%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 4726,
+          "unit": "ballots",
+          "target": "summary-2026-wake-county-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 310759,
+          "unit": "ballots",
+          "target": "summary-2026-wake-county-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2026-wake-county-same-day-registration-all",
+        "2026-wake-county-all-ages-all"
+      ]
+    },
+    "sdr-share-2026-other-wake-sites": {
+      "id": "sdr-share-2026-other-wake-sites",
+      "label": "Same-day registration share of all ballots · Other Wake sites · 2026",
+      "value": 1.2938119552392828,
+      "unit": "%",
+      "formula": "3,849 ÷ 297,493 × 100 = 1.293812%",
+      "inputs": [
+        {
+          "label": "Accepted ballots with same-day registration, all ages",
+          "value": 3849,
+          "unit": "ballots",
+          "target": "summary-2026-other-wake-sites-same-day-registration"
+        },
+        {
+          "label": "All accepted early ballots, same scope and period",
+          "value": 297493,
+          "unit": "ballots",
+          "target": "summary-2026-other-wake-sites-all-ages"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "2026: site_name ≠ NCSU WESTERN BLVD BUSINESS SERVICES",
+        "sdr ∈ Y, YES for the numerator; all ages in numerator and denominator"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2026-other-wake-sites-same-day-registration-all",
+        "2026-other-wake-sites-all-ages-all"
+      ]
+    },
+    "sdr-share-change-2022-campus-site": {
+      "id": "sdr-share-change-2022-campus-site",
+      "label": "Same-day registration share · Campus site · change from 2022 to 2026",
+      "value": -0.30634385626210925,
+      "unit": "percentage points",
+      "formula": "(877 ÷ 13,266 × 100) − (646 ÷ 9,339 × 100) = -0.306344 percentage points",
+      "inputs": [
+        {
+          "label": "2022 same-day share",
+          "value": 6.917228825356034,
+          "unit": "%",
+          "target": "sdr-share-2022-campus-site"
+        },
+        {
+          "label": "2026 same-day share",
+          "value": 6.610884969093925,
+          "unit": "%",
+          "target": "sdr-share-2026-campus-site"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2022,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+          "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
+          "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+          "bytes": 99765322,
+          "member": "WAKE_absentee_20221108.csv",
+          "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County"
+        },
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2022: county_desc = WAKE",
+        "2022: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2022: ballot_rtn_status = ACCEPTED",
+        "2022: 2022-10-20 ≤ ballot_rtn_dt ≤ 2022-11-04 (inclusive)",
+        "2022: site_name = TA - NCSU TALLEY STUDENT CENTER",
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "2026: site_name = NCSU WESTERN BLVD BUSINESS SERVICES",
+        "sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2022,
+          "scope": "Campus site",
+          "field": "all_ages"
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2022-campus-site-same-day-registration-all",
+        "2022-campus-site-all-ages-all",
+        "2026-campus-site-same-day-registration-all",
+        "2026-campus-site-all-ages-all"
+      ]
+    },
+    "sdr-share-change-2022-wake-county": {
+      "id": "sdr-share-change-2022-wake-county",
+      "label": "Same-day registration share · Wake County · change from 2022 to 2026",
+      "value": -0.08014585844683464,
+      "unit": "percentage points",
+      "formula": "(4,726 ÷ 310,759 × 100) − (3,207 ÷ 200,320 × 100) = -0.080146 percentage points",
+      "inputs": [
+        {
+          "label": "2022 same-day share",
+          "value": 1.600938498402556,
+          "unit": "%",
+          "target": "sdr-share-2022-wake-county"
+        },
+        {
+          "label": "2026 same-day share",
+          "value": 1.5207926399557214,
+          "unit": "%",
+          "target": "sdr-share-2026-wake-county"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2022,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+          "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
+          "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+          "bytes": 99765322,
+          "member": "WAKE_absentee_20221108.csv",
+          "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County"
+        },
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2022: county_desc = WAKE",
+        "2022: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2022: ballot_rtn_status = ACCEPTED",
+        "2022: 2022-10-20 ≤ ballot_rtn_dt ≤ 2022-11-04 (inclusive)",
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2022,
+          "scope": "Wake County",
+          "field": "all_ages"
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2022-wake-county-same-day-registration-all",
+        "2022-wake-county-all-ages-all",
+        "2026-wake-county-same-day-registration-all",
+        "2026-wake-county-all-ages-all"
+      ]
+    },
+    "sdr-share-change-2022-other-wake-sites": {
+      "id": "sdr-share-change-2022-other-wake-sites",
+      "label": "Same-day registration share · Other Wake sites · change from 2022 to 2026",
+      "value": -0.047159136125826784,
+      "unit": "percentage points",
+      "formula": "(3,849 ÷ 297,493 × 100) − (2,561 ÷ 190,981 × 100) = -0.047159 percentage points",
+      "inputs": [
+        {
+          "label": "2022 same-day share",
+          "value": 1.3409710913651096,
+          "unit": "%",
+          "target": "sdr-share-2022-other-wake-sites"
+        },
+        {
+          "label": "2026 same-day share",
+          "value": 1.2938119552392828,
+          "unit": "%",
+          "target": "sdr-share-2026-other-wake-sites"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2022,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "last_modified": "Sat, 19 Nov 2022 10:33:49 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:10:53 GMT",
+          "retrieved_at_utc": "2026-10-30T03:10:59.596443+00:00",
+          "sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+          "bytes": 99765322,
+          "member": "WAKE_absentee_20221108.csv",
+          "wake_csv_sha256": "924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County"
+        },
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2022: county_desc = WAKE",
+        "2022: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2022: ballot_rtn_status = ACCEPTED",
+        "2022: 2022-10-20 ≤ ballot_rtn_dt ≤ 2022-11-04 (inclusive)",
+        "2022: site_name ≠ TA - NCSU TALLEY STUDENT CENTER",
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "2026: site_name ≠ NCSU WESTERN BLVD BUSINESS SERVICES",
+        "sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2022,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2022-other-wake-sites-same-day-registration-all",
+        "2022-other-wake-sites-all-ages-all",
+        "2026-other-wake-sites-same-day-registration-all",
+        "2026-other-wake-sites-all-ages-all"
+      ]
+    },
+    "sdr-share-change-2024-campus-site": {
+      "id": "sdr-share-change-2024-campus-site",
+      "label": "Same-day registration share · Campus site · change from 2024 to 2026",
+      "value": -3.629901271692316,
+      "unit": "percentage points",
+      "formula": "(877 ÷ 13,266 × 100) − (2,084 ÷ 20,350 × 100) = -3.629901 percentage points",
+      "inputs": [
+        {
+          "label": "2024 same-day share",
+          "value": 10.24078624078624,
+          "unit": "%",
+          "target": "sdr-share-2024-campus-site"
+        },
+        {
+          "label": "2026 same-day share",
+          "value": 6.610884969093925,
+          "unit": "%",
+          "target": "sdr-share-2026-campus-site"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2024,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
+          "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+          "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
+          "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
+          "bytes": 207093835,
+          "member": "WAKE_absentee_20241105.csv",
+          "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County"
+        },
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2024: county_desc = WAKE",
+        "2024: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2024: ballot_rtn_status = ACCEPTED",
+        "2024: 2024-10-17 ≤ ballot_rtn_dt ≤ 2024-11-01 (inclusive)",
+        "2024: site_name = TA - NCSU TALLEY STUDENT CENTER",
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "2026: site_name = NCSU WESTERN BLVD BUSINESS SERVICES",
+        "sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2024,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2024,
+          "scope": "Campus site",
+          "field": "all_ages"
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Campus site",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2024-campus-site-same-day-registration-all",
+        "2024-campus-site-all-ages-all",
+        "2026-campus-site-same-day-registration-all",
+        "2026-campus-site-all-ages-all"
+      ]
+    },
+    "sdr-share-change-2024-wake-county": {
+      "id": "sdr-share-change-2024-wake-county",
+      "label": "Same-day registration share · Wake County · change from 2024 to 2026",
+      "value": -0.7400689987758624,
+      "unit": "percentage points",
+      "formula": "(4,726 ÷ 310,759 × 100) − (9,921 ÷ 438,815 × 100) = -0.740069 percentage points",
+      "inputs": [
+        {
+          "label": "2024 same-day share",
+          "value": 2.260861638731584,
+          "unit": "%",
+          "target": "sdr-share-2024-wake-county"
+        },
+        {
+          "label": "2026 same-day share",
+          "value": 1.5207926399557214,
+          "unit": "%",
+          "target": "sdr-share-2026-wake-county"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2024,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
+          "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+          "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
+          "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
+          "bytes": 207093835,
+          "member": "WAKE_absentee_20241105.csv",
+          "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County"
+        },
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2024: county_desc = WAKE",
+        "2024: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2024: ballot_rtn_status = ACCEPTED",
+        "2024: 2024-10-17 ≤ ballot_rtn_dt ≤ 2024-11-01 (inclusive)",
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2024,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2024,
+          "scope": "Wake County",
+          "field": "all_ages"
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Wake County",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2024-wake-county-same-day-registration-all",
+        "2024-wake-county-all-ages-all",
+        "2026-wake-county-same-day-registration-all",
+        "2026-wake-county-all-ages-all"
+      ]
+    },
+    "sdr-share-change-2024-other-wake-sites": {
+      "id": "sdr-share-change-2024-other-wake-sites",
+      "label": "Same-day registration share · Other Wake sites · change from 2024 to 2026",
+      "value": -0.5789850528737015,
+      "unit": "percentage points",
+      "formula": "(3,849 ÷ 297,493 × 100) − (7,837 ÷ 418,465 × 100) = -0.578985 percentage points",
+      "inputs": [
+        {
+          "label": "2024 same-day share",
+          "value": 1.8727970081129843,
+          "unit": "%",
+          "target": "sdr-share-2024-other-wake-sites"
+        },
+        {
+          "label": "2026 same-day share",
+          "value": 1.2938119552392828,
+          "unit": "%",
+          "target": "sdr-share-2026-other-wake-sites"
+        }
+      ],
+      "sources": [
+        {
+          "year": 2024,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip",
+          "last_modified": "Mon, 09 Dec 2024 18:15:10 GMT",
+          "downloaded_at": "Fri, 30 Oct 2026 03:11:02 GMT",
+          "retrieved_at_utc": "2026-10-30T03:11:29.445910+00:00",
+          "sha256": "98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30",
+          "bytes": 207093835,
+          "member": "WAKE_absentee_20241105.csv",
+          "wake_csv_sha256": "bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County"
+        },
+        {
+          "year": 2026,
+          "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+          "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+          "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+          "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+          "bytes": 113658474,
+          "member": "WAKE_absentee_20261103.csv",
+          "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+          "listing_url": "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+          "catalog": "https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County"
+        }
+      ],
+      "filters": [
+        "2024: county_desc = WAKE",
+        "2024: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2024: ballot_rtn_status = ACCEPTED",
+        "2024: 2024-10-17 ≤ ballot_rtn_dt ≤ 2024-11-01 (inclusive)",
+        "2024: site_name ≠ TA - NCSU TALLEY STUDENT CENTER",
+        "2026: county_desc = WAKE",
+        "2026: ballot_req_type ∈ ONE-STOP, ONE STOP, EARLY VOTING",
+        "2026: ballot_rtn_status = ACCEPTED",
+        "2026: 2026-10-15 ≤ ballot_rtn_dt ≤ 2026-10-30 (inclusive)",
+        "2026: site_name ≠ NCSU WESTERN BLVD BUSINESS SERVICES",
+        "sdr ∈ Y, YES for each numerator; all ages; subtract unrounded shares"
+      ],
+      "breakdown": [],
+      "cutoff": "2026-10-30",
+      "matched_days": 16,
+      "selections": [
+        {
+          "year": 2024,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2024,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "field": "same_day_registration"
+        },
+        {
+          "year": 2026,
+          "scope": "Other Wake sites",
+          "field": "all_ages"
+        }
+      ],
+      "preview_keys": [
+        "2024-other-wake-sites-same-day-registration-all",
+        "2024-other-wake-sites-all-ages-all",
+        "2026-other-wake-sites-same-day-registration-all",
+        "2026-other-wake-sites-all-ages-all"
+      ]
+    },
     "demographic-2022-all-all": {
       "id": "demographic-2022-all-all",
       "label": "All site ballots · Talley · 2022",
