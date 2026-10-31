@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Talley to Western Boulevard — sources and math | Sean Ryan</title>
+<meta name="description" content="Original NCSBE sources, matched early-voting counts, CSV previews and an Excel workbook for checking the Talley to Western Boulevard comparison.">
+<link rel="stylesheet" href="references.css"></head><body>
+<a class="skip" href="#content">Skip to reference page</a>
+<header class="site-header"><nav aria-label="Main navigation"><a class="brand" href="https://strokeofluck.github.io/sean-data-portfolio/">Sean Ryan</a><div><a href="https://strokeofluck.github.io/sean-data-portfolio/">Portfolio</a><a href="index.html">Voting report</a><a href="#sources">Sources</a></div></nav></header>
+<main id="content" class="project-shell">
+<article class="project-card">
+ <header class="project-copy"><p class="eyebrow">Reporting reference</p><h1>Talley to Western Boulevard</h1>
+ <p class="meta">NC State campus voting · Sources, figures and calculations</p>
+ <p class="summary">Follow the early-voting comparison from the original government files to the exact counts and percentages. Choose a figure below to check its math, inspect the CSV records, or download the original files with a working Excel workbook.</p>
+ <div class="tags" aria-label="Reference scope"><span>First __MATCHED_DAYS__ early-voting days</span><span>2022 and 2026 midterms</span><span>2026 preliminary through __CUTOFF__</span></div>
+ <div class="actions"><a class="primary" href="#math">Check the figures</a><a href="#csv">Original CSVs + Excel</a><a href="index.html">Open interactive report ↗</a></div>
+ </header>
+
+ <section id="math" class="reference-section" aria-labelledby="math-title"><div class="section-heading"><div><p class="eyebrow">01 · Check a number</p><h2 id="math-title">The figures behind the comparison</h2></div><label class="baseline-label">Compare <select id="baseline"><option value="2022">Talley 2022 → Western 2026 · midterms</option><option value="2024">Talley 2024 → Western 2026 · presidential benchmark</option></select></label></div>
+ <p id="period-note">__PERIOD_NOTE__</p>
+ <div class="table-wrap" role="region" aria-label="Exact comparison figures" tabindex="0"><table><thead><tr><th scope="col">Measure</th><th scope="col" id="previous-header">2022</th><th scope="col">2026</th><th scope="col">Change</th><th scope="col">Calculation</th></tr></thead><tbody id="comparison-rows">__INITIAL_ROWS__</tbody></table></div>
+ <p class="muted">The Wake County row includes every early-voting site in Wake. Percentages compare the selected group with its stated denominator. Changes in shares are percentage points.</p>
+ <p class="method-note">These are counts of accepted early-voting ballots and shares of site ballots. They do not identify NC State students or establish that the site move caused a change in turnout.</p>
+ </section>
+
+ <section id="csv" class="reference-section" aria-labelledby="csv-title"><p class="eyebrow">02 · Follow the records</p><h2 id="csv-title">Original CSV, counted rows and real formulas</h2>
+ <p>Math opens first so you can check a figure immediately. Use the preview’s three tabs to move between the original CSV, the rows counted and the calculation. Loading the official files checks the snapshot hashes and independently recounts the records.</p>
+ <div class="selected-calculation"><h3 id="selected-title">Ages 18–24 share · change from 2022 to 2026</h3><div><a id="full-preview" href="csv-proof.html?figure=change-2022-age-group-18-24&amp;tab=calculation" target="_blank" rel="noopener">Open calculation in a full tab ↗</a><a id="source-details" href="figure-source.html#change-2022-age-group-18-24" target="_blank" rel="noopener">Exact source details ↗</a></div></div>
+ <div class="browser-preview"><div class="browser-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>CSV and calculation workspace</span></div><iframe id="calculation-preview" src="csv-proof.html?figure=change-2022-age-group-18-24&amp;tab=calculation" title="Original CSV records and calculation: ages 18–24 share change" loading="lazy"></iframe></div>
+ <p class="download-note">In the preview, choose <strong>Download originals + step-by-step Excel (.zip)</strong>. Extract the whole ZIP, then follow Excel tabs 0–4: original files, source rows, highlighted filter formulas, counts and percentages. The complete original Wake CSVs remain unchanged alongside the workbook.</p>
+ </section>
+
+ <section id="sources" class="reference-section" aria-labelledby="sources-title"><p class="eyebrow">03 · Original sources</p><h2 id="sources-title">The government files used here</h2><p>Each year comes from NCSBE’s by-county absentee archive, which includes in-person early-voting records. The Wake CSV is the input; the campus totals and percentages are calculations from those records.</p>
+ <div class="source-grid">__SOURCE_CARDS__</div>
+ <p class="muted">The live government files can be replaced as records are updated. The recorded hashes identify this report’s source snapshot; opening this page does not refresh the figures.</p>
+ </section>
+
+ <section id="methods" class="reference-section" aria-labelledby="methods-title"><p class="eyebrow">04 · Selection and definitions</p><h2 id="methods-title">What gets counted</h2>
+ <div class="table-wrap"><table class="definitions"><thead><tr><th scope="col">Original field</th><th scope="col">Rule used in the comparison</th></tr></thead><tbody>
+ <tr><th scope="row"><code>county_desc</code></th><td>WAKE</td></tr><tr><th scope="row"><code>ballot_req_type</code></th><td>ONE-STOP, ONE STOP or EARLY VOTING</td></tr><tr><th scope="row"><code>ballot_rtn_status</code></th><td>ACCEPTED</td></tr><tr><th scope="row"><code>ballot_rtn_dt</code></th><td>Within that year’s matched __MATCHED_DAYS__-day window, including both endpoints.</td></tr><tr><th scope="row"><code>site_name</code></th><td>The exact Talley or Western Boulevard label shown with each source. Countywide comparisons keep all Wake sites.</td></tr><tr><th scope="row"><code>age</code></th><td>18–24 for the college-age comparison. Age bands are inclusive; 65+ uses ages 65–120. Invalid or outside-range ages stay in the all-age total.</td></tr><tr><th scope="row"><code>sdr</code></th><td>Y or YES for same-day-registration ballots, across all ages.</td></tr>
+ </tbody></table></div>
+ <details><summary>Definitions, overlapping groups and calculation rules</summary><ul><li>One qualifying original record counts as one accepted ballot.</li><li>Site age share = that age group’s site ballots ÷ all site ballots × 100.</li><li>Count growth = (2026 count − baseline count) ÷ baseline count × 100.</li><li>Share change = 2026 unrounded share − baseline unrounded share, in percentage points.</li><li>Ages 18–22 overlap ages 18–24. Same-day-registration ballots also belong to the all-age and applicable age totals. Do not add overlapping groups.</li><li>2024 was a presidential election. The primary 2022-to-2026 comparison uses two midterms.</li><li>Earlier years use finalized records; the 2026 file is preliminary. Matching the number of voting days does not recreate the historical reporting lag.</li></ul><p><a href="docs/2026-early-voting-update.md">Read the comparison methods</a> · <a href="verify-figures.html">Daily and individual-age verification</a> · <a href="https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/scripts/download_early_voting_sources.py">Source download script</a></p></details>
+ <details><summary>Download the aggregate comparison tables</summary><ul><li><a href="data/processed/comparison/campus_site_matched_counts.csv" download>Exact campus-site counts for all three years</a></li><li><a href="data/processed/comparison/age_group_changes.csv" download>Age-group comparisons for both baselines</a></li><li><a href="data/processed/comparison/expanded_matched_comparisons.csv" download>Counts and changes across campus, county and other Wake sites</a></li><li><a href="data/processed/comparison/same_day_registration_comparison.csv" download>Same-day registration compared with all ballots</a></li><li><a href="data/processed/comparison/campus_age_calculations.csv" download>Displayed results and formula text (summary CSV only)</a></li></ul></details>
+ </section>
+
+ <section class="reference-section" aria-labelledby="reporting-title"><p class="eyebrow">05 · Reporting context</p><h2 id="reporting-title">Related reporting and earlier source notes</h2>
+ <p><a href="https://strokeofluck.github.io/sean-data-portfolio/projects/your-vote-step-by-step.html" target="_blank" rel="noopener">Your vote, step by step</a> · Sean Ryan, Technician, Oct. 28, 2026. Related service reporting on registering, preparing documents and getting to the polls.</p>
+ <details class="archive"><summary>Earlier reporting, location records and Election Day references</summary><p class="muted">These references support earlier reporting and full-period validation. Election Day and full-period totals are separate from the matched early-voting comparison above.</p>__REFERENCE_LIBRARY__</details>
+ </section>
+</article>
+<footer class="bottom-nav"><a href="https://strokeofluck.github.io/sean-data-portfolio/">← Sean Ryan’s portfolio</a><a href="index.html">Interactive voting report ↗</a></footer>
+</main><script id="reference-data" type="application/json">__REFERENCE_DATA__</script><script src="references.js"></script></body></html>

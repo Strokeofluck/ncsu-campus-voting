@@ -1,87 +1,76 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NC State Campus Voting — References</title>
-  <style>
-    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:920px;margin:40px auto;padding:0 20px;line-height:1.55;color:#171717}
-    h1{margin-bottom:.25rem}.sub{color:#555;margin-top:0}.section{margin-top:38px;padding-top:8px;border-top:3px solid #222}
-    .card{border:1px solid #ddd;border-radius:12px;padding:18px 20px;margin:18px 0}.tag{display:inline-block;background:#eee;border-radius:999px;padding:3px 9px;font-size:.8rem;margin-bottom:8px}
-    a{color:#0645ad}code{background:#f4f4f4;padding:2px 5px;border-radius:4px}.highlight{font-weight:700}.note{background:#f7f7f7;border-left:4px solid #777;padding:12px 14px}
-  </style>
-</head>
-<body>
-  <h1>NC State Campus Voting</h1>
-  <p class="sub">Reporting references for the 2022 and 2024 Talley baselines and the 2026 Western Boulevard follow-up.</p>
-  <div class="card"><span class="tag">VERIFY EXACT FIGURES</span><h2>Check the three-year campus-site table</h2><p><a href="verify-figures.html">Open highlighted figures, arithmetic and official source links</a>. Each number links to its calculation from NCSBE records, with daily counts, age counts, filters and source hashes. The official-page links highlight the actual archive entries; the campus aggregates are project calculations.</p></div>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Talley to Western Boulevard — sources and math | Sean Ryan</title>
+<meta name="description" content="Original NCSBE sources, matched early-voting counts, CSV previews and an Excel workbook for checking the Talley to Western Boulevard comparison.">
+<link rel="stylesheet" href="references.css"></head><body>
+<a class="skip" href="#content">Skip to reference page</a>
+<header class="site-header"><nav aria-label="Main navigation"><a class="brand" href="https://strokeofluck.github.io/sean-data-portfolio/">Sean Ryan</a><div><a href="https://strokeofluck.github.io/sean-data-portfolio/">Portfolio</a><a href="index.html">Voting report</a><a href="#sources">Sources</a></div></nav></header>
+<main id="content" class="project-shell">
+<article class="project-card">
+ <header class="project-copy"><p class="eyebrow">Reporting reference</p><h1>Talley to Western Boulevard</h1>
+ <p class="meta">NC State campus voting · Sources, figures and calculations</p>
+ <p class="summary">Follow the early-voting comparison from the original government files to the exact counts and percentages. Choose a figure below to check its math, inspect the CSV records, or download the original files with a working Excel workbook.</p>
+ <div class="tags" aria-label="Reference scope"><span>First 16 early-voting days</span><span>2022 and 2026 midterms</span><span>2026 preliminary through October 30, 2026</span></div>
+ <div class="actions"><a class="primary" href="#math">Check the figures</a><a href="#csv">Original CSVs + Excel</a><a href="index.html">Open interactive report ↗</a></div>
+ </header>
 
-  <div class="card"><span class="tag">CLICK A FIGURE</span><h2>Exact inputs and the original NCSBE file</h2><p>Underlined figures in the report’s age, profile, exact-count and benchmark tables open a dedicated calculation source. Each link preserves the selected year and category, shows the inputs and arithmetic, and links to the original official archive and matching download entry.</p><p><a href="figure-source.html#demographic-2024-age-group-18-24">Example: 41.5% ages 18–24 at Talley in 2024</a>. This is 7,194 ÷ 17,339 × 100. Choose <strong>Preview the original file</strong> to inspect its ZIP contents, original CSV header, filtered grouped data and the live file listing embedded directly from NCSBE. Preview data exclude names, addresses and voter IDs. NCSBE supplies the individual ballot records; the catalog does not print this project-calculated percentage, and the ZIP cannot link to an individual row in a browser.</p></div>
+ <section id="math" class="reference-section" aria-labelledby="math-title"><div class="section-heading"><div><p class="eyebrow">01 · Check a number</p><h2 id="math-title">The figures behind the comparison</h2></div><label class="baseline-label">Compare <select id="baseline"><option value="2022">Talley 2022 → Western 2026 · midterms</option><option value="2024">Talley 2024 → Western 2026 · presidential benchmark</option></select></label></div>
+ <p id="period-note">Talley: October 20, 2022–November 4, 2022. Western Boulevard: October 15, 2026–October 30, 2026. Both elections are midterms.</p>
+ <div class="table-wrap" role="region" aria-label="Exact comparison figures" tabindex="0"><table><thead><tr><th scope="col">Measure</th><th scope="col" id="previous-header">2022</th><th scope="col">2026</th><th scope="col">Change</th><th scope="col">Calculation</th></tr></thead><tbody id="comparison-rows"><tr data-kind="all"><th scope="row">Campus site · all ages</th><td>9,339</td><td>13,266</td><td>+42.0%</td><td><a class="figure-link" data-figure="growth-2022-campus-site-all-ages" href="csv-proof.html?figure=growth-2022-campus-site-all-ages&amp;tab=calculation" target="_blank" rel="noopener" aria-label="Check math: Campus site · all ages">Check math</a></td></tr>
+<tr data-kind="college"><th scope="row">Campus site · ages 18–24</th><td>2,999</td><td>4,214</td><td>+40.5%</td><td><a class="figure-link" data-figure="growth-2022-campus-site-age-18-24" href="csv-proof.html?figure=growth-2022-campus-site-age-18-24&amp;tab=calculation" target="_blank" rel="noopener" aria-label="Check math: Campus site · ages 18–24">Check math</a></td></tr>
+<tr data-kind="share" class="is-selected"><th scope="row">College-age share of site ballots</th><td>32.1%</td><td>31.8%</td><td>-0.3 pp</td><td><a class="figure-link" data-figure="change-2022-age-group-18-24" href="csv-proof.html?figure=change-2022-age-group-18-24&amp;tab=calculation" target="_blank" rel="noopener" aria-label="Check math: College-age share of site ballots">Check math</a></td></tr>
+<tr data-kind="older"><th scope="row">65+ share of site ballots</th><td>12.5%</td><td>15.5%</td><td>+3.0 pp</td><td><a class="figure-link" data-figure="change-2022-age-group-65" href="csv-proof.html?figure=change-2022-age-group-65&amp;tab=calculation" target="_blank" rel="noopener" aria-label="Check math: 65+ share of site ballots">Check math</a></td></tr>
+<tr data-kind="county"><th scope="row">Wake County · ages 18–24</th><td>11,287</td><td>22,980</td><td>+103.6%</td><td><a class="figure-link" data-figure="growth-2022-wake-county-age-18-24" href="csv-proof.html?figure=growth-2022-wake-county-age-18-24&amp;tab=calculation" target="_blank" rel="noopener" aria-label="Check math: Wake County · ages 18–24">Check math</a></td></tr></tbody></table></div>
+ <p class="muted">The Wake County row includes every early-voting site in Wake. Percentages compare the selected group with its stated denominator. Changes in shares are percentage points.</p>
+ <p class="method-note">These are counts of accepted early-voting ballots and shares of site ballots. They do not identify NC State students or establish that the site move caused a change in turnout.</p>
+ </section>
 
-  <h2 class="section">Early voting</h2>
+ <section id="csv" class="reference-section" aria-labelledby="csv-title"><p class="eyebrow">02 · Follow the records</p><h2 id="csv-title">Original CSV, counted rows and real formulas</h2>
+ <p>Math opens first so you can check a figure immediately. Use the preview’s three tabs to move between the original CSV, the rows counted and the calculation. Loading the official files checks the snapshot hashes and independently recounts the records.</p>
+ <div class="selected-calculation"><h3 id="selected-title">Ages 18–24 share · change from 2022 to 2026</h3><div><a id="full-preview" href="csv-proof.html?figure=change-2022-age-group-18-24&amp;tab=calculation" target="_blank" rel="noopener">Open calculation in a full tab ↗</a><a id="source-details" href="figure-source.html#change-2022-age-group-18-24" target="_blank" rel="noopener">Exact source details ↗</a></div></div>
+ <div class="browser-preview"><div class="browser-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>CSV and calculation workspace</span></div><iframe id="calculation-preview" src="csv-proof.html?figure=change-2022-age-group-18-24&amp;tab=calculation" title="Original CSV records and calculation: ages 18–24 share change" loading="lazy"></iframe></div>
+ <p class="download-note">In the preview, choose <strong>Download originals + step-by-step Excel (.zip)</strong>. Extract the whole ZIP, then follow Excel tabs 0–4: original files, source rows, highlighted filter formulas, counts and percentages. The complete original Wake CSVs remain unchanged alongside the workbook.</p>
+ </section>
 
-  <div class="card">
-    <span class="tag">OFFICIAL DOWNLOAD FOLDER</span>
-    <h3>NCSBE — November 3, 2026 election data</h3>
-    <p class="highlight">Official directory containing the 2026 absentee / early-voting source already used by this project.</p>
-    <p><a href="https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/">Browse the 2026 election download folder</a>. The directory contains ballot records, county and statewide counts, demographic request statistics, polling places and other election files. These files serve different purposes; the campus-site comparison uses the by-county absentee archive below.</p>
-    <p><a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data">NCSBE file descriptions and update schedule</a>. Absentee data include in-person early voting; during early voting, records for ballots cast are added the following day. A file's modification date is not itself the last voting date covered.</p>
-  </div>
+ <section id="sources" class="reference-section" aria-labelledby="sources-title"><p class="eyebrow">03 · Original sources</p><h2 id="sources-title">The government files used here</h2><p>Each year comes from NCSBE’s by-county absentee archive, which includes in-person early-voting records. The Wake CSV is the input; the campus totals and percentages are calculations from those records.</p>
+ <div class="source-grid"><article class="source-card"><p class="source-year">2022</p><h3>Talley Student Union</h3><p>October 20, 2022–November 4, 2022<br>First 16 early-voting days.</p><code>WAKE_absentee_20221108.csv</code><p class="source-links"><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip">Original government ZIP ↗</a><a href="https://dl.ncsbe.gov/?prefix=ENRS/2022_11_08/" target="_blank" rel="noopener">Official file listing ↗</a><a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2022%20Nov%2008,Absentee%20by%20County" target="_blank" rel="noopener">NCSBE catalog ↗</a></p><details><summary>Exact site label and source snapshot</summary><dl><dt>Site label</dt><dd><code>TA - NCSU TALLEY STUDENT CENTER</code></dd><dt>Source last modified (UTC)</dt><dd><code>Sat, 19 Nov 2022 10:33:49 GMT</code></dd><dt>Downloaded (UTC)</dt><dd><code>Fri, 30 Oct 2026 03:10:53 GMT</code></dd><dt>Archive SHA-256</dt><dd><code>929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e</code></dd><dt>Wake CSV SHA-256</dt><dd><code>924c4a44fbd0ea16d2577d3bf95fe43dfed5e0550204c2ab2d835e524cec7b85</code></dd></dl></details></article>
+<article class="source-card"><p class="source-year">2024</p><h3>Talley Student Union</h3><p>October 17, 2024–November 1, 2024<br>First 16 early-voting days.</p><code>WAKE_absentee_20241105.csv</code><p class="source-links"><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip">Original government ZIP ↗</a><a href="https://dl.ncsbe.gov/?prefix=ENRS/2024_11_05/" target="_blank" rel="noopener">Official file listing ↗</a><a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2024%20Nov%2005,Absentee%20by%20County" target="_blank" rel="noopener">NCSBE catalog ↗</a></p><details><summary>Exact site label and source snapshot</summary><dl><dt>Site label</dt><dd><code>TA - NCSU TALLEY STUDENT CENTER</code></dd><dt>Source last modified (UTC)</dt><dd><code>Mon, 09 Dec 2024 18:15:10 GMT</code></dd><dt>Downloaded (UTC)</dt><dd><code>Fri, 30 Oct 2026 03:11:02 GMT</code></dd><dt>Archive SHA-256</dt><dd><code>98791bda4aec6eb07d7816bcac5a0d79dd46391a39a0f0d4b71cd367b6b74a30</code></dd><dt>Wake CSV SHA-256</dt><dd><code>bc24ea24bf4a3aa7f6d99395be9cbe72f715f31a17cc3fca458e7cb690335352</code></dd></dl></details></article>
+<article class="source-card"><p class="source-year">2026</p><h3>Western Boulevard Business Services</h3><p>October 15, 2026–October 30, 2026<br>First 16 early-voting days.</p><code>WAKE_absentee_20261103.csv</code><p class="source-links"><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip">Original government ZIP ↗</a><a href="https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/" target="_blank" rel="noopener">Official file listing ↗</a><a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data#:~:text=2026%20Nov%2003,Absentee%20by%20County" target="_blank" rel="noopener">NCSBE catalog ↗</a></p><details><summary>Exact site label and source snapshot</summary><dl><dt>Site label</dt><dd><code>NCSU WESTERN BLVD BUSINESS SERVICES</code></dd><dt>Source last modified (UTC)</dt><dd><code>Sat, 31 Oct 2026 09:27:26 GMT</code></dd><dt>Downloaded (UTC)</dt><dd><code>Sat, 31 Oct 2026 17:30:33 GMT</code></dd><dt>Archive SHA-256</dt><dd><code>3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac</code></dd><dt>Wake CSV SHA-256</dt><dd><code>bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5</code></dd></dl></details></article></div>
+ <p class="muted">The live government files can be replaced as records are updated. The recorded hashes identify this report’s source snapshot; opening this page does not refresh the figures.</p>
+ </section>
 
-  <div class="card">
-    <span class="tag">PRIMARY DATA</span>
-    <h3>NCSBE — 2026 Nov. 3 Absentee / Early Voting by County</h3>
-    <p class="highlight">Main ballot-record source for the Western Boulevard early-voting comparison.</p>
-    <p>The download script extracts <code>WAKE_absentee_20261103.csv</code>. The comparison keeps accepted Wake County in-person early-voting records and matches <code>site_name=NCSU WESTERN BLVD BUSINESS SERVICES</code>. Site, voting date, age, same-day registration and other demographic fields support the published aggregates. Countywide summary files alone do not supply this site's exact-age comparison.</p>
-    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip">Direct 2026 by-county ZIP</a><br>
-    <a href="https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/scripts/download_early_voting_sources.py">Project download script</a><br>
-    <a href="docs/2026-early-voting-update.md">Comparison filters, matched dates and limitations</a></p>
-    <p class="note"><strong>Published snapshot:</strong> The current comparison was downloaded October 31, 2026 (EDT) and covers voting through October 30, 2026, using the first 16 early-voting days in each year. The source archive is updated; opening this reference or the report does not refresh its figures. Raw voter-level data stay out of the public repository.</p>
-  </div>
+ <section id="methods" class="reference-section" aria-labelledby="methods-title"><p class="eyebrow">04 · Selection and definitions</p><h2 id="methods-title">What gets counted</h2>
+ <div class="table-wrap"><table class="definitions"><thead><tr><th scope="col">Original field</th><th scope="col">Rule used in the comparison</th></tr></thead><tbody>
+ <tr><th scope="row"><code>county_desc</code></th><td>WAKE</td></tr><tr><th scope="row"><code>ballot_req_type</code></th><td>ONE-STOP, ONE STOP or EARLY VOTING</td></tr><tr><th scope="row"><code>ballot_rtn_status</code></th><td>ACCEPTED</td></tr><tr><th scope="row"><code>ballot_rtn_dt</code></th><td>Within that year’s matched 16-day window, including both endpoints.</td></tr><tr><th scope="row"><code>site_name</code></th><td>The exact Talley or Western Boulevard label shown with each source. Countywide comparisons keep all Wake sites.</td></tr><tr><th scope="row"><code>age</code></th><td>18–24 for the college-age comparison. Age bands are inclusive; 65+ uses ages 65–120. Invalid or outside-range ages stay in the all-age total.</td></tr><tr><th scope="row"><code>sdr</code></th><td>Y or YES for same-day-registration ballots, across all ages.</td></tr>
+ </tbody></table></div>
+ <details><summary>Definitions, overlapping groups and calculation rules</summary><ul><li>One qualifying original record counts as one accepted ballot.</li><li>Site age share = that age group’s site ballots ÷ all site ballots × 100.</li><li>Count growth = (2026 count − baseline count) ÷ baseline count × 100.</li><li>Share change = 2026 unrounded share − baseline unrounded share, in percentage points.</li><li>Ages 18–22 overlap ages 18–24. Same-day-registration ballots also belong to the all-age and applicable age totals. Do not add overlapping groups.</li><li>2024 was a presidential election. The primary 2022-to-2026 comparison uses two midterms.</li><li>Earlier years use finalized records; the 2026 file is preliminary. Matching the number of voting days does not recreate the historical reporting lag.</li></ul><p><a href="docs/2026-early-voting-update.md">Read the comparison methods</a> · <a href="verify-figures.html">Daily and individual-age verification</a> · <a href="https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/scripts/download_early_voting_sources.py">Source download script</a></p></details>
+ <details><summary>Download the aggregate comparison tables</summary><ul><li><a href="data/processed/comparison/campus_site_matched_counts.csv" download>Exact campus-site counts for all three years</a></li><li><a href="data/processed/comparison/age_group_changes.csv" download>Age-group comparisons for both baselines</a></li><li><a href="data/processed/comparison/expanded_matched_comparisons.csv" download>Counts and changes across campus, county and other Wake sites</a></li><li><a href="data/processed/comparison/same_day_registration_comparison.csv" download>Same-day registration compared with all ballots</a></li><li><a href="data/processed/comparison/campus_age_calculations.csv" download>Displayed results and formula text (summary CSV only)</a></li></ul></details>
+ </section>
 
-  <div class="card">
-    <span class="tag">PRIMARY DATA</span>
-    <h3>NCSBE — 2024 Nov. 5 Absentee / Early Voting by County</h3>
-    <p class="highlight">Main ballot-record source for the 2024 Talley comparison.</p>
-    <p>The comparison extracts the Wake County CSV, keeps accepted in-person early-voting records and matches <code>TA - NCSU TALLEY STUDENT CENTER</code>. The published matched window is October 17, 2024–November 1, 2024. This presidential-election baseline differs from the 2022 and 2026 midterms.</p>
-    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2024_11_05/absentee_county_20241105.zip">Direct 2024 by-county ZIP</a><br>
-    <a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data">NCSBE official download catalog</a></p>
-  </div>
-
-  <div class="card">
-    <span class="tag">SITE RECORD</span>
-    <h3>NC State — 2026 early-voting location</h3>
-    <p>NC State identifies the 2026 campus early-voting site as Western Boulevard Business Services, <strong>1220 Varsity Drive</strong>. Use this university listing for the location; use the NCSBE ballot records for participation and demographics.</p>
-    <p><a href="https://packthepolls.dasa.ncsu.edu/faqs/">Pack the Polls — 2026 election FAQs</a></p>
-    <p class="note">The ballot records do not identify NC State enrollment or establish that the location change caused a change in student participation. Ages 18–24 are a college-age proxy, not a verified student population.</p>
-  </div>
-
-  <div class="card">
-    <span class="tag">PRIMARY DATA</span>
-    <h3>NCSBE — 2022 Nov. 8 Absentee / Early Voting by County</h3>
-    <p class="highlight">Main voter-level source for the 2022 Talley early-voting baseline.</p>
-    <p>The pipeline keeps accepted Wake County one-stop / early-voting records and aggregates site, date, precinct and demographic fields. Raw voter-level records stay out of the public repo.</p>
-    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip">Direct 2022 by-county ZIP</a><br>
-    <a href="https://www.ncsbe.gov/results-data/absentee-and-provisional-data">NCSBE Absentee and Provisional Data page</a></p>
-  </div>
-
-  <div class="card">
+ <section class="reference-section" aria-labelledby="reporting-title"><p class="eyebrow">05 · Reporting context</p><h2 id="reporting-title">Related reporting and earlier source notes</h2>
+ <p><a href="https://strokeofluck.github.io/sean-data-portfolio/projects/your-vote-step-by-step.html" target="_blank" rel="noopener">Your vote, step by step</a> · Sean Ryan, Technician, Oct. 28, 2026. Related service reporting on registering, preparing documents and getting to the polls.</p>
+ <details class="archive"><summary>Earlier reporting, location records and Election Day references</summary><p class="muted">These references support earlier reporting and full-period validation. Election Day and full-period totals are separate from the matched early-voting comparison above.</p><div class="card">
     <span class="tag">VALIDATION</span>
     <h3>Wake County — Early Voting Sites by Election & Ballots Cast</h3>
     <p class="highlight">NCSU Talley Student Union: 10,390 ballots in the 2022 general-election early-voting period.</p>
     <p>The script must reproduce this total before the Talley baseline is treated as valid.</p>
     <p><a href="https://msweb03.co.wake.nc.us/bordelec/downloads/14earlyvoting/info/EarlyVotingSitesWithTurnout.pdf">Wake County historical early-voting site turnout PDF</a></p>
   </div>
-
-  <div class="card">
+<div class="card">
+    <span class="tag">SITE RECORD</span>
+    <h3>NC State — 2026 early-voting location</h3>
+    <p>NC State identifies the 2026 campus early-voting site as Western Boulevard Business Services, <strong>1220 Varsity Drive</strong>. Use this university listing for the location; use the NCSBE ballot records for participation and demographics.</p>
+    <p><a href="https://packthepolls.dasa.ncsu.edu/faqs/">Pack the Polls — 2026 election FAQs</a></p>
+    <p class="note">The ballot records do not identify NC State enrollment or establish that the location change caused a change in student participation. Ages 18–24 are a college-age proxy, not a verified student population.</p>
+  </div>
+<div class="card">
     <span class="tag">SITE RECORD</span>
     <h3>NCSBE — 2022 Early Voting Sites</h3>
     <p>Official site list and hours for the 2022 election. Useful for documenting the Talley location and the difference between site-choice early voting and precinct-assigned Election Day voting.</p>
     <p><a href="https://dl.ncsbe.gov/One-Stop_Early_Voting/2022/One-Stop%20Voting%20Sites%20for%20the%20November%208%2C%202022%20Election.pdf">2022 one-stop voting sites PDF</a><br>
     <a href="https://www.ncsbe.gov/results-data/polling-place-data">NCSBE Polling Place Data</a></p>
   </div>
-
-  <h2 class="section">Election Day</h2>
+<h2 class="section">Election Day</h2>
 
   <div class="card">
     <span class="tag">PRIMARY DATA</span>
@@ -127,5 +116,8 @@
   </div>
 
   <p class="note"><strong>Reporting rule:</strong> Early-voting site users are not automatically NC State students, and residents of campus-area Election Day precincts are not automatically NC State students. Describe the populations the data actually measure.</p>
-</body>
-</html>
+</details>
+ </section>
+</article>
+<footer class="bottom-nav"><a href="https://strokeofluck.github.io/sean-data-portfolio/">← Sean Ryan’s portfolio</a><a href="index.html">Interactive voting report ↗</a></footer>
+</main><script id="reference-data" type="application/json">{"summary": [{"year": 2022, "scope": "Campus site", "start_date": "2022-10-20", "end_date": "2022-11-04", "matched_days": 16, "all_ages": 9339, "age_18_24": 2999, "age_18_22": 2313, "age_18_24_share": 32.11264589356462, "same_day_registration": 646}, {"year": 2022, "scope": "Wake County", "start_date": "2022-10-20", "end_date": "2022-11-04", "matched_days": 16, "all_ages": 200320, "age_18_24": 11287, "age_18_22": 7852, "age_18_24_share": 5.6344848242811505, "same_day_registration": 3207}, {"year": 2022, "scope": "Other Wake sites", "start_date": "2022-10-20", "end_date": "2022-11-04", "matched_days": 16, "all_ages": 190981, "age_18_24": 8288, "age_18_22": 5539, "age_18_24_share": 4.339698713484587, "same_day_registration": 2561}, {"year": 2024, "scope": "Campus site", "start_date": "2024-10-17", "end_date": "2024-11-01", "matched_days": 16, "all_ages": 20350, "age_18_24": 8950, "age_18_22": 7410, "age_18_24_share": 43.98034398034398, "same_day_registration": 2084}, {"year": 2024, "scope": "Wake County", "start_date": "2024-10-17", "end_date": "2024-11-01", "matched_days": 16, "all_ages": 438815, "age_18_24": 40465, "age_18_22": 28183, "age_18_24_share": 9.221425885623782, "same_day_registration": 9921}, {"year": 2024, "scope": "Other Wake sites", "start_date": "2024-10-17", "end_date": "2024-11-01", "matched_days": 16, "all_ages": 418465, "age_18_24": 31515, "age_18_22": 20773, "age_18_24_share": 7.531095790567909, "same_day_registration": 7837}, {"year": 2026, "scope": "Campus site", "start_date": "2026-10-15", "end_date": "2026-10-30", "matched_days": 16, "all_ages": 13266, "age_18_24": 4214, "age_18_22": 3340, "age_18_24_share": 31.7654153475049, "same_day_registration": 877}, {"year": 2026, "scope": "Wake County", "start_date": "2026-10-15", "end_date": "2026-10-30", "matched_days": 16, "all_ages": 310759, "age_18_24": 22980, "age_18_22": 15682, "age_18_24_share": 7.394797898049614, "same_day_registration": 4726}, {"year": 2026, "scope": "Other Wake sites", "start_date": "2026-10-15", "end_date": "2026-10-30", "matched_days": 16, "all_ages": 297493, "age_18_24": 18766, "age_18_22": 12342, "age_18_24_share": 6.3080475843129085, "same_day_registration": 3849}], "records": {"change-2022-age-group-18-24": {"id": "change-2022-age-group-18-24", "label": "18–24 · change from 2022 to 2026", "value": -0.3472305460597269, "unit": "percentage points"}, "change-2022-age-group-65": {"id": "change-2022-age-group-65", "label": "65+ · change from 2022 to 2026", "value": 2.982837179345802, "unit": "percentage points"}, "change-2024-age-group-18-24": {"id": "change-2024-age-group-18-24", "label": "18–24 · change from 2024 to 2026", "value": -12.214928632839076, "unit": "percentage points"}, "change-2024-age-group-65": {"id": "change-2024-age-group-65", "label": "65+ · change from 2024 to 2026", "value": 6.622905130367817, "unit": "percentage points"}, "demographic-2022-age-group-18-24": {"id": "demographic-2022-age-group-18-24", "label": "18–24 · Talley · 2022", "value": 32.112645893564626, "unit": "%"}, "demographic-2022-age-group-65": {"id": "demographic-2022-age-group-65", "label": "65+ · Talley · 2022", "value": 12.48527679623086, "unit": "%"}, "demographic-2024-age-group-18-24": {"id": "demographic-2024-age-group-18-24", "label": "18–24 · Talley · 2024", "value": 43.980343980343974, "unit": "%"}, "demographic-2024-age-group-65": {"id": "demographic-2024-age-group-65", "label": "65+ · Talley · 2024", "value": 8.845208845208845, "unit": "%"}, "demographic-2026-age-group-18-24": {"id": "demographic-2026-age-group-18-24", "label": "18–24 · Western Boulevard · 2026", "value": 31.7654153475049, "unit": "%"}, "demographic-2026-age-group-65": {"id": "demographic-2026-age-group-65", "label": "65+ · Western Boulevard · 2026", "value": 15.468113975576662, "unit": "%"}, "growth-2022-campus-site-age-18-24": {"id": "growth-2022-campus-site-age-18-24", "label": "Ages 18–24 · Campus site · 2026 change versus 2022", "value": 40.513504501500506, "unit": "%"}, "growth-2022-campus-site-all-ages": {"id": "growth-2022-campus-site-all-ages", "label": "All ages · Campus site · 2026 change versus 2022", "value": 42.04946996466432, "unit": "%"}, "growth-2022-wake-county-age-18-24": {"id": "growth-2022-wake-county-age-18-24", "label": "Ages 18–24 · Wake County · 2026 change versus 2022", "value": 103.59705856294852, "unit": "%"}, "growth-2024-campus-site-age-18-24": {"id": "growth-2024-campus-site-age-18-24", "label": "Ages 18–24 · Campus site · 2026 change versus 2024", "value": -52.91620111731843, "unit": "%"}, "growth-2024-campus-site-all-ages": {"id": "growth-2024-campus-site-all-ages", "label": "All ages · Campus site · 2026 change versus 2024", "value": -34.81081081081081, "unit": "%"}, "growth-2024-wake-county-age-18-24": {"id": "growth-2024-wake-county-age-18-24", "label": "Ages 18–24 · Wake County · 2026 change versus 2024", "value": -43.21018163845298, "unit": "%"}}, "matched_days": 16, "as_of": "2026-10-30"}</script><script src="references.js"></script></body></html>

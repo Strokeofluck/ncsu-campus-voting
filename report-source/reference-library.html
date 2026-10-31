@@ -1,0 +1,67 @@
+<div class="card">
+    <span class="tag">VALIDATION</span>
+    <h3>Wake County — Early Voting Sites by Election & Ballots Cast</h3>
+    <p class="highlight">NCSU Talley Student Union: 10,390 ballots in the 2022 general-election early-voting period.</p>
+    <p>The script must reproduce this total before the Talley baseline is treated as valid.</p>
+    <p><a href="https://msweb03.co.wake.nc.us/bordelec/downloads/14earlyvoting/info/EarlyVotingSitesWithTurnout.pdf">Wake County historical early-voting site turnout PDF</a></p>
+  </div>
+<div class="card">
+    <span class="tag">SITE RECORD</span>
+    <h3>NC State — 2026 early-voting location</h3>
+    <p>NC State identifies the 2026 campus early-voting site as Western Boulevard Business Services, <strong>1220 Varsity Drive</strong>. Use this university listing for the location; use the NCSBE ballot records for participation and demographics.</p>
+    <p><a href="https://packthepolls.dasa.ncsu.edu/faqs/">Pack the Polls — 2026 election FAQs</a></p>
+    <p class="note">The ballot records do not identify NC State enrollment or establish that the location change caused a change in student participation. Ages 18–24 are a college-age proxy, not a verified student population.</p>
+  </div>
+<div class="card">
+    <span class="tag">SITE RECORD</span>
+    <h3>NCSBE — 2022 Early Voting Sites</h3>
+    <p>Official site list and hours for the 2022 election. Useful for documenting the Talley location and the difference between site-choice early voting and precinct-assigned Election Day voting.</p>
+    <p><a href="https://dl.ncsbe.gov/One-Stop_Early_Voting/2022/One-Stop%20Voting%20Sites%20for%20the%20November%208%2C%202022%20Election.pdf">2022 one-stop voting sites PDF</a><br>
+    <a href="https://www.ncsbe.gov/results-data/polling-place-data">NCSBE Polling Place Data</a></p>
+  </div>
+<h2 class="section">Election Day</h2>
+
+  <div class="card">
+    <span class="tag">PRIMARY DATA</span>
+    <h3>NCSBE — 2022 Historical Voter History Statistics</h3>
+    <p class="highlight">Aggregate source for Election Day participation by county, precinct, voting method and demographics.</p>
+    <p>NCSBE documents fields including <code>county_desc</code>, <code>precinct_abbrv</code>, age range, party, race, ethnicity, sex, <code>total_voters</code> and <code>voting_method</code>. The historical stats file does not contain individual voter rows.</p>
+    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/history_stats_20221108.zip">Direct 2022 voter-history stats ZIP</a><br>
+    <a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/layout_history_stats.txt">Voter-history stats layout</a><br>
+    <a href="https://www.ncsbe.gov/results-data/voter-history-data">NCSBE Voter History Data page</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">POLLING PLACES</span>
+    <h3>NCSBE — 2022 Election Day Polling Places</h3>
+    <p>Official precinct polling-place records. The Election Day script keeps the Wake County rows for reference.</p>
+    <p><a href="https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/polling_place_20221108.csv">Direct 2022 polling-place file</a><br>
+    <a href="https://www.ncsbe.gov/results-data/polling-place-data">NCSBE Polling Place Data page</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">VALIDATION</span>
+    <h3>NCSBE — 2022 General Election Turnout</h3>
+    <p class="highlight">NCSBE reports 1,578,545 in-person Election Day voters statewide in the 2022 general election.</p>
+    <p>The Election Day pipeline checks its statewide history-stat total against this published figure.</p>
+    <p><a href="https://www.ncsbe.gov/results-data/voter-turnout/2022-general-election-turnout">2022 General Election Turnout</a></p>
+  </div>
+
+  <h2 class="section">Reporting references</h2>
+
+  <div class="card">
+    <span class="tag">PRIOR TECHNICIAN WORK</span>
+    <h3>Technician — “Here's who voted early in Talley Student Union”</h3>
+    <p>Methodological reference for demographic comparisons and interactive graphics.</p>
+    <p><a href="https://technicianonline.com/157482/news/heres-who-voted-early-in-talley-student-union/">Read the Technician story</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">PROJECT DOCS</span>
+    <h3>Internal documentation</h3>
+    <p><a href="docs/early-voting-methodology.md">Early-voting methodology</a><br>
+    <a href="docs/election-day-methodology.md">Election Day methodology</a><br>
+    <a href="docs/story-plan.md">2022-to-2026 story plan</a></p>
+  </div>
+
+  <p class="note"><strong>Reporting rule:</strong> Early-voting site users are not automatically NC State students, and residents of campus-area Election Day precincts are not automatically NC State students. Describe the populations the data actually measure.</p>

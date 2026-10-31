@@ -87,5 +87,6 @@
   plan.counts.forEach((c,i)=>$('selection').append(el('option',`${c.label} · saved count ${c.expected.toLocaleString()}`,{value:i})));
   sourceInfo();filterInfo();showMath();$('status').textContent='Saved calculation ready. Load the originals to verify every count.';$('load').disabled=false;
   for(const id of ['original-grid','selected-grid'])$(id).append(el('p','Load the official CSVs to see the original rows and running counts.',{class:'muted'}));
+  const initialTab=new URLSearchParams(location.search).get('tab');if(['original','selected','calculation'].includes(initialTab))switchTab(initialTab);
  }).catch(error=>{$('status').textContent=error.message;});
 })();
