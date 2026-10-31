@@ -10,6 +10,12 @@ The latest downloaded NCSBE file covers voting through **October 30, 2026**. The
 
 The primary midterm comparison shows **40.5% more ages 18–24 ballots at the campus site** and **103.6% more across Wake County** than in 2022. All-age Wake early voting grew **55.1%**.
 
+### Counts, composition and county share are different
+
+The campus site's college-age count increased **2,999 → 4,214**. Its college-age share of site ballots was almost unchanged (**32.1% → 31.8%**). Its share of Wake's college-age early ballots fell (**26.6% → 18.3%**). The latter uses a countywide denominator and does not mean the campus count or resident turnout declined. None of these measures is turnout among registered or eligible residents.
+
+The report now includes a broader count table and [24 downloadable comparisons](data/processed/comparison/expanded_matched_comparisons.csv), covering both historical baselines, all three scopes and four ballot cohorts. [The expansion plan](docs/comparison-expansion-plan.md) distinguishes calculations available now from further original-record cuts and evidence needed to assess the move's effect on participation. College-age participation is the central question; same-day registration supplies supporting context.
+
 ### Same-day registration grew more slowly than total campus-site voting
 
 Over the same first 16 days, campus-site same-day registrations rose from **646 to 877 (+35.8%)**, while all accepted ballots rose from **9,339 to 13,266 (+42.0%)**. Same-day registration's share of site ballots edged down from **6.9% to 6.6%**, a **0.3 percentage-point decline**. Both counts increased; the change in share is modest. This includes all ages and does not identify students or establish an effect of the location move.

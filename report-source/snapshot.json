@@ -1,7 +1,7 @@
 {
   "surface": "report",
   "title": "Talley vs Western Boulevard: college-age voting in the 2022 and 2026 midterms",
-  "generatedAt": "2026-10-31T17:45:00.519461+00:00",
+  "generatedAt": "2026-10-31T19:03:23.100431+00:00",
   "status": "reviewed",
   "buildStatus": "complete",
   "filters": [],
@@ -191,6 +191,15 @@
               "voting-registration-growth",
               "voting-registration-counts"
             ]
+          },
+          {
+            "label": "Distinct denominators and expanded comparisons",
+            "definition": "Site count = accepted ballots in the selected age group at the campus site. Site age mix = campus-site ballots ages 18–24 / all campus-site ballots * 100. Share of Wake college-age ballots = campus-site ballots ages 18–24 / all Wake ballots ages 18–24 * 100. None is turnout among registered or eligible residents. Expanded comparisons retain both baselines, all three disjoint-or-containing scopes, all-age and overlapping age/registration cohorts; count difference = current - baseline; growth = difference / baseline * 100. Shares use the explicit scope or same-cohort county denominator; differences are unrounded percentage points. Never add containing scopes or overlapping cohorts.",
+            "componentIds": [
+              "voting-denominator-clarity",
+              "voting-expanded-counts",
+              "voting-expansion-plan"
+            ]
           }
         ]
       },
@@ -202,6 +211,10 @@
         {
           "language": "python",
           "code": "python scripts/build_registration_comparison.py\n# Exports exact counts, growth rates and shares for both historical baselines; share differences use unrounded inputs."
+        },
+        {
+          "language": "python",
+          "code": "python scripts/build_comparison_metrics.py\n# Exports 24 matched comparisons with counts, absolute and relative changes, scope shares, and county shares using explicit denominators."
         }
       ]
     },
