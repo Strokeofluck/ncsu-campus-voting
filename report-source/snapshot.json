@@ -134626,6 +134626,14 @@
           {
             "label": "Chart selection",
             "definition": "Rank residential areas by their combined named-site ballots across all three selected years, and show up to ten matching the search. The full table is searchable and paginated. Count and share chart modes use the same areas."
+          },
+          {
+            "label": "Full age breakdown for a selected precinct",
+            "definition": "All disjoint age bands are shown together, independent of the map age filter. Count stacks split each age band into named-site and other-Wake ballots. Percentage stacks divide each part by that same age band’s Wake total, not the all-age total. The table retains 2022, 2024 and 2026; its All ages footer equals the sum of the age bands before rounding. Unavailable areas or zero denominators retain N/A.",
+            "componentIds": [
+              "voting-precinct-age-chart",
+              "voting-precinct-age-table"
+            ]
           }
         ]
       },
@@ -274542,17 +274550,6 @@
     "voting_site_points": {
       "rows": [
         {
-          "id": "western",
-          "name": "Western Boulevard Business Services",
-          "latitude": 35.78432644,
-          "longitude": -78.68518604,
-          "address": "1220 Varsity Dr.",
-          "building_number": "131",
-          "years": [
-            2026
-          ]
-        },
-        {
           "id": "talley",
           "name": "Talley Student Union",
           "latitude": 35.78399412,
@@ -274562,7 +274559,20 @@
           "years": [
             2022,
             2024
-          ]
+          ],
+          "current_precinct_area": "PRECINCT 01-23"
+        },
+        {
+          "id": "western",
+          "name": "Western Boulevard Business Services",
+          "latitude": 35.78432644,
+          "longitude": -78.68518604,
+          "address": "1220 Varsity Dr.",
+          "building_number": "131",
+          "years": [
+            2026
+          ],
+          "current_precinct_area": "PRECINCT 01-31"
         }
       ],
       "source": {
@@ -274583,6 +274593,14 @@
           {
             "label": "Voting-site pins",
             "definition": "Talley building 102 and Western Boulevard Business Services building 131. Pin latitude and longitude come directly from the university GIS LATITUDE/LONGITUDE attributes; these are public building points, not voter residences. Talley is the compared site in 2022/2024, Western Boulevard in 2026.",
+            "componentIds": [
+              "voting-precinct-map",
+              "voting-map-intro"
+            ]
+          },
+          {
+            "label": "Current precinct containing each building",
+            "definition": "A point-in-polygon test against the downloaded Wake County GIS geometry puts Talley in PRECINCT 01-23 and Western Boulevard in PRECINCT 01-31. This describes the building locations in the current map snapshot, not every historical precinct boundary or the residence of their voters.",
             "componentIds": [
               "voting-precinct-map",
               "voting-map-intro"

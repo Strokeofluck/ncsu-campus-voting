@@ -28,7 +28,9 @@ for point in points:
  original_point=by_building[point['building_number']]
  assert point['latitude']==original_point['LATITUDE'] and point['longitude']==original_point['LONGITUDE']
  assert point['years']==([2026] if point['id']=='western' else [2022,2024])
- assert any(in_shape([point['longitude'],point['latitude']],r['geometry']) for r in shapes)
+ matches=[r['area'] for r in shapes if in_shape([point['longitude'],point['latitude']],r['geometry'])]
+ assert matches==[point['current_precinct_area']]
+ assert point['current_precinct_area']==('PRECINCT 01-31' if point['id']=='western' else 'PRECINCT 01-23')
 areas={r['area'] for r in shapes};geo=s['queries']['geography']['rows']
 assert 'PRECINCT 01-23' in areas and 'PRECINCT 01-07A' not in areas
 for cohort in ['All ages','18–24','25–34','35–44','45–64','65+','Unknown / outside range']:

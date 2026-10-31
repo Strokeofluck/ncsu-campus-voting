@@ -454,3 +454,12 @@
 .voting-report .voting-map-share-track span {display:block;height:100%;background:#3182bd;}
 @media(max-width:1099px){.voting-report .voting-map-block{width:100%;}.voting-report .voting-map-layout{grid-template-columns:1fr;}.voting-report .voting-map-detail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}.voting-report .voting-map-detail>h3,.voting-report .voting-map-detail>p{grid-column:1/-1;}.voting-report .voting-map-year{margin-top:0;}}
 @media(max-width:620px){.voting-report .voting-precinct-leaflet{height:430px;}.voting-report .voting-map-detail{display:block;}.voting-report .voting-map-year{margin-top:14px;}}
+
+.voting-report .voting-map-pin-label {position:absolute;box-sizing:border-box;padding:7px 9px;background:#fff;color:#172b3a;border:1px solid #8b9ba9;border-radius:7px;box-shadow:0 2px 9px #0003;font:12px/1.35 Arial,sans-serif;white-space:normal;pointer-events:auto;}
+.voting-report .voting-map-pin-label strong {display:block;font-size:13px;line-height:1.3;margin-bottom:3px;}
+.voting-report .voting-map-pin-label small {display:block;font-size:11px;line-height:1.4;color:#3a4d5c;}
+.voting-report .voting-map-pin-talley .voting-map-pin-label {border-left:4px solid #224f8f;}
+.voting-report .voting-map-pin-western .voting-map-pin-label {border-left:4px solid #ad4516;}
+.voting-report .voting-map-age-section {display:grid;grid-template-columns:minmax(0,1fr);gap:20px;margin-top:36px;}
+.voting-report .voting-precinct-age-table {min-width:650px;}
+.voting-report .voting-selected-age-band {background:color-mix(in srgb,var(--chart-1) 8%,transparent);}

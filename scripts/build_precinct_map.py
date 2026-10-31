@@ -4,6 +4,16 @@ import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];DATA=ROOT/'data/processed/comparison'
 
+def point_in_ring(point,ring):
+ x,y=point;inside=False
+ for (ax,ay),(bx,by) in zip(ring,ring[1:]):
+  if (ay>y)!=(by>y) and x<(bx-ax)*(y-ay)/(by-ay)+ax:inside=not inside
+ return inside
+
+def point_in_geometry(point,geometry):
+ polygons=[geometry['coordinates']] if geometry['type']=='Polygon' else geometry['coordinates']
+ return any(point_in_ring(point,p[0]) and not any(point_in_ring(point,h) for h in p[1:]) for p in polygons)
+
 def add_precinct_map(snapshot):
  bundle=json.loads((DATA/'precinct_map_sources.json').read_text(encoding='utf-8'));sources=bundle['sources']
  geometry=sources['boundaries']['data'];assert geometry['type']=='FeatureCollection'
@@ -19,6 +29,11 @@ def add_precinct_map(snapshot):
   assert a['BLDG_NUM'] in ['102','131'] and 35.7<a['LATITUDE']<35.9 and -78.8<a['LONGITUDE']<-78.6
   points.append({'id':'western' if year==2026 else 'talley','name':'Western Boulevard Business Services' if year==2026 else 'Talley Student Union','latitude':a['LATITUDE'],'longitude':a['LONGITUDE'],'address':a['ADDRESS'],'building_number':a['BLDG_NUM'],'years':[2026] if year==2026 else [2022,2024]})
  assert len(points)==2 and {p['id'] for p in points}=={'talley','western'}
+ for point in points:
+  matches=[r['area'] for r in boundaries if point_in_geometry([point['longitude'],point['latitude']],r['geometry'])]
+  assert len(matches)==1,(point['id'],matches)
+  point['current_precinct_area']=matches[0]
+ points.sort(key=lambda p:p['id']!='talley')
  ids=['voting-precinct-map','voting-map-intro']
  metadata=[{'label':key,'href':value['url'],'sha256':value['sha256']} for key,value in sources.items()]
  boundary_source={'label':'Wake County GIS voting precinct polygons','url':'https://data.wake.gov/datasets/Wake::precincts','tables':[{'name':'Wake County Precincts FeatureServer/0','href':sources['boundary_layer']['url']}],'period':'Current downloaded boundary snapshot, not election-year boundary reconstructions','executedAt':bundle['retrieved_at'],'filters':['Wake County polygons; all published precincts; GeoJSON WGS84 coordinates'],'metricDefinitions':[
@@ -29,6 +44,7 @@ def add_precinct_map(snapshot):
   'evidenceFlow':[{'title':'Public map-source snapshot','detail':json.dumps(metadata)},{'title':'Coordinates and layer provenance','detail':'scripts/download_precinct_map_sources.py downloads official public GIS data. scripts/build_precinct_map.py retains each polygon, exact join code, metadata dates and official building coordinates; geography ballot counts remain unchanged.'}]}
  point_source={'label':'NC State official campus-map building coordinates','url':'https://maps.ncsu.edu/','tables':[{'name':'NC State Buildings_OnlineCampusMap/MapServer/1','href':sources['building_points']['url']}],'period':'Official building coordinates; site years identify the electoral comparison','executedAt':bundle['retrieved_at'],'filters':["BLDG_NUM IN ('102','131')"],'metricDefinitions':[{'label':'Voting-site pins','definition':'Talley building 102 and Western Boulevard Business Services building 131. Pin latitude and longitude come directly from the university GIS LATITUDE/LONGITUDE attributes; these are public building points, not voter residences. Talley is the compared site in 2022/2024, Western Boulevard in 2026.','componentIds':ids}],'evidenceFlow':[{'title':'University building source','detail':json.dumps(next(m for m in metadata if m['label']=='building_points'))}]}
  snapshot['queries']['precinct_shapes']={'rows':boundaries,'source':boundary_source,'methods':[{'language':'python','code':'python scripts/download_precinct_map_sources.py\npython scripts/build_precinct_map.py\n# Preserve geometry snapshot and all original count-query rows.'}]}
+ point_source['metricDefinitions'].append({'label':'Current precinct containing each building','definition':'A point-in-polygon test against the downloaded Wake County GIS geometry puts Talley in PRECINCT 01-23 and Western Boulevard in PRECINCT 01-31. This describes the building locations in the current map snapshot, not every historical precinct boundary or the residence of their voters.','componentIds':ids})
  snapshot['queries']['voting_site_points']={'rows':points,'source':point_source}
  snapshot['precinctMap']={'basemap_url':'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}','basemap_attribution':sources['basemap']['data']['copyrightText'],'boundary_snapshot_retrieved_at':bundle['retrieved_at'],'boundary_data_last_edit':sources['boundary_layer']['data'].get('editingInfo',{}).get('dataLastEditDate'),'inspiration':'https://strokeofluck.github.io/sean-data-portfolio/projects/housing-affordability.html'}
  print(f'Bound {len(boundaries)} official polygons and {len(points)} university site pins; existing ballot counts unchanged.')
