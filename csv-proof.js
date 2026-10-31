@@ -2,7 +2,7 @@
 (()=>{
  const $=id=>document.getElementById(id),el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
  const fmt=(n,unit)=>!Number.isFinite(n)?'Unavailable':unit==='ballots'?n.toLocaleString('en-US'):n.toFixed(1)+(unit==='%'?'%':' percentage points');
- let plan,record,context,worker,counts=null,verified=false,active='original',request=0,loaded=false,pages={original:0,selected:0};
+ let plan,record,context,worker,exportSources,exportUrl,counts=null,verified=false,active='original',request=0,loaded=false,pages={original:0,selected:0};
  const normalColumns=['county_desc','ballot_req_type','ballot_rtn_status','ballot_rtn_dt','site_name','age','sdr'];
  function showMath(){
   const results=CsvProof.calculate(plan,counts),last=results.find(r=>r.id===plan.id),host=$('math');host.replaceChildren();
@@ -49,6 +49,21 @@
   const tab=$('tab-'+name);tab.onclick=()=>switchTab(name);tab.onkeydown=e=>{const names=['original','selected','calculation'];if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();switchTab(names[e.key==='Home'?0:e.key==='End'?2:(i+(e.key==='ArrowRight'?1:2))%3],true);}};
  }
  $('year').onchange=()=>{pages.original=0;sourceInfo();page();};$('all-columns').onchange=page;$('selection').onchange=()=>{pages.selected=0;filterInfo();page();};
+ $('download-workbook').onclick=()=>{
+  $('download-workbook').disabled=true;$('download-status').textContent='Downloading and checking all three original government CSVs…';
+  const exporter=new Worker('csv-excel-worker.js');
+  const failed=message=>{$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
+  exporter.onmessage=({data})=>{
+   if(data.type==='status')$('download-status').textContent=data.text;
+   if(data.type==='export-error')failed(data.message);
+   if(data.type==='download'){
+    if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([data.bytes],{type:'application/zip'}));
+    const link=el('a','Save originals + Excel ZIP',{href:exportUrl,download:data.filename});
+    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP, then open the workbook and follow tabs 0–4.'));
+    $('download-workbook').disabled=false;exporter.terminate();link.click();
+   }
+  };exporter.onerror=()=>failed('The export worker could not run.');exporter.postMessage({sources:exportSources,context});
+ };
  $('load').onclick=()=>{
   $('load').disabled=true;$('status').textContent='Loading original source files. This can take a minute.';
   worker=new Worker('csv-proof-worker.js');worker.onmessage=({data})=>{
@@ -66,7 +81,8 @@
  };
  Promise.all([fetch('data/processed/comparison/figure_sources.json').then(r=>{if(!r.ok)throw Error('Figure data unavailable');return r.json();}),fetch('data/processed/comparison/comparison.json').then(r=>{if(!r.ok)throw Error('Comparison unavailable');return r.json();})]).then(([payload,data])=>{
   const id=new URLSearchParams(location.search).get('figure')||'change-2022-age-group-18-24';record=payload.records[id];if(!record)throw Error('Choose a figure from the report');context=data;plan=CsvProof.buildPlan(payload.records,id);
-  $('title').textContent=record.label;$('evidence').href='figure-source.html#'+encodeURIComponent(id);
+  exportSources=[2022,2024,2026].map(year=>payload.records[`summary-${year}-campus-site-all-ages`].sources[0]);
+  $('download-workbook').disabled=false;$('title').textContent=record.label;$('evidence').href='figure-source.html#'+encodeURIComponent(id);
   for(const source of record.sources)$('year').append(el('option',String(source.year),{value:source.year}));
   plan.counts.forEach((c,i)=>$('selection').append(el('option',`${c.label} · saved count ${c.expected.toLocaleString()}`,{value:i})));
   sourceInfo();filterInfo();showMath();$('status').textContent='Saved calculation ready. Load the originals to verify every count.';$('load').disabled=false;
