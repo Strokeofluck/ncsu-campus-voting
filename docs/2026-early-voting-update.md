@@ -1,38 +1,38 @@
 # The move from Talley: early-voting update
 
-Updated October 29, 2026. Voting records through October 28; preliminary.
+Updated October 31, 2026. Voting records through October 30, 2026; preliminary.
 
 The question is whether moving the NC State early-voting site from Talley Student Union to Western Boulevard Business Services changed college-age voting patterns.
 
 ## Primary 2022 midterm comparison
 
-Match the first 14 days of each midterm: **October 20, 2022–November 2, 2022** and **October 15, 2026–October 28, 2026**. Both windows begin Thursday and end Wednesday. Ages 18–24 are a proxy for college age, not confirmed students.
+Match the first 16 days of each midterm: **October 20, 2022–November 4, 2022** and **October 15, 2026–October 30, 2026**. Both windows begin Thursday and end Friday. Ages 18–24 are a proxy for college age, not confirmed students.
 
 | Measure | Talley, 2022 | Western Boulevard, 2026 | Change |
 | --- | ---: | ---: | ---: |
-| Accepted early ballots, all ages | 7,007 | 10,498 | +49.8% |
-| Accepted early ballots, ages 18–24 | 2,057 | 2,966 | +44.2% |
-| Ages 18–24 share of site ballots | 29.4% | 28.3% | -1.1 percentage points |
-| Site share of Wake’s 18–24 early ballots | 26.3% | 17.0% | -9.3 percentage points |
-| Accepted early ballots, ages 18–22 | 1,590 | 2,316 | +45.7% |
+| Accepted early ballots, all ages | 9,339 | 13,266 | +42.0% |
+| Accepted early ballots, ages 18–24 | 2,999 | 4,214 | +40.5% |
+| Ages 18–24 share of site ballots | 32.1% | 31.8% | -0.3 percentage points |
+| Site share of Wake’s 18–24 early ballots | 26.6% | 18.3% | -8.2 percentage points |
+| Accepted early ballots, ages 18–22 | 2,313 | 3,340 | +44.4% |
 
-Wake County’s 18–24 early ballots increased from 7,831 to 17,460 (+123.0%). At all other Wake sites combined, they increased from 5,774 to 14,494 (+151.0%). Campus-site voting grew, but its share of the county's college-age early votes fell. The younger 18–22 proxy gives a similar site growth result.
+Wake County’s 18–24 early ballots increased from 11,287 to 22,980 (+103.6%). At all other Wake sites combined, they increased from 8,288 to 18,766 (+126.4%). Campus-site voting grew, but its share of the county's college-age early votes fell. The younger 18–22 proxy gives a similar site growth result.
 
 ## 2024 presidential-election benchmark
 
 The report defaults to the 2022-to-2026 midterm comparison and retains 2024 as a presidential-election benchmark. Selectors update counts, cumulative curves, county share, age distribution and individual ages 18–24 charts together.
 
-Match **October 17, 2024–October 30, 2024** with **October 15, 2026–October 28, 2026**, each the first **14 calendar days**, opening Thursday through the second Wednesday.
+Match **October 17, 2024–November 1, 2024** with **October 15, 2026–October 30, 2026**, each the first **16 calendar days**, opening Thursday through the third Friday.
 
 | Measure | Talley, 2024 | Western Boulevard, 2026 | Change |
 | --- | ---: | ---: | ---: |
-| Accepted early ballots, all ages | 17,339 | 10,498 | -39.5% |
-| Accepted early ballots, ages 18–24 | 7,194 | 2,966 | -58.8% |
-| Ages 18–24 share of site ballots | 41.5% | 28.3% | -13.2 percentage points |
-| Site share of Wake’s 18–24 early ballots | 22.2% | 17.0% | -5.2 percentage points |
-| Accepted early ballots, ages 18–22 | 5,888 | 2,316 | -60.7% |
+| Accepted early ballots, all ages | 20,350 | 13,266 | -34.8% |
+| Accepted early ballots, ages 18–24 | 8,950 | 4,214 | -52.9% |
+| Ages 18–24 share of site ballots | 44.0% | 31.8% | -12.2 percentage points |
+| Site share of Wake’s 18–24 early ballots | 22.1% | 18.3% | -3.8 percentage points |
+| Accepted early ballots, ages 18–22 | 7,410 | 3,340 | -54.9% |
 
-Wake County’s 18–24 early ballots were 32,419 in the matched 2024 window and 17,460 in 2026 (-46.1%). At other Wake sites they were 25,225 and 14,494 (-42.5%). College-age early voting fell across Wake as well as at the campus site, and the decrease at the campus site was larger.
+Wake County’s 18–24 early ballots were 40,465 in the matched 2024 window and 22,980 in 2026 (-43.2%). At other Wake sites they were 31,515 and 18,766 (-40.5%). College-age early voting fell across Wake as well as at the campus site, and the decrease at the campus site was larger.
 
 **2024 is a presidential election and 2026 is a midterm.** The charts do not adjust away that difference or estimate the move’s effect. College-age counts are site users, not an enrolled-student cohort. The full 17-day 2024 source contains 21,624 accepted Talley ballots across all ages; that full total is not used in matched-period changes. Exact-age counts and shares are exported as `dimension=age` in `matched_demographics.csv`.
 
@@ -52,13 +52,13 @@ Select `county_desc=WAKE`, early-voting request types `ONE-STOP`, `ONE STOP` or 
 
 Use `ballot_rtn_dt` for the calendar day; subtract each election’s opening date to align days. Use the supplied `age` field with inclusive bounds 18–24 and 18–22. No birthday or enrollment information is inferred. Same-day registrations count `sdr` equal to Y/YES across all ages in the matched period. Unknown age is kept as its own category if present. Source text is decoded as Latin-1; relevant keys and categorical fields are ASCII.
 
-The current source was modified Thu, 29 Oct 2026 09:25:32 GMT and downloaded Fri, 30 Oct 2026 03:11:32 GMT. Accepted Wake early-voting dates extend through 2026-10-28. The source modification date and the last voting date covered are distinct. Live records can be backfilled or corrected. A finalized 2022 snapshot is compared with a live 2026 snapshot; historical reporting lags cannot be reconstructed. Matching days does not equate site hours, site availability or underlying populations. No independent 2026 site-total reconciliation with a separate Wake publication has been completed.
+The current source was modified Sat, 31 Oct 2026 09:27:26 GMT and downloaded Sat, 31 Oct 2026 17:30:33 GMT. Accepted Wake early-voting dates extend through 2026-10-30. The source modification date and the last voting date covered are distinct. Live records can be backfilled or corrected. A finalized 2022 snapshot is compared with a live 2026 snapshot; historical reporting lags cannot be reconstructed. Matching days does not equate site hours, site availability or underlying populations. No independent 2026 site-total reconciliation with a separate Wake publication has been completed.
 
 ## Rebuild
 
 ```bash
 python scripts/download_early_voting_sources.py
-python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-28
+python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-30
 python scripts/validate_early_voting_comparison.py
 ```
 
@@ -76,7 +76,7 @@ Underlined figures in the report tables and executive summary open `figure-sourc
 
 These percentages are project calculations. The NCSBE catalog does not print them, and its ZIP downloads do not support browser anchors to a particular record. The evidence page links directly to the original official ZIP and to the matching catalog entry rather than pretending a derived number appears on the government page. No voter-level rows are published.
 
-Over the first 14 days, 2026 reached 68.3% of the matched 2024 all-age Wake count and 53.9% of its ages 18–24 count. At the campus site the corresponding ratios are 60.5% and 41.2%. These are counts of accepted in-person early ballots, not turnout rates, forecasts or statistical-significance thresholds. A large midterm increase is reportable without requiring a presidential-election total to be reached.
+Over the first 16 days, 2026 reached 70.8% of the matched 2024 all-age Wake count and 56.8% of its ages 18–24 count. At the campus site the corresponding ratios are 65.2% and 47.1%. These are counts of accepted in-person early ballots, not turnout rates, forecasts or statistical-significance thresholds. A large midterm increase is reportable without requiring a presidential-election total to be reached.
 
 Rebuild the per-figure evidence with `python scripts/build_figure_sources.py` after rebuilding the comparison and running the campus audit. The source HTML template is maintained at `report-source/figure-source.html`.
 

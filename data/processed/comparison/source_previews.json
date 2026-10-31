@@ -1,6 +1,6 @@
 {
   "classification": "Verified original file metadata and filtered, grouped extracts; not a full CSV or individual voter rows",
-  "as_of": "2026-10-28",
+  "as_of": "2026-10-30",
   "preview_columns": [
     "county_desc",
     "ballot_req_type",
@@ -935,12 +935,12 @@
       "year": 2026,
       "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
       "filename": "absentee_county_20261103.zip",
-      "archive_bytes": 93599261,
-      "sha256": "6ebb3c3cb9c11a37ae54a88230deffc27c521df2cdfa45be2eb11b2a1138b3b3",
+      "archive_bytes": 113658474,
+      "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
       "member": "WAKE_absentee_20261103.csv",
-      "member_bytes": 115173032,
-      "wake_csv_sha256": "dcf14b2c5c3e1e8c95bb02d1ced21c4478b68e5a14cb74954d5f66499023f8ef",
-      "source_rows": 269081,
+      "member_bytes": 140081271,
+      "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5",
+      "source_rows": 327240,
       "headers": [
         "county_desc",
         "voter_reg_num",
@@ -989,408 +989,408 @@
       "zip_entries": [
         {
           "filename": "ALAMANCE_absentee_20261103.csv",
-          "bytes": 14948059
+          "bytes": 18026413
         },
         {
           "filename": "ALEXANDER_absentee_20261103.csv",
-          "bytes": 2720571
+          "bytes": 3484937
         },
         {
           "filename": "ALLEGHANY_absentee_20261103.csv",
-          "bytes": 1040560
+          "bytes": 1305958
         },
         {
           "filename": "ANSON_absentee_20261103.csv",
-          "bytes": 1404598
+          "bytes": 1688743
         },
         {
           "filename": "ASHE_absentee_20261103.csv",
-          "bytes": 2283892
+          "bytes": 2756551
         },
         {
           "filename": "AVERY_absentee_20261103.csv",
-          "bytes": 999750
+          "bytes": 1239069
         },
         {
           "filename": "BEAUFORT_absentee_20261103.csv",
-          "bytes": 4041766
+          "bytes": 5166646
         },
         {
           "filename": "BERTIE_absentee_20261103.csv",
-          "bytes": 1375569
+          "bytes": 1701327
         },
         {
           "filename": "BLADEN_absentee_20261103.csv",
-          "bytes": 2332628
+          "bytes": 2816203
         },
         {
           "filename": "BRUNSWICK_absentee_20261103.csv",
-          "bytes": 21201913
+          "bytes": 25099788
         },
         {
           "filename": "BUNCOMBE_absentee_20261103.csv",
-          "bytes": 33134730
+          "bytes": 39588250
         },
         {
           "filename": "BURKE_absentee_20261103.csv",
-          "bytes": 6680002
+          "bytes": 8084639
         },
         {
           "filename": "CABARRUS_absentee_20261103.csv",
-          "bytes": 16924201
+          "bytes": 21046810
         },
         {
           "filename": "CALDWELL_absentee_20261103.csv",
-          "bytes": 6054340
+          "bytes": 7467698
         },
         {
           "filename": "CAMDEN_absentee_20261103.csv",
-          "bytes": 802189
+          "bytes": 984498
         },
         {
           "filename": "CARTERET_absentee_20261103.csv",
-          "bytes": 8094140
+          "bytes": 9710295
         },
         {
           "filename": "CASWELL_absentee_20261103.csv",
-          "bytes": 1673049
+          "bytes": 2059080
         },
         {
           "filename": "CATAWBA_absentee_20261103.csv",
-          "bytes": 12886388
+          "bytes": 15597569
         },
         {
           "filename": "CHATHAM_absentee_20261103.csv",
-          "bytes": 11602153
+          "bytes": 13628092
         },
         {
           "filename": "CHEROKEE_absentee_20261103.csv",
-          "bytes": 2348316
+          "bytes": 2857107
         },
         {
           "filename": "CHOWAN_absentee_20261103.csv",
-          "bytes": 1399946
+          "bytes": 1715554
         },
         {
           "filename": "CLAY_absentee_20261103.csv",
-          "bytes": 1227366
+          "bytes": 1481893
         },
         {
           "filename": "CLEVELAND_absentee_20261103.csv",
-          "bytes": 7057997
+          "bytes": 8624920
         },
         {
           "filename": "COLUMBUS_absentee_20261103.csv",
-          "bytes": 3078713
+          "bytes": 3889151
         },
         {
           "filename": "CRAVEN_absentee_20261103.csv",
-          "bytes": 9433564
+          "bytes": 11271326
         },
         {
           "filename": "CUMBERLAND_absentee_20261103.csv",
-          "bytes": 20656650
+          "bytes": 25077546
         },
         {
           "filename": "CURRITUCK_absentee_20261103.csv",
-          "bytes": 1640909
+          "bytes": 2088048
         },
         {
           "filename": "DARE_absentee_20261103.csv",
-          "bytes": 4013071
+          "bytes": 4935154
         },
         {
           "filename": "DAVIDSON_absentee_20261103.csv",
-          "bytes": 12233159
+          "bytes": 15019589
         },
         {
           "filename": "DAVIE_absentee_20261103.csv",
-          "bytes": 3628009
+          "bytes": 4448466
         },
         {
           "filename": "DUPLIN_absentee_20261103.csv",
-          "bytes": 2815712
+          "bytes": 3404116
         },
         {
           "filename": "DURHAM_absentee_20261103.csv",
-          "bytes": 37599254
+          "bytes": 44647584
         },
         {
           "filename": "EDGECOMBE_absentee_20261103.csv",
-          "bytes": 4364974
+          "bytes": 5200487
         },
         {
           "filename": "FORSYTH_absentee_20261103.csv",
-          "bytes": 35094442
+          "bytes": 42353140
         },
         {
           "filename": "FRANKLIN_absentee_20261103.csv",
-          "bytes": 7443355
+          "bytes": 9001999
         },
         {
           "filename": "GASTON_absentee_20261103.csv",
-          "bytes": 18038309
+          "bytes": 21961783
         },
         {
           "filename": "GATES_absentee_20261103.csv",
-          "bytes": 719293
+          "bytes": 905663
         },
         {
           "filename": "GRAHAM_absentee_20261103.csv",
-          "bytes": 691577
+          "bytes": 868575
         },
         {
           "filename": "GRANVILLE_absentee_20261103.csv",
-          "bytes": 5922259
+          "bytes": 7194208
         },
         {
           "filename": "GREENE_absentee_20261103.csv",
-          "bytes": 1224640
+          "bytes": 1481679
         },
         {
           "filename": "GUILFORD_absentee_20261103.csv",
-          "bytes": 47167948
+          "bytes": 57004820
         },
         {
           "filename": "HALIFAX_absentee_20261103.csv",
-          "bytes": 3652997
+          "bytes": 4413382
         },
         {
           "filename": "HARNETT_absentee_20261103.csv",
-          "bytes": 9470089
+          "bytes": 11584380
         },
         {
           "filename": "HAYWOOD_absentee_20261103.csv",
-          "bytes": 6361342
+          "bytes": 7577069
         },
         {
           "filename": "HENDERSON_absentee_20261103.csv",
-          "bytes": 14088474
+          "bytes": 16770851
         },
         {
           "filename": "HERTFORD_absentee_20261103.csv",
-          "bytes": 1562891
+          "bytes": 1899750
         },
         {
           "filename": "HOKE_absentee_20261103.csv",
-          "bytes": 3591253
+          "bytes": 4349021
         },
         {
           "filename": "HYDE_absentee_20261103.csv",
-          "bytes": 288663
+          "bytes": 344638
         },
         {
           "filename": "IREDELL_absentee_20261103.csv",
-          "bytes": 15654862
+          "bytes": 19429643
         },
         {
           "filename": "JACKSON_absentee_20261103.csv",
-          "bytes": 3765560
+          "bytes": 4585621
         },
         {
           "filename": "JOHNSTON_absentee_20261103.csv",
-          "bytes": 17449187
+          "bytes": 21762112
         },
         {
           "filename": "JONES_absentee_20261103.csv",
-          "bytes": 676682
+          "bytes": 835821
         },
         {
           "filename": "LEE_absentee_20261103.csv",
-          "bytes": 4432645
+          "bytes": 5469450
         },
         {
           "filename": "LENOIR_absentee_20261103.csv",
-          "bytes": 4345953
+          "bytes": 5284466
         },
         {
           "filename": "LINCOLN_absentee_20261103.csv",
-          "bytes": 8242790
+          "bytes": 10231574
         },
         {
           "filename": "MACON_absentee_20261103.csv",
-          "bytes": 3666740
+          "bytes": 4394469
         },
         {
           "filename": "MADISON_absentee_20261103.csv",
-          "bytes": 2180476
+          "bytes": 2716584
         },
         {
           "filename": "MARTIN_absentee_20261103.csv",
-          "bytes": 1724726
+          "bytes": 2101602
         },
         {
           "filename": "MCDOWELL_absentee_20261103.csv",
-          "bytes": 3522172
+          "bytes": 4357551
         },
         {
           "filename": "MECKLENBURG_absentee_20261103.csv",
-          "bytes": 98004117
+          "bytes": 119972375
         },
         {
           "filename": "MITCHELL_absentee_20261103.csv",
-          "bytes": 1367664
+          "bytes": 1687067
         },
         {
           "filename": "MONTGOMERY_absentee_20261103.csv",
-          "bytes": 1527107
+          "bytes": 1918360
         },
         {
           "filename": "MOORE_absentee_20261103.csv",
-          "bytes": 9285031
+          "bytes": 11146294
         },
         {
           "filename": "NASH_absentee_20261103.csv",
-          "bytes": 9698447
+          "bytes": 11600283
         },
         {
           "filename": "NEW HANOVER_absentee_20261103.csv",
-          "bytes": 22769786
+          "bytes": 27277259
         },
         {
           "filename": "NORTHAMPTON_absentee_20261103.csv",
-          "bytes": 1436195
+          "bytes": 1743603
         },
         {
           "filename": "ONSLOW_absentee_20261103.csv",
-          "bytes": 10199445
+          "bytes": 12412568
         },
         {
           "filename": "ORANGE_absentee_20261103.csv",
-          "bytes": 18568007
+          "bytes": 21784138
         },
         {
           "filename": "PAMLICO_absentee_20261103.csv",
-          "bytes": 1425363
+          "bytes": 1686409
         },
         {
           "filename": "PASQUOTANK_absentee_20261103.csv",
-          "bytes": 3332365
+          "bytes": 4060195
         },
         {
           "filename": "PENDER_absentee_20261103.csv",
-          "bytes": 5425068
+          "bytes": 6801551
         },
         {
           "filename": "PERQUIMANS_absentee_20261103.csv",
-          "bytes": 1248016
+          "bytes": 1520266
         },
         {
           "filename": "PERSON_absentee_20261103.csv",
-          "bytes": 3516379
+          "bytes": 4216066
         },
         {
           "filename": "PITT_absentee_20261103.csv",
-          "bytes": 13232655
+          "bytes": 16058352
         },
         {
           "filename": "POLK_absentee_20261103.csv",
-          "bytes": 2477756
+          "bytes": 2938202
         },
         {
           "filename": "RANDOLPH_absentee_20261103.csv",
-          "bytes": 9811784
+          "bytes": 12075918
         },
         {
           "filename": "RICHMOND_absentee_20261103.csv",
-          "bytes": 2804952
+          "bytes": 3437244
         },
         {
           "filename": "ROBESON_absentee_20261103.csv",
-          "bytes": 5578055
+          "bytes": 6809121
         },
         {
           "filename": "ROCKINGHAM_absentee_20261103.csv",
-          "bytes": 7517117
+          "bytes": 9105185
         },
         {
           "filename": "ROWAN_absentee_20261103.csv",
-          "bytes": 9520603
+          "bytes": 11775324
         },
         {
           "filename": "RUTHERFORD_absentee_20261103.csv",
-          "bytes": 4403760
+          "bytes": 5479970
         },
         {
           "filename": "SAMPSON_absentee_20261103.csv",
-          "bytes": 3204480
+          "bytes": 4097932
         },
         {
           "filename": "SCOTLAND_absentee_20261103.csv",
-          "bytes": 2455988
+          "bytes": 2945146
         },
         {
           "filename": "STANLY_absentee_20261103.csv",
-          "bytes": 4417444
+          "bytes": 5571047
         },
         {
           "filename": "STOKES_absentee_20261103.csv",
-          "bytes": 3129955
+          "bytes": 3897052
         },
         {
           "filename": "SURRY_absentee_20261103.csv",
-          "bytes": 5137419
+          "bytes": 6313222
         },
         {
           "filename": "SWAIN_absentee_20261103.csv",
-          "bytes": 1077606
+          "bytes": 1333687
         },
         {
           "filename": "TRANSYLVANIA_absentee_20261103.csv",
-          "bytes": 4091546
+          "bytes": 4797497
         },
         {
           "filename": "TYRRELL_absentee_20261103.csv",
-          "bytes": 242268
+          "bytes": 270859
         },
         {
           "filename": "UNION_absentee_20261103.csv",
-          "bytes": 20194757
+          "bytes": 25329226
         },
         {
           "filename": "VANCE_absentee_20261103.csv",
-          "bytes": 3341497
+          "bytes": 3997816
         },
         {
           "filename": "WAKE_absentee_20261103.csv",
-          "bytes": 115173032
+          "bytes": 140081271
         },
         {
           "filename": "WARREN_absentee_20261103.csv",
-          "bytes": 1750580
+          "bytes": 2080461
         },
         {
           "filename": "WASHINGTON_absentee_20261103.csv",
-          "bytes": 1026596
+          "bytes": 1219237
         },
         {
           "filename": "WATAUGA_absentee_20261103.csv",
-          "bytes": 5207217
+          "bytes": 6443305
         },
         {
           "filename": "WAYNE_absentee_20261103.csv",
-          "bytes": 8278106
+          "bytes": 10012700
         },
         {
           "filename": "WILKES_absentee_20261103.csv",
-          "bytes": 3727522
+          "bytes": 4652343
         },
         {
           "filename": "WILSON_absentee_20261103.csv",
-          "bytes": 6240655
+          "bytes": 7481001
         },
         {
           "filename": "YADKIN_absentee_20261103.csv",
-          "bytes": 2253798
+          "bytes": 2781019
         },
         {
           "filename": "YANCEY_absentee_20261103.csv",
-          "bytes": 1992454
+          "bytes": 2390707
         }
       ],
       "verified_archive_and_csv_hashes": true,
-      "last_modified": "Thu, 29 Oct 2026 09:25:32 GMT",
-      "downloaded_at": "Fri, 30 Oct 2026 03:11:32 GMT"
+      "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+      "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT"
     }
   },
   "previews": {
@@ -1400,8 +1400,8 @@
         "scope": "Campus site",
         "field": "all_ages"
       },
-      "total_records": 7007,
-      "total_groups": 14,
+      "total_records": 9339,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -1492,8 +1492,8 @@
         "scope": "Campus site",
         "field": "age_18_24"
       },
-      "total_records": 2057,
-      "total_groups": 14,
+      "total_records": 2999,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -1584,8 +1584,8 @@
         "scope": "Campus site",
         "field": "age_18_22"
       },
-      "total_records": 1590,
-      "total_groups": 14,
+      "total_records": 2313,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -1676,8 +1676,8 @@
         "scope": "Campus site",
         "field": "same_day_registration"
       },
-      "total_records": 378,
-      "total_groups": 14,
+      "total_records": 646,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -1768,8 +1768,8 @@
         "scope": "Wake County",
         "field": "all_ages"
       },
-      "total_records": 157916,
-      "total_groups": 210,
+      "total_records": 200320,
+      "total_groups": 240,
       "shown_groups": 8,
       "rows": [
         {
@@ -1860,8 +1860,8 @@
         "scope": "Wake County",
         "field": "age_18_24"
       },
-      "total_records": 7831,
-      "total_groups": 210,
+      "total_records": 11287,
+      "total_groups": 240,
       "shown_groups": 8,
       "rows": [
         {
@@ -1952,8 +1952,8 @@
         "scope": "Wake County",
         "field": "age_18_22"
       },
-      "total_records": 5494,
-      "total_groups": 210,
+      "total_records": 7852,
+      "total_groups": 240,
       "shown_groups": 8,
       "rows": [
         {
@@ -2044,8 +2044,8 @@
         "scope": "Wake County",
         "field": "same_day_registration"
       },
-      "total_records": 1906,
-      "total_groups": 204,
+      "total_records": 3207,
+      "total_groups": 234,
       "shown_groups": 8,
       "rows": [
         {
@@ -2136,8 +2136,8 @@
         "scope": "Other Wake sites",
         "field": "all_ages"
       },
-      "total_records": 150909,
-      "total_groups": 196,
+      "total_records": 190981,
+      "total_groups": 224,
       "shown_groups": 8,
       "rows": [
         {
@@ -2228,8 +2228,8 @@
         "scope": "Other Wake sites",
         "field": "age_18_24"
       },
-      "total_records": 5774,
-      "total_groups": 196,
+      "total_records": 8288,
+      "total_groups": 224,
       "shown_groups": 8,
       "rows": [
         {
@@ -2320,8 +2320,8 @@
         "scope": "Other Wake sites",
         "field": "age_18_22"
       },
-      "total_records": 3904,
-      "total_groups": 196,
+      "total_records": 5539,
+      "total_groups": 224,
       "shown_groups": 8,
       "rows": [
         {
@@ -2412,8 +2412,8 @@
         "scope": "Other Wake sites",
         "field": "same_day_registration"
       },
-      "total_records": 1528,
-      "total_groups": 190,
+      "total_records": 2561,
+      "total_groups": 218,
       "shown_groups": 8,
       "rows": [
         {
@@ -2504,8 +2504,8 @@
         "scope": "Campus site",
         "field": "all_ages"
       },
-      "total_records": 17339,
-      "total_groups": 14,
+      "total_records": 20350,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -2596,8 +2596,8 @@
         "scope": "Campus site",
         "field": "age_18_24"
       },
-      "total_records": 7194,
-      "total_groups": 14,
+      "total_records": 8950,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -2688,8 +2688,8 @@
         "scope": "Campus site",
         "field": "age_18_22"
       },
-      "total_records": 5888,
-      "total_groups": 14,
+      "total_records": 7410,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -2780,8 +2780,8 @@
         "scope": "Campus site",
         "field": "same_day_registration"
       },
-      "total_records": 1467,
-      "total_groups": 14,
+      "total_records": 2084,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -2872,8 +2872,8 @@
         "scope": "Wake County",
         "field": "all_ages"
       },
-      "total_records": 373751,
-      "total_groups": 308,
+      "total_records": 438815,
+      "total_groups": 352,
       "shown_groups": 8,
       "rows": [
         {
@@ -2964,8 +2964,8 @@
         "scope": "Wake County",
         "field": "age_18_24"
       },
-      "total_records": 32419,
-      "total_groups": 308,
+      "total_records": 40465,
+      "total_groups": 352,
       "shown_groups": 8,
       "rows": [
         {
@@ -3056,8 +3056,8 @@
         "scope": "Wake County",
         "field": "age_18_22"
       },
-      "total_records": 22728,
-      "total_groups": 308,
+      "total_records": 28183,
+      "total_groups": 352,
       "shown_groups": 8,
       "rows": [
         {
@@ -3148,8 +3148,8 @@
         "scope": "Wake County",
         "field": "same_day_registration"
       },
-      "total_records": 6958,
-      "total_groups": 307,
+      "total_records": 9921,
+      "total_groups": 351,
       "shown_groups": 8,
       "rows": [
         {
@@ -3240,8 +3240,8 @@
         "scope": "Other Wake sites",
         "field": "all_ages"
       },
-      "total_records": 356412,
-      "total_groups": 294,
+      "total_records": 418465,
+      "total_groups": 336,
       "shown_groups": 8,
       "rows": [
         {
@@ -3332,8 +3332,8 @@
         "scope": "Other Wake sites",
         "field": "age_18_24"
       },
-      "total_records": 25225,
-      "total_groups": 294,
+      "total_records": 31515,
+      "total_groups": 336,
       "shown_groups": 8,
       "rows": [
         {
@@ -3424,8 +3424,8 @@
         "scope": "Other Wake sites",
         "field": "age_18_22"
       },
-      "total_records": 16840,
-      "total_groups": 294,
+      "total_records": 20773,
+      "total_groups": 336,
       "shown_groups": 8,
       "rows": [
         {
@@ -3516,8 +3516,8 @@
         "scope": "Other Wake sites",
         "field": "same_day_registration"
       },
-      "total_records": 5491,
-      "total_groups": 293,
+      "total_records": 7837,
+      "total_groups": 335,
       "shown_groups": 8,
       "rows": [
         {
@@ -3608,8 +3608,8 @@
         "scope": "Campus site",
         "field": "all_ages"
       },
-      "total_records": 10498,
-      "total_groups": 14,
+      "total_records": 13266,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -3620,7 +3620,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 831
+          "records": 830
         },
         {
           "values": {
@@ -3700,8 +3700,8 @@
         "scope": "Campus site",
         "field": "age_18_24"
       },
-      "total_records": 2966,
-      "total_groups": 14,
+      "total_records": 4214,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -3792,8 +3792,8 @@
         "scope": "Campus site",
         "field": "age_18_22"
       },
-      "total_records": 2316,
-      "total_groups": 14,
+      "total_records": 3340,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -3884,8 +3884,8 @@
         "scope": "Campus site",
         "field": "same_day_registration"
       },
-      "total_records": 535,
-      "total_groups": 14,
+      "total_records": 877,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -3896,7 +3896,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 29
+          "records": 28
         },
         {
           "values": {
@@ -3976,8 +3976,8 @@
         "scope": "Wake County",
         "field": "all_ages"
       },
-      "total_records": 255250,
-      "total_groups": 252,
+      "total_records": 310759,
+      "total_groups": 288,
       "shown_groups": 8,
       "rows": [
         {
@@ -4068,8 +4068,8 @@
         "scope": "Wake County",
         "field": "age_18_24"
       },
-      "total_records": 17460,
-      "total_groups": 252,
+      "total_records": 22980,
+      "total_groups": 288,
       "shown_groups": 8,
       "rows": [
         {
@@ -4160,8 +4160,8 @@
         "scope": "Wake County",
         "field": "age_18_22"
       },
-      "total_records": 12006,
-      "total_groups": 252,
+      "total_records": 15682,
+      "total_groups": 288,
       "shown_groups": 8,
       "rows": [
         {
@@ -4252,8 +4252,8 @@
         "scope": "Wake County",
         "field": "same_day_registration"
       },
-      "total_records": 3065,
-      "total_groups": 246,
+      "total_records": 4726,
+      "total_groups": 282,
       "shown_groups": 8,
       "rows": [
         {
@@ -4344,8 +4344,8 @@
         "scope": "Other Wake sites",
         "field": "all_ages"
       },
-      "total_records": 244752,
-      "total_groups": 238,
+      "total_records": 297493,
+      "total_groups": 272,
       "shown_groups": 8,
       "rows": [
         {
@@ -4436,8 +4436,8 @@
         "scope": "Other Wake sites",
         "field": "age_18_24"
       },
-      "total_records": 14494,
-      "total_groups": 238,
+      "total_records": 18766,
+      "total_groups": 272,
       "shown_groups": 8,
       "rows": [
         {
@@ -4528,8 +4528,8 @@
         "scope": "Other Wake sites",
         "field": "age_18_22"
       },
-      "total_records": 9690,
-      "total_groups": 238,
+      "total_records": 12342,
+      "total_groups": 272,
       "shown_groups": 8,
       "rows": [
         {
@@ -4620,8 +4620,8 @@
         "scope": "Other Wake sites",
         "field": "same_day_registration"
       },
-      "total_records": 2530,
-      "total_groups": 232,
+      "total_records": 3849,
+      "total_groups": 266,
       "shown_groups": 8,
       "rows": [
         {
@@ -4713,8 +4713,8 @@
         "dimension": "all",
         "value": "all"
       },
-      "total_records": 7007,
-      "total_groups": 14,
+      "total_records": 9339,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -4806,8 +4806,8 @@
         "dimension": "age_group",
         "value": "18–24"
       },
-      "total_records": 2057,
-      "total_groups": 14,
+      "total_records": 2999,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -4899,8 +4899,8 @@
         "dimension": "age_group",
         "value": "25–34"
       },
-      "total_records": 1373,
-      "total_groups": 14,
+      "total_records": 1917,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -4992,8 +4992,8 @@
         "dimension": "age_group",
         "value": "35–44"
       },
-      "total_records": 751,
-      "total_groups": 14,
+      "total_records": 1005,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5085,8 +5085,8 @@
         "dimension": "age_group",
         "value": "45–64"
       },
-      "total_records": 1810,
-      "total_groups": 14,
+      "total_records": 2252,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5178,8 +5178,8 @@
         "dimension": "age_group",
         "value": "65+"
       },
-      "total_records": 1016,
-      "total_groups": 14,
+      "total_records": 1166,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5271,8 +5271,8 @@
         "dimension": "party",
         "value": "DEM"
       },
-      "total_records": 3208,
-      "total_groups": 14,
+      "total_records": 4169,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5364,8 +5364,8 @@
         "dimension": "party",
         "value": "OTHER_PARTIES"
       },
-      "total_records": 34,
-      "total_groups": 13,
+      "total_records": 45,
+      "total_groups": 15,
       "shown_groups": 8,
       "rows": [
         {
@@ -5457,8 +5457,8 @@
         "dimension": "party",
         "value": "REP"
       },
-      "total_records": 758,
-      "total_groups": 14,
+      "total_records": 1005,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5550,8 +5550,8 @@
         "dimension": "party",
         "value": "UNA"
       },
-      "total_records": 3007,
-      "total_groups": 14,
+      "total_records": 4120,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5643,8 +5643,8 @@
         "dimension": "race",
         "value": "ASIAN"
       },
-      "total_records": 256,
-      "total_groups": 14,
+      "total_records": 343,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5736,8 +5736,8 @@
         "dimension": "race",
         "value": "BLACK or AFRICAN AMERICAN"
       },
-      "total_records": 418,
-      "total_groups": 14,
+      "total_records": 553,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -5829,8 +5829,8 @@
         "dimension": "race",
         "value": "INDIAN AMERICAN or ALASKA NATIVE"
       },
-      "total_records": 12,
-      "total_groups": 9,
+      "total_records": 16,
+      "total_groups": 11,
       "shown_groups": 8,
       "rows": [
         {
@@ -5934,8 +5934,8 @@
         "dimension": "race",
         "value": "OTHER"
       },
-      "total_records": 213,
-      "total_groups": 14,
+      "total_records": 290,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6027,8 +6027,8 @@
         "dimension": "race",
         "value": "TWO or MORE RACES"
       },
-      "total_records": 58,
-      "total_groups": 14,
+      "total_records": 85,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6120,8 +6120,8 @@
         "dimension": "race",
         "value": "UNDESIGNATED"
       },
-      "total_records": 890,
-      "total_groups": 14,
+      "total_records": 1395,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6213,8 +6213,8 @@
         "dimension": "race",
         "value": "WHITE"
       },
-      "total_records": 5160,
-      "total_groups": 14,
+      "total_records": 6657,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6306,8 +6306,8 @@
         "dimension": "ethnicity",
         "value": "HISPANIC or LATINO"
       },
-      "total_records": 171,
-      "total_groups": 14,
+      "total_records": 245,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6399,8 +6399,8 @@
         "dimension": "ethnicity",
         "value": "NOT HISPANIC or NOT LATINO"
       },
-      "total_records": 4904,
-      "total_groups": 14,
+      "total_records": 6310,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6492,8 +6492,8 @@
         "dimension": "ethnicity",
         "value": "UNDESIGNATED"
       },
-      "total_records": 1932,
-      "total_groups": 14,
+      "total_records": 2784,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6585,8 +6585,8 @@
         "dimension": "gender",
         "value": "F"
       },
-      "total_records": 3085,
-      "total_groups": 14,
+      "total_records": 4066,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6678,8 +6678,8 @@
         "dimension": "gender",
         "value": "M"
       },
-      "total_records": 3037,
-      "total_groups": 14,
+      "total_records": 3871,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6771,8 +6771,8 @@
         "dimension": "gender",
         "value": "U"
       },
-      "total_records": 885,
-      "total_groups": 14,
+      "total_records": 1402,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6864,8 +6864,8 @@
         "dimension": "all",
         "value": "all"
       },
-      "total_records": 17339,
-      "total_groups": 14,
+      "total_records": 20350,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -6957,8 +6957,8 @@
         "dimension": "age_group",
         "value": "18–24"
       },
-      "total_records": 7194,
-      "total_groups": 14,
+      "total_records": 8950,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7050,8 +7050,8 @@
         "dimension": "age_group",
         "value": "25–34"
       },
-      "total_records": 3399,
-      "total_groups": 14,
+      "total_records": 3968,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7143,8 +7143,8 @@
         "dimension": "age_group",
         "value": "35–44"
       },
-      "total_records": 1659,
-      "total_groups": 14,
+      "total_records": 1892,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7236,8 +7236,8 @@
         "dimension": "age_group",
         "value": "45–64"
       },
-      "total_records": 3400,
-      "total_groups": 14,
+      "total_records": 3740,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7329,8 +7329,8 @@
         "dimension": "age_group",
         "value": "65+"
       },
-      "total_records": 1687,
-      "total_groups": 14,
+      "total_records": 1800,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7422,8 +7422,8 @@
         "dimension": "party",
         "value": "DEM"
       },
-      "total_records": 6544,
-      "total_groups": 14,
+      "total_records": 7422,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7515,8 +7515,8 @@
         "dimension": "party",
         "value": "OTHER_PARTIES"
       },
-      "total_records": 113,
-      "total_groups": 14,
+      "total_records": 134,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7608,8 +7608,8 @@
         "dimension": "party",
         "value": "REP"
       },
-      "total_records": 2024,
-      "total_groups": 14,
+      "total_records": 2379,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7701,8 +7701,8 @@
         "dimension": "party",
         "value": "UNA"
       },
-      "total_records": 8658,
-      "total_groups": 14,
+      "total_records": 10415,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7794,8 +7794,8 @@
         "dimension": "race",
         "value": "ASIAN"
       },
-      "total_records": 937,
-      "total_groups": 14,
+      "total_records": 1095,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7887,8 +7887,8 @@
         "dimension": "race",
         "value": "BLACK or AFRICAN AMERICAN"
       },
-      "total_records": 1137,
-      "total_groups": 14,
+      "total_records": 1331,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -7980,8 +7980,8 @@
         "dimension": "race",
         "value": "INDIAN AMERICAN or ALASKA NATIVE"
       },
-      "total_records": 49,
-      "total_groups": 13,
+      "total_records": 58,
+      "total_groups": 15,
       "shown_groups": 8,
       "rows": [
         {
@@ -8116,8 +8116,8 @@
         "dimension": "race",
         "value": "OTHER"
       },
-      "total_records": 729,
-      "total_groups": 14,
+      "total_records": 870,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8209,8 +8209,8 @@
         "dimension": "race",
         "value": "TWO or MORE RACES"
       },
-      "total_records": 147,
-      "total_groups": 14,
+      "total_records": 173,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8302,8 +8302,8 @@
         "dimension": "race",
         "value": "UNDESIGNATED"
       },
-      "total_records": 3014,
-      "total_groups": 14,
+      "total_records": 4019,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8395,8 +8395,8 @@
         "dimension": "race",
         "value": "WHITE"
       },
-      "total_records": 11322,
-      "total_groups": 14,
+      "total_records": 12800,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8488,8 +8488,8 @@
         "dimension": "ethnicity",
         "value": "HISPANIC or LATINO"
       },
-      "total_records": 666,
-      "total_groups": 14,
+      "total_records": 780,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8581,8 +8581,8 @@
         "dimension": "ethnicity",
         "value": "NOT HISPANIC or NOT LATINO"
       },
-      "total_records": 10004,
-      "total_groups": 14,
+      "total_records": 11359,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8674,8 +8674,8 @@
         "dimension": "ethnicity",
         "value": "UNDESIGNATED"
       },
-      "total_records": 6669,
-      "total_groups": 14,
+      "total_records": 8211,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8767,8 +8767,8 @@
         "dimension": "gender",
         "value": "F"
       },
-      "total_records": 7463,
-      "total_groups": 14,
+      "total_records": 8520,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8860,8 +8860,8 @@
         "dimension": "gender",
         "value": "M"
       },
-      "total_records": 6988,
-      "total_groups": 14,
+      "total_records": 7953,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -8953,8 +8953,8 @@
         "dimension": "gender",
         "value": "U"
       },
-      "total_records": 2888,
-      "total_groups": 14,
+      "total_records": 3877,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9046,8 +9046,8 @@
         "dimension": "all",
         "value": "all"
       },
-      "total_records": 10498,
-      "total_groups": 14,
+      "total_records": 13266,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9058,7 +9058,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 831
+          "records": 830
         },
         {
           "values": {
@@ -9139,8 +9139,8 @@
         "dimension": "age_group",
         "value": "18–24"
       },
-      "total_records": 2966,
-      "total_groups": 14,
+      "total_records": 4214,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9232,8 +9232,8 @@
         "dimension": "age_group",
         "value": "25–34"
       },
-      "total_records": 2026,
-      "total_groups": 14,
+      "total_records": 2686,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9325,8 +9325,8 @@
         "dimension": "age_group",
         "value": "35–44"
       },
-      "total_records": 1179,
-      "total_groups": 14,
+      "total_records": 1458,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9418,8 +9418,8 @@
         "dimension": "age_group",
         "value": "45–64"
       },
-      "total_records": 2462,
-      "total_groups": 14,
+      "total_records": 2856,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9430,7 +9430,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 236
+          "records": 235
         },
         {
           "values": {
@@ -9511,8 +9511,8 @@
         "dimension": "age_group",
         "value": "65+"
       },
-      "total_records": 1865,
-      "total_groups": 14,
+      "total_records": 2052,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9604,8 +9604,8 @@
         "dimension": "party",
         "value": "DEM"
       },
-      "total_records": 4765,
-      "total_groups": 14,
+      "total_records": 5808,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9616,7 +9616,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 401
+          "records": 400
         },
         {
           "values": {
@@ -9697,8 +9697,8 @@
         "dimension": "party",
         "value": "OTHER_PARTIES"
       },
-      "total_records": 40,
-      "total_groups": 13,
+      "total_records": 61,
+      "total_groups": 15,
       "shown_groups": 8,
       "rows": [
         {
@@ -9790,8 +9790,8 @@
         "dimension": "party",
         "value": "REP"
       },
-      "total_records": 676,
-      "total_groups": 14,
+      "total_records": 868,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9883,8 +9883,8 @@
         "dimension": "party",
         "value": "UNA"
       },
-      "total_records": 5017,
-      "total_groups": 14,
+      "total_records": 6529,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -9976,8 +9976,8 @@
         "dimension": "race",
         "value": "ASIAN"
       },
-      "total_records": 491,
-      "total_groups": 14,
+      "total_records": 662,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10069,8 +10069,8 @@
         "dimension": "race",
         "value": "BLACK or AFRICAN AMERICAN"
       },
-      "total_records": 869,
-      "total_groups": 14,
+      "total_records": 1132,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10162,8 +10162,8 @@
         "dimension": "race",
         "value": "INDIAN AMERICAN or ALASKA NATIVE"
       },
-      "total_records": 30,
-      "total_groups": 13,
+      "total_records": 42,
+      "total_groups": 15,
       "shown_groups": 8,
       "rows": [
         {
@@ -10278,8 +10278,8 @@
         "dimension": "race",
         "value": "OTHER"
       },
-      "total_records": 505,
-      "total_groups": 14,
+      "total_records": 670,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10371,8 +10371,8 @@
         "dimension": "race",
         "value": "TWO or MORE RACES"
       },
-      "total_records": 85,
-      "total_groups": 14,
+      "total_records": 109,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10464,8 +10464,8 @@
         "dimension": "race",
         "value": "UNDESIGNATED"
       },
-      "total_records": 1308,
-      "total_groups": 14,
+      "total_records": 1860,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10476,7 +10476,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 64
+          "records": 63
         },
         {
           "values": {
@@ -10526,7 +10526,7 @@
             "ballot_rtn_dt": "10/20/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 63
+          "records": 62
         },
         {
           "values": {
@@ -10557,8 +10557,8 @@
         "dimension": "race",
         "value": "WHITE"
       },
-      "total_records": 7209,
-      "total_groups": 14,
+      "total_records": 8790,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10619,7 +10619,7 @@
             "ballot_rtn_dt": "10/20/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 519
+          "records": 520
         },
         {
           "values": {
@@ -10650,8 +10650,8 @@
         "dimension": "ethnicity",
         "value": "HISPANIC or LATINO"
       },
-      "total_records": 439,
-      "total_groups": 14,
+      "total_records": 597,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10743,8 +10743,8 @@
         "dimension": "ethnicity",
         "value": "NOT HISPANIC or NOT LATINO"
       },
-      "total_records": 6285,
-      "total_groups": 14,
+      "total_records": 7688,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10805,7 +10805,7 @@
             "ballot_rtn_dt": "10/20/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 467
+          "records": 468
         },
         {
           "values": {
@@ -10836,8 +10836,8 @@
         "dimension": "ethnicity",
         "value": "UNDESIGNATED"
       },
-      "total_records": 3774,
-      "total_groups": 14,
+      "total_records": 4981,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -10848,7 +10848,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 257
+          "records": 256
         },
         {
           "values": {
@@ -10898,7 +10898,7 @@
             "ballot_rtn_dt": "10/20/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 228
+          "records": 227
         },
         {
           "values": {
@@ -10929,8 +10929,8 @@
         "dimension": "gender",
         "value": "F"
       },
-      "total_records": 4902,
-      "total_groups": 14,
+      "total_records": 6126,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -11022,8 +11022,8 @@
         "dimension": "gender",
         "value": "M"
       },
-      "total_records": 4412,
-      "total_groups": 14,
+      "total_records": 5436,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -11084,7 +11084,7 @@
             "ballot_rtn_dt": "10/20/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 330
+          "records": 331
         },
         {
           "values": {
@@ -11115,8 +11115,8 @@
         "dimension": "gender",
         "value": "U"
       },
-      "total_records": 1184,
-      "total_groups": 14,
+      "total_records": 1704,
+      "total_groups": 16,
       "shown_groups": 8,
       "rows": [
         {
@@ -11127,7 +11127,7 @@
             "ballot_rtn_dt": "10/15/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 59
+          "records": 58
         },
         {
           "values": {
@@ -11177,7 +11177,7 @@
             "ballot_rtn_dt": "10/20/2026",
             "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
           },
-          "records": 58
+          "records": 57
         },
         {
           "values": {

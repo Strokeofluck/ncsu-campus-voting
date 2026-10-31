@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Bind validated comparison aggregates to the existing report identity."""
-import json
+import json,re
 from datetime import datetime,timezone
 from pathlib import Path
 
@@ -22,7 +22,7 @@ for key,field in [('summary','summary'),('daily','daily'),('demographics','demog
     source['evidenceFlow']=[{'title':'Official source snapshots','detail':json.dumps(data['sources'])},
       {'title':'Matched-day aggregation','detail':f'scripts/build_early_voting_comparison.py --cutoff-date {cutoff}; exact site mapping; ACCEPTED early-voting records only. scripts/validate_early_voting_comparison.py reconciles days, scopes and demographics. scripts/audit_campus_figures.py independently recounts campus records and checks source archive/member hashes.'}]
     for definition in source.get('metricDefinitions',[]):
-        definition['definition']=definition['definition'].replace('First 11 early-voting days',f'First {days} early-voting days')
+        definition['definition']=re.sub(r'(?i)(first )\d+( early-voting days)',lambda m:f'{m[1]}{days}{m[2]}',definition['definition'])
     query['methods']=[{'language':'python','code':f'python scripts/build_early_voting_comparison.py --cutoff-date {cutoff}\npython scripts/validate_early_voting_comparison.py\npython scripts/audit_campus_figures.py\npython scripts/refresh_report_snapshot.py'}]
 # Built-in formats remain available; plugin destinations are resolved at build time.
 snapshot['exportPreferences']={'selected':None,'destinations':snapshot.get('exportPreferences',{}).get('destinations',[])}
