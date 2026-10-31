@@ -420,8 +420,8 @@
 .voting-report .voting-geography-pagination button:disabled {opacity:.5;cursor:default;}
 .voting-report .voting-final-table tfoot {border-top:2px solid var(--border);}
 
-.voting-report .voting-map-block {width:min(1240px,calc(100vw - 80px));justify-self:center;min-width:0;scroll-margin-top:100px;}
-.voting-report .voting-map-layout {display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:start;}
+.voting-report .voting-map-block {width:min(1680px,calc(100vw - 80px));justify-self:center;min-width:0;scroll-margin-top:100px;}
+.voting-report .voting-map-layout {display:grid;grid-template-columns:minmax(360px,.9fr) minmax(0,1.4fr);gap:24px;align-items:start;}
 .voting-report .voting-map-canvas-column {min-width:0;}
 .voting-report .voting-precinct-leaflet {height:580px;width:100%;border:1px solid var(--border);border-radius:12px;isolation:isolate;z-index:0;background:#e9edf0;}
 .voting-report .voting-map-toolbar {display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
@@ -444,16 +444,30 @@
 .voting-report .voting-map-tooltip {background:#fff;color:#182735;border:1px solid #a4afb8;border-radius:7px;box-shadow:0 2px 12px #0003;padding:10px 12px;font-size:13px;line-height:1.5;max-width:280px;white-space:normal;}
 .voting-report .voting-map-tooltip-content strong {display:block;margin-bottom:5px;font-size:14px;}
 .voting-report .voting-precinct-leaflet .leaflet-interactive:focus {outline:none;stroke:#e36d31;stroke-width:4;}
-.voting-report .voting-map-detail {padding:16px;border:1px solid var(--border);border-radius:12px;font-size:14px;line-height:1.55;}
-.voting-report .voting-map-detail h3 {margin:0;font-size:18px;}
-.voting-report .voting-map-detail>p {margin:7px 0 14px;}
-.voting-report .voting-map-year {margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-variant-numeric:tabular-nums;}
-.voting-report .voting-map-year h4 {margin:0 0 6px;font-size:14px;}
-.voting-report .voting-map-year small {font-size:12px;color:var(--secondary);}
-.voting-report .voting-map-share-track {height:7px;background:#b9c0c5;border-radius:4px;margin:9px 0 5px;overflow:hidden;}
+ .voting-report .voting-map-canvas-column {position:sticky;top:76px;}
+.voting-report .voting-map-age-panel {min-width:0;font-size:14px;line-height:1.5;}
+.voting-report .voting-map-age-panel>header h3 {margin:0;font-size:20px;}
+.voting-report .voting-map-age-panel>header p {margin:7px 0 14px;}
+.voting-report .voting-map-age-key {display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:var(--secondary);font-size:12px;}
+.voting-report .voting-map-age-key :is(i,span) {display:inline-block;width:14px;height:8px;border-radius:2px;background:#3182bd;}
+.voting-report .voting-map-age-key span {background:#b9c0c5;margin-left:8px;}
+.voting-report .voting-map-age-cards {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch;}
+.voting-report .voting-map-age-card {min-width:0;padding:14px;border:1px solid var(--border);border-radius:12px;}
+.voting-report .voting-map-age-card-selected {border-color:#3182bd;box-shadow:inset 0 0 0 1px #3182bd;}
+.voting-report .voting-map-age-card h4 {margin:0;}
+.voting-report .voting-map-age-card h4 button {display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:0;border:0;background:transparent;color:var(--text);font:inherit;font-size:16px;font-weight:700;text-align:left;cursor:pointer;}
+.voting-report .voting-map-age-card h4 button:focus-visible {outline:2px solid #3182bd;outline-offset:5px;border-radius:2px;}
+.voting-report .voting-map-age-card h4 button span {font-size:10px;font-weight:400;color:var(--secondary);white-space:nowrap;}
+.voting-report .voting-map-age-year {margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;font-variant-numeric:tabular-nums;}
+.voting-report .voting-map-age-year h5 {margin:0 0 5px;font-size:13px;}
+.voting-report .voting-map-age-year small {display:block;color:var(--secondary);font-size:12px;}
+.voting-report .voting-map-age-rate {font-size:12px;}
+.voting-report .voting-map-share-track {height:7px;background:#b9c0c5;border-radius:4px;margin:8px 0 5px;overflow:hidden;}
 .voting-report .voting-map-share-track span {display:block;height:100%;background:#3182bd;}
-@media(max-width:1099px){.voting-report .voting-map-block{width:100%;}.voting-report .voting-map-layout{grid-template-columns:1fr;}.voting-report .voting-map-detail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}.voting-report .voting-map-detail>h3,.voting-report .voting-map-detail>p{grid-column:1/-1;}.voting-report .voting-map-year{margin-top:0;}}
-@media(max-width:620px){.voting-report .voting-precinct-leaflet{height:430px;}.voting-report .voting-map-detail{display:block;}.voting-report .voting-map-year{margin-top:14px;}}
+@media(max-width:1399px){.voting-report .voting-map-age-cards{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:1099px){.voting-report .voting-map-block{width:100%;}.voting-report .voting-map-layout{grid-template-columns:1fr;}.voting-report .voting-map-canvas-column{position:static;}.voting-report .voting-map-age-cards{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:800px){.voting-report .voting-map-age-cards{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:620px){.voting-report .voting-precinct-leaflet{height:430px;}.voting-report .voting-map-age-cards{grid-template-columns:1fr;}}
 
 .voting-report .voting-map-pin-label {position:absolute;box-sizing:border-box;padding:7px 9px;background:#fff;color:#172b3a;border:1px solid #8b9ba9;border-radius:7px;box-shadow:0 2px 9px #0003;font:12px/1.35 Arial,sans-serif;white-space:normal;pointer-events:auto;}
 .voting-report .voting-map-pin-label strong {display:block;font-size:13px;line-height:1.3;margin-bottom:3px;}

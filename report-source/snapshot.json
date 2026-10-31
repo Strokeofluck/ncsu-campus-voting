@@ -134634,6 +134634,14 @@
               "voting-precinct-age-chart",
               "voting-precinct-age-table"
             ]
+          },
+          {
+            "label": "Simultaneous precinct age cards and companion area",
+            "definition": "All disjoint age bands and a separately labeled All ages combined card remain visible beside the map. Each card retains 2022, 2024 and 2026 site, other-Wake and total counts; its heading selects the age used for map shading without hiding the other cards. All source rows for the selected precinct remain inspectable alongside the shaded-map cohort. A separate table below retains current Western Boulevard precinct 01-31 when another precinct is selected; when 01-31 is selected, it shows current Talley precinct 01-23 instead. No ballot aggregates or age denominators change.",
+            "componentIds": [
+              "voting-precinct-map",
+              "voting-site-precinct-companion"
+            ]
           }
         ]
       },
