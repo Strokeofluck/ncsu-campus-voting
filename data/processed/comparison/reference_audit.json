@@ -5,13 +5,13 @@
       "year": 2022,
       "site_name": "TA - NCSU TALLEY STUDENT CENTER",
       "start_date": "2022-10-20",
-      "end_date": "2022-11-02",
+      "end_date": "2022-11-04",
       "actual": {
-        "all_ages": 7007,
-        "age_18_24": 2057,
-        "age_18_22": 1590,
-        "same_day_registration": 378,
-        "age_18_24_share": 29.356357927786497
+        "all_ages": 9339,
+        "age_18_24": 2999,
+        "age_18_22": 2313,
+        "same_day_registration": 646,
+        "age_18_24_share": 32.11264589356462
       },
       "daily": {
         "2022-10-20": 389,
@@ -27,7 +27,9 @@
         "2022-10-30": 436,
         "2022-10-31": 505,
         "2022-11-01": 724,
-        "2022-11-02": 915
+        "2022-11-02": 915,
+        "2022-11-03": 1060,
+        "2022-11-04": 1272
       },
       "daily_metrics": [
         {
@@ -127,362 +129,376 @@
           "age_18_24": 373,
           "age_18_22": 290,
           "same_day_registration": 88
+        },
+        {
+          "date": "2022-11-03",
+          "all_ages": 1060,
+          "age_18_24": 424,
+          "age_18_22": 338,
+          "same_day_registration": 120
+        },
+        {
+          "date": "2022-11-04",
+          "all_ages": 1272,
+          "age_18_24": 518,
+          "age_18_22": 385,
+          "same_day_registration": 148
         }
       ],
       "ages_18_24": {
-        "18": 181,
-        "19": 331,
-        "20": 352,
-        "21": 385,
-        "22": 341,
-        "23": 257,
-        "24": 210
+        "18": 269,
+        "19": 468,
+        "20": 512,
+        "21": 562,
+        "22": 502,
+        "23": 391,
+        "24": 295
       },
       "demographics": [
         {
           "dimension": "age",
           "value": "18",
-          "votes": 181
+          "votes": 269
         },
         {
           "dimension": "age",
           "value": "19",
-          "votes": 331
+          "votes": 468
         },
         {
           "dimension": "age",
           "value": "20",
-          "votes": 352
+          "votes": 512
         },
         {
           "dimension": "age",
           "value": "21",
-          "votes": 385
+          "votes": 562
         },
         {
           "dimension": "age",
           "value": "22",
-          "votes": 341
+          "votes": 502
         },
         {
           "dimension": "age",
           "value": "23",
-          "votes": 257
+          "votes": 391
         },
         {
           "dimension": "age",
           "value": "24",
-          "votes": 210
+          "votes": 295
         },
         {
           "dimension": "age",
           "value": "25",
-          "votes": 181
+          "votes": 282
         },
         {
           "dimension": "age",
           "value": "26",
-          "votes": 170
+          "votes": 257
         },
         {
           "dimension": "age",
           "value": "27",
-          "votes": 184
+          "votes": 238
         },
         {
           "dimension": "age",
           "value": "28",
-          "votes": 139
+          "votes": 181
         },
         {
           "dimension": "age",
           "value": "29",
-          "votes": 137
+          "votes": 205
         },
         {
           "dimension": "age",
           "value": "30",
-          "votes": 117
+          "votes": 158
         },
         {
           "dimension": "age",
           "value": "31",
-          "votes": 120
+          "votes": 172
         },
         {
           "dimension": "age",
           "value": "32",
-          "votes": 111
+          "votes": 143
         },
         {
           "dimension": "age",
           "value": "33",
-          "votes": 116
+          "votes": 151
         },
         {
           "dimension": "age",
           "value": "34",
-          "votes": 98
+          "votes": 130
         },
         {
           "dimension": "age",
           "value": "35",
-          "votes": 81
-        },
-        {
-          "dimension": "age",
-          "value": "36",
-          "votes": 78
-        },
-        {
-          "dimension": "age",
-          "value": "37",
-          "votes": 83
-        },
-        {
-          "dimension": "age",
-          "value": "38",
-          "votes": 74
-        },
-        {
-          "dimension": "age",
-          "value": "39",
-          "votes": 77
-        },
-        {
-          "dimension": "age",
-          "value": "40",
-          "votes": 68
-        },
-        {
-          "dimension": "age",
-          "value": "41",
-          "votes": 66
-        },
-        {
-          "dimension": "age",
-          "value": "42",
-          "votes": 76
-        },
-        {
-          "dimension": "age",
-          "value": "43",
-          "votes": 83
-        },
-        {
-          "dimension": "age",
-          "value": "44",
-          "votes": 65
-        },
-        {
-          "dimension": "age",
-          "value": "45",
-          "votes": 68
-        },
-        {
-          "dimension": "age",
-          "value": "46",
-          "votes": 62
-        },
-        {
-          "dimension": "age",
-          "value": "47",
-          "votes": 68
-        },
-        {
-          "dimension": "age",
-          "value": "48",
-          "votes": 78
-        },
-        {
-          "dimension": "age",
-          "value": "49",
-          "votes": 60
-        },
-        {
-          "dimension": "age",
-          "value": "50",
-          "votes": 75
-        },
-        {
-          "dimension": "age",
-          "value": "51",
-          "votes": 97
-        },
-        {
-          "dimension": "age",
-          "value": "52",
-          "votes": 108
-        },
-        {
-          "dimension": "age",
-          "value": "53",
-          "votes": 84
-        },
-        {
-          "dimension": "age",
-          "value": "54",
-          "votes": 81
-        },
-        {
-          "dimension": "age",
-          "value": "55",
-          "votes": 94
-        },
-        {
-          "dimension": "age",
-          "value": "56",
-          "votes": 107
-        },
-        {
-          "dimension": "age",
-          "value": "57",
-          "votes": 95
-        },
-        {
-          "dimension": "age",
-          "value": "58",
-          "votes": 117
-        },
-        {
-          "dimension": "age",
-          "value": "59",
-          "votes": 117
-        },
-        {
-          "dimension": "age",
-          "value": "60",
           "votes": 114
         },
         {
           "dimension": "age",
-          "value": "61",
-          "votes": 106
+          "value": "36",
+          "votes": 104
         },
         {
           "dimension": "age",
-          "value": "62",
-          "votes": 108
+          "value": "37",
+          "votes": 104
         },
         {
           "dimension": "age",
-          "value": "63",
-          "votes": 86
+          "value": "38",
+          "votes": 105
         },
         {
           "dimension": "age",
-          "value": "64",
-          "votes": 85
+          "value": "39",
+          "votes": 101
         },
         {
           "dimension": "age",
-          "value": "65",
-          "votes": 81
+          "value": "40",
+          "votes": 89
         },
         {
           "dimension": "age",
-          "value": "66",
+          "value": "41",
+          "votes": 89
+        },
+        {
+          "dimension": "age",
+          "value": "42",
+          "votes": 104
+        },
+        {
+          "dimension": "age",
+          "value": "43",
+          "votes": 101
+        },
+        {
+          "dimension": "age",
+          "value": "44",
+          "votes": 94
+        },
+        {
+          "dimension": "age",
+          "value": "45",
+          "votes": 91
+        },
+        {
+          "dimension": "age",
+          "value": "46",
           "votes": 84
         },
         {
           "dimension": "age",
-          "value": "67",
-          "votes": 76
+          "value": "47",
+          "votes": 97
         },
         {
           "dimension": "age",
-          "value": "68",
+          "value": "48",
+          "votes": 98
+        },
+        {
+          "dimension": "age",
+          "value": "49",
           "votes": 77
         },
         {
           "dimension": "age",
+          "value": "50",
+          "votes": 106
+        },
+        {
+          "dimension": "age",
+          "value": "51",
+          "votes": 113
+        },
+        {
+          "dimension": "age",
+          "value": "52",
+          "votes": 140
+        },
+        {
+          "dimension": "age",
+          "value": "53",
+          "votes": 113
+        },
+        {
+          "dimension": "age",
+          "value": "54",
+          "votes": 110
+        },
+        {
+          "dimension": "age",
+          "value": "55",
+          "votes": 113
+        },
+        {
+          "dimension": "age",
+          "value": "56",
+          "votes": 140
+        },
+        {
+          "dimension": "age",
+          "value": "57",
+          "votes": 111
+        },
+        {
+          "dimension": "age",
+          "value": "58",
+          "votes": 138
+        },
+        {
+          "dimension": "age",
+          "value": "59",
+          "votes": 135
+        },
+        {
+          "dimension": "age",
+          "value": "60",
+          "votes": 134
+        },
+        {
+          "dimension": "age",
+          "value": "61",
+          "votes": 129
+        },
+        {
+          "dimension": "age",
+          "value": "62",
+          "votes": 129
+        },
+        {
+          "dimension": "age",
+          "value": "63",
+          "votes": 95
+        },
+        {
+          "dimension": "age",
+          "value": "64",
+          "votes": 99
+        },
+        {
+          "dimension": "age",
+          "value": "65",
+          "votes": 103
+        },
+        {
+          "dimension": "age",
+          "value": "66",
+          "votes": 99
+        },
+        {
+          "dimension": "age",
+          "value": "67",
+          "votes": 94
+        },
+        {
+          "dimension": "age",
+          "value": "68",
+          "votes": 91
+        },
+        {
+          "dimension": "age",
           "value": "69",
-          "votes": 79
+          "votes": 90
         },
         {
           "dimension": "age",
           "value": "70",
-          "votes": 79
+          "votes": 87
         },
         {
           "dimension": "age",
           "value": "71",
-          "votes": 54
+          "votes": 57
         },
         {
           "dimension": "age",
           "value": "72",
-          "votes": 65
+          "votes": 73
         },
         {
           "dimension": "age",
           "value": "73",
-          "votes": 61
+          "votes": 69
         },
         {
           "dimension": "age",
           "value": "74",
-          "votes": 62
+          "votes": 66
         },
         {
           "dimension": "age",
           "value": "75",
-          "votes": 72
+          "votes": 77
         },
         {
           "dimension": "age",
           "value": "76",
-          "votes": 52
+          "votes": 58
         },
         {
           "dimension": "age",
           "value": "77",
-          "votes": 31
+          "votes": 36
         },
         {
           "dimension": "age",
           "value": "78",
-          "votes": 27
+          "votes": 29
         },
         {
           "dimension": "age",
           "value": "79",
-          "votes": 18
+          "votes": 20
         },
         {
           "dimension": "age",
           "value": "80",
-          "votes": 13
+          "votes": 14
         },
         {
           "dimension": "age",
           "value": "81",
-          "votes": 18
+          "votes": 22
         },
         {
           "dimension": "age",
           "value": "82",
-          "votes": 10
+          "votes": 13
         },
         {
           "dimension": "age",
           "value": "83",
-          "votes": 15
+          "votes": 17
         },
         {
           "dimension": "age",
           "value": "84",
-          "votes": 7
-        },
-        {
-          "dimension": "age",
-          "value": "85",
           "votes": 8
         },
         {
           "dimension": "age",
+          "value": "85",
+          "votes": 11
+        },
+        {
+          "dimension": "age",
           "value": "86",
-          "votes": 3
+          "votes": 4
         },
         {
           "dimension": "age",
@@ -497,7 +513,7 @@
         {
           "dimension": "age",
           "value": "89",
-          "votes": 4
+          "votes": 5
         },
         {
           "dimension": "age",
@@ -512,7 +528,7 @@
         {
           "dimension": "age",
           "value": "92",
-          "votes": 1
+          "votes": 2
         },
         {
           "dimension": "age",
@@ -520,124 +536,129 @@
           "votes": 1
         },
         {
+          "dimension": "age",
+          "value": "99",
+          "votes": 2
+        },
+        {
           "dimension": "age_group",
           "value": "18\u201324",
-          "votes": 2057
+          "votes": 2999
         },
         {
           "dimension": "age_group",
           "value": "25\u201334",
-          "votes": 1373
+          "votes": 1917
         },
         {
           "dimension": "age_group",
           "value": "35\u201344",
-          "votes": 751
+          "votes": 1005
         },
         {
           "dimension": "age_group",
           "value": "45\u201364",
-          "votes": 1810
+          "votes": 2252
         },
         {
           "dimension": "age_group",
           "value": "65+",
-          "votes": 1016
+          "votes": 1166
         },
         {
           "dimension": "ethnicity",
           "value": "HISPANIC or LATINO",
-          "votes": 171
+          "votes": 245
         },
         {
           "dimension": "ethnicity",
           "value": "NOT HISPANIC or NOT LATINO",
-          "votes": 4904
+          "votes": 6310
         },
         {
           "dimension": "ethnicity",
           "value": "UNDESIGNATED",
-          "votes": 1932
+          "votes": 2784
         },
         {
           "dimension": "gender",
           "value": "F",
-          "votes": 3085
+          "votes": 4066
         },
         {
           "dimension": "gender",
           "value": "M",
-          "votes": 3037
+          "votes": 3871
         },
         {
           "dimension": "gender",
           "value": "U",
-          "votes": 885
+          "votes": 1402
         },
         {
           "dimension": "party",
           "value": "DEM",
-          "votes": 3208
+          "votes": 4169
         },
         {
           "dimension": "party",
           "value": "GRE",
-          "votes": 3
+          "votes": 4
         },
         {
           "dimension": "party",
           "value": "LIB",
-          "votes": 31
+          "votes": 41
         },
         {
           "dimension": "party",
           "value": "REP",
-          "votes": 758
+          "votes": 1005
         },
         {
           "dimension": "party",
           "value": "UNA",
-          "votes": 3007
+          "votes": 4120
         },
         {
           "dimension": "race",
           "value": "ASIAN",
-          "votes": 256
+          "votes": 343
         },
         {
           "dimension": "race",
           "value": "BLACK or AFRICAN AMERICAN",
-          "votes": 418
+          "votes": 553
         },
         {
           "dimension": "race",
           "value": "INDIAN AMERICAN or ALASKA NATIVE",
-          "votes": 12
+          "votes": 16
         },
         {
           "dimension": "race",
           "value": "OTHER",
-          "votes": 213
+          "votes": 290
         },
         {
           "dimension": "race",
           "value": "TWO or MORE RACES",
-          "votes": 58
+          "votes": 85
         },
         {
           "dimension": "race",
           "value": "UNDESIGNATED",
-          "votes": 890
+          "votes": 1395
         },
         {
           "dimension": "race",
           "value": "WHITE",
-          "votes": 5160
+          "votes": 6657
         }
       ],
       "status_counts_before_accepted_filter": {
-        "ACCEPTED": 7007,
-        "CANCELLED": 14
+        "ACCEPTED": 9339,
+        "CANCELLED": 18
       },
       "source": {
         "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
@@ -655,13 +676,13 @@
       "year": 2024,
       "site_name": "TA - NCSU TALLEY STUDENT CENTER",
       "start_date": "2024-10-17",
-      "end_date": "2024-10-30",
+      "end_date": "2024-11-01",
       "actual": {
-        "all_ages": 17339,
-        "age_18_24": 7194,
-        "age_18_22": 5888,
-        "same_day_registration": 1467,
-        "age_18_24_share": 41.490282023184726
+        "all_ages": 20350,
+        "age_18_24": 8950,
+        "age_18_22": 7410,
+        "same_day_registration": 2084,
+        "age_18_24_share": 43.98034398034398
       },
       "daily": {
         "2024-10-17": 1308,
@@ -677,7 +698,9 @@
         "2024-10-27": 690,
         "2024-10-28": 1468,
         "2024-10-29": 1442,
-        "2024-10-30": 1439
+        "2024-10-30": 1439,
+        "2024-10-31": 1379,
+        "2024-11-01": 1632
       },
       "daily_metrics": [
         {
@@ -777,352 +800,366 @@
           "age_18_24": 789,
           "age_18_22": 672,
           "same_day_registration": 229
+        },
+        {
+          "date": "2024-10-31",
+          "all_ages": 1379,
+          "age_18_24": 807,
+          "age_18_22": 720,
+          "same_day_registration": 271
+        },
+        {
+          "date": "2024-11-01",
+          "all_ages": 1632,
+          "age_18_24": 949,
+          "age_18_22": 802,
+          "same_day_registration": 346
         }
       ],
       "ages_18_24": {
-        "18": 839,
-        "19": 1306,
-        "20": 1467,
-        "21": 1374,
-        "22": 902,
-        "23": 650,
-        "24": 656
+        "18": 1067,
+        "19": 1674,
+        "20": 1820,
+        "21": 1746,
+        "22": 1103,
+        "23": 781,
+        "24": 759
       },
       "demographics": [
         {
           "dimension": "age",
           "value": "18",
-          "votes": 839
+          "votes": 1067
         },
         {
           "dimension": "age",
           "value": "19",
-          "votes": 1306
+          "votes": 1674
         },
         {
           "dimension": "age",
           "value": "20",
-          "votes": 1467
+          "votes": 1820
         },
         {
           "dimension": "age",
           "value": "21",
-          "votes": 1374
+          "votes": 1746
         },
         {
           "dimension": "age",
           "value": "22",
-          "votes": 902
+          "votes": 1103
         },
         {
           "dimension": "age",
           "value": "23",
-          "votes": 650
+          "votes": 781
         },
         {
           "dimension": "age",
           "value": "24",
-          "votes": 656
+          "votes": 759
         },
         {
           "dimension": "age",
           "value": "25",
-          "votes": 577
+          "votes": 667
         },
         {
           "dimension": "age",
           "value": "26",
-          "votes": 520
+          "votes": 607
         },
         {
           "dimension": "age",
           "value": "27",
-          "votes": 416
+          "votes": 501
         },
         {
           "dimension": "age",
           "value": "28",
-          "votes": 341
+          "votes": 402
         },
         {
           "dimension": "age",
           "value": "29",
-          "votes": 309
+          "votes": 366
         },
         {
           "dimension": "age",
           "value": "30",
-          "votes": 274
+          "votes": 324
         },
         {
           "dimension": "age",
           "value": "31",
-          "votes": 280
+          "votes": 323
         },
         {
           "dimension": "age",
           "value": "32",
-          "votes": 252
+          "votes": 281
         },
         {
           "dimension": "age",
           "value": "33",
-          "votes": 234
+          "votes": 274
         },
         {
           "dimension": "age",
           "value": "34",
-          "votes": 196
+          "votes": 223
         },
         {
           "dimension": "age",
           "value": "35",
-          "votes": 192
+          "votes": 223
         },
         {
           "dimension": "age",
           "value": "36",
-          "votes": 185
+          "votes": 224
         },
         {
           "dimension": "age",
           "value": "37",
-          "votes": 188
+          "votes": 214
         },
         {
           "dimension": "age",
           "value": "38",
-          "votes": 163
+          "votes": 183
         },
         {
           "dimension": "age",
           "value": "39",
-          "votes": 152
+          "votes": 166
         },
         {
           "dimension": "age",
           "value": "40",
-          "votes": 178
+          "votes": 204
         },
         {
           "dimension": "age",
           "value": "41",
-          "votes": 165
+          "votes": 188
         },
         {
           "dimension": "age",
           "value": "42",
-          "votes": 150
+          "votes": 165
         },
         {
           "dimension": "age",
           "value": "43",
-          "votes": 133
+          "votes": 156
         },
         {
           "dimension": "age",
           "value": "44",
-          "votes": 153
+          "votes": 169
         },
         {
           "dimension": "age",
           "value": "45",
-          "votes": 146
+          "votes": 165
         },
         {
           "dimension": "age",
           "value": "46",
-          "votes": 149
+          "votes": 165
         },
         {
           "dimension": "age",
           "value": "47",
-          "votes": 179
+          "votes": 200
         },
         {
           "dimension": "age",
           "value": "48",
-          "votes": 192
+          "votes": 213
         },
         {
           "dimension": "age",
           "value": "49",
-          "votes": 175
+          "votes": 187
         },
         {
           "dimension": "age",
           "value": "50",
-          "votes": 173
+          "votes": 197
         },
         {
           "dimension": "age",
           "value": "51",
-          "votes": 153
-        },
-        {
-          "dimension": "age",
-          "value": "52",
-          "votes": 164
-        },
-        {
-          "dimension": "age",
-          "value": "53",
-          "votes": 175
-        },
-        {
-          "dimension": "age",
-          "value": "54",
-          "votes": 218
-        },
-        {
-          "dimension": "age",
-          "value": "55",
-          "votes": 189
-        },
-        {
-          "dimension": "age",
-          "value": "56",
-          "votes": 181
-        },
-        {
-          "dimension": "age",
-          "value": "57",
-          "votes": 181
-        },
-        {
-          "dimension": "age",
-          "value": "58",
-          "votes": 168
-        },
-        {
-          "dimension": "age",
-          "value": "59",
-          "votes": 159
-        },
-        {
-          "dimension": "age",
-          "value": "60",
-          "votes": 163
-        },
-        {
-          "dimension": "age",
-          "value": "61",
-          "votes": 145
-        },
-        {
-          "dimension": "age",
-          "value": "62",
-          "votes": 163
-        },
-        {
-          "dimension": "age",
-          "value": "63",
-          "votes": 151
-        },
-        {
-          "dimension": "age",
-          "value": "64",
           "votes": 176
         },
         {
           "dimension": "age",
+          "value": "52",
+          "votes": 184
+        },
+        {
+          "dimension": "age",
+          "value": "53",
+          "votes": 196
+        },
+        {
+          "dimension": "age",
+          "value": "54",
+          "votes": 252
+        },
+        {
+          "dimension": "age",
+          "value": "55",
+          "votes": 207
+        },
+        {
+          "dimension": "age",
+          "value": "56",
+          "votes": 201
+        },
+        {
+          "dimension": "age",
+          "value": "57",
+          "votes": 198
+        },
+        {
+          "dimension": "age",
+          "value": "58",
+          "votes": 182
+        },
+        {
+          "dimension": "age",
+          "value": "59",
+          "votes": 172
+        },
+        {
+          "dimension": "age",
+          "value": "60",
+          "votes": 174
+        },
+        {
+          "dimension": "age",
+          "value": "61",
+          "votes": 154
+        },
+        {
+          "dimension": "age",
+          "value": "62",
+          "votes": 175
+        },
+        {
+          "dimension": "age",
+          "value": "63",
+          "votes": 156
+        },
+        {
+          "dimension": "age",
+          "value": "64",
+          "votes": 186
+        },
+        {
+          "dimension": "age",
           "value": "65",
-          "votes": 153
+          "votes": 160
         },
         {
           "dimension": "age",
           "value": "66",
-          "votes": 132
+          "votes": 141
         },
         {
           "dimension": "age",
           "value": "67",
-          "votes": 118
+          "votes": 126
         },
         {
           "dimension": "age",
           "value": "68",
-          "votes": 128
+          "votes": 138
         },
         {
           "dimension": "age",
           "value": "69",
-          "votes": 107
+          "votes": 115
         },
         {
           "dimension": "age",
           "value": "70",
-          "votes": 111
+          "votes": 124
         },
         {
           "dimension": "age",
           "value": "71",
-          "votes": 83
+          "votes": 89
         },
         {
           "dimension": "age",
           "value": "72",
-          "votes": 110
+          "votes": 118
         },
         {
           "dimension": "age",
           "value": "73",
-          "votes": 85
-        },
-        {
-          "dimension": "age",
-          "value": "74",
-          "votes": 81
-        },
-        {
-          "dimension": "age",
-          "value": "75",
           "votes": 88
         },
         {
           "dimension": "age",
+          "value": "74",
+          "votes": 86
+        },
+        {
+          "dimension": "age",
+          "value": "75",
+          "votes": 92
+        },
+        {
+          "dimension": "age",
           "value": "76",
-          "votes": 75
+          "votes": 78
         },
         {
           "dimension": "age",
           "value": "77",
-          "votes": 75
+          "votes": 80
         },
         {
           "dimension": "age",
           "value": "78",
-          "votes": 59
+          "votes": 63
         },
         {
           "dimension": "age",
           "value": "79",
-          "votes": 44
+          "votes": 49
         },
         {
           "dimension": "age",
           "value": "80",
-          "votes": 44
+          "votes": 45
         },
         {
           "dimension": "age",
           "value": "81",
-          "votes": 37
+          "votes": 39
         },
         {
           "dimension": "age",
           "value": "82",
-          "votes": 22
+          "votes": 25
         },
         {
           "dimension": "age",
           "value": "83",
-          "votes": 31
+          "votes": 33
         },
         {
           "dimension": "age",
           "value": "84",
-          "votes": 12
+          "votes": 14
         },
         {
           "dimension": "age",
@@ -1132,7 +1169,7 @@
         {
           "dimension": "age",
           "value": "86",
-          "votes": 16
+          "votes": 17
         },
         {
           "dimension": "age",
@@ -1142,17 +1179,17 @@
         {
           "dimension": "age",
           "value": "88",
-          "votes": 3
+          "votes": 4
         },
         {
           "dimension": "age",
           "value": "89",
-          "votes": 3
+          "votes": 4
         },
         {
           "dimension": "age",
           "value": "90",
-          "votes": 6
+          "votes": 7
         },
         {
           "dimension": "age",
@@ -1167,7 +1204,7 @@
         {
           "dimension": "age",
           "value": "93",
-          "votes": 1
+          "votes": 2
         },
         {
           "dimension": "age",
@@ -1192,102 +1229,102 @@
         {
           "dimension": "age_group",
           "value": "18\u201324",
-          "votes": 7194
+          "votes": 8950
         },
         {
           "dimension": "age_group",
           "value": "25\u201334",
-          "votes": 3399
+          "votes": 3968
         },
         {
           "dimension": "age_group",
           "value": "35\u201344",
-          "votes": 1659
+          "votes": 1892
         },
         {
           "dimension": "age_group",
           "value": "45\u201364",
-          "votes": 3400
+          "votes": 3740
         },
         {
           "dimension": "age_group",
           "value": "65+",
-          "votes": 1687
+          "votes": 1800
         },
         {
           "dimension": "ethnicity",
           "value": "HISPANIC or LATINO",
-          "votes": 666
+          "votes": 780
         },
         {
           "dimension": "ethnicity",
           "value": "NOT HISPANIC or NOT LATINO",
-          "votes": 10004
+          "votes": 11359
         },
         {
           "dimension": "ethnicity",
           "value": "UNDESIGNATED",
-          "votes": 6669
+          "votes": 8211
         },
         {
           "dimension": "gender",
           "value": "F",
-          "votes": 7463
+          "votes": 8520
         },
         {
           "dimension": "gender",
           "value": "M",
-          "votes": 6988
+          "votes": 7953
         },
         {
           "dimension": "gender",
           "value": "U",
-          "votes": 2888
+          "votes": 3877
         },
         {
           "dimension": "party",
           "value": "DEM",
-          "votes": 6544
+          "votes": 7422
         },
         {
           "dimension": "party",
           "value": "GRE",
-          "votes": 34
+          "votes": 36
         },
         {
           "dimension": "party",
           "value": "LIB",
-          "votes": 45
+          "votes": 52
         },
         {
           "dimension": "party",
           "value": "NLB",
-          "votes": 34
+          "votes": 46
         },
         {
           "dimension": "party",
           "value": "REP",
-          "votes": 2024
+          "votes": 2379
         },
         {
           "dimension": "party",
           "value": "UNA",
-          "votes": 8658
+          "votes": 10415
         },
         {
           "dimension": "race",
           "value": "ASIAN",
-          "votes": 937
+          "votes": 1095
         },
         {
           "dimension": "race",
           "value": "BLACK or AFRICAN AMERICAN",
-          "votes": 1137
+          "votes": 1331
         },
         {
           "dimension": "race",
           "value": "INDIAN AMERICAN or ALASKA NATIVE",
-          "votes": 49
+          "votes": 58
         },
         {
           "dimension": "race",
@@ -1297,27 +1334,27 @@
         {
           "dimension": "race",
           "value": "OTHER",
-          "votes": 729
+          "votes": 870
         },
         {
           "dimension": "race",
           "value": "TWO or MORE RACES",
-          "votes": 147
+          "votes": 173
         },
         {
           "dimension": "race",
           "value": "UNDESIGNATED",
-          "votes": 3014
+          "votes": 4019
         },
         {
           "dimension": "race",
           "value": "WHITE",
-          "votes": 11322
+          "votes": 12800
         }
       ],
       "status_counts_before_accepted_filter": {
-        "ACCEPTED": 17339,
-        "CANCELLED": 46,
+        "ACCEPTED": 20350,
+        "CANCELLED": 54,
         "SDR-FAILED VERIFICATION": 4
       },
       "source": {
@@ -1336,16 +1373,16 @@
       "year": 2026,
       "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES",
       "start_date": "2026-10-15",
-      "end_date": "2026-10-28",
+      "end_date": "2026-10-30",
       "actual": {
-        "all_ages": 10498,
-        "age_18_24": 2966,
-        "age_18_22": 2316,
-        "same_day_registration": 535,
-        "age_18_24_share": 28.253000571537434
+        "all_ages": 13266,
+        "age_18_24": 4214,
+        "age_18_22": 3340,
+        "same_day_registration": 877,
+        "age_18_24_share": 31.7654153475049
       },
       "daily": {
-        "2026-10-15": 831,
+        "2026-10-15": 830,
         "2026-10-16": 803,
         "2026-10-17": 466,
         "2026-10-18": 398,
@@ -1358,15 +1395,17 @@
         "2026-10-25": 517,
         "2026-10-26": 937,
         "2026-10-27": 971,
-        "2026-10-28": 1128
+        "2026-10-28": 1128,
+        "2026-10-29": 1275,
+        "2026-10-30": 1494
       },
       "daily_metrics": [
         {
           "date": "2026-10-15",
-          "all_ages": 831,
+          "all_ages": 830,
           "age_18_24": 155,
           "age_18_22": 124,
-          "same_day_registration": 29
+          "same_day_registration": 28
         },
         {
           "date": "2026-10-16",
@@ -1458,377 +1497,391 @@
           "age_18_24": 474,
           "age_18_22": 370,
           "same_day_registration": 109
+        },
+        {
+          "date": "2026-10-29",
+          "all_ages": 1275,
+          "age_18_24": 547,
+          "age_18_22": 430,
+          "same_day_registration": 165
+        },
+        {
+          "date": "2026-10-30",
+          "all_ages": 1494,
+          "age_18_24": 701,
+          "age_18_22": 594,
+          "same_day_registration": 178
         }
       ],
       "ages_18_24": {
-        "18": 237,
-        "19": 429,
-        "20": 568,
-        "21": 607,
-        "22": 475,
-        "23": 363,
-        "24": 287
+        "18": 348,
+        "19": 618,
+        "20": 836,
+        "21": 870,
+        "22": 668,
+        "23": 497,
+        "24": 377
       },
       "demographics": [
         {
           "dimension": "age",
           "value": "18",
-          "votes": 237
+          "votes": 348
         },
         {
           "dimension": "age",
           "value": "19",
-          "votes": 429
+          "votes": 618
         },
         {
           "dimension": "age",
           "value": "20",
-          "votes": 568
+          "votes": 836
         },
         {
           "dimension": "age",
           "value": "21",
-          "votes": 607
+          "votes": 870
         },
         {
           "dimension": "age",
           "value": "22",
-          "votes": 475
+          "votes": 668
         },
         {
           "dimension": "age",
           "value": "23",
-          "votes": 363
+          "votes": 497
         },
         {
           "dimension": "age",
           "value": "24",
-          "votes": 287
+          "votes": 377
         },
         {
           "dimension": "age",
           "value": "25",
-          "votes": 280
+          "votes": 372
         },
         {
           "dimension": "age",
           "value": "26",
-          "votes": 275
+          "votes": 349
         },
         {
           "dimension": "age",
           "value": "27",
-          "votes": 296
+          "votes": 374
         },
         {
           "dimension": "age",
           "value": "28",
-          "votes": 212
+          "votes": 303
         },
         {
           "dimension": "age",
           "value": "29",
-          "votes": 209
+          "votes": 281
         },
         {
           "dimension": "age",
           "value": "30",
-          "votes": 174
+          "votes": 233
         },
         {
           "dimension": "age",
           "value": "31",
-          "votes": 142
+          "votes": 193
         },
         {
           "dimension": "age",
           "value": "32",
-          "votes": 149
+          "votes": 198
         },
         {
           "dimension": "age",
           "value": "33",
-          "votes": 145
+          "votes": 193
         },
         {
           "dimension": "age",
           "value": "34",
-          "votes": 144
+          "votes": 190
         },
         {
           "dimension": "age",
           "value": "35",
-          "votes": 138
+          "votes": 173
         },
         {
           "dimension": "age",
           "value": "36",
-          "votes": 152
+          "votes": 194
         },
         {
           "dimension": "age",
           "value": "37",
-          "votes": 150
+          "votes": 180
         },
         {
           "dimension": "age",
           "value": "38",
-          "votes": 114
-        },
-        {
-          "dimension": "age",
-          "value": "39",
-          "votes": 118
-        },
-        {
-          "dimension": "age",
-          "value": "40",
-          "votes": 89
-        },
-        {
-          "dimension": "age",
-          "value": "41",
-          "votes": 96
-        },
-        {
-          "dimension": "age",
-          "value": "42",
-          "votes": 111
-        },
-        {
-          "dimension": "age",
-          "value": "43",
-          "votes": 93
-        },
-        {
-          "dimension": "age",
-          "value": "44",
-          "votes": 118
-        },
-        {
-          "dimension": "age",
-          "value": "45",
-          "votes": 88
-        },
-        {
-          "dimension": "age",
-          "value": "46",
-          "votes": 104
-        },
-        {
-          "dimension": "age",
-          "value": "47",
-          "votes": 112
-        },
-        {
-          "dimension": "age",
-          "value": "48",
-          "votes": 111
-        },
-        {
-          "dimension": "age",
-          "value": "49",
-          "votes": 115
-        },
-        {
-          "dimension": "age",
-          "value": "50",
-          "votes": 122
-        },
-        {
-          "dimension": "age",
-          "value": "51",
-          "votes": 129
-        },
-        {
-          "dimension": "age",
-          "value": "52",
-          "votes": 142
-        },
-        {
-          "dimension": "age",
-          "value": "53",
-          "votes": 113
-        },
-        {
-          "dimension": "age",
-          "value": "54",
-          "votes": 107
-        },
-        {
-          "dimension": "age",
-          "value": "55",
-          "votes": 142
-        },
-        {
-          "dimension": "age",
-          "value": "56",
-          "votes": 158
-        },
-        {
-          "dimension": "age",
-          "value": "57",
-          "votes": 105
-        },
-        {
-          "dimension": "age",
-          "value": "58",
-          "votes": 131
-        },
-        {
-          "dimension": "age",
-          "value": "59",
-          "votes": 122
-        },
-        {
-          "dimension": "age",
-          "value": "60",
-          "votes": 130
-        },
-        {
-          "dimension": "age",
-          "value": "61",
-          "votes": 136
-        },
-        {
-          "dimension": "age",
-          "value": "62",
-          "votes": 147
-        },
-        {
-          "dimension": "age",
-          "value": "63",
-          "votes": 115
-        },
-        {
-          "dimension": "age",
-          "value": "64",
-          "votes": 133
-        },
-        {
-          "dimension": "age",
-          "value": "65",
-          "votes": 116
-        },
-        {
-          "dimension": "age",
-          "value": "66",
           "votes": 150
         },
         {
           "dimension": "age",
-          "value": "67",
-          "votes": 119
+          "value": "39",
+          "votes": 142
         },
         {
           "dimension": "age",
-          "value": "68",
-          "votes": 135
-        },
-        {
-          "dimension": "age",
-          "value": "69",
-          "votes": 95
-        },
-        {
-          "dimension": "age",
-          "value": "70",
-          "votes": 108
-        },
-        {
-          "dimension": "age",
-          "value": "71",
-          "votes": 101
-        },
-        {
-          "dimension": "age",
-          "value": "72",
+          "value": "40",
           "votes": 110
         },
         {
           "dimension": "age",
-          "value": "73",
+          "value": "41",
+          "votes": 119
+        },
+        {
+          "dimension": "age",
+          "value": "42",
+          "votes": 135
+        },
+        {
+          "dimension": "age",
+          "value": "43",
+          "votes": 118
+        },
+        {
+          "dimension": "age",
+          "value": "44",
+          "votes": 137
+        },
+        {
+          "dimension": "age",
+          "value": "45",
+          "votes": 110
+        },
+        {
+          "dimension": "age",
+          "value": "46",
+          "votes": 120
+        },
+        {
+          "dimension": "age",
+          "value": "47",
+          "votes": 131
+        },
+        {
+          "dimension": "age",
+          "value": "48",
+          "votes": 128
+        },
+        {
+          "dimension": "age",
+          "value": "49",
+          "votes": 132
+        },
+        {
+          "dimension": "age",
+          "value": "50",
+          "votes": 145
+        },
+        {
+          "dimension": "age",
+          "value": "51",
+          "votes": 151
+        },
+        {
+          "dimension": "age",
+          "value": "52",
+          "votes": 169
+        },
+        {
+          "dimension": "age",
+          "value": "53",
+          "votes": 132
+        },
+        {
+          "dimension": "age",
+          "value": "54",
+          "votes": 125
+        },
+        {
+          "dimension": "age",
+          "value": "55",
+          "votes": 165
+        },
+        {
+          "dimension": "age",
+          "value": "56",
+          "votes": 173
+        },
+        {
+          "dimension": "age",
+          "value": "57",
+          "votes": 129
+        },
+        {
+          "dimension": "age",
+          "value": "58",
+          "votes": 158
+        },
+        {
+          "dimension": "age",
+          "value": "59",
+          "votes": 144
+        },
+        {
+          "dimension": "age",
+          "value": "60",
+          "votes": 150
+        },
+        {
+          "dimension": "age",
+          "value": "61",
+          "votes": 155
+        },
+        {
+          "dimension": "age",
+          "value": "62",
+          "votes": 161
+        },
+        {
+          "dimension": "age",
+          "value": "63",
+          "votes": 131
+        },
+        {
+          "dimension": "age",
+          "value": "64",
+          "votes": 147
+        },
+        {
+          "dimension": "age",
+          "value": "65",
+          "votes": 128
+        },
+        {
+          "dimension": "age",
+          "value": "66",
+          "votes": 170
+        },
+        {
+          "dimension": "age",
+          "value": "67",
+          "votes": 132
+        },
+        {
+          "dimension": "age",
+          "value": "68",
+          "votes": 159
+        },
+        {
+          "dimension": "age",
+          "value": "69",
+          "votes": 107
+        },
+        {
+          "dimension": "age",
+          "value": "70",
           "votes": 123
         },
         {
           "dimension": "age",
+          "value": "71",
+          "votes": 111
+        },
+        {
+          "dimension": "age",
+          "value": "72",
+          "votes": 117
+        },
+        {
+          "dimension": "age",
+          "value": "73",
+          "votes": 127
+        },
+        {
+          "dimension": "age",
           "value": "74",
-          "votes": 95
+          "votes": 104
         },
         {
           "dimension": "age",
           "value": "75",
-          "votes": 97
+          "votes": 106
         },
         {
           "dimension": "age",
           "value": "76",
-          "votes": 73
+          "votes": 83
         },
         {
           "dimension": "age",
           "value": "77",
-          "votes": 75
+          "votes": 79
         },
         {
           "dimension": "age",
           "value": "78",
-          "votes": 76
+          "votes": 81
         },
         {
           "dimension": "age",
           "value": "79",
-          "votes": 76
+          "votes": 84
         },
         {
           "dimension": "age",
           "value": "80",
-          "votes": 54
+          "votes": 56
         },
         {
           "dimension": "age",
           "value": "81",
-          "votes": 45
+          "votes": 48
         },
         {
           "dimension": "age",
           "value": "82",
-          "votes": 37
+          "votes": 39
         },
         {
           "dimension": "age",
           "value": "83",
-          "votes": 35
+          "votes": 39
         },
         {
           "dimension": "age",
           "value": "84",
-          "votes": 26
+          "votes": 27
         },
         {
           "dimension": "age",
           "value": "85",
-          "votes": 24
+          "votes": 26
         },
         {
           "dimension": "age",
           "value": "86",
-          "votes": 19
-        },
-        {
-          "dimension": "age",
-          "value": "87",
           "votes": 21
         },
         {
           "dimension": "age",
+          "value": "87",
+          "votes": 24
+        },
+        {
+          "dimension": "age",
           "value": "88",
-          "votes": 13
+          "votes": 15
         },
         {
           "dimension": "age",
           "value": "89",
-          "votes": 10
+          "votes": 11
         },
         {
           "dimension": "age",
@@ -1843,7 +1896,7 @@
         {
           "dimension": "age",
           "value": "92",
-          "votes": 8
+          "votes": 10
         },
         {
           "dimension": "age",
@@ -1853,7 +1906,7 @@
         {
           "dimension": "age",
           "value": "94",
-          "votes": 3
+          "votes": 4
         },
         {
           "dimension": "age",
@@ -1883,97 +1936,97 @@
         {
           "dimension": "age_group",
           "value": "18\u201324",
-          "votes": 2966
+          "votes": 4214
         },
         {
           "dimension": "age_group",
           "value": "25\u201334",
-          "votes": 2026
+          "votes": 2686
         },
         {
           "dimension": "age_group",
           "value": "35\u201344",
-          "votes": 1179
+          "votes": 1458
         },
         {
           "dimension": "age_group",
           "value": "45\u201364",
-          "votes": 2462
+          "votes": 2856
         },
         {
           "dimension": "age_group",
           "value": "65+",
-          "votes": 1865
+          "votes": 2052
         },
         {
           "dimension": "ethnicity",
           "value": "HISPANIC or LATINO",
-          "votes": 439
+          "votes": 597
         },
         {
           "dimension": "ethnicity",
           "value": "NOT HISPANIC or NOT LATINO",
-          "votes": 6285
+          "votes": 7688
         },
         {
           "dimension": "ethnicity",
           "value": "UNDESIGNATED",
-          "votes": 3774
+          "votes": 4981
         },
         {
           "dimension": "gender",
           "value": "F",
-          "votes": 4902
+          "votes": 6126
         },
         {
           "dimension": "gender",
           "value": "M",
-          "votes": 4412
+          "votes": 5436
         },
         {
           "dimension": "gender",
           "value": "U",
-          "votes": 1184
+          "votes": 1704
         },
         {
           "dimension": "party",
           "value": "DEM",
-          "votes": 4765
+          "votes": 5808
         },
         {
           "dimension": "party",
           "value": "GRE",
-          "votes": 18
+          "votes": 27
         },
         {
           "dimension": "party",
           "value": "LIB",
-          "votes": 22
+          "votes": 34
         },
         {
           "dimension": "party",
           "value": "REP",
-          "votes": 676
+          "votes": 868
         },
         {
           "dimension": "party",
           "value": "UNA",
-          "votes": 5017
+          "votes": 6529
         },
         {
           "dimension": "race",
           "value": "ASIAN",
-          "votes": 491
+          "votes": 662
         },
         {
           "dimension": "race",
           "value": "BLACK or AFRICAN AMERICAN",
-          "votes": 869
+          "votes": 1132
         },
         {
           "dimension": "race",
           "value": "INDIAN AMERICAN or ALASKA NATIVE",
-          "votes": 30
+          "votes": 42
         },
         {
           "dimension": "race",
@@ -1983,38 +2036,38 @@
         {
           "dimension": "race",
           "value": "OTHER",
-          "votes": 505
+          "votes": 670
         },
         {
           "dimension": "race",
           "value": "TWO or MORE RACES",
-          "votes": 85
+          "votes": 109
         },
         {
           "dimension": "race",
           "value": "UNDESIGNATED",
-          "votes": 1308
+          "votes": 1860
         },
         {
           "dimension": "race",
           "value": "WHITE",
-          "votes": 7209
+          "votes": 8790
         }
       ],
       "status_counts_before_accepted_filter": {
-        "ACCEPTED": 10498,
-        "CANCELLED": 26,
-        "SDR-FAILED VERIFICATION": 1
+        "ACCEPTED": 13266,
+        "CANCELLED": 33,
+        "SDR-FAILED VERIFICATION": 2
       },
       "source": {
         "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
-        "last_modified": "Thu, 29 Oct 2026 09:25:32 GMT",
-        "downloaded_at": "Fri, 30 Oct 2026 03:11:32 GMT",
-        "retrieved_at_utc": "2026-10-30T03:11:35.032440+00:00",
-        "sha256": "6ebb3c3cb9c11a37ae54a88230deffc27c521df2cdfa45be2eb11b2a1138b3b3",
-        "bytes": 93599261,
+        "last_modified": "Sat, 31 Oct 2026 09:27:26 GMT",
+        "downloaded_at": "Sat, 31 Oct 2026 17:30:33 GMT",
+        "retrieved_at_utc": "2026-10-31T17:30:42.423434+00:00",
+        "sha256": "3ebeb79dcd87e4ed515f1ce25029362fa4c6155a18d0febf00956b0db9c818ac",
+        "bytes": 113658474,
         "member": "WAKE_absentee_20261103.csv",
-        "wake_csv_sha256": "dcf14b2c5c3e1e8c95bb02d1ced21c4478b68e5a14cb74954d5f66499023f8ef"
+        "wake_csv_sha256": "bcbef713462bba51c9c7561eb3d331f977a6ace0026f3abe8784f0c13cc980d5"
       },
       "verification": "Exact match to published aggregate table and every campus demographic breakdown; original archive and member hashes verified"
     }
