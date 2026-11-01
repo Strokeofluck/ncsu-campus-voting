@@ -6,4 +6,18 @@
 .passby-share-track{height:12px;background:color-mix(in srgb,var(--text) 8%,var(--background));}
 .passby-share-track i{display:block;height:100%;}
 .passby-scope,.passby-example{font-size:13px;line-height:1.6;}
+.passby-review{border-top:1px solid var(--border);margin-top:24px;padding-top:18px;}
+.passby-review h3{font-size:18px;margin:0 0 12px;}
+.passby-review-count{font-size:13px;line-height:1.6;}
+.passby-review-table{min-width:550px;font-size:12px;margin-top:14px;}
+.passby-review-table small{display:block;color:var(--secondary);}
+.passby-review button{font:inherit;font-size:12px;color:var(--text);background:var(--background);border:1px solid var(--border);padding:7px 10px;cursor:pointer;}
+.passby-review button:disabled{opacity:.45;cursor:default;}
+.passby-review-pages{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:14px;font-size:12px;}
+.passby-source-scope{border-left:3px solid var(--text);padding:12px 16px;margin:16px 0 20px;font-size:13px;line-height:1.6;}
+.passby-source-scope p{margin:8px 0 0;}
+.passby-destination-sources{font-size:13px;line-height:1.6;margin:16px 0 24px;}
+.passby-destination-sources summary{font-weight:600;cursor:pointer;}
+.passby-source-table{font-size:12px;min-width:640px;}
+.passby-source-table small{display:block;color:var(--secondary);}
 @media(max-width:600px){.passby-results{gap:16px;}.passby-results>div{font-size:12px;}.passby-results strong{font-size:28px;}}

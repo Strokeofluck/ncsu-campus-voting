@@ -1,0 +1,804 @@
+{
+  "gis_snapshot_date": "2026-11-01T04:24:08.860367+00:00",
+  "classification_field": "USE_NAME",
+  "official_layer_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1",
+  "official_22_record_query_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+IN+%28%27103%27%2C%27106%27%2C%27082%27%2C%27102%27%2C%27047%27%2C%27783A%27%2C%27036%27%2C%27011%27%2C%27051%27%2C%27025%27%2C%27011A%27%2C%27018%27%2C%27078%27%2C%27033%27%2C%27775%27%2C%27046%27%2C%27104%27%2C%27045%27%2C%27032A%27%2C%27022%27%2C%27023%27%2C%27043%27%29&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+  "source_snapshot_sha256": "fbd4e1efe853be71e11bcb53e190bd351948e4d0b72881c3b1498f132ae59d63",
+  "scope": "Curated model of 22 destinations: 16 GIS Classroom buildings, 3 GIS Dining buildings plus Talley (GIS Student Center; dining verified by university website), and 2 selected main libraries. Not all campus teaching/dining/library locations and not observed student destinations.",
+  "rows": [
+    {
+      "building_number": "103",
+      "model_name": "Case Academic Ctr",
+      "model_category": "Dining",
+      "gis_building_name": "Case Academic Center",
+      "gis_use_name": "Dining",
+      "gis_use_code": "26",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Dining. Current hours and access restrictions are not verified.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27103%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "106",
+      "model_name": "Clark Hall",
+      "model_category": "Dining",
+      "gis_building_name": "Clark Hall",
+      "gis_use_name": "Dining",
+      "gis_use_code": "26",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Dining. Current hours and access restrictions are not verified.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27106%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "082",
+      "model_name": "Fountain Dining Hall",
+      "model_category": "Dining",
+      "gis_building_name": "Fountain Dining Hall",
+      "gis_use_name": "Dining",
+      "gis_use_code": "26",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Dining. Current hours and access restrictions are not verified.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27082%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "102",
+      "model_name": "Talley Student Union",
+      "model_category": "Dining",
+      "gis_building_name": "Talley Student Union",
+      "gis_use_name": "Student Center",
+      "gis_use_code": "24",
+      "gis_status": "Active Building",
+      "selection_reason": "Analyst addition: GIS says Student Center. NC State Student Centers independently identifies dining at Talley.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27102%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": "https://studentcenters.ncsu.edu/location/talley/"
+    },
+    {
+      "building_number": "047",
+      "model_name": "Hill Library",
+      "model_category": "Library",
+      "gis_building_name": "D.H. Hill Jr. Library (East Wing)",
+      "gis_use_name": "Library",
+      "gis_use_code": "16",
+      "gis_status": "Active Building",
+      "selection_reason": "Selected main library destination; not an exhaustive list of campus libraries. Hill footprint codes 047/047A/047B/047C are merged and count as one destination.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27047%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": "https://www.lib.ncsu.edu/visit"
+    },
+    {
+      "building_number": "783A",
+      "model_name": "Hunt Library",
+      "model_category": "Library",
+      "gis_building_name": "James B Hunt Jr Centennial Campus Library",
+      "gis_use_name": "Library",
+      "gis_use_code": "16",
+      "gis_status": "Active Building",
+      "selection_reason": "Selected main library destination; not an exhaustive list of campus libraries.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27783A%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": "https://www.lib.ncsu.edu/visit"
+    },
+    {
+      "building_number": "036",
+      "model_name": "1911 Bldg",
+      "model_category": "Teaching",
+      "gis_building_name": "1911 Bldg",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27036%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "011",
+      "model_name": "Brooks Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Brooks Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27011%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "051",
+      "model_name": "Broughton Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Broughton Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27051%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "025",
+      "model_name": "Caldwell Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Caldwell Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27025%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "011A",
+      "model_name": "Kamphoefner Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Kamphoefner Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27011A%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "018",
+      "model_name": "Leazar Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Leazar Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27018%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "078",
+      "model_name": "Nelson Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Nelson Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27078%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "033",
+      "model_name": "Park Shops",
+      "model_category": "Teaching",
+      "gis_building_name": "Park Shops",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27033%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "775",
+      "model_name": "Partners I",
+      "model_category": "Teaching",
+      "gis_building_name": "Partners Building I",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27775%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "046",
+      "model_name": "Patterson Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Patterson Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27046%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "104",
+      "model_name": "Price Music Ctr",
+      "model_category": "Teaching",
+      "gis_building_name": "Price Music Center",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27104%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "045",
+      "model_name": "Ricks Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Ricks Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27045%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "032A",
+      "model_name": "SAS Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "SAS Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27032A%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "022",
+      "model_name": "Tompkins Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Tompkins Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27022%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "023",
+      "model_name": "Winston Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Winston Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27023%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    },
+    {
+      "building_number": "043",
+      "model_name": "Withers Hall",
+      "model_category": "Teaching",
+      "gis_building_name": "Withers Hall",
+      "gis_use_name": "Classroom",
+      "gis_use_code": "8",
+      "gis_status": "Active Building",
+      "selection_reason": "GIS USE_NAME = Classroom; used as a teaching-building proxy. Not verified class schedules.",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27043%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson",
+      "additional_official_source_url": ""
+    }
+  ],
+  "hill_geometry_components": [
+    {
+      "attributes": {
+        "OBJECTID": 590,
+        "Shape.STArea()": 4780.76580388,
+        "Shape.STLength()": 311.3103514981408,
+        "BLDG_NUM": "047",
+        "BLDG_NAME": "D.H. Hill Jr. Library (East Wing)",
+        "BLDG_ABBR": "DHL",
+        "STATUSCODE": "A",
+        "STATUS_DESCR": "Active Building",
+        "SITECODE": "NORTH",
+        "SITE_DESCR": "North",
+        "ADDRESS": "2 Broughton Dr.",
+        "CITY": "Raleigh",
+        "STATE": "NC",
+        "ZIP": "27607",
+        "BLDG_COUNTRY": "USA",
+        "BLDG_COUNTY_CD": "092",
+        "BLDG_COUNTY_NAME": "Wake",
+        "GROSS": 103744.257,
+        "ASSIGNABLE": 71648.0953,
+        "IMG_FILE_PATH": "images\\ClientImages\\047.jpg",
+        "LATITUDE": 35.78754783,
+        "LONGITUDE": -78.66957028,
+        "COMPLEX_CODE": "1-92-18",
+        "COMPLEX_NAME": "NCSU - NC State University",
+        "STATE_PROP_NUM": "44",
+        "CONSYEAR": "1953",
+        "CONSCOST": 1219087.0,
+        "REPLACCOST": 56403000.0,
+        "REPCOSTDAT": 1773644641000,
+        "NUMOFFLOOR": 6,
+        "RESIDCODE": "1",
+        "RESID_NAME": "Non-Residential",
+        "OWNERCODE": "1",
+        "OWNER_NAME": "Owned in fee simple",
+        "CONDCODE": "3",
+        "USECODE": "16",
+        "USE_NAME": "Library",
+        "FUNDCODE": "2",
+        "FUND_NAME": "State Appropriated",
+        "ADAENTRY": "Yes",
+        "ACCODE": "6",
+        "ACCODE_NAME": "75 - 100 percent",
+        "MAPNAME": "Hill Library",
+        "BLDGNUM": "047",
+        "HIS_LNKURL": "https://docs.google.com/document/d/1kLbwu2SmZLkpTl6vD3PlEFCBOLeYy7YNpG9hM5j5f5E/",
+        "SUB_PRECINCT": "",
+        "UNCSO_APPR": "1-Appropriated",
+        "NC_PROP_ID": "9238"
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -78.6691634680848,
+              35.78766346670228
+            ],
+            [
+              -78.6690749193506,
+              35.78764415239643
+            ],
+            [
+              -78.66919229771722,
+              35.78728688826554
+            ],
+            [
+              -78.66928101533468,
+              35.78730623836488
+            ],
+            [
+              -78.66927925014514,
+              35.78731161039583
+            ],
+            [
+              -78.66948347853173,
+              35.787356154807846
+            ],
+            [
+              -78.6694868265528,
+              35.787345964568956
+            ],
+            [
+              -78.66957605082007,
+              35.78736542395994
+            ],
+            [
+              -78.66957267405292,
+              35.78737570018373
+            ],
+            [
+              -78.66978100863867,
+              35.787421140868645
+            ],
+            [
+              -78.66978195815791,
+              35.787418253005264
+            ],
+            [
+              -78.66986869588848,
+              35.78743713159969
+            ],
+            [
+              -78.66986774187767,
+              35.787440040594895
+            ],
+            [
+              -78.6700139804194,
+              35.78747187557619
+            ],
+            [
+              -78.66989642688132,
+              35.78781857633014
+            ],
+            [
+              -78.66974742242681,
+              35.78778608929854
+            ],
+            [
+              -78.66972842126194,
+              35.7878439213357
+            ],
+            [
+              -78.66964375235146,
+              35.78782545455492
+            ],
+            [
+              -78.6696630149261,
+              35.787766820202044
+            ],
+            [
+              -78.66916518656194,
+              35.787658236792396
+            ],
+            [
+              -78.6691634680848,
+              35.78766346670228
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 589,
+        "Shape.STArea()": 3074.37971578,
+        "Shape.STLength()": 232.32004137691268,
+        "BLDG_NUM": "047A",
+        "BLDG_NAME": "D.H. Hill Jr. Library (Erdahl-Cloyd West Wing)",
+        "BLDG_ABBR": "EC",
+        "STATUSCODE": "A",
+        "STATUS_DESCR": "Active Building",
+        "SITECODE": "NORTH",
+        "SITE_DESCR": "North",
+        "ADDRESS": "2 Broughton Dr.",
+        "CITY": "Raleigh",
+        "STATE": "NC",
+        "ZIP": "27607",
+        "BLDG_COUNTRY": "USA",
+        "BLDG_COUNTY_CD": "092",
+        "BLDG_COUNTY_NAME": "Wake",
+        "GROSS": 59783.2758,
+        "ASSIGNABLE": 37807.1676,
+        "IMG_FILE_PATH": "images\\ClientImages\\047A.jpg",
+        "LATITUDE": 35.78771657,
+        "LONGITUDE": -78.67057819,
+        "COMPLEX_CODE": "1-92-18",
+        "COMPLEX_NAME": "NCSU - NC State University",
+        "STATE_PROP_NUM": "51",
+        "CONSYEAR": "1952",
+        "CONSCOST": 1147000.0,
+        "REPLACCOST": 26756887.0,
+        "REPCOSTDAT": 1773644641000,
+        "NUMOFFLOOR": 5,
+        "RESIDCODE": "1",
+        "RESID_NAME": "Non-Residential",
+        "OWNERCODE": "1",
+        "OWNER_NAME": "Owned in fee simple",
+        "CONDCODE": "3",
+        "USECODE": "20",
+        "USE_NAME": "Library and Dining",
+        "FUNDCODE": "1",
+        "FUND_NAME": "Self-Liquidating",
+        "ADAENTRY": "Yes",
+        "ACCODE": "6",
+        "ACCODE_NAME": "75 - 100 percent",
+        "MAPNAME": "",
+        "BLDGNUM": "047A",
+        "HIS_LNKURL": "https://docs.google.com/document/d/1kLbwu2SmZLkpTl6vD3PlEFCBOLeYy7YNpG9hM5j5f5E/",
+        "SUB_PRECINCT": "",
+        "UNCSO_APPR": "1-Appropriated",
+        "NC_PROP_ID": "9691"
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -78.67092006972398,
+              35.78766489569108
+            ],
+            [
+              -78.67081788456379,
+              35.78797372500523
+            ],
+            [
+              -78.67026437143181,
+              35.787852138184604
+            ],
+            [
+              -78.67036712522558,
+              35.78754160177026
+            ],
+            [
+              -78.67050449200555,
+              35.78757177599224
+            ],
+            [
+              -78.67052358839186,
+              35.78751406034991
+            ],
+            [
+              -78.67080023177013,
+              35.78757482780872
+            ],
+            [
+              -78.67078056764858,
+              35.78763425294751
+            ],
+            [
+              -78.67092006972398,
+              35.78766489569108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 588,
+        "Shape.STArea()": 1646.11480981,
+        "Shape.STLength()": 178.34910404058934,
+        "BLDG_NUM": "047B",
+        "BLDG_NAME": "D.H. Hill Jr. Library (North Bookstacks)",
+        "BLDG_ABBR": "DLH",
+        "STATUSCODE": "A",
+        "STATUS_DESCR": "Active Building",
+        "SITECODE": "NORTH",
+        "SITE_DESCR": "North",
+        "ADDRESS": "2 Broughton Dr.",
+        "CITY": "Raleigh",
+        "STATE": "NC",
+        "ZIP": "27607",
+        "BLDG_COUNTRY": "USA",
+        "BLDG_COUNTY_CD": "092",
+        "BLDG_COUNTY_NAME": "Wake",
+        "GROSS": 109169.7005,
+        "ASSIGNABLE": 67831.9932,
+        "IMG_FILE_PATH": "images\\ClientImages\\047B.jpg",
+        "LATITUDE": 35.7876618,
+        "LONGITUDE": -78.67013416,
+        "COMPLEX_CODE": "1-92-18",
+        "COMPLEX_NAME": "NCSU - NC State University",
+        "STATE_PROP_NUM": "51",
+        "CONSYEAR": "1972",
+        "CONSCOST": 3141320.0,
+        "REPLACCOST": 45216480.0,
+        "REPCOSTDAT": 1773644641000,
+        "NUMOFFLOOR": 11,
+        "RESIDCODE": "1",
+        "RESID_NAME": "Non-Residential",
+        "OWNERCODE": "1",
+        "OWNER_NAME": "Owned in fee simple",
+        "CONDCODE": "3",
+        "USECODE": "16",
+        "USE_NAME": "Library",
+        "FUNDCODE": "2",
+        "FUND_NAME": "State Appropriated",
+        "ADAENTRY": "Yes",
+        "ACCODE": "6",
+        "ACCODE_NAME": "75 - 100 percent",
+        "MAPNAME": "",
+        "BLDGNUM": "047B",
+        "HIS_LNKURL": "https://docs.google.com/document/d/1kLbwu2SmZLkpTl6vD3PlEFCBOLeYy7YNpG9hM5j5f5E/",
+        "SUB_PRECINCT": "",
+        "UNCSO_APPR": "1-Appropriated",
+        "NC_PROP_ID": "9238"
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -78.67024334726088,
+              35.787786944795876
+            ],
+            [
+              -78.67022446557193,
+              35.78778282470888
+            ],
+            [
+              -78.67020051468984,
+              35.787855729230095
+            ],
+            [
+              -78.67015818517532,
+              35.787846498027704
+            ],
+            [
+              -78.67015290308146,
+              35.78786257538869
+            ],
+            [
+              -78.67000058204694,
+              35.78782935384277
+            ],
+            [
+              -78.67000534221962,
+              35.787814868690575
+            ],
+            [
+              -78.66996349599874,
+              35.787805741687976
+            ],
+            [
+              -78.66998729865882,
+              35.78773329401803
+            ],
+            [
+              -78.6699296151395,
+              35.78772069546204
+            ],
+            [
+              -78.6699920633231,
+              35.787536514678635
+            ],
+            [
+              -78.67005116618057,
+              35.78754928815309
+            ],
+            [
+              -78.67007432115534,
+              35.78747874071427
+            ],
+            [
+              -78.67030640001067,
+              35.78752936243565
+            ],
+            [
+              -78.67028322976456,
+              35.78759989015455
+            ],
+            [
+              -78.67030335921345,
+              35.78760428132916
+            ],
+            [
+              -78.67034346988919,
+              35.78761309282577
+            ],
+            [
+              -78.67028305728803,
+              35.787795667370496
+            ],
+            [
+              -78.67024334726088,
+              35.787786944795876
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 587,
+        "Shape.STArea()": 1536.166964,
+        "Shape.STLength()": 215.57360660262424,
+        "BLDG_NUM": "047C",
+        "BLDG_NAME": "D.H. Hill Jr. Library (South Bookstacks)",
+        "BLDG_ABBR": "DHN",
+        "STATUSCODE": "A",
+        "STATUS_DESCR": "Active Building",
+        "SITECODE": "NORTH",
+        "SITE_DESCR": "North",
+        "ADDRESS": "2 Broughton Dr.",
+        "CITY": "Raleigh",
+        "STATE": "NC",
+        "ZIP": "27607",
+        "BLDG_COUNTRY": "USA",
+        "BLDG_COUNTY_CD": "092",
+        "BLDG_COUNTY_NAME": "Wake",
+        "GROSS": 111025.5699,
+        "ASSIGNABLE": 68575.2372,
+        "IMG_FILE_PATH": "images\\ClientImages\\047C.jpg",
+        "LATITUDE": 35.78738228,
+        "LONGITUDE": -78.67014392,
+        "COMPLEX_CODE": "1-92-18",
+        "COMPLEX_NAME": "NCSU - NC State University",
+        "STATE_PROP_NUM": "51",
+        "CONSYEAR": "1990",
+        "CONSCOST": 9325000.0,
+        "REPLACCOST": 46700973.0,
+        "REPCOSTDAT": 1773644641000,
+        "NUMOFFLOOR": 12,
+        "RESIDCODE": "1",
+        "RESID_NAME": "Non-Residential",
+        "OWNERCODE": "1",
+        "OWNER_NAME": "Owned in fee simple",
+        "CONDCODE": "3",
+        "USECODE": "16",
+        "USE_NAME": "Library",
+        "FUNDCODE": "2",
+        "FUND_NAME": "State Appropriated",
+        "ADAENTRY": "Yes",
+        "ACCODE": "6",
+        "ACCODE_NAME": "75 - 100 percent",
+        "MAPNAME": "",
+        "BLDGNUM": "047C",
+        "HIS_LNKURL": "https://docs.google.com/document/d/1kLbwu2SmZLkpTl6vD3PlEFCBOLeYy7YNpG9hM5j5f5E/",
+        "SUB_PRECINCT": "",
+        "UNCSO_APPR": "1-Appropriated",
+        "NC_PROP_ID": "9238"
+      },
+      "geometry": {
+        "rings": [
+          [
+            [
+              -78.66980741371813,
+              35.78742378388661
+            ],
+            [
+              -78.66982696375366,
+              35.78736421940748
+            ],
+            [
+              -78.66980333536675,
+              35.78735906744955
+            ],
+            [
+              -78.66981734010201,
+              35.78731644099689
+            ],
+            [
+              -78.6698337604071,
+              35.78732002332203
+            ],
+            [
+              -78.66985829070256,
+              35.78724535847974
+            ],
+            [
+              -78.67012922708382,
+              35.78730445230296
+            ],
+            [
+              -78.67014354173789,
+              35.78726088068695
+            ],
+            [
+              -78.67044982592726,
+              35.787327682035375
+            ],
+            [
+              -78.67043340562219,
+              35.78737766477724
+            ],
+            [
+              -78.67035976083689,
+              35.78736160262097
+            ],
+            [
+              -78.67032389559915,
+              35.78747077741637
+            ],
+            [
+              -78.67028637207142,
+              35.78746259331981
+            ],
+            [
+              -78.67026724244744,
+              35.787520821279436
+            ],
+            [
+              -78.67007432115534,
+              35.78747874071427
+            ],
+            [
+              -78.67007645016257,
+              35.787472253045834
+            ],
+            [
+              -78.66993071916896,
+              35.78744049749364
+            ],
+            [
+              -78.66994720864432,
+              35.78739025682923
+            ],
+            [
+              -78.66986284426274,
+              35.78737187374429
+            ],
+            [
+              -78.66984324302322,
+              35.78743159124605
+            ],
+            [
+              -78.66980741371813,
+              35.78742378388661
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "comparison_sites": [
+    {
+      "building_number": "102",
+      "year": 2022,
+      "gis_building_name": "Talley Student Union",
+      "gis_use_name": "Student Center",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27102%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson"
+    },
+    {
+      "building_number": "131",
+      "year": 2026,
+      "gis_building_name": "Western Blvd. Business Service",
+      "gis_use_name": "Office",
+      "official_gis_record_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=BLDG_NUM+%3D+%27131%27&outFields=BLDG_NUM%2CBLDG_NAME%2CMAPNAME%2CUSE_NAME%2CUSECODE%2CSTATUS_DESCR%2CADDRESS&returnGeometry=false&f=pjson"
+    }
+  ]
+}

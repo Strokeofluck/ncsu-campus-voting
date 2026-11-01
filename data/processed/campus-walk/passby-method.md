@@ -13,3 +13,17 @@ GIS paths and building access assumptions are the same as the walking comparison
 Reproduce with `python scripts/build_campus_passby.py --library-dir optional/path`, using shapely, pyproj and networkx. The base route builder's `--network-only` mode loads the same graph without overwriting prior reviewed route evidence.
 
 The map defaults to All routes together, fitted to the complete eligible network. Repeated semi-transparent paths darken where modeled routes overlap; darkness is not observed pedestrian flow. The Selected trip mode highlights one pair and changes the zoom. The All halls → every destination button resets the destination-type filter and includes Talley-ending dining trips explicitly, updating both percentage denominators.
+
+## Equal circles and reviewable matching routes
+
+The default map now uses equal ground-radius circles around the same mapped entrance points used by the walking model: Talley entrance OBJECTID 414 and Western Boulevard entrance OBJECTID 210. These are GIS building access points, not confirmed election-room doors. Each route's new `talley_entrance_nearest_m` and `western_entrance_nearest_m` fields measure minimum distance to those points on the full-resolution modeled path. Both use the same 25, 50 or 100 m radius. The original footprint basis remains selectable, with all prior distances and geometry unchanged.
+
+The choice materially changes Talley's count: at 50 m, excluding Talley-ending trips, entrance circles count 25 / 756 (3.3%), while the original whole-footprint buffer counts 334 / 756 (44.2%). Both report zero matching Western routes in that scenario. These are different geographic definitions; do not compare their percentages without naming the basis.
+
+Purple routes, count, percentage, paginated route list and matching-route download all use the exact same current destination filters, Talley-trip inclusion setting, basis and radius. “Entering the zone” means minimum distance is at most the radius; it includes touches and, if enabled, trips ending at Talley. It does not establish student behavior, building visibility or voting.
+
+## Exact destination classifications and audit
+
+The selected destinations comprise 16 GIS Classroom buildings, 3 GIS Dining buildings, Talley (GIS Student Center; dining established separately from NC State's Student Centers website), and 2 selected main library destinations. “Teaching” and “Dining” in the model are our labels. The university did not publish this 22-building grouping or the modeled route percentages. This is neither an exhaustive set of campus teaching/dining/library locations nor a verification of hours, current class schedules, access restrictions or actual visits.
+
+`destination-sources.csv` and `destination-sources.json` provide each exact GIS USE_NAME, USECODE, BLDG_NUM and original BLDG_NAME, plus the inclusion rationale and a live official query URL. `destination-gis-records.json` preserves the 22 full original feature records from the hash-checked frozen dataset. The entire original Buildings dataset is preserved in official-gis-snapshot.zip. Regenerate this audit with scripts/build_campus_destination_sources.py. A live 22-record official query was checked against the frozen USE_NAME values on 2026-11-01; all matched. Live source records may subsequently change, so retain the frozen snapshot for reproduction.
