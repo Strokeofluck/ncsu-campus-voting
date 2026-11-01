@@ -38,7 +38,12 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
  const ageTableCell=(y,band)=>{const r=ageLookup.get(`${y}|${band}`);return <><span className="voting-final-count">{num(r?.site_ballots)} at {y===2026?'Western Boulevard':'Talley'}</span><span className="voting-final-detail">{num(r?.other_wake_ballots)} at other Wake locations</span><span className="voting-final-detail">{pct(r?.site_share_pct)} of {num(r?.wake_ballots)} used the named site</span></>;};
  const companionArea=selected==='PRECINCT 01-31'?'PRECINCT 01-23':'PRECINCT 01-31';
  const companionRows=snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&r.area===companionArea);
- const mapEvidenceRows=[...rows.filter(r=>r.area!==selected),...selectedAgeRows];
+ const pairedAreas=['PRECINCT 01-23','PRECINCT 01-31'];
+ const pairedRows=snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&pairedAreas.includes(r.area));
+ const pairedLookup=new Map(pairedRows.map(r=>[`${r.area}|${r.year}|${r.cohort}`,r]));
+ const pairedBands=[...AGE_BANDS,...(pairedRows.some(r=>r.cohort==='Unknown / outside range'&&r.wake_ballots>0)?['Unknown / outside range']:[]),'All ages'];
+ const evidenceAreas=new Set([...pairedAreas,selected]);
+ const mapEvidenceRows=[...rows.filter(r=>!evidenceAreas.has(r.area)),...snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&evidenceAreas.has(r.area))];
  const selectArea=area=>{setSelected(area);handler.current?.(area);};
  const selectRef=useRef(selectArea);selectRef.current=selectArea;
  const styleFor=area=>{
@@ -103,7 +108,7 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
  const focusSelected=()=>{const layer=layersRef.current.get(selected);if(layer)mapRef.current?.fitBounds(layer.getBounds(),{padding:[35,35],maxZoom:16});};
  if(!visible('voting-precinct-map'))return null;
  return <div id="precinct-map" className="voting-map-block">
-  <DataComponent id="voting-precinct-map" queryId="geography" queryIds={['geography','precinct_shapes','voting_site_points']} sourceRowsByQuery={{geography:mapEvidenceRows,precinct_shapes:shapes,voting_site_points:points}} displayRows={[...mapped.filter(r=>r.area!==selected),...selectedAgeRows]} kind="custom" title="Talley and Western Boulevard · precinct map">
+  <DataComponent id="voting-precinct-map" queryId="geography" queryIds={['geography','precinct_shapes','voting_site_points']} sourceRowsByQuery={{geography:mapEvidenceRows,precinct_shapes:shapes,voting_site_points:points}} displayRows={mapEvidenceRows} kind="custom" title="Talley and Western Boulevard · precinct map">
    <RichNarrative id="voting-map-intro" value="Select a precinct to see where its early voters voted. Both pins stay visible as location references: Talley was the compared site in 2022/2024; Western Boulevard is the compared site in 2026."/>
    <div className="voting-controls voting-map-controls">
     <label>Map year <select value={year} onChange={e=>setYear(Number(e.target.value))}><option value={2026}>2026 · Western Boulevard · midterm</option><option value={2024}>2024 · Talley · presidential</option><option value={2022}>2022 · Talley · midterm</option></select></label>
@@ -119,23 +124,32 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
      <div className="voting-map-legend" aria-label="Map color legend"><span>{year} · {cohort==='All ages'?'All ages':`Ages ${cohort}`} · share using {year===2026?'Western Boulevard':'Talley'}</span><div className="voting-map-color-scale">{COLORS.map((c,i)=><span key={c}><i style={{background:c}}/>{i*20}–{(i+1)*20}%</span>)}<span><i style={{background:'#bcbcbc'}}/>N/A</span></div></div>
      <div className="voting-map-site-key">{points.map(point=><button key={point.id} type="button" onClick={()=>{selectArea(point.current_precinct_area);mapRef.current?.setView([point.latitude,point.longitude],16);}}><span className={`voting-map-key-dot voting-map-key-${point.id}`}>{point.id==='talley'?1:2}</span>{point.name} · {point.current_precinct_area.replace('PRECINCT ','')}</button>)}</div>
     </div>
-    <aside className="voting-map-age-panel" aria-label="Selected precinct all age comparisons" data-reviewed-rows>
-     <header><h3>{selected}</h3><p>All age groups · first 16 early-voting days. Click an age heading to shade the map for that group.</p><p className="voting-map-age-key"><i/> Named site <span/> Other Wake locations</p></header>
-     {!shapeAreas.has(selected)&&<p className="voting-map-boundary-note">This recorded precinct has no matching outline in the current GIS snapshot. Its counts are retained here.</p>}
-     <div className="voting-map-age-cards">
-      {[...ageBands,'All ages'].map(band=><section key={band} className={`voting-map-age-card${cohort===band?' voting-map-age-card-selected':''}`} aria-label={`${band==='All ages'?'All ages combined':`Ages ${band}`} comparison`}>
-       <h4><button type="button" aria-pressed={cohort===band} onClick={()=>onCohortChange?.(band)}>{band==='All ages'?'All ages combined':band==='Unknown / outside range'?'Unknown age':`Ages ${band}`}{cohort===band&&<span>Map shading</span>}</button></h4>
-       {YEARS.map(y=>{const r=ageLookup.get(`${y}|${band}`);return <div className="voting-map-age-year" key={y}>
+
+   </div>
+   <section className="voting-precinct-pairs" aria-label="Precinct 01-23 and 01-31 age comparison" data-reviewed-rows>
+    <RichNarrative id="voting-map-pairs:intro" value="## Compare the two site precincts
+
+All age groups are visible below the map, with 01-23 beside 01-31. Matching age groups and years align. Click an age heading to select that precinct and age for the map. These two comparison areas stay visible when another precinct is selected."/>
+    <div className="voting-map-age-key"><i/> Named site <span/> Other Wake locations</div>
+    <div className="voting-precinct-pair-headings"><h3>PRECINCT 01-23 <small>Talley Student Union area</small></h3><h3>PRECINCT 01-31 <small>Western Boulevard Business Services area</small></h3></div>
+    {pairedBands.map(band=><div className="voting-precinct-age-pair" key={band} aria-label={`${band==='All ages'?'All ages combined':`Ages ${band}`} across both precincts`}>
+     {pairedAreas.map(area=>{const chosen=cohort===band&&selected===area,old=pairedLookup.get(`${area}|2022|${band}`),current=pairedLookup.get(`${area}|2026|${band}`),countChange=old?.area_present&&current?.area_present?current.site_ballots-old.site_ballots:null,shareChange=typeof old?.site_share_pct==='number'&&typeof current?.site_share_pct==='number'?current.site_share_pct-old.site_share_pct:null;
+      const signed=(v,places=0)=>typeof v==='number'?`${v>0?'+':''}${v.toLocaleString('en-US',{minimumFractionDigits:places,maximumFractionDigits:places})}`:'N/A';
+      return <section key={area} className={`voting-map-age-card${chosen?' voting-map-age-card-selected':''}`} aria-label={`${area} ${band==='All ages'?'All ages combined':`Ages ${band}`} comparison`}>
+       <p className="voting-map-card-area">{area} · {area==='PRECINCT 01-23'?'Talley area':'Western Boulevard area'}</p>
+       <h4><button type="button" aria-pressed={chosen} onClick={()=>{selectArea(area);onCohortChange?.(band);}}>{band==='All ages'?'All ages combined':band==='Unknown / outside range'?'Unknown age':`Ages ${band}`}{chosen&&<span>Map shading</span>}</button></h4>
+       <div className="voting-map-card-years">{YEARS.map(y=>{const r=pairedLookup.get(`${area}|${y}|${band}`);return <div className="voting-map-age-year" key={y}>
         <h5>{y} · {y===2026?'Western Boulevard':'Talley'}</h5>
         <div><strong>{num(r?.site_ballots)}</strong> at {y===2026?'Western Boulevard':'Talley'}</div><div><strong>{num(r?.other_wake_ballots)}</strong> at other Wake locations</div>
         <div className="voting-map-share-track" aria-hidden="true"><span style={{width:`${r?.site_share_pct??0}%`}}/></div>
         <div className="voting-map-age-rate">{pct(r?.site_share_pct)} used the named site</div><small>{num(r?.wake_ballots)} total early ballots</small>
-       </div>;})}
-      </section>)}
-     </div>
-     <p className="voting-map-boundary-note">Age bands do not overlap; All ages combines them. These are different yearly groups, not proof that the same people changed sites. 2024 was presidential; 2022 and 2026 are midterms.</p>
-    </aside>
-   </div>
+       </div>;})}</div>
+       <p className="voting-map-age-change">2022 → 2026: {signed(countChange)} named-site ballots · {signed(shareChange,1)} percentage points in site share</p>
+      </section>;
+     })}
+    </div>)}
+    <RichNarrative id="voting-map-pairs:limits" value="Each share divides named-site ballots by all accepted early ballots from the same precinct, age group and year. Changes use unrounded shares and compare 2022 with 2026. All ages combines the nonoverlapping age bands. These are the first 16 early-voting days, not full-election turnout. Current boundaries may differ from earlier ones; the groups do not track the same people across years. 2024 was presidential; 2022 and 2026 are midterms."/>
+   </section>
    <p className="voting-map-coverage">{unmappedBallots>0?`${num(unmappedBallots)} ${year} ballots in this age group have no matching current outline (${unmapped.map(r=>r.area).join(', ')}). They remain in the tables and CSV.`:`All ${year} precinct-coded ballots in this age group have a matching outline.`}</p>
    <RichNarrative id="voting-precinct-map:math" value="Color = ballots at that year’s named site ÷ all accepted early ballots from the same precinct and age group × 100. This describes voting-location use, not turnout among residents. Drag to pan, use +/− to zoom, or select a precinct from the menu. Selecting a region also filters the charts and table below."/>
    <a href="data/processed/comparison/precinct_map_sources.json" download>Download the public map-source snapshot (.json)</a>
