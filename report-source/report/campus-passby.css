@@ -1,0 +1,9 @@
+.campus-passby-section{min-width:0;width:100%;margin-block:36px;}
+.passby-checkbox{display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:18px;}
+.passby-results{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-block:18px;border-block:1px solid var(--border);}
+.passby-results>div{display:flex;flex-direction:column;gap:8px;font-size:13px;}
+.passby-results strong{font-size:32px;font-weight:500;font-variant-numeric:tabular-nums;}
+.passby-share-track{height:12px;background:color-mix(in srgb,var(--text) 8%,var(--background));}
+.passby-share-track i{display:block;height:100%;}
+.passby-scope,.passby-example{font-size:13px;line-height:1.6;}
+@media(max-width:600px){.passby-results{gap:16px;}.passby-results>div{font-size:12px;}.passby-results strong{font-size:28px;}}

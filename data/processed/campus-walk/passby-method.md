@@ -1,0 +1,13 @@
+# Modeled walks near the voting sites
+
+This scenario is not an estimate of how many students really pass a voting site or vote there. It models one shortest path for each usable housing-building × destination-building pair. Each pair has equal weight, without occupancy, enrollment or visitation data.
+
+The 36 usable housing entrances come from the existing walking model. Destinations are active local GIS Classroom buildings (excluding closed Poe Hall), the two main library complexes (D. H. Hill's GIS wings are merged and counted once), and GIS Dining buildings plus Talley. NC State identifies Talley as a dining venue: https://studentcenters.ncsu.edu/location/talley/. The library list is at https://www.lib.ncsu.edu/visit. Poe's closure is documented in NC State's 2025–2027 capital priorities: https://committees.provost.ncsu.edu/campus-development/wp-content/uploads/sites/48/2025/01/2025-01-09-Capital-Dev-Plan-2024.pdf. Cherry Building is excluded because no entrance connects within the 30 m threshold. Final scope: 22 destinations and 792 pairs, or 756 pairs when Talley-ending dining trips are excluded. Teaching in buildings classified as offices/labs and all individual cafes are not covered.
+
+For each full-resolution route, calculate the minimum projected distance in metres to each voting-site building footprint. A route counts as near at 25, 50 or 100 m if its minimum distance is at most that threshold. The share is near pairs ÷ eligible pairs × 100. The same eligible pairs form both site denominators. The default excludes trips ending at Talley, so a visit to Talley's dining facilities is not presented as incidental passing. The inclusion checkbox provides sensitivity.
+
+GIS paths and building access assumptions are the same as the walking comparison: current EPSG:32119 network, not historical traffic or verified election doors. No road crossing waits, student route preferences, alternative equal-length paths or opening hours are modeled. Proximity to a footprint does not establish visibility or entrance access. A modeled zero is not evidence that nobody passes the site.
+
+`passby.json` retains origin/destination selection, exclusions, per-pair distances, simplified map geometry and threshold summaries. `passby-routes.csv` and `passby-summary.csv` retain unrounded calculations. Map lines are simplified within 1 m; full-resolution paths are used for calculations. Original GIS is preserved in `official-gis-snapshot.zip`.
+
+Reproduce with `python scripts/build_campus_passby.py --library-dir optional/path`, using shapely, pyproj and networkx. The base route builder's `--network-only` mode loads the same graph without overwriting prior reviewed route evidence.
