@@ -33,6 +33,15 @@ def main():
   details=''.join(f'<dt>{label}</dt><dd><code>{escape(str(original[key]))}</code></dd>' for label,key in [('Source last modified (UTC)','last_modified'),('Downloaded (UTC)','downloaded_at'),('Archive SHA-256','sha256'),('Wake CSV SHA-256','wake_csv_sha256')])
   sources.append(f'<article class="source-card"><h3>{year} · {"Talley Student Union" if year==2022 else "Western Boulevard Business Services"}</h3><p>Extract <code>{escape(original["member"])}</code> from the original ZIP.</p><p><a href="{escape(original["url"],quote=True)}">Download original NCSBE ZIP</a> · <a href="{escape(original["listing_url"],quote=True)}" target="_blank" rel="noopener">Official file listing</a></p><details><summary>Source snapshot and hashes</summary><dl>{details}</dl></details></article>')
  first=rows[0]
+ multiplier=Fraction(first['county_ballots_2026'],first['county_ballots_2022'])
+ benchmark=first['site_ballots_2022']*multiplier
+ shortfall=benchmark-first['site_ballots_2026']
+ benchmark_steps=[
+  f"Wake’s ages 18–24 early ballots: {first['county_ballots_2022']:,} in 2022 → {first['county_ballots_2026']:,} in 2026.",
+  f"County growth multiplier: {first['county_ballots_2026']:,} ÷ {first['county_ballots_2022']:,} ≈ {float(multiplier):.7f}… times the 2022 count.",
+  f"Apply that multiplier to Talley’s {first['site_ballots_2022']:,} ballots: {first['site_ballots_2022']:,} × ({first['county_ballots_2026']:,} ÷ {first['county_ballots_2022']:,}) = {float(benchmark):,.7f}… ≈ {round(benchmark):,} ballots at the constant-share benchmark.",
+  f"Western Boulevard actually recorded {first['site_ballots_2026']:,} early ballots from ages 18–24 in 2026.",
+  f"Benchmark minus actual: {float(benchmark):,.7f}… − {first['site_ballots_2026']:,} = {float(shortfall):,.7f}… ≈ {round(shortfall):,} ballots below the benchmark."]
  count_rows=f'<tr><th scope="row">Talley → Western Boulevard<small>Early-voting location changed</small></th><td>{first["site_ballots_2022"]:,}</td><td>{first["site_ballots_2026"]:,}</td></tr><tr><th scope="row">Wake County<small>Every early-voting site, including Talley / Western Boulevard</small></th><td>{first["county_ballots_2022"]:,}</td><td>{first["county_ballots_2026"]:,}</td></tr>'
  all_rows=[]
  for r in rows:
@@ -40,6 +49,8 @@ def main():
   all_rows.append(f'<tr data-age="{age}"><th scope="row"><a data-age="{age}" href="?age={quote(r["cohort"],safe="")}#math">{age}</a></th><td>{r["site_ballots_2022"]:,}</td><td>{r["site_ballots_2026"]:,}</td><td>{rate(r["site_growth_pct"])}</td><td>{rate(r["county_growth_pct"])}</td><td>{gap:+.1f} pp</td></tr>')
  payload={'rows':rows,'as_of':s['report']['asOf'],'matched_days':16,'periods':{str(y):{k:periods[y][k] for k in ['start_date','end_date']} for y in periods}}
  replacements={'__PERIOD_NOTE__':period,'__AGE_OPTIONS__':''.join(f'<option value="{a}">{a}</option>' for a in AGES),'__COUNT_ROWS__':count_rows,
+ '__YOUNGEST_BENCHMARK_STEPS__':''.join(f'<li>{escape(step)}</li>' for step in benchmark_steps),
+ '__YOUNGEST_BENCHMARK_RESULT__':f"Ages 18–24: about {round(benchmark):,} ballots at the benchmark versus {first['site_ballots_2026']:,} actual—about {round(shortfall):,} fewer at Western Boulevard than if it had kept pace with Wake’s same-age growth.",
  '__SITE_STEPS__':steps(first['site_ballots_2022'],first['site_ballots_2026']),'__COUNTY_STEPS__':steps(first['county_ballots_2022'],first['county_ballots_2026']),
  '__SITE_RESULT__':'Talley → Western Boulevard growth: '+rate(first['site_growth_pct']),'__COUNTY_RESULT__':'Wake County growth: '+rate(first['county_growth_pct']),
  '__GAP_FORMULA__':f'{first["site_growth_pct"]:.7f}…% − {first["county_growth_pct"]:.7f}…% ≈ {first["site_growth_gap_pp"]:.7f}… percentage points.',

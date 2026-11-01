@@ -40,6 +40,11 @@ assert html.count('class="source-card"')==2
 assert 'id="baseline"' not in html and 'CsvProofView' not in html and 'csv-workspace' not in html
 assert '32.1%' not in html and '31.8%' not in html and 'share of site ballots' not in html
 assert '+40.5%' in html and '+103.6%' in html and '63.1 percentage points behind' in html
+youngest=d['rows'][0]
+benchmark=Fraction(youngest['site_ballots_2022'],youngest['county_ballots_2022'])*youngest['county_ballots_2026']
+assert round(benchmark)==6106 and round(benchmark-youngest['site_ballots_2026'])==1892
+assert 'id="youngest-benchmark"' in html and 'about 6,106 ballots at the benchmark versus 4,214 actual' in html and 'about 1,892 fewer' in html
+assert 'always for the youngest age group' in html and 'not a prediction or a count of people who did not vote' in html
 for href in p.links:
  u=urlsplit(href)
  if u.scheme or u.netloc:continue
