@@ -34,7 +34,7 @@ G–I quote those formulas as readable text. They are separate from the actual f
 
 The source extracts have fixed membership for the verified snapshot. Editing a referenced copied value recalculates its downstream formulas, but adding candidates requires rebuilding the download. The original CSV files in `01 Original files` remain unchanged. Populated workbooks, ZIPs and individual voter records are never published in this repository; the website builds the download locally in the reader’s browser.
 
-Audited local XLSX SHA-256: `c5c9f184cd74cc2f85ed088673b495067e808a6e05656e101760d65b28f1bfe7`.
+Audited local XLSX SHA-256: `4f0591959b0b06ae10e4b9918b92322a7e3ba499c5310805079839fa0c2e7c89`.
 
 ## Individual ages and the comparison of shares
 
@@ -42,4 +42,4 @@ The workbook now has thirteen tabs. The five usual age bands stay in `3 Counts` 
 
 `8 Growth proof!B22:C22` links to the college-age shares already calculated in `4 Math`. B23 and C23 divide the site college-age count by the corresponding county college-age count; D22 and D23 subtract unrounded shares and multiply by 100. The site’s age mix changes from 32.1% to 31.8%, while its share of Wake’s college-age early ballots changes from 26.6% to 18.3%. These are different denominators. The two growth rows still show 40.5% for the site and 103.6% for Wake.
 
-The updated template was recalculated with Artifact Tool, including an individual-age edit that moved a ballot between age rows. All 309 age COUNTIFS results, three SUM results, shifted SDR formulas and new share formulas were checked in the saved XLSX. The browser-built ZIP completed with matching source hashes and counts; its changed worksheet XML matches the independently validated local export. All original-copy cells and both source extracts were checked again. Full-workbook Microsoft Excel recalculation was not run; automatic full recalculation remains enabled.
+The updated template was recalculated with Artifact Tool, including an individual-age edit that moved a ballot between age rows. All 309 age COUNTIFS results, three SUM results, shifted SDR formulas and new share formulas were checked in the saved XLSX. The browser-built ZIP completed with matching source hashes and counts; the age/count formula XML was compared with the independently validated local export. The populated share rows were also checked to preserve the authored percentage and percentage-point number formats. All original-copy cells and both source extracts were checked again. Full-workbook Microsoft Excel recalculation was not run; automatic full recalculation remains enabled.

@@ -49,9 +49,10 @@
    const p=(text.match(/<([\w]+:)?worksheet\b/)||[])[1]||'';
    const rows=[...text.matchAll(new RegExp(`<${p}row\\b[^>]*\\br="(\\d+)"[\\s\\S]*?<\\/${p}row>`,'g'))];
    const head=rows.filter(r=>Number(r[1])<6).map(r=>r[0]).join('');
+   const rowFormats=new Map(rows.map(r=>[Number(r[1]),Object.fromEntries([...r[0].matchAll(new RegExp(`<${p}c\\b([^>]*\\br="([A-Z]+)\\d+"[^>]*)>`,'g'))].map(m=>[m[2],(m[1].match(/\bs="(\d+)"/)||[])[1]]))]));
    const styles={};for(const m of text.matchAll(new RegExp(`<${p}c\\b([^>]*\\br="([A-Z]+)6"[^>]*)>`,'g')))styles[m[2]]=(m[1].match(/\bs="(\d+)"/)||[])[1]||'0';
    const row=(r,values,formulas=[])=>`<${p}row r="${r}" ht="24" customHeight="1">`+values.map((v,i)=>{
-    const ref=Plan.column(i)+r,style=styles[Plan.column(i)]||'0',f=formulas[i];
+    const ref=Plan.column(i)+r,style=(index===3?rowFormats.get(r)?.[Plan.column(i)]:null)||styles[Plan.column(i)]||'0',f=formulas[i];
     return f?`<${p}c r="${ref}" s="${style}"${typeof v==='number'?'':' t="str"'}><${p}f>${xml(f.slice(1))}</${p}f><${p}v>${xml(v)}</${p}v></${p}c>`:
      typeof v==='number'?`<${p}c r="${ref}" s="${style}"><${p}v>${v}</${p}v></${p}c>`:`<${p}c r="${ref}" s="${style}" t="inlineStr"><${p}is><${p}t xml:space="preserve">${xml(v)}</${p}t></${p}is></${p}c>`;
    }).join('')+`</${p}row>`;

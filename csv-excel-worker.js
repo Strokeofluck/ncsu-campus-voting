@@ -1,8 +1,8 @@
 /* Build the complete download locally in the viewer's browser; no voter data is uploaded. */
-importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','csv-original-copy.js?v=age-growth-5','csv-county-excel.js?v=age-growth-5','csv-excel-export.js?v=age-growth-5','csv-excel-package.js?v=age-growth-5');
+importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','csv-original-copy.js?v=age-growth-6','csv-county-excel.js?v=age-growth-6','csv-excel-export.js?v=age-growth-6','csv-excel-package.js?v=age-growth-6');
 onmessage=async({data})=>{
  try{
-  const response=await fetch('csv-excel-template.json?v=age-growth-5');if(!response.ok)throw Error('Excel template unavailable');
+  const response=await fetch('csv-excel-template.json?v=age-growth-6');if(!response.ok)throw Error('Excel template unavailable');
   const template=await response.json(),templateBytes=Uint8Array.from(atob(template.base64),c=>c.charCodeAt(0)),templateZip=await JSZip.loadAsync(templateBytes);
   if(!template.fullCopies||!template.countyGrowth)throw Error('Reload the page to get the complete-copy Excel template');
   const bundle=new CsvZipStream.Archive(),datasets=[];

@@ -55,7 +55,7 @@
  $('download-workbook').onclick=()=>{
   if(exporting)return;exporting=true;
   $('download-workbook').disabled=true;$('download-status').textContent='Downloading and checking all three original government CSVs…';
-  const exporter=new Worker('csv-excel-worker.js?v=age-growth-5');
+  const exporter=new Worker('csv-excel-worker.js?v=age-growth-6');
   const failed=message=>{exporting=false;$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
   exporter.onmessage=({data})=>{
    if(data.type==='status')$('download-status').textContent=data.text;
