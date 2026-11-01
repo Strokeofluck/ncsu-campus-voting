@@ -50,6 +50,9 @@ assert html.count('class="official-download-steps"')==3
 assert not page.iframes
 assert 'csv-workspace' in page.ids and 'proof-math' in page.ids
 assert 'proof-tab-calculation' in page.ids and 'proof-download-workbook' in page.ids
+assert html.index('id="proof-download-workbook"')<html.index('id="math"')<html.index('id="csv"')
+assert html.index('id="proof-download-status"')<html.index('id="math"')
+assert 'Quick glance' in html and 'download-package' in page.ids
 assert 'growth-proof-cards' in page.ids and html.count('class="growth-proof-card"')==2
 assert '+40.5%' in html and '+103.6%' in html
 for required in ['5 County source','6 County flags','7 County counts','8 Growth proof','twelve']:

@@ -2,9 +2,9 @@
 (()=>{
  const displayLabel=text=>{const years=[...new Set((String(text).match(/\b(?:2022|2024|2026)\b/g)||[]))];const site=years.length===1?(years[0]==='2026'?'Western Boulevard Business Services':'Talley Student Union'):'Talley Student Union → Western Boulevard Business Services';return String(text).replaceAll('Campus site',site);};
  function create(root,options={}){
- const prefix=root.dataset.proofPrefix||'', $=id=>root.querySelector('#'+prefix+id),el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
+ const prefix=root.dataset.proofPrefix||'', $=id=>root.querySelector('#'+prefix+id)||options.downloadRoot?.querySelector('#'+prefix+id),el=(tag,text,attrs={})=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
  const fmt=(n,unit)=>!Number.isFinite(n)?'Unavailable':unit==='ballots'?n.toLocaleString('en-US'):n.toFixed(1)+(unit==='%'?'%':' percentage points');
- let plan,record,context,worker,exportSources,exportUrl,counts=null,verified=false,active='original',request=0,loaded=false,pages={original:0,selected:0};
+ let plan,record,context,worker,exportSources,exportUrl,exporting=false,counts=null,verified=false,active='original',request=0,loaded=false,pages={original:0,selected:0};
  let payload,wantedFigure=options.figure||new URLSearchParams(location.search).get('figure')||'change-2022-age-group-18-24';
  const normalColumns=['county_desc','ballot_req_type','ballot_rtn_status','ballot_rtn_dt','site_name','age','sdr'];
  function showMath(){
@@ -53,13 +53,14 @@
  }
  $('year').onchange=()=>{pages.original=0;sourceInfo();page();};$('all-columns').onchange=page;$('selection').onchange=()=>{pages.selected=0;filterInfo();page();};
  $('download-workbook').onclick=()=>{
+  if(exporting)return;exporting=true;
   $('download-workbook').disabled=true;$('download-status').textContent='Downloading and checking all three original government CSVs…';
   const exporter=new Worker('csv-excel-worker.js?v=county-growth-4');
-  const failed=message=>{$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
+  const failed=message=>{exporting=false;$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
   exporter.onmessage=({data})=>{
    if(data.type==='status')$('download-status').textContent=data.text;
    if(data.type==='export-error')failed(data.message);
-   if(data.type==='download'){
+   if(data.type==='download'){exporting=false;
     if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([data.bytes],{type:'application/zip'}));
     const link=el('a','Save originals + Excel ZIP',{href:exportUrl,download:data.filename});
     $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP. Open Excel in 02 Working copy, then follow Original files → full Copy tabs → site steps 1–4 → county steps 5–7 → Growth proof.'));
@@ -87,7 +88,7 @@
   if(worker){worker.terminate();worker=null;}counts=null;loaded=false;verified=false;pages={original:0,selected:0};request++;
   plan=CsvProof.buildPlan(payload.records,id);$('year').replaceChildren();$('selection').replaceChildren();
   exportSources=[2022,2024,2026].map(year=>payload.records[`summary-${year}-campus-site-all-ages`].sources[0]);
-  $('download-workbook').disabled=false;$('title').textContent=displayLabel(record.label);if($('evidence'))$('evidence').href='figure-source.html#'+encodeURIComponent(id);
+  $('download-workbook').disabled=exporting;$('title').textContent=displayLabel(record.label);if($('evidence'))$('evidence').href='figure-source.html#'+encodeURIComponent(id);
   for(const source of record.sources)$('year').append(el('option',String(source.year),{value:source.year}));
   plan.counts.forEach((c,i)=>$('selection').append(el('option',`${displayLabel(c.label)} · saved count ${c.expected.toLocaleString()}`,{value:i})));
   sourceInfo();filterInfo();showMath();$('status').textContent='Saved calculation ready. Load the originals to verify every count.';$('status').className='';$('load').disabled=false;$('load').textContent='Load official CSVs and recount';

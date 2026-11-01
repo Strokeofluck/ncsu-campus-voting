@@ -3,7 +3,7 @@
  const $=id=>document.getElementById(id),data=JSON.parse($('reference-data').textContent),query=new URLSearchParams(location.search);
  const el=(tag,text,attrs={})=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;for(const [name,value]of Object.entries(attrs))node.setAttribute(name,value);return node;};
  let baseline=query.get('baseline')==='2024'?2024:2022,selected=query.get('figure')||`change-${baseline}-age-group-18-24`;
- const proof=CsvProofView.create($('csv-workspace'),{figure:data.records[selected]?selected:`change-${baseline}-age-group-18-24`,initialTab:'calculation'});
+ const proof=CsvProofView.create($('csv-workspace'),{figure:data.records[selected]?selected:`change-${baseline}-age-group-18-24`,initialTab:'calculation',downloadRoot:$('download-package')});
  const summary=(year,scope)=>data.summary.find(r=>r.year===year&&r.scope===scope);
  const number=(n,unit)=>unit==='%'?n.toFixed(1)+'%':n.toLocaleString('en-US');
  const delta=(n,unit)=>(n>0?'+':'')+n.toFixed(1)+(unit==='%'?'%':' pp');
