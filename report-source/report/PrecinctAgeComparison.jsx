@@ -1,0 +1,79 @@
+import React,{useEffect,useMemo,useRef,useState} from 'react';
+import * as L from './vendor/leaflet/leaflet-src.esm.js';
+import './vendor/leaflet/leaflet.css';
+import {DataComponent,ReportSection,RichNarrative,useDataApp} from '../../data-app-public.jsx';
+import {FOCAL_AREAS,METRICS,regionColor,scaleColors,rankedRegions} from './age-region-metrics.js';
+const n=v=>typeof v==='number'?v.toLocaleString('en-US'):'N/A';
+const p=v=>typeof v==='number'?`${v.toFixed(1)}%`:'N/A';
+const signed=(v,decimals=0)=>{if(typeof v!=='number')return 'N/A';const rounded=Number(v.toFixed(decimals))||0;return `${rounded>0?'+':''}${rounded.toLocaleString('en-US',{minimumFractionDigits:decimals,maximumFractionDigits:decimals})}`;};
+const code=area=>area.replace(/^PRECINCT\s+/,'');
+const change=(row,metric)=>typeof row?.[metric]==='number'?`${signed(row[metric],metric==='ballot_change'?0:1)}${metric==='growth_pct'?'%':metric==='share_change_pp'?' pp':''}`:'N/A';
+function tip(row,metric){
+ const div=document.createElement('div');div.className='voting-map-tooltip-content';
+ for(const [index,text]of [row.area,`Ages ${row.cohort} · any Wake early-voting location`,`2022: ${n(row.ballots_2022)} ballots`,`2026: ${n(row.ballots_2026)} ballots`,`${METRICS[metric].label}: ${change(row,metric)}`,`Age share: ${p(row.age_share_2022_pct)} → ${p(row.age_share_2026_pct)}`,row.new_from_zero?'Rose from zero; percentage growth undefined':metric==='growth_pct'&&row.small_baseline?'Small 2022 baseline; percentage is sensitive to a few ballots':''].entries()){
+  if(!text)continue;const line=document.createElement(index===0?'strong':'div');line.textContent=text;div.append(line);
+ }return div;
+}
+function AgeMap({index,cohort,rows,shapes,basemap,metric,selected,onSelect,onReady,onMove}){
+ const {visible}=useDataApp();const host=useRef(null),layers=useRef(new Map()),current=useRef(null);
+ const id=index===0?'voting-age-region-young':'voting-age-region-old',shown=visible(id);
+ const lookup=useMemo(()=>new Map(rows.map(r=>[r.area,r])),[rows]);
+ current.current={lookup,metric,selected,onSelect,onMove};
+ const style=area=>{const s=current.current,row=s.lookup.get(area),focal=FOCAL_AREAS.includes(area),chosen=s.selected===area;return {fillColor:regionColor(row,s.metric),fillOpacity:0.64,color:focal?'#b77916':chosen?'#212b36':'#697887',weight:focal?3:chosen?2.8:0.8,dashArray:s.metric==='growth_pct'&&row?.small_baseline?'3 3':undefined};};
+ useEffect(()=>{
+  if(!host.current)return;
+  const map=L.map(host.current,{scrollWheelZoom:false,minZoom:8,maxZoom:18,zoomSnap:0.25,center:[35.8,-78.65],zoom:10});
+  L.tileLayer(basemap.basemap_url,{maxZoom:18,crossOrigin:true,attribution:basemap.basemap_attribution}).addTo(map);
+  map.attributionControl.addAttribution('<a href="https://data.wake.gov/datasets/Wake::precincts">Wake County GIS</a>');
+  const group=L.geoJSON({type:'FeatureCollection',features:shapes.map(r=>({type:'Feature',geometry:r.geometry,properties:{area:r.area}}))},{style:f=>style(f.properties.area),onEachFeature:(f,layer)=>{
+   const area=f.properties.area;layers.current.set(area,layer);
+   layer.bindTooltip(()=>{const s=current.current,r=s.lookup.get(area);return r?tip(r,s.metric):area;},{sticky:true,className:'voting-map-tooltip',opacity:1});
+   layer.on('click',()=>{current.current.onSelect(area);layer.closeTooltip();});
+  }}).addTo(map);
+  for(const [area,layer]of layers.current){const el=layer.getElement();if(!el)continue;el.setAttribute('tabindex','0');el.setAttribute('role','button');el.setAttribute('aria-label',`Select ${area} on ages ${cohort} map`);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();current.current.onSelect(area);}});el.addEventListener('focus',()=>layer.openTooltip(layer.getBounds().getCenter()));el.addEventListener('blur',()=>layer.closeTooltip());}
+  for(const area of FOCAL_AREAS)layers.current.get(area)?.bringToFront();
+  map.fitBounds(group.getBounds(),{padding:[8,8],animate:false});
+  map.on('moveend',()=>current.current.onMove(index,map));onReady(index,{map,group,layers:layers.current});
+  const observer=new ResizeObserver(()=>map.invalidateSize({pan:false}));observer.observe(host.current);
+  return()=>{observer.disconnect();onReady(index,null);map.remove();layers.current.clear();};
+ },[shapes,basemap,shown]);
+ useEffect(()=>{for(const [area,layer]of layers.current){layer.setStyle(style(area));if(FOCAL_AREAS.includes(area)||area===selected)layer.bringToFront();}},[lookup,metric,selected]);
+ if(!shown)return null;
+ return <DataComponent id={id} queryId="precinct_age_changes" queryIds={['precinct_age_changes','precinct_shapes']} sourceRowsByQuery={{precinct_age_changes:rows,precinct_shapes:shapes}} displayRows={rows} kind="custom" title={`Ages ${cohort} · 2022 to 2026`}>
+  <p className="voting-region-map-unit">{METRICS[metric].label}{metric==='share_change_pp'?' (percentage points)':metric==='growth_pct'?' (%)':''}</p>
+  <div ref={host} className="voting-region-age-map" aria-label={`Wake County age ${cohort} change map`}/>
+ </DataComponent>;
+}
+export function PrecinctAgeComparison(){
+ const {snapshot}=useDataApp();const rows=snapshot.queries.precinct_age_changes.rows,shapes=snapshot.queries.precinct_shapes.rows;
+ const [metric,setMetric]=useState('ballot_change'),[selected,setSelected]=useState(FOCAL_AREAS[0]),[direction,setDirection]=useState('absolute'),[minimum,setMinimum]=useState(20),[limit,setLimit]=useState(6);
+ const maps=useRef([]),syncing=useRef(false);
+ const ready=(index,value)=>{maps.current[index]=value;};
+ const move=(index,map)=>{if(syncing.current)return;syncing.current=true;try{for(const [i,other]of maps.current.entries())if(i!==index&&other&&(other.map.getZoom()!==map.getZoom()||other.map.getCenter().distanceTo(map.getCenter())>0.1))other.map.setView(map.getCenter(),map.getZoom(),{animate:false});}finally{syncing.current=false;}};
+ const focus=kind=>{const first=maps.current.find(Boolean);if(!first)return;if(kind==='county')first.map.fitBounds(first.group.getBounds(),{padding:[8,8],animate:false});else{const areas=kind==='campus'?FOCAL_AREAS:[selected],bounds=L.latLngBounds([]);for(const area of areas){const layer=first.layers.get(area);if(layer)bounds.extend(layer.getBounds());}if(bounds.isValid())first.map.fitBounds(bounds,{padding:[24,24],maxZoom:14,animate:false});}};
+ const young=useMemo(()=>rows.filter(r=>r.cohort==='18–24'),[rows]),old=useMemo(()=>rows.filter(r=>r.cohort==='65+'),[rows]);
+ const areas=[...new Set(rows.filter(r=>r.mapped).map(r=>r.area))].sort();
+ const focalRows=[...FOCAL_AREAS,...(!FOCAL_AREAS.includes(selected)?[selected]:[])].flatMap(area=>rows.filter(r=>r.area===area));
+ const ranks=[young,old].map(values=>rankedRegions(values,metric,direction,minimum));
+ const rankingRows=ranks.flatMap((values,i)=>values.slice(0,limit).map((r,index)=>({...r,rank:index+1})));
+ return <div id="age-region-comparison" className="voting-region-comparison">
+  <ReportSection id="voting-age-region-intro" queryId="precinct_age_changes" sourceRows={rows} title="Where younger and older early voting changed" showHeading={false}><RichNarrative id="voting-age-region-intro:body" value="## Where younger and older early voting changed
+
+Compare ages 18–24 and 65+ across Wake County. Both maps share the same zoom and scale. Gold outlines mark **01-23 (Talley area)** and **01-31 (Western Boulevard area)**. Counts include residents’ accepted early ballots at **any Wake location**, during the first 16 early-voting days of 2022 and 2026."/></ReportSection>
+  <div className="voting-controls"><label>Measure <select value={metric} onChange={e=>setMetric(e.target.value)}>{Object.entries(METRICS).map(([key,v])=><option value={key} key={key}>{v.label}</option>)}</select></label><label>Precinct <select value={selected} onChange={e=>setSelected(e.target.value)}>{areas.map(area=><option key={area} value={area}>{code(area)}{area===FOCAL_AREAS[0]?' · Talley area':area===FOCAL_AREAS[1]?' · Western Boulevard area':''}</option>)}</select></label></div>
+  <RichNarrative id="voting-age-regions:measure" value={metric==='ballot_change'?'**Extra / fewer ballots** shows where the largest numbers were added or lost. The same color means the same number on both maps.':metric==='growth_pct'?'**Percentage growth** compares the increase with each precinct’s 2022 age-group count. Dashed borders mark starting counts below 20; a few ballots can produce a large percentage there. Hover to check both counts.':'**Change in age-group share** shows whether younger or older voters made up more of a precinct’s early ballots. Each age-group count is divided by all ages from that same precinct and year. Changes are percentage points.'}/>
+  <div className="voting-map-toolbar"><button onClick={()=>focus('county')}>Whole Wake County</button><button onClick={()=>focus('campus')}>NC State area · 01-23 and 01-31</button><button onClick={()=>focus('selected')}>Zoom to selected precinct</button></div>
+  <div className="voting-map-legend" aria-label="Shared age-change map legend"><span>Shared scale · {METRICS[metric].unit} · gold outlines = 01-23 / 01-31</span><div className="voting-map-color-scale">{METRICS[metric].labels.map((label,i)=><span key={label}><i style={{background:scaleColors(metric)[i]}}/>{label}</span>)}<span><i style={{background:'#bdbdbd'}}/>N/A{metric==='growth_pct'?' / zero baseline':''}</span></div></div>
+  <div className="voting-region-map-grid">{[young,old].map((values,i)=><AgeMap key={i} index={i} cohort={i===0?'18–24':'65+'} rows={values} shapes={shapes} basemap={snapshot.precinctMap} metric={metric} selected={selected} onSelect={setSelected} onReady={ready} onMove={move}/>)}</div>
+  <DataComponent id="voting-age-region-focus" queryId="precinct_age_changes" kind="table" className="voting-region-wide" title="Keep the NC State-area precincts in view" sourceRows={focalRows} displayRows={focalRows}>
+   <RichNarrative id="voting-age-regions:focus-note" value="01-23 and 01-31 stay in this table. Selecting another precinct adds it for comparison. These precincts contain the two voting sites in the current GIS; their residents are not all NC State students."/>
+   <div className="voting-table-scroll"><table className="voting-table"><thead><tr><th>Home precinct</th><th>Age group</th><th>2022 ballots</th><th>2026 ballots</th><th>Extra / fewer</th><th>Growth</th><th>Age share: 2022 → 2026</th><th>Share change</th></tr></thead><tbody data-reviewed-rows>{focalRows.map(r=><tr key={`${r.area}|${r.cohort}`} className={selected===r.area?'voting-selected-age-band':undefined}><th scope="row">{code(r.area)}{r.area===FOCAL_AREAS[0]?' · Talley area':r.area===FOCAL_AREAS[1]?' · Western Boulevard area':''}</th><td>{r.cohort}</td><td>{n(r.ballots_2022)}</td><td>{n(r.ballots_2026)}</td><td>{change(r,'ballot_change')}</td><td>{change(r,'growth_pct')}</td><td>{p(r.age_share_2022_pct)} → {p(r.age_share_2026_pct)}</td><td>{change(r,'share_change_pp')}</td></tr>)}</tbody></table></div>
+  </DataComponent>
+  <DataComponent id="voting-age-region-ranks" queryId="precinct_age_changes" kind="table" className="voting-region-wide" title="Which precincts changed the most?" sourceRows={rows} displayRows={rankingRows}>
+   <div className="voting-controls"><label>Rank regions by <select value={direction} onChange={e=>setDirection(e.target.value)}><option value="absolute">Largest changes in either direction</option><option value="increase">Largest increases</option><option value="decrease">Largest decreases</option></select></label>{metric==='growth_pct'&&<label>Minimum 2022 ballots for rankings <input type="number" min="0" max="10000" value={minimum} onChange={e=>setMinimum(Math.max(0,Math.min(10000,Number(e.target.value)||0)))}/></label>}<label>Rows per age group <select value={limit} onChange={e=>setLimit(Number(e.target.value))}><option value={6}>6</option><option value={12}>12</option><option value={30}>30</option><option value={999}>All</option></select></label></div>
+   <div className="voting-region-rank-grid">{ranks.map((values,i)=><div key={i}><h3>Ages {i===0?'18–24':'65+'}</h3><div className="voting-table-scroll"><table className="voting-table"><thead><tr><th>Precinct</th><th>2022</th><th>2026</th><th>{METRICS[metric].label}</th></tr></thead><tbody data-reviewed-rows>{values.slice(0,limit).map(r=><tr key={r.area}><th scope="row"><button className="voting-region-area-link" onClick={()=>setSelected(r.area)}>{code(r.area)}</button>{FOCAL_AREAS.includes(r.area)&&<span className="voting-final-detail">NC State area</span>}</th><td>{n(r.ballots_2022)}</td><td>{n(r.ballots_2026)}</td><td>{change(r,metric)}</td></tr>)}</tbody></table></div><p className="voting-map-boundary-note">{Math.min(limit,values.length)} of {values.length} precincts with a defined comparison{metric==='growth_pct'?` and at least ${minimum} ballots in 2022`:''}.</p></div>)}</div>
+   <a href="data/processed/comparison/precinct_age_changes.csv" download>Download every precinct’s counts, growth and age-share calculations (.csv)</a>
+  </DataComponent>
+  <RichNarrative id="voting-age-regions:limits" value="Current outlines are a geographic reference, not reconstructed 2022 boundaries. Rankings include mapped precinct codes with data in both years; unavailable and unmapped records remain in the download. Changing boundaries and populations can affect comparisons. These figures describe early-ballot counts and age mix, not turnout rates among all eligible residents or proof of the voting-site move’s effect. The earlier map below shows which voting locations residents used."/>
+ </div>;
+}

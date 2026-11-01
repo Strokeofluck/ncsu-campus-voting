@@ -11,6 +11,7 @@ from build_geography import add_geography
 from build_precinct_map import add_precinct_map
 from build_age_distribution import add_age_distribution
 from add_growth_map_context import add_growth_map_context
+from build_precinct_age_changes import add_precinct_age_changes
 
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
@@ -53,5 +54,6 @@ add_geography(snapshot,data)
 add_precinct_map(snapshot)
 add_age_distribution(snapshot,data)
 add_growth_map_context(snapshot)
+add_precinct_age_changes(snapshot)
 path.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Report {snapshot["id"]}: {days} matched days through {cutoff}')
