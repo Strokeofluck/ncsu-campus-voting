@@ -33,7 +33,7 @@ def main():
   details=''.join(f'<dt>{label}</dt><dd><code>{escape(str(original[key]))}</code></dd>' for label,key in [('Source last modified (UTC)','last_modified'),('Downloaded (UTC)','downloaded_at'),('Archive SHA-256','sha256'),('Wake CSV SHA-256','wake_csv_sha256')])
   sources.append(f'<article class="source-card"><h3>{year} · {"Talley Student Union" if year==2022 else "Western Boulevard Business Services"}</h3><p>Extract <code>{escape(original["member"])}</code> from the original ZIP.</p><p><a href="{escape(original["url"],quote=True)}">Download original NCSBE ZIP</a> · <a href="{escape(original["listing_url"],quote=True)}" target="_blank" rel="noopener">Official file listing</a></p><details><summary>Source snapshot and hashes</summary><dl>{details}</dl></details></article>')
  first=rows[0]
- count_rows=f'<tr><th scope="row">Campus polling site<small>Talley → Western Boulevard</small></th><td>{first["site_ballots_2022"]:,}</td><td>{first["site_ballots_2026"]:,}</td></tr><tr><th scope="row">Wake County<small>Every early-voting site, including campus</small></th><td>{first["county_ballots_2022"]:,}</td><td>{first["county_ballots_2026"]:,}</td></tr>'
+ count_rows=f'<tr><th scope="row">Talley → Western Boulevard<small>Early-voting location changed</small></th><td>{first["site_ballots_2022"]:,}</td><td>{first["site_ballots_2026"]:,}</td></tr><tr><th scope="row">Wake County<small>Every early-voting site, including Talley / Western Boulevard</small></th><td>{first["county_ballots_2022"]:,}</td><td>{first["county_ballots_2026"]:,}</td></tr>'
  all_rows=[]
  for r in rows:
   age=escape(r['cohort']);gap=r['site_growth_gap_pp']
@@ -41,9 +41,9 @@ def main():
  payload={'rows':rows,'as_of':s['report']['asOf'],'matched_days':16,'periods':{str(y):{k:periods[y][k] for k in ['start_date','end_date']} for y in periods}}
  replacements={'__PERIOD_NOTE__':period,'__AGE_OPTIONS__':''.join(f'<option value="{a}">{a}</option>' for a in AGES),'__COUNT_ROWS__':count_rows,
  '__SITE_STEPS__':steps(first['site_ballots_2022'],first['site_ballots_2026']),'__COUNTY_STEPS__':steps(first['county_ballots_2022'],first['county_ballots_2026']),
- '__SITE_RESULT__':'Campus-site growth: '+rate(first['site_growth_pct']),'__COUNTY_RESULT__':'Wake County growth: '+rate(first['county_growth_pct']),
+ '__SITE_RESULT__':'Talley → Western Boulevard growth: '+rate(first['site_growth_pct']),'__COUNTY_RESULT__':'Wake County growth: '+rate(first['county_growth_pct']),
  '__GAP_FORMULA__':f'{first["site_growth_pct"]:.7f}…% − {first["county_growth_pct"]:.7f}…% ≈ {first["site_growth_gap_pp"]:.7f}… percentage points.',
- '__GAP_RESULT__':f'Campus-site growth was {abs(first["site_growth_gap_pp"]):.1f} percentage points behind Wake’s growth.',
+ '__GAP_RESULT__':f'Talley → Western Boulevard growth was {abs(first["site_growth_gap_pp"]):.1f} percentage points behind Wake’s growth.',
  '__ALL_AGE_ROWS__':''.join(all_rows),'__SOURCE_CARDS__':''.join(sources),'__REFERENCE_DATA__':json.dumps(payload,ensure_ascii=False).replace('<','\\u003c')}
  html=(ROOT/'report-source/article-references.html').read_text(encoding='utf-8')
  for key,value in replacements.items():

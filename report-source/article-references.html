@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sources and step-by-step growth calculations | NC State voting</title><meta name="description" content="Exact campus-site and Wake County age-group counts, original NCSBE sources, and three transparent calculations."><link rel="stylesheet" href="article-references.css?v=1"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sources and step-by-step growth calculations | NC State voting</title><meta name="description" content="Exact Talley, Western Boulevard and Wake County age-group counts, original NCSBE sources, and three transparent calculations."><link rel="stylesheet" href="article-references.css?v=1"></head>
 <body>
 <a class="skip" href="#main">Skip to calculations</a>
 <header><nav aria-label="Main navigation"><a href="article/index.html?view=1">Article · Work in progress</a><a href="index.html?view=1#campus-age-growth">Prototype</a><a href="references.html" aria-current="page">References</a></nav></header>
 <main id="main">
  <h1>How we calculated the growth gap</h1>
- <p class="lede">Start with four ballot counts. Calculate growth at the campus polling site and across Wake County, then subtract the two growth rates.</p>
+ <p class="lede">Start with four ballot counts. Compare Talley in 2022 with Western Boulevard in 2026 and calculate growth across Wake County, then subtract the two growth rates.</p>
  <p class="period">__PERIOD_NOTE__</p>
  <section id="math" aria-labelledby="math-heading">
   <div class="section-heading"><h2 id="math-heading">Follow one age group</h2><label>Age group <select id="age" aria-label="Age group">__AGE_OPTIONS__</select></label></div>
@@ -14,11 +14,11 @@
   <section class="step" aria-labelledby="counts-heading"><h3 id="counts-heading">1. Count the matching ballots</h3>
    <div class="table-wrap"><table class="counts"><thead><tr><th scope="col">Where counted</th><th scope="col">2022</th><th scope="col">2026</th></tr></thead><tbody id="count-rows">__COUNT_ROWS__</tbody></table></div>
    <p class="muted" id="age-filter">Age filter: 18 through 24, inclusive.</p>
-   <details><summary>Which original records qualify?</summary><ol><li><code>county_desc = WAKE</code>.</li><li><code>ballot_req_type</code> is <code>ONE-STOP</code>, <code>ONE STOP</code>, or <code>EARLY VOTING</code>; <code>ballot_rtn_status = ACCEPTED</code>.</li><li>Keep only the selected age group and the matched dates above.</li><li>For the campus-site count, use <code>TA - NCSU TALLEY STUDENT CENTER</code> in 2022 and <code>NCSU WESTERN BLVD BUSINESS SERVICES</code> in 2026. For Wake County, include every site.</li><li>Each qualifying ballot contributes one. The original-record audit found no duplicate accepted early-voter IDs.</li></ol></details>
+   <details><summary>Which original records qualify?</summary><ol><li><code>county_desc = WAKE</code>.</li><li><code>ballot_req_type</code> is <code>ONE-STOP</code>, <code>ONE STOP</code>, or <code>EARLY VOTING</code>; <code>ballot_rtn_status = ACCEPTED</code>.</li><li>Keep only the selected age group and the matched dates above.</li><li>For the Talley → Western Boulevard comparison, use <code>TA - NCSU TALLEY STUDENT CENTER</code> in 2022 and <code>NCSU WESTERN BLVD BUSINESS SERVICES</code> in 2026. For Wake County, include every site.</li><li>Each qualifying ballot contributes one. The original-record audit found no duplicate accepted early-voter IDs.</li></ol></details>
   </section>
-  <section class="step" aria-labelledby="site-heading"><h3 id="site-heading">2. Calculate growth at the campus site</h3><ol id="site-steps">__SITE_STEPS__</ol><p class="result" id="site-result">__SITE_RESULT__</p></section>
+  <section class="step" aria-labelledby="site-heading"><h3 id="site-heading">2. Calculate growth from Talley to Western Boulevard</h3><ol id="site-steps">__SITE_STEPS__</ol><p class="result" id="site-result">__SITE_RESULT__</p></section>
   <section class="step" aria-labelledby="county-heading"><h3 id="county-heading">3. Calculate growth across Wake County</h3><ol id="county-steps">__COUNTY_STEPS__</ol><p class="result" id="county-result">__COUNTY_RESULT__</p></section>
-  <section class="step" aria-labelledby="gap-heading"><h3 id="gap-heading">4. Subtract Wake’s growth from the site’s growth</h3><p class="formula" id="gap-formula">__GAP_FORMULA__</p><p class="result" id="gap-result" aria-live="polite">__GAP_RESULT__</p><p class="muted">A negative gap means slower growth at the site; a positive gap means faster growth. This is a difference in <strong>percentage points</strong>. Calculations use full precision; final rates and gaps are rounded to one decimal.</p></section>
+  <section class="step" aria-labelledby="gap-heading"><h3 id="gap-heading">4. Subtract Wake’s growth from Talley → Western Boulevard growth</h3><p class="formula" id="gap-formula">__GAP_FORMULA__</p><p class="result" id="gap-result" aria-live="polite">__GAP_RESULT__</p><p class="muted">A negative gap means growth from Talley (2022) to Western Boulevard (2026) was slower than Wake’s; a positive gap means it was faster. This is a difference in <strong>percentage points</strong>. Calculations use full precision; final rates and gaps are rounded to one decimal.</p></section>
  </section>
  <section id="all-ages" aria-labelledby="all-heading"><h2 id="all-heading">All five age groups</h2><p>Select an age group to follow its calculation above.</p><div class="table-wrap"><table><thead><tr><th scope="col">Age group</th><th scope="col">Talley 2022</th><th scope="col">Western 2026</th><th scope="col">Site growth</th><th scope="col">Wake growth</th><th scope="col">Gap</th></tr></thead><tbody id="all-age-rows">__ALL_AGE_ROWS__</tbody></table></div></section>
  <section id="sources" aria-labelledby="sources-heading"><h2 id="sources-heading">Original sources</h2><p>The inputs are the Wake County CSV members of NCSBE’s by-county absentee archives. Those files include in-person early-voting records.</p><div class="source-grid">__SOURCE_CARDS__</div><p><a href="data/processed/comparison/age_growth_benchmarks.csv" download>Download the five age-group counts, growth rates and gaps (.csv)</a></p>
@@ -28,5 +28,5 @@
  <p class="limitations">These are accepted early-ballot counts, not turnout rates among registered or eligible residents. Age does not verify enrollment. The comparison does not isolate the effect of relocating the site. Historical boundaries and reporting lags are not harmonized; 2026 records are preliminary.</p>
  <p><a href="article/index.html?view=1">Return to the article →</a></p>
 </main>
-<script id="reference-data" type="application/json">__REFERENCE_DATA__</script><script src="article-references.js?v=1"></script>
+<script id="reference-data" type="application/json">__REFERENCE_DATA__</script><script src="article-references.js?v=2"></script>
 </body></html>

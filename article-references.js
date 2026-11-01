@@ -11,7 +11,7 @@
  function render(){
   const r=data.rows.find(r=>r.cohort===selected);
   $('age').value=selected;
-  $('scope-note').textContent=`Ages ${selected}. These counts include voters from any home precinct in Wake who used the named polling site; Wake County includes all sites.`;
+  $('scope-note').textContent=`Ages ${selected}. These counts include voters from any home precinct in Wake who voted at Talley in 2022 or Western Boulevard in 2026; Wake County includes all sites.`;
   const [lo,hi]=bounds[selected];$('age-filter').textContent=`Age filter: ${lo} through ${hi}, inclusive.`;
   const cells=$('count-rows').querySelectorAll('td');
   [r.site_ballots_2022,r.site_ballots_2026,r.county_ballots_2022,r.county_ballots_2026].forEach((v,i)=>cells[i].textContent=number(v));
@@ -20,11 +20,11 @@
    const growth=difference/before*100;
    const texts=[`${number(after)} − ${number(before)} = ${number(difference)} additional ballots.`,`${number(difference)} ÷ ${number(before)} = ${precise(difference/before)}.`,`Multiply by 100 ≈ ${precise(growth)}%. Round to one decimal: ${growth.toFixed(1)}%.`];
    $(scope+'-steps').replaceChildren(...texts.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));
-   $(scope+'-result').textContent=`${scope==='site'?'Campus-site':'Wake County'} growth: ${rate(growth)}`;
+   $(scope+'-result').textContent=`${scope==='site'?'Talley → Western Boulevard':'Wake County'} growth: ${rate(growth)}`;
   }
   const sg=(r.site_ballots_2026/r.site_ballots_2022-1)*100,cg=(r.county_ballots_2026/r.county_ballots_2022-1)*100,gap=sg-cg;
   $('gap-formula').textContent=`${precise(sg)}% − ${precise(cg)}% ≈ ${precise(gap)} percentage points.`;
-  $('gap-result').textContent=`Campus-site growth was ${Math.abs(gap).toFixed(1)} percentage points ${gap<0?'behind':'ahead of'} Wake’s growth.`;
+  $('gap-result').textContent=`Talley → Western Boulevard growth was ${Math.abs(gap).toFixed(1)} percentage points ${gap<0?'behind':'ahead of'} Wake’s growth.`;
   $('all-age-rows').querySelectorAll('tr').forEach(row=>row.classList.toggle('is-selected',row.dataset.age===selected));
  }
  function choose(value,scroll){selected=value;render();const q=new URLSearchParams(location.search);q.set('age',value);history.replaceState(null,'','?'+q+'#math');if(scroll)$('math').scrollIntoView({block:'start'});}
