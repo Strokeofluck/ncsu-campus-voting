@@ -161088,6 +161088,11 @@
               "voting-article-intro",
               "voting-article-reading"
             ]
+          },
+          {
+            "label": "Constant-share ballot benchmark",
+            "formula": "benchmark_ballots = site_ballots_2022 * county_ballots_2026 / county_ballots_2022; difference = benchmark_ballots - site_ballots_2026",
+            "definition": "For ages 18–24, 2,999 × 22,980 ÷ 11,287 = 6,105.875786… benchmark ballots. Compared with 4,214 actual, the difference is 1,891.875786… ballots. The chart rounds only the displayed counts. This holds the location’s 2022 countywide share constant; it does not estimate nonvoters or establish causation."
           }
         ]
       },
@@ -161165,6 +161170,46 @@
           }
         ]
       }
+    },
+    "statewide_early_voting_context": {
+      "rows": [
+        {
+          "geography": "North Carolina",
+          "ballots_through": "2026-10-30",
+          "tracker_as_of": "2026-10-31T06:07:00-04:00",
+          "accepted_early_ballots": 2612240,
+          "growth_vs_2022_same_day_pct_displayed": 32,
+          "in_person_ballots": 2524612,
+          "mail_ballots": 87628,
+          "election_day": "2026-11-03",
+          "source_url": "https://ncelectionslive.com/early-voting/"
+        }
+      ],
+      "source": {
+        "label": "NC Election Live early vote tracker, saved October 31 context",
+        "provider": "NC Election Live; underlying North Carolina State Board of Elections files",
+        "files": [
+          "https://ncelectionslive.com/early-voting/",
+          "https://www.ncsbe.gov/news/events/person-early-voting-period-november-2026-general-election"
+        ],
+        "executedAt": "2026-11-01T03:35:28.634586+00:00",
+        "period": "Statewide accepted early ballots through October 30, 2026; tracker updated October 31 at 6:07 AM EDT.",
+        "filters": [
+          "Statewide overview, in-person and mail ballots combined.",
+          "2022 comparison is the tracker’s rounded percentage against the same early-voting day."
+        ],
+        "caveats": [
+          "This statewide context is separate from the Wake County in-person comparisons.",
+          "The tracker is independent and preliminary; it does not establish a statewide record or a doubling of total turnout.",
+          "Election Day is November 3, 2026; this is not a completed-election comparison."
+        ],
+        "metricDefinitions": [
+          {
+            "label": "Statewide accepted early ballots",
+            "definition": "The tracker reports 2,612,240 accepted early ballots through October 30, 2026, comprising 2,524,612 in person and 87,628 by mail. Its displayed comparison is +32% versus the same point in 2022."
+          }
+        ]
+      }
     }
   },
   "report": {
@@ -161181,5 +161226,6 @@
   "exportPreferences": {
     "selected": null,
     "destinations": []
-  }
+  },
+  "authoredRevision": 1
 }

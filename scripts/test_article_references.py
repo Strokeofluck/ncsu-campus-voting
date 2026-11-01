@@ -56,6 +56,11 @@ article=json.loads((ROOT/'report-source/article-snapshot.json').read_text(encodi
 prototype=json.loads((ROOT/'report-source/snapshot.json').read_text(encoding='utf-8'))
 assert article['id']!=prototype['id']
 for key in article['queries']:
- assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
+ if key!='statewide_early_voting_context':assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
+if 'statewide_early_voting_context' in article['queries']:
+ context=article['queries']['statewide_early_voting_context']['rows'][0]
+ assert context['accepted_early_ballots']==2612240 and context['growth_vs_2022_same_day_pct_displayed']==32
+ assert context['in_person_ballots']+context['mail_ballots']==context['accepted_early_ballots']
+ assert context['ballots_through']=='2026-10-30' and context['election_day']=='2026-11-03'
 assert article['report']['asOf']==prototype['report']['asOf']
 print('PASS: original aggregate inputs, all five exact growth/gap calculations, matched windows, focused reference scope, local links, and distinct article identity with unchanged evidence.')

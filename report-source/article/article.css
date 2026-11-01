@@ -7,3 +7,29 @@
 .voting-article .voting-region-benchmark {font-size:13px;}
 .voting-article .voting-page-nav {margin-bottom:0;}
 @media(max-width:600px){.voting-article h1{font-size:28px;}}
+.voting-article .voting-article-map-layout{display:flex;flex-direction:column;gap:32px;}
+.voting-article-featured-map{width:100%;max-width:900px;margin-inline:auto;}
+.voting-article .voting-article-featured-map .voting-region-age-map{height:440px;}
+.voting-article-comparison-layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:24px;align-items:start;}
+.voting-article-middle-maps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start;}
+.voting-article .voting-article-middle-maps .voting-region-age-map{height:300px;}
+.voting-article .voting-article-senior-map .voting-region-age-map{height:440px;}
+.voting-article-middle-maps .component-title{font-size:15px;}
+.voting-article-middle-maps .voting-site-count-pair>div{align-items:start;gap:6px;}
+.voting-article-middle-maps .voting-site-count-pair dt{max-width:68%;}
+.voting-article-middle-maps .voting-site-count-pair dd{white-space:nowrap;}
+.voting-article-benchmark-wrap{width:100%;max-width:800px;margin-inline:auto;}
+.voting-article-benchmark{margin:0;display:grid;gap:20px;}
+.voting-article-bar-label{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:8px;}
+.voting-article-bar-label strong{font-variant-numeric:tabular-nums;white-space:nowrap;}
+.voting-article-bar-plot{background:repeating-linear-gradient(to right,var(--border) 0 1px,transparent 1px 28.5714%);}
+.voting-article-bar{height:32px;background:#3182bd;}
+.voting-article-bar-benchmark{background:color-mix(in srgb,var(--text) 25%,var(--background));}
+.voting-article-benchmark-gap{text-align:right;}
+.voting-article-bar-axis{position:relative;height:24px;border-top:1px solid var(--border);font-size:12px;font-variant-numeric:tabular-nums;}
+.voting-article-bar-axis>span{position:absolute;top:6px;transform:translateX(-50%);}
+.voting-article-bar-axis>span:first-child{transform:none;}
+.voting-article-axis-title{text-align:center;font-size:12px;}
+.voting-article-benchmark figcaption{font-size:12px;line-height:1.5;color:var(--secondary);}
+@media(max-width:1100px){.voting-article-comparison-layout{grid-template-columns:minmax(0,1fr);}.voting-article-senior-map{width:100%;max-width:900px;margin-inline:auto;}.voting-article .voting-article-senior-map .voting-region-age-map{height:420px;}}
+@media(max-width:700px){.voting-article-middle-maps{grid-template-columns:minmax(0,1fr);}.voting-article .voting-article-featured-map .voting-region-age-map,.voting-article .voting-article-middle-maps .voting-region-age-map,.voting-article .voting-article-senior-map .voting-region-age-map{height:320px;}.voting-article-bar-label{align-items:flex-end;}.voting-article-bar-label>span{max-width:75%;}}
