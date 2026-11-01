@@ -120,3 +120,7 @@
 .voting-report .campus-map-key .campus-key-dot{width:10px;height:10px;border-radius:50%;background:#2b5f97;}
 .voting-report .campus-map-key .campus-key-square{width:10px;height:10px;background:currentColor;}
 .voting-report .campus-map-key li small{display:block;font-size:10px;color:var(--secondary);margin-top:2px;line-height:1.3;}
+
+/* Keep all modeled places hoverable; emphasize only the current trip endpoints. */
+.campus-place-active .campus-place-square{width:13px;height:13px;border-width:2px;box-shadow:0 0 0 2px #243746,0 0 0 4px #fff;}
+.campus-place-marker:not(.campus-place-active):not(.campus-site-point) .campus-place-symbol{opacity:.8;}
