@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { SiteAgeMaps } from './SiteAgeMaps.jsx';
+import './site-map-prototype.css';
 import { GeographyExplorer } from './GeographyExplorer.jsx';
 import { AgeDistribution } from './AgeDistribution.jsx';
 import { PrecinctAgeComparison, CampusAgeMaps } from './PrecinctAgeComparison.jsx';
@@ -49,7 +51,7 @@ export function ReportContent(){
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const [ageBaseline,setAgeBaseline]=useState(2022),[profileDimension,setProfileDimension]=useState('party');
  const [partyScope,setPartyScope]=useState('Campus site'),[partyCohort,setPartyCohort]=useState('All ages');
- useEffect(()=>{const id=window.location.hash.slice(1);if(['campus-age-growth','age-region-comparison','age-distribution','party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
+ useEffect(()=>{const id=window.location.hash.slice(1);if(['site-circle-maps','campus-age-growth','age-region-comparison','age-distribution','party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
@@ -108,7 +110,7 @@ export function ReportContent(){
  const benchmarks=['Wake County','Campus site'].flatMap(location=>['all_ages','age_18_24'].map(field=>({location,field,label:`${location==='Campus site'?'Talley / Western Boulevard':'Wake County'} · ${field==='all_ages'?'all ages':'ages 18–24'}`,previous:get(2022,location)[field],presidential:get(2024,location)[field],current:get(2026,location)[field],share2024:get(2026,location)[field]/get(2024,location)[field]*100,growth2022:growth(get(2026,location)[field],get(2022,location)[field])})));
  const previews={'https://www.ncsbe.gov/results-data/absentee-and-provisional-data':{title:'NCSBE absentee and early-voting data',summary:'Official download catalog explaining absentee records and early-voting ballots. This analysis uses Wake County records from the 2022, 2024 and 2026 general-election archives.',source:'North Carolina State Board of Elections',approvedForReport:true}};
  return <article className="report-content voting-report" aria-label="NC State early-voting comparison">
-  <nav className="voting-page-nav" aria-label="Page links"><a href="article/index.html?view=1">Article · Work in progress</a><a href="#age-distribution">Age distribution</a><a href="#age-region-comparison">Age changes by region</a><a href="#campus-age-growth">All ages around NC State</a><a href="#precinct-map">Precinct map</a><a href="?view=1&amp;map=growth#precinct-map">2022–2026 growth map</a><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
+  <nav className="voting-page-nav" aria-label="Page links"><a href="article/index.html?view=1">Article · Work in progress</a><a href="#age-distribution">Age distribution</a><a href="#age-region-comparison">Age changes by region</a><a href="#campus-age-growth">All ages around NC State</a><a href="#site-circle-maps">Site circle maps</a><a href="#precinct-map">Precinct map</a><a href="?view=1&amp;map=growth#precinct-map">2022–2026 growth map</a><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
   <header className="report-hero">
    <RichNarrative id="voting:eyebrow" value="NC STATE · TALLEY → WESTERN BOULEVARD" className="voting-eyebrow"/>
    <h1 data-data-app-title contentEditable={canEdit&&mode==='edit'} suppressContentEditableWarning onBlur={canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined}>{appTitle}</h1>
@@ -234,6 +236,9 @@ Running totals for ${partyCohort==='All ages'?'all ages':`ages ${partyCohort}`} 
   </div>
   <PrecinctAgeComparison/>
   <CampusAgeMaps/>
+  <section id="site-circle-maps" className="voting-site-map-prototype"><RichNarrative id="voting-site-circle-prototype:intro" value="## Polling-site circle maps · visual experiment
+
+These maps compare ballots physically cast at Talley in 2022 and Western Boulevard in 2026. Circle area shows count, not percentage growth. The [article](article/index.html?view=1#age-growth-chart) uses paired growth bars for a clearer comparison. The home-precinct maps above remain a separate exploration."/><SiteAgeMaps prototype/></section>
   <GeographyExplorer/>
   <ReportSection id="voting-relative-intro" title="How the campus pattern compares with Wake County" queryId="summary" sourceRows={paired} showHeading={false}>
    <RichNarrative id="voting-relative-intro:body" value={`## How the campus pattern compares with Wake County

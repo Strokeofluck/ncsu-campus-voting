@@ -9,8 +9,8 @@ const n=v=>v.toLocaleString('en-US');
 const pct=v=>`${v>0?'+':''}${v.toFixed(1)}%`;
 // A shared area scale across all five maps: area, not radius, encodes ballots.
 const radius=(count,maximum)=>40*Math.sqrt(count/maximum);
-function SiteMap({index,row,sites,shapes,basemap,maximum,onReady}){
- const {visible}=useDataApp(),host=useRef(null),id=`voting-campus-age-${index}`;
+function SiteMap({index,row,sites,shapes,basemap,maximum,onReady,prototype=false}){
+ const {visible}=useDataApp(),host=useRef(null),id=`${prototype?'voting-site-circle':'voting-campus-age'}-${index}`;
  useEffect(()=>{
   if(!host.current)return;
   const map=L.map(host.current,{attributionControl:false,scrollWheelZoom:false,minZoom:8,maxZoom:18,zoomSnap:0.25,center:[35.784,-78.678],zoom:14});
@@ -43,20 +43,20 @@ function SiteMap({index,row,sites,shapes,basemap,maximum,onReady}){
     <dl className="voting-article-growth-pair"><div><dt>Talley → Western Boulevard</dt><dd>{pct(row.site_growth_pct)}</dd></div><div><dt>Wake County</dt><dd>{pct(row.county_growth_pct)}</dd></div></dl>
     <p className="voting-article-growth-gap"><strong>{Math.abs(row.site_growth_gap_pp).toFixed(1)}</strong><span>percentage points {row.site_growth_gap_pp<0?'behind':'ahead of'} Wake</span></p>
     <p className="voting-article-count-line"><span>Talley 2022 → Western 2026</span><span>{n(row.site_ballots_2022)} → {n(row.site_ballots_2026)} ballots</span></p>
-    <a href={`../references.html?age=${encodeURIComponent(row.cohort)}#math`}>Counts and math →</a>
+    <a href={`${prototype?'':'../'}references.html?age=${encodeURIComponent(row.cohort)}#math`}>Counts and math →</a>
    </div>
   </div>
  </DataComponent>;
 }
-export function SiteAgeMaps({afterYoungest=null,beforeOtherAges=null}){
+export function SiteAgeMaps({afterYoungest=null,beforeOtherAges=null,prototype=false}){
  const {snapshot}=useDataApp(),rows=snapshot.queries.age_growth_benchmarks.rows,sites=snapshot.queries.voting_site_points.rows,shapes=snapshot.queries.precinct_shapes.rows,maps=useRef([]);
  const maximum=Math.max(...rows.flatMap(r=>[r.site_ballots_2022,r.site_ballots_2026]));
- const panels=AGES.map((age,i)=><SiteMap key={age} index={i} row={rows.find(r=>r.cohort===age)} sites={sites} shapes={shapes} basemap={snapshot.precinctMap} maximum={maximum} onReady={(index,map)=>{maps.current[index]=map;}}/>);
- return <section id="campus-age-growth" className="voting-region-comparison">
-  <RichNarrative id="voting-campus-age:article-scope" value="**Circles show how many early ballots were cast at Talley in 2022 and Western Boulevard in 2026.** Bigger circles mean more ballots, using the same size scale across all five age groups. Counts include voters from any home precinct in Wake. Precinct outlines provide geographic context only."/>
+ const panels=AGES.map((age,i)=><SiteMap key={age} prototype={prototype} index={i} row={rows.find(r=>r.cohort===age)} sites={sites} shapes={shapes} basemap={snapshot.precinctMap} maximum={maximum} onReady={(index,map)=>{maps.current[index]=map;}}/>);
+ return <section id={prototype?"site-circle-age-growth":"campus-age-growth"} className="voting-region-comparison">
+  <RichNarrative id={prototype?"voting-site-circle:scope":"voting-campus-age:article-scope"} value="**Circles show how many early ballots were cast at Talley in 2022 and Western Boulevard in 2026.** Bigger circles mean more ballots, using the same size scale across all five age groups. Counts include voters from any home precinct in Wake. Precinct outlines provide geographic context only."/>
   <div className="voting-map-toolbar"><button onClick={()=>maps.current.forEach(m=>m?.reset())}>Reset maps to voting sites</button><button onClick={()=>maps.current.forEach(m=>m?.county())}>Show all Wake County in every age map</button></div>
   <div className="voting-site-map-legend"><div><span><i style={{background:COLORS.talley}}/>Talley · 2022</span><span><i style={{background:COLORS.western}}/>Western Boulevard · 2026</span></div><span>Circle area = ballots cast · same scale in every map</span><svg viewBox="0 0 270 100" role="img" aria-label="Circle size key: 1,000, 2,000 and 4,000 ballots">{[1000,2000,4000].map((count,i)=><g key={count}><circle cx={45+i*90} cy={41} r={radius(count,maximum)} fill="none" stroke="currentColor"/><text x={45+i*90} y="97" textAnchor="middle" fill="currentColor">{n(count)}</text></g>)}</svg></div>
   <div className="voting-campus-age-grid voting-article-map-layout"><div className="voting-article-featured-map">{panels[0]}</div>{afterYoungest}{beforeOtherAges}<div className="voting-article-comparison-layout"><div className="voting-article-middle-maps">{panels.slice(1,4)}</div><div className="voting-article-senior-map">{panels[4]}</div></div></div>
-  <RichNarrative id="voting-campus-age:limits" value="Matched first 16 early-voting days in both years; 2026 is preliminary through October 30. These are early-ballot counts, not turnout rates. Age does not verify student enrollment. The comparison does not establish the effect of moving the site. [Home-precinct maps remain in the prototype](../index.html?view=1#campus-age-growth). [Download the age-specific site and county counts](../data/processed/comparison/age_growth_benchmarks.csv)."/>
+  <RichNarrative id={prototype?"voting-site-circle:limits":"voting-campus-age:limits"} value={`Matched first 16 early-voting days in both years; 2026 is preliminary through October 30. These are early-ballot counts, not turnout rates. Age does not verify student enrollment. The comparison does not establish the effect of moving the site. [Home-precinct maps remain in the prototype](${prototype?'':'../index.html?view=1'}#campus-age-growth). [Download the age-specific site and county counts](${prototype?'':'../'}data/processed/comparison/age_growth_benchmarks.csv).`}/>
  </section>;
 }

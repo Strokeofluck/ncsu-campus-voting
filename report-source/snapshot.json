@@ -298358,6 +298358,17 @@
               "voting-campus-age-3",
               "voting-campus-age-4"
             ]
+          },
+          {
+            "label": "Polling-site circle counts",
+            "definition": "Circle area uses accepted site ballots by age for Talley 2022 and Western Boulevard 2026, regardless of home precinct. Radius = 40 * sqrt(ballots / 4214) px, shared across all five maps. Official university building coordinates; precinct outlines are context only.",
+            "componentIds": [
+              "voting-site-circle-0",
+              "voting-site-circle-1",
+              "voting-site-circle-2",
+              "voting-site-circle-3",
+              "voting-site-circle-4"
+            ]
           }
         ]
       },

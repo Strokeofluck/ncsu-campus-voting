@@ -161104,6 +161104,14 @@
               "voting-campus-age-3",
               "voting-campus-age-4"
             ]
+          },
+          {
+            "label": "Site growth versus same-age Wake growth",
+            "formula": "growth_pct = (ballots_2026 - ballots_2022) / ballots_2022 * 100; gap_pp = site_growth_pct - county_growth_pct",
+            "definition": "Accepted in-person early ballots for the first 16 days in both elections. Site compares Talley 2022 with Western Boulevard 2026, irrespective of registered home precinct. County uses all Wake sites, including the compared sites, within the same age group. Bars start at zero and share a 0–125% scale. Positive counts increased; a negative gap means slower growth, not fewer voters.",
+            "componentIds": [
+              "voting-article-age-growth-chart"
+            ]
           }
         ]
       },

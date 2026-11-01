@@ -1,6 +1,6 @@
 import React from 'react';
 import {DataComponent,ReportSection,RichNarrative,useDataApp} from '../../data-app-public.jsx';
-import {SiteAgeMaps} from './SiteAgeMaps.jsx';
+import {AgeGrowthChart} from './AgeGrowthChart.jsx';
 import './article.css';
 
 function YoungestBenchmark({row}){
@@ -36,7 +36,9 @@ That surge offers a first look at voting after **NC State’s early-voting site 
   <ReportSection id="voting-article-placeholder" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Draft placeholder"><RichNarrative id="voting-article-placeholder:body" value={`*Draft placeholder*
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae augue sed lorem tincidunt interdum. Donec malesuada, velit at ullamcorper consequat, sapien lectus cursus massa, at posuere neque neque vitae purus. Sed quis ligula non urna tristique tincidunt. Nulla facilisi. Curabitur feugiat, arcu vitae aliquam dignissim, erat nibh volutpat lectus, eget consequat justo magna sed est.`}/></ReportSection>
-  <SiteAgeMaps afterYoungest={<YoungestBenchmark row={youngest}/>} beforeOtherAges={otherAges}/>
+  <AgeGrowthChart/>
+  {otherAges}
+  <YoungestBenchmark row={youngest}/>
   <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`These figures describe early-ballot counts and location use. They do not establish whether the relocation caused the growth gap. Ages 18–24 are an age proxy, not verified student enrollment.
 
 [Follow the original counts and calculations, step by step](../references.html).`}/></ReportSection>
