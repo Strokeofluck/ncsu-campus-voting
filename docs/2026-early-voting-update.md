@@ -118,3 +118,7 @@ The evidence page also previews the original ZIP member list and CSV header, plu
 `python scripts/build_source_previews.py` verifies both original archive and extracted/member CSV hashes, streams the source records, and independently checks every preview selection against the reviewed aggregates. It writes `data/processed/comparison/source_previews.json`. Personal names, addresses, voter identifiers and original individual rows remain unpublished. Original column headings are metadata only.
 
 An expandable iframe loads the original election directory directly from `https://dl.ncsbe.gov/`. It is a live government page, separate from the verified snapshot extract, and may show a newer version of the 2026 archive. Direct official ZIP and catalog links remain available.
+
+## Five age groups around NC State
+
+The #campus-age-growth section adds linked maps for the five non-overlapping age bands, focused on current precincts 01-23 and 01-31. Each uses identical fixed color classes, starts on percentage growth, labels both precincts, and shows their exact 2022 and 2026 counts. The original paired county maps retain their two cohorts. The aggregate precinct_age_changes CSV now covers all five groups; source inspection retains exact denominators and current-boundary qualifications. Tests reconcile all 1,150 rows to geography and county demographic aggregates. Desktop and 390 px layouts, all metric switches, linked county/campus zoom, and unchanged prior query rows were checked. No raw sources or populated workbook files are published.

@@ -23,7 +23,8 @@ for r in rows:
     assert r['growth_pct']==((b-a)/a*100 if a is not None and a>0 and b is not None else None)
     assert r['share_change_pp']==(after-before if before is not None and after is not None else None)
     assert r['new_from_zero']==(a==0 and b is not None and b>0)
-for cohort in ['18–24','65+']:
+assert set(r['cohort'] for r in rows)=={'18–24','25–34','35–44','45–64','65+'}
+for cohort in ['18–24','25–34','35–44','45–64','65+']:
     for y in [2022,2026]:
         expected=sum(r['votes'] for r in s['queries']['demographics']['rows'] if r['scope']=='Wake County' and r['year']==y and r['dimension']=='age_group' and r['value']==cohort)
         assert sum(r[f'ballots_{y}'] or 0 for r in rows if r['cohort']==cohort)==expected

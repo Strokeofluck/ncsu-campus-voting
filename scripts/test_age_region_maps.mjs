@@ -4,7 +4,7 @@ import {METRICS,regionColor,scaleColors,rankedRegions} from '../report-source/re
 const s=JSON.parse(fs.readFileSync(new URL('../report-source/snapshot.json',import.meta.url),'utf8')),rows=s.queries.precinct_age_changes.rows;
 for(const [metric,definition]of Object.entries(METRICS)){
  assert.equal(scaleColors(metric).length,definition.cuts.length+1);
- for(const cohort of ['18–24','65+']){
+ for(const cohort of ['18–24','25–34','35–44','45–64','65+']){
   const r=rows.filter(v=>v.cohort===cohort),rank=rankedRegions(r,metric,'absolute',20);
   assert(rank.every(v=>v.mapped&&Number.isFinite(v[metric])&&(metric!=='growth_pct'||v.ballots_2022>=20)));
   for(let i=1;i<rank.length;i++)assert(Math.abs(rank[i-1][metric])>=Math.abs(rank[i][metric]));

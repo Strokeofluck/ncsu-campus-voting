@@ -14,9 +14,9 @@ function tip(row,metric){
   if(!text)continue;const line=document.createElement(index===0?'strong':'div');line.textContent=text;div.append(line);
  }return div;
 }
-function AgeMap({index,cohort,rows,shapes,basemap,metric,selected,onSelect,onReady,onMove}){
+function AgeMap({index,cohort,rows,shapes,basemap,metric,selected,onSelect,onReady,onMove,id:customId,initialCampus=false,children}){
  const {visible}=useDataApp();const host=useRef(null),layers=useRef(new Map()),current=useRef(null);
- const id=index===0?'voting-age-region-young':'voting-age-region-old',shown=visible(id);
+ const id=customId||(index===0?'voting-age-region-young':'voting-age-region-old'),shown=visible(id);
  const lookup=useMemo(()=>new Map(rows.map(r=>[r.area,r])),[rows]);
  current.current={lookup,metric,selected,onSelect,onMove};
  const style=area=>{const s=current.current,row=s.lookup.get(area),focal=FOCAL_AREAS.includes(area),chosen=s.selected===area;return {fillColor:regionColor(row,s.metric),fillOpacity:0.64,color:focal?'#b77916':chosen?'#212b36':'#697887',weight:focal?3:chosen?2.8:0.8,dashArray:s.metric==='growth_pct'&&row?.small_baseline?'3 3':undefined};};
@@ -32,7 +32,10 @@ function AgeMap({index,cohort,rows,shapes,basemap,metric,selected,onSelect,onRea
   }}).addTo(map);
   for(const [area,layer]of layers.current){const el=layer.getElement();if(!el)continue;el.setAttribute('tabindex','0');el.setAttribute('role','button');el.setAttribute('aria-label',`Select ${area} on ages ${cohort} map`);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();current.current.onSelect(area);}});el.addEventListener('focus',()=>layer.openTooltip(layer.getBounds().getCenter()));el.addEventListener('blur',()=>layer.closeTooltip());}
   for(const area of FOCAL_AREAS)layers.current.get(area)?.bringToFront();
-  map.fitBounds(group.getBounds(),{padding:[8,8],animate:false});
+  if(initialCampus)for(const area of FOCAL_AREAS){const layer=layers.current.get(area);if(layer)L.marker(layer.getBounds().getCenter(),{interactive:false,keyboard:false,icon:L.divIcon({className:'voting-region-precinct-label',html:`<span>${code(area)}</span>`,iconSize:[48,23],iconAnchor:[24,12]})}).addTo(map);}
+  const startingBounds=initialCampus?L.latLngBounds([]):group.getBounds();
+  if(initialCampus)for(const area of FOCAL_AREAS){const layer=layers.current.get(area);if(layer)startingBounds.extend(layer.getBounds());}
+  map.fitBounds(startingBounds,{padding:initialCampus?[20,20]:[8,8],maxZoom:initialCampus?14:18,animate:false});
   map.on('moveend',()=>current.current.onMove(index,map));onReady(index,{map,group,layers:layers.current});
   const observer=new ResizeObserver(()=>map.invalidateSize({pan:false}));observer.observe(host.current);
   return()=>{observer.disconnect();onReady(index,null);map.remove();layers.current.clear();};
@@ -42,7 +45,30 @@ function AgeMap({index,cohort,rows,shapes,basemap,metric,selected,onSelect,onRea
  return <DataComponent id={id} queryId="precinct_age_changes" queryIds={['precinct_age_changes','precinct_shapes']} sourceRowsByQuery={{precinct_age_changes:rows,precinct_shapes:shapes}} displayRows={rows} kind="custom" title={`Ages ${cohort} · 2022 to 2026`}>
   <p className="voting-region-map-unit">{METRICS[metric].label}{metric==='share_change_pp'?' (percentage points)':metric==='growth_pct'?' (%)':''}</p>
   <div ref={host} className="voting-region-age-map" aria-label={`Wake County age ${cohort} change map`}/>
+  {children}
  </DataComponent>;
+}
+const AGE_BANDS=['18–24','25–34','35–44','45–64','65+'];
+export function CampusAgeMaps(){
+ const {snapshot}=useDataApp(),rows=snapshot.queries.precinct_age_changes.rows,shapes=snapshot.queries.precinct_shapes.rows;
+ const [metric,setMetric]=useState('growth_pct'),[selected,setSelected]=useState(FOCAL_AREAS[0]);
+ const maps=useRef([]),syncing=useRef(false);
+ const ready=(i,value)=>{maps.current[i]=value;};
+ const move=(index,map)=>{if(syncing.current)return;syncing.current=true;try{for(const [i,other]of maps.current.entries())if(i!==index&&other&&(other.map.getZoom()!==map.getZoom()||other.map.getCenter().distanceTo(map.getCenter())>0.1))other.map.setView(map.getCenter(),map.getZoom(),{animate:false});}finally{syncing.current=false;}};
+ const focus=campus=>{const first=maps.current.find(Boolean);if(!first)return;const bounds=campus?L.latLngBounds([]):first.group.getBounds();if(campus)for(const area of FOCAL_AREAS){const layer=first.layers.get(area);if(layer)bounds.extend(layer.getBounds());}if(bounds.isValid())first.map.fitBounds(bounds,{padding:[20,20],maxZoom:campus?14:18,animate:false});};
+ return <section id="campus-age-growth" className="voting-region-comparison">
+  <ReportSection id="voting-campus-age-intro" queryId="precinct_age_changes" sourceRows={rows} title="How each age group changed around NC State" showHeading={false}><RichNarrative id="voting-campus-age-intro:body" value="## How each age group changed around NC State
+
+Compare all five age groups around **01-23 (Talley area)** and **01-31 (Western Boulevard area)**. Gold outlines mark both precincts. The maps move together and use the same color scale. Counts include residents’ accepted early ballots at any Wake location during the first 16 early-voting days of 2022 and 2026."/></ReportSection>
+  <div className="voting-controls"><label>Age-group map measure <select aria-label="Age-group map measure" value={metric} onChange={e=>setMetric(e.target.value)}>{Object.entries(METRICS).map(([key,v])=><option key={key} value={key}>{v.label}</option>)}</select></label></div>
+  <RichNarrative id="voting-campus-age:measure" value={metric==='growth_pct'?'Blue means growth; darker blue means faster growth. Orange means fewer ballots. **100% growth means the count doubled.** Dashed borders mark starting counts below 20; check the counts before comparing those percentages. Gray means no defined comparison, including a zero starting count.':metric==='ballot_change'?'Blue means additional ballots; darker blue means a larger increase. Orange means fewer ballots. Nearly white means a change of fewer than 50 ballots in either direction. Gray means no comparable data.':'Blue means the age group became a larger share of its precinct’s early ballots; orange means a smaller share. Nearly white means less than 1 percentage point of change in either direction. Gray means no defined comparison.'}/>
+  <div className="voting-map-toolbar"><button onClick={()=>focus(true)}>Reset all maps to 01-23 and 01-31</button><button onClick={()=>focus(false)}>Show all Wake County in every age map</button></div>
+  <div className="voting-map-legend" aria-label="All-age-group growth map legend"><span>Shared scale · {METRICS[metric].unit} · gold outlines = 01-23 / 01-31</span><div className="voting-map-color-scale">{METRICS[metric].labels.map((label,i)=><span key={label}><i style={{background:scaleColors(metric)[i]}}/>{label}</span>)}<span><i style={{background:'#bdbdbd'}}/>N/A{metric==='growth_pct'?' / zero baseline':''}</span></div></div>
+  <div className="voting-campus-age-grid">{AGE_BANDS.map((cohort,i)=>{const values=rows.filter(r=>r.cohort===cohort),focusRows=FOCAL_AREAS.map(area=>values.find(r=>r.area===area)).filter(Boolean);return <AgeMap key={cohort} id={`voting-campus-age-${i}`} index={i} cohort={cohort} rows={values} shapes={shapes} basemap={snapshot.precinctMap} metric={metric} selected={selected} onSelect={setSelected} onReady={ready} onMove={move} initialCampus>
+   <div className="voting-table-scroll"><table className="voting-table voting-campus-age-counts"><thead><tr><th>Home precinct</th><th>Ballots: 2022 → 2026</th><th>{metric==='growth_pct'?'Growth':metric==='ballot_change'?'Extra / fewer':'Share change'}</th></tr></thead><tbody data-reviewed-rows>{focusRows.map(r=><tr key={r.area}><th scope="row">{code(r.area)}<small>{r.area===FOCAL_AREAS[0]?'Talley area':'Western Boulevard area'}</small></th><td>{n(r.ballots_2022)} → {n(r.ballots_2026)}</td><td>{change(r,metric)}</td></tr>)}</tbody></table></div>
+  </AgeMap>;})}</div>
+  <RichNarrative id="voting-campus-age:limits" value="These are counts of early ballots, not turnout rates among all eligible residents. Current precinct boundaries are a reference; historical boundaries and populations may differ. The figures do not establish the effect of moving the voting site. The CSV download above includes every age group’s counts and calculations."/>
+ </section>;
 }
 export function PrecinctAgeComparison(){
  const {snapshot}=useDataApp();const rows=snapshot.queries.precinct_age_changes.rows,shapes=snapshot.queries.precinct_shapes.rows;
@@ -53,7 +79,7 @@ export function PrecinctAgeComparison(){
  const focus=kind=>{const first=maps.current.find(Boolean);if(!first)return;if(kind==='county')first.map.fitBounds(first.group.getBounds(),{padding:[8,8],animate:false});else{const areas=kind==='campus'?FOCAL_AREAS:[selected],bounds=L.latLngBounds([]);for(const area of areas){const layer=first.layers.get(area);if(layer)bounds.extend(layer.getBounds());}if(bounds.isValid())first.map.fitBounds(bounds,{padding:[24,24],maxZoom:14,animate:false});}};
  const young=useMemo(()=>rows.filter(r=>r.cohort==='18–24'),[rows]),old=useMemo(()=>rows.filter(r=>r.cohort==='65+'),[rows]);
  const areas=[...new Set(rows.filter(r=>r.mapped).map(r=>r.area))].sort();
- const focalRows=[...FOCAL_AREAS,...(!FOCAL_AREAS.includes(selected)?[selected]:[])].flatMap(area=>rows.filter(r=>r.area===area));
+ const focalRows=[...FOCAL_AREAS,...(!FOCAL_AREAS.includes(selected)?[selected]:[])].flatMap(area=>rows.filter(r=>r.area===area&&['18–24','65+'].includes(r.cohort)));
  const ranks=[young,old].map(values=>rankedRegions(values,metric,direction,minimum));
  const rankingRows=ranks.flatMap((values,i)=>values.slice(0,limit).map((r,index)=>({...r,rank:index+1})));
  return <div id="age-region-comparison" className="voting-region-comparison">
