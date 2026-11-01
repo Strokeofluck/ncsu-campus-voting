@@ -48,3 +48,14 @@
 .walking-site-marker-label>.walking-site-label,.passby-site-label>.walking-site-label{display:block;width:100%;height:26px;box-sizing:border-box;}
 @media(max-width:600px){.walking-site-marker-label-2026>.walking-site-label{position:relative;left:65px;}.passby-site-label-131>.walking-site-label{position:relative;left:77px;}}
 @media(max-width:600px){.walking-map{height:430px;}.walking-controls{display:grid;grid-template-columns:1fr;}.walking-result-pair strong{font-size:22px;}.walking-result-pair{gap:12px;}.walking-result-pair>div{font-size:12px;}}
+
+.route-playback-controls{border-block:1px solid var(--border);padding-block:14px;margin:18px 0;display:flex;flex-wrap:wrap;gap:12px 20px;font-size:13px;}
+.route-playback-controls label{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.route-playback-controls p{width:100%;margin:0;font-size:12px;color:var(--secondary);line-height:1.6;}
+.route-playback-controls select{font:inherit;background:var(--background);color:var(--text);border:1px solid var(--border);padding:6px;}
+.route-playback-status{width:100%;display:grid;gap:7px;font-variant-numeric:tabular-nums;}
+.route-playback-status progress{width:100%;accent-color:#2176a5;}
+.walking-estimated-note{border-left:3px solid #aa7840;padding:10px 14px;font-size:13px;line-height:1.6;}
+.campus-parking-context{font-size:12px;line-height:1.6;margin-block:18px;}
+.campus-parking-context label{display:flex;align-items:center;gap:8px;}
+.campus-parking-context p{margin:8px 0;}

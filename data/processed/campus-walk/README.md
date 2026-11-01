@@ -30,3 +30,12 @@ NC State's independent [Pack the Polls guide](https://packthepolls.dasa.ncsu.edu
 Reproduce the averages without GIS libraries using `python scripts/build_campus_walking_averages.py`; independently audit the decimal sums against the individual CSV using `python scripts/test_campus_walking_averages.py`.
 
 The timing map defaults to All housing routes: both site routes for each usable building in the selected housing group. The Selected building mode retains individual route inspection. Housing-area changes restore the group overview; changing the starting building or clicking a marker switches to its individual view. Geometry and calculations are identical in both views.
+
+
+## Estimated access, display and preservation updates
+
+The timing map also offers explicitly labeled exploratory building-edge routes for Aurora, Gold, University Towers and Welch in `estimated-access-routes.json`, produced by `scripts/build_estimated_housing_access.py`. No official entrance is invented. These start at the nearest building boundary with an unobstructed connector of at most 30 m to an existing connected path. They remain excluded from the original averages and routine-trip denominators. They are not field-verified routes. The all-routes overview retains the 36 original entrance-based buildings; selecting a missing-entrance building shows its separate estimate.
+
+Display distances are miles (metres / 1609.344); calculations retain metres. Autoplay is accelerated, not real student movement. The routine map defaults to both GIS building footprints, with optional entrance circles. Five whole nearby parking polygons are contextual overlays, not voter-reserved boundaries or inputs to distance/route calculations. References distinguish the official reserved McKimmon subsection and the reported parking rationale.
+
+`scripts/archive_campus_gis.py` verifies and unpacks all four existing snapshots to `data/sources/ncsu-gis/2026-11-01/` with a hash catalog. A separate parking query is retained with its original request URL.

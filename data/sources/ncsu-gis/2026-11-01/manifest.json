@@ -1,0 +1,29 @@
+{
+  "retrieved_at": "2026-11-01T04:24:08.860367+00:00",
+  "sources": {
+    "walks": {
+      "url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/CampusBaseMap/CampusWalks/MapServer/0/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=OBJECTID",
+      "sha256": "4e4ef421e5ed91face6342444cc637ba9dd009e2983a78802afc64aeeb793332",
+      "features": 370,
+      "pagination": "OBJECTID order, batches of 1000; count reconciled to returnCountOnly"
+    },
+    "entrances": {
+      "url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Accessibility/Accessibility/MapServer/0/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=OBJECTID",
+      "sha256": "36ea68c2b07ad8d84d1d02e4539f08c435a64d438feadb314d64593d4d522b38",
+      "features": 536,
+      "pagination": "OBJECTID order, batches of 1000; count reconciled to returnCountOnly"
+    },
+    "buildings": {
+      "url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Buildings/Buildings_OnlineCampusMap/MapServer/1/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=OBJECTID",
+      "sha256": "fbd4e1efe853be71e11bcb53e190bd351948e4d0b72881c3b1498f132ae59d63",
+      "features": 1186,
+      "pagination": "OBJECTID order, batches of 1000; count reconciled to returnCountOnly"
+    },
+    "accessible_paths": {
+      "url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Accessibility/Accessibility/MapServer/1/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=OBJECTID",
+      "sha256": "35c1c8ed1ab12c9c60da5223aa97c648e6e588e59c3487d4b9a765705b6165b1",
+      "features": 4016,
+      "pagination": "OBJECTID order, batches of 1000; count reconciled to returnCountOnly"
+    }
+  }
+}
