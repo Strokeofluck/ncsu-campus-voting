@@ -22,3 +22,9 @@ python scripts/test_campus_walking_routes.py
 Both scripts accept `--library-dir` for workspace-local Python packages. `scripts/download_campus_walking_sources.py` fetches a fresh snapshot in pages and reconciles each layer's full feature count; refreshing changes the source hashes and must be reviewed before replacing this published comparison.
 
 NC State's independent [Pack the Polls guide](https://packthepolls.dasa.ncsu.edu/elections/early-voting/) lists a 25-minute, 1.1-mile Talley-to-new-site walk and describes shuttle and transit options. Our selected GIS entrances produce about 1.05 miles; model times depend on the explicit pace assumption. The guide's distance/time is a reasonableness check, not the input to our calculated routes.
+
+## Building averages
+
+`averages.json` and `averages.csv` use only buildings with routes to both sites. Every building has weight 1, so each mean uses the same paired denominator. The all-housing mean is based on 36 of 40 buildings, not all 40, and not all students. Missing routes are excluded, never replaced with zero. Mean change = (sum Western distances − sum Talley distances) / paired count. This equals mean(Western − Talley). Subgroups are residence halls (22/26), Wolf Village (8/8) and Wolf Ridge (6/6). The grouped results are important because pooling housing types can hide opposite changes. Occupancy weights are not available in these inputs.
+
+Reproduce the averages without GIS libraries using `python scripts/build_campus_walking_averages.py`; independently audit the decimal sums against the individual CSV using `python scripts/test_campus_walking_averages.py`.

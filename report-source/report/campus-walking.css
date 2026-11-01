@@ -6,6 +6,19 @@
 .walking-results h3{font-size:20px;margin:0 0 16px;}
 .walking-selected-group{font-size:12px;color:var(--secondary);margin:-8px 0 16px;}
 .walking-data-date{font-size:12px;color:var(--secondary);margin:0 0 16px;}
+.walking-average-results{border-block:1px solid var(--border);padding-block:16px;}
+.walking-average-results h3{font-size:20px;margin:0 0 8px;}
+.walking-average-coverage,.walking-average-direction{font-size:12px;color:var(--secondary);line-height:1.6;}
+.walking-average-coverage{margin:0 0 18px;}
+.walking-average-change{display:flex;flex-direction:column;gap:5px;margin:18px 0 8px;line-height:1.5;}
+.walking-average-change strong{font-size:22px;font-weight:500;}
+.walking-average-change span{font-size:14px;}
+.walking-average-limit{font-size:13px;line-height:1.6;margin:16px 0;}
+.walking-average-table{min-width:560px;font-size:12px;}
+.walking-average-table caption{text-align:left;font-weight:600;margin-bottom:10px;}
+.walking-average-table button{background:none;border:0;text-decoration:underline;font:inherit;color:var(--text);text-align:left;cursor:pointer;}
+.walking-average-selected{background:color-mix(in srgb,var(--text) 5%,var(--background));}
+.walking-average-links{font-size:12px;line-height:1.6;margin-top:16px;}
 .walking-result-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
 .walking-result-pair>div{display:flex;flex-direction:column;gap:6px;font-size:13px;}
 .walking-result-pair strong{font-size:26px;font-weight:500;}
