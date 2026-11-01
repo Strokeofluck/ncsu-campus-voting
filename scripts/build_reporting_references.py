@@ -4,6 +4,7 @@ import json,re
 from datetime import date
 from html import escape
 from pathlib import Path
+from urllib.parse import urlsplit,unquote
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/processed/comparison'
@@ -55,7 +56,9 @@ for kind,label,field,scope,unit,share_group in [
 sources=[];source_records=[]
 for year in [2022,2024,2026]:
     s=records[f'summary-{year}-campus-site-all-ages']['sources'][0];w=summary(year,'Campus site');source_records.append(s)
-    sources.append(f'''<article class="source-card"><p class="source-year">{year}</p><h3>{'Western Boulevard Business Services' if year==2026 else 'Talley Student Union'}</h3><p>{nice(w['start_date'])}–{nice(w['end_date'])}<br>First {comparison['matched_days']} early-voting days.</p><code>{escape(s['member'])}</code><p class="source-links"><a href="{escape(s['url'],quote=True)}">Original government ZIP ↗</a><a href="{escape(s['listing_url'],quote=True)}" target="_blank" rel="noopener">Official file listing ↗</a><a href="{escape(s['catalog'],quote=True)}" target="_blank" rel="noopener">NCSBE catalog ↗</a></p><details><summary>Exact site label and source snapshot</summary><dl>{''.join('<dt>'+label+'</dt><dd><code>'+escape(text)+'</code></dd>' for label,text in [('Site label',comparison['site_mapping'][str(year)]),('Source last modified (UTC)',s['last_modified']),('Downloaded (UTC)',s['downloaded_at']),('Archive SHA-256',s['sha256']),('Wake CSV SHA-256',s['wake_csv_sha256'])])}</dl></details></article>''')
+    archive=unquote(urlsplit(s['url']).path.rsplit('/',1)[-1])
+    assert archive.endswith('.zip') and s['member'].endswith('.csv')
+    sources.append(f'''<article class="source-card"><p class="source-year">{year}</p><h3>{'Western Boulevard Business Services' if year==2026 else 'Talley Student Union'}</h3><p>{nice(w['start_date'])}–{nice(w['end_date'])}<br>First {comparison['matched_days']} early-voting days.</p><div class="official-download-steps"><p>On the official file listing:</p><ol><li>Choose <code>{escape(archive)}</code>.</li><li>Open that ZIP and extract <code>{escape(s['member'])}</code>.</li><li>Keep the CSV untouched. Use a separate copy for the Excel calculations.</li></ol></div><p class="source-links"><a href="{escape(s['url'],quote=True)}">Original government ZIP ↗</a><a href="{escape(s['listing_url'],quote=True)}" target="_blank" rel="noopener">Official file listing ↗</a><a href="{escape(s['catalog'],quote=True)}" target="_blank" rel="noopener">NCSBE catalog ↗</a></p><details><summary>Exact site label and source snapshot</summary><dl>{''.join('<dt>'+label+'</dt><dd><code>'+escape(text)+'</code></dd>' for label,text in [('Site label',comparison['site_mapping'][str(year)]),('Source last modified (UTC)',s['last_modified']),('Downloaded (UTC)',s['downloaded_at']),('Archive SHA-256',s['sha256']),('Wake CSV SHA-256',s['wake_csv_sha256'])])}</dl></details></article>''')
 
 required={proof_id(base,kind) for base in [2022,2024] for kind in ['all','college','share','older','county']}
 required|={f'demographic-{year}-age-group-{group}' for year in [2022,2024,2026] for group in ['18-24','65']}

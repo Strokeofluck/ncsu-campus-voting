@@ -42,6 +42,11 @@ for href in page.links:
     if url.scheme or url.netloc:continue
     if url.path:assert (ROOT/unquote(url.path)).is_file(),href
     elif url.fragment:assert unquote(url.fragment) in page.ids,href
+for year in [2022,2024,2026]:
+    source=figures[f'summary-{year}-campus-site-all-ages']['sources'][0]
+    archive=unquote(urlsplit(source['url']).path.rsplit('/',1)[-1])
+    assert archive in html and source['member'] in html
+assert html.count('class="official-download-steps"')==3
 assert not page.iframes
 assert 'csv-workspace' in page.ids and 'proof-math' in page.ids
 assert 'proof-tab-calculation' in page.ids and 'proof-download-workbook' in page.ids
