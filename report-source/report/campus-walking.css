@@ -59,3 +59,16 @@
 .campus-parking-context{font-size:12px;line-height:1.6;margin-block:18px;}
 .campus-parking-context label{display:flex;align-items:center;gap:8px;}
 .campus-parking-context p{margin:8px 0;}
+
+.campus-map-with-key{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:18px;align-items:start;min-width:0;}
+.campus-map-key{font-size:12px;line-height:1.5;color:var(--text);min-width:0;}
+.campus-map-key h4{font-size:14px;font-weight:600;margin:0 0 16px;}
+.campus-key-heading{font-size:11px;font-weight:600;margin:16px 0 8px;}
+.campus-map-key ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+.campus-map-key li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;}
+.campus-map-key small{font-size:11px;color:var(--secondary);}
+.campus-key-building{width:16px;height:14px;border:2px solid currentColor;background:color-mix(in srgb,currentColor 15%,transparent);display:block;margin-top:2px;}
+.campus-key-line{width:24px;height:4px;display:block;margin-top:7px;}
+.campus-key-parking{width:20px;height:14px;display:block;border:2px dashed #54753c;background:color-mix(in srgb,#54753c 12%,transparent);margin-top:2px;}
+.campus-key-note{font-size:11px;line-height:1.6;color:var(--secondary);margin:14px 0 0;}
+@media(max-width:650px){.campus-map-with-key{grid-template-columns:minmax(0,1fr);gap:14px;}.campus-map-key{border-top:1px solid var(--border);padding-top:14px;}.campus-map-key ul{display:flex;flex-wrap:wrap;gap:12px 20px;}.campus-map-key li{min-width:140px;max-width:100%;}.campus-map-key h4{margin-bottom:12px;}}

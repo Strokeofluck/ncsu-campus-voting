@@ -33,3 +33,8 @@ Route-distance displays use miles (metres / 1609.344), while proximity-zone labe
 
 
 Autoplay displays only the active route, colored purple if the full route enters the selected Talley zone and gray otherwise. It defaults to one second per route with a quarter-second arrival pause. The camera fits all eligible routes once on starting playback and stays fixed across destinations and origins. Zone size remains 50 meters by default, an exploratory threshold applied equally to both sites, not a validated visibility boundary.
+
+
+## Why 50 meters?
+
+The 50-meter default is an exploratory short-walk proximity measure: at the model’s default 80 m/min walking pace, 50 / 80 = 0.625 min; multiplying by 60 gives 37.5 seconds (about 38 seconds). This interprets the chosen threshold; it is not an official boundary or a validated visibility measure. Footprint proximity is minimum straight-line distance to the building outline, not a pedestrian route to the voting door. Barriers, street crossings, entrance location and access restrictions can make the actual walk longer. Entering a zone does not establish reaching the voting entrance within a minute. Both sites use the same threshold and 25/100-meter sensitivity options remain available.
