@@ -61,7 +61,7 @@
 .campus-parking-context p{margin:8px 0;}
 
 .campus-map-with-key{position:relative;display:block;min-width:0;}
-.voting-report .campus-map-key{position:absolute;top:12px;right:12px;z-index:450;width:180px;max-width:calc(100% - 68px);max-height:calc(100% - 24px);overflow:auto;box-sizing:border-box;padding:10px 12px;background:var(--background);color:var(--text);border:1px solid var(--border);border-radius:7px;box-shadow:0 3px 14px #0003;font-size:12px;line-height:1.4;}
+.voting-report .campus-map-key{position:absolute;top:12px;left:12px;z-index:450;width:180px;max-width:calc(100% - 68px);max-height:calc(100% - 24px);overflow:auto;box-sizing:border-box;padding:10px 12px;background:var(--background);color:var(--text);border:1px solid var(--border);border-radius:7px;box-shadow:0 3px 14px #0003;font-size:12px;line-height:1.4;}
 .voting-report .campus-map-key summary{font-size:13px;font-weight:600;cursor:pointer;margin:0;}
 .voting-report .campus-map-key .campus-key-body{padding-top:12px;}
 .voting-report .campus-map-key .campus-key-heading{font-size:11px;font-weight:600;margin:12px 0 8px;}
@@ -78,4 +78,45 @@
 .parking-capacity-table caption{text-align:left;font-weight:600;margin-bottom:10px;}
 .parking-capacity-table td{font-variant-numeric:tabular-nums;}
 .campus-route-tooltip strong{display:block;margin-bottom:5px;}
-@media(max-width:650px){.voting-report .campus-map-key{width:165px;top:8px;right:8px;padding:9px 10px;font-size:11px;}}
+@media(max-width:650px){.voting-report .campus-map-key{width:165px;top:8px;left:8px;padding:9px 10px;font-size:11px;}}
+
+.voting-report .campus-map-key .campus-key-inventory{margin-top:10px;font-size:11px;}
+.voting-report .campus-map-key .campus-key-inventory p{margin:0 0 6px;color:var(--secondary);}
+.voting-report .campus-map-key .campus-key-inventory dl{margin:0;padding:0;display:grid;gap:7px;}
+.voting-report .campus-map-key .campus-key-inventory dl>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:start;}
+.voting-report .campus-map-key .campus-key-inventory dt{margin:0;padding:0;line-height:1.4;}
+.voting-report .campus-map-key .campus-key-inventory dd{margin:0;padding:0;font-weight:600;font-variant-numeric:tabular-nums;}
+
+.walking-map-instructions{font-size:13px;line-height:1.6;margin:0 0 12px;}
+.walking-time-label>span{display:block;width:max-content;max-width:145px;padding:3px 6px;border:1px solid;border-radius:4px;background:#fff;color:#182735;box-shadow:0 1px 4px #0002;white-space:nowrap;font-size:11px;line-height:18px;}
+.voting-report .campus-map-key .campus-key-autoplay{margin:0 0 10px;font-size:12px;}
+.voting-report .campus-map-key .campus-key-autoplay label{display:flex;align-items:center;gap:7px;line-height:1.4;}
+.voting-report .campus-map-key .campus-key-autoplay input{flex:0 0 auto;}
+.voting-report .campus-map-key .campus-key-route-options{margin:0 0 14px;}
+.voting-report .campus-map-key .campus-key-route-options>summary{font-size:11px;font-weight:500;}
+.voting-report .campus-map-key .campus-key-route-form{display:grid;gap:10px;padding-top:10px;font-size:11px;}
+.voting-report .campus-map-key .campus-key-route-form .walking-controls{display:grid;gap:10px;margin:0;}
+.voting-report .campus-map-key .campus-key-route-form label{display:flex;flex-wrap:wrap;gap:5px;font-size:11px;}
+.voting-report .campus-map-key .campus-key-route-form select{width:100%;min-width:0;max-width:100%;padding:5px;font:inherit;background:var(--background);color:var(--text);border:1px solid var(--border);}
+.voting-report .campus-map-key .campus-key-route-form .route-view-controls{margin:0;}
+.voting-report .campus-map-key .campus-key-route-form button{padding:6px;font:inherit;color:var(--text);background:var(--background);border:1px solid var(--border);cursor:pointer;}
+.voting-report .campus-map-key .campus-key-route-form p{font-size:11px;line-height:1.5;margin:0;color:var(--secondary);}
+
+.voting-report .campus-map-key{--text:#263238;--secondary:#5d666b;--background:#fff;--border:#d8dddf;background:#fff;color:#263238;border-color:#d8dddf;box-shadow:0 2px 12px #0002;}
+.voting-report .campus-map-key a{color:#215f8f;}
+
+.campus-map-with-key .walking-map{background:#eef0ed;}
+.campus-map-with-key .maplibregl-map{font:inherit;}
+
+.voting-report .campus-map-key{color-scheme:light;}
+
+/* Portfolio symbol language: circles for residences, diamonds for reference sites,
+   squares for other GIS-classified destinations. Symbol centers stay on GIS centers. */
+.campus-place-marker{background:none;border:0;display:grid;place-items:center;}
+.campus-place-symbol{display:block;width:10px;height:10px;background:var(--place-color);border:1.5px solid #fff;box-sizing:border-box;box-shadow:0 0 0 1px #0002;}
+.campus-place-diamond{width:12px;height:12px;transform:rotate(45deg);border:2px solid white;}
+.campus-gis-label{display:block;font-size:10px;font-weight:400;color:#626765;margin-top:2px;}
+.voting-report .campus-map-key .campus-key-diamond{width:10px;height:10px;transform:rotate(45deg);background:currentColor;border:1px solid #fff;box-shadow:0 0 0 1px currentColor;}
+.voting-report .campus-map-key .campus-key-dot{width:10px;height:10px;border-radius:50%;background:#2b5f97;}
+.voting-report .campus-map-key .campus-key-square{width:10px;height:10px;background:currentColor;}
+.voting-report .campus-map-key li small{display:block;font-size:10px;color:var(--secondary);margin-top:2px;line-height:1.3;}

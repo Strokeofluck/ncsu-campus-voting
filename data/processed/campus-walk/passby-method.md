@@ -38,3 +38,6 @@ Autoplay displays only the active route, colored purple if the full route enters
 ## Why 50 meters?
 
 The 50-meter default is an exploratory short-walk proximity measure: at the model’s default 80 m/min walking pace, 50 / 80 = 0.625 min; multiplying by 60 gives 37.5 seconds (about 38 seconds). This interprets the chosen threshold; it is not an official boundary or a validated visibility measure. Footprint proximity is minimum straight-line distance to the building outline, not a pedestrian route to the voting door. Barriers, street crossings, entrance location and access restrictions can make the actual walk longer. Entering a zone does not establish reaching the voting entrance within a minute. Both sites use the same threshold and 25/100-meter sensitivity options remain available.
+
+
+The current routine-map display starts autoplay on; the same source rows and defaults for threshold, footprint basis and Talley exclusion remain. The chooser and playback switch are inside the left floating key. The basemap is OpenFreeMap Positron, matching the housing-affordability style. Stationary building markers use frozen-footprint display centers; measured routes and their entrance endpoints remain unchanged.

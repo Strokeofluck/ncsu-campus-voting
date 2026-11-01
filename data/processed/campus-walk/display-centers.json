@@ -1,0 +1,512 @@
+{
+  "basis": "Geographic bounding-box center of original frozen GIS building outline; Hill wings merged. Stationary display markers only. Route entrances, measured lengths, proximity and averages are unchanged.",
+  "source_sha256": "fbd4e1efe853be71e11bcb53e190bd351948e4d0b72881c3b1498f132ae59d63",
+  "centers": {
+    "010": [
+      -78.6646258763621,
+      35.78511330402577
+    ],
+    "011": [
+      -78.6648794092322,
+      35.784476648521995
+    ],
+    "011A": [
+      -78.66541664758618,
+      35.784653953073224
+    ],
+    "012": [
+      -78.66510661023554,
+      35.783902374425594
+    ],
+    "013": [
+      -78.66528695601198,
+      35.783583016468214
+    ],
+    "015": [
+      -78.66578633441915,
+      35.78395953685999
+    ],
+    "018": [
+      -78.66555597943085,
+      35.78542619766178
+    ],
+    "021": [
+      -78.66470518951684,
+      35.78726475068323
+    ],
+    "022": [
+      -78.66517535111771,
+      35.786666858162945
+    ],
+    "023": [
+      -78.66637077789386,
+      35.7869713238391
+    ],
+    "025": [
+      -78.66579105147272,
+      35.78685774371658
+    ],
+    "032A": [
+      -78.66686955263316,
+      35.78490672968828
+    ],
+    "033": [
+      -78.66712201021988,
+      35.78552210410599
+    ],
+    "036": [
+      -78.66733627278818,
+      35.78654990268616
+    ],
+    "043": [
+      -78.66785292939153,
+      35.78634708621744
+    ],
+    "045": [
+      -78.66767429355824,
+      35.78706312359785
+    ],
+    "046": [
+      -78.66848289364577,
+      35.78708036260113
+    ],
+    "047": [
+      -78.66999749453728,
+      35.78760954174248
+    ],
+    "051": [
+      -78.67011187747158,
+      35.78546795357599
+    ],
+    "078": [
+      -78.67396623035214,
+      35.78836492380992
+    ],
+    "079": [
+      -78.67535829924228,
+      35.788355575426564
+    ],
+    "082": [
+      -78.67765179113827,
+      35.78547928187842
+    ],
+    "084": [
+      -78.677395818893,
+      35.78690188489219
+    ],
+    "087": [
+      -78.67779667277475,
+      35.786143947843584
+    ],
+    "088": [
+      -78.67643578755224,
+      35.785649609795094
+    ],
+    "091": [
+      -78.67400774734045,
+      35.78504125308986
+    ],
+    "092": [
+      -78.67314612060002,
+      35.78472263609429
+    ],
+    "093": [
+      -78.67268381072388,
+      35.78532910363573
+    ],
+    "094": [
+      -78.67312791264753,
+      35.78549150287432
+    ],
+    "095": [
+      -78.6735715434048,
+      35.78565338037946
+    ],
+    "096": [
+      -78.67255106173361,
+      35.78463020005937
+    ],
+    "097": [
+      -78.67197440755075,
+      35.784420445221826
+    ],
+    "102": [
+      -78.6708360255918,
+      35.78399998494521
+    ],
+    "103": [
+      -78.66958110339439,
+      35.7828148771556
+    ],
+    "104": [
+      -78.6717000216388,
+      35.784113910970504
+    ],
+    "106": [
+      -78.66685276536629,
+      35.782123967334954
+    ],
+    "107": [
+      -78.66644859849777,
+      35.78264453432574
+    ],
+    "108": [
+      -78.66639970005275,
+      35.782138961914214
+    ],
+    "109": [
+      -78.66591433581314,
+      35.78244812644371
+    ],
+    "112A": [
+      -78.67330129019231,
+      35.78057399949819
+    ],
+    "112B": [
+      -78.67325058074368,
+      35.780915254796135
+    ],
+    "112C": [
+      -78.67261236052282,
+      35.78062578988046
+    ],
+    "131": [
+      -78.68517888494753,
+      35.78433374313667
+    ],
+    "222A": [
+      -78.6849394479917,
+      35.78710670925834
+    ],
+    "222B": [
+      -78.68587249573797,
+      35.78684301789904
+    ],
+    "222C": [
+      -78.68560028419816,
+      35.78643412640196
+    ],
+    "222D": [
+      -78.68540497203992,
+      35.786044918819876
+    ],
+    "222E": [
+      -78.68416826273575,
+      35.78585726050663
+    ],
+    "222F": [
+      -78.68383020109235,
+      35.78628114920727
+    ],
+    "222G": [
+      -78.68462992941814,
+      35.7862454728549
+    ],
+    "222H": [
+      -78.68476125188374,
+      35.7866421340913
+    ],
+    "271A": [
+      -78.67670756610408,
+      35.78011757488341
+    ],
+    "271B": [
+      -78.67694495939264,
+      35.77976656344421
+    ],
+    "271E": [
+      -78.67762455511718,
+      35.77966863487019
+    ],
+    "271F": [
+      -78.67814981443684,
+      35.77989450380713
+    ],
+    "775": [
+      -78.67733427261794,
+      35.770577880355276
+    ],
+    "780A": [
+      -78.67418982461962,
+      35.770041507128205
+    ],
+    "780B": [
+      -78.67331897802025,
+      35.769545805119094
+    ],
+    "780C": [
+      -78.67286757369166,
+      35.76865530384562
+    ],
+    "780D": [
+      -78.67331442131598,
+      35.76793866940865
+    ],
+    "780E": [
+      -78.67343641971806,
+      35.76858232148086
+    ],
+    "780F": [
+      -78.6740327699127,
+      35.76937435564352
+    ],
+    "783A": [
+      -78.67640015183406,
+      35.7692951460222
+    ]
+  },
+  "labels": {
+    "010": {
+      "name": "Watauga Residence Hall",
+      "use_name": "Residence"
+    },
+    "011": {
+      "name": "Brooks Hall",
+      "use_name": "Classroom"
+    },
+    "011A": {
+      "name": "Kamphoefner Hall",
+      "use_name": "Classroom"
+    },
+    "012": {
+      "name": "Gold Residence Hall",
+      "use_name": "Residence"
+    },
+    "013": {
+      "name": "Welch Residence Hall",
+      "use_name": "Residence"
+    },
+    "015": {
+      "name": "Syme Residence Hall",
+      "use_name": "Residence"
+    },
+    "018": {
+      "name": "Leazar Hall",
+      "use_name": "Classroom"
+    },
+    "021": {
+      "name": "North Residence Hall",
+      "use_name": "Residence"
+    },
+    "022": {
+      "name": "Tompkins Hall",
+      "use_name": "Classroom"
+    },
+    "023": {
+      "name": "Winston Hall",
+      "use_name": "Classroom"
+    },
+    "025": {
+      "name": "Caldwell Hall",
+      "use_name": "Classroom"
+    },
+    "032A": {
+      "name": "SAS Hall",
+      "use_name": "Classroom"
+    },
+    "033": {
+      "name": "Park Shops",
+      "use_name": "Classroom"
+    },
+    "036": {
+      "name": "1911 Bldg",
+      "use_name": "Classroom"
+    },
+    "043": {
+      "name": "Withers Hall",
+      "use_name": "Classroom"
+    },
+    "045": {
+      "name": "Ricks Hall",
+      "use_name": "Classroom"
+    },
+    "046": {
+      "name": "Patterson Hall",
+      "use_name": "Classroom"
+    },
+    "047": {
+      "name": "D.H. Hill Jr. Library (East Wing)",
+      "use_name": "Library"
+    },
+    "051": {
+      "name": "Broughton Hall",
+      "use_name": "Classroom"
+    },
+    "078": {
+      "name": "Nelson Hall",
+      "use_name": "Classroom"
+    },
+    "079": {
+      "name": "University Towers Residence Hall",
+      "use_name": "Residence"
+    },
+    "082": {
+      "name": "Fountain Dining Hall",
+      "use_name": "Dining"
+    },
+    "084": {
+      "name": "Sullivan Residence Hall",
+      "use_name": "Residence"
+    },
+    "087": {
+      "name": "Lee Residence Hall",
+      "use_name": "Residence"
+    },
+    "088": {
+      "name": "Bragaw Residence Hall",
+      "use_name": "Residence"
+    },
+    "091": {
+      "name": "Tucker Residence Hall",
+      "use_name": "Residence"
+    },
+    "092": {
+      "name": "Owen Residence Hall",
+      "use_name": "Residence"
+    },
+    "093": {
+      "name": "Carroll Residence Hall",
+      "use_name": "Residence"
+    },
+    "094": {
+      "name": "Metcalf Residence Hall",
+      "use_name": "Residence"
+    },
+    "095": {
+      "name": "Bowen Residence Hall",
+      "use_name": "Residence"
+    },
+    "096": {
+      "name": "Turlington Residence Hall",
+      "use_name": "Residence"
+    },
+    "097": {
+      "name": "Alexander Residence Hall",
+      "use_name": "Residence"
+    },
+    "102": {
+      "name": "Talley Student Union",
+      "use_name": "Student Center"
+    },
+    "103": {
+      "name": "Case Academic Center",
+      "use_name": "Dining"
+    },
+    "104": {
+      "name": "Price Music Center",
+      "use_name": "Classroom"
+    },
+    "106": {
+      "name": "Clark Hall",
+      "use_name": "Dining"
+    },
+    "107": {
+      "name": "Becton Residence Hall",
+      "use_name": "Residence"
+    },
+    "108": {
+      "name": "Berry Residence Hall",
+      "use_name": "Residence"
+    },
+    "109": {
+      "name": "Bagwell Residence Hall",
+      "use_name": "Residence"
+    },
+    "112A": {
+      "name": "Wood Residence Hall Bldg A",
+      "use_name": "Residence"
+    },
+    "112B": {
+      "name": "Wood Residence Hall Bldg B",
+      "use_name": "Residence"
+    },
+    "112C": {
+      "name": "Wood Residence Hall Bldg C",
+      "use_name": "Residence"
+    },
+    "131": {
+      "name": "Western Blvd. Business Service",
+      "use_name": "Office"
+    },
+    "222A": {
+      "name": "Arctic Hall - Wolf Village Apartments Bldg A",
+      "use_name": "Residence"
+    },
+    "222B": {
+      "name": "Baffin Hall - Wolf Village Apartments Bldg B",
+      "use_name": "Residence"
+    },
+    "222C": {
+      "name": "Caspian Hall - Wolf Village Apartments Bldg C",
+      "use_name": "Residence"
+    },
+    "222D": {
+      "name": "Red Hall - Wolf Village Apartments Bldg D",
+      "use_name": "Residence"
+    },
+    "222E": {
+      "name": "Timber Hall - Wolf Village Apartments Bldg E",
+      "use_name": "Residence"
+    },
+    "222F": {
+      "name": "Mackenzie Hall - Wolf Village Apartments Bldg F",
+      "use_name": "Residence"
+    },
+    "222G": {
+      "name": "Gray Hall - Wolf Village Apartments Bldg G",
+      "use_name": "Residence"
+    },
+    "222H": {
+      "name": "Hudson Hall - Wolf Village Apartments Bldg H",
+      "use_name": "Residence"
+    },
+    "271A": {
+      "name": "Aurora Hall - Avent Ferry Residence Hall A",
+      "use_name": "Residence"
+    },
+    "271B": {
+      "name": "Bayview Hall - Avent Ferry Residence Hall B",
+      "use_name": "Residence"
+    },
+    "271E": {
+      "name": "Ocracoke Hall - Avent Ferry Residence Hall E",
+      "use_name": "Residence"
+    },
+    "271F": {
+      "name": "Fort Fisher Hall - Avent Ferry Residence Hall F",
+      "use_name": "Residence"
+    },
+    "775": {
+      "name": "Partners Building I",
+      "use_name": "Classroom"
+    },
+    "780A": {
+      "name": "Tower Hall - Wolf Ridge - Building 1",
+      "use_name": "Residence"
+    },
+    "780B": {
+      "name": "Plaza Hall - Wolf Ridge - Building 2",
+      "use_name": "Residence"
+    },
+    "780C": {
+      "name": "Albright Innovation Hall - Wolf Ridge - Building 3",
+      "use_name": "Residence"
+    },
+    "780D": {
+      "name": "Valley Hall - Wolf Ridge - Building 4",
+      "use_name": "Residence"
+    },
+    "780E": {
+      "name": "Grove Hall - Wolf Ridge - Building 5",
+      "use_name": "Residence"
+    },
+    "780F": {
+      "name": "Lakeview Hall - Wolf Ridge - Building 6",
+      "use_name": "Residence"
+    },
+    "783A": {
+      "name": "James B Hunt Jr Centennial Campus Library",
+      "use_name": "Library"
+    }
+  }
+}

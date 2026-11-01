@@ -9,3 +9,5 @@
 /data/sources/ncsu-gis/**/*.json -text
 /data/processed/campus-walk/parking-gis-raw.json -text
 /data/processed/campus-walk/talley-parking-gis-raw.json -text
+# Preserve the pinned browser libraries and their recorded source hashes.
+/vendor/maplibre/* -text
