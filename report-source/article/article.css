@@ -1,4 +1,5 @@
-.voting-article {gap:24px;}
+.report-page:has(>.voting-article){--data-app-layout-intent:user-requested;--data-app-content-width:1200px;--data-app-report-evidence-width:1200px;--data-app-report-prose-width:800px;max-width:calc(1200px + 2 * var(--data-app-layout-gutter));}
+.voting-article {--data-app-layout-intent:user-requested;--data-app-content-width:800px;--data-app-report-prose-width:800px;gap:24px;width:100%;max-width:1200px;margin-inline:auto;}
 .voting-article h1 {font-size:36px;line-height:1.2;}
 .voting-article .voting-region-comparison {gap:16px;}
 .voting-article .voting-campus-site-benchmark {font-size:13px;gap:6px;}
@@ -7,14 +8,17 @@
 .voting-article .voting-region-benchmark {font-size:13px;}
 .voting-article .voting-page-nav {margin-bottom:0;}
 @media(max-width:600px){.voting-article h1{font-size:28px;}}
-.voting-article .voting-article-map-layout{display:flex;flex-direction:column;gap:32px;}
-.voting-article-featured-map{width:100%;max-width:900px;margin-inline:auto;}
+.voting-article .voting-article-map-layout{display:flex;flex-direction:column;gap:32px;width:100%;max-width:100%;min-width:0;}
+.voting-article-featured-map{width:100%;max-width:800px;margin-inline:auto;}
 .voting-article .voting-article-featured-map .voting-region-age-map{height:440px;}
-.voting-article-comparison-layout{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:24px;align-items:start;}
-.voting-article-middle-maps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start;}
-.voting-article .voting-article-middle-maps .voting-region-age-map{height:300px;}
+.voting-article-comparison-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:start;width:100%;min-width:0;}
+.voting-article-middle-maps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start;width:100%;min-width:0;}
+.voting-article-middle-maps .voting-article-map-body{display:block;}
+.voting-article .voting-article-middle-maps .voting-region-age-map{height:320px;}
+.voting-article-senior-map{width:100%;max-width:800px;margin-inline:auto;}
 .voting-article .voting-article-senior-map .voting-region-age-map{height:440px;}
 .voting-article-middle-maps .component-title{font-size:15px;}
+.voting-report.voting-article .voting-article-middle-maps [data-component-kind="custom"]>.component-header .component-title{font-size:16px;line-height:1.4;}
 .voting-article-middle-maps .voting-site-count-pair>div{align-items:start;gap:6px;}
 .voting-article-middle-maps .voting-site-count-pair dt{max-width:68%;}
 .voting-article-middle-maps .voting-site-count-pair dd{white-space:nowrap;}
@@ -31,5 +35,20 @@
 .voting-article-bar-axis>span:first-child{transform:none;}
 .voting-article-axis-title{text-align:center;font-size:12px;}
 .voting-article-benchmark figcaption{font-size:12px;line-height:1.5;color:var(--secondary);}
-@media(max-width:1100px){.voting-article-comparison-layout{grid-template-columns:minmax(0,1fr);}.voting-article-senior-map{width:100%;max-width:900px;margin-inline:auto;}.voting-article .voting-article-senior-map .voting-region-age-map{height:420px;}}
-@media(max-width:700px){.voting-article-middle-maps{grid-template-columns:minmax(0,1fr);}.voting-article .voting-article-featured-map .voting-region-age-map,.voting-article .voting-article-middle-maps .voting-region-age-map,.voting-article .voting-article-senior-map .voting-region-age-map{height:320px;}.voting-article-bar-label{align-items:flex-end;}.voting-article-bar-label>span{max-width:75%;}}
+.voting-article .voting-article-number-panel{gap:14px;padding-top:14px;}
+.voting-article .voting-article-middle-maps .voting-article-number-panel{padding-top:14px;}
+.voting-article .voting-page-nav,.voting-article .voting-region-comparison>.voting-map-toolbar,.voting-article .voting-region-comparison>.voting-map-legend{width:min(800px,100%);margin-inline:auto;}
+.voting-article-number-heading{font-weight:500;}
+.voting-article-growth-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0;}
+.voting-article-growth-pair>div{display:flex;flex-direction:column;gap:6px;}
+.voting-article-growth-pair dt{font-size:12px;line-height:1.4;min-height:2.8em;font-weight:400;}
+.voting-article-growth-pair dd{margin:0;font-size:22px;line-height:1.2;font-weight:500;font-variant-numeric:tabular-nums;}
+.voting-article-growth-gap{display:flex;align-items:baseline;gap:8px;margin:0;border-top:1px solid var(--border);padding-top:12px;}
+.voting-article-growth-gap>strong{font-size:22px;font-weight:500;font-variant-numeric:tabular-nums;}
+.voting-article-growth-gap>span{font-size:12px;line-height:1.4;max-width:145px;}
+.voting-article-count-line{display:flex;flex-wrap:wrap;gap:4px 12px;margin:0;font-size:12px;line-height:1.5;}
+.voting-article-count-line>span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap;}
+.voting-article-middle-maps .voting-article-count-line{flex-direction:column;}
+@media(max-width:1100px){.voting-article-comparison-layout{grid-template-columns:minmax(0,1fr);}.voting-article-senior-map{width:100%;max-width:800px;margin-inline:auto;}.voting-article .voting-article-senior-map .voting-region-age-map{height:420px;}}
+@media(min-width:701px) and (max-width:900px){.voting-article-middle-maps{grid-template-columns:minmax(0,1fr);gap:28px;}.voting-article-middle-maps .voting-article-map-body{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:12px 18px;align-items:start;}.voting-article-middle-maps .voting-region-map-unit{grid-column:1/-1;}.voting-article .voting-article-middle-maps .voting-region-age-map{height:260px;}.voting-article .voting-article-middle-maps .voting-article-number-panel{border-top:0;margin-top:0;padding-top:0;}}
+@media(max-width:700px){.voting-article-middle-maps{grid-template-columns:minmax(0,1fr);}.voting-article-middle-maps .voting-article-map-body{display:block;}.voting-article .voting-article-middle-maps .voting-article-number-panel{border-top:1px solid var(--border);margin-top:12px;padding-top:14px;}.voting-article .voting-article-featured-map .voting-region-age-map,.voting-article .voting-article-middle-maps .voting-region-age-map,.voting-article .voting-article-senior-map .voting-region-age-map{height:320px;}.voting-article-bar-label{align-items:flex-end;}.voting-article-bar-label>span{max-width:75%;}}
