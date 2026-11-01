@@ -36,4 +36,10 @@
 .walking-method summary,.walking-table summary{font-weight:600;cursor:pointer;}
 .walking-map .leaflet-interactive:focus{outline:3px solid #111;outline-offset:3px;}
 .walking-table button{background:none;border:0;text-decoration:underline;font:inherit;text-align:left;color:var(--text);cursor:pointer;}
+.route-view-controls{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 12px;}
+.route-view-controls button{font:inherit;font-size:12px;padding:8px 12px;background:var(--background);color:var(--text);border:1px solid var(--border);cursor:pointer;}
+.route-view-controls button[aria-pressed="true"]{background:var(--text);color:var(--background);border-color:var(--text);}
+.walking-route-overview,.passby-overview{font-size:13px;line-height:1.6;margin:12px 0;}
+.walking-site-marker-label>.walking-site-label,.passby-site-label>.walking-site-label{display:block;width:100%;height:26px;box-sizing:border-box;}
+@media(max-width:600px){.walking-site-marker-label-2026>.walking-site-label{position:relative;left:65px;}.passby-site-label-131>.walking-site-label{position:relative;left:77px;}}
 @media(max-width:600px){.walking-map{height:430px;}.walking-controls{display:grid;grid-template-columns:1fr;}.walking-result-pair strong{font-size:22px;}.walking-result-pair{gap:12px;}.walking-result-pair>div{font-size:12px;}}

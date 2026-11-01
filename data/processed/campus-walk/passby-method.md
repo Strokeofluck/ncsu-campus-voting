@@ -11,3 +11,5 @@ GIS paths and building access assumptions are the same as the walking comparison
 `passby.json` retains origin/destination selection, exclusions, per-pair distances, simplified map geometry and threshold summaries. `passby-routes.csv` and `passby-summary.csv` retain unrounded calculations. Map lines are simplified within 1 m; full-resolution paths are used for calculations. Original GIS is preserved in `official-gis-snapshot.zip`.
 
 Reproduce with `python scripts/build_campus_passby.py --library-dir optional/path`, using shapely, pyproj and networkx. The base route builder's `--network-only` mode loads the same graph without overwriting prior reviewed route evidence.
+
+The map defaults to All routes together, fitted to the complete eligible network. Repeated semi-transparent paths darken where modeled routes overlap; darkness is not observed pedestrian flow. The Selected trip mode highlights one pair and changes the zoom. The All halls → every destination button resets the destination-type filter and includes Talley-ending dining trips explicitly, updating both percentage denominators.
