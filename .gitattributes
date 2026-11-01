@@ -5,3 +5,6 @@
 /article/index.html -text
 /article/data-app-build.json -text
 /article/snapshot.*.json -text
+# Frozen GIS evidence must retain the bytes recorded in its SHA-256 manifests.
+/data/sources/ncsu-gis/**/*.json -text
+/data/processed/campus-walk/parking-gis-raw.json -text
