@@ -21,3 +21,7 @@
 .passby-source-table{font-size:12px;min-width:640px;}
 .passby-source-table small{display:block;color:var(--secondary);}
 @media(max-width:600px){.passby-results{gap:16px;}.passby-results>div{font-size:12px;}.passby-results strong{font-size:28px;}}
+
+.passby-zone-explanation{font-size:12px;line-height:1.6;color:var(--secondary);margin:0 0 18px;}
+.passby-playback-match{display:flex;align-items:center;gap:8px;}
+.passby-playback-match i{display:inline-block;width:24px;height:4px;}
