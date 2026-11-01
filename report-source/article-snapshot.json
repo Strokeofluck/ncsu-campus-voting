@@ -161093,6 +161093,17 @@
             "label": "Constant-share ballot benchmark",
             "formula": "benchmark_ballots = site_ballots_2022 * county_ballots_2026 / county_ballots_2022; difference = benchmark_ballots - site_ballots_2026",
             "definition": "For ages 18–24, 2,999 × 22,980 ÷ 11,287 = 6,105.875786… benchmark ballots. Compared with 4,214 actual, the difference is 1,891.875786… ballots. The chart rounds only the displayed counts. This holds the location’s 2022 countywide share constant; it does not estimate nonvoters or establish causation."
+          },
+          {
+            "label": "Polling-site circle area",
+            "definition": "Each circle uses the age-group accepted early-ballot count cast at Talley in 2022 or Western Boulevard in 2026, regardless of registered home precinct. Radius in pixels = 40 * sqrt(site_ballots / maximum site_ballots across both years and all five age groups). Therefore circle area is proportional to ballots and the size scale is shared by every age map. Counts use the matched first 16 early-voting days. Precinct geometry is context only; no precinct fill encodes voter residence.",
+            "componentIds": [
+              "voting-campus-age-0",
+              "voting-campus-age-1",
+              "voting-campus-age-2",
+              "voting-campus-age-3",
+              "voting-campus-age-4"
+            ]
           }
         ]
       },
@@ -161151,7 +161162,12 @@
             "definition": "Talley building 102 and Western Boulevard Business Services building 131. Pin latitude and longitude come directly from the university GIS LATITUDE/LONGITUDE attributes; these are public building points, not voter residences. Talley is the compared site in 2022/2024, Western Boulevard in 2026.",
             "componentIds": [
               "voting-precinct-map",
-              "voting-map-intro"
+              "voting-map-intro",
+              "voting-campus-age-0",
+              "voting-campus-age-1",
+              "voting-campus-age-2",
+              "voting-campus-age-3",
+              "voting-campus-age-4"
             ]
           },
           {

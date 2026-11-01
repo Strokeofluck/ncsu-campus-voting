@@ -11,7 +11,7 @@
 .voting-article .voting-article-map-layout{display:flex;flex-direction:column;gap:32px;width:100%;max-width:100%;min-width:0;}
 .voting-article-featured-map{width:100%;max-width:800px;margin-inline:auto;}
 .voting-article .voting-article-featured-map .voting-region-age-map{height:440px;}
-.voting-article-comparison-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:start;width:100%;min-width:0;}
+.voting-article-comparison-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:start;width:min(800px,100%);min-width:0;margin-inline:auto;}
 .voting-article-middle-maps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start;width:100%;min-width:0;}
 .voting-article-middle-maps .voting-article-map-body{display:block;}
 .voting-article .voting-article-middle-maps .voting-region-age-map{height:320px;}
@@ -49,6 +49,19 @@
 .voting-article-count-line{display:flex;flex-wrap:wrap;gap:4px 12px;margin:0;font-size:12px;line-height:1.5;}
 .voting-article-count-line>span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap;}
 .voting-article-middle-maps .voting-article-count-line{flex-direction:column;}
+.voting-site-map-legend{width:min(800px,100%);margin-inline:auto;display:grid;gap:10px;font-size:12px;line-height:1.5;color:var(--text);}
+.voting-site-map-legend>div{display:flex;flex-wrap:wrap;gap:10px 22px;}
+.voting-site-map-legend>div>span{display:flex;align-items:center;gap:8px;}
+.voting-site-map-legend i{display:inline-block;width:12px;height:12px;border-radius:50%;}
+.voting-site-map-legend svg{width:270px;max-width:100%;height:100px;overflow:visible;}
+.voting-site-map-legend svg text{font-size:11px;}
+.voting-article .voting-site-map-label{box-sizing:border-box;text-align:center;background:#fff;color:#17202a;border:1px solid #7b858f;padding:4px;font-size:12px;line-height:17px;white-space:nowrap;}
+.voting-site-map-label span,.voting-site-map-label strong{display:block;}
+.voting-site-map-frame{min-width:0;}
+.voting-site-map-attribution{font-size:10px;line-height:1.4;color:var(--secondary);padding-top:5px;overflow-wrap:anywhere;}
+.voting-article .voting-site-map-label-western{border-top:3px solid #2176a5;}
+.voting-article .voting-site-map-label-talley{border-top:3px solid #b65b32;}
+.voting-article .leaflet-interactive:focus{outline:3px solid #111;outline-offset:3px;}
 @media(max-width:1100px){.voting-article-comparison-layout{grid-template-columns:minmax(0,1fr);}.voting-article-senior-map{width:100%;max-width:800px;margin-inline:auto;}.voting-article .voting-article-senior-map .voting-region-age-map{height:420px;}}
 @media(min-width:701px) and (max-width:900px){.voting-article-middle-maps{grid-template-columns:minmax(0,1fr);gap:28px;}.voting-article-middle-maps .voting-article-map-body{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:12px 18px;align-items:start;}.voting-article-middle-maps .voting-region-map-unit{grid-column:1/-1;}.voting-article .voting-article-middle-maps .voting-region-age-map{height:260px;}.voting-article .voting-article-middle-maps .voting-article-number-panel{border-top:0;margin-top:0;padding-top:0;}}
 @media(max-width:700px){.voting-article-middle-maps{grid-template-columns:minmax(0,1fr);}.voting-article-middle-maps .voting-article-map-body{display:block;}.voting-article .voting-article-middle-maps .voting-article-number-panel{border-top:1px solid var(--border);margin-top:12px;padding-top:14px;}.voting-article .voting-article-featured-map .voting-region-age-map,.voting-article .voting-article-middle-maps .voting-region-age-map,.voting-article .voting-article-senior-map .voting-region-age-map{height:320px;}.voting-article-bar-label{align-items:flex-end;}.voting-article-bar-label>span{max-width:75%;}}
