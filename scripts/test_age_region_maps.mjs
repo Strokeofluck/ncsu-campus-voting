@@ -15,4 +15,10 @@ for(const [metric,definition]of Object.entries(METRICS)){
 const young=rankedRegions(rows.filter(r=>r.cohort==='18–24'),'ballot_change');
 assert.equal(young[0].area,'PRECINCT 01-23');assert.equal(young[0].ballot_change,467);
 assert.equal(regionColor({ballot_change:null},'ballot_change'),'#bdbdbd');
+const focal=rows.find(r=>r.area==='PRECINCT 01-23'&&r.cohort==='18–24');
+assert(focal.growth_pct>0&&focal.growth_gap_pp<0);
+assert(Math.abs(focal.growth_gap_pp-(467/599*100-(22980-11287)/11287*100))<1e-10);
+assert.equal(regionColor(focal,'growth_gap_pp'),scaleColors('growth_gap_pp')[1]);
+assert.equal(regionColor({growth_gap_pp:null},'growth_gap_pp'),'#bdbdbd');
+assert(rankedRegions(rows,'growth_gap_pp','absolute',20).every(r=>r.ballots_2022>=20));
 console.log('Passed shared map scales, all ranking directions, missing values, relative-growth baseline filter and the focal precinct’s count ranking.');

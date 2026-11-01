@@ -513,3 +513,11 @@
 @media(max-width:1200px){.voting-report .voting-campus-age-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:900px){.voting-report .voting-campus-age-grid{width:100%;grid-template-columns:minmax(0,1fr);}.voting-report .voting-campus-age-grid .voting-region-age-map{height:420px;}}
 .voting-report .voting-region-precinct-label {background:transparent;border:0;pointer-events:none;}.voting-report .voting-region-precinct-label span {display:block;background:#fff;color:#4e360b;border:1px solid #b77916;border-radius:4px;text-align:center;font:700 12px/21px Arial,sans-serif;box-shadow:0 1px 4px #0003;}
+.voting-report .voting-region-benchmark {font-size:12px;color:var(--text);margin:0 0 10px;}
+.voting-report .voting-region-benchmark span {display:block;color:var(--secondary);}
+.voting-report .voting-campus-site-benchmark {display:grid;gap:4px;border-top:1px solid var(--border);padding-top:12px;margin-top:12px;font-size:12px;color:var(--text);}
+.voting-report .voting-campus-age-counts {white-space:normal;table-layout:fixed;}
+.voting-report .voting-campus-age-counts th,.voting-report .voting-campus-age-counts td {padding:10px 3px;}
+.voting-report .voting-campus-age-counts th:first-child {width:25%;}
+.voting-report .voting-campus-age-counts th:nth-child(2) {width:31%;}
+.voting-report .voting-campus-age-counts th:nth-child(3) {width:20%;}

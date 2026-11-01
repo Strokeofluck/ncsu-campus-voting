@@ -49,7 +49,7 @@ export function ReportContent(){
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const [ageBaseline,setAgeBaseline]=useState(2022),[profileDimension,setProfileDimension]=useState('party');
  const [partyScope,setPartyScope]=useState('Campus site'),[partyCohort,setPartyCohort]=useState('All ages');
- useEffect(()=>{const id=window.location.hash.slice(1);if(['age-region-comparison','age-distribution','party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
+ useEffect(()=>{const id=window.location.hash.slice(1);if(['campus-age-growth','age-region-comparison','age-distribution','party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
