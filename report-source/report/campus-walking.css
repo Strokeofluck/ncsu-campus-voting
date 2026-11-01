@@ -1,0 +1,26 @@
+.campus-walking-section{width:100%;min-width:0;margin-block:32px;}
+.walking-controls{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:20px;}
+.walking-controls label{display:flex;flex-direction:column;gap:6px;min-width:0;max-width:100%;font-size:13px;}
+.walking-controls select{font:inherit;max-width:100%;padding:8px;color:var(--text);background:var(--background);border:1px solid var(--border);}
+.walking-results{padding-block:16px;border-block:1px solid var(--border);margin-bottom:18px;}
+.walking-results h3{font-size:20px;margin:0 0 16px;}
+.walking-selected-group{font-size:12px;color:var(--secondary);margin:-8px 0 16px;}
+.walking-data-date{font-size:12px;color:var(--secondary);margin:0 0 16px;}
+.walking-result-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.walking-result-pair>div{display:flex;flex-direction:column;gap:6px;font-size:13px;}
+.walking-result-pair strong{font-size:26px;font-weight:500;}
+.walking-difference{font-size:14px;line-height:1.5;margin-bottom:0;}
+.walking-legend{display:flex;flex-wrap:wrap;gap:10px 20px;margin-bottom:12px;font-size:12px;}
+.walking-legend>span{display:flex;align-items:center;gap:7px;}
+.walking-legend i{display:inline-block;width:20px;height:4px;}
+.walking-map{height:530px;width:100%;max-width:100%;border:1px solid var(--border);z-index:0;}
+.walking-map-credit{font-size:10px;line-height:1.5;color:var(--secondary);padding-top:6px;overflow-wrap:anywhere;}
+.walking-site-label{background:#fff;color:#17202a;border:1px solid #74818c;padding:3px;text-align:center;font-size:11px;line-height:18px;white-space:nowrap;}
+.walking-map-toolbar{display:flex;align-items:start;flex-wrap:wrap;gap:12px;margin:14px 0;font-size:12px;line-height:1.6;}
+.walking-map-toolbar button{padding:7px 10px;font:inherit;color:var(--text);background:var(--background);border:1px solid var(--border);}
+.walking-map-toolbar span{flex:1;min-width:180px;}
+.walking-method,.walking-table{font-size:13px;line-height:1.6;margin-top:18px;}
+.walking-method summary,.walking-table summary{font-weight:600;cursor:pointer;}
+.walking-map .leaflet-interactive:focus{outline:3px solid #111;outline-offset:3px;}
+.walking-table button{background:none;border:0;text-decoration:underline;font:inherit;text-align:left;color:var(--text);cursor:pointer;}
+@media(max-width:600px){.walking-map{height:430px;}.walking-controls{display:grid;grid-template-columns:1fr;}.walking-result-pair strong{font-size:22px;}.walking-result-pair{gap:12px;}.walking-result-pair>div{font-size:12px;}}
