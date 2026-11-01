@@ -134642,6 +134642,14 @@
               "voting-precinct-map",
               "voting-site-precinct-companion"
             ]
+          },
+          {
+            "label": "Precinct ballot growth, 2022 to 2026",
+            "formula": "growth = (2026 count - 2022 count) / 2022 count * 100; absolute change = 2026 count - 2022 count",
+            "definition": "Join the same recorded residential precinct code and selected age cohort in both years. The count is either all accepted early ballots at any Wake location (wake_ballots) or ballots at Talley in 2022 and Western Boulevard in 2026 (site_ballots). Match the first 16 calendar early-voting days. Missing area/year is unavailable, never zero. A zero baseline has undefined percentage growth; a positive current count with zero baseline is separately marked new from zero. Current GIS polygons are a reference, not harmonized historical boundaries; changes may reflect redistricting or population changes as well as voting behavior. No turnout denominator, student identifier or causal estimate is supplied.",
+            "componentIds": [
+              "voting-precinct-map"
+            ]
           }
         ]
       },

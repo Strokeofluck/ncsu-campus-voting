@@ -55,7 +55,8 @@ assert html.index('id="proof-download-status"')<html.index('id="math"')
 assert 'Quick glance' in html and 'download-package' in page.ids
 assert 'growth-proof-cards' in page.ids and html.count('class="growth-proof-card"')==2
 assert '+40.5%' in html and '+103.6%' in html
-for required in ['5 County source','6 County flags','7 County counts','8 Growth proof','twelve']:
+assert 'comparison-flow' in html and 'id="story-mix"' in html and 'map=growth#precinct-map' in html
+for required in ['5 County source','6 County flags','7 County counts','8 Growth proof','thirteen','9 Individual ages']:
     assert required in html,required
 assert 'browser-preview' not in html and 'Open calculation in a full tab' not in html
 library=(ROOT/'report-source/reference-library.html').read_text(encoding='utf-8')

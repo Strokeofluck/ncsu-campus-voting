@@ -23,6 +23,14 @@
   const rows=[['all','Talley → Western Boulevard · all ages',previous.all_ages,current.all_ages,'ballots'],['college','Talley → Western Boulevard · ages 18–24',previous.age_18_24,current.age_18_24,'ballots'],['share','College-age share of site ballots',share(baseline,'18-24'),share(2026,'18-24'),'%'],['older','65+ share of site ballots',share(baseline,'65'),share(2026,'65'),'%'],['county','Wake County · ages 18–24',wakePrevious.age_18_24,wakeCurrent.age_18_24,'ballots']];
   $('previous-header').textContent=String(baseline);$('baseline').value=String(baseline);
   $('period-note').textContent=`Talley Student Union: ${date(previous.start_date)}–${date(previous.end_date)}. Western Boulevard Business Services: ${date(current.start_date)}–${date(current.end_date)}. `+(baseline===2022?'Both elections are midterms.':'2024 was a presidential election; 2026 is a midterm.');
+  $('math-title').textContent=baseline===2022?'Similar age mix, different ballot growth':'2024 benchmark: both college-age counts fell';
+  $('story-site-title').textContent=baseline===2022?'The site’s college-age count grew':'The site’s college-age count fell';
+  $('story-county-title').textContent=baseline===2022?'Wake’s college-age count grew faster':'Wake’s college-age count fell less';
+  $('story-mix-title').textContent=baseline===2022?'The site’s age mix barely changed':'The site’s age mix changed';
+  $('story-mix').textContent=`Ages 18–24: ${share(baseline,'18-24').toFixed(1)}% of Talley’s ballots in ${baseline} and ${share(2026,'18-24').toFixed(1)}% of Western Boulevard’s in 2026.`;
+  $('story-site').textContent=`${number(previous.age_18_24,'ballots')} → ${number(current.age_18_24,'ballots')} ballots: ${delta(data.records[id('college')].value,'%')}.`;
+  $('story-county').textContent=`${number(wakePrevious.age_18_24,'ballots')} → ${number(wakeCurrent.age_18_24,'ballots')} ballots: ${delta(data.records[id('county')].value,'%')}${baseline===2022?', more than double.':'.'}`;
+  $('story-meaning').textContent=baseline===2022?'A nearly unchanged percentage within the site does not mean the site kept pace with college-age voting across Wake. These counts raise a question about the move; they do not establish its effect.':'This presidential-to-midterm benchmark differs from the primary midterm comparison. Both college-age counts fell; the site count fell further. This does not isolate the effect of the move.';
   $('comparison-rows').replaceChildren();
   const focus=$('growth-proof-cards');focus.replaceChildren();
   for(const [kind,label,before,after]of [['college','Talley to Western · ages 18–24',previous.age_18_24,current.age_18_24],['county','Wake County · ages 18–24',wakePrevious.age_18_24,wakeCurrent.age_18_24]]){

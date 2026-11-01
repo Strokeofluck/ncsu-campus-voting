@@ -55,7 +55,7 @@
  $('download-workbook').onclick=()=>{
   if(exporting)return;exporting=true;
   $('download-workbook').disabled=true;$('download-status').textContent='Downloading and checking all three original government CSVs…';
-  const exporter=new Worker('csv-excel-worker.js?v=county-growth-4');
+  const exporter=new Worker('csv-excel-worker.js?v=age-growth-5');
   const failed=message=>{exporting=false;$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
   exporter.onmessage=({data})=>{
    if(data.type==='status')$('download-status').textContent=data.text;
@@ -63,7 +63,7 @@
    if(data.type==='download'){exporting=false;
     if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([data.bytes],{type:'application/zip'}));
     const link=el('a','Save originals + Excel ZIP',{href:exportUrl,download:data.filename});
-    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP. Open Excel in 02 Working copy, then follow Original files → full Copy tabs → site steps 1–4 → county steps 5–7 → Growth proof.'));
+    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP. Open Excel in 02 Working copy, then follow Original files → full Copy tabs → site steps 1–4 → county steps 5–7 → Growth proof → Individual ages.'));
     $('download-workbook').disabled=false;exporter.terminate();link.click();
    }
   };exporter.onerror=()=>failed('The export worker could not run.');exporter.postMessage({sources:exportSources,context});

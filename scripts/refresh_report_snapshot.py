@@ -10,6 +10,7 @@ from build_sdr_trends import add_sdr_trends
 from build_geography import add_geography
 from build_precinct_map import add_precinct_map
 from build_age_distribution import add_age_distribution
+from add_growth_map_context import add_growth_map_context
 
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/processed/comparison/comparison.json').read_text(encoding='utf-8'))
@@ -51,5 +52,6 @@ add_sdr_trends(snapshot,data)
 add_geography(snapshot,data)
 add_precinct_map(snapshot)
 add_age_distribution(snapshot,data)
+add_growth_map_context(snapshot)
 path.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Report {snapshot["id"]}: {days} matched days through {cutoff}')

@@ -1,4 +1,5 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
+import {precinctGrowth,growthColor} from './precinct-growth.js';
 import * as L from './vendor/leaflet/leaflet-src.esm.js';
 import './vendor/leaflet/leaflet.css';
 import {DataComponent,EvidenceChart,RichNarrative,useDataApp} from '../../data-app-public.jsx';
@@ -22,13 +23,21 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
  const shapes=snapshot.queries.precinct_shapes.rows,points=snapshot.queries.voting_site_points.rows;
  const [year,setYear]=useState(2026),[selected,setSelected]=useState('PRECINCT 01-23'),[streetError,setStreetError]=useState(false);
  const [ageView,setAgeView]=useState('counts');
+ const [mapView,setMapView]=useState(()=>new URLSearchParams(window.location.search).get('map')==='growth'?'growth':'share'),[growthScope,setGrowthScope]=useState('wake_ballots');
  const host=useRef(null),mapRef=useRef(null),layersRef=useRef(new Map()),groupRef=useRef(null),handler=useRef(onSelectArea);
  handler.current=onSelectArea;
  const rows=useMemo(()=>snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&r.cohort===cohort),[snapshot.queries.geography.rows,cohort]);
  const byKey=useMemo(()=>new Map(rows.map(r=>[`${r.year}|${r.area}`,r])),[rows]);
  const availableAreas=useMemo(()=>[...new Set(rows.map(r=>r.area))].sort(),[rows]);
  const shapeAreas=useMemo(()=>new Set(shapes.map(r=>r.area)),[shapes]);
- const state=useRef({year,selected,byKey,cohort});state.current={year,selected,byKey,cohort};
+ const state=useRef({year,selected,byKey,cohort,mapView,growthScope});state.current={year,selected,byKey,cohort,mapView,growthScope};
+ const growthRows=availableAreas.map(area=>({area,...precinctGrowth(byKey.get(`2022|${area}`),byKey.get(`2026|${area}`),growthScope)}));
+ const growthSelected=growthRows.find(r=>r.area===selected);
+ const growthLabel=growthScope==='wake_ballots'?'All Wake early-voting locations':'Talley (2022) / Western Boulevard (2026)';
+ const collegeSummary=(year,field)=>snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&r.cohort==='18–24'&&r.year===year&&r.area_present).reduce((n,r)=>n+r[field],0);
+ const collegeCounty=[collegeSummary(2022,'wake_ballots'),collegeSummary(2026,'wake_ballots')],collegeSite=[collegeSummary(2022,'site_ballots'),collegeSummary(2026,'site_ballots')];
+ const collegeGrowth=v=>(v[1]/v[0]*100-100).toFixed(1);
+
  const currentRows=rows.filter(r=>r.year===year),mapped=currentRows.filter(r=>shapeAreas.has(r.area));
  const unmapped=currentRows.filter(r=>r.area_present&&!shapeAreas.has(r.area)&&r.wake_ballots>0),unmappedBallots=unmapped.reduce((sum,r)=>sum+r.wake_ballots,0);
  const selectedAgeRows=useMemo(()=>snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&r.area===selected),[snapshot.queries.geography.rows,selected]);
@@ -43,12 +52,13 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
  const pairedLookup=new Map(pairedRows.map(r=>[`${r.area}|${r.year}|${r.cohort}`,r]));
  const pairedBands=[...AGE_BANDS,...(pairedRows.some(r=>r.cohort==='Unknown / outside range'&&r.wake_ballots>0)?['Unknown / outside range']:[]),'All ages'];
  const evidenceAreas=new Set([...pairedAreas,selected]);
- const mapEvidenceRows=[...rows.filter(r=>!evidenceAreas.has(r.area)),...snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&evidenceAreas.has(r.area))];
+ const baseEvidenceRows=[...rows.filter(r=>!evidenceAreas.has(r.area)),...snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&evidenceAreas.has(r.area))];
+ const mapEvidenceRows=mapView==='growth'?[...new Map([...baseEvidenceRows,...snapshot.queries.geography.rows.filter(r=>r.dimension==='Precinct'&&r.cohort==='18–24')].map(r=>[`${r.year}|${r.area}|${r.cohort}`,r])).values()]:baseEvidenceRows;
  const selectArea=area=>{setSelected(area);handler.current?.(area);};
  const selectRef=useRef(selectArea);selectRef.current=selectArea;
  const styleFor=area=>{
   const s=state.current,r=s.byKey.get(`${s.year}|${area}`),chosen=s.selected===area;
-  return {color:chosen?'#e36d31':'#536477',weight:chosen?3.5:1.15,opacity:1,fillColor:color(r?.site_share_pct),fillOpacity:typeof r?.site_share_pct==='number'?0.44:0.3,dashArray:typeof r?.site_share_pct==='number'?undefined:'3 4'};
+  return {color:chosen?'#e36d31':'#536477',weight:chosen?3.5:1.15,opacity:1,fillColor:s.mapView==='growth'?growthColor(precinctGrowth(s.byKey.get(`2022|${area}`),s.byKey.get(`2026|${area}`),s.growthScope)):color(r?.site_share_pct),fillOpacity:0.55,dashArray:typeof r?.site_share_pct==='number'?undefined:'3 4'};
  };
  useEffect(()=>{
   if(!host.current)return undefined;
@@ -60,7 +70,7 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
   const geo={type:'FeatureCollection',features:shapes.map(r=>({type:'Feature',properties:{area:r.area,code:r.code},geometry:r.geometry}))};
   const group=L.geoJSON(geo,{style:feature=>styleFor(feature.properties.area),onEachFeature:(feature,layer)=>{
    const area=feature.properties.area;
-   layer.bindTooltip(()=>{const s=state.current,r=s.byKey.get(`${s.year}|${area}`);return tooltipNode(area,[`${s.year} · ${s.cohort==='All ages'?'All ages':`Ages ${s.cohort}`}`,`${num(r?.site_ballots)} at ${siteName(s.year)}`,`${num(r?.other_wake_ballots)} at other Wake sites`,`${pct(r?.site_share_pct)} using the named site`]);},{sticky:true,className:'voting-map-tooltip',direction:'auto',opacity:1});
+   layer.bindTooltip(()=>{const s=state.current,r=s.byKey.get(`${s.year}|${area}`);if(s.mapView==='growth'){const g=precinctGrowth(s.byKey.get(`2022|${area}`),s.byKey.get(`2026|${area}`),s.growthScope);return tooltipNode(area,[`${s.cohort==='All ages'?'All ages':`Ages ${s.cohort}`} · 2022 to 2026`,s.growthScope==='wake_ballots'?'Any Wake early-voting location':'Talley to Western Boulevard',`2022: ${num(g.previous)} ballots`,`2026: ${num(g.current)} ballots`,`Change: ${num(g.change)} ballots`,g.newFromZero?'New from zero; percentage growth undefined':`Growth: ${pct(g.growth)}`]);}return tooltipNode(area,[`${s.year} · ${s.cohort==='All ages'?'All ages':`Ages ${s.cohort}`}`,`${num(r?.site_ballots)} at ${siteName(s.year)}`,`${num(r?.other_wake_ballots)} at other Wake sites`,`${pct(r?.site_share_pct)} using the named site`]);},{sticky:true,className:'voting-map-tooltip',direction:'auto',opacity:1});
    layer.on('click',()=>{selectRef.current(area);layer.closeTooltip();});
    layersRef.current.set(area,layer);
   }}).addTo(map);groupRef.current=group;
@@ -103,15 +113,17 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
  },[shapes,points,snapshot.precinctMap]);
  useEffect(()=>{
   for(const [area,layer] of layersRef.current){layer.setStyle(styleFor(area));if(area===selected)layer.bringToFront();}
- },[year,selected,byKey]);
+ },[year,selected,byKey,mapView,growthScope]);
  const focusBoth=()=>mapRef.current?.fitBounds(points.map(p=>[p.latitude,p.longitude]),{padding:[80,80],maxZoom:15});
  const focusSelected=()=>{const layer=layersRef.current.get(selected);if(layer)mapRef.current?.fitBounds(layer.getBounds(),{padding:[35,35],maxZoom:16});};
  if(!visible('voting-precinct-map'))return null;
  return <div id="precinct-map" className="voting-map-block">
-  <DataComponent id="voting-precinct-map" queryId="geography" queryIds={['geography','precinct_shapes','voting_site_points']} sourceRowsByQuery={{geography:mapEvidenceRows,precinct_shapes:shapes,voting_site_points:points}} displayRows={mapEvidenceRows} kind="custom" title="Talley and Western Boulevard · precinct map">
+  <DataComponent id="voting-precinct-map" queryId="geography" queryIds={['geography','precinct_shapes','voting_site_points']} sourceRowsByQuery={{geography:mapEvidenceRows,precinct_shapes:shapes,voting_site_points:points}} displayRows={mapView==='growth'?growthRows:mapEvidenceRows} kind="custom" title="Talley and Western Boulevard · precinct map">
    <RichNarrative id="voting-map-intro" value="Select a precinct to see where its early voters voted. Both pins stay visible as location references: Talley was the compared site in 2022/2024; Western Boulevard is the compared site in 2026."/>
    <div className="voting-controls voting-map-controls">
-    <label>Map year <select value={year} onChange={e=>setYear(Number(e.target.value))}><option value={2026}>2026 · Western Boulevard · midterm</option><option value={2024}>2024 · Talley · presidential</option><option value={2022}>2022 · Talley · midterm</option></select></label>
+    <label>Map view <select value={mapView} onChange={e=>setMapView(e.target.value)}><option value="share">Share using Talley / Western Boulevard</option><option value="growth">Ballot growth, 2022 to 2026</option></select></label>
+    {mapView==='growth'&&<label>Count ballots at <select value={growthScope} onChange={e=>setGrowthScope(e.target.value)}><option value="wake_ballots">Any early-voting site in Wake County</option><option value="site_ballots">Talley (2022) / Western Boulevard (2026)</option></select></label>}
+    {mapView==='share'&&<label>Map year <select value={year} onChange={e=>setYear(Number(e.target.value))}><option value={2026}>2026 · Western Boulevard · midterm</option><option value={2024}>2024 · Talley · presidential</option><option value={2022}>2022 · Talley · midterm</option></select></label>}
     <label>Select precinct <select value={selected} onChange={e=>selectArea(e.target.value)}>{availableAreas.map(area=><option key={area} value={area}>{area.replace(/^PRECINCT\s+/,'')}{!shapeAreas.has(area)?' · no outline':''}</option>)}</select></label>
    </div>
    <RichNarrative id="voting-map:site-precincts" value={`The current GIS places Talley Student Union in ${points.find(p=>p.id==='talley').current_precinct_area} and Western Boulevard Business Services in ${points.find(p=>p.id==='western').current_precinct_area}. Compare both areas; people who use either site also live in other precincts.`}/>
@@ -121,11 +133,19 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
      <div className="voting-map-toolbar"><button type="button" onClick={focusBoth}>Both voting sites</button><button type="button" onClick={focusSelected} disabled={!shapeAreas.has(selected)}>Selected precinct</button><button type="button" onClick={()=>groupRef.current&&mapRef.current?.fitBounds(groupRef.current.getBounds(),{padding:[15,15]})}>Whole Wake County</button></div>
      <div ref={host} className="voting-precinct-leaflet" aria-label="Interactive Wake precinct map around Talley and Western Boulevard"/>
      {streetError&&<p role="status" className="voting-map-boundary-note">Street tiles are unavailable. The precinct outlines, site pins and counts still work.</p>}
-     <div className="voting-map-legend" aria-label="Map color legend"><span>{year} · {cohort==='All ages'?'All ages':`Ages ${cohort}`} · share using {year===2026?'Western Boulevard':'Talley'}</span><div className="voting-map-color-scale">{COLORS.map((c,i)=><span key={c}><i style={{background:c}}/>{i*20}–{(i+1)*20}%</span>)}<span><i style={{background:'#bcbcbc'}}/>N/A</span></div></div>
+     <div className="voting-map-legend" aria-label="Map color legend">{mapView==='growth'?<><span>2022 → 2026 · {cohort==='All ages'?'All ages':`Ages ${cohort}`} · {growthLabel}</span><div className="voting-map-color-scale">{[['#c65c48','Decrease'],['#eff3ff','0–<50%'],['#bdd7e7','50–<100%'],['#6baed6','100–<200%'],['#08519c','200%+'],['#756bb1','New from zero'],['#bcbcbc','N/A']].map(([c,label])=><span key={label}><i style={{background:c}}/>{label}</span>)}</div></>:<><span>{year} · {cohort==='All ages'?'All ages':`Ages ${cohort}`} · share using {year===2026?'Western Boulevard':'Talley'}</span><div className="voting-map-color-scale">{COLORS.map((c,i)=><span key={c}><i style={{background:c}}/>{i*20}–{(i+1)*20}%</span>)}<span><i style={{background:'#bcbcbc'}}/>N/A</span></div></>}</div>
      <div className="voting-map-site-key">{points.map(point=><button key={point.id} type="button" onClick={()=>{selectArea(point.current_precinct_area);mapRef.current?.setView([point.latitude,point.longitude],16);}}><span className={`voting-map-key-dot voting-map-key-${point.id}`}>{point.id==='talley'?1:2}</span>{point.name} · {point.current_precinct_area.replace('PRECINCT ','')}</button>)}</div>
     </div>
 
    </div>
+   {mapView==='growth'&&<div className="voting-map-growth-summary" data-reviewed-rows>
+    <RichNarrative id="voting-map-growth:story" value={`## How college-age ballot growth varied across Wake County
+
+Across Wake, accepted early ballots from ages 18–24 grew **${collegeGrowth(collegeCounty)}%**, from **${num(collegeCounty[0])} to ${num(collegeCounty[1])}**. At Talley in 2022 and Western Boulevard in 2026, they grew **${collegeGrowth(collegeSite)}%**, from **${num(collegeSite[0])} to ${num(collegeSite[1])}**. The map groups voters by their recorded home precinct. Choose all Wake locations or the named site to compare where growth occurred; the map age group follows the selected age heading below.`}/>
+    <h3>{selected} · {cohort==='All ages'?'All ages':`Ages ${cohort}`}</h3>
+    <p>{growthLabel}: {num(growthSelected?.previous)} ballots in 2022 → {num(growthSelected?.current)} in 2026. Change: {num(growthSelected?.change)} ballots. {growthSelected?.newFromZero?'Percentage growth is undefined because the 2022 count was zero.':`Growth: ${pct(growthSelected?.growth)}.`}</p>
+    <RichNarrative id="voting-map-growth:limits" value="Growth = (2026 ballots − 2022 ballots) ÷ 2022 ballots × 100. Both windows cover the first 16 early-voting days. Gray means a year is unavailable or the starting count is zero; purple identifies a rise from zero. Current outlines show recorded precinct codes and may differ from 2022 boundaries. These are changes in ballot counts, not turnout rates or a causal effect of moving the site."/>
+   </div>}
    <section className="voting-precinct-pairs" aria-label="Precinct 01-23 and 01-31 age comparison" data-reviewed-rows>
     <RichNarrative id="voting-map-pairs:intro" value="## Compare the two site precincts
 
@@ -151,7 +171,7 @@ All age groups are visible below the map, with 01-23 beside 01-31. Matching age 
     <RichNarrative id="voting-map-pairs:limits" value="Each share divides named-site ballots by all accepted early ballots from the same precinct, age group and year. Changes use unrounded shares and compare 2022 with 2026. All ages combines the nonoverlapping age bands. These are the first 16 early-voting days, not full-election turnout. Current boundaries may differ from earlier ones; the groups do not track the same people across years. 2024 was presidential; 2022 and 2026 are midterms."/>
    </section>
    <p className="voting-map-coverage">{unmappedBallots>0?`${num(unmappedBallots)} ${year} ballots in this age group have no matching current outline (${unmapped.map(r=>r.area).join(', ')}). They remain in the tables and CSV.`:`All ${year} precinct-coded ballots in this age group have a matching outline.`}</p>
-   <RichNarrative id="voting-precinct-map:math" value="Color = ballots at that year’s named site ÷ all accepted early ballots from the same precinct and age group × 100. This describes voting-location use, not turnout among residents. Drag to pan, use +/− to zoom, or select a precinct from the menu. Selecting a region also filters the charts and table below."/>
+   <RichNarrative id="voting-precinct-map:math" value={mapView==='growth'?'Color shows the percentage change in ballot counts from 2022 to 2026 for residents recorded in each precinct. Use the count selector to compare all Wake early-voting locations with Talley and Western Boulevard. Select a precinct to see both exact counts.':"Color = ballots at that year’s named site ÷ all accepted early ballots from the same precinct and age group × 100. This describes voting-location use, not turnout among residents. Drag to pan, use +/− to zoom, or select a precinct from the menu. Selecting a region also filters the charts and table below."}/>
    <a href="data/processed/comparison/precinct_map_sources.json" download>Download the public map-source snapshot (.json)</a>
   </DataComponent>
   <section className="voting-map-age-section" aria-label="All age bands in the selected precinct">

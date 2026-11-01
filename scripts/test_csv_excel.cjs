@@ -11,7 +11,7 @@ const rows=[
  [year,6,'WAKE','EARLY VOTING','REJECTED','10/30/2026',site,'20',''],
  [year,7,'WAKE','EARLY VOTING','ACCEPTED','10/30/2026',site,'','']];
 const flags=plan.evaluateRows({source:{year},rows},context),counts=plan.totals(flags);
-assert.deepEqual(counts,[4,2,1,0,0,0,1,2]);assert.equal(flags.at(-1)[12],4);assert.equal(flags.at(-1)[13],2);
+assert.deepEqual(counts,[4,2,1,0,0,0,2]);assert.equal(flags.at(-1)[12],4);assert.equal(flags.at(-1)[13],2);
 const changed=structuredClone(rows);changed[1][7]='25';assert.equal(plan.totals(plan.evaluateRows({source:{year},rows:changed},context))[1],1);
 assert(plan.flagFormulas(7)[12].includes('M6+K7'));
 assert(plan.countFormulas(7,45403).every(f=>f.startsWith('=COUNTIFS(')&&f.includes('$45403')));
@@ -28,7 +28,7 @@ assert(county.countFormulas(6,6,100)[3].startsWith('=COUNTIFS('));
 assert.equal(county.growthFormulas(6,'site',2022)[1],"='3 Counts'!D7");
 assert.equal(county.growthFormulas(7,'county',2022)[1],"='7 County counts'!B6");
 assert.equal(county.growthFormulas(7,'county',2022)[3],'=C7-B7');
-assert.equal(template.countyGrowth,true);
+assert.equal(template.countyGrowth,true);assert.equal(template.individualAges,true);assert(plan.ageCountFormula(6,'B',100).includes('$A6'));assert(plan.countFormulas(12,100)[0].includes("'2 Filter flags'!$J$6:$J$100,1"));
 assert.deepEqual(template.sheetNames,plan.sheetNames);assert.equal(template.fullCopies,true);assert(Buffer.from(template.base64,'base64').subarray(0,2).equals(Buffer.from('PK')));
 (async()=>{
  await assert.rejects(()=>plan.workbook(null,[],context,null),/requires all three/);
