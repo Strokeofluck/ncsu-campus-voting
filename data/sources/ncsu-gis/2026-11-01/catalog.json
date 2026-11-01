@@ -1,6 +1,6 @@
 {
   "retrieved_at": "2026-11-01T04:24:08.860367+00:00",
-  "archive_note": "These are the original frozen, paginated GIS feature snapshots used in the model, not byte-for-byte HTTP page responses. Their exact original saved bytes and SHA-256 hashes are preserved. Parking is an additional spatial query collected November 1, 2026; it does not replace any routing input.",
+  "archive_note": "These are the original frozen, paginated GIS feature snapshots used in the model, not byte-for-byte HTTP page responses. Their exact original saved bytes and SHA-256 hashes are preserved. Parking comprises two additional queries collected November 1, 2026; neither replaces any routing input.",
   "original_bundle_sha256": "00ddb1f05dc8869308e9f9740f00fe57f441647d26ed7cc8839176427a5475b3",
   "routing_manifest": {
     "retrieved_at": "2026-11-01T04:24:08.860367+00:00",
@@ -32,6 +32,7 @@
     }
   },
   "parking_query_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Transportation/Transportation_OnlineCampusMap/MapServer/1/query?where=1%3D1&geometry=%7B%22xmin%22%3A+-78.691%2C+%22ymin%22%3A+35.78%2C+%22xmax%22%3A+-78.68%2C+%22ymax%22%3A+35.79%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&returnGeometry=true&f=json",
+  "talley_parking_query_url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Transportation/Transportation_OnlineCampusMap/MapServer/1/query?where=UPPER%28NAME%29+LIKE+%27%25COLISEUM%25%27+OR+UPPER%28NAME%29+LIKE+%27%25JETER%25%27&outFields=%2A&outSR=4326&returnGeometry=true&f=json",
   "files": [
     {
       "name": "accessible_paths.json",
@@ -54,9 +55,24 @@
       "sha256": "90df1c8c2065a70ef12075c755b0056292bf954c61a5c8becf08eee23de0dd32"
     },
     {
+      "name": "parking-evidence.json",
+      "bytes": 2086,
+      "sha256": "8cee2797ff9628ed42bce5090ae1fe39ddc4906a91c611f92dbd59fcb6f796ab"
+    },
+    {
       "name": "parking-query.json",
       "bytes": 391285,
       "sha256": "1dfb657a8801c7c8371f99131d8746ecd86a697f56d9825fa7b1fc5c1f43d917"
+    },
+    {
+      "name": "talley-parking-query.json",
+      "bytes": 33288,
+      "sha256": "bd9fb57139d8ccab616b547e02be84e3a86bc3b0987e1a0b46f60c6321ff5788"
+    },
+    {
+      "name": "Voting-Reserved-Spaces.jpg",
+      "bytes": 140416,
+      "sha256": "29cfd71ebceba8cbefd49a4d5bfe90b78ad73d9bb5170d01647d974602db41e8"
     },
     {
       "name": "walks.json",

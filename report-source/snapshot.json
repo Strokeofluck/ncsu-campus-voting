@@ -543133,7 +543133,7 @@
           {
             "label": "Share of modeled trips near site",
             "formula": "near_share_pct = count(eligible modeled pairs with minimum route-to-selected-distance-basis <= selected radius) / eligible modeled pair count * 100; basis = whole building footprint (default) or mapped entrance point (optional equal circles)",
-            "definition": "Equal-circle mode uses identical ground radii around mapped GIS entrance points, which are not confirmed voting-room doors. Original footprint mode preserves the earlier whole-building buffer calculation. Distances are computed on full-resolution modeled paths, including short entrance connectors. Purple routes and the paginated review list use the exact same basis, radius and eligible-pair filters as the percentage. Display simplification is at most 1 m; no real pedestrian traffic, enrollment or occupancy data is supplied. The default is the full GIS footprint with the same outward buffer distance at both buildings. Display distances are miles; calculations retain metres (1 mile = 1609.344 metres).",
+            "definition": "Equal-circle mode uses identical ground radii around mapped GIS entrance points, which are not confirmed voting-room doors. Original footprint mode preserves the earlier whole-building buffer calculation. Distances are computed on full-resolution modeled paths, including short entrance connectors. Purple routes and the paginated review list use the exact same basis, radius and eligible-pair filters as the percentage. Display simplification is at most 1 m; no real pedestrian traffic, enrollment or occupancy data is supplied. The default is the full GIS footprint with the same outward buffer distance at both buildings. Route distances display miles, while proximity zones use meters; calculations retain metres (1 mile = 1609.344 metres).",
             "componentIds": [
               "voting-campus-passby",
               "voting-campus-passby:intro"
@@ -548245,41 +548245,118 @@
         {
           "objectid": 34,
           "name": "McKimmon North Lot",
+          "site_id": "131",
+          "spaces": 45,
+          "type": "Surface",
+          "zone": "C",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         {
           "objectid": 38,
           "name": "McKimmon South Lot",
+          "site_id": "131",
+          "spaces": 62,
+          "type": "Surface",
+          "zone": "C",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         {
           "objectid": 55,
           "name": "McKimmon Vistor Lot (Private)",
+          "site_id": "131",
+          "spaces": 266,
+          "type": "Surface",
+          "zone": "PRIVATE",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         {
           "objectid": 56,
           "name": "Mckimmon Vistor Lot (Private)",
+          "site_id": "131",
+          "spaces": 287,
+          "type": "Surface",
+          "zone": "PRIVATE",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         {
           "objectid": 82,
           "name": "Business Services Lot",
+          "site_id": "131",
+          "spaces": 15,
+          "type": "Surface",
+          "zone": "C",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
+        },
+        {
+          "objectid": 26,
+          "name": "Coliseum Deck - Visitor Pay Area",
+          "site_id": "102",
+          "spaces": 275,
+          "type": "Deck",
+          "zone": "PY",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        {
+          "objectid": 92,
+          "name": "Coliseum Deck - CD",
+          "site_id": "102",
+          "spaces": 1694,
+          "type": "Deck",
+          "zone": "CD",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        {
+          "objectid": 143,
+          "name": "Jeter Bays",
+          "site_id": "102",
+          "spaces": 226,
+          "type": "Surface",
+          "zone": "C",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        {
+          "objectid": 144,
+          "name": "Coliseum Deck - Visitor Pay Area",
+          "site_id": "102",
+          "spaces": 66,
+          "type": "Surface",
+          "zone": "PY",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        {
+          "objectid": 166,
+          "name": "Coliseum Deck - RE",
+          "site_id": "102",
+          "spaces": 223,
+          "type": "Deck",
+          "zone": "RE",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
         }
       ],
       "source": {
-        "label": "NC State GIS nearby parking areas; whole lots, not voter reservations",
+        "label": "NC State GIS parking near both sites; whole areas, not voter reservations",
         "url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Transportation/Transportation_OnlineCampusMap/MapServer/1/query?where=1%3D1&geometry=%7B%22xmin%22%3A+-78.691%2C+%22ymin%22%3A+35.78%2C+%22xmax%22%3A+-78.68%2C+%22ymax%22%3A+35.79%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&returnGeometry=true&f=json",
         "executedAt": "2026-11-01",
         "files": [
           "data/sources/ncsu-gis/2026-11-01/parking-query.json",
-          "data/processed/campus-walk/nearby-parking.geojson"
+          "data/sources/ncsu-gis/2026-11-01/talley-parking-query.json",
+          "data/sources/ncsu-gis/2026-11-01/parking-evidence.json",
+          "data/processed/campus-walk/nearby-parking.geojson",
+          "data/sources/ncsu-gis/2026-11-01/Voting-Reserved-Spaces.jpg"
         ],
         "metricDefinitions": [
           {
             "label": "Parking outlines",
-            "definition": "Five original GIS parking-area polygons selected by OBJECTID 34,38,55,56,82: McKimmon North/South, two visitor polygons and Business Services. These are whole mapped parking areas. No claim that all spaces are available or reserved for voters. NC State separately identifies a voter-reserved portion in its published parking plan.",
+            "definition": "Ten original GIS polygons: Western-area OBJECTIDs 34,38,55,56,82 and Coliseum/Jeter OBJECTIDs 26,92,143,144,166. These are whole current GIS parking areas, not reserved subsections or deck levels. Official university notices identify Jeter voter bays for February/March 2024, Coliseum second-level voter parking for February 2026, and a reserved McKimmon subsection for October 2026. Fall 2022 reservation details have not been verified. No voter-capacity or availability claims are inferred from polygons.",
+            "componentIds": [
+              "voting-campus-walking-map",
+              "voting-campus-passby"
+            ]
+          },
+          {
+            "label": "GIS-listed parking inventory",
+            "formula": "Coliseum Deck = SPACES for OBJECTIDs 26+92+166 = 275+1694+223 = 2192; McKimmon = OBJECTIDs 34+38+55+56 = 45+62+266+287 = 660.",
+            "definition": "Source-record inventory, not voter-reserved spaces, vacancies or independently verified current physical capacity. Uses each distinct OBJECTID once and excludes Jeter Bays (226), Coliseum surface visitor area (66) and Business Services lot (15) from the two main totals. Other university publications give differing counts; references disclose the unresolved differences.",
             "componentIds": [
               "voting-campus-walking-map",
               "voting-campus-passby"
@@ -564963,6 +565040,10 @@
         "properties": {
           "objectid": 34,
           "name": "McKimmon North Lot",
+          "site_id": "131",
+          "spaces": 45,
+          "type": "Surface",
+          "zone": "C",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         "geometry": {
@@ -565444,6 +565525,10 @@
         "properties": {
           "objectid": 38,
           "name": "McKimmon South Lot",
+          "site_id": "131",
+          "spaces": 62,
+          "type": "Surface",
+          "zone": "C",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         "geometry": {
@@ -565725,6 +565810,10 @@
         "properties": {
           "objectid": 55,
           "name": "McKimmon Vistor Lot (Private)",
+          "site_id": "131",
+          "spaces": 266,
+          "type": "Surface",
+          "zone": "PRIVATE",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         "geometry": {
@@ -566324,6 +566413,10 @@
         "properties": {
           "objectid": 56,
           "name": "Mckimmon Vistor Lot (Private)",
+          "site_id": "131",
+          "spaces": 287,
+          "type": "Surface",
+          "zone": "PRIVATE",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         "geometry": {
@@ -566683,6 +566776,10 @@
         "properties": {
           "objectid": 82,
           "name": "Business Services Lot",
+          "site_id": "131",
+          "spaces": 15,
+          "type": "Surface",
+          "zone": "C",
           "scope": "Whole GIS parking area; not the voter-reserved subsection"
         },
         "geometry": {
@@ -566760,6 +566857,793 @@
               [
                 -78.6853430731761,
                 35.78416878200464
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "objectid": 26,
+          "name": "Coliseum Deck - Visitor Pay Area",
+          "site_id": "102",
+          "spaces": 275,
+          "type": "Deck",
+          "zone": "PY",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.66746394360216,
+                35.78258613051403
+              ],
+              [
+                -78.6676248067167,
+                35.78229489496614
+              ],
+              [
+                -78.66763679922575,
+                35.782273183942834
+              ],
+              [
+                -78.66772385495993,
+                35.7821156017589
+              ],
+              [
+                -78.6677242529136,
+                35.78211574678116
+              ],
+              [
+                -78.66875987119732,
+                35.78249554164928
+              ],
+              [
+                -78.66889728918129,
+                35.78254593553033
+              ],
+              [
+                -78.66881024871846,
+                35.7827035226912
+              ],
+              [
+                -78.66880012201025,
+                35.78272064684798
+              ],
+              [
+                -78.66863753323203,
+                35.78301501663343
+              ],
+              [
+                -78.66746394360216,
+                35.78258613051403
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "objectid": 92,
+          "name": "Coliseum Deck - CD",
+          "site_id": "102",
+          "spaces": 1694,
+          "type": "Deck",
+          "zone": "CD",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.6672328573852,
+                35.7830089643913
+              ],
+              [
+                -78.6672397465651,
+                35.78299649043097
+              ],
+              [
+                -78.6672404391662,
+                35.78299523917246
+              ],
+              [
+                -78.66724273436176,
+                35.78299108094229
+              ],
+              [
+                -78.66724683966261,
+                35.782983649908935
+              ],
+              [
+                -78.66726627830703,
+                35.782948457248374
+              ],
+              [
+                -78.66726939276612,
+                35.78294281820097
+              ],
+              [
+                -78.6672722655784,
+                35.78293761785913
+              ],
+              [
+                -78.66727295728117,
+                35.78293636514217
+              ],
+              [
+                -78.66731684716932,
+                35.78285690612009
+              ],
+              [
+                -78.66731754336368,
+                35.78285564465695
+              ],
+              [
+                -78.66732103511518,
+                35.78284932349453
+              ],
+              [
+                -78.66732415047257,
+                35.782843682982616
+              ],
+              [
+                -78.66734957099848,
+                35.782797659596724
+              ],
+              [
+                -78.66735303130896,
+                35.782791396729664
+              ],
+              [
+                -78.66735925393894,
+                35.782780130272116
+              ],
+              [
+                -78.66736063734447,
+                35.78277762483334
+              ],
+              [
+                -78.66745717928805,
+                35.78260284003707
+              ],
+              [
+                -78.66746394360216,
+                35.78258613051403
+              ],
+              [
+                -78.66863753323203,
+                35.78301501663343
+              ],
+              [
+                -78.6686380892892,
+                35.7830152199538
+              ],
+              [
+                -78.66862978616103,
+                35.78303025181194
+              ],
+              [
+                -78.66862840185716,
+                35.783032756514054
+              ],
+              [
+                -78.66861145154608,
+                35.78306344621389
+              ],
+              [
+                -78.6686107598433,
+                35.78306469965754
+              ],
+              [
+                -78.66857893432943,
+                35.78312232015005
+              ],
+              [
+                -78.66857824262667,
+                35.78312357286402
+              ],
+              [
+                -78.66840814213603,
+                35.78343153658698
+              ],
+              [
+                -78.6672328573852,
+                35.7830089643913
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "objectid": 143,
+          "name": "Jeter Bays",
+          "site_id": "102",
+          "spaces": 226,
+          "type": "Surface",
+          "zone": "C",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.66903611931686,
+                35.783987999839965
+              ],
+              [
+                -78.66853678807125,
+                35.78380512286682
+              ],
+              [
+                -78.66855388660436,
+                35.78376477254915
+              ],
+              [
+                -78.66855456662903,
+                35.78376275175339
+              ],
+              [
+                -78.66855482444552,
+                35.78376066682848
+              ],
+              [
+                -78.66855465556225,
+                35.783758576073595
+              ],
+              [
+                -78.66855406177584,
+                35.78375653778795
+              ],
+              [
+                -78.66855306015431,
+                35.78375460735577
+              ],
+              [
+                -78.66855167944371,
+                35.78375283943252
+              ],
+              [
+                -78.66854995827163,
+                35.78375128284385
+              ],
+              [
+                -78.66854794245212,
+                35.783749980585426
+              ],
+              [
+                -78.66854569037571,
+                35.78374896982299
+              ],
+              [
+                -78.66854326402613,
+                35.78374827751996
+              ],
+              [
+                -78.66853214198458,
+                35.78374622538797
+              ],
+              [
+                -78.66852076212658,
+                35.783745632193565
+              ],
+              [
+                -78.66850941011633,
+                35.78374651324029
+              ],
+              [
+                -78.66854176294129,
+                35.7836748408942
+              ],
+              [
+                -78.66854185277282,
+                35.783674839436756
+              ],
+              [
+                -78.6685419399094,
+                35.78367482559066
+              ],
+              [
+                -78.66854202435103,
+                35.783674799355985
+              ],
+              [
+                -78.66854210070784,
+                35.78367476219023
+              ],
+              [
+                -78.66854216808149,
+                35.78367471409334
+              ],
+              [
+                -78.66854222467533,
+                35.783674657980285
+              ],
+              [
+                -78.66857134087033,
+                35.783636200865715
+              ],
+              [
+                -78.66858614690284,
+                35.78361004124314
+              ],
+              [
+                -78.66860050198109,
+                35.783569507912276
+              ],
+              [
+                -78.66864406847574,
+                35.78348917430343
+              ],
+              [
+                -78.66864431551244,
+                35.78348904968849
+              ],
+              [
+                -78.66864453290474,
+                35.78348889228012
+              ],
+              [
+                -78.66864471436443,
+                35.78348870645081
+              ],
+              [
+                -78.66864485270499,
+                35.783488497301725
+              ],
+              [
+                -78.66867068645591,
+                35.783453766158814
+              ],
+              [
+                -78.66868644290601,
+                35.783426555628786
+              ],
+              [
+                -78.66870168102817,
+                35.78338555362241
+              ],
+              [
+                -78.66870177804623,
+                35.78338534082933
+              ],
+              [
+                -78.6687018301485,
+                35.78338511783383
+              ],
+              [
+                -78.66874538766,
+                35.78330585820744
+              ],
+              [
+                -78.66874560415398,
+                35.78330570079872
+              ],
+              [
+                -78.66874578471536,
+                35.783305515697734
+              ],
+              [
+                -78.66874592305591,
+                35.78330530654817
+              ],
+              [
+                -78.66877202719975,
+                35.78327110657994
+              ],
+              [
+                -78.66878689072443,
+                35.78324439590621
+              ],
+              [
+                -78.6688016931637,
+                35.78320376838082
+              ],
+              [
+                -78.66880170843505,
+                35.78320354246984
+              ],
+              [
+                -78.66884565581537,
+                35.78312362824872
+              ],
+              [
+                -78.66884582200372,
+                35.783123448248496
+              ],
+              [
+                -78.66884594866617,
+                35.78312324857215
+              ],
+              [
+                -78.66887115718967,
+                35.78308779435356
+              ],
+              [
+                -78.6688884803016,
+                35.78306090653287
+              ],
+              [
+                -78.6689033492162,
+                35.78301980449959
+              ],
+              [
+                -78.66894613687148,
+                35.78294031058098
+              ],
+              [
+                -78.6689464027728,
+                35.78294021584384
+              ],
+              [
+                -78.66894664531794,
+                35.7829400846693
+              ],
+              [
+                -78.66894685552371,
+                35.782939921429886
+              ],
+              [
+                -78.66894702710192,
+                35.782939730498015
+              ],
+              [
+                -78.66894715645932,
+                35.78293951916126
+              ],
+              [
+                -78.66897230659235,
+                35.78290414720921
+              ],
+              [
+                -78.66924533065834,
+                35.78300380996487
+              ],
+              [
+                -78.66946636652386,
+                35.78308471612994
+              ],
+              [
+                -78.66964468480273,
+                35.783149358800244
+              ],
+              [
+                -78.66960813504875,
+                35.78321617963655
+              ],
+              [
+                -78.66954458373398,
+                35.783332995904374
+              ],
+              [
+                -78.6694436391472,
+                35.783516225217454
+              ],
+              [
+                -78.66934298651286,
+                35.78369919321907
+              ],
+              [
+                -78.66924214972391,
+                35.78388246905606
+              ],
+              [
+                -78.66921451305419,
+                35.78393231258914
+              ],
+              [
+                -78.66920663662579,
+                35.7839298669432
+              ],
+              [
+                -78.66920569249642,
+                35.78393149931715
+              ],
+              [
+                -78.66920209743864,
+                35.78393772492876
+              ],
+              [
+                -78.66919615418475,
+                35.78394493506525
+              ],
+              [
+                -78.66918894340796,
+                35.783951331200555
+              ],
+              [
+                -78.66918063039832,
+                35.78395676685846
+              ],
+              [
+                -78.66917140470034,
+                35.78396111815372
+              ],
+              [
+                -78.66916147921476,
+                35.78396428379193
+              ],
+              [
+                -78.66915108121536,
+                35.78396619235689
+              ],
+              [
+                -78.669133745527,
+                35.783969979608486
+              ],
+              [
+                -78.66912752110039,
+                35.78397204339447
+              ],
+              [
+                -78.66911711950772,
+                35.78397549251134
+              ],
+              [
+                -78.66910146456726,
+                35.783982644345365
+              ],
+              [
+                -78.6690914636232,
+                35.78398701677263
+              ],
+              [
+                -78.66908074762019,
+                35.7839900607106
+              ],
+              [
+                -78.66906957976455,
+                35.7839917047431
+              ],
+              [
+                -78.66905823314421,
+                35.78399190587477
+              ],
+              [
+                -78.66904698893181,
+                35.78399066191933
+              ],
+              [
+                -78.66903611931686,
+                35.783987999839965
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "objectid": 144,
+          "name": "Coliseum Deck - Visitor Pay Area",
+          "site_id": "102",
+          "spaces": 66,
+          "type": "Surface",
+          "zone": "PY",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.6677242529136,
+                35.78211574678116
+              ],
+              [
+                -78.66779545517964,
+                35.781986262214026
+              ],
+              [
+                -78.66784072398177,
+                35.78200409706248
+              ],
+              [
+                -78.66784432173448,
+                35.78200515084367
+              ],
+              [
+                -78.66784807938731,
+                35.782005723645945
+              ],
+              [
+                -78.66785190082054,
+                35.78200579943654
+              ],
+              [
+                -78.66785568721946,
+                35.78200537748684
+              ],
+              [
+                -78.66785934246434,
+                35.78200446727057
+              ],
+              [
+                -78.66786277313041,
+                35.78200309210789
+              ],
+              [
+                -78.66786589028445,
+                35.78200128843668
+              ],
+              [
+                -78.66786861217976,
+                35.781999102168456
+              ],
+              [
+                -78.6678708714427,
+                35.781996590146186
+              ],
+              [
+                -78.66787260968277,
+                35.781993815042895
+              ],
+              [
+                -78.66787378018759,
+                35.78199084973418
+              ],
+              [
+                -78.66787435421105,
+                35.78198777073936
+              ],
+              [
+                -78.66793328818527,
+                35.782007006985275
+              ],
+              [
+                -78.66794086996627,
+                35.782010006544965
+              ],
+              [
+                -78.66814188238413,
+                35.78208951451143
+              ],
+              [
+                -78.66836377973404,
+                35.78217381833175
+              ],
+              [
+                -78.66836960530867,
+                35.78218969789025
+              ],
+              [
+                -78.66836857134778,
+                35.782191547468756
+              ],
+              [
+                -78.66838084323285,
+                35.78219610364058
+              ],
+              [
+                -78.66838145947716,
+                35.78219500322162
+              ],
+              [
+                -78.6683953267702,
+                35.7821863784142
+              ],
+              [
+                -78.66862394351843,
+                35.78226645317463
+              ],
+              [
+                -78.66884891400493,
+                35.78234845394825
+              ],
+              [
+                -78.66875987119732,
+                35.78249554164928
+              ],
+              [
+                -78.6677242529136,
+                35.78211574678116
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "objectid": 166,
+          "name": "Coliseum Deck - RE",
+          "site_id": "102",
+          "spaces": 223,
+          "type": "Deck",
+          "zone": "RE",
+          "scope": "Whole current GIS parking area. Voter use is documented for other election dates; fall 2022 reservation details unverified."
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.6672328573852,
+                35.7830089643913
+              ],
+              [
+                -78.66840814213603,
+                35.78343153658698
+              ],
+              [
+                -78.66836344556076,
+                35.78351246053532
+              ],
+              [
+                -78.66835926390311,
+                35.78352002998025
+              ],
+              [
+                -78.66835772598735,
+                35.78351946666261
+              ],
+              [
+                -78.66829753347342,
+                35.78362844560285
+              ],
+              [
+                -78.66829498674959,
+                35.783627511356684
+              ],
+              [
+                -78.66829429414851,
+                35.78362876406274
+              ],
+              [
+                -78.66825379719718,
+                35.783613913045656
+              ],
+              [
+                -78.6682322753596,
+                35.7836060200485
+              ],
+              [
+                -78.66713157952344,
+                35.7832023604454
+              ],
+              [
+                -78.66713227212452,
+                35.78320110773262
+              ],
+              [
+                -78.6671291971913,
+                35.78319997963528
+              ],
+              [
+                -78.66713127319792,
+                35.78319622222558
+              ],
+              [
+                -78.66713850014439,
+                35.783179791936746
+              ],
+              [
+                -78.66716668927799,
+                35.78312875570377
+              ],
+              [
+                -78.66716807358185,
+                35.78312625027593
+              ],
+              [
+                -78.66717360810232,
+                35.783116230021264
+              ],
+              [
+                -78.66717499240616,
+                35.78311372459303
+              ],
+              [
+                -78.6672328573852,
+                35.7830089643913
               ]
             ]
           ]

@@ -60,15 +60,22 @@
 .campus-parking-context label{display:flex;align-items:center;gap:8px;}
 .campus-parking-context p{margin:8px 0;}
 
-.campus-map-with-key{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:18px;align-items:start;min-width:0;}
-.campus-map-key{font-size:12px;line-height:1.5;color:var(--text);min-width:0;}
-.campus-map-key h4{font-size:14px;font-weight:600;margin:0 0 16px;}
-.campus-key-heading{font-size:11px;font-weight:600;margin:16px 0 8px;}
-.campus-map-key ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
-.campus-map-key li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;}
-.campus-map-key small{font-size:11px;color:var(--secondary);}
-.campus-key-building{width:16px;height:14px;border:2px solid currentColor;background:color-mix(in srgb,currentColor 15%,transparent);display:block;margin-top:2px;}
-.campus-key-line{width:24px;height:4px;display:block;margin-top:7px;}
-.campus-key-parking{width:20px;height:14px;display:block;border:2px dashed #54753c;background:color-mix(in srgb,#54753c 12%,transparent);margin-top:2px;}
-.campus-key-note{font-size:11px;line-height:1.6;color:var(--secondary);margin:14px 0 0;}
-@media(max-width:650px){.campus-map-with-key{grid-template-columns:minmax(0,1fr);gap:14px;}.campus-map-key{border-top:1px solid var(--border);padding-top:14px;}.campus-map-key ul{display:flex;flex-wrap:wrap;gap:12px 20px;}.campus-map-key li{min-width:140px;max-width:100%;}.campus-map-key h4{margin-bottom:12px;}}
+.campus-map-with-key{position:relative;display:block;min-width:0;}
+.voting-report .campus-map-key{position:absolute;top:12px;right:12px;z-index:450;width:180px;max-width:calc(100% - 68px);max-height:calc(100% - 24px);overflow:auto;box-sizing:border-box;padding:10px 12px;background:var(--background);color:var(--text);border:1px solid var(--border);border-radius:7px;box-shadow:0 3px 14px #0003;font-size:12px;line-height:1.4;}
+.voting-report .campus-map-key summary{font-size:13px;font-weight:600;cursor:pointer;margin:0;}
+.voting-report .campus-map-key .campus-key-body{padding-top:12px;}
+.voting-report .campus-map-key .campus-key-heading{font-size:11px;font-weight:600;margin:12px 0 8px;}
+.voting-report .campus-map-key ul{list-style:none;margin:0;padding:0;padding-inline:0;display:grid;gap:8px;}
+.voting-report .campus-map-key li{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;align-items:center;min-width:0;}
+.voting-report .campus-map-key i{justify-self:center;margin:0;box-sizing:border-box;display:block;}
+.campus-key-building{width:16px;height:14px;border:2px solid currentColor;background:color-mix(in srgb,currentColor 15%,transparent);}
+.campus-key-line{width:20px;height:4px;}
+.campus-key-parking{width:20px;height:14px;border:2px dashed #54753c;background:color-mix(in srgb,#54753c 12%,transparent);}
+.campus-key-note{font-size:11px;line-height:1.6;color:var(--secondary);margin:12px 0 0;}
+.voting-report .campus-map-key .campus-key-parking-list{margin-top:12px;}
+.route-view-controls label{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;}
+.parking-capacity-table{min-width:360px;font-size:12px;}
+.parking-capacity-table caption{text-align:left;font-weight:600;margin-bottom:10px;}
+.parking-capacity-table td{font-variant-numeric:tabular-nums;}
+.campus-route-tooltip strong{display:block;margin-bottom:5px;}
+@media(max-width:650px){.voting-report .campus-map-key{width:165px;top:8px;right:8px;padding:9px 10px;font-size:11px;}}

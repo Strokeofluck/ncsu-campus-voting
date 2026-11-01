@@ -12,7 +12,7 @@ GIS paths and building access assumptions are the same as the walking comparison
 
 Reproduce with `python scripts/build_campus_passby.py --library-dir optional/path`, using shapely, pyproj and networkx. The base route builder's `--network-only` mode loads the same graph without overwriting prior reviewed route evidence.
 
-The map defaults to All routes together, fitted to the complete eligible network. Repeated semi-transparent paths darken where modeled routes overlap; darkness is not observed pedestrian flow. The Selected trip mode highlights one pair and changes the zoom. The All halls → every destination button resets the destination-type filter and includes Talley-ending dining trips explicitly, updating both percentage denominators.
+The map defaults to the checked Show all routes view, fitted to the complete eligible network. Repeated semi-transparent paths darken where modeled routes overlap; darkness is not observed pedestrian flow. Unchecking hides other routes and shows the selected pair. Checking pauses autoplay and restores all eligible routes. The All halls → every destination button resets the destination-type filter and includes Talley-ending trips explicitly, updating both percentage denominators. Hover a route for its origin, destination, length and proximity classification; a tooltip identifies one displayed trip, not all trips sharing that segment.
 
 ## Equal circles and reviewable matching routes
 

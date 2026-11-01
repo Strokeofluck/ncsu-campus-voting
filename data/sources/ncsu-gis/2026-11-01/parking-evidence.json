@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-11-01",
+  "geometry_scope": "Current whole GIS parking-area boundaries; not historical voter-reservation polygons or parking capacities.",
+  "sources": [
+    {
+      "title": "NC State To Host Early Voting Site",
+      "published": "2024-02-07",
+      "election_period": "2024 primary, February 15–March 2",
+      "url": "https://news.ncsu.edu/2024/02/nc-state-to-host-early-voting-site/",
+      "finding": "University notice designates Jeter Drive outdoor bays for voters without university parking permits: first bay February 15–27, first and second bays February 28–March 2."
+    },
+    {
+      "title": "Parking Information for Early Voting at NC State: February 12-28",
+      "published": "2026-02-09",
+      "election_period": "2026 primary, February 12–28",
+      "url": "https://transportation.ncsu.edu/2026/02/parking-information-for-early-voting-at-nc-state-february-12-28/",
+      "finding": "University notice identifies a second-level Coliseum Deck area for Talley early voters, entered from Jeter Drive. It does not designate the whole deck."
+    },
+    {
+      "title": "Early Voting at NC State, October 15-31",
+      "published": "2026-10-09",
+      "election_period": "2026 general, October 15–31",
+      "url": "https://transportation.ncsu.edu/2026/10/early-voting-at-nc-state-october-15-31/",
+      "finding": "University notice reserves a portion of McKimmon parking for early voters, with accessible parking shown separately.",
+      "saved_map": "data/sources/ncsu-gis/2026-11-01/Voting-Reserved-Spaces.jpg",
+      "map_sha256": "29cfd71ebceba8cbefd49a4d5bfe90b78ad73d9bb5170d01647d974602db41e8",
+      "map_review": "Original university map visually reviewed November 1, 2026: a red general-parking subsection and separate blue ADA area are marked; no numerical space allotment is printed."
+    }
+  ],
+  "unverified": "The exact fall 2022 voter-reservation plan at Talley has not been verified. Notices for 2024 and the 2026 primary must not be represented as proof of fall 2022 arrangements."
+}
