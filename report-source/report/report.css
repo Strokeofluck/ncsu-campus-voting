@@ -529,3 +529,4 @@
 .voting-report .voting-site-count-pair dd {margin:0;white-space:nowrap;font-variant-numeric:tabular-nums;}
 .voting-report .voting-residence-limit {font-size:12px;line-height:1.5;color:var(--text);border-left:3px solid var(--border);padding-left:10px;margin:12px 0;}
 .voting-report .voting-residence-limit p {margin:4px 0 0;}
+.voting-report .voting-map-tooltip {width:max-content;min-width:200px;max-width:min(280px,calc(100vw - 70px));}

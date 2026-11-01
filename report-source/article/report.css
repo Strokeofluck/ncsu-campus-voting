@@ -1,0 +1,532 @@
+.report-page {
+  --data-app-report-body-text: color-mix(in srgb, var(--text) 50%, var(--secondary));
+  --data-app-content-width: var(--data-app-report-evidence-width);
+  --data-app-report-prose-width: var(--data-app-content-width);
+  --data-app-layout-gutter: var(--data-app-report-gutter);
+  --report-chart-padding: 24px;
+  --report-chart-radius: 24px;
+  --report-chart-border: color-mix(in srgb, var(--text) 5%, transparent);
+  --report-chart-shadow: 0 4px 6px rgb(0 0 0 / 1%);
+  max-width: calc(var(--data-app-content-width) + 2 * var(--data-app-layout-gutter));
+  margin-inline: auto;
+  padding: 40px var(--data-app-layout-gutter) 120px;
+}
+
+.report-content {
+  display: grid;
+  width: 100%;
+  max-width: none;
+  gap: 40px;
+  margin-inline: 0;
+}
+
+.report-content > * {
+  min-width: 0;
+}
+
+.voting-report {grid-template-columns:minmax(0,1fr);}
+.voting-report .voting-region-comparison {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;scroll-margin-top:100px;min-width:0;}
+.voting-report .voting-region-map-grid,.voting-report .voting-region-rank-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;min-width:0;}
+.voting-report .voting-region-map-grid {width:min(1320px,calc(100vw - 80px));justify-self:center;}
+.voting-report .voting-region-map-grid>* {min-width:0;}
+.voting-report .voting-region-age-map {height:500px;width:100%;border:1px solid var(--border);border-radius:10px;overflow:hidden;isolation:isolate;font:12px/1.4 Arial,sans-serif;}
+.voting-report .voting-region-map-unit {font-size:14px;color:var(--secondary);margin:8px 0 12px;}
+.voting-report .voting-region-area-link {border:0;background:transparent;color:var(--text);padding:0;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
+.voting-report .voting-region-wide {width:min(1320px,calc(100vw - 80px));justify-self:center;min-width:0;}
+.voting-report .voting-region-rank-grid {width:100%;}
+.voting-report .voting-region-rank-grid h3 {margin-top:0;}
+.voting-report .voting-region-rank-grid .voting-table {font-size:13px;}
+.voting-report .voting-region-rank-grid .voting-table th,.voting-report .voting-region-rank-grid .voting-table td {padding:10px;}
+@media(max-width:900px){.voting-report .voting-region-map-grid,.voting-report .voting-region-rank-grid{grid-template-columns:minmax(0,1fr);width:100%;}.voting-report .voting-region-wide{width:100%;}.voting-report .voting-region-age-map{height:420px;}}
+.voting-party-section {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0;scroll-margin-top:100px;}
+.voting-party-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;width:min(1240px,calc(100vw - 80px));justify-self:center;}
+.voting-report .voting-age-exact {margin-top:20px;}
+.voting-report .voting-age-exact summary {cursor:pointer;font-weight:600;}
+.voting-report .voting-age-exact caption {text-align:left;padding-block:18px;color:var(--secondary);font-size:14px;}
+@media(max-width:1099px){.voting-party-grid{grid-template-columns:1fr;width:100%;}}
+
+.report-sortable-sections {
+  display: grid;
+  gap: 40px;
+}
+
+.report-hero {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  margin-inline: 0;
+}
+
+.report-hero h1 {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  padding-inline: 0;
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) {
+  color: var(--data-app-report-body-text);
+  font-size: var(--text-md-size);
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -0.006em;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--text);
+}
+
+.report-page .rich-narrative :is(strong, b, .markdown-bold) {
+  font-weight: 600;
+}
+
+.report-page .report-content :is(.rich-narrative-content, .report-rich-editable) a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.report-page .report-content :is(.rich-narrative-content, .report-rich-editable) a:hover {
+  text-decoration-style: solid;
+}
+
+.report-page .report-content :is(.rich-narrative-content, .report-rich-editable) a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) h2,
+.report-page .report-summary > :is(h2, h3),
+.report-page [data-component-kind="custom"]:not([data-component-variant="card"]) > .component-header .component-title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) > :is(h2, h3, h4) {
+  margin: 24px 0 12px;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) > :first-child {
+  margin-top: 0;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) > :is(p, ul, ol) {
+  margin: 0 0 12px;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) > :last-child {
+  margin-bottom: 0;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) :is(ul, ol) {
+  padding-inline-start: 24px;
+}
+
+.report-page :is(.rich-narrative-content, .report-rich-editable) li + li {
+  margin-top: 8px;
+}
+
+.report-page .report-content > header:first-child {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.report-page .report-content > header:first-child h1 {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: 0;
+  text-align: start;
+}
+
+.report-page :is(
+  .report-deck,
+  .report-summary-lead,
+  .report-analysis,
+  .report-caveat,
+  .report-disclosure,
+  p[data-editable-narrative],
+  div[data-editable-narrative]
+) {
+  width: min(var(--data-app-content-width), 100%);
+  margin-inline: auto;
+  text-align: start;
+}
+
+.report-page [data-component-kind="custom"]:not([data-component-variant="card"]) > .component-header,
+.report-page .report-summary > :is(h2, h3) {
+  width: min(var(--data-app-content-width), 100%);
+  min-width: 0;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: start;
+}
+
+.report-page :is([data-component-kind="chart"], [data-component-kind="table"]):not([data-component-variant="card"]) > .component-header {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.report-page [data-component-kind="custom"] :is(ul, ol),
+.report-page :is(ul, ol)[data-editable-narrative] {
+  box-sizing: border-box;
+  width: min(var(--data-app-content-width), 100%);
+  max-width: 100%;
+  margin-inline: auto;
+  padding-inline-start: 24px;
+  text-align: start;
+}
+
+.report-deck,
+.report-summary-lead {
+  width: min(var(--data-app-content-width), 100%);
+  max-width: min(var(--data-app-content-width), 100%);
+  margin-inline: auto;
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-line);
+  font-weight: 400;
+}
+
+.report-page .dashboard-component:not([data-component-kind="metric"]):not([data-component-variant="card"]) {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.report-page .dashboard-component:not([data-component-kind="metric"]):not([data-component-variant="card"]) > .component-header {
+  margin-bottom: 16px;
+}
+
+/* Give evidence a frame without putting prose in cards. These defaults also
+   apply to authored charts that use the existing DataComponent wrapper. */
+.report-page .dashboard-component[data-component-kind="chart"]:not([data-component-variant="card"]) {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: var(--report-chart-padding);
+  background: var(--background);
+  border: 1px solid var(--report-chart-border);
+  border-radius: var(--report-chart-radius);
+  box-shadow: var(--report-chart-shadow);
+}
+
+.report-page .dashboard-component[data-component-kind="chart"]:not([data-component-variant="card"]) > .component-header {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding-inline-end: 0;
+  margin-bottom: 24px;
+}
+
+.report-page [data-component-kind="chart"]:not([data-component-variant="card"]) .component-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.report-section {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+
+.report-section > .report-narrative-section .report-analysis {
+  margin-bottom: 0;
+}
+
+.report-page :is([data-component-kind="custom"], [data-component-kind="narrative"]) {
+  position: relative;
+}
+
+.report-page .dashboard-component > .report-narrative-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  min-height: 32px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.report-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+}
+
+.report-disclosure {
+  color: var(--secondary);
+}
+
+.report-analysis {
+  width: min(var(--data-app-content-width), 100%);
+  max-width: min(var(--data-app-content-width), 100%);
+  margin-inline: auto;
+  margin-bottom: 24px;
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-line);
+  font-weight: 400;
+}
+
+.report-page .report-disclosure {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.report-page .report-disclosure :is(.rich-narrative-content, .report-rich-editable) {
+  color: var(--secondary);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@media (max-width: 640px) {
+  .report-page {
+    --data-app-layout-gutter: var(--data-app-report-mobile-gutter);
+    --report-chart-padding: 16px 12px;
+    padding: 16px var(--data-app-layout-gutter) 72px;
+  }
+
+  .report-content,
+  .report-sortable-sections {
+    gap: 36px;
+  }
+
+  .report-hero h1 {
+    font-size: 32px;
+    line-height: 1.12;
+    font-weight: 600;
+  }
+
+  .report-page :is(.rich-narrative-content, .report-rich-editable) h2 {
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .report-page .report-narrative-actions .menu-trigger {
+    top: -8px;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    transform: none;
+  }
+
+  .report-page .report-narrative-actions + .rich-narrative
+    :is(.rich-narrative-content, .report-rich-editable) > :first-child {
+    padding-inline-end: 52px;
+  }
+
+  .report-page [data-component-kind="chart"]:not([data-component-variant="card"])
+    > .component-header .menu-trigger {
+    top: -4px;
+    right: 0;
+    width: 44px;
+    height: 44px;
+  }
+  .report-page .dashboard-component[data-component-kind="chart"]:not([data-component-variant="card"])
+    > .component-header { padding-inline-end: 68px; }
+
+  .report-section { gap: 20px; }
+
+  .report-facts {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Mobile report charts use 16px vertical / 12px horizontal content padding.
+   Align the menu to the tighter inset without changing title/plot spacing. */
+@media (max-width: 640px) {
+  .report-page .dashboard-component[data-component-kind="chart"]:not([data-component-variant="card"]) > .component-header .menu-trigger {
+    position: absolute;
+    top: -4px;
+    right: 0;
+  }
+}
+
+.voting-report { padding-bottom:56px; }
+.voting-report .report-hero { margin:36px 0 30px; }
+.voting-report h1 { font-size:clamp(32px,4.5vw,48px); line-height:1.12; letter-spacing:-.035em; margin:12px 0 20px; }
+.voting-report .voting-eyebrow { font-size:12px; letter-spacing:.14em; font-weight:700; color:var(--chart-1); }
+.voting-report .report-deck { font-size:18px; line-height:1.6; color:var(--text-secondary); }
+.voting-report .voting-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:28px 0 38px; }
+.voting-report .voting-controls { display:flex; flex-wrap:wrap; gap:18px; margin:20px 0 14px; }
+.voting-report .voting-controls label { display:flex; align-items:center; gap:9px; font-size:14px; font-weight:600; max-width:100%; }
+.voting-report .voting-controls select { border:1px solid var(--border); border-radius:7px; padding:9px 28px 9px 10px; background:var(--surface); color:var(--text); font:inherit; min-width:0; max-width:100%; }
+.voting-report .voting-table-scroll { overflow-x:auto; }
+.voting-report .voting-table { width:100%; border-collapse:collapse; font-size:13px; white-space:nowrap; }
+.voting-report .voting-table th,.voting-report .voting-table td { padding:11px 12px; text-align:right; border-bottom:1px solid var(--border); }
+.voting-report .voting-table th:first-child { text-align:left; }
+.voting-report .voting-table thead th { font-size:12px; color:var(--text-secondary); }
+.voting-report .voting-campus-table th { white-space:normal; }
+.voting-report .voting-campus-table th:first-child { min-width:140px; }
+.voting-report .voting-registration-table th { white-space:normal; }
+.voting-report .voting-registration-table th:first-child { min-width:130px; }
+.voting-report .voting-clarity-table th:first-child { min-width:220px; max-width:420px; white-space:normal; text-align:left; }
+.voting-report .voting-expanded-table { min-width:640px; }
+.voting-report .voting-expanded-table th:nth-child(-n+2) { white-space:normal; text-align:left; min-width:125px; }
+.voting-report .voting-age-result { margin:0 0 16px; font-size:15px; line-height:1.6; }
+.voting-report .voting-age-change-table { min-width:390px; font-variant-numeric:tabular-nums; }
+.voting-report .voting-age-change-table thead th { white-space:normal; vertical-align:bottom; }
+.voting-report .voting-age-change-table .voting-age-focus { background:color-mix(in srgb,var(--chart-1) 8%,transparent); }
+.voting-report .voting-age-change-table .voting-age-ranked { font-weight:700; }
+.voting-report .voting-age-note { margin-top:16px; }
+@media(max-width:620px) { .voting-report .voting-facts { grid-template-columns:1fr; } .voting-report .voting-controls label { flex-wrap:wrap; } }
+
+.voting-report .voting-age-scope { margin-bottom:16px; }
+
+.voting-report .voting-share-sites { display:block; margin-top:5px; font-size:11px; font-weight:400; line-height:1.4; }
+.voting-report .voting-share-pair { display:inline-grid; grid-template-columns:5ch 20px 5ch; gap:7px; align-items:center; font-size:15px; }
+.voting-report .voting-share-arrow { text-align:center; color:var(--text-secondary); }
+.voting-report .voting-share-counts { display:block; margin-top:6px; font-size:11px; color:var(--text-secondary); font-weight:400; }
+.voting-report .voting-age-denominators { margin:14px 0 0; color:var(--text-secondary); font-size:12px; line-height:1.6; }
+.voting-report .voting-age-change-table th,.voting-report .voting-age-change-table td { padding:15px 12px; }
+.voting-report .voting-age-change-table td:last-child { font-size:15px; }
+
+.voting-report .voting-share-math { line-height:1.7; }
+.voting-report .voting-age-change-table tfoot th,.voting-report .voting-age-change-table tfoot td { border-top:2px solid var(--border); font-weight:600; }
+.voting-report .voting-profile-table th:first-child { white-space:normal; min-width:120px; max-width:200px; }
+.voting-report .voting-figure-link { color:inherit; text-decoration-line:underline; text-decoration-style:dotted; text-underline-offset:4px; }
+.voting-report .voting-figure-link:hover { text-decoration-style:solid; }
+.voting-report .voting-figure-link:focus-visible { outline:2px solid var(--text); outline-offset:4px; }
+
+.voting-report .voting-page-nav {display:flex;justify-content:flex-end;}
+.voting-report .voting-page-nav a {color:var(--text);font-size:14px;text-underline-offset:4px;}
+.voting-report .voting-final-summary {width:min(1240px,calc(100vw - 80px));justify-self:center;min-width:0;}
+.voting-report .voting-final-table {font-variant-numeric:tabular-nums;}
+.voting-report .voting-final-table thead th {white-space:normal;min-width:140px;vertical-align:bottom;}
+.voting-report .voting-final-table th:first-child {min-width:150px;white-space:normal;}
+.voting-report .voting-final-table td {vertical-align:top;}
+.voting-report .voting-final-table tbody tr:last-child {border-top:2px solid var(--border);}
+.voting-report .voting-final-count {display:block;font-size:15px;}
+.voting-report .voting-final-detail {display:block;margin-top:4px;font-size:12px;font-weight:400;color:var(--secondary);}
+@media(max-width:1099px){.voting-report .voting-final-summary{width:100%;}}
+
+.voting-report .voting-page-nav {gap:20px;flex-wrap:wrap;}
+.voting-report .voting-geography-controls input {border:1px solid var(--border);border-radius:7px;padding:9px 10px;background:var(--surface);color:var(--text);font:inherit;min-width:0;max-width:100%;}
+.voting-report .voting-geography-pagination {display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:14px;margin:16px 0;font-size:13px;}
+.voting-report .voting-geography-pagination button {border:1px solid var(--border);border-radius:7px;padding:9px 12px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer;}
+.voting-report .voting-geography-pagination button:disabled {opacity:.5;cursor:default;}
+.voting-report .voting-final-table tfoot {border-top:2px solid var(--border);}
+
+.voting-report .voting-map-block {width:min(1680px,calc(100vw - 80px));justify-self:center;min-width:0;scroll-margin-top:100px;}
+.voting-report .voting-map-layout {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start;}
+.voting-report .voting-map-canvas-column {min-width:0;}
+.voting-report .voting-precinct-leaflet {height:580px;width:100%;border:1px solid var(--border);border-radius:12px;isolation:isolate;z-index:0;background:#e9edf0;}
+.voting-report .voting-map-toolbar {display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+.voting-report :is(.voting-map-toolbar,.voting-map-site-key) button {border:1px solid var(--border);border-radius:7px;padding:8px 11px;background:var(--surface);color:var(--text);font:inherit;font-size:13px;cursor:pointer;}
+.voting-report .voting-map-toolbar button:disabled {opacity:.5;cursor:default;}
+.voting-report .voting-map-boundary-note,.voting-report .voting-map-coverage {color:var(--secondary);font-size:13px;line-height:1.55;}
+.voting-report .voting-map-legend {font-size:13px;line-height:1.5;margin-top:12px;}
+.voting-report .voting-map-color-scale {display:flex;flex-wrap:wrap;gap:10px;margin-top:6px;}
+.voting-report .voting-map-color-scale span {display:flex;gap:4px;align-items:center;}
+.voting-report .voting-map-color-scale i {display:inline-block;width:17px;height:13px;border:1px solid #617080;}
+.voting-report .voting-map-site-key {display:flex;gap:9px;flex-wrap:wrap;margin-top:12px;}
+.voting-report .voting-map-site-key button {display:flex;align-items:center;gap:7px;text-align:left;}
+.voting-report .voting-map-key-dot {display:inline-flex;align-items:center;justify-content:center;border-radius:50%;width:21px;height:21px;min-width:21px;color:white;font-weight:700;}
+.voting-report .voting-map-key-talley {background:#224f8f;}
+.voting-report .voting-map-key-western {background:#ad4516;}
+.voting-report .voting-map-pin {background:transparent;border:0;}
+.voting-report .voting-map-pin span {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 9px #0007;color:#fff;font:700 15px/1 Arial,sans-serif;box-sizing:border-box;}
+.voting-report .voting-map-pin-talley span {background:#224f8f;}
+.voting-report .voting-map-pin-western span {background:#ad4516;}
+.voting-report .voting-map-tooltip {background:#fff;color:#182735;border:1px solid #a4afb8;border-radius:7px;box-shadow:0 2px 12px #0003;padding:10px 12px;font-size:13px;line-height:1.5;max-width:280px;white-space:normal;}
+.voting-report .voting-map-tooltip-content strong {display:block;margin-bottom:5px;font-size:14px;}
+.voting-report .voting-precinct-leaflet .leaflet-interactive:focus {outline:none;stroke:#e36d31;stroke-width:4;}
+.voting-report .voting-map-canvas-column {position:static;}
+.voting-report .voting-map-age-panel {min-width:0;font-size:14px;line-height:1.5;}
+.voting-report .voting-map-age-panel>header h3 {margin:0;font-size:20px;}
+.voting-report .voting-map-age-panel>header p {margin:7px 0 14px;}
+.voting-report .voting-map-age-key {display:flex;align-items:center;gap:7px;flex-wrap:wrap;color:var(--secondary);font-size:12px;}
+.voting-report .voting-map-age-key :is(i,span) {display:inline-block;width:14px;height:8px;border-radius:2px;background:#3182bd;}
+.voting-report .voting-map-age-key span {background:#b9c0c5;margin-left:8px;}
+.voting-report .voting-map-age-cards {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch;}
+.voting-report .voting-map-age-card {min-width:0;padding:14px;border:1px solid var(--border);border-radius:12px;}
+.voting-report .voting-map-age-card-selected {border-color:#3182bd;box-shadow:inset 0 0 0 1px #3182bd;}
+.voting-report .voting-map-age-card h4 {margin:0;}
+.voting-report .voting-map-age-card h4 button {display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;padding:0;border:0;background:transparent;color:var(--text);font:inherit;font-size:16px;font-weight:700;text-align:left;cursor:pointer;}
+.voting-report .voting-map-age-card h4 button:focus-visible {outline:2px solid #3182bd;outline-offset:5px;border-radius:2px;}
+.voting-report .voting-map-age-card h4 button span {font-size:10px;font-weight:400;color:var(--secondary);white-space:nowrap;}
+.voting-report .voting-map-age-year {margin-top:12px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;font-variant-numeric:tabular-nums;}
+.voting-report .voting-map-age-year h5 {margin:0 0 5px;font-size:13px;}
+.voting-report .voting-map-age-year small {display:block;color:var(--secondary);font-size:12px;}
+.voting-report .voting-map-age-rate {font-size:12px;}
+.voting-report .voting-map-share-track {height:7px;background:#b9c0c5;border-radius:4px;margin:8px 0 5px;overflow:hidden;}
+.voting-report .voting-map-share-track span {display:block;height:100%;background:#3182bd;}
+@media(max-width:1399px){.voting-report .voting-map-age-cards{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:1099px){.voting-report .voting-map-block{width:100%;}.voting-report .voting-map-layout{grid-template-columns:1fr;}.voting-report .voting-map-canvas-column{position:static;}.voting-report .voting-map-age-cards{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:800px){.voting-report .voting-map-age-cards{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:620px){.voting-report .voting-precinct-leaflet{height:430px;}.voting-report .voting-map-age-cards{grid-template-columns:1fr;}}
+
+.voting-report .voting-map-pin-label {position:absolute;box-sizing:border-box;padding:7px 9px;background:#fff;color:#172b3a;border:1px solid #8b9ba9;border-radius:7px;box-shadow:0 2px 9px #0003;font:12px/1.35 Arial,sans-serif;white-space:normal;pointer-events:auto;}
+.voting-report .voting-map-pin-label strong {display:block;font-size:13px;line-height:1.3;margin-bottom:3px;}
+.voting-report .voting-map-pin-label small {display:block;font-size:11px;line-height:1.4;color:#3a4d5c;}
+.voting-report .voting-map-pin-talley .voting-map-pin-label {border-left:4px solid #224f8f;}
+.voting-report .voting-map-pin-western .voting-map-pin-label {border-left:4px solid #ad4516;}
+.voting-report .voting-map-age-section {display:grid;grid-template-columns:minmax(0,1fr);gap:20px;margin-top:36px;}
+.voting-report .voting-precinct-age-table {min-width:650px;}
+.voting-report .voting-selected-age-band {background:color-mix(in srgb,var(--chart-1) 8%,transparent);}
+
+.voting-report .voting-precinct-pairs {display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:32px;}
+.voting-report .voting-precinct-pair-headings,.voting-report .voting-precinct-age-pair {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch;}
+.voting-report .voting-precinct-pair-headings h3 {margin:0;font-size:20px;}
+.voting-report .voting-precinct-pair-headings small {display:block;font-size:14px;font-weight:400;color:var(--secondary);margin-top:4px;}
+.voting-report .voting-map-card-years {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.voting-report .voting-map-card-area {display:none;}
+.voting-report .voting-map-age-change {margin:12px 0 0;padding-top:10px;border-top:1px solid var(--border);font-size:12px;font-variant-numeric:tabular-nums;color:var(--secondary);}
+@media(max-width:900px){.voting-report .voting-precinct-age-pair{grid-template-columns:minmax(0,1fr);}.voting-report .voting-precinct-pair-headings{display:none;}.voting-report .voting-map-card-area{display:block;margin:0 0 7px;font-size:13px;color:var(--secondary);}}
+@media(max-width:620px){.voting-report .voting-map-card-years{grid-template-columns:minmax(0,1fr);gap:0;}}
+
+.voting-report .voting-campus-age-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;width:min(1560px,calc(100vw - 80px));justify-self:center;min-width:0;}
+.voting-report .voting-campus-age-grid>* {min-width:0;}
+.voting-report .voting-campus-age-grid .voting-region-age-map {height:380px;}
+.voting-report .voting-campus-age-counts {font-size:12px;margin-top:14px;width:100%;}
+.voting-report .voting-campus-age-counts th,.voting-report .voting-campus-age-counts td {padding:10px 5px;}
+.voting-report .voting-campus-age-counts small {display:block;font-size:11px;font-weight:400;color:var(--secondary);}
+@media(max-width:1200px){.voting-report .voting-campus-age-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:900px){.voting-report .voting-campus-age-grid{width:100%;grid-template-columns:minmax(0,1fr);}.voting-report .voting-campus-age-grid .voting-region-age-map{height:420px;}}
+.voting-report .voting-region-precinct-label {background:transparent;border:0;pointer-events:none;}.voting-report .voting-region-precinct-label span {display:block;background:#fff;color:#4e360b;border:1px solid #b77916;border-radius:4px;text-align:center;font:700 12px/16px Arial,sans-serif;box-shadow:0 1px 4px #0003;padding:2px;}.voting-report .voting-region-precinct-label small {display:block;font:400 11px/14px Arial,sans-serif;}
+.voting-report .voting-region-benchmark {font-size:12px;color:var(--text);margin:0 0 10px;}
+.voting-report .voting-region-benchmark span {display:block;color:var(--secondary);}
+.voting-report .voting-campus-site-benchmark {display:grid;gap:4px;border-top:1px solid var(--border);padding-top:12px;margin-top:12px;font-size:12px;color:var(--text);}
+.voting-report .voting-campus-age-counts {white-space:normal;table-layout:fixed;}
+.voting-report .voting-campus-age-counts th,.voting-report .voting-campus-age-counts td {padding:10px 3px;}
+.voting-report .voting-campus-age-counts th:first-child {width:25%;}
+.voting-report .voting-campus-age-counts th:nth-child(2) {width:31%;}
+.voting-report .voting-campus-age-counts th:nth-child(3) {width:20%;}
+.voting-report .voting-count-scope {display:grid;gap:3px;margin-top:16px;font-size:12px;color:var(--text);}
+.voting-report .voting-count-scope span {color:var(--secondary);}
+.voting-report .voting-site-count-pair {display:grid;gap:8px;margin:8px 0;}
+.voting-report .voting-site-count-pair div {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;}
+.voting-report .voting-site-count-pair dt {font-weight:400;}
+.voting-report .voting-site-count-pair dd {margin:0;white-space:nowrap;font-variant-numeric:tabular-nums;}
+.voting-report .voting-residence-limit {font-size:12px;line-height:1.5;color:var(--text);border-left:3px solid var(--border);padding-left:10px;margin:12px 0;}
+.voting-report .voting-residence-limit p {margin:4px 0 0;}
+.voting-report .voting-map-tooltip {width:max-content;min-width:200px;max-width:min(280px,calc(100vw - 70px));}

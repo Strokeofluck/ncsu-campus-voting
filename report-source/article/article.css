@@ -1,0 +1,9 @@
+.voting-article {gap:24px;}
+.voting-article h1 {font-size:36px;line-height:1.2;}
+.voting-article .voting-region-comparison {gap:16px;}
+.voting-article .voting-campus-site-benchmark {font-size:13px;gap:6px;}
+.voting-article .voting-campus-site-benchmark>a {margin-top:6px;}
+.voting-article .voting-campus-age-grid {align-items:start;}
+.voting-article .voting-region-benchmark {font-size:13px;}
+.voting-article .voting-page-nav {margin-bottom:0;}
+@media(max-width:600px){.voting-article h1{font-size:28px;}}
