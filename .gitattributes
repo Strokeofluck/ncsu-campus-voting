@@ -1,0 +1,7 @@
+# Preserve compiler output bytes: manifests verify these exact SHA-256 hashes.
+/index.html -text
+/data-app-build.json -text
+/snapshot.*.json -text
+/article/index.html -text
+/article/data-app-build.json -text
+/article/snapshot.*.json -text
