@@ -135,6 +135,16 @@ export function PrecinctMap({cohort,onSelectArea,onCohortChange}){
      {streetError&&<p role="status" className="voting-map-boundary-note">Street tiles are unavailable. The precinct outlines, site pins and counts still work.</p>}
      <div className="voting-map-legend" aria-label="Map color legend">{mapView==='growth'?<><span>2022 → 2026 · {cohort==='All ages'?'All ages':`Ages ${cohort}`} · {growthLabel}</span><div className="voting-map-color-scale">{[['#c65c48','Decrease'],['#eff3ff','0–<50%'],['#bdd7e7','50–<100%'],['#6baed6','100–<200%'],['#08519c','200%+'],['#756bb1','New from zero'],['#bcbcbc','N/A']].map(([c,label])=><span key={label}><i style={{background:c}}/>{label}</span>)}</div></>:<><span>{year} · {cohort==='All ages'?'All ages':`Ages ${cohort}`} · share using {year===2026?'Western Boulevard':'Talley'}</span><div className="voting-map-color-scale">{COLORS.map((c,i)=><span key={c}><i style={{background:c}}/>{i*20}–{(i+1)*20}%</span>)}<span><i style={{background:'#bcbcbc'}}/>N/A</span></div></>}</div>
      <div className="voting-map-site-key">{points.map(point=><button key={point.id} type="button" onClick={()=>{selectArea(point.current_precinct_area);mapRef.current?.setView([point.latitude,point.longitude],16);}}><span className={`voting-map-key-dot voting-map-key-${point.id}`}>{point.id==='talley'?1:2}</span>{point.name} · {point.current_precinct_area.replace('PRECINCT ','')}</button>)}</div>
+     {mapView==='share'&&cohort==='18–24'&&<section id="countywide-site-share" data-reviewed-rows>
+      <h3>Countywide context · Ages 18–24</h3>
+      <p>Of all Wake early voters ages 18–24, what percentage used Talley in 2022 or Western Boulevard in 2026?</p>
+      <div className="voting-table-scroll"><table className="voting-table"><thead><tr><th>Year and location</th><th>Used this location</th><th>Voted early anywhere in Wake</th><th>Share of Wake’s age group</th></tr></thead><tbody>{[2022,2026].map((y,i)=><tr key={y}><th scope="row">{y} · {y===2022?'Talley':'Western Boulevard'}</th><td>{num(collegeSite[i])}</td><td>{num(collegeCounty[i])}</td><td>{pct(collegeSite[i]/collegeCounty[i]*100)}</td></tr>)}</tbody></table></div>
+      <p><strong>Worked math:</strong> location ballots ÷ all Wake ballots in the same age group and year × 100.</p>
+      <p>2022: {num(collegeSite[0])} ÷ {num(collegeCounty[0])} × 100 = {pct(collegeSite[0]/collegeCounty[0]*100)}.<br/>2026: {num(collegeSite[1])} ÷ {num(collegeCounty[1])} × 100 = {pct(collegeSite[1]/collegeCounty[1]*100)}.</p>
+      <p>Share change: ({(collegeSite[1]/collegeCounty[1]*100).toFixed(7)}… − {(collegeSite[0]/collegeCounty[0]*100).toFixed(7)}…) = {(collegeSite[1]/collegeCounty[1]*100-collegeSite[0]/collegeCounty[0]*100).toFixed(7)}… percentage points, or <strong>{(collegeSite[0]/collegeCounty[0]*100-collegeSite[1]/collegeCounty[1]*100).toFixed(1)} points lower</strong>. Calculations use unrounded shares.</p>
+      <p>These totals cover the whole county during the first 16 early-voting days. The map colors above show each individual precinct’s share, with a different denominator for each precinct. More people used Western Boulevard, while Wake’s total grew faster.</p>
+      <a href="references.html#excel-download">Download the original CSVs and worked Excel formulas →</a>
+     </section>}
     </div>
 
    </div>
