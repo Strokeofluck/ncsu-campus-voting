@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GeographyExplorer } from './GeographyExplorer.jsx';
+import { AgeDistribution } from './AgeDistribution.jsx';
 import { EvidenceChart, DataComponent, Dropdown, MetricCard, ReportSection, RichNarrative, useDataApp } from '../../data-app-public.jsx';
 const num=n=>Number(n).toLocaleString('en-US');
 const short=n=>n>=1000?`${(n/1000).toFixed(1)}k`:num(n);
@@ -47,7 +48,7 @@ export function ReportContent(){
  const [baseline,setBaseline]=useState(2022),[scope,setScope]=useState('Campus site'),[cohort,setCohort]=useState('18–24'),[ageMeasure,setAgeMeasure]=useState('votes');
  const [ageBaseline,setAgeBaseline]=useState(2022),[profileDimension,setProfileDimension]=useState('party');
  const [partyScope,setPartyScope]=useState('Campus site'),[partyCohort,setPartyCohort]=useState('All ages');
- useEffect(()=>{const id=window.location.hash.slice(1);if(['party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
+ useEffect(()=>{const id=window.location.hash.slice(1);if(['age-distribution','party-trends','voter-origins','precinct-map'].includes(id))document.getElementById(id)?.scrollIntoView({block:'start'});},[]);
  const summaries=snapshot.queries.summary.rows,daily=snapshot.queries.daily.rows,demos=snapshot.queries.demographics.rows;
  const campusRows=summaries.filter(r=>r.scope==='Campus site');
  const get=(y,s)=>summaries.find(r=>r.year===y&&r.scope===s);
@@ -106,7 +107,7 @@ export function ReportContent(){
  const benchmarks=['Wake County','Campus site'].flatMap(location=>['all_ages','age_18_24'].map(field=>({location,field,label:`${location==='Campus site'?'Talley / Western Boulevard':'Wake County'} · ${field==='all_ages'?'all ages':'ages 18–24'}`,previous:get(2022,location)[field],presidential:get(2024,location)[field],current:get(2026,location)[field],share2024:get(2026,location)[field]/get(2024,location)[field]*100,growth2022:growth(get(2026,location)[field],get(2022,location)[field])})));
  const previews={'https://www.ncsbe.gov/results-data/absentee-and-provisional-data':{title:'NCSBE absentee and early-voting data',summary:'Official download catalog explaining absentee records and early-voting ballots. This analysis uses Wake County records from the 2022, 2024 and 2026 general-election archives.',source:'North Carolina State Board of Elections',approvedForReport:true}};
  return <article className="report-content voting-report" aria-label="NC State early-voting comparison">
-  <nav className="voting-page-nav" aria-label="Page links"><a href="#precinct-map">Precinct map</a><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
+  <nav className="voting-page-nav" aria-label="Page links"><a href="#age-distribution">Age distribution</a><a href="#precinct-map">Precinct map</a><a href="#voter-origins">Where voters came from</a><a href="references.html">References ↗</a></nav>
   <header className="report-hero">
    <RichNarrative id="voting:eyebrow" value="NC STATE · TALLEY → WESTERN BOULEVARD" className="voting-eyebrow"/>
    <h1 data-data-app-title contentEditable={canEdit&&mode==='edit'} suppressContentEditableWarning onBlur={canEdit&&mode==='edit'?e=>setAppTitle(e.currentTarget.textContent.trim()||appTitle):undefined}>{appTitle}</h1>
@@ -184,6 +185,7 @@ College-age voters represented **${one(a.age_18_24_share)}% at Talley (${baselin
    </div>
    <RichNarrative id="voting-voter-profile:note" className="voting-age-note" value={`${profileNote} Categories within this selected breakdown add to 100% before rounding; do not add categories across different characteristics. An absent category is shown as zero only where the complete source breakdown reconciles to the site total. This shows site users and their recorded characteristics, not student identity or the move's causal effect. 2026 is preliminary through ${cutoff}.`}/>
   </DataComponent>
+  <AgeDistribution/>
   <ReportSection id="voting-college-detail-intro" queryId="demographics" sourceRows={exactAges} title="A closer look at college-age voters" showHeading={false}><RichNarrative id="voting-college-detail-intro:body" value="## A closer look at college-age voters
 
 See each age from 18 through 24 at the old and new sites. Switch between ballot counts and each age's share of all site ballots to distinguish volume from demographic composition."/></ReportSection>

@@ -27,6 +27,9 @@
 .voting-report {grid-template-columns:minmax(0,1fr);}
 .voting-party-section {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0;scroll-margin-top:100px;}
 .voting-party-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;width:min(1240px,calc(100vw - 80px));justify-self:center;}
+.voting-report .voting-age-exact {margin-top:20px;}
+.voting-report .voting-age-exact summary {cursor:pointer;font-weight:600;}
+.voting-report .voting-age-exact caption {text-align:left;padding-block:18px;color:var(--secondary);font-size:14px;}
 @media(max-width:1099px){.voting-party-grid{grid-template-columns:1fr;width:100%;}}
 
 .report-sortable-sections {
