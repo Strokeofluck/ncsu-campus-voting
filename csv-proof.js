@@ -54,7 +54,7 @@
  $('year').onchange=()=>{pages.original=0;sourceInfo();page();};$('all-columns').onchange=page;$('selection').onchange=()=>{pages.selected=0;filterInfo();page();};
  $('download-workbook').onclick=()=>{
   $('download-workbook').disabled=true;$('download-status').textContent='Downloading and checking all three original government CSVs…';
-  const exporter=new Worker('csv-excel-worker.js?v=full-copy-3');
+  const exporter=new Worker('csv-excel-worker.js?v=county-growth-4');
   const failed=message=>{$('download-status').textContent='Excel download could not finish: '+message;$('download-workbook').disabled=false;exporter.terminate();};
   exporter.onmessage=({data})=>{
    if(data.type==='status')$('download-status').textContent=data.text;
@@ -62,7 +62,7 @@
    if(data.type==='download'){
     if(exportUrl)URL.revokeObjectURL(exportUrl);exportUrl=URL.createObjectURL(new Blob([data.bytes],{type:'application/zip'}));
     const link=el('a','Save originals + Excel ZIP',{href:exportUrl,download:data.filename});
-    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP. Open Excel in 02 Working copy, then follow Original files → full Copy tabs → Source rows → Filter flags → Counts → Math.'));
+    $('download-status').replaceChildren(document.createTextNode('Ready. All original file hashes and all workbook counts match the report. '),link,document.createTextNode(' Extract the entire ZIP. Open Excel in 02 Working copy, then follow Original files → full Copy tabs → site steps 1–4 → county steps 5–7 → Growth proof.'));
     $('download-workbook').disabled=false;exporter.terminate();link.click();
    }
   };exporter.onerror=()=>failed('The export worker could not run.');exporter.postMessage({sources:exportSources,context});

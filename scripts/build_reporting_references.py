@@ -72,7 +72,11 @@ workspace=re.sub(r'<p class="muted">The Excel workbook uses[\s\S]*?</p>','',work
 workspace=re.sub(r'id="([^"]+)"',lambda m:'id="proof-'+m[1]+'"',workspace)
 workspace=re.sub(r'(aria-controls|aria-labelledby)="([^"]+)"',lambda m:m[1]+'="'+' '.join('proof-'+value for value in m[2].split())+'"',workspace)
 workspace='<div id="csv-workspace" class="csv-workspace" data-csv-proof data-proof-prefix="proof-">'+workspace+'</div>'
-replacements={'__MATCHED_DAYS__':str(comparison['matched_days']),'__CUTOFF__':nice(comparison['as_of']),'__PERIOD_NOTE__':period,'__INITIAL_ROWS__':'\n'.join(rows),'__SOURCE_CARDS__':'\n'.join(sources),'__REFERENCE_LIBRARY__':library.read_text(encoding='utf-8'),'__REFERENCE_DATA__':json.dumps(payload,ensure_ascii=False).replace('<','\\u003c'),'__CSV_WORKSPACE__':workspace}
+growth_cards=[]
+for kind,label,scope in [('college','Talley to Western · ages 18–24','Campus site'),('county','Wake County · ages 18–24','Wake County')]:
+    old=summary(2022,scope)['age_18_24'];new=summary(2026,scope)['age_18_24'];record=records[proof_id(2022,kind)];difference=new-old
+    growth_cards.append(f'<article class="growth-proof-card"><h3>{label}</h3><p class="growth-proof-rate">{record["value"]:+.1f}%</p><ol><li>Count matching 2022 records: {old:,}. Count matching 2026 records: {new:,}.</li><li>{new:,} − {old:,} = {difference:,} ballots (change).</li><li>{difference:,} ÷ {old:,} = {difference/old:.9f}.</li><li>Multiply by 100 = {record["value"]:.9f}%. Displayed to one decimal: {record["value"]:.1f}%.</li></ol>{link(record["id"],"Inspect these original records and math","Inspect original records and math: "+label)}</article>')
+replacements={'__GROWTH_PROOF_CARDS__':''.join(growth_cards),'__MATCHED_DAYS__':str(comparison['matched_days']),'__CUTOFF__':nice(comparison['as_of']),'__PERIOD_NOTE__':period,'__INITIAL_ROWS__':'\n'.join(rows),'__SOURCE_CARDS__':'\n'.join(sources),'__REFERENCE_LIBRARY__':library.read_text(encoding='utf-8'),'__REFERENCE_DATA__':json.dumps(payload,ensure_ascii=False).replace('<','\\u003c'),'__CSV_WORKSPACE__':workspace}
 for key,text in replacements.items():
     assert key in template,key
     template=template.replace(key,text)

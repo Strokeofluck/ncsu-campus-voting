@@ -45,6 +45,10 @@ for href in page.links:
 assert not page.iframes
 assert 'csv-workspace' in page.ids and 'proof-math' in page.ids
 assert 'proof-tab-calculation' in page.ids and 'proof-download-workbook' in page.ids
+assert 'growth-proof-cards' in page.ids and html.count('class="growth-proof-card"')==2
+assert '+40.5%' in html and '+103.6%' in html
+for required in ['5 County source','6 County flags','7 County counts','8 Growth proof','twelve']:
+    assert required in html,required
 assert 'browser-preview' not in html and 'Open calculation in a full tab' not in html
 library=(ROOT/'report-source/reference-library.html').read_text(encoding='utf-8')
 for expected in ['EarlyVotingSitesWithTurnout.pdf','history_stats_20221108.zip','polling_place_20221108.csv','157482/news/heres-who-voted-early-in-talley-student-union','docs/election-day-methodology.md']:

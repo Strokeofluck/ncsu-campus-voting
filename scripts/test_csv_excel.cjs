@@ -1,4 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+require('../csv-county-excel.js');
 const root=path.resolve(__dirname,'..'),plan=require(path.join(root,'csv-excel-export.js'));
 const context=JSON.parse(fs.readFileSync(path.join(root,'data/processed/comparison/comparison.json'),'utf8'));
 const year=2026,site=context.site_mapping[year];
@@ -16,6 +17,18 @@ assert(plan.flagFormulas(7)[12].includes('M6+K7'));
 assert(plan.countFormulas(7,45403).every(f=>f.startsWith('=COUNTIFS(')&&f.includes('$45403')));
 assert(plan.mathFormulas(7)[9].includes('(G7-C7)*100'));
 const template=JSON.parse(fs.readFileSync(path.join(root,'csv-excel-template.json'),'utf8'));
+const county=require('../csv-county-excel.js');
+const countyRows=[...rows,[year,8,'WAKE','EARLY VOTING','ACCEPTED','10/30/2026','OTHER SITE','21','']];
+const countyFlags=county.evaluate({source:{year},countyRows},context,plan);
+assert.deepEqual(countyFlags.reduce((n,r)=>n.map((v,i)=>v+r[9+i]),[0,0,0]),[3,2,1]);
+assert.deepEqual(countyFlags.at(-1).slice(12),[3,2,1]);
+assert(county.flagFormulas(7)[12].includes('SUM(M6,J7)'));
+assert(county.countFormulas(6,6,100)[0].startsWith('=SUM('));
+assert(county.countFormulas(6,6,100)[3].startsWith('=COUNTIFS('));
+assert.equal(county.growthFormulas(6,'site',2022)[1],"='3 Counts'!D7");
+assert.equal(county.growthFormulas(7,'county',2022)[1],"='7 County counts'!B6");
+assert.equal(county.growthFormulas(7,'county',2022)[3],'=C7-B7');
+assert.equal(template.countyGrowth,true);
 assert.deepEqual(template.sheetNames,plan.sheetNames);assert.equal(template.fullCopies,true);assert(Buffer.from(template.base64,'base64').subarray(0,2).equals(Buffer.from('PK')));
 (async()=>{
  await assert.rejects(()=>plan.workbook(null,[],context,null),/requires all three/);

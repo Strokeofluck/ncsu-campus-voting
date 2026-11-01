@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Talley to Western Boulevard — sources and math | Sean Ryan</title>
 <meta name="description" content="Original NCSBE sources, matched early-voting counts, CSV previews and an Excel workbook for checking the Talley to Western Boulevard comparison.">
-<link rel="stylesheet" href="references.css?v=inline-fullcopy-3"></head><body>
+<link rel="stylesheet" href="references.css?v=county-growth-4"></head><body>
 <a class="skip" href="#content">Skip to reference page</a>
 <header class="site-header"><nav aria-label="Main navigation"><a class="brand" href="https://strokeofluck.github.io/sean-data-portfolio/">Sean Ryan</a><div><a href="https://strokeofluck.github.io/sean-data-portfolio/">Portfolio</a><a href="index.html">Voting report</a><a href="#sources">Sources</a></div></nav></header>
 <main id="content" class="project-shell">
@@ -16,6 +16,8 @@
 
  <section id="math" class="reference-section" aria-labelledby="math-title"><div class="section-heading"><div><p class="eyebrow">01 · Check a number</p><h2 id="math-title">The figures behind the comparison</h2></div><label class="baseline-label">Compare <select id="baseline"><option value="2022">Talley 2022 → Western 2026 · midterms</option><option value="2024">Talley 2024 → Western 2026 · presidential benchmark</option></select></label></div>
  <p id="period-note">__PERIOD_NOTE__</p>
+ <div id="growth-proof-cards" class="growth-proof-grid" aria-label="The two college-age growth figures">__GROWTH_PROOF_CARDS__</div>
+ <details class="excel-trace" open><summary>How the Excel download proves both growth figures</summary><ol><li><strong>Untouched originals:</strong> 01 Original files holds the exact government CSV bytes. SHA-256 hashes identify each source snapshot.</li><li><strong>Full Excel copies:</strong> Copy 2022, Copy 2024 and Copy 2026 retain every original column, row, header and text value in order. Their worksheet row numbers match original CSV record numbers.</li><li><strong>Highlighted source fields:</strong> 1 Source rows links the site extract to the Copy cells. 5 County source does the same for every original age-18–24 candidate, including rejected and outside-window records. Yellow headers identify the seven fields taken from the originals.</li><li><strong>Record-by-record decisions:</strong> 2 Filter flags and 6 County flags test each rule with real formulas. Green contributions add 1; excluded candidates add 0. Running totals use SUM.</li><li><strong>Count and cross-check:</strong> 3 Counts calculates site totals. 7 County counts uses SUM over every contribution, checks it with COUNTIFS, and reconciles named-site plus other-Wake ballots.</li><li><strong>Actual growth formulas:</strong> 8 Growth proof links those counts, subtracts the baseline, divides by that baseline, and multiplies by 100 in separate calculation cells. Adjacent text quotes the formulas for quick reading; the calculation cells themselves contain the real formulas.</li></ol><p><a href="#csv">Download the originals and twelve-tab Excel workbook below</a>. Extract the entire ZIP before opening Excel. Copies and extracts can be edited; the separate original CSVs stay untouched. Extract membership is fixed for the verified snapshot, so rebuild the download after changes that add new candidate records. <a href="docs/excel-growth-audit.md">Read the exact cell map and export audit</a>.</p></details>
  <div class="table-wrap" role="region" aria-label="Exact comparison figures" tabindex="0"><table><thead><tr><th scope="col">Measure</th><th scope="col" id="previous-header">2022</th><th scope="col">2026</th><th scope="col">Change</th><th scope="col">Calculation</th></tr></thead><tbody id="comparison-rows">__INITIAL_ROWS__</tbody></table></div>
  <p class="muted">The Wake County row includes every early-voting site in Wake. Percentages compare the selected group with its stated denominator. Changes in shares are percentage points.</p>
  <p class="method-note">These are counts of accepted early-voting ballots and shares of site ballots. They do not identify NC State students or establish that the site move caused a change in turnout.</p>
@@ -26,7 +28,7 @@
  <p>Use the tabs below to move between the calculation, original CSV and counted rows. Loading the official files checks the snapshot hashes and independently recounts the records.</p>
  <div class="selected-calculation"><h3 id="selected-title">Ages 18–24 share · change from 2022 to 2026</h3><a id="source-details" href="figure-source.html#change-2022-age-group-18-24">Exact source details</a></div>
  __CSV_WORKSPACE__
- <p class="download-note">Extract the whole ZIP. Untouched CSVs are in 01 Original files; Excel is in 02 Working copy. Follow the full Copy tabs, campus extract, highlighted filters, counts and percentages. All eight tabs use the same source snapshot.</p>
+ <p class="download-note">Extract the whole ZIP. Untouched CSVs are in 01 Original files; Excel is in 02 Working copy. Follow the full Copy tabs, site steps 1–4, county steps 5–7 and 8 Growth proof. All twelve tabs use the same source snapshot. Every count and growth figure is calculated with actual formulas.</p>
  </section>
 
  <section id="sources" class="reference-section" aria-labelledby="sources-title"><p class="eyebrow">03 · Original sources</p><h2 id="sources-title">The government files used here</h2><p>Each year comes from NCSBE’s by-county absentee archive, which includes in-person early-voting records. The Wake CSV is the input; the campus totals and percentages are calculations from those records.</p>
@@ -48,4 +50,4 @@
  </section>
 </article>
 <footer class="bottom-nav"><a href="https://strokeofluck.github.io/sean-data-portfolio/">← Sean Ryan’s portfolio</a><a href="index.html">Interactive voting report ↗</a></footer>
-</main><script id="reference-data" type="application/json">__REFERENCE_DATA__</script><script src="csv-proof-model.js"></script><script src="csv-proof.js?v=named-sites-4"></script><script src="references.js?v=named-sites-4"></script></body></html>
+</main><script id="reference-data" type="application/json">__REFERENCE_DATA__</script><script src="csv-proof-model.js"></script><script src="csv-proof.js?v=county-growth-4"></script><script src="references.js?v=county-growth-4"></script></body></html>

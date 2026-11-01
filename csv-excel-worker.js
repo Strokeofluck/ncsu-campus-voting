@@ -1,10 +1,10 @@
 /* Build the complete download locally in the viewer's browser; no voter data is uploaded. */
-importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','csv-original-copy.js','csv-excel-export.js','csv-excel-package.js');
+importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','csv-original-copy.js?v=county-growth-4','csv-county-excel.js?v=county-growth-4','csv-excel-export.js?v=county-growth-4','csv-excel-package.js?v=county-growth-4');
 onmessage=async({data})=>{
  try{
-  const response=await fetch('csv-excel-template.json?v=full-copy-3');if(!response.ok)throw Error('Excel template unavailable');
+  const response=await fetch('csv-excel-template.json?v=county-growth-4');if(!response.ok)throw Error('Excel template unavailable');
   const template=await response.json(),templateBytes=Uint8Array.from(atob(template.base64),c=>c.charCodeAt(0)),templateZip=await JSZip.loadAsync(templateBytes);
-  if(!template.fullCopies)throw Error('Reload the page to get the complete-copy Excel template');
+  if(!template.fullCopies||!template.countyGrowth)throw Error('Reload the page to get the complete-copy Excel template');
   const bundle=new CsvZipStream.Archive(),datasets=[];
   for(const source of data.sources){
    say('Downloading untouched '+source.year+' Wake CSV…');
@@ -15,7 +15,7 @@ onmessage=async({data})=>{
    const sheet={2022:2,2024:3,2026:4}[source.year],xml=await templateZip.file(`xl/worksheets/sheet${sheet}.xml`).async('string');
    datasets.push(CsvOriginalCopy.copy(bytes,source,data.context,xml,CsvZipStream,pako,CsvExcel.fields,say));
   }
-  say('Linking full copies → campus extract → filters → counts → math…');
+  say('Linking full copies, site and county extracts, 1-or-0 flags, sums and growth formulas…');
   const result=await CsvExcel.workbook(templateBytes,datasets,data.context,JSZip,{Stream:CsvZipStream,Pako:pako});
   say('Packing the untouched originals and complete Excel working copy…');
   const bytes=CsvExcelPackage.finish(bundle,result,datasets,data.context,CsvZipStream,pako);

@@ -7,9 +7,9 @@
 <h1 id="title">CSV records and calculation</h1>
 <p>Follow the number from the official CSV to the counted records and the arithmetic. Each matching ballot adds 1 to the count.</p>
 <p><button id="download-workbook" disabled>Download originals + step-by-step Excel (.zip)</button></p>
-<p id="download-status" role="status" aria-live="polite">The ZIP separates untouched government CSVs from the Excel working copy. Excel starts with every original row and column for 2022, 2024 and 2026, then follows the campus extract, highlighted filters, counts and real formulas. Extract the whole ZIP before opening Excel. This large download can take several minutes to build and open.</p>
+<p id="download-status" role="status" aria-live="polite">The ZIP separates untouched government CSVs from the Excel working copy. Excel starts with every original row and column for 2022, 2024 and 2026, then follows site steps 1–4, county steps 5–7 and the two growth calculations in 8 Growth proof. Extract the whole ZIP before opening Excel. This large download can take several minutes to build and open.</p>
 <p><a href="data/processed/comparison/campus_age_calculations.csv" download>Summary CSV only: displayed results and formula text</a></p>
-<p class="muted">Full Copy tabs preserve the original headers, field values and order, storing every field as text. The campus extract links seven fields to those copies by formula. The separate original CSV files remain byte-for-byte unchanged. Data is downloaded directly from NCSBE into your browser.</p>
+<p class="muted">Full Copy tabs preserve the original headers, field values and order, storing every field as text. The site and county extracts link seven fields to those copies by formula. Yellow headers show the fields taken; green filter contributions show which records add 1. The separate original CSV files remain byte-for-byte unchanged. Data is downloaded directly from NCSBE into your browser.</p>
 <button id="load" disabled>Load official CSVs and recount</button><p id="status" role="status" aria-live="polite">Preparing the saved calculation…</p>
 <div role="tablist" aria-label="Trace the calculation">
 <button role="tab" id="tab-original" aria-controls="original" aria-selected="true">1. Original CSV</button>
@@ -27,4 +27,4 @@
 </section>
 <section class="panel" id="calculation" role="tabpanel" aria-labelledby="tab-calculation" hidden><h2>The math</h2><p id="calculation-status"></p><div id="math"></div><p class="muted">Shares use count ÷ total × 100. Changes in shares subtract the unrounded percentages and are measured in percentage points. 2026 records are preliminary.</p></section>
 <details><summary>Source verification</summary><div id="hashes">Load the original CSVs to compare their SHA-256 hashes with the saved report snapshot.</div></details>
-</main><script src="csv-proof-model.js"></script><script src="csv-proof.js?v=named-sites-4"></script></body></html>
+</main><script src="csv-proof-model.js"></script><script src="csv-proof.js?v=county-growth-4"></script></body></html>

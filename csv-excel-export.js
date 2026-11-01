@@ -2,7 +2,7 @@
 (function(root){
  'use strict';
  const names=['0 Original files','1 Source rows','2 Filter flags','3 Counts','4 Math'];
- const sheetNames=[names[0],'Copy 2022','Copy 2024','Copy 2026',...names.slice(1)];
+ const sheetNames=[names[0],'Copy 2022','Copy 2024','Copy 2026',...names.slice(1),...root.CsvCountyExcel.names];
  const column=index=>{let s='';for(let n=index+1;n;n=Math.floor((n-1)/26))s=String.fromCharCode(65+(n-1)%26)+s;return s;};
  const sourceFormula=(year,column,record)=>{const ref=`'Copy ${year}'!${column}${record}`;return `=IF(${ref}="","",${ref})`;};
  const fields=['county_desc','ballot_req_type','ballot_rtn_status','ballot_rtn_dt','site_name','age','sdr'];
@@ -98,6 +98,7 @@
    }
    zip.file(filename,text);stats[names[sheet-1]]={dataRows:sheet<=3?sheet===1?3:last-5:8};
   }
+  const county=await root.CsvCountyExcel.append(zip,datasets,context,root.CsvExcel);
   let workbookXml=await zip.file('xl/workbook.xml').async('string');
   const p=(workbookXml.match(/<([\w]+:)?workbook\b/)||[])[1]||'';
   const calc=`<${p}calcPr calcId="0" calcMode="auto" fullCalcOnLoad="1" forceFullCalc="1"/>`;
@@ -111,9 +112,9 @@
     if(raw.has(filename)){archive.add(raw.get(filename));continue;}
     const entry=streaming.Stream.packed(filename,streaming.Pako);entry.push(await zip.file(filename).async('uint8array'));archive.add(entry.finish());
    }
-   return {bytes:archive.finish(),counts,stats};
+   return {bytes:archive.finish(),counts,stats,county};
   }
-  return {bytes:await zip.generateAsync({type:'uint8array',compression:'DEFLATE',compressionOptions:{level:3}}),counts,stats};
+  return {bytes:await zip.generateAsync({type:'uint8array',compression:'DEFLATE',compressionOptions:{level:3}}),counts,stats,county};
  }
  root.CsvExcel={names,sheetNames,column,sourceFormula,fields,bands,flagFormulas,countFormulas,mathFormulas,evaluateRows,totals,workbook,dateSerial};
  if(typeof module!=='undefined')module.exports=root.CsvExcel;

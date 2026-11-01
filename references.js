@@ -24,6 +24,13 @@
   $('previous-header').textContent=String(baseline);$('baseline').value=String(baseline);
   $('period-note').textContent=`Talley Student Union: ${date(previous.start_date)}–${date(previous.end_date)}. Western Boulevard Business Services: ${date(current.start_date)}–${date(current.end_date)}. `+(baseline===2022?'Both elections are midterms.':'2024 was a presidential election; 2026 is a midterm.');
   $('comparison-rows').replaceChildren();
+  const focus=$('growth-proof-cards');focus.replaceChildren();
+  for(const [kind,label,before,after]of [['college','Talley to Western · ages 18–24',previous.age_18_24,current.age_18_24],['county','Wake County · ages 18–24',wakePrevious.age_18_24,wakeCurrent.age_18_24]]){
+   const record=data.records[id(kind)],card=el('article',undefined,{class:'growth-proof-card'}),difference=after-before;
+   card.append(el('h3',label),el('p',delta(record.value,'%'),{class:'growth-proof-rate'}));
+   const steps=el('ol');for(const text of [`Count the matching ${baseline} records: ${number(before,'ballots')}. Count the matching 2026 records: ${number(after,'ballots')}.`,`${number(after,'ballots')} − ${number(before,'ballots')} = ${number(difference,'ballots')} ballots (change).`,`${number(difference,'ballots')} ÷ ${number(before,'ballots')} = ${(difference/before).toFixed(9)}.`,`Multiply by 100 = ${record.value.toFixed(9)}%. Displayed to one decimal: ${record.value.toFixed(1)}%.`])steps.append(el('li',text));
+   card.append(steps,el('a','Inspect these original records and math',{class:'figure-link','data-figure':record.id,href:'csv-proof.html?figure='+record.id+'&tab=calculation'}));focus.append(card);
+  }
   for(const [kind,label,before,after,unit]of rows){
    const record=data.records[id(kind)],tr=el('tr',undefined,{'data-kind':kind,'data-figure':record.id});
    const link=el('a','Check math',{class:'figure-link',href:'csv-proof.html?figure='+record.id+'&tab=calculation','data-figure':record.id,'aria-label':'Check math: '+label});
@@ -32,6 +39,6 @@
   choose(data.records[selected]?selected:id('share'),false);
  }
  $('baseline').addEventListener('change',()=>{const kind=[...$('comparison-rows').rows].find(row=>row.dataset.figure===selected)?.dataset.kind||'share';baseline=Number($('baseline').value);selected=id(kind);render();});
- $('comparison-rows').addEventListener('click',event=>{const link=event.target.closest('a[data-figure]');if(!link||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;event.preventDefault();choose(link.dataset.figure,true);});
+ $('math').addEventListener('click',event=>{const link=event.target.closest('a[data-figure]');if(!link||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey||event.button!==0)return;event.preventDefault();choose(link.dataset.figure,true);});
  render();
 })();
