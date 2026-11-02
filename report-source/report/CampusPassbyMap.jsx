@@ -43,7 +43,7 @@ export function CampusPassbyMap({article=false}){
  },[origin,destination,view,autoplay,kind,includeTalley]);
  useEffect(()=>{const map=mapRef.current,layer=layers.current;if(!map||!layer)return;layer.clearLayers();
   const routeGroup=L.featureGroup().addTo(layer);
-  const routeInfo=r=>[tripLabel(r),`${r.gis_use_name} · ${miles(r.route_m)} modeled trip`,distance(r,'talley')<=radius?`Enters Talley’s ${radius}-meter zone`:`Stays outside Talley’s ${radius}-meter zone`,'Shared paths can contain overlapping modeled trips.'];
+  const routeInfo=r=>[tripLabel(r),`${r.gis_use_name} · ${miles(r.route_m)} modeled trip`,distance(r,'talley')<=radius?`Passes within ${radius} meters of Talley’s ${basis==='footprint'?'building':'entrance'}`:`Stays outside Talley’s ${radius}-meter zone`,'Shared paths can contain overlapping modeled trips.'];
   const routeOrder=autoplay||replaying||view==='selected'?[]:[...eligible.filter(r=>distance(r,'talley')>radius),...crossingRoutes];
   for(const r of routeOrder){const hit=distance(r,'talley')<=radius;L.geoJSON(r.geometry,{interactive:true,onEachFeature:(_,line)=>bindRouteTooltip(L,line,map,routeInfo(r)),style:{className:`passby-modeled-route${hit?' passby-talley-hit':''}`,color:hit?'#237a4b':'#687c8b',weight:hit?2.5:1.8,opacity:hit?.55:.45}}).addTo(routeGroup);}
   const zoneGroup=L.featureGroup().addTo(layer),zoneRefs=[];
