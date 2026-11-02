@@ -1,0 +1,88 @@
+{
+  "method": "For the four original failures, try all connected edges within 30 m of each enabled mapped entrance within 10 m of the footprint; reject connectors intersecting more than 2.5 m of a building interior. This recovers Aurora entrance 216. When no qualifying entrance exists, use a separately estimated nearest unblocked building-edge connection, at most 30 m. Gold, Welch and University Towers remain estimates. Network and both site entrances are unchanged. These supplemental routes do not silently revise the frozen 36-building baseline averages or routine-route denominators.",
+  "original_baseline_buildings": 36,
+  "display_comparisons": 40,
+  "routine_baseline_pairs_excluding_talley": 756,
+  "source": {
+    "url": "https://gismaps.oit.ncsu.edu/arcgis/rest/services/Accessibility/Accessibility/MapServer/0/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json&resultRecordCount=1000&orderByFields=OBJECTID",
+    "sha256": "36ea68c2b07ad8d84d1d02e4539f08c435a64d438feadb314d64593d4d522b38",
+    "features": 536,
+    "pagination": "OBJECTID order, batches of 1000; count reconciled to returnCountOnly"
+  },
+  "rows": [
+    {
+      "id": "271A",
+      "name": "Aurora Hall",
+      "original_failure": "Straight entrance connector intersects a building footprint",
+      "current_access_basis": "Original enabled GIS entrance; shortest unblocked connection within 30 m",
+      "entrance_id": 216,
+      "estimated_access": false,
+      "connector_m": 25.598964900282464,
+      "access_coordinates": [
+        -78.67668661334922,
+        35.779946555304235
+      ],
+      "original_entrance_feature": {
+        "attributes": {
+          "OBJECTID": 216,
+          "Id": 0,
+          "Type": "AFE",
+          "Note_": " ",
+          "Condition": " ",
+          "PicFPath": " ",
+          "Desc_": "Accessible Facility Entrance",
+          "Enabled": 1,
+          "DoorOpener": "No",
+          "Display": "Yes",
+          "DisplayNotes": null
+        },
+        "geometry": {
+          "x": -78.67668661334922,
+          "y": 35.77994655530425
+        }
+      }
+    },
+    {
+      "id": "012",
+      "name": "Gold Hall",
+      "original_failure": "No enabled mapped entrance within 10 m of building footprint",
+      "current_access_basis": "Estimated nearest building-edge connection; no qualifying mapped entrance connection",
+      "entrance_id": null,
+      "estimated_access": true,
+      "connector_m": 2.5065461195445518,
+      "access_coordinates": [
+        -78.66511421672021,
+        35.78404541707423
+      ],
+      "original_entrance_feature": null
+    },
+    {
+      "id": "079",
+      "name": "University Towers",
+      "original_failure": "Mapped entrance more than 30 m from connected path network",
+      "current_access_basis": "Estimated nearest building-edge connection; no qualifying mapped entrance connection",
+      "entrance_id": null,
+      "estimated_access": true,
+      "connector_m": 8.882294849731059,
+      "access_coordinates": [
+        -78.6750838149648,
+        35.78810455374384
+      ],
+      "original_entrance_feature": null
+    },
+    {
+      "id": "013",
+      "name": "Welch Hall",
+      "original_failure": "No enabled mapped entrance within 10 m of building footprint",
+      "current_access_basis": "Estimated nearest building-edge connection; no qualifying mapped entrance connection",
+      "entrance_id": null,
+      "estimated_access": true,
+      "connector_m": 2.8851087035569716,
+      "access_coordinates": [
+        -78.66514969388574,
+        35.783671289011885
+      ],
+      "original_entrance_feature": null
+    }
+  ]
+}

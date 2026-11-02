@@ -16,7 +16,14 @@ polys=[Polygon([t.transform(*p[:2]) for p in f['geometry']['rings'][0]]) for f i
 est=json.loads((OUT/'estimated-access-routes.json').read_text(encoding='utf-8'));original=json.loads((OUT/'routes.json').read_text(encoding='utf-8'));s=json.loads((ROOT/'report-source/snapshot.json').read_text(encoding='utf-8'))
 assert {r['id'] for r in est['rows']}=={r['id'] for r in original['rows'] if not r['available']}=={'271A','012','079','013'}
 for r in est['rows']:
- assert r['estimated_access'] and not r['available'];assert bycode[r['id']].boundary.distance(Point(t.transform(*r['access_coordinates'])))<.001
+ assert not r['available'] # Retain its original-baseline failure flag.
+ if r['id']=='271A':
+  assert r['recovered_mapped_entrance'] and not r['estimated_access'] and r['entrance_id']==216
+  with zipfile.ZipFile(OUT/'official-gis-snapshot.zip') as z:entry=next(f for f in json.loads(z.read('entrances.json'))['features'] if f['attributes']['OBJECTID']==216)
+  assert entry['attributes']['Enabled']==1
+  assert Point(t.transform(entry['geometry']['x'],entry['geometry']['y'])).distance(Point(t.transform(*r['access_coordinates'])))<.001
+ else:
+  assert r['estimated_access'] and not r['recovered_mapped_entrance'];assert bycode[r['id']].boundary.distance(Point(t.transform(*r['access_coordinates'])))<.001
  for field in ['talley','western']:
   a=r[field+'_route'];line=LineString([t.transform(*p) for p in a['geometry']['coordinates']]);start=LineString([t.transform(*p) for p in a['origin_connector']['coordinates']]);end=LineString([t.transform(*p) for p in a['destination_connector']['coordinates']]);assert line.difference(network).length<.1
   assert max(start.length,end.length)<=30;assert all(start.intersection(poly).length<=2.5001 for poly in polys)
@@ -26,4 +33,4 @@ for r in est['rows']:
 assert s['queries']['campus_estimated_access']['rows']==est['rows'];assert s['queries']['campus_walking_routes']['rows']==original['rows'];assert sum(r['available'] for r in original['rows'])==36;assert len(s['queries']['campus_passby']['rows'])==792
 catalog=json.loads((ROOT/'data/sources/ncsu-gis/2026-11-01/catalog.json').read_text(encoding='utf-8'))
 for f in catalog['files']:assert hashlib.sha256((ROOT/'data/sources/ncsu-gis/2026-11-01'/f['name']).read_bytes()).hexdigest()==f['sha256']
-print('PASS: all 8 supplemental routes follow source paths; estimated boundary connectors are <=30 m and avoid building interiors; lengths reconcile; original averages/routine denominators unchanged; archived source hashes verified.')
+print('PASS: all 8 supplemental routes follow source paths; Aurora uses original enabled entrance 216; three edge estimates are labeled; all connectors <=30 m avoid building interiors; lengths reconcile; frozen averages/routine denominators and source hashes unchanged.')
