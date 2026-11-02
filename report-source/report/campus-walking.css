@@ -179,3 +179,6 @@
 .voting-report .campus-map-key .campus-key-line{width:14px;height:3px;}
 .voting-report .campus-map-key .campus-key-parking{width:14px;height:11px;}
 @media(max-width:600px){.voting-report .campus-map-key{width:208px;top:8px;left:8px;padding:8px;}.campus-map-with-key .walking-map{height:460px;}}
+
+.voting-report .campus-map-key .campus-key-quick-controls .route-view-controls{margin:0;}
+.voting-report .campus-map-key .campus-key-quick-controls .route-view-controls label{font-size:10px;gap:5px;}
