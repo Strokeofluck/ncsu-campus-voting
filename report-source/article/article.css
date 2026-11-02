@@ -103,3 +103,43 @@
 
 .voting-article .article-routine-map .passby-results{margin-bottom:12px;}
 .voting-article .article-routine-reset{font:inherit;border:0;background:none;color:inherit;text-decoration:underline;padding:0;cursor:pointer;}
+
+/* Compact overall averages immediately above the housing walking map. */
+.voting-article .article-walking-map:not(.article-routine-map){margin:0 auto 12px;}
+.voting-article .article-walk-average{margin:0 0 10px;padding:10px 0 8px;border-block:1px solid var(--border);}
+.voting-article .article-walk-average-label{font-size:12px;margin:0 0 8px;color:var(--secondary);}
+.voting-article .article-walk-average-grid{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:12px;margin:0;}
+.voting-article .article-walk-average-grid dt{font-size:12px;line-height:1.35;margin:0 0 3px;}
+.voting-article .article-walk-average-grid dd{margin:0;display:flex;flex-direction:column;gap:2px;font-variant-numeric:tabular-nums;}
+.voting-article .article-walk-average-grid strong{font-size:22px;font-weight:500;line-height:1.25;}
+.voting-article .article-walk-average-grid dd span{font-size:12px;line-height:1.4;}
+.voting-article .article-walk-average-delta{border-left:1px solid var(--border);padding-left:14px;}
+.voting-article .article-walk-average-source{font-size:11px;line-height:1.45;color:var(--secondary);margin:8px 0 0;}
+@media(max-width:600px){.voting-article .article-walk-average-grid{grid-template-columns:1fr 1fr;gap:10px;}.voting-article .article-walk-average-delta{grid-column:1/-1;border-left:0;border-top:1px solid var(--border);padding:7px 0 0;}.voting-article .article-walk-average-delta dd{flex-direction:row;align-items:baseline;flex-wrap:wrap;gap:5px 12px;}.voting-article .article-walk-average-grid strong{font-size:20px;}}
+/* Dense horizontal rows keep all five age comparisons in one view. */
+.voting-article .age-growth-compact{--age-columns:62px minmax(0,1fr) 100px 146px;--age-gap:14px;}
+.voting-article .age-growth-scope{font-size:12px;color:var(--secondary);margin:0 0 8px;}
+.voting-article .age-growth-legend{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:12px;margin:0 0 14px;}
+.voting-article .age-growth-legend>span{display:flex;align-items:center;gap:7px;}
+.voting-article .age-growth-legend i{display:inline-block;width:17px;height:9px;}
+.voting-article .age-growth-head,.voting-article .age-growth-row{display:grid;grid-template-columns:var(--age-columns);gap:var(--age-gap);align-items:center;}
+.voting-article .age-growth-head{font-size:10px;color:var(--secondary);padding-bottom:6px;}
+.voting-article .age-growth-axis{position:relative;height:18px;margin-right:61px;}
+.voting-article .age-growth-axis span{position:absolute;bottom:0;transform:translateX(-50%);white-space:nowrap;}
+.voting-article .age-growth-axis span:first-child{transform:none;}
+.voting-article .age-growth-axis span:last-child{transform:translateX(-100%);}
+.voting-article .age-growth-row{padding:10px 0;border-top:1px solid var(--border);}
+.voting-article .age-growth-row h3{font-size:14px;font-weight:600;margin:0;white-space:nowrap;}
+.voting-article .age-growth-bars{display:grid;gap:5px;min-width:0;}
+.voting-article .age-growth-series{display:grid;grid-template-columns:minmax(0,1fr) 54px;gap:7px;align-items:center;position:relative;outline-offset:2px;}
+.voting-article .age-growth-track{height:13px;background:repeating-linear-gradient(to right,var(--border) 0 1px,transparent 1px 20%);}
+.voting-article .age-growth-bar{height:100%;}
+.voting-article .age-growth-series>strong{font-size:12px;text-align:right;font-weight:500;font-variant-numeric:tabular-nums;}
+.voting-article .age-growth-gap{display:flex;flex-direction:column;gap:2px;font-size:11px;line-height:1.4;}
+.voting-article .age-growth-gap strong{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;}
+.voting-article .age-growth-counts{margin:0;display:flex;flex-direction:column;gap:3px;font-size:12px;line-height:1.4;font-variant-numeric:tabular-nums;}
+.voting-article .age-growth-counts a{font-size:11px;}
+.voting-article .age-growth-tooltip{display:none;position:absolute;z-index:5;top:100%;left:0;min-width:190px;max-width:300px;padding:8px 10px;border:1px solid var(--border);background:var(--background);color:var(--text);font-size:11px;line-height:1.5;box-shadow:0 2px 8px #0002;}
+.voting-article .age-growth-series:hover .age-growth-tooltip,.voting-article .age-growth-series:focus .age-growth-tooltip{display:block;}
+.voting-article .age-growth-compact figcaption{font-size:11px;line-height:1.5;margin-top:12px;padding-top:10px;}
+@media(max-width:600px){.voting-article .age-growth-compact{--age-columns:50px minmax(0,1fr) 80px;--age-gap:8px;}.voting-article .age-growth-head>span:last-child{display:none;}.voting-article .age-growth-counts{grid-column:2/-1;flex-direction:row;gap:8px;font-size:11px;}.voting-article .age-growth-counts>span::before{content:'Talley → Western: ';font-size:10px;}.voting-article .age-growth-row{row-gap:6px;padding:8px 0;}.voting-article .age-growth-axis span:nth-child(even){display:none;}.voting-article .age-growth-series{grid-template-columns:minmax(0,1fr) 49px;gap:5px;}.voting-article .age-growth-axis{margin-right:54px;}.voting-article .age-growth-series>strong{font-size:11px;}.voting-article .age-growth-tooltip{min-width:150px;max-width:220px;}.voting-article .age-growth-row h3{font-size:13px;}}

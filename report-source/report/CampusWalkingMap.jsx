@@ -1,4 +1,4 @@
-import WalkingAverageSummary from './CampusWalkingAverage.jsx';
+import WalkingAverageSummary,{averageMiles} from './CampusWalkingAverage.jsx';
 import {addCampusBasemap} from './campus-basemap.js';
 import React,{useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import * as L from './vendor/leaflet/leaflet-src.esm.js';
@@ -55,9 +55,15 @@ export function CampusWalkingMap({article=false}){
  const fitAll=()=>{cameraKey.current=null;const values=rows.filter(r=>group==='All housing'||r.group===group);mapRef.current?.fitBounds(L.latLngBounds(values.map(r=>[r.latitude,r.longitude])),{padding:[30,30],animate:false});};
  const changeGroup=value=>{setGroup(value);setRouteView('selected');const candidates=rows.filter(r=>value==='All housing'||r.group===value);if(!candidates.some(r=>r.id===selected))setSelected(candidates.find(r=>r.available)?.id||candidates[0].id);};
  if(!visible('voting-campus-walking-map'))return null;
+ const overallAverage=article?snapshot.queries.campus_google_averages.rows.find(r=>r.group==='All housing'):null;
  if(article)return <section className="article-walking-map" aria-label="Walking to NC State’s early-voting sites">
-  <DataComponent id="voting-article-walking-map" queryId="campus_walking_routes" queryIds={['campus_walking_routes','campus_walk_sites','campus_estimated_access','campus_parking']} sourceRowsByQuery={{campus_walking_routes:rows,campus_walk_sites:sites,campus_estimated_access:estimates,campus_parking:snapshot.queries.campus_parking.rows}} displayRows={displayRows} kind="custom" title="Compare the walk to Talley and Western Boulevard">
-   <p className="article-walk-instruction">Click a residence to compare both walks. Blue leads to Talley (2022); orange leads to Western Boulevard (2026).</p>
+  <DataComponent id="voting-article-walking-map" queryId="campus_walking_routes" queryIds={['campus_walking_routes','campus_walk_sites','campus_estimated_access','campus_parking','campus_google_averages','campus_google_walks']} sourceRowsByQuery={{campus_walking_routes:rows,campus_walk_sites:sites,campus_estimated_access:estimates,campus_parking:snapshot.queries.campus_parking.rows,campus_google_averages:snapshot.queries.campus_google_averages.rows,campus_google_walks:snapshot.queries.campus_google_walks.rows}} displayRows={displayRows} kind="custom" title="Compare the walk to Talley and Western Boulevard">
+   <div className="article-walk-average" data-reviewed-rows aria-label="Average one-way walking distance across all 40 housing buildings">
+    <p className="article-walk-average-label">Average one-way walk · {overallAverage.included_buildings} housing buildings</p>
+    <dl className="article-walk-average-grid">{[['talley','Talley (2022)'],['western','Western Boulevard (2026)']].map(([key,title])=><div key={key}><dt>{title}</dt><dd><strong>{averageMiles(overallAverage['mean_'+key+'_miles'])} mi</strong><span>≈ {overallAverage['mean_'+key+'_minutes'].toFixed(1)} min</span></dd></div>)}<div className="article-walk-average-delta"><dt>Change to Western Boulevard</dt><dd><strong>{averageMiles(overallAverage.mean_change_miles)} mi farther</strong><span>≈ {overallAverage.mean_change_minutes.toFixed(1)} min longer · {overallAverage.farther_buildings} farther / {overallAverage.closer_buildings} closer</span></dd></div></dl>
+    <p className="article-walk-average-source">Google walking estimates · checked Nov. 1, 2026 · equal weight per building. <a href="../references.html#google-walking-checks">Sources and math</a>. The map below draws separate GIS-modeled routes.</p>
+   </div>
+   <p className="article-walk-instruction">Select a residence to compare its two GIS walks.</p>
    <div className="campus-map-with-key"><div ref={host} className="walking-map" aria-label="Housing and GIS walking routes to Talley and Western Boulevard"/><MapLegend showParking={showParking}/></div>
    <CampusMapCredit attribution={snapshot.campusBasemap.attribution} detail="NC State GIS paths and footprints"/>
    <p className="article-walk-caption"><strong>{routeView==='selected'?row.name:'All housing routes to '+(focusSite==='talley'?'Talley':'Western Boulevard')}</strong> · Modeled one-way distances, walking at 20.1 minutes per mile. Current GIS paths are used for both sites; three housing starts are estimates. Parking totals describe the whole mapped areas, not voter-reserved or vacant spaces. <a href="../references.html#route-length-audit">Check the route measurements</a> · <a href="../references.html#parking-capacity">Parking math</a> · <a href="../index.html?view=1#campus-walking">Full walking prototype</a></p>
