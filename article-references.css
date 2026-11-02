@@ -21,3 +21,14 @@
 #ref-routine .calculation,#ref-parking .calculation{padding-left:20px;}
 .reference-group h3{margin-top:12px;}
 @media(max-width:650px){.growth-math-pair{grid-template-columns:1fr;gap:0;}.reference-jumps{gap:8px 14px;}.reference-group{padding-top:18px;}h2{font-size:21px;}}
+
+/* Each visual owns one self-contained, expandable source panel. */
+.reference-group{margin:16px 0;padding:0;border:1px solid var(--line);border-radius:8px;background:var(--soft);overflow:hidden;}
+.reference-group>summary{padding:16px 18px;list-style-position:inside;}
+.reference-group>summary h2{display:inline;margin:0;font-size:21px;line-height:1.4;}
+.reference-group[open]>summary{border-bottom:1px solid var(--line);}
+.reference-group-body{padding:4px 18px 20px;background:var(--bg);}
+.reference-group-body>section:first-child{margin-top:16px;}
+.reference-group-body>.visual-link{margin-top:14px;}
+.reference-group-body>details{padding:10px 0;border-bottom:1px solid var(--line);margin:4px 0;}
+@media(max-width:650px){.reference-group>summary{padding:14px;}.reference-group>summary h2{font-size:18px;}.reference-group-body{padding:2px 14px 16px;}}
