@@ -1,0 +1,29 @@
+import React,{useMemo,useState} from 'react';
+import {campusPlaceColors} from './campus-map-context.jsx';
+// Web Mercator miniatures use the reviewed GIS coordinates and a shared extent.
+// No schematic routing, extra basemap instances or additional traffic data.
+const mercator=([lon,lat])=>[lon*Math.PI/180,Math.log(Math.tan(Math.PI/4+lat*Math.PI/360))];
+const geometryPath=(g,xy)=>{const line=a=>a.map((p,i)=>(i?'L':'M')+xy(p).join(',')).join('');if(g.type==='LineString')return line(g.coordinates);if(g.type==='Polygon')return g.coordinates.map(a=>line(a)+'Z').join('');if(g.type==='MultiPolygon')return g.coordinates.flatMap(p=>p.map(a=>line(a)+'Z')).join('');return '';};
+function entranceRing(p,radius){const lat=p[1]*Math.PI/180;return {type:'Polygon',coordinates:[Array.from({length:49},(_,i)=>{const a=i/48*2*Math.PI;return [p[0]+radius*Math.cos(a)/(111320*Math.cos(lat)),p[1]+radius*Math.sin(a)/111320];})]};}
+function galleryGeometry(routes,context,footprints,centers,radius,basis){
+ const coords=[...routes.flatMap(r=>r.geometry.coordinates),...context.sitePoints.map(s=>s.coordinates)],projected=coords.map(mercator),xs=projected.map(p=>p[0]),ys=projected.map(p=>p[1]),bounds=[Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)],scale=Math.min(208/Math.max(bounds[2]-bounds[0],1e-8),146/Math.max(bounds[3]-bounds[1],1e-8)),mid=[(bounds[0]+bounds[2])/2,(bounds[1]+bounds[3])/2],xy=p=>{const q=mercator(p);return [+(120+(q[0]-mid[0])*scale).toFixed(2),+(85-(q[1]-mid[1])*scale).toFixed(2)];};
+ return {routes:routes.map(r=>({...r,path:geometryPath(r.geometry,xy),from:xy(centers[r.origin_id]||context.origins.find(o=>o.id===r.origin_id).coordinates),to:xy(centers[r.destination_id]||context.destinations.find(d=>d.id===r.destination_id).coordinates)})),sites:footprints.map(f=>({id:f.properties.id,path:geometryPath(f.geometry,xy),point:xy(centers[f.properties.id]||context.sitePoints.find(p=>p.id===f.properties.id).coordinates)})),zones:context.sitePoints.map(s=>({id:s.id,path:geometryPath(basis==='entrance'?entranceRing(s.coordinates,radius):context.siteBuffers.find(b=>b.site_id===s.id&&b.radius_m===radius).geometry,xy)}))};
+}
+const RouteThumbnail=React.memo(function RouteThumbnail({row,drawing,hit,selected,animate,seconds,onSelect}){const color=hit?'#7b3fa1':'#687c8b';return <button type="button" className={'campus-route-card'+(selected?' is-selected':'')} aria-pressed={selected} aria-label={`Animate route from ${row.origin_name} to ${row.destination_name}`} onClick={()=>onSelect(row)} data-destination-id={row.destination_id}>
+ <svg viewBox="0 0 240 170" role="img" aria-label={`${row.origin_name} to ${row.destination_name}; ${hit?'enters':'outside'} Talley’s zone`}>
+  <rect width="240" height="170" fill="#f4f5f3"/>
+  <g fill="none" stroke="#d8dedc" strokeWidth="1.2">{drawing.routes.map(r=><path key={r.destination_id} d={r.path}/>)}</g>
+  {drawing.zones.map(s=><path key={s.id} d={s.path} fill={s.id==='102'?'#2b5f9710':'#b8662610'} stroke={s.id==='102'?'#2b5f97':'#b86626'} strokeDasharray="2 2" strokeWidth=".8"/>)}
+  {drawing.sites.map(s=><path key={s.id} d={s.path} fill={s.id==='102'?'#2b5f9728':'#b8662628'} stroke={s.id==='102'?'#2b5f97':'#b86626'} strokeWidth=".8"/>)}
+  <path d={row.path} fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" pathLength="1" className={animate?'campus-thumbnail-drawing':undefined} style={{animationDuration:Math.max(1.5,seconds*2)+'s'}}/>
+  {drawing.sites.map(s=><path key={s.id} d={`M${s.point[0]},${s.point[1]-3}l3,3l-3,3l-3,-3Z`} fill={s.id==='102'?'#2b5f97':'#b86626'} stroke="white" strokeWidth=".6"/>)}
+  <circle cx={row.from[0]} cy={row.from[1]} r="3" fill="#2b5f97" stroke="white" strokeWidth="1"/>
+  <rect x={row.to[0]-3} y={row.to[1]-3} width="6" height="6" fill={campusPlaceColors[row.gis_use_name]||'#787670'} stroke="white" strokeWidth="1"/>
+ </svg><span className="campus-route-card-name">{row.destination_name}</span><span className="campus-route-card-meta">{row.gis_use_name} · {(row.route_m/1609.344).toFixed(2)} mi</span><span className="campus-route-card-hit"><i style={{background:color}}/>{hit?'Enters Talley’s zone':'Stays outside Talley’s zone'}</span>
+ </button>;});
+export default function CampusRouteGallery({routes,context,footprints,centers,radius,basis,selected,seconds,onSelect,onOrigin}){
+ const [animate,setAnimate]=useState(true),drawing=useMemo(()=>galleryGeometry(routes,context,footprints,centers,radius,basis),[routes,context,footprints,centers,radius,basis]);
+ return <section className="campus-route-gallery" aria-label="All destination route previews"><div className="campus-route-gallery-heading"><div><h3>Every destination from {routes[0].origin_name}</h3><p>{routes.length} routes, one shared map extent. Click a preview to replay it on the large map.</p></div><label><input type="checkbox" checked={animate} onChange={e=>setAnimate(e.target.checked)}/> Animate previews</label></div><label className="campus-gallery-origin">Housing building<select aria-label="Route gallery housing building" value={routes[0].origin_id} onChange={e=>onOrigin(e.target.value)}>{context.origins.map(o=><option key={o.id} value={o.id}>{o.name}</option>)}</select></label>
+ <div className="campus-route-gallery-grid">{drawing.routes.map(row=><RouteThumbnail key={row.destination_id} row={row} drawing={drawing} hit={row[basis==='entrance'?'talley_entrance_nearest_m':'talley_nearest_m']<=radius} selected={row.destination_id===selected} animate={animate} seconds={seconds} onSelect={onSelect}/>)}</div>
+ <p className="campus-route-gallery-note">Projected GIS routes and site outlines; faint lines show the other routes from this housing building. Background street labels are omitted in these small previews. Current destination and proximity filters apply; trips ending at Talley are excluded by default. Accelerated drawings are modeled routes, not observed journeys.</p></section>;
+}
