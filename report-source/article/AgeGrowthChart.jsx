@@ -16,8 +16,8 @@ export function AgeGrowthChart(){
      <div className="age-growth-track"><div className={`age-growth-bar growth-${key}`} style={{width:`${row[key+'_growth_pct']/ceiling*100}%`}} data-growth={row[key+'_growth_pct']}/></div><strong>{pct(row[key+'_growth_pct'])}</strong>
      <span className="age-growth-tooltip" role="tooltip">{label} · Ages {row.cohort}<br/>{n(row[key+'_ballots_2022'])} → {n(row[key+'_ballots_2026'])} ballots<br/>({n(row[key+'_ballots_2026'])} − {n(row[key+'_ballots_2022'])}) ÷ {n(row[key+'_ballots_2022'])} × 100 = {pct(row[key+'_growth_pct'])}</span>
     </div>)}</div>
-    <div className="age-growth-gap"><strong>{Math.abs(row.site_growth_gap_pp).toFixed(1)} pp</strong><span>{row.site_growth_gap_pp<0?'behind':'ahead of'} Wake</span></div>
-    <p className="age-growth-counts"><span>{n(row.site_ballots_2022)} → {n(row.site_ballots_2026)}</span><a href={`../references.html?age=${encodeURIComponent(row.cohort)}#math`}>Math →</a></p>
+    <div className="age-growth-gap"><strong>{Math.abs(row.site_growth_gap_pp).toFixed(1)} pp</strong><span><span className={row.site_growth_gap_pp<0?'growth-behind':'growth-ahead'}>{row.site_growth_gap_pp<0?'behind':'ahead'}</span> {row.site_growth_gap_pp<0?'Wake':'of Wake'}</span></div>
+    <p className="age-growth-counts"><span>{n(row.site_ballots_2022)} → {n(row.site_ballots_2026)}</span></p>
    </section>)}</div>
    <figcaption>pp = percentage points. Each age group is compared with Wake’s growth in that same age group; Wake includes the named site. All counts increased. These are ballot counts, not turnout rates or verified student enrollment. Matched periods: October 20–November 4, 2022, and October 15–30, 2026 (preliminary). Source: NCSBE. Hover or focus a bar for counts and its calculation. <a href="../references.html#math">Counts and worked calculations →</a></figcaption>
   </figure>

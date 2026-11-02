@@ -43,8 +43,11 @@ assert '+40.5%' in html and '+103.6%' in html and '63.1 percentage points behind
 youngest=d['rows'][0]
 benchmark=Fraction(youngest['site_ballots_2022'],youngest['county_ballots_2022'])*youngest['county_ballots_2026']
 assert round(benchmark)==6106 and round(benchmark-youngest['site_ballots_2026'])==1892
-assert 'id="youngest-benchmark"' in html and 'about 6,106 ballots at the benchmark versus 4,214 actual' in html and 'about 1,892 fewer' in html
-assert 'always for the youngest age group' in html and 'not a prediction or a count of people who did not vote' in html
+assert 'id="youngest-benchmark"' in html and '6,106 benchmark − 4,214 actual ≈ 1,892 below benchmark' in html
+assert 'not a count of nonvoters or proof of the move' in html
+assert '50 ÷ 80 × 60 = 37.5 seconds ≈ 38 seconds' in html and '0.625 minutes' not in html
+assert all(f'id="{id}"' in html for id in ['ref-growth','ref-walking','ref-routine','ref-parking','ref-reporting','google-route-verification'])
+assert html.count('class="google-verification-group"')==4
 for href in p.links:
  u=urlsplit(href)
  if u.scheme or u.netloc:continue
@@ -54,6 +57,11 @@ for href in p.links:
  elif u.fragment:assert unquote(u.fragment) in p.ids,href
 article=json.loads((ROOT/'report-source/article-snapshot.json').read_text(encoding='utf-8'))
 prototype=json.loads((ROOT/'report-source/snapshot.json').read_text(encoding='utf-8'))
+expected_google={r[key+'_url'] for r in prototype['queries']['campus_google_walks']['rows'] for key in ['talley','western']}
+actual_google={href for href in p.links if href.startswith('https://www.google.com/maps/dir/')}
+assert len(expected_google)==80 and actual_google==expected_google
+assert 50/80*60==37.5
+assert 'Wolf Village apartments · 8 / 8 buildings · 0.63 mi closer' in html
 assert article['id']!=prototype['id']
 for key in article['queries']:
  if key not in {'statewide_early_voting_context','article_opening_context'}:assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key

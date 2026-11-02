@@ -56,7 +56,7 @@ export function CampusWalkingMap({article=false}){
  const changeGroup=value=>{setGroup(value);setRouteView('selected');const candidates=rows.filter(r=>value==='All housing'||r.group===value);if(!candidates.some(r=>r.id===selected))setSelected(candidates.find(r=>r.available)?.id||candidates[0].id);};
  if(!visible('voting-campus-walking-map'))return null;
  const overallAverage=article?snapshot.queries.campus_google_averages.rows.find(r=>r.group==='All housing'):null;
- if(article)return <section className="article-walking-map" aria-label="Walking to NC State’s early-voting sites">
+ if(article)return <section id="article-walking-map" className="article-walking-map" aria-label="Walking to NC State’s early-voting sites">
   <DataComponent id="voting-article-walking-map" queryId="campus_walking_routes" queryIds={['campus_walking_routes','campus_walk_sites','campus_estimated_access','campus_parking','campus_google_averages','campus_google_walks']} sourceRowsByQuery={{campus_walking_routes:rows,campus_walk_sites:sites,campus_estimated_access:estimates,campus_parking:snapshot.queries.campus_parking.rows,campus_google_averages:snapshot.queries.campus_google_averages.rows,campus_google_walks:snapshot.queries.campus_google_walks.rows}} displayRows={displayRows} kind="custom" title="Compare the walk to Talley and Western Boulevard">
    <div className="article-walk-average" data-reviewed-rows aria-label="Average one-way walking distance across all 40 housing buildings">
     <p className="article-walk-average-label">Average one-way walk · {overallAverage.included_buildings} housing buildings</p>

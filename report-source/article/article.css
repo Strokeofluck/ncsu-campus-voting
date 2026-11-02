@@ -143,3 +143,11 @@
 .voting-article .age-growth-series:hover .age-growth-tooltip,.voting-article .age-growth-series:focus .age-growth-tooltip{display:block;}
 .voting-article .age-growth-compact figcaption{font-size:11px;line-height:1.5;margin-top:12px;padding-top:10px;}
 @media(max-width:600px){.voting-article .age-growth-compact{--age-columns:50px minmax(0,1fr) 80px;--age-gap:8px;}.voting-article .age-growth-head>span:last-child{display:none;}.voting-article .age-growth-counts{grid-column:2/-1;flex-direction:row;gap:8px;font-size:11px;}.voting-article .age-growth-counts>span::before{content:'Talley → Western: ';font-size:10px;}.voting-article .age-growth-row{row-gap:6px;padding:8px 0;}.voting-article .age-growth-axis span:nth-child(even){display:none;}.voting-article .age-growth-series{grid-template-columns:minmax(0,1fr) 49px;gap:5px;}.voting-article .age-growth-axis{margin-right:54px;}.voting-article .age-growth-series>strong{font-size:11px;}.voting-article .age-growth-tooltip{min-width:150px;max-width:220px;}.voting-article .age-growth-row h3{font-size:13px;}}
+
+/* One spacing system: avoid stacking page gaps with map section margins. */
+.voting-article{gap:16px;}
+.voting-article .article-walking-map:not(.article-routine-map),.voting-article .article-walking-map.article-routine-map{margin:0 auto;}
+.voting-article .article-walk-caption{margin:8px 0 0;}
+.voting-article .article-routine-map .passby-results{padding-block:10px;margin:0 0 8px;}
+.voting-article .growth-behind{color:light-dark(#ad3029,#f2928a);font-weight:600;}
+.voting-article .growth-ahead{color:light-dark(#19663c,#7ccf9a);font-weight:600;}
