@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('--project-dir',type=Path,required=True);args=p.parse_args()
 target=args.project_dir/'src/content/report';target.mkdir(parents=True,exist_ok=True)
 shutil.copytree(ROOT/'report-source/article',target,dirs_exist_ok=True)
-shared=ROOT/'report-source/report';pending=[shared/'CampusWalkingMap.jsx'];done=set()
+shared=ROOT/'report-source/report';pending=[shared/'CampusWalkingMap.jsx',shared/'CampusPassbyMap.jsx'];done=set()
 while pending:
  source=pending.pop().resolve()
  if source in done:continue

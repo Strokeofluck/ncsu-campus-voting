@@ -100,3 +100,6 @@
 .voting-article .article-walk-instruction{font-size:13px;margin:0 0 12px;}
 .voting-article .article-walk-caption{font-size:12px;line-height:1.6;color:var(--secondary);margin-top:12px;}
 @media(max-width:600px){.voting-article .article-walking-map .walking-map{height:520px;}.voting-article .article-walking-map .campus-map-key{max-width:180px;}}
+
+.voting-article .article-routine-map .passby-results{margin-bottom:12px;}
+.voting-article .article-routine-reset{font:inherit;border:0;background:none;color:inherit;text-decoration:underline;padding:0;cursor:pointer;}

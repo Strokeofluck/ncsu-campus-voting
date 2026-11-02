@@ -1,5 +1,6 @@
 import React from 'react';
 import {DataComponent,ReportSection,RichNarrative,useDataApp} from '../../data-app-public.jsx';
+import {CampusPassbyMap} from './CampusPassbyMap.jsx';
 import {CampusWalkingMap} from './CampusWalkingMap.jsx';
 import {AgeGrowthChart} from './AgeGrowthChart.jsx';
 import './article.css';
@@ -35,6 +36,12 @@ Parking was one argument for the move: board members said the Western Boulevard 
 
 What changed for voters on foot, and did use of the replacement site keep pace with the county? The map below compares modeled walks from student housing. The ballot analysis that follows compares **Talley in 2022 with Western Boulevard in 2026**, using the same first 16 early-voting days. It shows what changed, without isolating the move’s effect.`}/></ReportSection>
   <CampusWalkingMap article/>
+  <ReportSection id="voting-article-routine-intro" queryId="campus_passby" sourceRows={snapshot.queries.campus_passby.rows.filter(r=>!r.ends_at_talley)} showHeading={false} title="Would routine walks bring students near the site?"><RichNarrative id="voting-article-routine-intro:body" value={`## Would routine walks bring students near the site?
+
+The location also matters between classes. To test whether everyday walks could take students near either voting site, we modeled **756 routes from housing to selected classroom buildings, dining halls and libraries** on NC State’s mapped pedestrian network.
+
+**334 routes—44.2%—passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.`}/></ReportSection>
+  <CampusPassbyMap article/>
   <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`Among voters ages **18–24**, early ballots grew **40.5%** from Talley in 2022 to Western Boulevard in 2026, compared with **103.6%** across Wake County—a **63.1 percentage-point growth gap**, the largest of the five age groups.
 
 *Work in progress · Accepted in-person early ballots during the first 16 days of each election, through October 30, 2026. These preliminary counts are not full-election turnout. Ages 18–24 do not verify student enrollment.*`}/></ReportSection>

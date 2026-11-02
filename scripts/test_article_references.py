@@ -63,6 +63,10 @@ assert opening['rows'][0]['reported_at']=='2026-10-31' and 'midterm early' in op
 assert 'portion' in opening['rows'][2]['claim']
 assert sum(r['spaces'] for r in article['queries']['campus_parking']['rows'] if r['objectid'] in [26,92,166])==2192
 assert sum(r['spaces'] for r in article['queries']['campus_parking']['rows'] if r['objectid'] in [34,38,55,56])==660
+routine=[r for r in article['queries']['campus_passby']['rows'] if not r['ends_at_talley']]
+assert len(routine)==756 and len({r['origin_id'] for r in routine})==36 and len({r['destination_id'] for r in routine})==21
+assert sum(r['talley_nearest_m']<=50 for r in routine)==334
+assert sum(r['western_nearest_m']<=50 for r in routine)==0
 if 'statewide_early_voting_context' in article['queries']:
  context=article['queries']['statewide_early_voting_context']['rows'][0]
  assert context['accepted_early_ballots']==2612240 and context['growth_vs_2022_same_day_pct_displayed']==32
