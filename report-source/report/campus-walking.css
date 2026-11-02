@@ -88,7 +88,6 @@
 .voting-report .campus-map-key .campus-key-inventory dd{margin:0;padding:0;font-weight:600;font-variant-numeric:tabular-nums;}
 
 .walking-map-instructions{font-size:13px;line-height:1.6;margin:0 0 12px;}
-.walking-time-label>span{display:block;width:max-content;max-width:145px;padding:3px 6px;border:1px solid;border-radius:4px;background:#fff;color:#182735;box-shadow:0 1px 4px #0002;white-space:nowrap;font-size:11px;line-height:18px;}
 .voting-report .campus-map-key .campus-key-autoplay{margin:0 0 10px;font-size:12px;}
 .voting-report .campus-map-key .campus-key-autoplay label{display:flex;align-items:center;gap:7px;line-height:1.4;}
 .voting-report .campus-map-key .campus-key-autoplay input{flex:0 0 auto;}
