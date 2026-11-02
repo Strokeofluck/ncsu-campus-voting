@@ -32,7 +32,7 @@ The selected destinations comprise 16 GIS Classroom buildings, 3 GIS Dining buil
 Route-distance displays use miles (metres / 1609.344), while proximity-zone labels use meters; saved raw distances and thresholds remain in metres. Both original voting-site footprints are drawn inside their proximity buffers. Nearby parking overlays do not enter any proximity calculation. Accelerated autoplay visits all eligible destinations for an origin before advancing to the next origin. The 4 building-edge estimates are separate from the 36-origin routine-route model.
 
 
-Autoplay displays only the active route, colored purple if the full route enters the selected Talley zone and gray otherwise. It defaults to one second per route with a quarter-second arrival pause. The camera fits all eligible routes once on starting playback and stays fixed across destinations and origins. Zone size remains 50 meters by default, an exploratory threshold applied equally to both sites, not a validated visibility boundary.
+Autoplay displays only the active route, colored green if the full route enters the selected Talley zone and blue otherwise. It defaults to one second per route with a quarter-second arrival pause. The camera fits all eligible routes once on starting playback and stays fixed across destinations and origins. Zone size remains 50 meters by default, an exploratory threshold applied equally to both sites, not a validated visibility boundary.
 
 
 ## Why 50 meters?
@@ -41,3 +41,5 @@ The 50-meter default is an exploratory short-walk proximity measure: at the mode
 
 
 The current routine-map display starts autoplay on; the same source rows and defaults for threshold, footprint basis and Talley exclusion remain. The chooser and playback switch are inside the left floating key. The basemap is OpenFreeMap Positron, matching the housing-affordability style. Stationary building markers use frozen-footprint display centers; measured routes and their entrance endpoints remain unchanged.
+
+Current display: small housing route hovers provide destination, estimated minutes and miles; a compact selection line replaces the large time block. Site outlines and proximity borders identify the building/year and zone basis on hover/focus. Routine colors are green for Talley-zone entries and muted blue for outside routes; library symbols are gold. The routine housing/destination selectors are together in the key. GIS use classifications stay in References, not in key sublabels. Basemap canvas preservation and disabled fade/zoom transitions reduce blanking during route updates; inputs, routes and proximity calculations are unchanged.

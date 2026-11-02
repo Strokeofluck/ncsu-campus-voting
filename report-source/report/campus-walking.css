@@ -127,3 +127,24 @@
 .voting-report .campus-map-key .campus-key-quick-controls{margin:0 0 10px;font-size:11px;}
 .voting-report .campus-map-key .campus-key-quick-controls label{display:flex;align-items:center;gap:7px;line-height:1.4;cursor:pointer;}
 .campus-map-with-key .leaflet-bottom.leaflet-right .leaflet-control-zoom{margin:0 12px 12px 0;}
+
+.walking-selection-status{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;border-top:1px solid var(--border);padding:10px 0;margin-bottom:8px;font-size:12px;line-height:1.5;}
+.walking-selection-status strong{font-size:15px;font-weight:600;}
+.walking-selection-status span{color:var(--secondary);}
+.walking-selection-status a{font-size:11px;}
+.voting-report .walking-route-hover,.voting-report .campus-outline-hover{padding:6px 9px;font-size:11px;line-height:1.45;border-radius:5px;box-shadow:0 1px 5px #0002;white-space:normal;}
+.voting-report .walking-route-hover{border-left:3px solid;}
+.walking-route-hover strong,.campus-outline-hover strong{display:block;font-size:11px;font-weight:600;margin:0 0 2px;}
+.walking-route-hover span{display:block;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.walking-route-hover small,.campus-outline-hover small{display:block;font-size:10px;color:#5d666b;}
+.passby-proximity-zone{pointer-events:stroke;}
+.voting-report .campus-map-key .campus-key-picker{display:grid;gap:8px;border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:10px;}
+.voting-report .campus-map-key .campus-key-picker label{display:grid;gap:3px;font-size:10px;color:var(--secondary);}
+.voting-report .campus-map-key .campus-key-picker select{width:100%;min-width:0;font:inherit;font-size:11px;padding:5px;border:1px solid var(--border);background:#fff;color:var(--text);}
+
+/* Keep route changes from shifting the map as a longer place name appears. */
+.campus-passby-section .passby-example{min-height:5em;}
+.campus-passby-section .route-playback-status>strong{min-height:2.8em;line-height:1.4;}
+@media(max-width:600px){.campus-passby-section .passby-example{min-height:9em;}}
+
+.walking-map .walking-modeled-route:focus{outline:none;stroke-width:7px;filter:drop-shadow(0 0 1px #fff);}
