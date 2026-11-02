@@ -186,3 +186,10 @@
 .walking-route-callouts{position:absolute;left:0;top:0;overflow:visible;pointer-events:none;}
 .walking-route-callouts .walking-time-callout-title{font:10px Arial,sans-serif;}
 .walking-route-callouts .walking-time-callout-value{font:600 12px Arial,sans-serif;font-variant-numeric:tabular-nums;}
+
+.walking-group-locations .walking-building-mileage{display:grid;gap:4px;font-size:12px;line-height:1.5;min-width:0;}
+.walking-group-locations .walking-building-mileage small{font-size:10px;line-height:1.4;}
+.walking-group-locations .walking-building-mileage small span{display:inline;}
+.walking-table td small{display:block;font-size:10px;color:var(--secondary);margin-top:3px;}
+
+.walking-group-locations .walking-building-mileage a{color:var(--text);text-decoration:underline;text-underline-offset:2px;}
