@@ -3,7 +3,7 @@ import React,{useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import * as L from './vendor/leaflet/leaflet-src.esm.js';
 import './campus-walking.css';
 import CampusHousingBrowser from './CampusHousingBrowser.jsx';
-import {addParking,addSiteFootprints,siteDisplayCenter,bindWalkingRouteTooltip,MapLegend,ParkingContext,campusPlaceIcon,campusPlaceTooltip} from './campus-map-context.jsx';
+import {addParking,addSiteFootprints,siteDisplayCenter,bindWalkingRouteTooltip,MapLegend,ParkingContext,CampusMapCredit,campusPlaceIcon,campusPlaceTooltip} from './campus-map-context.jsx';
 import {DataComponent,RichNarrative,useDataApp} from '../../data-app-public.jsx';
 const meters=v=>`${(v/1609.344).toFixed(2)} mi`;
 const miles=v=>`${(v/1609.344).toFixed(2)} mi`;
@@ -71,7 +71,7 @@ export function CampusWalkingMap(){
    {routeView==='selected'&&<div className="walking-selection-status" data-reviewed-rows aria-live="polite"><strong>{row.name}</strong><span>Western: {mins(Math.abs(row.difference_m),pace)} {row.difference_m>=0?'longer':'shorter'} one way</span>{row.estimated_access?<a href="references.html#housing-access-recovery">Estimated building-edge access</a>:row.recovered_mapped_entrance?<a href="references.html#housing-access-recovery">Recovered mapped entrance</a>:null}</div>}
    {routeView!=='selected'&&<p className="walking-route-overview" data-reviewed-rows>{routeView==='site'?<><strong>{displayRows.filter(r=>group==='All housing'||r.group===group).length} housing routes to {focusSite==='talley'?'Talley (2022)':'Western Boulevard (2026)'}</strong> · includes one recovered entrance and three estimated-access origins; hover a line for its building, time and distance.</>:routeView==='all'?<><strong>{displayRows.filter(r=>group==='All housing'||r.group===group).length*2} routes to both sites</strong> · includes one recovered GIS entrance and three labeled building-edge estimates.</>:<>Click another housing point to compare both walks, or a voting site to show all housing routes to it.</>}</p>}
    <div className="campus-map-with-key"><div ref={host} className="walking-map" data-route-view={routeView} aria-label="NC State residence buildings and modeled walking routes to Talley and Western Boulevard"/><MapLegend showParking={showParking} compactControls><label><input type="checkbox" aria-label="Show all housing routes" checked={routeView==='all'} onChange={e=>setRouteView(e.target.checked?'all':'selected')}/> All housing routes</label></MapLegend></div>
-   <div className="walking-map-credit"><a href="https://leafletjs.com/">Leaflet</a> | <span dangerouslySetInnerHTML={{__html:snapshot.campusBasemap.attribution}}/> · Paths, buildings and entrances: NC State GIS</div>
+   <CampusMapCredit attribution={snapshot.campusBasemap.attribution} detail="NC State GIS paths and footprints"/>
    <CampusHousingBrowser rows={displayRows.filter(r=>group==='All housing'||r.group===group)} sites={sites} selected={selected} pace={pace} onSelect={selectHousing}/>
    <ParkingContext show={showParking} onShow={setShowParking} onZoom={zoomParking}/>
    <div className="walking-map-toolbar"><button onClick={fitAll}>Show all housing in this area</button><span>Blue circles are housing; diamonds are voting sites. Hover for names and original GIS labels. Dotted route ends are modeled entrance connectors; dashed complete routes identify estimated building-edge access.</span></div>
