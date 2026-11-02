@@ -123,3 +123,7 @@
 /* Keep all modeled places hoverable; emphasize only the current trip endpoints. */
 .campus-place-active .campus-place-square{width:13px;height:13px;border-width:2px;box-shadow:0 0 0 2px #243746,0 0 0 4px #fff;}
 .campus-place-marker:not(.campus-place-active):not(.campus-site-point) .campus-place-symbol{opacity:.8;}
+
+.voting-report .campus-map-key .campus-key-quick-controls{margin:0 0 10px;font-size:11px;}
+.voting-report .campus-map-key .campus-key-quick-controls label{display:flex;align-items:center;gap:7px;line-height:1.4;cursor:pointer;}
+.campus-map-with-key .leaflet-bottom.leaflet-right .leaflet-control-zoom{margin:0 12px 12px 0;}

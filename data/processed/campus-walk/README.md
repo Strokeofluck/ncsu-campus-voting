@@ -47,7 +47,7 @@ Site display dots are centered on the bounding boxes of the original GIS buildin
 
 Both campus maps use the housing article’s OpenFreeMap Positron vector style, with pinned MapLibre browser assets under `vendor/maplibre/`. The housing map’s left floating key contains map options and parking inventory. The independent routine map retains autoplay and playback options. The walking map is click-driven: a site click shows all 40 housing origins to that site; a housing click immediately shows both complete routes, with times in the summary and on hover. The all-sites view now includes 80 displayed routes, including the four supplemental origins (Aurora’s recovered mapped entrance and three estimated building-edge starts). Estimated origins remain excluded from the original averages and routine-trip model. Point hovers show names and original GIS use labels. The full housing list remains available for keyboard route selection.
 
-`display-centers.json` and `scripts/build_campus_display_centers.py` derive all 63 stationary building centers from the frozen footprints. These visual centers do not replace route entrances or change lengths/proximity. The moving autoplay dot follows the route. The campus frame stays fixed during normal selection/playback; Fit shown routes is optional.
+`display-centers.json` and `scripts/build_campus_display_centers.py` derive all 63 stationary building centers from the frozen footprints. These visual centers do not replace route entrances or change lengths/proximity. The moving autoplay dot follows the route. The campus frame stays fixed during normal selection/playback; Plus/minus zoom controls are in the lower-right corner.
 
 ## Supplemental access audit and compact browsers
 
@@ -58,3 +58,5 @@ Both maps have a compact four-preview pager (two on mobile) and a building selec
 ## Static housing comparison
 
 The housing timing map now draws both site routes immediately when a residence, table row or compact preview is selected. Housing autoplay, click-to-replay, speed controls, moving dots, progress counters and permanent on-map time boxes have been removed. Estimates stay in the detail summary, route hovers, comparison cards and table. Housing thumbnails are static. The independent routine-trip model retains its playback controls. Route coordinates, supplemental access classifications and all calculations are unchanged.
+
+The housing key now uses a single compact All housing routes toggle. Its nested options menu, fit button and repeated instructions are removed. Both maps have bottom-right zoom controls. The parking-allocation paragraph is retained in References and below-map context rather than in the floating key.
