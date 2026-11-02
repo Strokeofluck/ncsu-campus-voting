@@ -1,143 +1,1176 @@
 {
   "checked_on": "2026-11-01",
-  "collection_method": "Manually observed primary suggested walking route in the Google Maps browser UI. No API, private account data or field measurement is included.",
+  "collection_method": "All 80 primary suggested walking routes manually observed in the Google Maps browser UI with walking mode selected. No account data, API response or field measurement included.",
   "coordinate_order": "longitude, latitude",
-  "scope": "Eight walks for the four original supplemental buildings, using the same access points and site pins as the GIS explorer.",
-  "precision_and_limits": "Google mileages were displayed to one decimal mile and times to whole minutes. They are routing estimates for Google suggested paths, not measurements of the GIS polylines. Google resolved some pins to a complex, cafe or nearby business; actual residence door and election-room entrance remain unverified. No Google value replaces GIS path distance, geometry, baseline average or routine-trip input.",
+  "scope": "All 40 housing buildings to both Talley and Western Boulevard, using the same public source access coordinates.",
+  "precision_and_limits": "Google displayed miles to one decimal and minutes as whole numbers. Google can choose different routes and resolve pins to a building, complex, cafe or nearby business. These are routing estimates, not verified door-to-door measurements. Google comparisons and averages are primary; GIS geometry and GIS averages remain a separate prototype.",
   "rows": [
     {
-      "building_id": "271A",
-      "building_name": "Aurora Hall",
+      "building_id": "097",
+      "building_name": "Alexander Hall",
       "site": "talley",
-      "site_name": "Talley Student Union",
       "observed_on": "2026-11-01",
-      "gis_route_meters": 1146.0127609729805,
-      "gis_route_miles": 0.7120993156049796,
-      "google_display_miles": 0.7,
-      "google_display_minutes": 16,
-      "google_suggested_via": "Morrill Dr",
-      "google_resolved_origin": "Avent Ferry Residence Halls, 2110 Avent Ferry Rd",
-      "google_resolved_destination": "Port City Java, 2610 Cates Ave",
+      "google_display_miles": 0.1,
+      "google_display_minutes": 2,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Alexander Residence Hall, 2700 Cates Ave, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.784690997015346%2C-78.67189771612917&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 2 min 0.1 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 210.11611160936184,
+      "gis_route_miles": 0.1305600987789819,
+      "google_minus_gis_miles": -0.030560098778981887,
       "origin_coordinates_lon_lat": [
-        -78.67668661334922,
-        35.779946555304235
+        -78.67189771612917,
+        35.784690997015346
       ],
       "destination_coordinates_lon_lat": [
         -78.67087626427747,
         35.78404092003609
       ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779946555304235%2C-78.67668661334922&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
       "entrance_verified": false
     },
     {
-      "building_id": "271A",
-      "building_name": "Aurora Hall",
+      "building_id": "097",
+      "building_name": "Alexander Hall",
       "site": "western",
-      "site_name": "Western Boulevard Business Services",
       "observed_on": "2026-11-01",
-      "gis_route_meters": 1112.5744392734507,
-      "gis_route_miles": 0.6913217057841273,
-      "google_display_miles": 0.8,
-      "google_display_minutes": 18,
-      "google_suggested_via": "Western Blvd and Rocky Branch Trl",
-      "google_resolved_origin": "Avent Ferry Residence Halls, 2110 Avent Ferry Rd",
-      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr",
-      "origin_coordinates_lon_lat": [
-        -78.67668661334922,
-        35.779946555304235
-      ],
-      "destination_coordinates_lon_lat": [
-        -78.68522579542082,
-        35.784512725066264
-      ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779946555304235%2C-78.67668661334922&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
-      "entrance_verified": false
-    },
-    {
-      "building_id": "012",
-      "building_name": "Gold Hall",
-      "site": "talley",
-      "site_name": "Talley Student Union",
-      "observed_on": "2026-11-01",
-      "gis_route_meters": 670.803207611826,
-      "gis_route_miles": 0.4168177888703882,
-      "google_display_miles": 0.4,
-      "google_display_minutes": 9,
-      "google_suggested_via": "Dunn Ave",
-      "google_resolved_origin": "Gold Residence Hall, 70 Pullen Rd",
-      "google_resolved_destination": "Port City Java, 2610 Cates Ave",
-      "origin_coordinates_lon_lat": [
-        -78.66511421672021,
-        35.78404541707423
-      ],
-      "destination_coordinates_lon_lat": [
-        -78.67087626427747,
-        35.78404092003609
-      ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78404541707423%2C-78.66511421672021&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
-      "entrance_verified": false
-    },
-    {
-      "building_id": "012",
-      "building_name": "Gold Hall",
-      "site": "western",
-      "site_name": "Western Boulevard Business Services",
-      "observed_on": "2026-11-01",
-      "gis_route_meters": 2269.602080273198,
-      "gis_route_miles": 1.4102653505236904,
-      "google_display_miles": 1.5,
-      "google_display_minutes": 33,
-      "google_suggested_via": "Western Blvd",
-      "google_resolved_origin": "Gold Residence Hall, 70 Pullen Rd",
-      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr",
-      "origin_coordinates_lon_lat": [
-        -78.66511421672021,
-        35.78404541707423
-      ],
-      "destination_coordinates_lon_lat": [
-        -78.68522579542082,
-        35.784512725066264
-      ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78404541707423%2C-78.66511421672021&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
-      "entrance_verified": false
-    },
-    {
-      "building_id": "079",
-      "building_name": "University Towers",
-      "site": "talley",
-      "site_name": "Talley Student Union",
-      "observed_on": "2026-11-01",
-      "gis_route_meters": 788.0720744317674,
-      "gis_route_miles": 0.4896852844586163,
-      "google_display_miles": 0.5,
-      "google_display_minutes": 10,
-      "google_suggested_via": "Dan Allen Dr",
-      "google_resolved_origin": "Frankly Insightful, 111 Friendly Dr",
-      "google_resolved_destination": "Port City Java, 2610 Cates Ave",
-      "origin_coordinates_lon_lat": [
-        -78.6750838149648,
-        35.78810455374384
-      ],
-      "destination_coordinates_lon_lat": [
-        -78.67087626427747,
-        35.78404092003609
-      ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78810455374384%2C-78.6750838149648&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
-      "entrance_verified": false
-    },
-    {
-      "building_id": "079",
-      "building_name": "University Towers",
-      "site": "western",
-      "site_name": "Western Boulevard Business Services",
-      "observed_on": "2026-11-01",
-      "gis_route_meters": 1467.993086033539,
-      "gis_route_miles": 0.9121686140648232,
       "google_display_miles": 0.9,
       "google_display_minutes": 21,
       "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
-      "google_resolved_origin": "Frankly Insightful, 111 Friendly Dr",
-      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr",
+      "google_resolved_origin": "Alexander Residence Hall, 2700 Cates Ave, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.784690997015346%2C-78.67189771612917&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 0.9 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1511.012414900305,
+      "gis_route_miles": 0.9388995857320156,
+      "google_minus_gis_miles": -0.038899585732015574,
+      "origin_coordinates_lon_lat": [
+        -78.67189771612917,
+        35.784690997015346
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271A",
+      "building_name": "Aurora Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 16,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "Avent Ferry Residence Halls, 2110 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779946555304235%2C-78.67668661334922&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 16 min 0.7 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 1146.0127609729805,
+      "gis_route_miles": 0.7120993156049796,
+      "google_minus_gis_miles": -0.012099315604979677,
+      "origin_coordinates_lon_lat": [
+        -78.67668661334922,
+        35.779946555304235
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271A",
+      "building_name": "Aurora Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 18,
+      "google_suggested_via": "Western Blvd and Rocky Branch Trl",
+      "google_resolved_origin": "Avent Ferry Residence Halls, 2110 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779946555304235%2C-78.67668661334922&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 18 min 0.8 mile via Western Blvd and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1112.5744392734507,
+      "gis_route_miles": 0.6913217057841273,
+      "google_minus_gis_miles": 0.10867829421587272,
+      "origin_coordinates_lon_lat": [
+        -78.67668661334922,
+        35.779946555304235
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "109",
+      "building_name": "Bagwell Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.3,
+      "google_display_minutes": 7,
+      "google_suggested_via": "Dunn Ave",
+      "google_resolved_origin": "Honors Commons Building, Dunn Ave, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78263150543462%2C-78.66589803543317&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 7 min 0.3 mile via Dunn Ave Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 574.1809963650342,
+      "gis_route_miles": 0.3567795302713616,
+      "google_minus_gis_miles": -0.05677953027136162,
+      "origin_coordinates_lon_lat": [
+        -78.66589803543317,
+        35.78263150543462
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "109",
+      "building_name": "Bagwell Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.3,
+      "google_display_minutes": 29,
+      "google_suggested_via": "Rocky Branch Trl",
+      "google_resolved_origin": "Honors Commons Building, Dunn Ave, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78263150543462%2C-78.66589803543317&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 29 min 1.3 miles via Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2116.800862712784,
+      "gis_route_miles": 1.3153190757928594,
+      "google_minus_gis_miles": -0.015319075792859405,
+      "origin_coordinates_lon_lat": [
+        -78.66589803543317,
+        35.78263150543462
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271B",
+      "building_name": "Bayview Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 15,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "Swan Quarter Hall, 2112 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779558069236195%2C-78.67714685350695&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 15 min 0.7 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 1264.4043372561391,
+      "gis_route_miles": 0.7856644305109033,
+      "google_minus_gis_miles": -0.08566443051090333,
+      "origin_coordinates_lon_lat": [
+        -78.67714685350695,
+        35.779558069236195
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271B",
+      "building_name": "Bayview Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 18,
+      "google_suggested_via": "Western Blvd and Rocky Branch Trl",
+      "google_resolved_origin": "Swan Quarter Hall, 2112 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779558069236195%2C-78.67714685350695&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 18 min 0.8 mile via Western Blvd and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1230.9660155566094,
+      "gis_route_miles": 0.764886820690051,
+      "google_minus_gis_miles": 0.03511317930994906,
+      "origin_coordinates_lon_lat": [
+        -78.67714685350695,
+        35.779558069236195
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "107",
+      "building_name": "Becton Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.3,
+      "google_display_minutes": 7,
+      "google_suggested_via": "Dunn Ave",
+      "google_resolved_origin": "Becton Residence Hall, North Carolina State University, 2231 Dunn Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78277186553019%2C-78.66629131516962&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 7 min 0.3 mile via Dunn Ave Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 530.099797258045,
+      "gis_route_miles": 0.32938874302700044,
+      "google_minus_gis_miles": -0.029388743027000452,
+      "origin_coordinates_lon_lat": [
+        -78.66629131516962,
+        35.78277186553019
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "107",
+      "building_name": "Becton Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.3,
+      "google_display_minutes": 29,
+      "google_suggested_via": "Rocky Branch Trl",
+      "google_resolved_origin": "Becton Residence Hall, North Carolina State University, 2231 Dunn Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78277186553019%2C-78.66629131516962&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 29 min 1.3 miles via Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2088.2563760130774,
+      "gis_route_miles": 1.2975823540604603,
+      "google_minus_gis_miles": 0.0024176459395397476,
+      "origin_coordinates_lon_lat": [
+        -78.66629131516962,
+        35.78277186553019
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "108",
+      "building_name": "Berry Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Dunn Ave",
+      "google_resolved_origin": "Becton Residence Hall, 2231 Dunn Ave, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78221394572952%2C-78.66636089148498&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Dunn Ave Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 614.7346525484758,
+      "gis_route_miles": 0.3819784039636496,
+      "google_minus_gis_miles": 0.018021596036350396,
+      "origin_coordinates_lon_lat": [
+        -78.66636089148498,
+        35.78221394572952
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "108",
+      "building_name": "Berry Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.2,
+      "google_display_minutes": 28,
+      "google_suggested_via": "Rocky Branch Trl",
+      "google_resolved_origin": "Becton Residence Hall, 2231 Dunn Ave, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78221394572952%2C-78.66636089148498&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 28 min 1.2 miles via Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2070.3691258201115,
+      "gis_route_miles": 1.2864677320822095,
+      "google_minus_gis_miles": -0.08646773208220959,
+      "origin_coordinates_lon_lat": [
+        -78.66636089148498,
+        35.78221394572952
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "095",
+      "building_name": "Bowen Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.2,
+      "google_display_minutes": 4,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Bowen Residence Hall, North Carolina State University, 2821 Thurman Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.785565499036814%2C-78.67354690980308&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 4 min 0.2 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 411.0560989423571,
+      "gis_route_miles": 0.25541841827623996,
+      "google_minus_gis_miles": -0.055418418276239945,
+      "origin_coordinates_lon_lat": [
+        -78.67354690980308,
+        35.785565499036814
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "095",
+      "building_name": "Bowen Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 20,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Bowen Residence Hall, North Carolina State University, 2821 Thurman Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.785565499036814%2C-78.67354690980308&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 20 min 0.8 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1449.6169168535143,
+      "gis_route_miles": 0.9007501919126764,
+      "google_minus_gis_miles": -0.10075019191267631,
+      "origin_coordinates_lon_lat": [
+        -78.67354690980308,
+        35.785565499036814
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "088",
+      "building_name": "Bragaw Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 9,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Bragaw Residence Hall, 210 Dan Allen Dr, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7855693168185%2C-78.67624620529804&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 9 min 0.4 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 654.258100268199,
+      "gis_route_miles": 0.40653713579458395,
+      "google_minus_gis_miles": -0.006537135794583926,
+      "origin_coordinates_lon_lat": [
+        -78.67624620529804,
+        35.7855693168185
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "088",
+      "building_name": "Bragaw Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 17,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Bragaw Residence Hall, 210 Dan Allen Dr, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7855693168185%2C-78.67624620529804&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 17 min 0.7 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1172.0798722388715,
+      "gis_route_miles": 0.7282966676104496,
+      "google_minus_gis_miles": -0.02829666761044969,
+      "origin_coordinates_lon_lat": [
+        -78.67624620529804,
+        35.7855693168185
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "093",
+      "building_name": "Carroll Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.2,
+      "google_display_minutes": 3,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Carroll Residence Hall, North Carolina State University, 2801 Thurman Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78524171418911%2C-78.67265815079695&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 3 min 0.2 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 299.80445163068964,
+      "gis_route_miles": 0.18628984954782174,
+      "google_minus_gis_miles": 0.013710150452178271,
+      "origin_coordinates_lon_lat": [
+        -78.67265815079695,
+        35.78524171418911
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "093",
+      "building_name": "Carroll Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.9,
+      "google_display_minutes": 20,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Carroll Residence Hall, North Carolina State University, 2801 Thurman Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78524171418911%2C-78.67265815079695&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 20 min 0.9 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1524.3546080647377,
+      "gis_route_miles": 0.94719004020566,
+      "google_minus_gis_miles": -0.04719004020565998,
+      "origin_coordinates_lon_lat": [
+        -78.67265815079695,
+        35.78524171418911
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271F",
+      "building_name": "Fort Fisher Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 17,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "2112 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779910995454%2C-78.67839621153948&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 17 min 0.7 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 1393.145543985383,
+      "gis_route_miles": 0.8656605076263266,
+      "google_minus_gis_miles": -0.16566050762632667,
+      "origin_coordinates_lon_lat": [
+        -78.67839621153948,
+        35.779910995454
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271F",
+      "building_name": "Fort Fisher Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 19,
+      "google_suggested_via": "Western Blvd and Rocky Branch Trl",
+      "google_resolved_origin": "2112 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779910995454%2C-78.67839621153948&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 19 min 0.8 mile via Western Blvd and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1359.707222285853,
+      "gis_route_miles": 0.8448828978054742,
+      "google_minus_gis_miles": -0.044882897805474165,
+      "origin_coordinates_lon_lat": [
+        -78.67839621153948,
+        35.779910995454
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "012",
+      "building_name": "Gold Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 9,
+      "google_suggested_via": "Dunn Ave",
+      "google_resolved_origin": "Gold Residence Hall, North Carolina State University, 70 Pullen Rd, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78404541707423%2C-78.66511421672021&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 9 min 0.4 mile via Dunn Ave Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 670.803207611826,
+      "gis_route_miles": 0.4168177888703882,
+      "google_minus_gis_miles": -0.01681778887038815,
+      "origin_coordinates_lon_lat": [
+        -78.66511421672021,
+        35.78404541707423
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "012",
+      "building_name": "Gold Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.5,
+      "google_display_minutes": 33,
+      "google_suggested_via": "Western Blvd",
+      "google_resolved_origin": "Gold Residence Hall, North Carolina State University, 70 Pullen Rd, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78404541707423%2C-78.66511421672021&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 33 min 1.5 miles via Western Blvd Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2269.602080273198,
+      "gis_route_miles": 1.4102653505236904,
+      "google_minus_gis_miles": 0.0897346494763096,
+      "origin_coordinates_lon_lat": [
+        -78.66511421672021,
+        35.78404541707423
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "087",
+      "building_name": "Lee Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.5,
+      "google_display_minutes": 11,
+      "google_suggested_via": "Thurman Dr",
+      "google_resolved_origin": "Women in Science and Engineering (WISE) Village, 2530 Sullivan Drive, Lee Residence Hall, NC State University, University Housing, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78624854893484%2C-78.67766922294635&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 11 min 0.5 mile via Thurman Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 826.0558562853168,
+      "gis_route_miles": 0.5132873122746391,
+      "google_minus_gis_miles": -0.013287312274639085,
+      "origin_coordinates_lon_lat": [
+        -78.67766922294635,
+        35.78624854893484
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "087",
+      "building_name": "Lee Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 15,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "Women in Science and Engineering (WISE) Village, 2530 Sullivan Drive, Lee Residence Hall, NC State University, University Housing, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78624854893484%2C-78.67766922294635&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 15 min 0.7 mile via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1165.8702549500051,
+      "gis_route_miles": 0.7244381903123291,
+      "google_minus_gis_miles": -0.02443819031232919,
+      "origin_coordinates_lon_lat": [
+        -78.67766922294635,
+        35.78624854893484
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "094",
+      "building_name": "Metcalf Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.2,
+      "google_display_minutes": 4,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Metcalf Residence Hall, North Carolina State University, 2811 Thurman Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78540314367315%2C-78.67310479135959&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 4 min 0.2 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 360.57739192468284,
+      "gis_route_miles": 0.2240524039140686,
+      "google_minus_gis_miles": -0.0240524039140686,
+      "origin_coordinates_lon_lat": [
+        -78.67310479135959,
+        35.78540314367315
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "094",
+      "building_name": "Metcalf Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.9,
+      "google_display_minutes": 20,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Metcalf Residence Hall, North Carolina State University, 2811 Thurman Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78540314367315%2C-78.67310479135959&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 20 min 0.9 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1493.9009963456035,
+      "gis_route_miles": 0.9282670431838087,
+      "google_minus_gis_miles": -0.028267043183808682,
+      "origin_coordinates_lon_lat": [
+        -78.67310479135959,
+        35.78540314367315
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "021",
+      "building_name": "North Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.6,
+      "google_display_minutes": 14,
+      "google_suggested_via": "Current Dr",
+      "google_resolved_origin": "North Residence Hall, North Carolina State University, 2200 Hillsborough St, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78713237732754%2C-78.66442102274807&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 14 min 0.6 mile via Current Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 1138.8067919640578,
+      "gis_route_miles": 0.7076217340506801,
+      "google_minus_gis_miles": -0.1076217340506801,
+      "origin_coordinates_lon_lat": [
+        -78.66442102274807,
+        35.78713237732754
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "021",
+      "building_name": "North Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.5,
+      "google_display_minutes": 34,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "North Residence Hall, North Carolina State University, 2200 Hillsborough St, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78713237732754%2C-78.66442102274807&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 34 min 1.5 miles via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2530.878608883301,
+      "gis_route_miles": 1.5726150586097818,
+      "google_minus_gis_miles": -0.07261505860978179,
+      "origin_coordinates_lon_lat": [
+        -78.66442102274807,
+        35.78713237732754
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271E",
+      "building_name": "Ocracoke Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 15,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "Ocracoke Hall, 2112 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779509464799666%2C-78.67743433505913&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 15 min 0.7 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 1274.7148595365738,
+      "gis_route_miles": 0.7920710920328866,
+      "google_minus_gis_miles": -0.09207109203288666,
+      "origin_coordinates_lon_lat": [
+        -78.67743433505913,
+        35.779509464799666
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "271E",
+      "building_name": "Ocracoke Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 18,
+      "google_suggested_via": "Western Blvd and Rocky Branch Trl",
+      "google_resolved_origin": "Ocracoke Hall, 2112 Avent Ferry Rd, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.779509464799666%2C-78.67743433505913&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 18 min 0.8 mile via Western Blvd and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1241.276537837044,
+      "gis_route_miles": 0.7712934822120342,
+      "google_minus_gis_miles": 0.028706517787965846,
+      "origin_coordinates_lon_lat": [
+        -78.67743433505913,
+        35.779509464799666
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "092",
+      "building_name": "Owen Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.2,
+      "google_display_minutes": 5,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Tucker Beach, Cates Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78460316151345%2C-78.67311412216044&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 5 min 0.2 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 372.54813008169305,
+      "gis_route_miles": 0.231490675754651,
+      "google_minus_gis_miles": -0.031490675754650976,
+      "origin_coordinates_lon_lat": [
+        -78.67311412216044,
+        35.78460316151345
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "092",
+      "building_name": "Owen Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 19,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Tucker Beach, Cates Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78460316151345%2C-78.67311412216044&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 19 min 0.8 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1392.60784731219,
+      "gis_route_miles": 0.8653263984034426,
+      "google_minus_gis_miles": -0.06532639840344256,
+      "origin_coordinates_lon_lat": [
+        -78.67311412216044,
+        35.78460316151345
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "084",
+      "building_name": "Sullivan Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.5,
+      "google_display_minutes": 10,
+      "google_suggested_via": "Thurman Dr",
+      "google_resolved_origin": "Sullivan Residence Hall, 2921 Thurman Dr, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.786744752736205%2C-78.67721318780248&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 10 min 0.5 mile via Thurman Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 797.8483157903461,
+      "gis_route_miles": 0.49575995920719623,
+      "google_minus_gis_miles": 0.0042400407928037676,
+      "origin_coordinates_lon_lat": [
+        -78.67721318780248,
+        35.786744752736205
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "084",
+      "building_name": "Sullivan Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.7,
+      "google_display_minutes": 16,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "Sullivan Residence Hall, 2921 Thurman Dr, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.786744752736205%2C-78.67721318780248&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 16 min 0.7 mile via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1137.6627144550343,
+      "gis_route_miles": 0.7069108372448863,
+      "google_minus_gis_miles": -0.006910837244886392,
+      "origin_coordinates_lon_lat": [
+        -78.67721318780248,
+        35.786744752736205
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "015",
+      "building_name": "Syme Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.3,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Dunn Ave",
+      "google_resolved_origin": "Syme Residence Hall, North Carolina State University, 2210 Baver Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.783971405748744%2C-78.66584350679712&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.3 mile via Dunn Ave Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 619.6874156656073,
+      "gis_route_miles": 0.38505590828661074,
+      "google_minus_gis_miles": -0.08505590828661075,
+      "origin_coordinates_lon_lat": [
+        -78.66584350679712,
+        35.783971405748744
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "015",
+      "building_name": "Syme Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.3,
+      "google_display_minutes": 31,
+      "google_suggested_via": "Rocky Branch Trl",
+      "google_resolved_origin": "Syme Residence Hall, North Carolina State University, 2210 Baver Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.783971405748744%2C-78.66584350679712&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 31 min 1.3 miles via Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2218.48628832698,
+      "gis_route_miles": 1.3785034699399132,
+      "google_minus_gis_miles": -0.0785034699399132,
+      "origin_coordinates_lon_lat": [
+        -78.66584350679712,
+        35.783971405748744
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "091",
+      "building_name": "Tucker Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.2,
+      "google_display_minutes": 5,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Tucker Residence Hall, North Carolina State University, 2800 Cates Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78497284358775%2C-78.67400987994094&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 5 min 0.2 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 404.0218810271518,
+      "gis_route_miles": 0.2510475579038116,
+      "google_minus_gis_miles": -0.0510475579038116,
+      "origin_coordinates_lon_lat": [
+        -78.67400987994094,
+        35.78497284358775
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "091",
+      "building_name": "Tucker Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.9,
+      "google_display_minutes": 20,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Tucker Residence Hall, North Carolina State University, 2800 Cates Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78497284358775%2C-78.67400987994094&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 20 min 0.9 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1388.6149438166442,
+      "gis_route_miles": 0.8628453231979267,
+      "google_minus_gis_miles": 0.037154676802073294,
+      "origin_coordinates_lon_lat": [
+        -78.67400987994094,
+        35.78497284358775
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "096",
+      "building_name": "Turlington Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.1,
+      "google_display_minutes": 3,
+      "google_suggested_via": "unnamed roads",
+      "google_resolved_origin": "Turlington Residence Hall, 2710 Cates Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7848554649641%2C-78.67235312245235&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 3 min 0.1 mile via unnamed roads Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 240.74188163824238,
+      "gis_route_miles": 0.1495900700150138,
+      "google_minus_gis_miles": -0.04959007001501378,
+      "origin_coordinates_lon_lat": [
+        -78.67235312245235,
+        35.7848554649641
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "096",
+      "building_name": "Turlington Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.9,
+      "google_display_minutes": 21,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Turlington Residence Hall, 2710 Cates Ave, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7848554649641%2C-78.67235312245235&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 0.9 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1477.4256108884513,
+      "gis_route_miles": 0.9180297132797284,
+      "google_minus_gis_miles": -0.018029713279728354,
+      "origin_coordinates_lon_lat": [
+        -78.67235312245235,
+        35.7848554649641
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "079",
+      "building_name": "University Towers",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.5,
+      "google_display_minutes": 10,
+      "google_suggested_via": "Dan Allen Dr",
+      "google_resolved_origin": "Frankly Insightful, 111 Friendly Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78810455374384%2C-78.6750838149648&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 10 min 0.5 mile via Dan Allen Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 788.0720744317674,
+      "gis_route_miles": 0.4896852844586163,
+      "google_minus_gis_miles": 0.01031471554138369,
+      "origin_coordinates_lon_lat": [
+        -78.6750838149648,
+        35.78810455374384
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "079",
+      "building_name": "University Towers",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.9,
+      "google_display_minutes": 21,
+      "google_suggested_via": "Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Frankly Insightful, 111 Friendly Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78810455374384%2C-78.6750838149648&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 0.9 mile via Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1467.993086033539,
+      "gis_route_miles": 0.9121686140648232,
+      "google_minus_gis_miles": -0.012168614064823169,
       "origin_coordinates_lon_lat": [
         -78.6750838149648,
         35.78810455374384
@@ -146,22 +1179,82 @@
         -78.68522579542082,
         35.784512725066264
       ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78810455374384%2C-78.6750838149648&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "entrance_verified": false
+    },
+    {
+      "building_id": "010",
+      "building_name": "Watauga Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.5,
+      "google_display_minutes": 10,
+      "google_suggested_via": "Katharine Stinson Dr/Stinson Dr",
+      "google_resolved_origin": "Watauga Residence Hall, 2200 Stinson Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78511297437239%2C-78.66441452882688&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 10 min 0.5 mile via Katharine Stinson Dr/Stinson Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 830.256073767318,
+      "gis_route_miles": 0.5158972064190862,
+      "google_minus_gis_miles": -0.015897206419086207,
+      "origin_coordinates_lon_lat": [
+        -78.66441452882688,
+        35.78511297437239
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "010",
+      "building_name": "Watauga Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.5,
+      "google_display_minutes": 33,
+      "google_suggested_via": "Yarbrough Dr, Dan Allen Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Watauga Residence Hall, 2200 Stinson Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78511297437239%2C-78.66441452882688&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 33 min 1.5 miles via Yarbrough Dr, Dan Allen Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2309.865849790693,
+      "gis_route_miles": 1.4352840969927456,
+      "google_minus_gis_miles": 0.06471590300725438,
+      "origin_coordinates_lon_lat": [
+        -78.66441452882688,
+        35.78511297437239
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
       "entrance_verified": false
     },
     {
       "building_id": "013",
       "building_name": "Welch Hall",
       "site": "talley",
-      "site_name": "Talley Student Union",
       "observed_on": "2026-11-01",
-      "gis_route_meters": 648.295148364246,
-      "gis_route_miles": 0.4028319292607708,
       "google_display_miles": 0.4,
       "google_display_minutes": 9,
       "google_suggested_via": "Dunn Ave",
-      "google_resolved_origin": "Welch Residence Hall, 80 Pullen Rd",
-      "google_resolved_destination": "Port City Java, 2610 Cates Ave",
+      "google_resolved_origin": "Welch Residence Hall, 80 Pullen Rd, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.783671289011885%2C-78.66514969388574&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 9 min 0.4 mile via Dunn Ave Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 648.295148364246,
+      "gis_route_miles": 0.4028319292607708,
+      "google_minus_gis_miles": -0.0028319292607708046,
       "origin_coordinates_lon_lat": [
         -78.66514969388574,
         35.783671289011885
@@ -170,22 +1263,26 @@
         -78.67087626427747,
         35.78404092003609
       ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.783671289011885%2C-78.66514969388574&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
       "entrance_verified": false
     },
     {
       "building_id": "013",
       "building_name": "Welch Hall",
       "site": "western",
-      "site_name": "Western Boulevard Business Services",
       "observed_on": "2026-11-01",
-      "gis_route_meters": 2238.889182073045,
-      "gis_route_miles": 1.3911812403519974,
       "google_display_miles": 1.4,
       "google_display_minutes": 32,
       "google_suggested_via": "Western Blvd",
-      "google_resolved_origin": "Welch Residence Hall, 80 Pullen Rd",
-      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr",
+      "google_resolved_origin": "Welch Residence Hall, 80 Pullen Rd, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.783671289011885%2C-78.66514969388574&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 32 min 1.4 miles via Western Blvd Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 2238.889182073045,
+      "gis_route_miles": 1.3911812403519974,
+      "google_minus_gis_miles": 0.008818759648002494,
       "origin_coordinates_lon_lat": [
         -78.66514969388574,
         35.783671289011885
@@ -194,7 +1291,958 @@
         -78.68522579542082,
         35.784512725066264
       ],
-      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.783671289011885%2C-78.66514969388574&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "entrance_verified": false
+    },
+    {
+      "building_id": "112A",
+      "building_name": "Wood Hall A",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "Wood Residence Hall Building A, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78039886669948%2C-78.67267382909361&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 786.5871977793115,
+      "gis_route_miles": 0.4887626248827544,
+      "google_minus_gis_miles": -0.08876262488275438,
+      "origin_coordinates_lon_lat": [
+        -78.67267382909361,
+        35.78039886669948
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "112A",
+      "building_name": "Wood Hall A",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 19,
+      "google_suggested_via": "Faucette Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Wood Residence Hall Building A, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78039886669948%2C-78.67267382909361&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 19 min 0.8 mile via Faucette Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1436.5306386288664,
+      "gis_route_miles": 0.8926187556102775,
+      "google_minus_gis_miles": -0.09261875561027744,
+      "origin_coordinates_lon_lat": [
+        -78.67267382909361,
+        35.78039886669948
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "112B",
+      "building_name": "Wood Hall B",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "Wood Residence Hall Building B, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78085070109424%2C-78.6727457742664&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 786.3717598849851,
+      "gis_route_miles": 0.4886287579815037,
+      "google_minus_gis_miles": -0.08862875798150366,
+      "origin_coordinates_lon_lat": [
+        -78.6727457742664,
+        35.78085070109424
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "112B",
+      "building_name": "Wood Hall B",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 20,
+      "google_suggested_via": "Faucette Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Wood Residence Hall Building B, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78085070109424%2C-78.6727457742664&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 20 min 0.8 mile via Faucette Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1436.31520073454,
+      "gis_route_miles": 0.8924848887090268,
+      "google_minus_gis_miles": -0.09248488870902671,
+      "origin_coordinates_lon_lat": [
+        -78.6727457742664,
+        35.78085070109424
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "112C",
+      "building_name": "Wood Hall C",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Morrill Dr",
+      "google_resolved_origin": "Wood Residence Hall, North Carolina State University, 2541 Warren Carroll Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78065768993881%2C-78.6726507891032&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Morrill Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Residence halls",
+      "gis_route_meters": 776.3567834219742,
+      "gis_route_miles": 0.48240574011645376,
+      "google_minus_gis_miles": -0.08240574011645374,
+      "origin_coordinates_lon_lat": [
+        -78.6726507891032,
+        35.78065768993881
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "112C",
+      "building_name": "Wood Hall C",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.8,
+      "google_display_minutes": 19,
+      "google_suggested_via": "Faucette Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Wood Residence Hall, North Carolina State University, 2541 Warren Carroll Dr, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78065768993881%2C-78.6726507891032&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 19 min 0.8 mile via Faucette Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Residence halls",
+      "gis_route_meters": 1426.300224271529,
+      "gis_route_miles": 0.8862618708439768,
+      "google_minus_gis_miles": -0.08626187084397674,
+      "origin_coordinates_lon_lat": [
+        -78.6726507891032,
+        35.78065768993881
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780C",
+      "building_name": "Albright Innovation Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.6,
+      "google_display_minutes": 36,
+      "google_suggested_via": "Oval Dr",
+      "google_resolved_origin": "Albright Entrepreneurs Village, Innovation Hall, 381 Initiative Way, NC State University, Wolf Ridge Apartments, Centennial Campus, 381 Initiative Way, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.768657537296974%2C-78.67304156972652&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 36 min 1.6 miles via Oval Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 3037.4697455111605,
+      "gis_route_miles": 1.887396197153101,
+      "google_minus_gis_miles": -0.28739619715310094,
+      "origin_coordinates_lon_lat": [
+        -78.67304156972652,
+        35.768657537296974
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780C",
+      "building_name": "Albright Innovation Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.7,
+      "google_display_minutes": 40,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "Albright Entrepreneurs Village, Innovation Hall, 381 Initiative Way, NC State University, Wolf Ridge Apartments, Centennial Campus, 381 Initiative Way, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.768657537296974%2C-78.67304156972652&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 40 min 1.7 miles via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2751.360315714406,
+      "gis_route_miles": 1.709616039649948,
+      "google_minus_gis_miles": -0.00961603964994806,
+      "origin_coordinates_lon_lat": [
+        -78.67304156972652,
+        35.768657537296974
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780E",
+      "building_name": "Grove Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.6,
+      "google_display_minutes": 36,
+      "google_suggested_via": "Oval Dr",
+      "google_resolved_origin": "Grove Hall - Wolf Ridge Apartments, North Carolina State University, 371 Initiative Way, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.768619684447785%2C-78.67332002680334&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 36 min 1.6 miles via Oval Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 3030.5974628126087,
+      "gis_route_miles": 1.88312595865931,
+      "google_minus_gis_miles": -0.28312595865931,
+      "origin_coordinates_lon_lat": [
+        -78.67332002680334,
+        35.768619684447785
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780E",
+      "building_name": "Grove Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.7,
+      "google_display_minutes": 39,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "Grove Hall - Wolf Ridge Apartments, North Carolina State University, 371 Initiative Way, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.768619684447785%2C-78.67332002680334&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 39 min 1.7 miles via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2744.4880330158544,
+      "gis_route_miles": 1.705345801156157,
+      "google_minus_gis_miles": -0.005345801156157126,
+      "origin_coordinates_lon_lat": [
+        -78.67332002680334,
+        35.768619684447785
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780F",
+      "building_name": "Lakeview Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.5,
+      "google_display_minutes": 34,
+      "google_suggested_via": "Oval Dr",
+      "google_resolved_origin": "Lakeview Hall, 1930 Entrepreneur Dr, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.76941260213723%2C-78.67393864443723&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 34 min 1.5 miles via Oval Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2777.505300653446,
+      "gis_route_miles": 1.7258617801125464,
+      "google_minus_gis_miles": -0.22586178011254643,
+      "origin_coordinates_lon_lat": [
+        -78.67393864443723,
+        35.76941260213723
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780F",
+      "building_name": "Lakeview Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.7,
+      "google_display_minutes": 38,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "Lakeview Hall, 1930 Entrepreneur Dr, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.76941260213723%2C-78.67393864443723&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 38 min 1.7 miles via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2491.3958708566915,
+      "gis_route_miles": 1.5480816226093934,
+      "google_minus_gis_miles": 0.15191837739060654,
+      "origin_coordinates_lon_lat": [
+        -78.67393864443723,
+        35.76941260213723
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780B",
+      "building_name": "Plaza Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.5,
+      "google_display_minutes": 34,
+      "google_suggested_via": "Oval Dr",
+      "google_resolved_origin": "Plaza Hall, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.76963018818832%2C-78.67365459444943&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 34 min 1.5 miles via Oval Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2752.2859091570854,
+      "gis_route_miles": 1.7101911767509528,
+      "google_minus_gis_miles": -0.21019117675095278,
+      "origin_coordinates_lon_lat": [
+        -78.67365459444943,
+        35.76963018818832
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780B",
+      "building_name": "Plaza Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.7,
+      "google_display_minutes": 38,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "Plaza Hall, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.76963018818832%2C-78.67365459444943&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 38 min 1.7 miles via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2466.176479360331,
+      "gis_route_miles": 1.5324110192477998,
+      "google_minus_gis_miles": 0.1675889807522002,
+      "origin_coordinates_lon_lat": [
+        -78.67365459444943,
+        35.76963018818832
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780A",
+      "building_name": "Tower Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.5,
+      "google_display_minutes": 33,
+      "google_suggested_via": "Oval Dr",
+      "google_resolved_origin": "On the Oval Food Hall, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.770067906618344%2C-78.6746199977156&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 33 min 1.5 miles via Oval Dr Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2645.200576728944,
+      "gis_route_miles": 1.6436514360689471,
+      "google_minus_gis_miles": -0.14365143606894715,
+      "origin_coordinates_lon_lat": [
+        -78.6746199977156,
+        35.770067906618344
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780A",
+      "building_name": "Tower Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.6,
+      "google_display_minutes": 36,
+      "google_suggested_via": "Varsity Dr",
+      "google_resolved_origin": "On the Oval Food Hall, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.770067906618344%2C-78.6746199977156&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 36 min 1.6 miles via Varsity Dr Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2360.126877063163,
+      "gis_route_miles": 1.4665148514321134,
+      "google_minus_gis_miles": 0.13348514856788674,
+      "origin_coordinates_lon_lat": [
+        -78.6746199977156,
+        35.770067906618344
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780D",
+      "building_name": "Valley Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.6,
+      "google_display_minutes": 37,
+      "google_suggested_via": "Initiative Way",
+      "google_resolved_origin": "Valley Hall - Wolf Ridge Apartments, North Carolina State University, 351 Initiative Way, Raleigh, NC 27606",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7679321607984%2C-78.67320337247887&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 37 min 1.6 miles via Initiative Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 3015.6445826687086,
+      "gis_route_miles": 1.8738346696969128,
+      "google_minus_gis_miles": -0.2738346696969127,
+      "origin_coordinates_lon_lat": [
+        -78.67320337247887,
+        35.7679321607984
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "780D",
+      "building_name": "Valley Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.8,
+      "google_display_minutes": 41,
+      "google_suggested_via": "Initiative Way",
+      "google_resolved_origin": "Valley Hall - Wolf Ridge Apartments, North Carolina State University, 351 Initiative Way, Raleigh, NC 27606",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7679321607984%2C-78.67320337247887&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 41 min 1.8 miles via Initiative Way Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Ridge apartments",
+      "gis_route_meters": 2729.5351528719543,
+      "gis_route_miles": 1.6960545121937598,
+      "google_minus_gis_miles": 0.10394548780624024,
+      "origin_coordinates_lon_lat": [
+        -78.67320337247887,
+        35.7679321607984
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222A",
+      "building_name": "Arctic Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 22,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "2770 Wolf Village Way A, Wolf Village Apartment Arctic Hall, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78706785594733%2C-78.68486601745458&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 22 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1672.2148348581559,
+      "gis_route_miles": 1.039066125612769,
+      "google_minus_gis_miles": -0.0390661256127689,
+      "origin_coordinates_lon_lat": [
+        -78.68486601745458,
+        35.78706785594733
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222A",
+      "building_name": "Arctic Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 9,
+      "google_suggested_via": "Gorman St and Rocky Branch Trl",
+      "google_resolved_origin": "2770 Wolf Village Way A, Wolf Village Apartment Arctic Hall, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78706785594733%2C-78.68486601745458&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 9 min 0.4 mile via Gorman St and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 566.3916463618332,
+      "gis_route_miles": 0.3519394525731187,
+      "google_minus_gis_miles": 0.04806054742688132,
+      "origin_coordinates_lon_lat": [
+        -78.68486601745458,
+        35.78706785594733
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222B",
+      "building_name": "Baffin Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 22,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "2780 Wolf Village Way A, Wolf Village Apartment Baffin Hall, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78677814306803%2C-78.68585930173222&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 22 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1708.898663103205,
+      "gis_route_miles": 1.0618603997052247,
+      "google_minus_gis_miles": -0.06186039970522472,
+      "origin_coordinates_lon_lat": [
+        -78.68585930173222,
+        35.78677814306803
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222B",
+      "building_name": "Baffin Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Gorman St and Rocky Branch Trl",
+      "google_resolved_origin": "2780 Wolf Village Way A, Wolf Village Apartment Baffin Hall, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78677814306803%2C-78.68585930173222&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Gorman St and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 563.7832655895091,
+      "gis_route_miles": 0.3503186799028108,
+      "google_minus_gis_miles": 0.04968132009718923,
+      "origin_coordinates_lon_lat": [
+        -78.68585930173222,
+        35.78677814306803
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222C",
+      "building_name": "Caspian Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 21,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "Wolf Village Apartment Caspian Hall, 2750 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78643085480321%2C-78.68531876745948&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1635.8917682925735,
+      "gis_route_miles": 1.0164960184351968,
+      "google_minus_gis_miles": -0.01649601843519677,
+      "origin_coordinates_lon_lat": [
+        -78.68531876745948,
+        35.78643085480321
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222C",
+      "building_name": "Caspian Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Faucette Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Wolf Village Apartment Caspian Hall, 2750 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78643085480321%2C-78.68531876745948&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Faucette Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 474.234296508877,
+      "gis_route_miles": 0.29467553022155424,
+      "google_minus_gis_miles": 0.10532446977844578,
+      "origin_coordinates_lon_lat": [
+        -78.68531876745948,
+        35.78643085480321
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222G",
+      "building_name": "Gray Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 22,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "The One Stop Shop, 2730 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78624683863574%2C-78.68465445342538&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 22 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1692.764352501242,
+      "gis_route_miles": 1.0518350038905553,
+      "google_minus_gis_miles": -0.05183500389055529,
+      "origin_coordinates_lon_lat": [
+        -78.68465445342538,
+        35.78624683863574
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222G",
+      "building_name": "Gray Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.3,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Faucette Dr and Rocky Branch Trl",
+      "google_resolved_origin": "The One Stop Shop, 2730 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78624683863574%2C-78.68465445342538&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.3 mile via Faucette Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 542.0290213377099,
+      "gis_route_miles": 0.3368012192158481,
+      "google_minus_gis_miles": -0.03680121921584811,
+      "origin_coordinates_lon_lat": [
+        -78.68465445342538,
+        35.78624683863574
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222H",
+      "building_name": "Hudson Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 21,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "Hudson Hall | Wolf Village Apartments Building H, 2760 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.786512312760706%2C-78.68503574514436&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1623.9572332037349,
+      "gis_route_miles": 1.009080242138247,
+      "google_minus_gis_miles": -0.009080242138246986,
+      "origin_coordinates_lon_lat": [
+        -78.68503574514436,
+        35.786512312760706
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222H",
+      "building_name": "Hudson Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Faucette Dr and Rocky Branch Trl",
+      "google_resolved_origin": "Hudson Hall | Wolf Village Apartments Building H, 2760 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.786512312760706%2C-78.68503574514436&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Faucette Dr and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 485.7264506450863,
+      "gis_route_miles": 0.30181642373854584,
+      "google_minus_gis_miles": 0.09818357626145419,
+      "origin_coordinates_lon_lat": [
+        -78.68503574514436,
+        35.786512312760706
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222F",
+      "building_name": "Mackenzie Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 21,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "2710 Wolf Village Way A, Wolf Village Apartment MacKenzie Hall, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7862616928045%2C-78.68375227628387&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1613.0948547248536,
+      "gis_route_miles": 1.0023306730722912,
+      "google_minus_gis_miles": -0.0023306730722911784,
+      "origin_coordinates_lon_lat": [
+        -78.68375227628387,
+        35.7862616928045
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222F",
+      "building_name": "Mackenzie Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 9,
+      "google_suggested_via": "Rocky Branch Trl",
+      "google_resolved_origin": "2710 Wolf Village Way A, Wolf Village Apartment MacKenzie Hall, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.7862616928045%2C-78.68375227628387&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 9 min 0.4 mile via Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 631.1260480819134,
+      "gis_route_miles": 0.3921635449486955,
+      "google_minus_gis_miles": 0.007836455051304536,
+      "origin_coordinates_lon_lat": [
+        -78.68375227628387,
+        35.7862616928045
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222D",
+      "building_name": "Red Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.1,
+      "google_display_minutes": 22,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "Wolf Village Apartment Red Hall, 2740 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78587660865903%2C-78.68569758881141&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 22 min 1.1 miles via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1740.321293950503,
+      "gis_route_miles": 1.0813855172980438,
+      "google_minus_gis_miles": 0.018614482701956314,
+      "origin_coordinates_lon_lat": [
+        -78.68569758881141,
+        35.78587660865903
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222D",
+      "building_name": "Red Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 9,
+      "google_suggested_via": "Gorman St and Rocky Branch Trl",
+      "google_resolved_origin": "Wolf Village Apartment Red Hall, 2740 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78587660865903%2C-78.68569758881141&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 9 min 0.4 mile via Gorman St and Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 412.49632651577696,
+      "gis_route_miles": 0.2563133342006289,
+      "google_minus_gis_miles": 0.14368666579937112,
+      "origin_coordinates_lon_lat": [
+        -78.68569758881141,
+        35.78587660865903
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222E",
+      "building_name": "Timber Hall",
+      "site": "talley",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 1.0,
+      "google_display_minutes": 21,
+      "google_suggested_via": "Wolf Village Way",
+      "google_resolved_origin": "Timber Hall | Wolf Village Apartments Building E, 2720 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Port City Java, 2610 Cates Ave, Raleigh, NC 27695",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78580102427203%2C-78.68409125106476&destination=35.78404092003609%2C-78.67087626427747&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 21 min 1.0 mile via Wolf Village Way Details Preview",
+      "site_name": "Talley Student Union",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 1624.4310927760496,
+      "gis_route_miles": 1.009374684825649,
+      "google_minus_gis_miles": -0.009374684825649071,
+      "origin_coordinates_lon_lat": [
+        -78.68409125106476,
+        35.78580102427203
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.67087626427747,
+        35.78404092003609
+      ],
+      "entrance_verified": false
+    },
+    {
+      "building_id": "222E",
+      "building_name": "Timber Hall",
+      "site": "western",
+      "observed_on": "2026-11-01",
+      "google_display_miles": 0.4,
+      "google_display_minutes": 8,
+      "google_suggested_via": "Rocky Branch Trl",
+      "google_resolved_origin": "Timber Hall | Wolf Village Apartments Building E, 2720 Wolf Village Way, Raleigh, NC 27607",
+      "google_resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr, Raleigh, NC 27606",
+      "google_walking_url": "https://www.google.com/maps/dir/?api=1&origin=35.78580102427203%2C-78.68409125106476&destination=35.784512725066264%2C-78.68522579542082&travelmode=walking",
+      "walking_mode_selected": true,
+      "displayed_route_summary": "Walking 8 min 0.4 mile via Rocky Branch Trl Details Preview",
+      "site_name": "Western Boulevard Business Services",
+      "group": "Wolf Village apartments",
+      "gis_route_meters": 642.4622861331093,
+      "gis_route_miles": 0.39920755670205327,
+      "google_minus_gis_miles": 0.0007924432979467544,
+      "origin_coordinates_lon_lat": [
+        -78.68409125106476,
+        35.78580102427203
+      ],
+      "destination_coordinates_lon_lat": [
+        -78.68522579542082,
+        35.784512725066264
+      ],
       "entrance_verified": false
     }
   ]

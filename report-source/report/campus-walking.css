@@ -113,10 +113,10 @@
    squares for other GIS-classified destinations. Symbol centers stay on GIS centers. */
 .campus-place-marker{background:none;border:0;display:grid;place-items:center;}
 .campus-place-symbol{display:block;width:10px;height:10px;background:var(--place-color);border:1.5px solid #fff;box-sizing:border-box;box-shadow:0 0 0 1px #0002;}
-.campus-place-diamond{width:12px;height:12px;transform:rotate(45deg);border:2px solid white;}
+.campus-place-diamond{width:8px;height:8px;transform:rotate(45deg);border:1.5px solid white;}
 .campus-gis-label{display:block;font-size:10px;font-weight:400;color:#626765;margin-top:2px;}
 .voting-report .campus-map-key .campus-key-diamond{width:10px;height:10px;transform:rotate(45deg);background:currentColor;border:1px solid #fff;box-shadow:0 0 0 1px currentColor;}
-.voting-report .campus-map-key .campus-key-dot{width:10px;height:10px;border-radius:50%;background:#2b5f97;}
+.voting-report .campus-map-key .campus-key-dot{width:10px;height:10px;border-radius:50%;background:currentColor;}
 .voting-report .campus-map-key .campus-key-square{width:10px;height:10px;background:currentColor;}
 .voting-report .campus-map-key li small{display:block;font-size:10px;color:var(--secondary);margin-top:2px;line-height:1.3;}
 

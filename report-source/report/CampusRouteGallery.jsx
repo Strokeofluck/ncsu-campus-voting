@@ -18,7 +18,7 @@ const RouteThumbnail=React.memo(function RouteThumbnail({row,drawing,hit,selecte
   {drawing.sites.map(s=><path key={s.id} d={s.path} fill={s.id==='102'?'#2b5f9728':'#b8662628'} stroke={s.id==='102'?'#2b5f97':'#b86626'} strokeWidth=".8"/>)}
   <path d={row.path} fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" pathLength="1" className={animate?'campus-thumbnail-drawing':undefined} style={{animationDuration:Math.max(1.5,seconds*2)+'s'}}/>
   {drawing.sites.map(s=><path key={s.id} d={`M${s.point[0]},${s.point[1]-3}l3,3l-3,3l-3,-3Z`} fill={s.id==='102'?'#2b5f97':'#b86626'} stroke="white" strokeWidth=".6"/>)}
-  <circle cx={row.from[0]} cy={row.from[1]} r="3" fill="#2b5f97" stroke="white" strokeWidth="1"/>
+  <circle cx={row.from[0]} cy={row.from[1]} r="3" fill={campusPlaceColors.Residence} stroke="white" strokeWidth="1"/>
   <rect x={row.to[0]-3} y={row.to[1]-3} width="6" height="6" fill={campusPlaceColors[row.gis_use_name]||'#787670'} stroke="white" strokeWidth="1"/>
  </svg><span className="campus-route-card-name">{row.destination_name}</span><span className="campus-route-card-meta">{row.gis_use_name} · {(row.route_m/1609.344).toFixed(2)} mi</span><span className="campus-route-card-hit"><i style={{background:color}}/>{hit?'Enters Talley’s zone':'Stays outside Talley’s zone'}</span>
  </button>;});

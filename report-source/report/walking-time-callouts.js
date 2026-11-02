@@ -1,7 +1,7 @@
 import {campusWalkingColors} from './campus-map-context.jsx';
 // Offset time labels with thin leaders to actual visible route points.
 // This is screen-space annotation only; the reviewed paths/times are unchanged.
-const NS='http://www.w3.org/2000/svg';let serial=0;
+const NS='http://www.w3.org/2000/svg';
 const node=(tag,attrs={},text)=>{const el=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs))el.setAttribute(k,v);if(text!==undefined)el.textContent=text;return el;};
 const overlaps=(a,b,pad=0)=>a.x<b.x+b.w+pad&&a.x+a.w+pad>b.x&&a.y<b.y+b.h+pad&&a.y+a.h+pad>b.y;
 const inside=(p,r,pad=0)=>p.x>=r.x-pad&&p.x<=r.x+r.w+pad&&p.y>=r.y-pad&&p.y<=r.y+r.h+pad;
@@ -25,11 +25,11 @@ function place(L,map,routes,obstacles,key){const size=map.getSize(),w=112,h=35,m
  return chosen;
 }
 export function addWalkingTimeCallouts(L,map,layer,{row,pace,buildingCenters}){
- const id=++serial,Callouts=L.Layer.extend({
+ const Callouts=L.Layer.extend({
   onAdd(activeMap){this.map=activeMap;if(!activeMap.getPane('walking-callouts')){const pane=activeMap.createPane('walking-callouts');pane.style.zIndex='490';pane.style.pointerEvents='none';}this.svg=node('svg',{'class':'walking-route-callouts','aria-label':'Estimated walking times to the two voting sites'});activeMap.getPane('walking-callouts').append(this.svg);this.redraw=()=>{cancelAnimationFrame(this.frame);this.frame=requestAnimationFrame(()=>this.draw());};activeMap.on('move zoomend resize',this.redraw);const key=activeMap.getContainer().closest('.campus-map-with-key')?.querySelector('.campus-map-key');this.key=key;this.observer=new ResizeObserver(this.redraw);if(key)this.observer.observe(key);this.draw();},
-  draw(){const activeMap=this.map,size=activeMap.getSize();this.svg.setAttribute('width',size.x);this.svg.setAttribute('height',size.y);this.svg.setAttribute('viewBox',`0 0 ${size.x} ${size.y}`);L.DomUtil.setPosition(this.svg,activeMap.containerPointToLayerPoint([0,0]));this.svg.replaceChildren();const defs=node('defs');this.svg.append(defs);
+  draw(){const activeMap=this.map,size=activeMap.getSize();this.svg.setAttribute('width',size.x);this.svg.setAttribute('height',size.y);this.svg.setAttribute('viewBox',`0 0 ${size.x} ${size.y}`);L.DomUtil.setPosition(this.svg,activeMap.containerPointToLayerPoint([0,0]));this.svg.replaceChildren();
    const routes=[['talley','Talley (2022)',campusWalkingColors.talley],['western','Western (2026)',campusWalkingColors.western]].map(([key,title,color])=>({key,title,color,time:`≈ ${(row[key+'_m']/pace).toFixed(1)} min`,points:row[key+'_route'].geometry.coordinates.map(p=>activeMap.latLngToContainerPoint([p[1],p[0]]))})),obstacles=Object.values(buildingCenters).map(p=>activeMap.latLngToContainerPoint([p[1],p[0]])),placements=place(L,activeMap,routes,obstacles,this.key);
-   for(const p of placements){const markerId=`walking-time-arrow-${id}-${p.key}`,marker=node('marker',{id:markerId,markerWidth:5,markerHeight:5,refX:5,refY:2.5,orient:'auto',markerUnits:'userSpaceOnUse'});marker.append(node('path',{d:'M0 0L5 2.5L0 5Z',fill:p.color}));defs.append(marker);const line=node('line',{x1:p.edge.x,y1:p.edge.y,x2:p.target.x,y2:p.target.y,stroke:p.color,'stroke-width':1.1,'marker-end':`url(#${markerId})`,'class':'walking-time-leader','data-route-site':p.key});this.svg.append(line);}
+   for(const p of placements){const line=node('line',{x1:p.edge.x,y1:p.edge.y,x2:p.target.x,y2:p.target.y,stroke:p.color,'stroke-width':1.1,'class':'walking-time-leader','data-route-site':p.key});this.svg.append(line);}
    for(const p of placements){const group=node('g',{'class':'walking-time-callout','data-route-site':p.key,role:'img','aria-label':`${p.title}: ${p.time} estimated one-way walking time`});group.append(node('rect',{x:p.rect.x,y:p.rect.y,width:p.rect.w,height:p.rect.h,rx:3,fill:'#fff','fill-opacity':.97,stroke:'#c3ccd1','stroke-width':.7}),node('text',{x:p.rect.x+7,y:p.rect.y+12,fill:p.color,'class':'walking-time-callout-title'},p.title),node('text',{x:p.rect.x+7,y:p.rect.y+27,fill:'#203040','class':'walking-time-callout-value'},p.time));this.svg.append(group);}
   },
   onRemove(activeMap){cancelAnimationFrame(this.frame);activeMap.off('move zoomend resize',this.redraw);this.observer.disconnect();this.svg.remove();this.map=null;}

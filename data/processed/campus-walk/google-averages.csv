@@ -1,0 +1,5 @@
+group,included_buildings,total_buildings,excluded_buildings,source,sum_talley_miles,mean_talley_miles,sum_talley_minutes,mean_talley_minutes,sum_western_miles,mean_western_miles,sum_western_minutes,mean_western_minutes,mean_change_miles,mean_change_minutes,farther_buildings,closer_buildings,unchanged_buildings
+All housing,40,40,0,"Google Maps walking directions, observed 2026-11-01",27.7,0.6925,607.0,15.175,39.0,0.975,889.0,22.225,0.2825,7.050000000000001,32,8,0
+Residence halls,26,26,0,"Google Maps walking directions, observed 2026-11-01",10.3,0.3961538461538462,225.0,8.653846153846153,25.7,0.9884615384615384,590.0,22.692307692307693,0.5923076923076922,14.03846153846154,26,0,0
+Wolf Village apartments,8,8,0,"Google Maps walking directions, observed 2026-11-01",8.1,1.0125,172.0,21.5,3.1,0.3875,67.0,8.375,-0.625,-13.125,0,8,0
+Wolf Ridge apartments,6,6,0,"Google Maps walking directions, observed 2026-11-01",9.3,1.55,210.0,35.0,10.2,1.7,232.0,38.666666666666664,0.1499999999999999,3.6666666666666643,6,0,0
