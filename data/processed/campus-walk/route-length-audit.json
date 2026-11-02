@@ -1,0 +1,25 @@
+{
+  "routes_checked": 80,
+  "max_saved_length_difference_m": 1.0838675734703429e-08,
+  "max_geodesic_difference_pct": 0.00856537423759272,
+  "max_endpoint_gap_m": 0.0,
+  "all_displayed_mile_values_match": true,
+  "formula": "Sum projected lengths of network geometry plus both dotted entrance connectors (EPSG:32119, metres). Miles = total / 1609.344. Minutes = total / 80. Independently cross-check WGS84 ellipsoidal length.",
+  "limits": "Checks distance along the drawn coordinates and endpoint continuity, not present-day walkability, best real-world path, door accuracy, crossing delays or historical 2022 conditions. Three origins are building-edge estimates.",
+  "example": {
+    "building_id": "112A",
+    "building": "Wood Hall A",
+    "destination": "western",
+    "access": "mapped GIS entrance",
+    "network_remeasured_m": 1420.6750707839553,
+    "origin_connector_remeasured_m": 0.0012910039825669336,
+    "destination_connector_remeasured_m": 15.854276834475593,
+    "remeasured_total_m": 1436.5306386224136,
+    "saved_total_m": 1436.5306386288664,
+    "absolute_difference_m": 6.452864909078926e-09,
+    "geodesic_total_m": 1436.6522137312875,
+    "max_endpoint_gap_m": 0.0,
+    "display_miles": "0.89",
+    "display_minutes_at_80_m_per_min": "18.0"
+  }
+}

@@ -56,7 +56,13 @@ article=json.loads((ROOT/'report-source/article-snapshot.json').read_text(encodi
 prototype=json.loads((ROOT/'report-source/snapshot.json').read_text(encoding='utf-8'))
 assert article['id']!=prototype['id']
 for key in article['queries']:
- if key!='statewide_early_voting_context':assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
+ if key not in {'statewide_early_voting_context','article_opening_context'}:assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
+opening=article['queries']['article_opening_context']
+assert len(opening['rows'])==3 and all(r['source_url'] in opening['source']['files'] for r in opening['rows'])
+assert opening['rows'][0]['reported_at']=='2026-10-31' and 'midterm early' in opening['rows'][0]['claim']
+assert 'portion' in opening['rows'][2]['claim']
+assert sum(r['spaces'] for r in article['queries']['campus_parking']['rows'] if r['objectid'] in [26,92,166])==2192
+assert sum(r['spaces'] for r in article['queries']['campus_parking']['rows'] if r['objectid'] in [34,38,55,56])==660
 if 'statewide_early_voting_context' in article['queries']:
  context=article['queries']['statewide_early_voting_context']['rows'][0]
  assert context['accepted_early_ballots']==2612240 and context['growth_vs_2022_same_day_pct_displayed']==32

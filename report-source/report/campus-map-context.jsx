@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDataApp} from '../../data-app-public.jsx';
-export const campusPlaceColors={Residence:'#71777b',Classroom:'#787670',Dining:'#476f73',Library:'#a57b24','Student Center':'#2b5f97',Office:'#b86626'};
+export const campusPlaceColors={Residence:'#71777b',Classroom:'#8c4b3f',Dining:'#476f73',Library:'#a57b24','Student Center':'#2b5f97',Office:'#b86626'};
 export const campusWalkingColors={talley:'#2b5f97',western:'#b86626'};
 export function campusPlaceIcon(L,type,{site=false,small=false}={}){const size=site?18:small?12:16;return L.divIcon({className:`campus-place-marker${site?' campus-site-point':''}`,html:`<span class="campus-place-symbol ${site?'campus-place-diamond':'campus-place-square'}" style="--place-color:${campusPlaceColors[type]||'#787670'}"></span>`,iconSize:[size,size],iconAnchor:[size/2,size/2]});}
 export function campusPlaceTooltip(name){const box=document.createElement('div'),title=document.createElement('strong');title.textContent=name;box.append(title);return box;}
