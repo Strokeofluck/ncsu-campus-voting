@@ -107,12 +107,12 @@
 /* Compact overall averages immediately above the housing walking map. */
 .voting-article .article-walking-map:not(.article-routine-map){margin:0 auto 12px;}
 .voting-article .article-walk-average{margin:0 0 10px;padding:10px 0 8px;border-block:1px solid var(--border);}
-.voting-article .article-walk-average-label{font-size:12px;margin:0 0 8px;color:var(--secondary);}
+.voting-article .article-walk-average-label{font-size:17px;font-weight:600;line-height:1.35;margin:0 0 10px;color:var(--primary);}
 .voting-article .article-walk-average-grid{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:12px;margin:0;}
 .voting-article .article-walk-average-grid dt{font-size:12px;line-height:1.35;margin:0 0 3px;}
 .voting-article .article-walk-average-grid dd{margin:0;display:flex;flex-direction:column;gap:2px;font-variant-numeric:tabular-nums;}
-.voting-article .article-walk-average-grid strong{font-size:22px;font-weight:500;line-height:1.25;}
-.voting-article .article-walk-average-grid dd span{font-size:12px;line-height:1.4;}
+.voting-article .article-walk-average-grid strong{font-size:26px;font-weight:500;line-height:1.25;}
+.voting-article .article-walk-average-grid dd span{font-size:14px;line-height:1.4;}
 .voting-article .article-walk-average-delta{border-left:1px solid var(--border);padding-left:14px;}
 .voting-article .article-walk-average-source{font-size:11px;line-height:1.45;color:var(--secondary);margin:8px 0 0;}
 @media(max-width:600px){.voting-article .article-walk-average-grid{grid-template-columns:1fr 1fr;gap:10px;}.voting-article .article-walk-average-delta{grid-column:1/-1;border-left:0;border-top:1px solid var(--border);padding:7px 0 0;}.voting-article .article-walk-average-delta dd{flex-direction:row;align-items:baseline;flex-wrap:wrap;gap:5px 12px;}.voting-article .article-walk-average-grid strong{font-size:20px;}}
