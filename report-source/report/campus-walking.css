@@ -197,3 +197,7 @@
 /* Hover information stays above routes, site markers and time callouts. */
 .campus-map-with-key .leaflet-tooltip-pane{z-index:900;}
 .campus-map-with-key .leaflet-popup-pane{z-index:910;}
+
+.walking-route-callouts .walking-time-callout-distance{font:10px Arial,sans-serif;font-variant-numeric:tabular-nums;}
+
+.walking-map .walking-modeled-route{cursor:default;}
