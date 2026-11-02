@@ -69,7 +69,7 @@ def main():
   assert key in html,key
   html=html.replace(key,value)
  assert not re.search(r'__[A-Z_]+__',html)
- (ROOT/'references.html').write_text(html,encoding='utf-8')
+ (ROOT/'references.html').write_text(html.rstrip()+'\n',encoding='utf-8')
  print('Built focused references: five age groups, four original counts each, site/county growth and percentage-point gaps; two election sources.')
 
 if __name__=='__main__':main()

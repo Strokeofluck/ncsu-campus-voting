@@ -16,7 +16,7 @@ function YoungestBenchmark({row}){
    <p className="voting-article-benchmark-gap">About <strong>{n(expected-actual)} ballots below the benchmark</strong></p>
    <div className="voting-article-bar-axis" aria-hidden="true">{[0,2000,4000,6000].map(v=><span key={v} style={{left:`${v/maximum*100}%`}}>{n(v)}</span>)}</div>
    <div className="voting-article-axis-title">Early ballots</div>
-   <figcaption>Source: NCSBE. The benchmark holds Talley’s 2022 share of Wake’s ages 18–24 early ballots constant; it does not count people who failed to vote. <a href="../references.html?v=20261102refs2#youngest-benchmark">Worked calculation →</a></figcaption>
+   <figcaption>Source: NCSBE. The benchmark holds Talley’s 2022 share of Wake’s ages 18–24 early ballots constant; it does not count people who failed to vote. <a href="../references.html?v=20261102refs3#youngest-benchmark">Worked calculation →</a></figcaption>
   </figure>
  </DataComponent></div>;
 }
@@ -27,7 +27,7 @@ export function ReportContent(){
 
 The gap extended beyond college-age voters. Growth from **Talley in 2022 to Western Boulevard in 2026** fell behind Wake’s same-age growth among voters **25–34, 35–44 and 45–64**. Voters **65 and older** were the exception: **76.0%** growth at the two locations, versus **53.4%** countywide. All five groups cast more early ballots; the difference is how quickly their counts grew.`}/></ReportSection>;
  return <article className="report-content voting-report voting-article" aria-label="Article work in progress: NC State early voting">
-  <nav className="voting-page-nav" aria-label="Page links"><a href="index.html?view=1&v=20261102refs2" aria-current="page">Article · Work in progress</a><a href="../index.html?view=1#campus-age-growth">Prototype</a><a href="../references.html?v=20261102refs2">References and step-by-step math</a></nav>
+  <nav className="voting-page-nav" aria-label="Page links"><a href="index.html?view=1&v=20261102refs3" aria-current="page">Article · Work in progress</a><a href="../index.html?view=1#campus-age-growth">Prototype</a><a href="../references.html?v=20261102refs3">References and step-by-step math</a></nav>
   <ReportSection id="voting-article-intro" queryId="article_opening_context" queryIds={['article_opening_context','campus_parking','age_growth_benchmarks']} sourceRowsByQuery={{article_opening_context:snapshot.queries.article_opening_context.rows,campus_parking:snapshot.queries.campus_parking.rows,age_growth_benchmarks:rows}} showHeading={false} title="Talley to Western Boulevard: college-age voting growth trails Wake most"><RichNarrative id="voting-article-intro:body" value={`# Talley to Western Boulevard: college-age voting growth trails Wake most
 
 **[Update this opening after the Nov. 3 election.]** Early voting has ended in North Carolina with a record number of ballots for a midterm, [WRAL reported October 31](https://www.wral.com/news/nccapitol/end-early-voting-nc-last-day-register-how-to-guide-midterms-mail-id-2026/). With Election Day still ahead, the preliminary numbers offer a first look at voting after NC State’s early-voting site moved from **Talley Student Union to Western Boulevard Business Services**.
@@ -38,7 +38,7 @@ The map below compares modeled walks from student housing. The ballot analysis t
   <CampusWalkingMap article/>
   <ReportSection id="voting-article-routine-intro" queryId="campus_passby" sourceRows={snapshot.queries.campus_passby.rows.filter(r=>!r.ends_at_talley)} showHeading={false} title="Would routine walks bring students near the site?"><RichNarrative id="voting-article-routine-intro:body" value={`## Would routine walks bring students near the site?
 
-A simulation modeled **756 routes from housing to classroom and dining buildings identified in NC State’s GIS, plus Hill and Hunt libraries**, to test whether routine walks would pass near either voting site. [GIS labels and exclusions](../references.html?v=20261102refs2#destination-gis-sources).
+A simulation modeled **756 routes from housing to classroom and dining buildings identified in NC State’s GIS, plus Hill and Hunt libraries**, to test whether routine walks would pass near either voting site. [GIS labels and exclusions](../references.html?v=20261102refs3#destination-gis-sources).
 
 **334 routes—44.2%—passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.`}/></ReportSection>
   <CampusPassbyMap article/>
@@ -50,6 +50,6 @@ A simulation modeled **756 routes from housing to classroom and dining buildings
   <YoungestBenchmark row={youngest}/>
   <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`These figures describe early-ballot counts and location use. They do not establish whether the relocation caused the growth gap. Ages 18–24 are an age proxy, not verified student enrollment.
 
-[Follow the original counts and calculations, step by step](../references.html?v=20261102refs2).`}/></ReportSection>
+[Follow the original counts and calculations, step by step](../references.html?v=20261102refs3).`}/></ReportSection>
  </article>;
 }
