@@ -182,3 +182,7 @@
 
 .voting-report .campus-map-key .campus-key-quick-controls .route-view-controls{margin:0;}
 .voting-report .campus-map-key .campus-key-quick-controls .route-view-controls label{font-size:10px;gap:5px;}
+
+.walking-route-callouts{position:absolute;left:0;top:0;overflow:visible;pointer-events:none;}
+.walking-route-callouts .walking-time-callout-title{font:10px Arial,sans-serif;}
+.walking-route-callouts .walking-time-callout-value{font:600 12px Arial,sans-serif;font-variant-numeric:tabular-nums;}

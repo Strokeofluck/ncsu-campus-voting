@@ -3,12 +3,13 @@ import React,{useCallback,useEffect,useMemo,useRef,useState} from 'react';
 import * as L from './vendor/leaflet/leaflet-src.esm.js';
 import './campus-walking.css';
 import CampusHousingBrowser from './CampusHousingBrowser.jsx';
-import {addParking,addSiteFootprints,siteDisplayCenter,bindWalkingRouteTooltip,MapLegend,ParkingContext,CampusMapCredit,campusPlaceIcon,campusPlaceTooltip} from './campus-map-context.jsx';
+import {addWalkingTimeCallouts} from './walking-time-callouts.js';
+import {addParking,addSiteFootprints,siteDisplayCenter,bindWalkingRouteTooltip,MapLegend,ParkingContext,CampusMapCredit,campusPlaceIcon,campusPlaceTooltip,campusWalkingColors} from './campus-map-context.jsx';
 import {DataComponent,RichNarrative,useDataApp} from '../../data-app-public.jsx';
 const meters=v=>`${(v/1609.344).toFixed(2)} mi`;
 const miles=v=>`${(v/1609.344).toFixed(2)} mi`;
 const mins=(v,pace)=>`${(v/pace).toFixed(1)} min`;
-const oldColor='#2b5f97',newColor='#b86626';
+const oldColor=campusWalkingColors.talley,newColor=campusWalkingColors.western;
 const delta=(r,pace)=>`${r.difference_m>=0?'+':'−'}${mins(Math.abs(r.difference_m),pace)}`;
 function tooltip(lines){const box=document.createElement('div');box.className='voting-map-tooltip-content';for(const text of lines){const line=document.createElement('div');line.textContent=text;box.append(line);}return box;}
 function fitTooltip(marker,map){marker.on('tooltipopen',()=>{map.eachLayer(other=>{if(other!==marker&&other.getTooltip?.()?.isOpen())other.closeTooltip();});const tip=marker.getTooltip(),node=tip.getElement(),limit=Math.min(240,map.getSize().x-24);node.style.width='max-content';node.style.minWidth='0';node.style.maxWidth=`${limit}px`;const w=node.getBoundingClientRect().width,p=map.latLngToContainerPoint(marker.getLatLng());tip.options.direction=p.y<90?'bottom':'top';tip.options.offset=L.point(Math.max(w/2+8,Math.min(map.getSize().x-w/2-8,p.x))-p.x,0);tip.update();});}
@@ -57,20 +58,21 @@ export function CampusWalkingMap(){
   if(showParking)addParking(L,layer,snapshot.campusParking);addSiteFootprints(L,layer,snapshot.campusSiteFootprints,map);
   const campus=L.latLngBounds([...displayRows.map(r=>snapshot.campusBuildingCenters[r.id]||[r.longitude,r.latitude]),...sites.map(r=>snapshot.campusBuildingCenters[r.id]||r.coordinates)].map(p=>[p[1],p[0]])).pad(.04);
   if(cameraKey.current!==group){map.fitBounds(campus,{paddingTopLeft:[map.getSize().x>650?195:18,20],paddingBottomRight:[18,20],maxZoom:15,animate:false});cameraKey.current=group;}
+  if(routeView==='selected')addWalkingTimeCallouts(L,map,layer,{row,pace,buildingCenters:snapshot.campusBuildingCenters});
  },[selected,group,routeView,showParking,focusSite,pace]);
  const zoomParking=site=>{setShowParking(true);setTimeout(()=>mapRef.current?.fitBounds(L.geoJSON({...snapshot.campusParking,features:snapshot.campusParking.features.filter(f=>f.properties.site_id===site)}).getBounds(),{padding:[35,35],maxZoom:17,animate:false}),30);};
  const fitAll=()=>{cameraKey.current=null;const values=rows.filter(r=>group==='All housing'||r.group===group);mapRef.current?.fitBounds(L.latLngBounds(values.map(r=>[r.latitude,r.longitude])),{padding:[30,30],animate:false});};
- const changeGroup=value=>{setGroup(value);setRouteView('all');const candidates=rows.filter(r=>value==='All housing'||r.group===value);if(!candidates.some(r=>r.id===selected))setSelected(candidates.find(r=>r.available)?.id||candidates[0].id);};
+ const changeGroup=value=>{setGroup(value);setRouteView('selected');const candidates=rows.filter(r=>value==='All housing'||r.group===value);if(!candidates.some(r=>r.id===selected))setSelected(candidates.find(r=>r.available)?.id||candidates[0].id);};
  if(!visible('voting-campus-walking-map'))return null;
  return <section id="campus-walking" className="campus-walking-section">
   <RichNarrative id="voting-campus-walking:intro" value="## Did the move make the walk longer?\n\nCompare the **average across housing buildings** first, then explore individual routes to **Talley (2022)** and **Western Boulevard (2026)**. These averages give every building the same weight; they do not weight the number of students living there. **Exploratory estimates:** both destinations use the current GIS network and mapped building entrances, not confirmed election-room doors."/>
   <WalkingAverageSummary rows={snapshot.queries.campus_walk_averages.rows} buildings={rows} group={group} pace={pace} onGroup={changeGroup} onPace={setPace} onBuilding={id=>{setSelected(id);setRouteView('selected');host.current?.scrollIntoView({block:'center'});}}/>
   <DataComponent id="voting-campus-walking-map" queryId="campus_walking_routes" queryIds={['campus_walking_routes','campus_walk_sites','campus_estimated_access','campus_parking']} sourceRowsByQuery={{campus_walking_routes:rows,campus_walk_sites:sites,campus_estimated_access:estimates,campus_parking:snapshot.queries.campus_parking.rows}} displayRows={rows} kind="custom" title="Walking from student housing to the two voting sites">
-   <p className="walking-map-instructions">Click a <strong>housing building</strong> to show both routes. Hover or tap a line for its walking time and distance. Click <strong>Talley or Western Boulevard</strong> for all housing routes to that site.</p>
+   <p className="walking-map-instructions">Click a <strong>housing building</strong> to show both routes. Thin arrows connect time labels to their routes; hover or tap a line for distance. Click <strong>Talley or Western Boulevard</strong> for all housing routes to that site.</p>
    <p className="walking-data-date">GIS snapshot: {snapshot.campusWalking.retrievedAt.slice(0,10)} · current paths used for both destinations</p>
    {routeView==='selected'&&<div className="walking-selection-status" data-reviewed-rows aria-live="polite"><strong>{row.name}</strong><span>Western: {mins(Math.abs(row.difference_m),pace)} {row.difference_m>=0?'longer':'shorter'} one way</span>{row.estimated_access?<a href="references.html#housing-access-recovery">Estimated building-edge access</a>:row.recovered_mapped_entrance?<a href="references.html#housing-access-recovery">Recovered mapped entrance</a>:null}</div>}
    {routeView!=='selected'&&<p className="walking-route-overview" data-reviewed-rows>{routeView==='site'?<><strong>{displayRows.filter(r=>group==='All housing'||r.group===group).length} housing routes to {focusSite==='talley'?'Talley (2022)':'Western Boulevard (2026)'}</strong> · includes one recovered entrance and three estimated-access origins; hover a line for its building, time and distance.</>:routeView==='all'?<><strong>{displayRows.filter(r=>group==='All housing'||r.group===group).length*2} routes to both sites</strong> · includes one recovered GIS entrance and three labeled building-edge estimates.</>:<>Click another housing point to compare both walks, or a voting site to show all housing routes to it.</>}</p>}
-   <div className="campus-map-with-key"><div ref={host} className="walking-map" data-route-view={routeView} aria-label="NC State residence buildings and modeled walking routes to Talley and Western Boulevard"/><MapLegend showParking={showParking} compactControls><label><input type="checkbox" aria-label="Show all housing routes" checked={routeView==='all'} onChange={e=>setRouteView(e.target.checked?'all':'selected')}/> All housing routes</label></MapLegend></div>
+   <div className="campus-map-with-key"><div ref={host} className="walking-map" data-route-view={routeView} aria-label="NC State residence buildings and modeled walking routes to Talley and Western Boulevard"/><MapLegend showParking={showParking}/></div>
    <CampusMapCredit attribution={snapshot.campusBasemap.attribution} detail="NC State GIS paths and footprints"/>
    <CampusHousingBrowser rows={displayRows.filter(r=>group==='All housing'||r.group===group)} sites={sites} selected={selected} pace={pace} onSelect={selectHousing}/>
    <ParkingContext show={showParking} onShow={setShowParking} onZoom={zoomParking}/>
