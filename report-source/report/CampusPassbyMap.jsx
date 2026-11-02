@@ -39,7 +39,7 @@ export function CampusPassbyMap(){
   addSitePins(L,placeLayer,context.sitePoints,map,snapshot.campusSiteFootprints);
   return()=>{placeLayer.remove();placeMarkers.current=[];};
  },[context]);
- useEffect(()=>{const activeView=autoplay||view==='selected';for(const m of placeMarkers.current){const active=activeView&&m.id===(m.origin?example.origin_id:example.destination_id);if(m.type==='Residence')m.marker.setStyle({radius:active?7:4.5,color:active?'#243746':'#fff',weight:active?2.5:1.5,fillOpacity:active?1:.8});const el=m.marker.getElement();el.classList.toggle('campus-place-active',active);el.setAttribute('data-active-endpoint',String(active));}
+ useEffect(()=>{const activeView=autoplay||view==='selected';for(const m of placeMarkers.current){const active=activeView&&m.id===(m.origin?example.origin_id:example.destination_id);if(m.type==='Residence')m.marker.setStyle({radius:active?7:4.5,color:active?'#243746':'#fff',weight:active?2.5:1.5,fillOpacity:active?1:.8});if(m.type==='Residence'&&active)m.marker.bringToFront();if(m.type!=='Residence')m.marker.setZIndexOffset(active?1000:0);const el=m.marker.getElement();el.classList.toggle('campus-place-active',active);el.setAttribute('data-active-endpoint',String(active));}
  },[origin,destination,view,autoplay,kind,includeTalley]);
  useEffect(()=>{const map=mapRef.current,layer=layers.current;if(!map||!layer)return;layer.clearLayers();
   const routeGroup=L.featureGroup().addTo(layer);

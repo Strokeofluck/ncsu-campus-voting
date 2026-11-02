@@ -113,7 +113,7 @@
    squares for other GIS-classified destinations. Symbol centers stay on GIS centers. */
 .campus-place-marker{background:none;border:0;display:grid;place-items:center;}
 .campus-place-symbol{display:block;width:10px;height:10px;background:var(--place-color);border:1.5px solid #fff;box-sizing:border-box;box-shadow:0 0 0 1px #0002;}
-.campus-place-diamond{width:8px;height:8px;transform:rotate(45deg);border:1.5px solid white;}
+.campus-place-diamond{width:6px;height:6px;transform:rotate(45deg);border:1px solid white;}
 .campus-gis-label{display:block;font-size:10px;font-weight:400;color:#626765;margin-top:2px;}
 .voting-report .campus-map-key .campus-key-diamond{width:10px;height:10px;transform:rotate(45deg);background:currentColor;border:1px solid #fff;box-shadow:0 0 0 1px currentColor;}
 .voting-report .campus-map-key .campus-key-dot{width:10px;height:10px;border-radius:50%;background:currentColor;}
@@ -121,7 +121,7 @@
 .voting-report .campus-map-key li small{display:block;font-size:10px;color:var(--secondary);margin-top:2px;line-height:1.3;}
 
 /* Keep all modeled places hoverable; emphasize only the current trip endpoints. */
-.campus-place-active .campus-place-square{width:13px;height:13px;border-width:2px;box-shadow:0 0 0 2px #243746,0 0 0 4px #fff;}
+.campus-place-active .campus-place-square{width:12px;height:12px;border-width:1.5px;box-shadow:0 0 0 1.5px #243746;}
 .campus-place-marker:not(.campus-place-active):not(.campus-site-point) .campus-place-symbol{opacity:.8;}
 
 .voting-report .campus-map-key .campus-key-quick-controls{margin:0 0 10px;font-size:11px;}
@@ -193,3 +193,7 @@
 .walking-table td small{display:block;font-size:10px;color:var(--secondary);margin-top:3px;}
 
 .walking-group-locations .walking-building-mileage a{color:var(--text);text-decoration:underline;text-underline-offset:2px;}
+
+/* Hover information stays above routes, site markers and time callouts. */
+.campus-map-with-key .leaflet-tooltip-pane{z-index:900;}
+.campus-map-with-key .leaflet-popup-pane{z-index:910;}
