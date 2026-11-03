@@ -1,6 +1,6 @@
 .voting-editor-maps .technician-preview-header{margin-bottom:8px;}
 .voting-editor-maps .editor-maps-title{width:min(800px,100%);margin:0 auto;}
-.voting-editor-maps .editor-maps-title h1{font:700 30px/1.25 'Technician Story',Georgia,serif;white-space:normal;margin:8px 0 12px;}
+.voting-editor-maps .editor-maps-title h1{font:700 44px/1.35 'Technician Story',Georgia,serif;white-space:normal;margin:8px 0 12px;}
 .voting-editor-maps .article-routine-map{margin-top:24px!important;}
 .voting-article.voting-editor-maps .article-walk-average-label,.voting-editor-maps .technician-preview-sections a:hover{color:#000;}
-@media(max-width:600px){.voting-editor-maps .editor-maps-title h1{font-size:26px;}}
+@media(max-width:600px){.voting-editor-maps .editor-maps-title h1{font-size:32px;}}

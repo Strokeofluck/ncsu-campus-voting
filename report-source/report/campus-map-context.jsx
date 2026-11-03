@@ -16,7 +16,7 @@ export function bindWalkingRouteDetails(route,{title,time,distance,estimated,id,
  const attach=()=>{const el=route.getElement();if(!el)return;el.setAttribute('tabindex','0');el.setAttribute('role','img');el.setAttribute('aria-label',`${title}: GIS estimate ≈ ${time}, ${distance}${estimated?'; estimated building-edge access':''}`);el.setAttribute('data-route-site',id);el.setAttribute('data-origin-id',origin);};
  route.on('add',attach);if(route.getElement())attach();
 }
-export const CampusMapCredit=React.memo(function CampusMapCredit({attribution,detail}){return <div className="walking-map-credit"><a href="https://leafletjs.com/">Leaflet</a> | <span dangerouslySetInnerHTML={{__html:attribution}}/> · {detail}</div>;});
+export const CampusMapCredit=React.memo(function CampusMapCredit({attribution,detail,links=true}){const credit=links?attribution:attribution.replace(/<\/?a\b[^>]*>/gi,'');return <div className="walking-map-credit">{links?<a href="https://leafletjs.com/">Leaflet</a>:'Leaflet'} | <span dangerouslySetInnerHTML={{__html:credit}}/> · {detail}</div>;});
 export function MapLegend({routine=false,zones=false,radius=50,basis='footprint',showParking,autoplayControl,children,compactControls=false,routePicker,controlsTitle='Route options'}){
  const {snapshot}=useDataApp(),parking=snapshot.campusParking.features.map(f=>f.properties),total=ids=>parking.filter(r=>ids.includes(r.objectid)).reduce((sum,r)=>sum+r.spaces,0);
  return <aside className={'campus-map-key'+(routine?' campus-map-key-routine':'')} aria-label={routine?'Routine map color key':'Walking map color key'}><details open><summary>Map key</summary><div className="campus-key-body">

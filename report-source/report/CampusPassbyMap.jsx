@@ -9,7 +9,7 @@ import {addParking,addSiteFootprints,addSitePins,bindRouteTooltip,bindOutlineToo
 const miles=v=>v>0&&v/1609.344<.001?'<0.001 mi':`${(v/1609.344).toFixed(3)} mi`;
 const colors={talley:'#2b5f97',western:'#b86626'};
 const seconds=1;
-export function CampusPassbyMap({article=false}){
+export function CampusPassbyMap({article=false,editorPreview=false}){
  const {snapshot}=useDataApp(),rows=snapshot.queries.campus_passby.rows,context=snapshot.campusPassby;
  const [radius,setRadius]=useState(50),[kind,setKind]=useState('All destinations'),[includeTalley,setIncludeTalley]=useState(false),[origin,setOrigin]=useState('112A'),[destination,setDestination]=useState('103');
  const [tourBy,setTourBy]=useState('all'),[view,setView]=useState('selected'),[basis,setBasis]=useState('footprint'),[reviewPage,setReviewPage]=useState(0);
@@ -60,7 +60,7 @@ export function CampusPassbyMap({article=false}){
   <DataComponent id="voting-article-routine-map" queryId="campus_passby" queryIds={['campus_passby','campus_destination_sources','campus_site_gis_uses','campus_parking']} sourceRowsByQuery={{campus_passby:rows,campus_destination_sources:snapshot.queries.campus_destination_sources.rows,campus_site_gis_uses:snapshot.queries.campus_site_gis_uses.rows,campus_parking:snapshot.queries.campus_parking.rows}} displayRows={eligible} kind="custom" title="Modeled routes near the two voting sites">
    <div className="passby-results" data-reviewed-rows>{[['talley','Talley (2022)'],['western','Western Boulevard (2026)']].map(([field,name])=><div key={field}><span>{name}</span><strong>{(hits(field)/eligible.length*100).toFixed(1)}%</strong><span>{hits(field)} of {eligible.length} modeled routes</span></div>)}</div>
    <div className="campus-map-with-key"><div ref={host} className="walking-map" data-route-view={view} data-route-count={eligible.length} aria-label="Modeled housing-to-classroom, dining and library routes, with 50-meter proximity zones"/><MapLegend routine radius={radius} basis={basis} showParking={showParking} routePicker={<><label>Housing<select aria-label="Example housing origin" value={example.origin_id} onFocus={()=>setAutoplay(false)} onChange={e=>manual(()=>{setOrigin(e.target.value);setView('selected');})}>{context.origins.map(r=><option value={r.id} key={r.id}>{r.name}</option>)}</select></label><label>Destination<select aria-label="Example destination" value={example.destination_id} onFocus={()=>setAutoplay(false)} onChange={e=>manual(()=>{setDestination(e.target.value);setView('selected');})}>{destinations.map(r=><option value={r.id} key={r.id}>{r.name}</option>)}</select></label></>} autoplayControl={<label><input aria-label="Autoplay article routine routes" type="checkbox" checked={autoplay} onChange={e=>{setReplaying(false);setAutoplay(e.target.checked);setView('selected');}}/> Autoplay</label>}/></div>
-   <CampusMapCredit attribution={snapshot.campusBasemap.attribution} detail="NC State GIS paths and footprints"/>
+   <CampusMapCredit attribution={snapshot.campusBasemap.attribution} detail="NC State GIS paths and footprints" links={!editorPreview}/>
 
   </DataComponent>
  </section>;
