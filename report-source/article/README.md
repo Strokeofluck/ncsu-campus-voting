@@ -1,5 +1,7 @@
 # Article — work in progress
 
+The article now follows the earlier `nc-voting-roadmap/editor-preview.html` Technician presentation: dark masthead and section navigation, a wrapped serif headline, Sean Ryan’s draft byline, and an 800px story column. `TechnicianHeader.jsx` and `technician-preview.css` own the authored presentation; local font/masthead imports are bundled. `editor-preview.html` is a permanent alias to the same article, avoiding a second copy of the story. The Data toolbar, evidence actions, maps, chart interactions, snapshot, app identity and original uploaded reference image remain intact.
+
 Published route: `article/index.html?view=1`. The article has a separate stable Data app identity from the prototype. Its reviewed snapshot is `../article-snapshot.json`.
 
 The article now uses `AgeGrowthChart.jsx`: five youngest-first pairs of horizontal bars comparing Talley → Western Boulevard's percentage growth with the same-age full Wake total. All ten bars share a zero-based 0–125% scale; direct values, exact site counts and signed gap wording are visible, and pointer/focus tooltips show original counts and the formula. `SiteAgeMaps.jsx` is retained as a prototype experiment at `../index.html?view=1#site-circle-maps`; the original home-precinct choropleths also remain in the prototype. All reviewed counts and matched periods are unchanged.

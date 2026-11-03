@@ -3,6 +3,7 @@ import {DataComponent,ReportSection,RichNarrative,useDataApp} from '../../data-a
 import {CampusPassbyMap} from './CampusPassbyMap.jsx';
 import {CampusWalkingMap} from './CampusWalkingMap.jsx';
 import {AgeGrowthChart} from './AgeGrowthChart.jsx';
+import {TechnicianHeader} from './TechnicianHeader.jsx';
 import './article.css';
 
 function YoungestBenchmark({row}){
@@ -27,10 +28,13 @@ export function ReportContent(){
 
 The gap extended beyond college-age voters. Growth from **Talley in 2022 to Western Boulevard in 2026** fell behind Wake’s same-age growth among voters **25–34, 35–44 and 45–64**. Voters **65 and older** were the exception: **76.0%** growth at the two locations, versus **53.4%** countywide. All five groups cast more early ballots; the difference is how quickly their counts grew.`}/></ReportSection>;
  return <article className="report-content voting-report voting-article" aria-label="Article work in progress: NC State early voting">
-  <nav className="voting-page-nav" aria-label="Page links"><a href="index.html?view=1&v=20261102parking5" aria-current="page">Article · Work in progress</a><a href="../references.html?v=20261102parking5">References and step-by-step math</a></nav>
+  <TechnicianHeader/>
+  <nav className="voting-page-nav technician-preview-links" aria-label="Preview and evidence"><a href="../editor-preview.html" aria-current="page">Editor preview · Draft</a><a href="../references.html?v=20261102parking5">References and step-by-step math</a></nav>
   <ReportSection id="voting-article-intro" queryId="article_opening_context" queryIds={['article_opening_context','campus_parking','age_growth_benchmarks']} sourceRowsByQuery={{article_opening_context:snapshot.queries.article_opening_context.rows,campus_parking:snapshot.queries.campus_parking.rows,age_growth_benchmarks:rows}} showHeading={false} title="Talley to Western Boulevard: college-age voting growth trails Wake"><RichNarrative id="voting-article-intro:body" value={`# Talley to Western Boulevard: college-age voting growth trails Wake
 
-Growth at the replacement site lagged Wake County’s in every age group under 65, with the largest gap among voters ages 18–24.
+Growth at the replacement site lagged Wake County’s in every age group under 65, with the largest gap among voters ages 18–24.`}/>
+   <div className="technician-preview-byline"><a href="https://technicianonline.com/staff_name/sean-ryan/">Sean Ryan</a>, Correspondent · Draft</div>
+   <RichNarrative id="voting-article-intro:opening" value={`
 
 **[Update this opening after the Nov. 3 election.]** Early voting has ended in North Carolina with a record number of ballots for a midterm, [WRAL reported October 31](https://www.wral.com/news/nccapitol/end-early-voting-nc-last-day-register-how-to-guide-midterms-mail-id-2026/). With Election Day still ahead, the preliminary numbers offer a first look at voting after NC State’s early-voting site moved from **Talley Student Union to Western Boulevard Business Services**.
 
@@ -53,5 +57,6 @@ A simulation modeled **756 routes from housing to classroom and dining buildings
   <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`These figures describe early-ballot counts and location use. They do not establish whether the relocation caused the growth gap. Ages 18–24 are an age proxy, not verified student enrollment.
 
 [Follow the original counts and calculations, step by step](../references.html?v=20261102parking5).`}/></ReportSection>
+  <footer className="technician-preview-footer">Editor preview · Work in progress · <a href="../references.html#statewide-early-voting">Sources and original chart reference</a></footer>
  </article>;
 }

@@ -153,7 +153,7 @@
 .voting-article .growth-ahead{color:light-dark(#19663c,#7ccf9a);font-weight:600;}
 
 /* Use the full article frame for the desktop headline; keep the story text narrow. */
-.voting-article .report-narrative-section:has(h1) .rich-narrative{width:100%;max-width:100%;}
+.voting-article .report-narrative-section:has(h1) .rich-narrative{width:min(800px,100%);max-width:800px;}
 .voting-article .report-narrative-section:has(h1) .rich-narrative-content>p{max-width:800px;margin-inline:auto;}
 @media(min-width:1000px){.voting-article h1{font-size:clamp(28px,2.55vw,36px);white-space:nowrap;letter-spacing:-.025em;}}
 

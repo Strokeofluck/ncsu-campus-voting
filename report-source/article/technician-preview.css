@@ -1,0 +1,21 @@
+@font-face{font-family:'Technician Story';font-style:normal;font-weight:400 700;font-display:swap;src:url('./assets/source-serif-4-latin.woff2') format('woff2');}
+.voting-article .technician-preview-header{background:#231f20;color:#fff;width:100%;margin:0 0 40px;}
+.voting-article .technician-preview-logo{padding:0 24px;}
+.voting-article .technician-preview-logo a{display:inline-block;vertical-align:top;}
+.voting-article .technician-preview-logo img{display:block;width:396px;max-width:100%;height:auto;}
+.voting-article .technician-preview-sections{display:flex;flex-wrap:wrap;gap:0 30px;padding:14px 32px;border-top:1px solid #b7b4b4;}
+.voting-article .technician-preview-sections a{font:16px/1.4 'Technician Story',Georgia,serif;text-transform:uppercase;text-decoration:none;color:#fff;}
+.voting-article .technician-preview-sections a:hover{text-decoration:underline;}
+.voting-article .technician-preview-byline{width:min(800px,100%);font:16px/1.6 'Technician Story',Georgia,serif;margin:18px auto 24px;}
+.voting-article .technician-preview-byline a{color:light-dark(#b00000,#ff9292);text-decoration:none;}
+.voting-article .technician-preview-byline a:hover{text-decoration:underline;}
+.voting-article .technician-preview-links{width:min(800px,100%);margin-inline:auto;font:12px/1.5 Arial,sans-serif;gap:12px 24px;}
+.voting-article .report-narrative-section .rich-narrative{width:min(800px,100%);max-width:800px;margin-inline:auto;}
+.voting-article .report-narrative-section:has(h1) .rich-narrative{width:min(800px,100%);max-width:800px;}
+.voting-article .report-narrative-section .rich-narrative-content{font-family:'Technician Story',Georgia,serif;font-size:20px;line-height:1.5;}
+.voting-article .report-narrative-section .rich-narrative-content>p{margin:0 0 22px;}
+.voting-article .report-narrative-section .rich-narrative-content>h1{font-family:'Technician Story',Georgia,serif;font-size:44px;font-weight:700;line-height:1.2;letter-spacing:-.02em;white-space:normal;margin:0 0 16px;}
+.voting-article .report-narrative-section .rich-narrative-content>h2{font-family:'Technician Story',Georgia,serif;font-size:28px;font-weight:700;line-height:1.3;}
+.voting-article .technician-preview-dek{font:20px/1.45 'Technician Story',Georgia,serif;color:var(--secondary);margin:0;}
+.voting-article .technician-preview-footer{width:min(800px,100%);margin:24px auto 0;border-top:3px solid #231f20;padding-top:16px;font:13px/1.6 Arial,sans-serif;}
+@media(max-width:600px){.voting-article .technician-preview-header{margin-bottom:14px;}.voting-article .technician-preview-logo{padding-inline:18px;}.voting-article .technician-preview-logo img{width:280px;}.voting-article .technician-preview-sections{gap:10px 20px;padding:12px 18px;}.voting-article .technician-preview-sections a{font-size:12px;}.voting-article .report-narrative-section .rich-narrative-content{font-size:18px;line-height:1.55;}.voting-article .report-narrative-section .rich-narrative-content>h1{font-size:32px;line-height:1.2;}.voting-article .report-narrative-section .rich-narrative-content>h2{font-size:24px;}.voting-article .technician-preview-dek{font-size:18px;}.voting-article .technician-preview-byline{font-size:14px;margin:14px auto 22px;}}
