@@ -1,11 +1,11 @@
 @font-face{font-family:'Technician Story';font-style:normal;font-weight:400 700;font-display:swap;src:url('./assets/source-serif-4-latin.woff2') format('woff2');}
-.voting-article .technician-preview-header{background:#231f20;color:#fff;width:100%;margin:0 0 40px;}
+.voting-article .technician-preview-header{background:#fff;color:#242424;width:100%;margin:0 0 40px;}
 .voting-article .technician-preview-logo{padding:0 24px;}
 .voting-article .technician-preview-logo a{display:inline-block;vertical-align:top;}
-.voting-article .technician-preview-logo img{display:block;width:396px;max-width:100%;height:auto;}
-.voting-article .technician-preview-sections{display:flex;flex-wrap:wrap;gap:0 30px;padding:14px 32px;border-top:1px solid #b7b4b4;}
-.voting-article .technician-preview-sections a{font:16px/1.4 'Technician Story',Georgia,serif;text-transform:uppercase;text-decoration:none;color:#fff;}
-.voting-article .technician-preview-sections a:hover{text-decoration:underline;}
+.voting-article .technician-preview-logo img{display:block;width:396px;max-width:100%;height:auto;filter:invert(1);}
+.voting-article .technician-preview-sections{display:flex;flex-wrap:wrap;gap:0 30px;padding:14px 32px;border-block:1px solid #dedede;}
+.voting-article .technician-preview-sections a{font:16px/1.4 'Technician Story',Georgia,serif;text-transform:uppercase;text-decoration:none;color:#242424;}
+.voting-article .technician-preview-sections a:hover{color:#b00000;text-decoration:underline;}
 .voting-article .technician-preview-byline{width:min(800px,100%);font:16px/1.6 'Technician Story',Georgia,serif;margin:18px auto 24px;}
 .voting-article .technician-preview-byline a{color:light-dark(#b00000,#ff9292);text-decoration:none;}
 .voting-article .technician-preview-byline a:hover{text-decoration:underline;}

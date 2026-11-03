@@ -1,6 +1,7 @@
 """Copy authored article content and its shared map dependencies into a prepared app."""
 import argparse,re,shutil
 from pathlib import Path
+from apply_voting_palette import apply_palette
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('--project-dir',type=Path,required=True);args=p.parse_args()
 target=args.project_dir/'src/content/report';target.mkdir(parents=True,exist_ok=True)
@@ -15,4 +16,5 @@ while pending:
   dependency=(source.parent/name).resolve()
   if dependency.is_relative_to(shared.resolve()) and dependency.is_file():pending.append(dependency)
 shutil.copyfile(ROOT/'report-source/article-snapshot.json',args.project_dir/'src/data.json')
+apply_palette(args.project_dir)
 print('Prepared article and',len(done),'shared authored map files; identity and runtime preserved.')
