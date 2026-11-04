@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-30",
-  "matched_days": 16,
+  "as_of": "2026-10-31",
+  "matched_days": 17,
   "rows": [
     {
       "year": 2022,
@@ -645,6 +645,46 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 427,
+      "cumulative": 4596
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 114,
+      "cumulative": 1119
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 504,
+      "cumulative": 4624
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 6,
+      "cumulative": 51
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "18–24",
       "day": 1,
       "date": "2022-10-20",
@@ -1281,6 +1321,46 @@
       "party_registration": "Other registered parties",
       "votes": 2,
       "cumulative": 23
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 133,
+      "cumulative": 1202
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 36,
+      "cumulative": 293
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 233,
+      "cumulative": 1883
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 1,
+      "cumulative": 24
     },
     {
       "year": 2022,
@@ -1925,6 +2005,46 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 139,
+      "cumulative": 1061
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 15,
+      "cumulative": 174
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 131,
+      "cumulative": 960
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 1,
+      "cumulative": 8
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "35–44",
       "day": 1,
       "date": "2022-10-20",
@@ -2561,6 +2681,46 @@
       "party_registration": "Other registered parties",
       "votes": 1,
       "cumulative": 8
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 58,
+      "cumulative": 532
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 14,
+      "cumulative": 91
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 53,
+      "cumulative": 499
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 2,
+      "cumulative": 10
     },
     {
       "year": 2022,
@@ -3205,6 +3365,46 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 78,
+      "cumulative": 1081
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 40,
+      "cumulative": 397
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 72,
+      "cumulative": 958
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 1,
+      "cumulative": 7
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "65+",
       "day": 1,
       "date": "2022-10-20",
@@ -3845,6 +4045,46 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 19,
+      "cumulative": 720
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 9,
+      "cumulative": 164
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 15,
+      "cumulative": 324
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 1,
+      "cumulative": 2
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2022-10-20",
@@ -4478,6 +4718,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2022-11-04",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -5124,6 +5404,46 @@
     },
     {
       "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 83,
+      "cumulative": 877
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 29,
+      "cumulative": 246
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 178,
+      "cumulative": 1464
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 1,
+      "cumulative": 17
+    },
+    {
+      "year": 2022,
       "scope": "Wake County",
       "cohort": "All ages",
       "day": 1,
@@ -5761,6 +6081,46 @@
       "party_registration": "Other registered parties",
       "votes": 104,
       "cumulative": 725
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 8276,
+      "cumulative": 91683
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 3082,
+      "cumulative": 48191
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 7389,
+      "cumulative": 78468
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 102,
+      "cumulative": 827
     },
     {
       "year": 2022,
@@ -6405,6 +6765,46 @@
     {
       "year": 2022,
       "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 818,
+      "cumulative": 5011
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 247,
+      "cumulative": 1755
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 1026,
+      "cumulative": 6530
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 20,
+      "cumulative": 102
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
       "cohort": "25–34",
       "day": 1,
       "date": "2022-10-20",
@@ -7041,6 +7441,46 @@
       "party_registration": "Other registered parties",
       "votes": 26,
       "cumulative": 172
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 1594,
+      "cumulative": 10645
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 406,
+      "cumulative": 3166
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 1705,
+      "cumulative": 10744
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 30,
+      "cumulative": 202
     },
     {
       "year": 2022,
@@ -7685,6 +8125,46 @@
     {
       "year": 2022,
       "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 1677,
+      "cumulative": 12870
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 423,
+      "cumulative": 4552
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 1562,
+      "cumulative": 13283
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 24,
+      "cumulative": 187
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
       "cohort": "45–64",
       "day": 1,
       "date": "2022-10-20",
@@ -8321,6 +8801,46 @@
       "party_registration": "Other registered parties",
       "votes": 26,
       "cumulative": 243
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 3187,
+      "cumulative": 34679
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 1556,
+      "cumulative": 20642
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 2626,
+      "cumulative": 30232
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 23,
+      "cumulative": 266
     },
     {
       "year": 2022,
@@ -8965,6 +9485,46 @@
     {
       "year": 2022,
       "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 1000,
+      "cumulative": 28478
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 450,
+      "cumulative": 18076
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 470,
+      "cumulative": 17679
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 5,
+      "cumulative": 70
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2022-10-20",
@@ -9598,6 +10158,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2022-11-04",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -10244,6 +10844,46 @@
     },
     {
       "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 536,
+      "cumulative": 3399
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 167,
+      "cumulative": 1238
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 719,
+      "cumulative": 4584
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 12,
+      "cumulative": 65
+    },
+    {
+      "year": 2022,
       "scope": "Other Wake sites",
       "cohort": "All ages",
       "day": 1,
@@ -10881,6 +11521,46 @@
       "party_registration": "Other registered parties",
       "votes": 99,
       "cumulative": 680
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 7849,
+      "cumulative": 87087
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 2968,
+      "cumulative": 47072
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 6885,
+      "cumulative": 73844
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 96,
+      "cumulative": 776
     },
     {
       "year": 2022,
@@ -11525,6 +12205,46 @@
     {
       "year": 2022,
       "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 685,
+      "cumulative": 3809
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 211,
+      "cumulative": 1462
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 793,
+      "cumulative": 4647
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 19,
+      "cumulative": 78
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
       "cohort": "25–34",
       "day": 1,
       "date": "2022-10-20",
@@ -12161,6 +12881,46 @@
       "party_registration": "Other registered parties",
       "votes": 25,
       "cumulative": 165
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 1455,
+      "cumulative": 9584
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 391,
+      "cumulative": 2992
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 1574,
+      "cumulative": 9784
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 29,
+      "cumulative": 194
     },
     {
       "year": 2022,
@@ -12805,6 +13565,46 @@
     {
       "year": 2022,
       "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 1619,
+      "cumulative": 12338
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 409,
+      "cumulative": 4461
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 1509,
+      "cumulative": 12784
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 22,
+      "cumulative": 177
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
       "cohort": "45–64",
       "day": 1,
       "date": "2022-10-20",
@@ -13441,6 +14241,46 @@
       "party_registration": "Other registered parties",
       "votes": 25,
       "cumulative": 237
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 3109,
+      "cumulative": 33598
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 1516,
+      "cumulative": 20245
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 2554,
+      "cumulative": 29274
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 22,
+      "cumulative": 259
     },
     {
       "year": 2022,
@@ -14085,6 +14925,46 @@
     {
       "year": 2022,
       "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 981,
+      "cumulative": 27758
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 441,
+      "cumulative": 17912
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 455,
+      "cumulative": 17355
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 4,
+      "cumulative": 68
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2022-10-20",
@@ -14718,6 +15598,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2022-11-04",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -15363,6 +16283,46 @@
       "cumulative": 37
     },
     {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Democratic",
+      "votes": 453,
+      "cumulative": 2522
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Republican",
+      "votes": 138,
+      "cumulative": 992
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Unaffiliated",
+      "votes": 541,
+      "cumulative": 3120
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "party_registration": "Other registered parties",
+      "votes": 11,
+      "cumulative": 48
+    },
+    {
       "year": 2024,
       "scope": "Campus site",
       "cohort": "All ages",
@@ -16001,6 +16961,46 @@
       "party_registration": "Other registered parties",
       "votes": 12,
       "cumulative": 134
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 401,
+      "cumulative": 7823
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 139,
+      "cumulative": 2518
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 720,
+      "cumulative": 11135
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 14,
+      "cumulative": 148
     },
     {
       "year": 2024,
@@ -16645,6 +17645,46 @@
     {
       "year": 2024,
       "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 135,
+      "cumulative": 2517
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 68,
+      "cumulative": 1169
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 395,
+      "cumulative": 5786
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 6,
+      "cumulative": 82
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
       "cohort": "25–34",
       "day": 1,
       "date": "2024-10-17",
@@ -17281,6 +18321,46 @@
       "party_registration": "Other registered parties",
       "votes": 3,
       "cumulative": 36
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 131,
+      "cumulative": 1785
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 26,
+      "cumulative": 385
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 190,
+      "cumulative": 2109
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 6,
+      "cumulative": 42
     },
     {
       "year": 2024,
@@ -17925,6 +19005,46 @@
     {
       "year": 2024,
       "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 61,
+      "cumulative": 886
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 18,
+      "cumulative": 189
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 52,
+      "cumulative": 938
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 2,
+      "cumulative": 12
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
       "cohort": "45–64",
       "day": 1,
       "date": "2024-10-17",
@@ -18560,6 +19680,46 @@
       "date": "2024-11-01",
       "party_registration": "Other registered parties",
       "votes": 1,
+      "cumulative": 10
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 53,
+      "cumulative": 1609
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 23,
+      "cumulative": 538
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 74,
+      "cumulative": 1733
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 0,
       "cumulative": 10
     },
     {
@@ -19205,6 +20365,46 @@
     {
       "year": 2024,
       "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 21,
+      "cumulative": 1026
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 4,
+      "cumulative": 237
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 9,
+      "cumulative": 569
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 2
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2024-10-17",
@@ -19838,6 +21038,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2024-11-01",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -20484,6 +21724,46 @@
     },
     {
       "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 94,
+      "cumulative": 1941
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 53,
+      "cumulative": 986
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 314,
+      "cumulative": 4884
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 4,
+      "cumulative": 64
+    },
+    {
+      "year": 2024,
       "scope": "Wake County",
       "cohort": "All ages",
       "day": 1,
@@ -21121,6 +22401,46 @@
       "party_registration": "Other registered parties",
       "votes": 444,
       "cumulative": 3427
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 9856,
+      "cumulative": 170534
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 4748,
+      "cumulative": 104760
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 12269,
+      "cumulative": 186967
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 387,
+      "cumulative": 3814
     },
     {
       "year": 2024,
@@ -21765,6 +23085,46 @@
     {
       "year": 2024,
       "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 1250,
+      "cumulative": 13313
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 593,
+      "cumulative": 7330
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 2284,
+      "cumulative": 23454
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 68,
+      "cumulative": 563
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
       "cohort": "25–34",
       "day": 1,
       "date": "2024-10-17",
@@ -22401,6 +23761,46 @@
       "party_registration": "Other registered parties",
       "votes": 160,
       "cumulative": 945
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 2572,
+      "cumulative": 26423
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 992,
+      "cumulative": 11638
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 3249,
+      "cumulative": 32487
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 139,
+      "cumulative": 1084
     },
     {
       "year": 2024,
@@ -23045,6 +24445,46 @@
     {
       "year": 2024,
       "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 2189,
+      "cumulative": 27898
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 869,
+      "cumulative": 12856
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 2620,
+      "cumulative": 34057
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 87,
+      "cumulative": 932
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
       "cohort": "45–64",
       "day": 1,
       "date": "2024-10-17",
@@ -23681,6 +25121,46 @@
       "party_registration": "Other registered parties",
       "votes": 97,
       "cumulative": 952
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 3064,
+      "cumulative": 59526
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 1840,
+      "cumulative": 41514
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 3613,
+      "cumulative": 65350
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 86,
+      "cumulative": 1038
     },
     {
       "year": 2024,
@@ -24325,6 +25805,46 @@
     {
       "year": 2024,
       "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 781,
+      "cumulative": 43374
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 454,
+      "cumulative": 31422
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 503,
+      "cumulative": 31619
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 7,
+      "cumulative": 197
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2024-10-17",
@@ -24958,6 +26478,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2024-11-01",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -25604,6 +27164,46 @@
     },
     {
       "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 749,
+      "cumulative": 8750
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 367,
+      "cumulative": 4948
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 1562,
+      "cumulative": 16802
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 55,
+      "cumulative": 416
+    },
+    {
+      "year": 2024,
       "scope": "Other Wake sites",
       "cohort": "All ages",
       "day": 1,
@@ -26241,6 +27841,46 @@
       "party_registration": "Other registered parties",
       "votes": 432,
       "cumulative": 3293
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 9455,
+      "cumulative": 162711
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 4609,
+      "cumulative": 102242
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 11549,
+      "cumulative": 175832
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 373,
+      "cumulative": 3666
     },
     {
       "year": 2024,
@@ -26885,6 +28525,46 @@
     {
       "year": 2024,
       "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 1115,
+      "cumulative": 10796
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 525,
+      "cumulative": 6161
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 1889,
+      "cumulative": 17668
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 62,
+      "cumulative": 481
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
       "cohort": "25–34",
       "day": 1,
       "date": "2024-10-17",
@@ -27521,6 +29201,46 @@
       "party_registration": "Other registered parties",
       "votes": 157,
       "cumulative": 909
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 2441,
+      "cumulative": 24638
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 966,
+      "cumulative": 11253
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 3059,
+      "cumulative": 30378
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 133,
+      "cumulative": 1042
     },
     {
       "year": 2024,
@@ -28165,6 +29885,46 @@
     {
       "year": 2024,
       "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 2128,
+      "cumulative": 27012
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 851,
+      "cumulative": 12667
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 2568,
+      "cumulative": 33119
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 85,
+      "cumulative": 920
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
       "cohort": "45–64",
       "day": 1,
       "date": "2024-10-17",
@@ -28801,6 +30561,46 @@
       "party_registration": "Other registered parties",
       "votes": 96,
       "cumulative": 942
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 3011,
+      "cumulative": 57917
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 1817,
+      "cumulative": 40976
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 3539,
+      "cumulative": 63617
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 86,
+      "cumulative": 1028
     },
     {
       "year": 2024,
@@ -29445,6 +31245,46 @@
     {
       "year": 2024,
       "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 760,
+      "cumulative": 42348
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 450,
+      "cumulative": 31185
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 494,
+      "cumulative": 31050
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 7,
+      "cumulative": 195
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2024-10-17",
@@ -30078,6 +31918,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2024-11-01",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -30723,6 +32603,46 @@
       "cumulative": 301
     },
     {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Democratic",
+      "votes": 655,
+      "cumulative": 6809
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Republican",
+      "votes": 314,
+      "cumulative": 3962
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Unaffiliated",
+      "votes": 1248,
+      "cumulative": 11918
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "party_registration": "Other registered parties",
+      "votes": 51,
+      "cumulative": 352
+    },
+    {
       "year": 2026,
       "scope": "Campus site",
       "cohort": "All ages",
@@ -30809,8 +32729,8 @@
       "day": 3,
       "date": "2026-10-17",
       "party_registration": "Democratic",
-      "votes": 208,
-      "cumulative": 1004
+      "votes": 209,
+      "cumulative": 1005
     },
     {
       "year": 2026,
@@ -30850,7 +32770,7 @@
       "date": "2026-10-18",
       "party_registration": "Democratic",
       "votes": 189,
-      "cumulative": 1193
+      "cumulative": 1194
     },
     {
       "year": 2026,
@@ -30890,7 +32810,7 @@
       "date": "2026-10-19",
       "party_registration": "Democratic",
       "votes": 341,
-      "cumulative": 1534
+      "cumulative": 1535
     },
     {
       "year": 2026,
@@ -30930,7 +32850,7 @@
       "date": "2026-10-20",
       "party_registration": "Democratic",
       "votes": 357,
-      "cumulative": 1891
+      "cumulative": 1892
     },
     {
       "year": 2026,
@@ -30970,7 +32890,7 @@
       "date": "2026-10-21",
       "party_registration": "Democratic",
       "votes": 332,
-      "cumulative": 2223
+      "cumulative": 2224
     },
     {
       "year": 2026,
@@ -31010,7 +32930,7 @@
       "date": "2026-10-22",
       "party_registration": "Democratic",
       "votes": 322,
-      "cumulative": 2545
+      "cumulative": 2546
     },
     {
       "year": 2026,
@@ -31050,7 +32970,7 @@
       "date": "2026-10-23",
       "party_registration": "Democratic",
       "votes": 448,
-      "cumulative": 2993
+      "cumulative": 2994
     },
     {
       "year": 2026,
@@ -31090,7 +33010,7 @@
       "date": "2026-10-24",
       "party_registration": "Democratic",
       "votes": 267,
-      "cumulative": 3260
+      "cumulative": 3261
     },
     {
       "year": 2026,
@@ -31130,7 +33050,7 @@
       "date": "2026-10-25",
       "party_registration": "Democratic",
       "votes": 205,
-      "cumulative": 3465
+      "cumulative": 3466
     },
     {
       "year": 2026,
@@ -31170,7 +33090,7 @@
       "date": "2026-10-26",
       "party_registration": "Democratic",
       "votes": 422,
-      "cumulative": 3887
+      "cumulative": 3888
     },
     {
       "year": 2026,
@@ -31210,7 +33130,7 @@
       "date": "2026-10-27",
       "party_registration": "Democratic",
       "votes": 420,
-      "cumulative": 4307
+      "cumulative": 4308
     },
     {
       "year": 2026,
@@ -31250,7 +33170,7 @@
       "date": "2026-10-28",
       "party_registration": "Democratic",
       "votes": 454,
-      "cumulative": 4761
+      "cumulative": 4762
     },
     {
       "year": 2026,
@@ -31289,8 +33209,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 516,
-      "cumulative": 5277
+      "votes": 514,
+      "cumulative": 5276
     },
     {
       "year": 2026,
@@ -31309,8 +33229,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 667,
-      "cumulative": 5689
+      "votes": 669,
+      "cumulative": 5691
     },
     {
       "year": 2026,
@@ -31330,7 +33250,7 @@
       "date": "2026-10-30",
       "party_registration": "Democratic",
       "votes": 531,
-      "cumulative": 5808
+      "cumulative": 5807
     },
     {
       "year": 2026,
@@ -31350,7 +33270,7 @@
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
       "votes": 840,
-      "cumulative": 6529
+      "cumulative": 6531
     },
     {
       "year": 2026,
@@ -31361,6 +33281,46 @@
       "party_registration": "Other registered parties",
       "votes": 12,
       "cumulative": 61
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 463,
+      "cumulative": 6270
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 87,
+      "cumulative": 955
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 672,
+      "cumulative": 7203
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 7,
+      "cumulative": 68
     },
     {
       "year": 2026,
@@ -31449,8 +33409,8 @@
       "day": 3,
       "date": "2026-10-17",
       "party_registration": "Democratic",
-      "votes": 31,
-      "cumulative": 146
+      "votes": 32,
+      "cumulative": 147
     },
     {
       "year": 2026,
@@ -31490,7 +33450,7 @@
       "date": "2026-10-18",
       "party_registration": "Democratic",
       "votes": 25,
-      "cumulative": 171
+      "cumulative": 172
     },
     {
       "year": 2026,
@@ -31530,7 +33490,7 @@
       "date": "2026-10-19",
       "party_registration": "Democratic",
       "votes": 54,
-      "cumulative": 225
+      "cumulative": 226
     },
     {
       "year": 2026,
@@ -31570,7 +33530,7 @@
       "date": "2026-10-20",
       "party_registration": "Democratic",
       "votes": 72,
-      "cumulative": 297
+      "cumulative": 298
     },
     {
       "year": 2026,
@@ -31610,7 +33570,7 @@
       "date": "2026-10-21",
       "party_registration": "Democratic",
       "votes": 87,
-      "cumulative": 384
+      "cumulative": 385
     },
     {
       "year": 2026,
@@ -31650,7 +33610,7 @@
       "date": "2026-10-22",
       "party_registration": "Democratic",
       "votes": 84,
-      "cumulative": 468
+      "cumulative": 469
     },
     {
       "year": 2026,
@@ -31690,7 +33650,7 @@
       "date": "2026-10-23",
       "party_registration": "Democratic",
       "votes": 138,
-      "cumulative": 606
+      "cumulative": 607
     },
     {
       "year": 2026,
@@ -31730,7 +33690,7 @@
       "date": "2026-10-24",
       "party_registration": "Democratic",
       "votes": 61,
-      "cumulative": 667
+      "cumulative": 668
     },
     {
       "year": 2026,
@@ -31770,7 +33730,7 @@
       "date": "2026-10-25",
       "party_registration": "Democratic",
       "votes": 45,
-      "cumulative": 712
+      "cumulative": 713
     },
     {
       "year": 2026,
@@ -31810,7 +33770,7 @@
       "date": "2026-10-26",
       "party_registration": "Democratic",
       "votes": 102,
-      "cumulative": 814
+      "cumulative": 815
     },
     {
       "year": 2026,
@@ -31850,7 +33810,7 @@
       "date": "2026-10-27",
       "party_registration": "Democratic",
       "votes": 114,
-      "cumulative": 928
+      "cumulative": 929
     },
     {
       "year": 2026,
@@ -31890,7 +33850,7 @@
       "date": "2026-10-28",
       "party_registration": "Democratic",
       "votes": 178,
-      "cumulative": 1106
+      "cumulative": 1107
     },
     {
       "year": 2026,
@@ -31929,8 +33889,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 208,
-      "cumulative": 1314
+      "votes": 206,
+      "cumulative": 1313
     },
     {
       "year": 2026,
@@ -31949,8 +33909,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 321,
-      "cumulative": 2057
+      "votes": 323,
+      "cumulative": 2059
     },
     {
       "year": 2026,
@@ -31970,7 +33930,7 @@
       "date": "2026-10-30",
       "party_registration": "Democratic",
       "votes": 210,
-      "cumulative": 1524
+      "cumulative": 1523
     },
     {
       "year": 2026,
@@ -31990,7 +33950,7 @@
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
       "votes": 446,
-      "cumulative": 2503
+      "cumulative": 2505
     },
     {
       "year": 2026,
@@ -32000,6 +33960,46 @@
       "date": "2026-10-30",
       "party_registration": "Other registered parties",
       "votes": 3,
+      "cumulative": 22
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 134,
+      "cumulative": 1657
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 16,
+      "cumulative": 181
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 274,
+      "cumulative": 2779
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 0,
       "cumulative": 22
     },
     {
@@ -32645,6 +34645,46 @@
     {
       "year": 2026,
       "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 144,
+      "cumulative": 1398
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 18,
+      "cumulative": 125
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 192,
+      "cumulative": 1491
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 3,
+      "cumulative": 29
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
       "cohort": "35–44",
       "day": 1,
       "date": "2026-10-15",
@@ -33281,6 +35321,46 @@
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 9
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 54,
+      "cumulative": 729
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 10,
+      "cumulative": 68
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 72,
+      "cumulative": 788
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 3,
+      "cumulative": 12
     },
     {
       "year": 2026,
@@ -33925,6 +36005,46 @@
     {
       "year": 2026,
       "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 111,
+      "cumulative": 1328
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 34,
+      "cumulative": 316
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 113,
+      "cumulative": 1468
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 1,
+      "cumulative": 3
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
       "cohort": "65+",
       "day": 1,
       "date": "2026-10-15",
@@ -34565,6 +36685,46 @@
     {
       "year": 2026,
       "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 20,
+      "cumulative": 1158
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 9,
+      "cumulative": 265
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 21,
+      "cumulative": 677
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 2
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2026-10-15",
@@ -35198,6 +37358,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2026-10-30",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -35769,8 +37969,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 168,
-      "cumulative": 998
+      "votes": 167,
+      "cumulative": 997
     },
     {
       "year": 2026,
@@ -35789,8 +37989,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 247,
-      "cumulative": 1628
+      "votes": 248,
+      "cumulative": 1629
     },
     {
       "year": 2026,
@@ -35810,7 +38010,7 @@
       "date": "2026-10-30",
       "party_registration": "Democratic",
       "votes": 172,
-      "cumulative": 1170
+      "cumulative": 1169
     },
     {
       "year": 2026,
@@ -35830,7 +38030,7 @@
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
       "votes": 387,
-      "cumulative": 2015
+      "cumulative": 2016
     },
     {
       "year": 2026,
@@ -35838,6 +38038,46 @@
       "cohort": "18–22",
       "day": 16,
       "date": "2026-10-30",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 15
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 87,
+      "cumulative": 1256
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 11,
+      "cumulative": 151
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 199,
+      "cumulative": 2215
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 15
@@ -35869,8 +38109,8 @@
       "day": 1,
       "date": "2026-10-15",
       "party_registration": "Unaffiliated",
-      "votes": 8399,
-      "cumulative": 8399
+      "votes": 8398,
+      "cumulative": 8398
     },
     {
       "year": 2026,
@@ -35910,7 +38150,7 @@
       "date": "2026-10-16",
       "party_registration": "Unaffiliated",
       "votes": 9065,
-      "cumulative": 17464
+      "cumulative": 17463
     },
     {
       "year": 2026,
@@ -35929,8 +38169,8 @@
       "day": 3,
       "date": "2026-10-17",
       "party_registration": "Democratic",
-      "votes": 5496,
-      "cumulative": 26218
+      "votes": 5497,
+      "cumulative": 26219
     },
     {
       "year": 2026,
@@ -35950,7 +38190,7 @@
       "date": "2026-10-17",
       "party_registration": "Unaffiliated",
       "votes": 5358,
-      "cumulative": 22822
+      "cumulative": 22821
     },
     {
       "year": 2026,
@@ -35970,7 +38210,7 @@
       "date": "2026-10-18",
       "party_registration": "Democratic",
       "votes": 4714,
-      "cumulative": 30932
+      "cumulative": 30933
     },
     {
       "year": 2026,
@@ -35990,7 +38230,7 @@
       "date": "2026-10-18",
       "party_registration": "Unaffiliated",
       "votes": 4223,
-      "cumulative": 27045
+      "cumulative": 27044
     },
     {
       "year": 2026,
@@ -36010,7 +38250,7 @@
       "date": "2026-10-19",
       "party_registration": "Democratic",
       "votes": 9705,
-      "cumulative": 40637
+      "cumulative": 40638
     },
     {
       "year": 2026,
@@ -36030,7 +38270,7 @@
       "date": "2026-10-19",
       "party_registration": "Unaffiliated",
       "votes": 8726,
-      "cumulative": 35771
+      "cumulative": 35770
     },
     {
       "year": 2026,
@@ -36050,7 +38290,7 @@
       "date": "2026-10-20",
       "party_registration": "Democratic",
       "votes": 8914,
-      "cumulative": 49551
+      "cumulative": 49552
     },
     {
       "year": 2026,
@@ -36070,7 +38310,7 @@
       "date": "2026-10-20",
       "party_registration": "Unaffiliated",
       "votes": 8149,
-      "cumulative": 43920
+      "cumulative": 43919
     },
     {
       "year": 2026,
@@ -36090,7 +38330,7 @@
       "date": "2026-10-21",
       "party_registration": "Democratic",
       "votes": 8174,
-      "cumulative": 57725
+      "cumulative": 57726
     },
     {
       "year": 2026,
@@ -36109,8 +38349,8 @@
       "day": 7,
       "date": "2026-10-21",
       "party_registration": "Unaffiliated",
-      "votes": 7637,
-      "cumulative": 51557
+      "votes": 7636,
+      "cumulative": 51555
     },
     {
       "year": 2026,
@@ -36130,7 +38370,7 @@
       "date": "2026-10-22",
       "party_registration": "Democratic",
       "votes": 7278,
-      "cumulative": 65003
+      "cumulative": 65004
     },
     {
       "year": 2026,
@@ -36150,7 +38390,7 @@
       "date": "2026-10-22",
       "party_registration": "Unaffiliated",
       "votes": 7455,
-      "cumulative": 59012
+      "cumulative": 59010
     },
     {
       "year": 2026,
@@ -36170,7 +38410,7 @@
       "date": "2026-10-23",
       "party_registration": "Democratic",
       "votes": 8685,
-      "cumulative": 73688
+      "cumulative": 73689
     },
     {
       "year": 2026,
@@ -36189,8 +38429,8 @@
       "day": 9,
       "date": "2026-10-23",
       "party_registration": "Unaffiliated",
-      "votes": 8811,
-      "cumulative": 67823
+      "votes": 8810,
+      "cumulative": 67820
     },
     {
       "year": 2026,
@@ -36210,7 +38450,7 @@
       "date": "2026-10-24",
       "party_registration": "Democratic",
       "votes": 5594,
-      "cumulative": 79282
+      "cumulative": 79283
     },
     {
       "year": 2026,
@@ -36230,7 +38470,7 @@
       "date": "2026-10-24",
       "party_registration": "Unaffiliated",
       "votes": 5527,
-      "cumulative": 73350
+      "cumulative": 73347
     },
     {
       "year": 2026,
@@ -36250,7 +38490,7 @@
       "date": "2026-10-25",
       "party_registration": "Democratic",
       "votes": 4393,
-      "cumulative": 83675
+      "cumulative": 83676
     },
     {
       "year": 2026,
@@ -36270,7 +38510,7 @@
       "date": "2026-10-25",
       "party_registration": "Unaffiliated",
       "votes": 4534,
-      "cumulative": 77884
+      "cumulative": 77881
     },
     {
       "year": 2026,
@@ -36290,7 +38530,7 @@
       "date": "2026-10-26",
       "party_registration": "Democratic",
       "votes": 8229,
-      "cumulative": 91904
+      "cumulative": 91905
     },
     {
       "year": 2026,
@@ -36310,7 +38550,7 @@
       "date": "2026-10-26",
       "party_registration": "Unaffiliated",
       "votes": 8500,
-      "cumulative": 86384
+      "cumulative": 86381
     },
     {
       "year": 2026,
@@ -36330,7 +38570,7 @@
       "date": "2026-10-27",
       "party_registration": "Democratic",
       "votes": 8276,
-      "cumulative": 100180
+      "cumulative": 100181
     },
     {
       "year": 2026,
@@ -36350,7 +38590,7 @@
       "date": "2026-10-27",
       "party_registration": "Unaffiliated",
       "votes": 8828,
-      "cumulative": 95212
+      "cumulative": 95209
     },
     {
       "year": 2026,
@@ -36370,7 +38610,7 @@
       "date": "2026-10-28",
       "party_registration": "Democratic",
       "votes": 8416,
-      "cumulative": 108596
+      "cumulative": 108597
     },
     {
       "year": 2026,
@@ -36390,7 +38630,7 @@
       "date": "2026-10-28",
       "party_registration": "Unaffiliated",
       "votes": 9556,
-      "cumulative": 104768
+      "cumulative": 104765
     },
     {
       "year": 2026,
@@ -36409,8 +38649,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 9114,
-      "cumulative": 117710
+      "votes": 9102,
+      "cumulative": 117699
     },
     {
       "year": 2026,
@@ -36419,8 +38659,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 4878,
-      "cumulative": 45957
+      "votes": 4874,
+      "cumulative": 45953
     },
     {
       "year": 2026,
@@ -36429,8 +38669,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 10469,
-      "cumulative": 115237
+      "votes": 10485,
+      "cumulative": 115250
     },
     {
       "year": 2026,
@@ -36449,8 +38689,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 11352,
-      "cumulative": 129062
+      "votes": 11341,
+      "cumulative": 129040
     },
     {
       "year": 2026,
@@ -36459,8 +38699,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 5728,
-      "cumulative": 51685
+      "votes": 5727,
+      "cumulative": 51680
     },
     {
       "year": 2026,
@@ -36469,8 +38709,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 13739,
-      "cumulative": 128976
+      "votes": 13750,
+      "cumulative": 129000
     },
     {
       "year": 2026,
@@ -36479,8 +38719,48 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Other registered parties",
-      "votes": 134,
-      "cumulative": 1036
+      "votes": 133,
+      "cumulative": 1035
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 8990,
+      "cumulative": 138030
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 3773,
+      "cumulative": 55453
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 10451,
+      "cumulative": 139451
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 119,
+      "cumulative": 1154
     },
     {
       "year": 2026,
@@ -36509,8 +38789,8 @@
       "day": 1,
       "date": "2026-10-15",
       "party_registration": "Unaffiliated",
-      "votes": 477,
-      "cumulative": 477
+      "votes": 476,
+      "cumulative": 476
     },
     {
       "year": 2026,
@@ -36550,7 +38830,7 @@
       "date": "2026-10-16",
       "party_registration": "Unaffiliated",
       "votes": 660,
-      "cumulative": 1137
+      "cumulative": 1136
     },
     {
       "year": 2026,
@@ -36569,8 +38849,8 @@
       "day": 3,
       "date": "2026-10-17",
       "party_registration": "Democratic",
-      "votes": 414,
-      "cumulative": 1263
+      "votes": 415,
+      "cumulative": 1264
     },
     {
       "year": 2026,
@@ -36590,7 +38870,7 @@
       "date": "2026-10-17",
       "party_registration": "Unaffiliated",
       "votes": 599,
-      "cumulative": 1736
+      "cumulative": 1735
     },
     {
       "year": 2026,
@@ -36610,7 +38890,7 @@
       "date": "2026-10-18",
       "party_registration": "Democratic",
       "votes": 346,
-      "cumulative": 1609
+      "cumulative": 1610
     },
     {
       "year": 2026,
@@ -36630,7 +38910,7 @@
       "date": "2026-10-18",
       "party_registration": "Unaffiliated",
       "votes": 485,
-      "cumulative": 2221
+      "cumulative": 2220
     },
     {
       "year": 2026,
@@ -36650,7 +38930,7 @@
       "date": "2026-10-19",
       "party_registration": "Democratic",
       "votes": 432,
-      "cumulative": 2041
+      "cumulative": 2042
     },
     {
       "year": 2026,
@@ -36670,7 +38950,7 @@
       "date": "2026-10-19",
       "party_registration": "Unaffiliated",
       "votes": 652,
-      "cumulative": 2873
+      "cumulative": 2872
     },
     {
       "year": 2026,
@@ -36690,7 +38970,7 @@
       "date": "2026-10-20",
       "party_registration": "Democratic",
       "votes": 467,
-      "cumulative": 2508
+      "cumulative": 2509
     },
     {
       "year": 2026,
@@ -36710,7 +38990,7 @@
       "date": "2026-10-20",
       "party_registration": "Unaffiliated",
       "votes": 618,
-      "cumulative": 3491
+      "cumulative": 3490
     },
     {
       "year": 2026,
@@ -36730,7 +39010,7 @@
       "date": "2026-10-21",
       "party_registration": "Democratic",
       "votes": 397,
-      "cumulative": 2905
+      "cumulative": 2906
     },
     {
       "year": 2026,
@@ -36749,8 +39029,8 @@
       "day": 7,
       "date": "2026-10-21",
       "party_registration": "Unaffiliated",
-      "votes": 513,
-      "cumulative": 4004
+      "votes": 512,
+      "cumulative": 4002
     },
     {
       "year": 2026,
@@ -36770,7 +39050,7 @@
       "date": "2026-10-22",
       "party_registration": "Democratic",
       "votes": 394,
-      "cumulative": 3299
+      "cumulative": 3300
     },
     {
       "year": 2026,
@@ -36790,7 +39070,7 @@
       "date": "2026-10-22",
       "party_registration": "Unaffiliated",
       "votes": 573,
-      "cumulative": 4577
+      "cumulative": 4575
     },
     {
       "year": 2026,
@@ -36810,7 +39090,7 @@
       "date": "2026-10-23",
       "party_registration": "Democratic",
       "votes": 619,
-      "cumulative": 3918
+      "cumulative": 3919
     },
     {
       "year": 2026,
@@ -36829,8 +39109,8 @@
       "day": 9,
       "date": "2026-10-23",
       "party_registration": "Unaffiliated",
-      "votes": 871,
-      "cumulative": 5448
+      "votes": 870,
+      "cumulative": 5445
     },
     {
       "year": 2026,
@@ -36850,7 +39130,7 @@
       "date": "2026-10-24",
       "party_registration": "Democratic",
       "votes": 548,
-      "cumulative": 4466
+      "cumulative": 4467
     },
     {
       "year": 2026,
@@ -36870,7 +39150,7 @@
       "date": "2026-10-24",
       "party_registration": "Unaffiliated",
       "votes": 734,
-      "cumulative": 6182
+      "cumulative": 6179
     },
     {
       "year": 2026,
@@ -36890,7 +39170,7 @@
       "date": "2026-10-25",
       "party_registration": "Democratic",
       "votes": 472,
-      "cumulative": 4938
+      "cumulative": 4939
     },
     {
       "year": 2026,
@@ -36910,7 +39190,7 @@
       "date": "2026-10-25",
       "party_registration": "Unaffiliated",
       "votes": 701,
-      "cumulative": 6883
+      "cumulative": 6880
     },
     {
       "year": 2026,
@@ -36930,7 +39210,7 @@
       "date": "2026-10-26",
       "party_registration": "Democratic",
       "votes": 586,
-      "cumulative": 5524
+      "cumulative": 5525
     },
     {
       "year": 2026,
@@ -36950,7 +39230,7 @@
       "date": "2026-10-26",
       "party_registration": "Unaffiliated",
       "votes": 784,
-      "cumulative": 7667
+      "cumulative": 7664
     },
     {
       "year": 2026,
@@ -36970,7 +39250,7 @@
       "date": "2026-10-27",
       "party_registration": "Democratic",
       "votes": 614,
-      "cumulative": 6138
+      "cumulative": 6139
     },
     {
       "year": 2026,
@@ -36990,7 +39270,7 @@
       "date": "2026-10-27",
       "party_registration": "Unaffiliated",
       "votes": 772,
-      "cumulative": 8439
+      "cumulative": 8436
     },
     {
       "year": 2026,
@@ -37010,7 +39290,7 @@
       "date": "2026-10-28",
       "party_registration": "Democratic",
       "votes": 719,
-      "cumulative": 6857
+      "cumulative": 6858
     },
     {
       "year": 2026,
@@ -37030,7 +39310,7 @@
       "date": "2026-10-28",
       "party_registration": "Unaffiliated",
       "votes": 1013,
-      "cumulative": 9452
+      "cumulative": 9449
     },
     {
       "year": 2026,
@@ -37049,8 +39329,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 822,
-      "cumulative": 7679
+      "votes": 818,
+      "cumulative": 7676
     },
     {
       "year": 2026,
@@ -37059,8 +39339,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 176,
-      "cumulative": 1240
+      "votes": 175,
+      "cumulative": 1239
     },
     {
       "year": 2026,
@@ -37069,8 +39349,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 1212,
-      "cumulative": 10664
+      "votes": 1217,
+      "cumulative": 10666
     },
     {
       "year": 2026,
@@ -37089,8 +39369,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 1154,
-      "cumulative": 8833
+      "votes": 1151,
+      "cumulative": 8827
     },
     {
       "year": 2026,
@@ -37100,7 +39380,7 @@
       "date": "2026-10-30",
       "party_registration": "Republican",
       "votes": 283,
-      "cumulative": 1523
+      "cumulative": 1522
     },
     {
       "year": 2026,
@@ -37109,8 +39389,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 1848,
-      "cumulative": 12512
+      "votes": 1851,
+      "cumulative": 12517
     },
     {
       "year": 2026,
@@ -37121,6 +39401,46 @@
       "party_registration": "Other registered parties",
       "votes": 13,
       "cumulative": 112
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 873,
+      "cumulative": 9700
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 203,
+      "cumulative": 1725
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 1503,
+      "cumulative": 14020
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 13,
+      "cumulative": 125
     },
     {
       "year": 2026,
@@ -37689,8 +40009,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 1788,
-      "cumulative": 15047
+      "votes": 1783,
+      "cumulative": 15042
     },
     {
       "year": 2026,
@@ -37709,8 +40029,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 1920,
-      "cumulative": 15039
+      "votes": 1925,
+      "cumulative": 15044
     },
     {
       "year": 2026,
@@ -37729,8 +40049,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 2444,
-      "cumulative": 17491
+      "votes": 2441,
+      "cumulative": 17483
     },
     {
       "year": 2026,
@@ -37739,8 +40059,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 512,
-      "cumulative": 2600
+      "votes": 511,
+      "cumulative": 2599
     },
     {
       "year": 2026,
@@ -37749,8 +40069,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 2842,
-      "cumulative": 17881
+      "votes": 2847,
+      "cumulative": 17891
     },
     {
       "year": 2026,
@@ -37759,8 +40079,48 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Other registered parties",
-      "votes": 39,
-      "cumulative": 248
+      "votes": 38,
+      "cumulative": 247
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 2213,
+      "cumulative": 19696
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 451,
+      "cumulative": 3050
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 2431,
+      "cumulative": 20322
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 35,
+      "cumulative": 282
     },
     {
       "year": 2026,
@@ -38329,8 +40689,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 1739,
-      "cumulative": 16684
+      "votes": 1737,
+      "cumulative": 16682
     },
     {
       "year": 2026,
@@ -38349,8 +40709,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 2052,
-      "cumulative": 17916
+      "votes": 2054,
+      "cumulative": 17918
     },
     {
       "year": 2026,
@@ -38369,8 +40729,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 2388,
-      "cumulative": 19072
+      "votes": 2385,
+      "cumulative": 19067
     },
     {
       "year": 2026,
@@ -38379,8 +40739,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 739,
-      "cumulative": 3985
+      "votes": 738,
+      "cumulative": 3984
     },
     {
       "year": 2026,
@@ -38389,8 +40749,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 2913,
-      "cumulative": 20829
+      "votes": 2916,
+      "cumulative": 20834
     },
     {
       "year": 2026,
@@ -38401,6 +40761,46 @@
       "party_registration": "Other registered parties",
       "votes": 30,
       "cumulative": 244
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 1840,
+      "cumulative": 20907
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 492,
+      "cumulative": 4476
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 2125,
+      "cumulative": 22959
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 34,
+      "cumulative": 278
     },
     {
       "year": 2026,
@@ -38969,8 +41369,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 2983,
-      "cumulative": 39839
+      "votes": 2982,
+      "cumulative": 39838
     },
     {
       "year": 2026,
@@ -38979,8 +41379,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 2017,
-      "cumulative": 16515
+      "votes": 2016,
+      "cumulative": 16514
     },
     {
       "year": 2026,
@@ -38989,8 +41389,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 3670,
-      "cumulative": 42323
+      "votes": 3672,
+      "cumulative": 42325
     },
     {
       "year": 2026,
@@ -39009,8 +41409,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 3658,
-      "cumulative": 43497
+      "votes": 3657,
+      "cumulative": 43495
     },
     {
       "year": 2026,
@@ -39019,7 +41419,7 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 2478,
+      "votes": 2479,
       "cumulative": 18993
     },
     {
@@ -39029,8 +41429,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 4599,
-      "cumulative": 46922
+      "votes": 4598,
+      "cumulative": 46923
     },
     {
       "year": 2026,
@@ -39041,6 +41441,46 @@
       "party_registration": "Other registered parties",
       "votes": 48,
       "cumulative": 341
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 3096,
+      "cumulative": 46591
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 1797,
+      "cumulative": 20790
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 3645,
+      "cumulative": 50568
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 32,
+      "cumulative": 373
     },
     {
       "year": 2026,
@@ -39619,8 +42059,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 1854,
-      "cumulative": 22868
+      "votes": 1852,
+      "cumulative": 22866
     },
     {
       "year": 2026,
@@ -39629,8 +42069,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 1615,
-      "cumulative": 29295
+      "votes": 1617,
+      "cumulative": 29297
     },
     {
       "year": 2026,
@@ -39649,8 +42089,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 1708,
-      "cumulative": 40169
+      "votes": 1707,
+      "cumulative": 40168
     },
     {
       "year": 2026,
@@ -39660,7 +42100,7 @@
       "date": "2026-10-30",
       "party_registration": "Republican",
       "votes": 1716,
-      "cumulative": 24584
+      "cumulative": 24582
     },
     {
       "year": 2026,
@@ -39669,8 +42109,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 1537,
-      "cumulative": 30832
+      "votes": 1538,
+      "cumulative": 30835
     },
     {
       "year": 2026,
@@ -39685,6 +42125,46 @@
     {
       "year": 2026,
       "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 968,
+      "cumulative": 41136
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 830,
+      "cumulative": 25412
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 747,
+      "cumulative": 31582
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 5,
+      "cumulative": 96
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2026-10-15",
@@ -40318,6 +42798,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2026-10-30",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -40349,8 +42869,8 @@
       "day": 1,
       "date": "2026-10-15",
       "party_registration": "Unaffiliated",
-      "votes": 360,
-      "cumulative": 360
+      "votes": 359,
+      "cumulative": 359
     },
     {
       "year": 2026,
@@ -40390,7 +42910,7 @@
       "date": "2026-10-16",
       "party_registration": "Unaffiliated",
       "votes": 478,
-      "cumulative": 838
+      "cumulative": 837
     },
     {
       "year": 2026,
@@ -40430,7 +42950,7 @@
       "date": "2026-10-17",
       "party_registration": "Unaffiliated",
       "votes": 449,
-      "cumulative": 1287
+      "cumulative": 1286
     },
     {
       "year": 2026,
@@ -40470,7 +42990,7 @@
       "date": "2026-10-18",
       "party_registration": "Unaffiliated",
       "votes": 373,
-      "cumulative": 1660
+      "cumulative": 1659
     },
     {
       "year": 2026,
@@ -40510,7 +43030,7 @@
       "date": "2026-10-19",
       "party_registration": "Unaffiliated",
       "votes": 453,
-      "cumulative": 2113
+      "cumulative": 2112
     },
     {
       "year": 2026,
@@ -40550,7 +43070,7 @@
       "date": "2026-10-20",
       "party_registration": "Unaffiliated",
       "votes": 447,
-      "cumulative": 2560
+      "cumulative": 2559
     },
     {
       "year": 2026,
@@ -40590,7 +43110,7 @@
       "date": "2026-10-21",
       "party_registration": "Unaffiliated",
       "votes": 339,
-      "cumulative": 2899
+      "cumulative": 2898
     },
     {
       "year": 2026,
@@ -40630,7 +43150,7 @@
       "date": "2026-10-22",
       "party_registration": "Unaffiliated",
       "votes": 390,
-      "cumulative": 3289
+      "cumulative": 3288
     },
     {
       "year": 2026,
@@ -40669,8 +43189,8 @@
       "day": 9,
       "date": "2026-10-23",
       "party_registration": "Unaffiliated",
-      "votes": 613,
-      "cumulative": 3902
+      "votes": 612,
+      "cumulative": 3900
     },
     {
       "year": 2026,
@@ -40710,7 +43230,7 @@
       "date": "2026-10-24",
       "party_registration": "Unaffiliated",
       "votes": 551,
-      "cumulative": 4453
+      "cumulative": 4451
     },
     {
       "year": 2026,
@@ -40750,7 +43270,7 @@
       "date": "2026-10-25",
       "party_registration": "Unaffiliated",
       "votes": 515,
-      "cumulative": 4968
+      "cumulative": 4966
     },
     {
       "year": 2026,
@@ -40790,7 +43310,7 @@
       "date": "2026-10-26",
       "party_registration": "Unaffiliated",
       "votes": 538,
-      "cumulative": 5506
+      "cumulative": 5504
     },
     {
       "year": 2026,
@@ -40830,7 +43350,7 @@
       "date": "2026-10-27",
       "party_registration": "Unaffiliated",
       "votes": 514,
-      "cumulative": 6020
+      "cumulative": 6018
     },
     {
       "year": 2026,
@@ -40870,7 +43390,7 @@
       "date": "2026-10-28",
       "party_registration": "Unaffiliated",
       "votes": 680,
-      "cumulative": 6700
+      "cumulative": 6698
     },
     {
       "year": 2026,
@@ -40889,8 +43409,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 518,
-      "cumulative": 5027
+      "votes": 517,
+      "cumulative": 5026
     },
     {
       "year": 2026,
@@ -40899,8 +43419,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 112,
-      "cumulative": 856
+      "votes": 111,
+      "cumulative": 855
     },
     {
       "year": 2026,
@@ -40909,7 +43429,7 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 793,
+      "votes": 795,
       "cumulative": 7493
     },
     {
@@ -40929,8 +43449,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 750,
-      "cumulative": 5777
+      "votes": 749,
+      "cumulative": 5775
     },
     {
       "year": 2026,
@@ -40940,7 +43460,7 @@
       "date": "2026-10-30",
       "party_registration": "Republican",
       "votes": 194,
-      "cumulative": 1050
+      "cumulative": 1049
     },
     {
       "year": 2026,
@@ -40949,8 +43469,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 1294,
-      "cumulative": 8787
+      "votes": 1295,
+      "cumulative": 8788
     },
     {
       "year": 2026,
@@ -40961,6 +43481,46 @@
       "party_registration": "Other registered parties",
       "votes": 7,
       "cumulative": 68
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 522,
+      "cumulative": 6297
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 139,
+      "cumulative": 1188
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 1009,
+      "cumulative": 9797
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 6,
+      "cumulative": 74
     },
     {
       "year": 2026,
@@ -40989,8 +43549,8 @@
       "day": 1,
       "date": "2026-10-15",
       "party_registration": "Unaffiliated",
-      "votes": 8034,
-      "cumulative": 8034
+      "votes": 8033,
+      "cumulative": 8033
     },
     {
       "year": 2026,
@@ -41030,7 +43590,7 @@
       "date": "2026-10-16",
       "party_registration": "Unaffiliated",
       "votes": 8696,
-      "cumulative": 16730
+      "cumulative": 16729
     },
     {
       "year": 2026,
@@ -41070,7 +43630,7 @@
       "date": "2026-10-17",
       "party_registration": "Unaffiliated",
       "votes": 5118,
-      "cumulative": 21848
+      "cumulative": 21847
     },
     {
       "year": 2026,
@@ -41110,7 +43670,7 @@
       "date": "2026-10-18",
       "party_registration": "Unaffiliated",
       "votes": 4027,
-      "cumulative": 25875
+      "cumulative": 25874
     },
     {
       "year": 2026,
@@ -41150,7 +43710,7 @@
       "date": "2026-10-19",
       "party_registration": "Unaffiliated",
       "votes": 8430,
-      "cumulative": 34305
+      "cumulative": 34304
     },
     {
       "year": 2026,
@@ -41190,7 +43750,7 @@
       "date": "2026-10-20",
       "party_registration": "Unaffiliated",
       "votes": 7820,
-      "cumulative": 42125
+      "cumulative": 42124
     },
     {
       "year": 2026,
@@ -41229,8 +43789,8 @@
       "day": 7,
       "date": "2026-10-21",
       "party_registration": "Unaffiliated",
-      "votes": 7299,
-      "cumulative": 49424
+      "votes": 7298,
+      "cumulative": 49422
     },
     {
       "year": 2026,
@@ -41270,7 +43830,7 @@
       "date": "2026-10-22",
       "party_registration": "Unaffiliated",
       "votes": 7095,
-      "cumulative": 56519
+      "cumulative": 56517
     },
     {
       "year": 2026,
@@ -41309,8 +43869,8 @@
       "day": 9,
       "date": "2026-10-23",
       "party_registration": "Unaffiliated",
-      "votes": 8299,
-      "cumulative": 64818
+      "votes": 8298,
+      "cumulative": 64815
     },
     {
       "year": 2026,
@@ -41350,7 +43910,7 @@
       "date": "2026-10-24",
       "party_registration": "Unaffiliated",
       "votes": 5269,
-      "cumulative": 70087
+      "cumulative": 70084
     },
     {
       "year": 2026,
@@ -41390,7 +43950,7 @@
       "date": "2026-10-25",
       "party_registration": "Unaffiliated",
       "votes": 4258,
-      "cumulative": 74345
+      "cumulative": 74342
     },
     {
       "year": 2026,
@@ -41430,7 +43990,7 @@
       "date": "2026-10-26",
       "party_registration": "Unaffiliated",
       "votes": 8057,
-      "cumulative": 82402
+      "cumulative": 82399
     },
     {
       "year": 2026,
@@ -41470,7 +44030,7 @@
       "date": "2026-10-27",
       "party_registration": "Unaffiliated",
       "votes": 8359,
-      "cumulative": 90761
+      "cumulative": 90758
     },
     {
       "year": 2026,
@@ -41510,7 +44070,7 @@
       "date": "2026-10-28",
       "party_registration": "Unaffiliated",
       "votes": 8985,
-      "cumulative": 99746
+      "cumulative": 99743
     },
     {
       "year": 2026,
@@ -41529,8 +44089,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 8598,
-      "cumulative": 112433
+      "votes": 8588,
+      "cumulative": 112423
     },
     {
       "year": 2026,
@@ -41539,8 +44099,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 4795,
-      "cumulative": 45200
+      "votes": 4791,
+      "cumulative": 45196
     },
     {
       "year": 2026,
@@ -41549,8 +44109,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 9802,
-      "cumulative": 109548
+      "votes": 9816,
+      "cumulative": 109559
     },
     {
       "year": 2026,
@@ -41569,8 +44129,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 10821,
-      "cumulative": 123254
+      "votes": 10810,
+      "cumulative": 123233
     },
     {
       "year": 2026,
@@ -41579,8 +44139,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 5617,
-      "cumulative": 50817
+      "votes": 5616,
+      "cumulative": 50812
     },
     {
       "year": 2026,
@@ -41589,8 +44149,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 12899,
-      "cumulative": 122447
+      "votes": 12910,
+      "cumulative": 122469
     },
     {
       "year": 2026,
@@ -41599,8 +44159,48 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Other registered parties",
-      "votes": 122,
-      "cumulative": 975
+      "votes": 121,
+      "cumulative": 974
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 8527,
+      "cumulative": 131760
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 3686,
+      "cumulative": 54498
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 9779,
+      "cumulative": 132248
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 112,
+      "cumulative": 1086
     },
     {
       "year": 2026,
@@ -41629,8 +44229,8 @@
       "day": 1,
       "date": "2026-10-15",
       "party_registration": "Unaffiliated",
-      "votes": 396,
-      "cumulative": 396
+      "votes": 395,
+      "cumulative": 395
     },
     {
       "year": 2026,
@@ -41670,7 +44270,7 @@
       "date": "2026-10-16",
       "party_registration": "Unaffiliated",
       "votes": 569,
-      "cumulative": 965
+      "cumulative": 964
     },
     {
       "year": 2026,
@@ -41710,7 +44310,7 @@
       "date": "2026-10-17",
       "party_registration": "Unaffiliated",
       "votes": 559,
-      "cumulative": 1524
+      "cumulative": 1523
     },
     {
       "year": 2026,
@@ -41750,7 +44350,7 @@
       "date": "2026-10-18",
       "party_registration": "Unaffiliated",
       "votes": 442,
-      "cumulative": 1966
+      "cumulative": 1965
     },
     {
       "year": 2026,
@@ -41790,7 +44390,7 @@
       "date": "2026-10-19",
       "party_registration": "Unaffiliated",
       "votes": 582,
-      "cumulative": 2548
+      "cumulative": 2547
     },
     {
       "year": 2026,
@@ -41830,7 +44430,7 @@
       "date": "2026-10-20",
       "party_registration": "Unaffiliated",
       "votes": 505,
-      "cumulative": 3053
+      "cumulative": 3052
     },
     {
       "year": 2026,
@@ -41869,8 +44469,8 @@
       "day": 7,
       "date": "2026-10-21",
       "party_registration": "Unaffiliated",
-      "votes": 379,
-      "cumulative": 3432
+      "votes": 378,
+      "cumulative": 3430
     },
     {
       "year": 2026,
@@ -41910,7 +44510,7 @@
       "date": "2026-10-22",
       "party_registration": "Unaffiliated",
       "votes": 418,
-      "cumulative": 3850
+      "cumulative": 3848
     },
     {
       "year": 2026,
@@ -41949,8 +44549,8 @@
       "day": 9,
       "date": "2026-10-23",
       "party_registration": "Unaffiliated",
-      "votes": 677,
-      "cumulative": 4527
+      "votes": 676,
+      "cumulative": 4524
     },
     {
       "year": 2026,
@@ -41990,7 +44590,7 @@
       "date": "2026-10-24",
       "party_registration": "Unaffiliated",
       "votes": 659,
-      "cumulative": 5186
+      "cumulative": 5183
     },
     {
       "year": 2026,
@@ -42030,7 +44630,7 @@
       "date": "2026-10-25",
       "party_registration": "Unaffiliated",
       "votes": 611,
-      "cumulative": 5797
+      "cumulative": 5794
     },
     {
       "year": 2026,
@@ -42070,7 +44670,7 @@
       "date": "2026-10-26",
       "party_registration": "Unaffiliated",
       "votes": 600,
-      "cumulative": 6397
+      "cumulative": 6394
     },
     {
       "year": 2026,
@@ -42110,7 +44710,7 @@
       "date": "2026-10-27",
       "party_registration": "Unaffiliated",
       "votes": 578,
-      "cumulative": 6975
+      "cumulative": 6972
     },
     {
       "year": 2026,
@@ -42150,7 +44750,7 @@
       "date": "2026-10-28",
       "party_registration": "Unaffiliated",
       "votes": 741,
-      "cumulative": 7716
+      "cumulative": 7713
     },
     {
       "year": 2026,
@@ -42169,8 +44769,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 614,
-      "cumulative": 6365
+      "votes": 612,
+      "cumulative": 6363
     },
     {
       "year": 2026,
@@ -42179,8 +44779,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 161,
-      "cumulative": 1117
+      "votes": 160,
+      "cumulative": 1116
     },
     {
       "year": 2026,
@@ -42189,7 +44789,7 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 891,
+      "votes": 894,
       "cumulative": 8607
     },
     {
@@ -42209,8 +44809,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 944,
-      "cumulative": 7309
+      "votes": 941,
+      "cumulative": 7304
     },
     {
       "year": 2026,
@@ -42220,7 +44820,7 @@
       "date": "2026-10-30",
       "party_registration": "Republican",
       "votes": 241,
-      "cumulative": 1358
+      "cumulative": 1357
     },
     {
       "year": 2026,
@@ -42229,8 +44829,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 1402,
-      "cumulative": 10009
+      "votes": 1405,
+      "cumulative": 10012
     },
     {
       "year": 2026,
@@ -42241,6 +44841,46 @@
       "party_registration": "Other registered parties",
       "votes": 10,
       "cumulative": 90
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 739,
+      "cumulative": 8043
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 187,
+      "cumulative": 1544
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 1229,
+      "cumulative": 11241
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 13,
+      "cumulative": 103
     },
     {
       "year": 2026,
@@ -42809,8 +45449,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 1661,
-      "cumulative": 13937
+      "votes": 1656,
+      "cumulative": 13932
     },
     {
       "year": 2026,
@@ -42829,8 +45469,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 1748,
-      "cumulative": 13917
+      "votes": 1753,
+      "cumulative": 13922
     },
     {
       "year": 2026,
@@ -42849,8 +45489,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 2300,
-      "cumulative": 16237
+      "votes": 2297,
+      "cumulative": 16229
     },
     {
       "year": 2026,
@@ -42859,8 +45499,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 497,
-      "cumulative": 2493
+      "votes": 496,
+      "cumulative": 2492
     },
     {
       "year": 2026,
@@ -42869,8 +45509,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 2665,
-      "cumulative": 16582
+      "votes": 2670,
+      "cumulative": 16592
     },
     {
       "year": 2026,
@@ -42879,8 +45519,48 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Other registered parties",
-      "votes": 30,
-      "cumulative": 222
+      "votes": 29,
+      "cumulative": 221
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 2069,
+      "cumulative": 18298
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 433,
+      "cumulative": 2925
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 2239,
+      "cumulative": 18831
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 32,
+      "cumulative": 253
     },
     {
       "year": 2026,
@@ -43449,8 +46129,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 1681,
-      "cumulative": 16074
+      "votes": 1679,
+      "cumulative": 16072
     },
     {
       "year": 2026,
@@ -43469,8 +46149,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 1991,
-      "cumulative": 17276
+      "votes": 1993,
+      "cumulative": 17278
     },
     {
       "year": 2026,
@@ -43489,8 +46169,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 2323,
-      "cumulative": 18397
+      "votes": 2320,
+      "cumulative": 18392
     },
     {
       "year": 2026,
@@ -43499,8 +46179,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 727,
-      "cumulative": 3927
+      "votes": 726,
+      "cumulative": 3926
     },
     {
       "year": 2026,
@@ -43509,8 +46189,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 2837,
-      "cumulative": 20113
+      "votes": 2840,
+      "cumulative": 20118
     },
     {
       "year": 2026,
@@ -43521,6 +46201,46 @@
       "party_registration": "Other registered parties",
       "votes": 30,
       "cumulative": 235
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 1786,
+      "cumulative": 20178
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 482,
+      "cumulative": 4408
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 2053,
+      "cumulative": 22171
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 31,
+      "cumulative": 266
     },
     {
       "year": 2026,
@@ -44089,8 +46809,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Democratic",
-      "votes": 2904,
-      "cumulative": 38684
+      "votes": 2903,
+      "cumulative": 38683
     },
     {
       "year": 2026,
@@ -44099,8 +46819,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 1983,
-      "cumulative": 16256
+      "votes": 1982,
+      "cumulative": 16255
     },
     {
       "year": 2026,
@@ -44109,8 +46829,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 3576,
-      "cumulative": 41071
+      "votes": 3578,
+      "cumulative": 41073
     },
     {
       "year": 2026,
@@ -44129,8 +46849,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 3596,
-      "cumulative": 42280
+      "votes": 3595,
+      "cumulative": 42278
     },
     {
       "year": 2026,
@@ -44139,7 +46859,7 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Republican",
-      "votes": 2455,
+      "votes": 2456,
       "cumulative": 18711
     },
     {
@@ -44149,8 +46869,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 4496,
-      "cumulative": 45567
+      "votes": 4495,
+      "cumulative": 45568
     },
     {
       "year": 2026,
@@ -44161,6 +46881,46 @@
       "party_registration": "Other registered parties",
       "votes": 48,
       "cumulative": 339
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 2985,
+      "cumulative": 45263
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 1763,
+      "cumulative": 20474
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 3532,
+      "cumulative": 49100
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 31,
+      "cumulative": 370
     },
     {
       "year": 2026,
@@ -44739,8 +47499,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 1838,
-      "cumulative": 22631
+      "votes": 1836,
+      "cumulative": 22629
     },
     {
       "year": 2026,
@@ -44749,8 +47509,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 1596,
-      "cumulative": 28677
+      "votes": 1598,
+      "cumulative": 28679
     },
     {
       "year": 2026,
@@ -44769,8 +47529,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 1658,
-      "cumulative": 39031
+      "votes": 1657,
+      "cumulative": 39030
     },
     {
       "year": 2026,
@@ -44780,7 +47540,7 @@
       "date": "2026-10-30",
       "party_registration": "Republican",
       "votes": 1697,
-      "cumulative": 24328
+      "cumulative": 24326
     },
     {
       "year": 2026,
@@ -44789,8 +47549,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 1499,
-      "cumulative": 30176
+      "votes": 1500,
+      "cumulative": 30179
     },
     {
       "year": 2026,
@@ -44805,6 +47565,46 @@
     {
       "year": 2026,
       "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 948,
+      "cumulative": 39978
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 821,
+      "cumulative": 25147
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 726,
+      "cumulative": 30905
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 5,
+      "cumulative": 94
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2026-10-15",
@@ -45438,6 +48238,46 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2026-10-30",
+      "party_registration": "Other registered parties",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 0,
+      "cumulative": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
       "party_registration": "Other registered parties",
       "votes": 0,
       "cumulative": 0
@@ -45469,8 +48309,8 @@
       "day": 1,
       "date": "2026-10-15",
       "party_registration": "Unaffiliated",
-      "votes": 291,
-      "cumulative": 291
+      "votes": 290,
+      "cumulative": 290
     },
     {
       "year": 2026,
@@ -45510,7 +48350,7 @@
       "date": "2026-10-16",
       "party_registration": "Unaffiliated",
       "votes": 409,
-      "cumulative": 700
+      "cumulative": 699
     },
     {
       "year": 2026,
@@ -45550,7 +48390,7 @@
       "date": "2026-10-17",
       "party_registration": "Unaffiliated",
       "votes": 420,
-      "cumulative": 1120
+      "cumulative": 1119
     },
     {
       "year": 2026,
@@ -45590,7 +48430,7 @@
       "date": "2026-10-18",
       "party_registration": "Unaffiliated",
       "votes": 341,
-      "cumulative": 1461
+      "cumulative": 1460
     },
     {
       "year": 2026,
@@ -45630,7 +48470,7 @@
       "date": "2026-10-19",
       "party_registration": "Unaffiliated",
       "votes": 403,
-      "cumulative": 1864
+      "cumulative": 1863
     },
     {
       "year": 2026,
@@ -45670,7 +48510,7 @@
       "date": "2026-10-20",
       "party_registration": "Unaffiliated",
       "votes": 351,
-      "cumulative": 2215
+      "cumulative": 2214
     },
     {
       "year": 2026,
@@ -45710,7 +48550,7 @@
       "date": "2026-10-21",
       "party_registration": "Unaffiliated",
       "votes": 238,
-      "cumulative": 2453
+      "cumulative": 2452
     },
     {
       "year": 2026,
@@ -45750,7 +48590,7 @@
       "date": "2026-10-22",
       "party_registration": "Unaffiliated",
       "votes": 260,
-      "cumulative": 2713
+      "cumulative": 2712
     },
     {
       "year": 2026,
@@ -45789,8 +48629,8 @@
       "day": 9,
       "date": "2026-10-23",
       "party_registration": "Unaffiliated",
-      "votes": 455,
-      "cumulative": 3168
+      "votes": 454,
+      "cumulative": 3166
     },
     {
       "year": 2026,
@@ -45830,7 +48670,7 @@
       "date": "2026-10-24",
       "party_registration": "Unaffiliated",
       "votes": 496,
-      "cumulative": 3664
+      "cumulative": 3662
     },
     {
       "year": 2026,
@@ -45870,7 +48710,7 @@
       "date": "2026-10-25",
       "party_registration": "Unaffiliated",
       "votes": 441,
-      "cumulative": 4105
+      "cumulative": 4103
     },
     {
       "year": 2026,
@@ -45910,7 +48750,7 @@
       "date": "2026-10-26",
       "party_registration": "Unaffiliated",
       "votes": 395,
-      "cumulative": 4500
+      "cumulative": 4498
     },
     {
       "year": 2026,
@@ -45950,7 +48790,7 @@
       "date": "2026-10-27",
       "party_registration": "Unaffiliated",
       "votes": 353,
-      "cumulative": 4853
+      "cumulative": 4851
     },
     {
       "year": 2026,
@@ -45990,7 +48830,7 @@
       "date": "2026-10-28",
       "party_registration": "Unaffiliated",
       "votes": 466,
-      "cumulative": 5319
+      "cumulative": 5317
     },
     {
       "year": 2026,
@@ -46019,8 +48859,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Republican",
-      "votes": 100,
-      "cumulative": 751
+      "votes": 99,
+      "cumulative": 750
     },
     {
       "year": 2026,
@@ -46029,8 +48869,8 @@
       "day": 15,
       "date": "2026-10-29",
       "party_registration": "Unaffiliated",
-      "votes": 546,
-      "cumulative": 5865
+      "votes": 547,
+      "cumulative": 5864
     },
     {
       "year": 2026,
@@ -46049,8 +48889,8 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Democratic",
-      "votes": 578,
-      "cumulative": 4607
+      "votes": 577,
+      "cumulative": 4606
     },
     {
       "year": 2026,
@@ -46060,7 +48900,7 @@
       "date": "2026-10-30",
       "party_registration": "Republican",
       "votes": 159,
-      "cumulative": 910
+      "cumulative": 909
     },
     {
       "year": 2026,
@@ -46069,7 +48909,7 @@
       "day": 16,
       "date": "2026-10-30",
       "party_registration": "Unaffiliated",
-      "votes": 907,
+      "votes": 908,
       "cumulative": 6772
     },
     {
@@ -46081,6 +48921,46 @@
       "party_registration": "Other registered parties",
       "votes": 7,
       "cumulative": 53
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Democratic",
+      "votes": 435,
+      "cumulative": 5041
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Republican",
+      "votes": 128,
+      "cumulative": 1037
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Unaffiliated",
+      "votes": 810,
+      "cumulative": 7582
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "party_registration": "Other registered parties",
+      "votes": 6,
+      "cumulative": 59
     }
   ]
 }

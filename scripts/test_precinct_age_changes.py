@@ -33,7 +33,7 @@ with (ROOT/'data/processed/comparison/precinct_age_changes.csv').open(encoding='
 assert len(csv_rows)==len(rows)
 for a,b in zip(rows,csv_rows):assert {k:'' if v is None else str(v) for k,v in a.items()}==b
 focus={(r['area'],r['cohort']):r for r in rows}
-assert (focus['PRECINCT 01-23','18–24']['ballots_2022'],focus['PRECINCT 01-23','18–24']['ballots_2026'])==(599,1066)
-assert (focus['PRECINCT 01-31','65+']['ballots_2022'],focus['PRECINCT 01-31','65+']['ballots_2026'])==(76,114)
-assert math.isclose(focus['PRECINCT 01-31','18–24']['share_change_pp'],(320/1083-145/599)*100,abs_tol=1e-10)
+assert (focus['PRECINCT 01-23','18–24']['ballots_2022'],focus['PRECINCT 01-23','18–24']['ballots_2026'])==(702,1191)
+assert (focus['PRECINCT 01-31','65+']['ballots_2022'],focus['PRECINCT 01-31','65+']['ballots_2026'])==(80,120)
+assert math.isclose(focus['PRECINCT 01-31','18–24']['share_change_pp'],(352/1184-183/709)*100,abs_tol=1e-10)
 print(f'Passed {len(rows)} exact age/precinct comparisons, both county reconciliations, same-precinct denominators, zero/missing cases and CSV agreement.')

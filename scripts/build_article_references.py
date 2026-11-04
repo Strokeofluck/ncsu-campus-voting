@@ -26,7 +26,7 @@ def main():
   for name in growth:assert abs(r[name+'_growth_pct']-growth[name])<1e-10
   assert abs(r['site_growth_gap_pp']-(growth['site']-growth['county']))<1e-10
  periods={y:next(r for r in s['queries']['summary']['rows'] if r['year']==y and r['scope']=='Campus site') for y in [2022,2026]}
- period=f"Talley: {nice(periods[2022]['start_date'])}–{nice(periods[2022]['end_date'])}. Western Boulevard: {nice(periods[2026]['start_date'])}–{nice(periods[2026]['end_date'])}. First 16 days in both years; 2026 is preliminary."
+ period=f"Talley: {nice(periods[2022]['start_date'])}–{nice(periods[2022]['end_date'])}. Western Boulevard: {nice(periods[2026]['start_date'])}–{nice(periods[2026]['end_date'])}. All {s['comparison']['matched_days']} early-voting days in both years; downloaded November 4, 2026; 2026 is preliminary."
  records=json.loads((ROOT/'data/processed/comparison/figure_sources.json').read_text(encoding='utf-8'))['records']
  sources=[]
  for year in [2022,2026]:
@@ -54,7 +54,7 @@ def main():
  for r in rows:
   age=escape(r['cohort']);gap=r['site_growth_gap_pp']
   all_rows.append(f'<tr data-age="{age}"><th scope="row"><a data-age="{age}" href="?age={quote(r["cohort"],safe="")}#math">{age}</a></th><td>{r["site_ballots_2022"]:,}</td><td>{r["site_ballots_2026"]:,}</td><td>{rate(r["site_growth_pct"])}</td><td>{rate(r["county_growth_pct"])}</td><td>{gap:+.1f} pp</td></tr>')
- payload={'rows':rows,'as_of':s['report']['asOf'],'matched_days':16,'periods':{str(y):{k:periods[y][k] for k in ['start_date','end_date']} for y in periods}}
+ payload={'rows':rows,'as_of':s['report']['asOf'],'matched_days':s['comparison']['matched_days'],'periods':{str(y):{k:periods[y][k] for k in ['start_date','end_date']} for y in periods}}
  replacements={'__PERIOD_NOTE__':period,'__AGE_OPTIONS__':''.join(f'<option value="{a}">{a}</option>' for a in AGES),'__COUNT_ROWS__':count_rows,
  '__YOUNGEST_BENCHMARK_STEPS__':''.join(f'<li>{escape(step)}</li>' for step in benchmark_steps),
  '__YOUNGEST_BENCHMARK_RESULT__':f"{round(benchmark):,} benchmark − {first['site_ballots_2026']:,} actual ≈ {round(shortfall):,} below benchmark.",

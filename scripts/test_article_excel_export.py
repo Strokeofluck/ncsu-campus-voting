@@ -45,7 +45,7 @@ if manifest.get('mode')=='updated':
     for row in csv.DictReader(io.TextIOWrapper(raw,encoding='cp1252',errors='browser1252',newline='')):
      if row['county_desc'].strip()!='WAKE' or row['ballot_req_type'].strip().upper() not in ['ONE-STOP','ONE STOP','EARLY VOTING'] or row['ballot_rtn_status'].strip()!='ACCEPTED':continue
      parts=row['ballot_rtn_dt'].strip().split('/');day=f'{parts[2]}-{parts[0].zfill(2)}-{parts[1].zfill(2)}' if len(parts)==3 else '';age=row['age'].strip()
-     start,end=('2022-10-20','2022-11-04') if year==2022 else ('2026-10-15','2026-10-30')
+     start,end=('2022-10-20','2022-11-05') if year==2022 else ('2026-10-15','2026-10-31')
      if not start<=day<=end or not age.isdigit():continue
      site='TA - NCSU TALLEY STUDENT CENTER' if year==2022 else 'NCSU WESTERN BLVD BUSINESS SERVICES'
      for b,(lo,hi) in enumerate(bands):
@@ -62,7 +62,7 @@ if not args.summary_only:
    r,c=next(copy);assert r==1 and [c[col(i)][0] for i in range(len(headers))]==headers
    indexes=[headers.index(f) for f in fields]
    site='TA - NCSU TALLEY STUDENT CENTER' if year==2022 else 'NCSU WESTERN BLVD BUSINESS SERVICES'
-   start,end=('2022-10-20','2022-11-04') if year==2022 else ('2026-10-15','2026-10-30')
+   start,end=('2022-10-20','2022-11-05') if year==2022 else ('2026-10-15','2026-10-31')
    for count,original in enumerate(reader,1):
     cr,cc=next(copy);assert cr==count+1
     assert [cc[col(i)][0] for i in range(len(headers))]==original,('Copy differs',year,count)

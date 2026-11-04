@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-10-30",
-  "matched_days": 16,
+  "as_of": "2026-10-31",
+  "matched_days": 17,
   "rows": [
     {
       "year": 2022,
@@ -181,6 +181,17 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 117,
+      "cumulative": 763,
+      "ballots": 1051,
+      "cumulative_ballots": 10390
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "18–24",
       "day": 1,
       "date": "2022-10-20",
@@ -353,6 +364,17 @@
       "cumulative": 528,
       "ballots": 518,
       "cumulative_ballots": 2999
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 85,
+      "cumulative": 613,
+      "ballots": 403,
+      "cumulative_ballots": 3402
     },
     {
       "year": 2022,
@@ -533,6 +555,17 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 23,
+      "cumulative": 104,
+      "ballots": 286,
+      "cumulative_ballots": 2203
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "35–44",
       "day": 1,
       "date": "2022-10-20",
@@ -705,6 +738,17 @@
       "cumulative": 23,
       "ballots": 143,
       "cumulative_ballots": 1005
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 4,
+      "cumulative": 27,
+      "ballots": 127,
+      "cumulative_ballots": 1132
     },
     {
       "year": 2022,
@@ -885,6 +929,17 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 5,
+      "cumulative": 16,
+      "ballots": 191,
+      "cumulative_ballots": 2443
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "65+",
       "day": 1,
       "date": "2022-10-20",
@@ -1061,6 +1116,17 @@
     {
       "year": 2022,
       "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 0,
+      "cumulative": 3,
+      "ballots": 44,
+      "cumulative_ballots": 1210
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2022-10-20",
@@ -1229,6 +1295,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2022-11-04",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -1412,6 +1489,17 @@
     },
     {
       "year": 2022,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 68,
+      "cumulative": 516,
+      "ballots": 291,
+      "cumulative_ballots": 2604
+    },
+    {
+      "year": 2022,
       "scope": "Wake County",
       "cohort": "All ages",
       "day": 1,
@@ -1585,6 +1673,17 @@
       "cumulative": 3207,
       "ballots": 24113,
       "cumulative_ballots": 200320
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 766,
+      "cumulative": 3973,
+      "ballots": 18849,
+      "cumulative_ballots": 219169
     },
     {
       "year": 2022,
@@ -1765,6 +1864,17 @@
     {
       "year": 2022,
       "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 238,
+      "cumulative": 1360,
+      "ballots": 2111,
+      "cumulative_ballots": 13398
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
       "cohort": "25–34",
       "day": 1,
       "date": "2022-10-20",
@@ -1937,6 +2047,17 @@
       "cumulative": 896,
       "ballots": 4018,
       "cumulative_ballots": 21022
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 281,
+      "cumulative": 1177,
+      "ballots": 3735,
+      "cumulative_ballots": 24757
     },
     {
       "year": 2022,
@@ -2117,6 +2238,17 @@
     {
       "year": 2022,
       "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 115,
+      "cumulative": 531,
+      "ballots": 3686,
+      "cumulative_ballots": 30892
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
       "cohort": "45–64",
       "day": 1,
       "date": "2022-10-20",
@@ -2289,6 +2421,17 @@
       "cumulative": 468,
       "ballots": 9272,
       "cumulative_ballots": 78427
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 104,
+      "cumulative": 572,
+      "ballots": 7392,
+      "cumulative_ballots": 85819
     },
     {
       "year": 2022,
@@ -2469,6 +2612,17 @@
     {
       "year": 2022,
       "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 28,
+      "cumulative": 333,
+      "ballots": 1925,
+      "cumulative_ballots": 64303
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2022-10-20",
@@ -2637,6 +2791,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2022-11-04",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -2820,6 +2985,17 @@
     },
     {
       "year": 2022,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 153,
+      "cumulative": 946,
+      "ballots": 1434,
+      "cumulative_ballots": 9286
+    },
+    {
+      "year": 2022,
       "scope": "Other Wake sites",
       "cohort": "All ages",
       "day": 1,
@@ -2993,6 +3169,17 @@
       "cumulative": 2561,
       "ballots": 22841,
       "cumulative_ballots": 190981
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 649,
+      "cumulative": 3210,
+      "ballots": 17798,
+      "cumulative_ballots": 208779
     },
     {
       "year": 2022,
@@ -3173,6 +3360,17 @@
     {
       "year": 2022,
       "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 153,
+      "cumulative": 747,
+      "ballots": 1708,
+      "cumulative_ballots": 9996
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
       "cohort": "25–34",
       "day": 1,
       "date": "2022-10-20",
@@ -3345,6 +3543,17 @@
       "cumulative": 815,
       "ballots": 3711,
       "cumulative_ballots": 19105
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 258,
+      "cumulative": 1073,
+      "ballots": 3449,
+      "cumulative_ballots": 22554
     },
     {
       "year": 2022,
@@ -3525,6 +3734,17 @@
     {
       "year": 2022,
       "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 111,
+      "cumulative": 504,
+      "ballots": 3559,
+      "cumulative_ballots": 29760
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
       "cohort": "45–64",
       "day": 1,
       "date": "2022-10-20",
@@ -3697,6 +3917,17 @@
       "cumulative": 457,
       "ballots": 9045,
       "cumulative_ballots": 76175
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 99,
+      "cumulative": 556,
+      "ballots": 7201,
+      "cumulative_ballots": 83376
     },
     {
       "year": 2022,
@@ -3877,6 +4108,17 @@
     {
       "year": 2022,
       "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 28,
+      "cumulative": 330,
+      "ballots": 1881,
+      "cumulative_ballots": 63093
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2022-10-20",
@@ -4045,6 +4287,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2022-11-04",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2022-11-05",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -4227,6 +4480,17 @@
       "cumulative_ballots": 5539
     },
     {
+      "year": 2022,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2022-11-05",
+      "votes": 85,
+      "cumulative": 430,
+      "ballots": 1143,
+      "cumulative_ballots": 6682
+    },
+    {
       "year": 2024,
       "scope": "Campus site",
       "cohort": "All ages",
@@ -4401,6 +4665,17 @@
       "cumulative": 2084,
       "ballots": 1632,
       "cumulative_ballots": 20350
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 224,
+      "cumulative": 2308,
+      "ballots": 1274,
+      "cumulative_ballots": 21624
     },
     {
       "year": 2024,
@@ -4581,6 +4856,17 @@
     {
       "year": 2024,
       "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 183,
+      "cumulative": 2042,
+      "ballots": 604,
+      "cumulative_ballots": 9554
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
       "cohort": "25–34",
       "day": 1,
       "date": "2024-10-17",
@@ -4753,6 +5039,17 @@
       "cumulative": 170,
       "ballots": 315,
       "cumulative_ballots": 3968
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 30,
+      "cumulative": 200,
+      "ballots": 353,
+      "cumulative_ballots": 4321
     },
     {
       "year": 2024,
@@ -4933,6 +5230,17 @@
     {
       "year": 2024,
       "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 6,
+      "cumulative": 36,
+      "ballots": 133,
+      "cumulative_ballots": 2025
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
       "cohort": "45–64",
       "day": 1,
       "date": "2024-10-17",
@@ -5105,6 +5413,17 @@
       "cumulative": 19,
       "ballots": 187,
       "cumulative_ballots": 3740
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 3,
+      "cumulative": 22,
+      "ballots": 150,
+      "cumulative_ballots": 3890
     },
     {
       "year": 2024,
@@ -5285,6 +5604,17 @@
     {
       "year": 2024,
       "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 2,
+      "cumulative": 8,
+      "ballots": 34,
+      "cumulative_ballots": 1834
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2024-10-17",
@@ -5453,6 +5783,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2024-11-01",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -5636,6 +5977,17 @@
     },
     {
       "year": 2024,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 164,
+      "cumulative": 1891,
+      "ballots": 465,
+      "cumulative_ballots": 7875
+    },
+    {
+      "year": 2024,
       "scope": "Wake County",
       "cohort": "All ages",
       "day": 1,
@@ -5809,6 +6161,17 @@
       "cumulative": 9921,
       "ballots": 37077,
       "cumulative_ballots": 438815
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 1727,
+      "cumulative": 11648,
+      "ballots": 27260,
+      "cumulative_ballots": 466075
     },
     {
       "year": 2024,
@@ -5989,6 +6352,17 @@
     {
       "year": 2024,
       "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 531,
+      "cumulative": 4178,
+      "ballots": 4195,
+      "cumulative_ballots": 44660
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
       "cohort": "25–34",
       "day": 1,
       "date": "2024-10-17",
@@ -6161,6 +6535,17 @@
       "cumulative": 2737,
       "ballots": 8317,
       "cumulative_ballots": 64680
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 647,
+      "cumulative": 3384,
+      "ballots": 6952,
+      "cumulative_ballots": 71632
     },
     {
       "year": 2024,
@@ -6341,6 +6726,17 @@
     {
       "year": 2024,
       "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 240,
+      "cumulative": 1565,
+      "ballots": 5765,
+      "cumulative_ballots": 75743
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
       "cohort": "45–64",
       "day": 1,
       "date": "2024-10-17",
@@ -6513,6 +6909,17 @@
       "cumulative": 1529,
       "ballots": 12009,
       "cumulative_ballots": 158825
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 246,
+      "cumulative": 1775,
+      "ballots": 8603,
+      "cumulative_ballots": 167428
     },
     {
       "year": 2024,
@@ -6693,6 +7100,17 @@
     {
       "year": 2024,
       "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 63,
+      "cumulative": 746,
+      "ballots": 1745,
+      "cumulative_ballots": 106612
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2024-10-17",
@@ -6861,6 +7279,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2024-11-01",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -7044,6 +7473,17 @@
     },
     {
       "year": 2024,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 368,
+      "cumulative": 3173,
+      "ballots": 2733,
+      "cumulative_ballots": 30916
+    },
+    {
+      "year": 2024,
       "scope": "Other Wake sites",
       "cohort": "All ages",
       "day": 1,
@@ -7217,6 +7657,17 @@
       "cumulative": 7837,
       "ballots": 35445,
       "cumulative_ballots": 418465
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 1503,
+      "cumulative": 9340,
+      "ballots": 25986,
+      "cumulative_ballots": 444451
     },
     {
       "year": 2024,
@@ -7397,6 +7848,17 @@
     {
       "year": 2024,
       "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 348,
+      "cumulative": 2136,
+      "ballots": 3591,
+      "cumulative_ballots": 35106
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
       "cohort": "25–34",
       "day": 1,
       "date": "2024-10-17",
@@ -7569,6 +8031,17 @@
       "cumulative": 2567,
       "ballots": 8002,
       "cumulative_ballots": 60712
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 617,
+      "cumulative": 3184,
+      "ballots": 6599,
+      "cumulative_ballots": 67311
     },
     {
       "year": 2024,
@@ -7749,6 +8222,17 @@
     {
       "year": 2024,
       "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 234,
+      "cumulative": 1529,
+      "ballots": 5632,
+      "cumulative_ballots": 73718
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
       "cohort": "45–64",
       "day": 1,
       "date": "2024-10-17",
@@ -7921,6 +8405,17 @@
       "cumulative": 1510,
       "ballots": 11822,
       "cumulative_ballots": 155085
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 243,
+      "cumulative": 1753,
+      "ballots": 8453,
+      "cumulative_ballots": 163538
     },
     {
       "year": 2024,
@@ -8101,6 +8596,17 @@
     {
       "year": 2024,
       "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 61,
+      "cumulative": 738,
+      "ballots": 1711,
+      "cumulative_ballots": 104778
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2024-10-17",
@@ -8269,6 +8775,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2024-11-01",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2024-11-02",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -8451,6 +8968,17 @@
       "cumulative_ballots": 20773
     },
     {
+      "year": 2024,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2024-11-02",
+      "votes": 204,
+      "cumulative": 1282,
+      "ballots": 2268,
+      "cumulative_ballots": 23041
+    },
+    {
       "year": 2026,
       "scope": "Campus site",
       "cohort": "All ages",
@@ -8478,10 +9006,10 @@
       "cohort": "All ages",
       "day": 3,
       "date": "2026-10-17",
-      "votes": 9,
-      "cumulative": 49,
-      "ballots": 466,
-      "cumulative_ballots": 2099
+      "votes": 10,
+      "cumulative": 50,
+      "ballots": 467,
+      "cumulative_ballots": 2100
     },
     {
       "year": 2026,
@@ -8490,9 +9018,9 @@
       "day": 4,
       "date": "2026-10-18",
       "votes": 12,
-      "cumulative": 61,
+      "cumulative": 62,
       "ballots": 398,
-      "cumulative_ballots": 2497
+      "cumulative_ballots": 2498
     },
     {
       "year": 2026,
@@ -8501,9 +9029,9 @@
       "day": 5,
       "date": "2026-10-19",
       "votes": 22,
-      "cumulative": 83,
+      "cumulative": 84,
       "ballots": 684,
-      "cumulative_ballots": 3181
+      "cumulative_ballots": 3182
     },
     {
       "year": 2026,
@@ -8512,9 +9040,9 @@
       "day": 6,
       "date": "2026-10-20",
       "votes": 22,
-      "cumulative": 105,
+      "cumulative": 106,
       "ballots": 725,
-      "cumulative_ballots": 3906
+      "cumulative_ballots": 3907
     },
     {
       "year": 2026,
@@ -8523,9 +9051,9 @@
       "day": 7,
       "date": "2026-10-21",
       "votes": 44,
-      "cumulative": 149,
+      "cumulative": 150,
       "ballots": 734,
-      "cumulative_ballots": 4640
+      "cumulative_ballots": 4641
     },
     {
       "year": 2026,
@@ -8534,9 +9062,9 @@
       "day": 8,
       "date": "2026-10-22",
       "votes": 36,
-      "cumulative": 185,
+      "cumulative": 186,
       "ballots": 729,
-      "cumulative_ballots": 5369
+      "cumulative_ballots": 5370
     },
     {
       "year": 2026,
@@ -8545,9 +9073,9 @@
       "day": 9,
       "date": "2026-10-23",
       "votes": 48,
-      "cumulative": 233,
+      "cumulative": 234,
       "ballots": 1004,
-      "cumulative_ballots": 6373
+      "cumulative_ballots": 6374
     },
     {
       "year": 2026,
@@ -8556,9 +9084,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 29,
-      "cumulative": 262,
+      "cumulative": 263,
       "ballots": 571,
-      "cumulative_ballots": 6944
+      "cumulative_ballots": 6945
     },
     {
       "year": 2026,
@@ -8567,9 +9095,9 @@
       "day": 11,
       "date": "2026-10-25",
       "votes": 33,
-      "cumulative": 295,
+      "cumulative": 296,
       "ballots": 517,
-      "cumulative_ballots": 7461
+      "cumulative_ballots": 7462
     },
     {
       "year": 2026,
@@ -8578,9 +9106,9 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 60,
-      "cumulative": 355,
+      "cumulative": 356,
       "ballots": 937,
-      "cumulative_ballots": 8398
+      "cumulative_ballots": 8399
     },
     {
       "year": 2026,
@@ -8589,9 +9117,9 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 70,
-      "cumulative": 425,
+      "cumulative": 426,
       "ballots": 971,
-      "cumulative_ballots": 9369
+      "cumulative_ballots": 9370
     },
     {
       "year": 2026,
@@ -8600,9 +9128,9 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 109,
-      "cumulative": 534,
+      "cumulative": 535,
       "ballots": 1128,
-      "cumulative_ballots": 10497
+      "cumulative_ballots": 10498
     },
     {
       "year": 2026,
@@ -8610,10 +9138,10 @@
       "cohort": "All ages",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 165,
-      "cumulative": 699,
+      "votes": 163,
+      "cumulative": 698,
       "ballots": 1275,
-      "cumulative_ballots": 11772
+      "cumulative_ballots": 11773
     },
     {
       "year": 2026,
@@ -8622,9 +9150,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 178,
-      "cumulative": 877,
+      "cumulative": 876,
       "ballots": 1494,
-      "cumulative_ballots": 13266
+      "cumulative_ballots": 13267
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 117,
+      "cumulative": 993,
+      "ballots": 1229,
+      "cumulative_ballots": 14496
     },
     {
       "year": 2026,
@@ -8654,10 +9193,10 @@
       "cohort": "18–24",
       "day": 3,
       "date": "2026-10-17",
-      "votes": 7,
-      "cumulative": 38,
-      "ballots": 72,
-      "cumulative_ballots": 379
+      "votes": 8,
+      "cumulative": 39,
+      "ballots": 73,
+      "cumulative_ballots": 380
     },
     {
       "year": 2026,
@@ -8666,9 +9205,9 @@
       "day": 4,
       "date": "2026-10-18",
       "votes": 7,
-      "cumulative": 45,
+      "cumulative": 46,
       "ballots": 68,
-      "cumulative_ballots": 447
+      "cumulative_ballots": 448
     },
     {
       "year": 2026,
@@ -8677,9 +9216,9 @@
       "day": 5,
       "date": "2026-10-19",
       "votes": 13,
-      "cumulative": 58,
+      "cumulative": 59,
       "ballots": 129,
-      "cumulative_ballots": 576
+      "cumulative_ballots": 577
     },
     {
       "year": 2026,
@@ -8688,9 +9227,9 @@
       "day": 6,
       "date": "2026-10-20",
       "votes": 14,
-      "cumulative": 72,
+      "cumulative": 73,
       "ballots": 190,
-      "cumulative_ballots": 766
+      "cumulative_ballots": 767
     },
     {
       "year": 2026,
@@ -8699,9 +9238,9 @@
       "day": 7,
       "date": "2026-10-21",
       "votes": 33,
-      "cumulative": 105,
+      "cumulative": 106,
       "ballots": 229,
-      "cumulative_ballots": 995
+      "cumulative_ballots": 996
     },
     {
       "year": 2026,
@@ -8710,9 +9249,9 @@
       "day": 8,
       "date": "2026-10-22",
       "votes": 28,
-      "cumulative": 133,
+      "cumulative": 134,
       "ballots": 251,
-      "cumulative_ballots": 1246
+      "cumulative_ballots": 1247
     },
     {
       "year": 2026,
@@ -8721,9 +9260,9 @@
       "day": 9,
       "date": "2026-10-23",
       "votes": 44,
-      "cumulative": 177,
+      "cumulative": 178,
       "ballots": 338,
-      "cumulative_ballots": 1584
+      "cumulative_ballots": 1585
     },
     {
       "year": 2026,
@@ -8732,9 +9271,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 17,
-      "cumulative": 194,
+      "cumulative": 195,
       "ballots": 140,
-      "cumulative_ballots": 1724
+      "cumulative_ballots": 1725
     },
     {
       "year": 2026,
@@ -8743,9 +9282,9 @@
       "day": 11,
       "date": "2026-10-25",
       "votes": 26,
-      "cumulative": 220,
+      "cumulative": 221,
       "ballots": 141,
-      "cumulative_ballots": 1865
+      "cumulative_ballots": 1866
     },
     {
       "year": 2026,
@@ -8754,9 +9293,9 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 50,
-      "cumulative": 270,
+      "cumulative": 271,
       "ballots": 299,
-      "cumulative_ballots": 2164
+      "cumulative_ballots": 2165
     },
     {
       "year": 2026,
@@ -8765,9 +9304,9 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 56,
-      "cumulative": 326,
+      "cumulative": 327,
       "ballots": 328,
-      "cumulative_ballots": 2492
+      "cumulative_ballots": 2493
     },
     {
       "year": 2026,
@@ -8776,9 +9315,9 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 98,
-      "cumulative": 424,
+      "cumulative": 425,
       "ballots": 474,
-      "cumulative_ballots": 2966
+      "cumulative_ballots": 2967
     },
     {
       "year": 2026,
@@ -8786,10 +9325,10 @@
       "cohort": "18–24",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 141,
+      "votes": 140,
       "cumulative": 565,
       "ballots": 547,
-      "cumulative_ballots": 3513
+      "cumulative_ballots": 3514
     },
     {
       "year": 2026,
@@ -8800,7 +9339,18 @@
       "votes": 155,
       "cumulative": 720,
       "ballots": 701,
-      "cumulative_ballots": 4214
+      "cumulative_ballots": 4215
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 87,
+      "cumulative": 807,
+      "ballots": 424,
+      "cumulative_ballots": 4639
     },
     {
       "year": 2026,
@@ -8962,8 +9512,8 @@
       "cohort": "25–34",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 19,
-      "cumulative": 99,
+      "votes": 18,
+      "cumulative": 98,
       "ballots": 315,
       "cumulative_ballots": 2341
     },
@@ -8974,9 +9524,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 18,
-      "cumulative": 117,
+      "cumulative": 116,
       "ballots": 345,
       "cumulative_ballots": 2686
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 25,
+      "cumulative": 141,
+      "ballots": 357,
+      "cumulative_ballots": 3043
     },
     {
       "year": 2026,
@@ -9157,6 +9718,17 @@
     {
       "year": 2026,
       "scope": "Campus site",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 2,
+      "cumulative": 20,
+      "ballots": 139,
+      "cumulative_ballots": 1597
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
       "cohort": "45–64",
       "day": 1,
       "date": "2026-10-15",
@@ -9329,6 +9901,17 @@
       "cumulative": 14,
       "ballots": 188,
       "cumulative_ballots": 2856
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 2,
+      "cumulative": 16,
+      "ballots": 259,
+      "cumulative_ballots": 3115
     },
     {
       "year": 2026,
@@ -9509,6 +10092,17 @@
     {
       "year": 2026,
       "scope": "Campus site",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 1,
+      "cumulative": 9,
+      "ballots": 50,
+      "cumulative_ballots": 2102
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
       "cohort": "Unknown / outside range",
       "day": 1,
       "date": "2026-10-15",
@@ -9677,6 +10271,17 @@
       "cohort": "Unknown / outside range",
       "day": 16,
       "date": "2026-10-30",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
       "votes": 0,
       "cumulative": 0,
       "ballots": 0,
@@ -9842,8 +10447,8 @@
       "cohort": "18–22",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 124,
-      "cumulative": 484,
+      "votes": 123,
+      "cumulative": 483,
       "ballots": 430,
       "cumulative_ballots": 2746
     },
@@ -9854,9 +10459,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 148,
-      "cumulative": 632,
+      "cumulative": 631,
       "ballots": 594,
       "cumulative_ballots": 3340
+    },
+    {
+      "year": 2026,
+      "scope": "Campus site",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 73,
+      "cumulative": 704,
+      "ballots": 297,
+      "cumulative_ballots": 3637
     },
     {
       "year": 2026,
@@ -9864,10 +10480,10 @@
       "cohort": "All ages",
       "day": 1,
       "date": "2026-10-15",
-      "votes": 121,
-      "cumulative": 121,
-      "ballots": 21738,
-      "cumulative_ballots": 21738
+      "votes": 120,
+      "cumulative": 120,
+      "ballots": 21737,
+      "cumulative_ballots": 21737
     },
     {
       "year": 2026,
@@ -9876,9 +10492,9 @@
       "day": 2,
       "date": "2026-10-16",
       "votes": 90,
-      "cumulative": 211,
+      "cumulative": 210,
       "ballots": 22189,
-      "cumulative_ballots": 43927
+      "cumulative_ballots": 43926
     },
     {
       "year": 2026,
@@ -9886,9 +10502,9 @@
       "cohort": "All ages",
       "day": 3,
       "date": "2026-10-17",
-      "votes": 92,
+      "votes": 93,
       "cumulative": 303,
-      "ballots": 12196,
+      "ballots": 12197,
       "cumulative_ballots": 56123
     },
     {
@@ -9930,10 +10546,10 @@
       "cohort": "All ages",
       "day": 7,
       "date": "2026-10-21",
-      "votes": 186,
-      "cumulative": 910,
-      "ballots": 19279,
-      "cumulative_ballots": 127490
+      "votes": 185,
+      "cumulative": 909,
+      "ballots": 19278,
+      "cumulative_ballots": 127489
     },
     {
       "year": 2026,
@@ -9941,10 +10557,10 @@
       "cohort": "All ages",
       "day": 8,
       "date": "2026-10-22",
-      "votes": 202,
-      "cumulative": 1112,
+      "votes": 201,
+      "cumulative": 1110,
       "ballots": 18195,
-      "cumulative_ballots": 145685
+      "cumulative_ballots": 145684
     },
     {
       "year": 2026,
@@ -9952,10 +10568,10 @@
       "cohort": "All ages",
       "day": 9,
       "date": "2026-10-23",
-      "votes": 278,
-      "cumulative": 1390,
-      "ballots": 21125,
-      "cumulative_ballots": 166810
+      "votes": 277,
+      "cumulative": 1387,
+      "ballots": 21124,
+      "cumulative_ballots": 166808
     },
     {
       "year": 2026,
@@ -9964,9 +10580,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 211,
-      "cumulative": 1601,
+      "cumulative": 1598,
       "ballots": 12874,
-      "cumulative_ballots": 179684
+      "cumulative_ballots": 179682
     },
     {
       "year": 2026,
@@ -9974,10 +10590,10 @@
       "cohort": "All ages",
       "day": 11,
       "date": "2026-10-25",
-      "votes": 194,
-      "cumulative": 1795,
+      "votes": 193,
+      "cumulative": 1791,
       "ballots": 10236,
-      "cumulative_ballots": 189920
+      "cumulative_ballots": 189918
     },
     {
       "year": 2026,
@@ -9985,10 +10601,10 @@
       "cohort": "All ages",
       "day": 12,
       "date": "2026-10-26",
-      "votes": 329,
-      "cumulative": 2124,
+      "votes": 328,
+      "cumulative": 2119,
       "ballots": 21075,
-      "cumulative_ballots": 210995
+      "cumulative_ballots": 210993
     },
     {
       "year": 2026,
@@ -9996,10 +10612,10 @@
       "cohort": "All ages",
       "day": 13,
       "date": "2026-10-27",
-      "votes": 407,
-      "cumulative": 2531,
+      "votes": 406,
+      "cumulative": 2525,
       "ballots": 21457,
-      "cumulative_ballots": 232452
+      "cumulative_ballots": 232450
     },
     {
       "year": 2026,
@@ -10007,10 +10623,10 @@
       "cohort": "All ages",
       "day": 14,
       "date": "2026-10-28",
-      "votes": 533,
-      "cumulative": 3064,
+      "votes": 532,
+      "cumulative": 3057,
       "ballots": 22798,
-      "cumulative_ballots": 255250
+      "cumulative_ballots": 255248
     },
     {
       "year": 2026,
@@ -10018,10 +10634,10 @@
       "cohort": "All ages",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 672,
-      "cumulative": 3736,
+      "votes": 670,
+      "cumulative": 3727,
       "ballots": 24556,
-      "cumulative_ballots": 279806
+      "cumulative_ballots": 279804
     },
     {
       "year": 2026,
@@ -10029,10 +10645,21 @@
       "cohort": "All ages",
       "day": 16,
       "date": "2026-10-30",
-      "votes": 990,
-      "cumulative": 4726,
-      "ballots": 30953,
-      "cumulative_ballots": 310759
+      "votes": 988,
+      "cumulative": 4715,
+      "ballots": 30951,
+      "cumulative_ballots": 310755
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 916,
+      "cumulative": 5631,
+      "ballots": 23333,
+      "cumulative_ballots": 334088
     },
     {
       "year": 2026,
@@ -10040,10 +10667,10 @@
       "cohort": "18–24",
       "day": 1,
       "date": "2026-10-15",
-      "votes": 50,
-      "cumulative": 50,
-      "ballots": 895,
-      "cumulative_ballots": 895
+      "votes": 49,
+      "cumulative": 49,
+      "ballots": 894,
+      "cumulative_ballots": 894
     },
     {
       "year": 2026,
@@ -10052,9 +10679,9 @@
       "day": 2,
       "date": "2026-10-16",
       "votes": 35,
-      "cumulative": 85,
+      "cumulative": 84,
       "ballots": 1206,
-      "cumulative_ballots": 2101
+      "cumulative_ballots": 2100
     },
     {
       "year": 2026,
@@ -10062,9 +10689,9 @@
       "cohort": "18–24",
       "day": 3,
       "date": "2026-10-17",
-      "votes": 38,
+      "votes": 39,
       "cumulative": 123,
-      "ballots": 1060,
+      "ballots": 1061,
       "cumulative_ballots": 3161
     },
     {
@@ -10106,10 +10733,10 @@
       "cohort": "18–24",
       "day": 7,
       "date": "2026-10-21",
-      "votes": 68,
-      "cumulative": 330,
-      "ballots": 962,
-      "cumulative_ballots": 7310
+      "votes": 67,
+      "cumulative": 329,
+      "ballots": 961,
+      "cumulative_ballots": 7309
     },
     {
       "year": 2026,
@@ -10117,10 +10744,10 @@
       "cohort": "18–24",
       "day": 8,
       "date": "2026-10-22",
-      "votes": 86,
-      "cumulative": 416,
+      "votes": 85,
+      "cumulative": 414,
       "ballots": 1044,
-      "cumulative_ballots": 8354
+      "cumulative_ballots": 8353
     },
     {
       "year": 2026,
@@ -10128,10 +10755,10 @@
       "cohort": "18–24",
       "day": 9,
       "date": "2026-10-23",
-      "votes": 108,
-      "cumulative": 524,
-      "ballots": 1591,
-      "cumulative_ballots": 9945
+      "votes": 107,
+      "cumulative": 521,
+      "ballots": 1590,
+      "cumulative_ballots": 9943
     },
     {
       "year": 2026,
@@ -10140,9 +10767,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 80,
-      "cumulative": 604,
+      "cumulative": 601,
       "ballots": 1375,
-      "cumulative_ballots": 11320
+      "cumulative_ballots": 11318
     },
     {
       "year": 2026,
@@ -10151,9 +10778,9 @@
       "day": 11,
       "date": "2026-10-25",
       "votes": 86,
-      "cumulative": 690,
+      "cumulative": 687,
       "ballots": 1262,
-      "cumulative_ballots": 12582
+      "cumulative_ballots": 12580
     },
     {
       "year": 2026,
@@ -10162,9 +10789,9 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 128,
-      "cumulative": 818,
+      "cumulative": 815,
       "ballots": 1501,
-      "cumulative_ballots": 14083
+      "cumulative_ballots": 14081
     },
     {
       "year": 2026,
@@ -10173,9 +10800,9 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 154,
-      "cumulative": 972,
+      "cumulative": 969,
       "ballots": 1494,
-      "cumulative_ballots": 15577
+      "cumulative_ballots": 15575
     },
     {
       "year": 2026,
@@ -10184,9 +10811,9 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 225,
-      "cumulative": 1197,
+      "cumulative": 1194,
       "ballots": 1883,
-      "cumulative_ballots": 17460
+      "cumulative_ballots": 17458
     },
     {
       "year": 2026,
@@ -10194,10 +10821,10 @@
       "cohort": "18–24",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 298,
-      "cumulative": 1495,
+      "votes": 297,
+      "cumulative": 1491,
       "ballots": 2222,
-      "cumulative_ballots": 19682
+      "cumulative_ballots": 19680
     },
     {
       "year": 2026,
@@ -10206,9 +10833,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 390,
-      "cumulative": 1885,
+      "cumulative": 1881,
       "ballots": 3298,
-      "cumulative_ballots": 22980
+      "cumulative_ballots": 22978
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 294,
+      "cumulative": 2175,
+      "ballots": 2592,
+      "cumulative_ballots": 25570
     },
     {
       "year": 2026,
@@ -10326,8 +10964,8 @@
       "cohort": "25–34",
       "day": 11,
       "date": "2026-10-25",
-      "votes": 50,
-      "cumulative": 475,
+      "votes": 49,
+      "cumulative": 474,
       "ballots": 1569,
       "cumulative_ballots": 19305
     },
@@ -10338,7 +10976,7 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 97,
-      "cumulative": 572,
+      "cumulative": 571,
       "ballots": 2612,
       "cumulative_ballots": 21917
     },
@@ -10349,7 +10987,7 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 126,
-      "cumulative": 698,
+      "cumulative": 697,
       "ballots": 2969,
       "cumulative_ballots": 24886
     },
@@ -10359,8 +10997,8 @@
       "cohort": "25–34",
       "day": 14,
       "date": "2026-10-28",
-      "votes": 143,
-      "cumulative": 841,
+      "votes": 142,
+      "cumulative": 839,
       "ballots": 3428,
       "cumulative_ballots": 28314
     },
@@ -10370,8 +11008,8 @@
       "cohort": "25–34",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 196,
-      "cumulative": 1037,
+      "votes": 195,
+      "cumulative": 1034,
       "ballots": 4069,
       "cumulative_ballots": 32383
     },
@@ -10381,10 +11019,21 @@
       "cohort": "25–34",
       "day": 16,
       "date": "2026-10-30",
-      "votes": 318,
-      "cumulative": 1355,
+      "votes": 317,
+      "cumulative": 1351,
       "ballots": 5837,
       "cumulative_ballots": 38220
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 345,
+      "cumulative": 1696,
+      "ballots": 5130,
+      "cumulative_ballots": 43350
     },
     {
       "year": 2026,
@@ -10557,10 +11206,21 @@
       "cohort": "35–44",
       "day": 16,
       "date": "2026-10-30",
-      "votes": 141,
-      "cumulative": 551,
-      "ballots": 6070,
-      "cumulative_ballots": 44130
+      "votes": 140,
+      "cumulative": 550,
+      "ballots": 6069,
+      "cumulative_ballots": 44129
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 138,
+      "cumulative": 688,
+      "ballots": 4491,
+      "cumulative_ballots": 48620
     },
     {
       "year": 2026,
@@ -10689,8 +11349,8 @@
       "cohort": "45–64",
       "day": 12,
       "date": "2026-10-26",
-      "votes": 41,
-      "cumulative": 339,
+      "votes": 40,
+      "cumulative": 338,
       "ballots": 7387,
       "cumulative_ballots": 74863
     },
@@ -10701,7 +11361,7 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 49,
-      "cumulative": 388,
+      "cumulative": 387,
       "ballots": 7491,
       "cumulative_ballots": 82354
     },
@@ -10712,7 +11372,7 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 63,
-      "cumulative": 451,
+      "cumulative": 450,
       "ballots": 7917,
       "cumulative_ballots": 90271
     },
@@ -10723,7 +11383,7 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 63,
-      "cumulative": 514,
+      "cumulative": 513,
       "ballots": 8699,
       "cumulative_ballots": 98970
     },
@@ -10734,9 +11394,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 99,
-      "cumulative": 613,
-      "ballots": 10783,
-      "cumulative_ballots": 109753
+      "cumulative": 612,
+      "ballots": 10782,
+      "cumulative_ballots": 109752
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 110,
+      "cumulative": 722,
+      "ballots": 8570,
+      "cumulative_ballots": 118322
     },
     {
       "year": 2026,
@@ -10876,8 +11547,8 @@
       "cohort": "65+",
       "day": 13,
       "date": "2026-10-27",
-      "votes": 37,
-      "cumulative": 205,
+      "votes": 36,
+      "cumulative": 204,
       "ballots": 6279,
       "cumulative_ballots": 79523
     },
@@ -10888,7 +11559,7 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 33,
-      "cumulative": 238,
+      "cumulative": 237,
       "ballots": 5930,
       "cumulative_ballots": 85453
     },
@@ -10899,7 +11570,7 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 42,
-      "cumulative": 280,
+      "cumulative": 279,
       "ballots": 5258,
       "cumulative_ballots": 90711
     },
@@ -10910,9 +11581,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 42,
-      "cumulative": 322,
+      "cumulative": 321,
       "ballots": 4965,
       "cumulative_ballots": 95676
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 29,
+      "cumulative": 350,
+      "ballots": 2550,
+      "cumulative_ballots": 98226
     },
     {
       "year": 2026,
@@ -11093,13 +11775,24 @@
     {
       "year": 2026,
       "scope": "Wake County",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
       "cohort": "18–22",
       "day": 1,
       "date": "2026-10-15",
-      "votes": 43,
-      "cumulative": 43,
-      "ballots": 636,
-      "cumulative_ballots": 636
+      "votes": 42,
+      "cumulative": 42,
+      "ballots": 635,
+      "cumulative_ballots": 635
     },
     {
       "year": 2026,
@@ -11108,9 +11801,9 @@
       "day": 2,
       "date": "2026-10-16",
       "votes": 24,
-      "cumulative": 67,
+      "cumulative": 66,
       "ballots": 855,
-      "cumulative_ballots": 1491
+      "cumulative_ballots": 1490
     },
     {
       "year": 2026,
@@ -11119,9 +11812,9 @@
       "day": 3,
       "date": "2026-10-17",
       "votes": 27,
-      "cumulative": 94,
+      "cumulative": 93,
       "ballots": 762,
-      "cumulative_ballots": 2253
+      "cumulative_ballots": 2252
     },
     {
       "year": 2026,
@@ -11130,9 +11823,9 @@
       "day": 4,
       "date": "2026-10-18",
       "votes": 25,
-      "cumulative": 119,
+      "cumulative": 118,
       "ballots": 653,
-      "cumulative_ballots": 2906
+      "cumulative_ballots": 2905
     },
     {
       "year": 2026,
@@ -11141,9 +11834,9 @@
       "day": 5,
       "date": "2026-10-19",
       "votes": 31,
-      "cumulative": 150,
+      "cumulative": 149,
       "ballots": 783,
-      "cumulative_ballots": 3689
+      "cumulative_ballots": 3688
     },
     {
       "year": 2026,
@@ -11152,9 +11845,9 @@
       "day": 6,
       "date": "2026-10-20",
       "votes": 45,
-      "cumulative": 195,
+      "cumulative": 194,
       "ballots": 812,
-      "cumulative_ballots": 4501
+      "cumulative_ballots": 4500
     },
     {
       "year": 2026,
@@ -11163,9 +11856,9 @@
       "day": 7,
       "date": "2026-10-21",
       "votes": 47,
-      "cumulative": 242,
+      "cumulative": 241,
       "ballots": 623,
-      "cumulative_ballots": 5124
+      "cumulative_ballots": 5123
     },
     {
       "year": 2026,
@@ -11173,10 +11866,10 @@
       "cohort": "18–22",
       "day": 8,
       "date": "2026-10-22",
-      "votes": 64,
-      "cumulative": 306,
+      "votes": 63,
+      "cumulative": 304,
       "ballots": 684,
-      "cumulative_ballots": 5808
+      "cumulative_ballots": 5807
     },
     {
       "year": 2026,
@@ -11184,10 +11877,10 @@
       "cohort": "18–22",
       "day": 9,
       "date": "2026-10-23",
-      "votes": 82,
-      "cumulative": 388,
-      "ballots": 1114,
-      "cumulative_ballots": 6922
+      "votes": 81,
+      "cumulative": 385,
+      "ballots": 1113,
+      "cumulative_ballots": 6920
     },
     {
       "year": 2026,
@@ -11196,9 +11889,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 52,
-      "cumulative": 440,
+      "cumulative": 437,
       "ballots": 996,
-      "cumulative_ballots": 7918
+      "cumulative_ballots": 7916
     },
     {
       "year": 2026,
@@ -11207,9 +11900,9 @@
       "day": 11,
       "date": "2026-10-25",
       "votes": 72,
-      "cumulative": 512,
+      "cumulative": 509,
       "ballots": 893,
-      "cumulative_ballots": 8811
+      "cumulative_ballots": 8809
     },
     {
       "year": 2026,
@@ -11218,9 +11911,9 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 92,
-      "cumulative": 604,
+      "cumulative": 601,
       "ballots": 980,
-      "cumulative_ballots": 9791
+      "cumulative_ballots": 9789
     },
     {
       "year": 2026,
@@ -11229,9 +11922,9 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 104,
-      "cumulative": 708,
+      "cumulative": 705,
       "ballots": 978,
-      "cumulative_ballots": 10769
+      "cumulative_ballots": 10767
     },
     {
       "year": 2026,
@@ -11240,9 +11933,9 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 150,
-      "cumulative": 858,
+      "cumulative": 855,
       "ballots": 1237,
-      "cumulative_ballots": 12006
+      "cumulative_ballots": 12004
     },
     {
       "year": 2026,
@@ -11250,10 +11943,10 @@
       "cohort": "18–22",
       "day": 15,
       "date": "2026-10-29",
-      "votes": 217,
-      "cumulative": 1075,
+      "votes": 216,
+      "cumulative": 1071,
       "ballots": 1431,
-      "cumulative_ballots": 13437
+      "cumulative_ballots": 13435
     },
     {
       "year": 2026,
@@ -11262,9 +11955,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 291,
-      "cumulative": 1366,
+      "cumulative": 1362,
       "ballots": 2245,
-      "cumulative_ballots": 15682
+      "cumulative_ballots": 15680
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 182,
+      "cumulative": 1544,
+      "ballots": 1676,
+      "cumulative_ballots": 17356
     },
     {
       "year": 2026,
@@ -11272,10 +11976,10 @@
       "cohort": "All ages",
       "day": 1,
       "date": "2026-10-15",
-      "votes": 93,
-      "cumulative": 93,
-      "ballots": 20908,
-      "cumulative_ballots": 20908
+      "votes": 92,
+      "cumulative": 92,
+      "ballots": 20907,
+      "cumulative_ballots": 20907
     },
     {
       "year": 2026,
@@ -11284,9 +11988,9 @@
       "day": 2,
       "date": "2026-10-16",
       "votes": 78,
-      "cumulative": 171,
+      "cumulative": 170,
       "ballots": 21386,
-      "cumulative_ballots": 42294
+      "cumulative_ballots": 42293
     },
     {
       "year": 2026,
@@ -11295,9 +11999,9 @@
       "day": 3,
       "date": "2026-10-17",
       "votes": 83,
-      "cumulative": 254,
+      "cumulative": 253,
       "ballots": 11730,
-      "cumulative_ballots": 54024
+      "cumulative_ballots": 54023
     },
     {
       "year": 2026,
@@ -11306,9 +12010,9 @@
       "day": 4,
       "date": "2026-10-18",
       "votes": 81,
-      "cumulative": 335,
+      "cumulative": 334,
       "ballots": 9463,
-      "cumulative_ballots": 63487
+      "cumulative_ballots": 63486
     },
     {
       "year": 2026,
@@ -11317,9 +12021,9 @@
       "day": 5,
       "date": "2026-10-19",
       "votes": 136,
-      "cumulative": 471,
+      "cumulative": 470,
       "ballots": 21092,
-      "cumulative_ballots": 84579
+      "cumulative_ballots": 84578
     },
     {
       "year": 2026,
@@ -11328,9 +12032,9 @@
       "day": 6,
       "date": "2026-10-20",
       "votes": 148,
-      "cumulative": 619,
+      "cumulative": 618,
       "ballots": 19726,
-      "cumulative_ballots": 104305
+      "cumulative_ballots": 104304
     },
     {
       "year": 2026,
@@ -11338,10 +12042,10 @@
       "cohort": "All ages",
       "day": 7,
       "date": "2026-10-21",
-      "votes": 142,
-      "cumulative": 761,
-      "ballots": 18545,
-      "cumulative_ballots": 122850
+      "votes": 141,
+      "cumulative": 759,
+      "ballots": 18544,
+      "cumulative_ballots": 122848
     },
     {
       "year": 2026,
@@ -11349,10 +12053,10 @@
       "cohort": "All ages",
       "day": 8,
       "date": "2026-10-22",
-      "votes": 166,
-      "cumulative": 927,
+      "votes": 165,
+      "cumulative": 924,
       "ballots": 17466,
-      "cumulative_ballots": 140316
+      "cumulative_ballots": 140314
     },
     {
       "year": 2026,
@@ -11360,10 +12064,10 @@
       "cohort": "All ages",
       "day": 9,
       "date": "2026-10-23",
-      "votes": 230,
-      "cumulative": 1157,
-      "ballots": 20121,
-      "cumulative_ballots": 160437
+      "votes": 229,
+      "cumulative": 1153,
+      "ballots": 20120,
+      "cumulative_ballots": 160434
     },
     {
       "year": 2026,
@@ -11372,9 +12076,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 182,
-      "cumulative": 1339,
+      "cumulative": 1335,
       "ballots": 12303,
-      "cumulative_ballots": 172740
+      "cumulative_ballots": 172737
     },
     {
       "year": 2026,
@@ -11382,10 +12086,10 @@
       "cohort": "All ages",
       "day": 11,
       "date": "2026-10-25",
-      "votes": 161,
-      "cumulative": 1500,
+      "votes": 160,
+      "cumulative": 1495,
       "ballots": 9719,
-      "cumulative_ballots": 182459
+      "cumulative_ballots": 182456
     },
     {
       "year": 2026,
@@ -11393,10 +12097,10 @@
       "cohort": "All ages",
       "day": 12,
       "date": "2026-10-26",
-      "votes": 269,
-      "cumulative": 1769,
+      "votes": 268,
+      "cumulative": 1763,
       "ballots": 20138,
-      "cumulative_ballots": 202597
+      "cumulative_ballots": 202594
     },
     {
       "year": 2026,
@@ -11404,10 +12108,10 @@
       "cohort": "All ages",
       "day": 13,
       "date": "2026-10-27",
-      "votes": 337,
-      "cumulative": 2106,
+      "votes": 336,
+      "cumulative": 2099,
       "ballots": 20486,
-      "cumulative_ballots": 223083
+      "cumulative_ballots": 223080
     },
     {
       "year": 2026,
@@ -11415,10 +12119,10 @@
       "cohort": "All ages",
       "day": 14,
       "date": "2026-10-28",
-      "votes": 424,
-      "cumulative": 2530,
+      "votes": 423,
+      "cumulative": 2522,
       "ballots": 21670,
-      "cumulative_ballots": 244753
+      "cumulative_ballots": 244750
     },
     {
       "year": 2026,
@@ -11427,9 +12131,9 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 507,
-      "cumulative": 3037,
+      "cumulative": 3029,
       "ballots": 23281,
-      "cumulative_ballots": 268034
+      "cumulative_ballots": 268031
     },
     {
       "year": 2026,
@@ -11437,10 +12141,21 @@
       "cohort": "All ages",
       "day": 16,
       "date": "2026-10-30",
-      "votes": 812,
-      "cumulative": 3849,
-      "ballots": 29459,
-      "cumulative_ballots": 297493
+      "votes": 810,
+      "cumulative": 3839,
+      "ballots": 29457,
+      "cumulative_ballots": 297488
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "All ages",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 799,
+      "cumulative": 4638,
+      "ballots": 22104,
+      "cumulative_ballots": 319592
     },
     {
       "year": 2026,
@@ -11448,10 +12163,10 @@
       "cohort": "18–24",
       "day": 1,
       "date": "2026-10-15",
-      "votes": 27,
-      "cumulative": 27,
-      "ballots": 740,
-      "cumulative_ballots": 740
+      "votes": 26,
+      "cumulative": 26,
+      "ballots": 739,
+      "cumulative_ballots": 739
     },
     {
       "year": 2026,
@@ -11460,9 +12175,9 @@
       "day": 2,
       "date": "2026-10-16",
       "votes": 27,
-      "cumulative": 54,
+      "cumulative": 53,
       "ballots": 1054,
-      "cumulative_ballots": 1794
+      "cumulative_ballots": 1793
     },
     {
       "year": 2026,
@@ -11471,9 +12186,9 @@
       "day": 3,
       "date": "2026-10-17",
       "votes": 31,
-      "cumulative": 85,
+      "cumulative": 84,
       "ballots": 988,
-      "cumulative_ballots": 2782
+      "cumulative_ballots": 2781
     },
     {
       "year": 2026,
@@ -11482,9 +12197,9 @@
       "day": 4,
       "date": "2026-10-18",
       "votes": 27,
-      "cumulative": 112,
+      "cumulative": 111,
       "ballots": 801,
-      "cumulative_ballots": 3583
+      "cumulative_ballots": 3582
     },
     {
       "year": 2026,
@@ -11493,9 +12208,9 @@
       "day": 5,
       "date": "2026-10-19",
       "votes": 31,
-      "cumulative": 143,
+      "cumulative": 142,
       "ballots": 1025,
-      "cumulative_ballots": 4608
+      "cumulative_ballots": 4607
     },
     {
       "year": 2026,
@@ -11504,9 +12219,9 @@
       "day": 6,
       "date": "2026-10-20",
       "votes": 47,
-      "cumulative": 190,
+      "cumulative": 189,
       "ballots": 974,
-      "cumulative_ballots": 5582
+      "cumulative_ballots": 5581
     },
     {
       "year": 2026,
@@ -11514,10 +12229,10 @@
       "cohort": "18–24",
       "day": 7,
       "date": "2026-10-21",
-      "votes": 35,
-      "cumulative": 225,
-      "ballots": 733,
-      "cumulative_ballots": 6315
+      "votes": 34,
+      "cumulative": 223,
+      "ballots": 732,
+      "cumulative_ballots": 6313
     },
     {
       "year": 2026,
@@ -11525,10 +12240,10 @@
       "cohort": "18–24",
       "day": 8,
       "date": "2026-10-22",
-      "votes": 58,
-      "cumulative": 283,
+      "votes": 57,
+      "cumulative": 280,
       "ballots": 793,
-      "cumulative_ballots": 7108
+      "cumulative_ballots": 7106
     },
     {
       "year": 2026,
@@ -11536,10 +12251,10 @@
       "cohort": "18–24",
       "day": 9,
       "date": "2026-10-23",
-      "votes": 64,
-      "cumulative": 347,
-      "ballots": 1253,
-      "cumulative_ballots": 8361
+      "votes": 63,
+      "cumulative": 343,
+      "ballots": 1252,
+      "cumulative_ballots": 8358
     },
     {
       "year": 2026,
@@ -11548,9 +12263,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 63,
-      "cumulative": 410,
+      "cumulative": 406,
       "ballots": 1235,
-      "cumulative_ballots": 9596
+      "cumulative_ballots": 9593
     },
     {
       "year": 2026,
@@ -11559,9 +12274,9 @@
       "day": 11,
       "date": "2026-10-25",
       "votes": 60,
-      "cumulative": 470,
+      "cumulative": 466,
       "ballots": 1121,
-      "cumulative_ballots": 10717
+      "cumulative_ballots": 10714
     },
     {
       "year": 2026,
@@ -11570,9 +12285,9 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 78,
-      "cumulative": 548,
+      "cumulative": 544,
       "ballots": 1202,
-      "cumulative_ballots": 11919
+      "cumulative_ballots": 11916
     },
     {
       "year": 2026,
@@ -11581,9 +12296,9 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 98,
-      "cumulative": 646,
+      "cumulative": 642,
       "ballots": 1166,
-      "cumulative_ballots": 13085
+      "cumulative_ballots": 13082
     },
     {
       "year": 2026,
@@ -11592,9 +12307,9 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 127,
-      "cumulative": 773,
+      "cumulative": 769,
       "ballots": 1409,
-      "cumulative_ballots": 14494
+      "cumulative_ballots": 14491
     },
     {
       "year": 2026,
@@ -11603,9 +12318,9 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 157,
-      "cumulative": 930,
+      "cumulative": 926,
       "ballots": 1675,
-      "cumulative_ballots": 16169
+      "cumulative_ballots": 16166
     },
     {
       "year": 2026,
@@ -11614,9 +12329,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 235,
-      "cumulative": 1165,
+      "cumulative": 1161,
       "ballots": 2597,
-      "cumulative_ballots": 18766
+      "cumulative_ballots": 18763
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–24",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 207,
+      "cumulative": 1368,
+      "ballots": 2168,
+      "cumulative_ballots": 20931
     },
     {
       "year": 2026,
@@ -11734,8 +12460,8 @@
       "cohort": "25–34",
       "day": 11,
       "date": "2026-10-25",
-      "votes": 46,
-      "cumulative": 422,
+      "votes": 45,
+      "cumulative": 421,
       "ballots": 1443,
       "cumulative_ballots": 17930
     },
@@ -11746,7 +12472,7 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 90,
-      "cumulative": 512,
+      "cumulative": 511,
       "ballots": 2423,
       "cumulative_ballots": 20353
     },
@@ -11757,7 +12483,7 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 116,
-      "cumulative": 628,
+      "cumulative": 627,
       "ballots": 2759,
       "cumulative_ballots": 23112
     },
@@ -11767,8 +12493,8 @@
       "cohort": "25–34",
       "day": 14,
       "date": "2026-10-28",
-      "votes": 133,
-      "cumulative": 761,
+      "votes": 132,
+      "cumulative": 759,
       "ballots": 3176,
       "cumulative_ballots": 26288
     },
@@ -11779,7 +12505,7 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 177,
-      "cumulative": 938,
+      "cumulative": 936,
       "ballots": 3754,
       "cumulative_ballots": 30042
     },
@@ -11789,10 +12515,21 @@
       "cohort": "25–34",
       "day": 16,
       "date": "2026-10-30",
-      "votes": 300,
-      "cumulative": 1238,
+      "votes": 299,
+      "cumulative": 1235,
       "ballots": 5492,
       "cumulative_ballots": 35534
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "25–34",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 320,
+      "cumulative": 1555,
+      "ballots": 4773,
+      "cumulative_ballots": 40307
     },
     {
       "year": 2026,
@@ -11965,10 +12702,21 @@
       "cohort": "35–44",
       "day": 16,
       "date": "2026-10-30",
-      "votes": 138,
-      "cumulative": 533,
-      "ballots": 5917,
-      "cumulative_ballots": 42672
+      "votes": 137,
+      "cumulative": 532,
+      "ballots": 5916,
+      "cumulative_ballots": 42671
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "35–44",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 136,
+      "cumulative": 668,
+      "ballots": 4352,
+      "cumulative_ballots": 47023
     },
     {
       "year": 2026,
@@ -12097,8 +12845,8 @@
       "cohort": "45–64",
       "day": 12,
       "date": "2026-10-26",
-      "votes": 39,
-      "cumulative": 330,
+      "votes": 38,
+      "cumulative": 329,
       "ballots": 7187,
       "cumulative_ballots": 72785
     },
@@ -12109,7 +12857,7 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 48,
-      "cumulative": 378,
+      "cumulative": 377,
       "ballots": 7294,
       "cumulative_ballots": 80079
     },
@@ -12120,7 +12868,7 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 62,
-      "cumulative": 440,
+      "cumulative": 439,
       "ballots": 7731,
       "cumulative_ballots": 87810
     },
@@ -12131,7 +12879,7 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 62,
-      "cumulative": 502,
+      "cumulative": 501,
       "ballots": 8492,
       "cumulative_ballots": 96302
     },
@@ -12142,9 +12890,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 97,
-      "cumulative": 599,
-      "ballots": 10595,
-      "cumulative_ballots": 106897
+      "cumulative": 598,
+      "ballots": 10594,
+      "cumulative_ballots": 106896
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "45–64",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 108,
+      "cumulative": 706,
+      "ballots": 8311,
+      "cumulative_ballots": 115207
     },
     {
       "year": 2026,
@@ -12284,8 +13043,8 @@
       "cohort": "65+",
       "day": 13,
       "date": "2026-10-27",
-      "votes": 36,
-      "cumulative": 198,
+      "votes": 35,
+      "cumulative": 197,
       "ballots": 6147,
       "cumulative_ballots": 77769
     },
@@ -12296,7 +13055,7 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 33,
-      "cumulative": 231,
+      "cumulative": 230,
       "ballots": 5819,
       "cumulative_ballots": 83588
     },
@@ -12307,7 +13066,7 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 41,
-      "cumulative": 272,
+      "cumulative": 271,
       "ballots": 5178,
       "cumulative_ballots": 88766
     },
@@ -12318,9 +13077,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 42,
-      "cumulative": 314,
+      "cumulative": 313,
       "ballots": 4858,
       "cumulative_ballots": 93624
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "65+",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 28,
+      "cumulative": 341,
+      "ballots": 2500,
+      "cumulative_ballots": 96124
     },
     {
       "year": 2026,
@@ -12501,13 +13271,24 @@
     {
       "year": 2026,
       "scope": "Other Wake sites",
+      "cohort": "Unknown / outside range",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 0,
+      "cumulative": 0,
+      "ballots": 0,
+      "cumulative_ballots": 0
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
       "cohort": "18–22",
       "day": 1,
       "date": "2026-10-15",
-      "votes": 21,
-      "cumulative": 21,
-      "ballots": 512,
-      "cumulative_ballots": 512
+      "votes": 20,
+      "cumulative": 20,
+      "ballots": 511,
+      "cumulative_ballots": 511
     },
     {
       "year": 2026,
@@ -12516,9 +13297,9 @@
       "day": 2,
       "date": "2026-10-16",
       "votes": 18,
-      "cumulative": 39,
+      "cumulative": 38,
       "ballots": 740,
-      "cumulative_ballots": 1252
+      "cumulative_ballots": 1251
     },
     {
       "year": 2026,
@@ -12527,9 +13308,9 @@
       "day": 3,
       "date": "2026-10-17",
       "votes": 22,
-      "cumulative": 61,
+      "cumulative": 60,
       "ballots": 715,
-      "cumulative_ballots": 1967
+      "cumulative_ballots": 1966
     },
     {
       "year": 2026,
@@ -12538,9 +13319,9 @@
       "day": 4,
       "date": "2026-10-18",
       "votes": 21,
-      "cumulative": 82,
+      "cumulative": 81,
       "ballots": 604,
-      "cumulative_ballots": 2571
+      "cumulative_ballots": 2570
     },
     {
       "year": 2026,
@@ -12549,9 +13330,9 @@
       "day": 5,
       "date": "2026-10-19",
       "votes": 21,
-      "cumulative": 103,
+      "cumulative": 102,
       "ballots": 693,
-      "cumulative_ballots": 3264
+      "cumulative_ballots": 3263
     },
     {
       "year": 2026,
@@ -12560,9 +13341,9 @@
       "day": 6,
       "date": "2026-10-20",
       "votes": 32,
-      "cumulative": 135,
+      "cumulative": 134,
       "ballots": 652,
-      "cumulative_ballots": 3916
+      "cumulative_ballots": 3915
     },
     {
       "year": 2026,
@@ -12571,9 +13352,9 @@
       "day": 7,
       "date": "2026-10-21",
       "votes": 20,
-      "cumulative": 155,
+      "cumulative": 154,
       "ballots": 446,
-      "cumulative_ballots": 4362
+      "cumulative_ballots": 4361
     },
     {
       "year": 2026,
@@ -12581,10 +13362,10 @@
       "cohort": "18–22",
       "day": 8,
       "date": "2026-10-22",
-      "votes": 41,
-      "cumulative": 196,
+      "votes": 40,
+      "cumulative": 194,
       "ballots": 482,
-      "cumulative_ballots": 4844
+      "cumulative_ballots": 4843
     },
     {
       "year": 2026,
@@ -12592,10 +13373,10 @@
       "cohort": "18–22",
       "day": 9,
       "date": "2026-10-23",
-      "votes": 43,
-      "cumulative": 239,
-      "ballots": 837,
-      "cumulative_ballots": 5681
+      "votes": 42,
+      "cumulative": 236,
+      "ballots": 836,
+      "cumulative_ballots": 5679
     },
     {
       "year": 2026,
@@ -12604,9 +13385,9 @@
       "day": 10,
       "date": "2026-10-24",
       "votes": 37,
-      "cumulative": 276,
+      "cumulative": 273,
       "ballots": 903,
-      "cumulative_ballots": 6584
+      "cumulative_ballots": 6582
     },
     {
       "year": 2026,
@@ -12615,9 +13396,9 @@
       "day": 11,
       "date": "2026-10-25",
       "votes": 48,
-      "cumulative": 324,
+      "cumulative": 321,
       "ballots": 779,
-      "cumulative_ballots": 7363
+      "cumulative_ballots": 7361
     },
     {
       "year": 2026,
@@ -12626,9 +13407,9 @@
       "day": 12,
       "date": "2026-10-26",
       "votes": 51,
-      "cumulative": 375,
+      "cumulative": 372,
       "ballots": 749,
-      "cumulative_ballots": 8112
+      "cumulative_ballots": 8110
     },
     {
       "year": 2026,
@@ -12637,9 +13418,9 @@
       "day": 13,
       "date": "2026-10-27",
       "votes": 52,
-      "cumulative": 427,
+      "cumulative": 424,
       "ballots": 711,
-      "cumulative_ballots": 8823
+      "cumulative_ballots": 8821
     },
     {
       "year": 2026,
@@ -12648,9 +13429,9 @@
       "day": 14,
       "date": "2026-10-28",
       "votes": 71,
-      "cumulative": 498,
+      "cumulative": 495,
       "ballots": 867,
-      "cumulative_ballots": 9690
+      "cumulative_ballots": 9688
     },
     {
       "year": 2026,
@@ -12659,9 +13440,9 @@
       "day": 15,
       "date": "2026-10-29",
       "votes": 93,
-      "cumulative": 591,
+      "cumulative": 588,
       "ballots": 1001,
-      "cumulative_ballots": 10691
+      "cumulative_ballots": 10689
     },
     {
       "year": 2026,
@@ -12670,9 +13451,20 @@
       "day": 16,
       "date": "2026-10-30",
       "votes": 143,
-      "cumulative": 734,
+      "cumulative": 731,
       "ballots": 1651,
-      "cumulative_ballots": 12342
+      "cumulative_ballots": 12340
+    },
+    {
+      "year": 2026,
+      "scope": "Other Wake sites",
+      "cohort": "18–22",
+      "day": 17,
+      "date": "2026-10-31",
+      "votes": 109,
+      "cumulative": 840,
+      "ballots": 1379,
+      "cumulative_ballots": 13719
     }
   ]
 }

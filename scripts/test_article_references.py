@@ -33,17 +33,17 @@ for r in d['rows']:
   exact=float(Fraction(b-a,a)*100)
   assert math.isclose(r[prefix+'_growth_pct'],exact,abs_tol=1e-10)
  assert math.isclose(r['site_growth_gap_pp'],r['site_growth_pct']-r['county_growth_pct'],abs_tol=1e-10)
-assert d['periods']['2022']=={'start_date':'2022-10-20','end_date':'2022-11-04'}
-assert d['periods']['2026']=={'start_date':'2026-10-15','end_date':'2026-10-30'}
-assert d['as_of']=='2026-10-30' and d['matched_days']==16
+assert d['periods']['2022']=={'start_date':'2022-10-20','end_date':'2022-11-05'}
+assert d['periods']['2026']=={'start_date':'2026-10-15','end_date':'2026-10-31'}
+assert d['as_of']=='2026-10-31' and d['matched_days']==17
 assert html.count('class="source-card"')==2
 assert 'id="baseline"' not in html and 'CsvProofView' not in html and 'csv-workspace' not in html
 assert '32.1%' not in html and '31.8%' not in html and 'share of site ballots' not in html
-assert '+40.5%' in html and '+103.6%' in html and '63.1 percentage points behind' in html
+assert '+36.4%' in html and '+90.8%' in html and '54.5 percentage points behind' in html
 youngest=d['rows'][0]
 benchmark=Fraction(youngest['site_ballots_2022'],youngest['county_ballots_2022'])*youngest['county_ballots_2026']
-assert round(benchmark)==6106 and round(benchmark-youngest['site_ballots_2026'])==1892
-assert 'id="youngest-benchmark"' in html and '6,106 benchmark − 4,214 actual ≈ 1,892 below benchmark' in html
+assert round(benchmark)==6493 and round(benchmark-youngest['site_ballots_2026'])==1854
+assert 'id="youngest-benchmark"' in html and '6,493 benchmark − 4,639 actual ≈ 1,854 below benchmark' in html
 assert 'not a count of nonvoters or proof of the move' in html
 assert '50 ÷ 80 × 60 = 37.5 seconds ≈ 38 seconds' in html and '0.625 minutes' not in html
 assert all(f'id="{id}"' in html for id in ['ref-growth','ref-walking','ref-routine','ref-parking','ref-reporting','google-route-verification'])
@@ -67,7 +67,8 @@ for key in article['queries']:
  if key not in {'statewide_early_voting_context','article_opening_context'}:assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
 opening=article['queries']['article_opening_context']
 assert len(opening['rows'])==3 and all(r['source_url'] in opening['source']['files'] for r in opening['rows'])
-assert opening['rows'][0]['reported_at']=='2026-10-31' and 'midterm early' in opening['rows'][0]['claim']
+assert opening['rows'][0]['reported_at']=='2026-11-02' and 'midterm early' in opening['rows'][0]['claim']
+assert 'id="full-period-data"' in html and '334,088' in html and '14,496' in html
 assert 'portion' in opening['rows'][2]['claim']
 assert sum(r['spaces'] for r in article['queries']['campus_parking']['rows'] if r['objectid'] in [26,92,166])==2192
 assert sum(r['spaces'] for r in article['queries']['campus_parking']['rows'] if r['objectid'] in [34,38,55,56])==660

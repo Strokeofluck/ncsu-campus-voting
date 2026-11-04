@@ -9,7 +9,12 @@ for(const year of [2022,2026]){
  const row=(age,site=true,overrides={})=>headers.map(h=>({...{county_desc:'WAKE',ballot_req_type:'ONE-STOP',ballot_rtn_status:'ACCEPTED',ballot_rtn_dt:year===2022?'10/20/2022':'10/15/2026',site_name:site?context.site_mapping[year]:'OTHER WAKE SITE',age:String(age)},...overrides})[h]||'');
  for(const age of [18,25,35,45,65]){for(let i=0;i<(year===2022?1:3);i++)rows.push(row(age));rows.push(row(age,false));}
  if(year===2026)rows.push(row(24));
- rows.push(row(18,true,{ballot_rtn_status:'REJECTED'}),row(18,true,{ballot_rtn_dt:year===2022?'11/05/2022':'10/31/2026'}));
+ rows.push(row(18,true,{ballot_rtn_status:'REJECTED'}),row(18,true,{ballot_rtn_dt:year===2022?'11/06/2022':'11/01/2026'}));
+ const meta={...context.summary.find(r=>r.year===year&&r.scope==='Campus site'),site:context.site_mapping[year]};
+ const finalDay=year===2022?'11/05/2022':'10/31/2026';
+ const evaluated=ArticleExcelPlan.evaluate([1,'WAKE','ONE-STOP','ACCEPTED',finalDay,meta.site,'18'],meta,[0,0]);
+ assert.equal(evaluated[8],1,'The final Saturday must be included');
+ assert.equal(evaluated[9],1,'The final Saturday campus ballot must be included');
  inputs[year]=Buffer.from([headers.join(','),...rows.map(r=>r.join(','))].join('\r\n')+'\r\n');
 }
 (async()=>{
@@ -25,6 +30,6 @@ for(const year of [2022,2026]){
  const math=await book.file('xl/worksheets/sheet10.xml').async('string');assert.match(math,/<(?:\w+:)?c r="L6"[^>]*>[\s\S]*?<(?:(?:\w+):)?f>F6-K6<\//);assert.match(math,/>150<\//);
  assert.match(await zip.file('READ FIRST.txt').async('string'),/^UPDATED FILES:/);assert.match(await zip.file('UPDATED RESULTS.txt').async('string'),/Later voting dates are excluded/);assert(zip.file('03 Source checks/updated-calculations.csv'));
  assert.match(await book.file('xl/worksheets/sheet1.xml').async('string'),/UPDATED FILES/);
- assert.equal(expected[0].site_ballots_2026,4214);
+  assert.equal(expected[0].site_ballots_2026,4639);
  console.log('PASS: changed CSVs produce fresh five-age-group counts and formulas; rejected/later rows excluded; included bytes and hashes recorded; updated results labeled; article data untouched.');
 })().catch(error=>{console.error(error);process.exitCode=1;});

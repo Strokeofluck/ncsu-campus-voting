@@ -7,7 +7,7 @@
   if(!results)return;
   results.replaceChildren();if(data.mode!=='updated')return;
   const heading=document.createElement('h4');heading.textContent='Updated-file calculations';results.append(heading);
-  const note=document.createElement('p');note.textContent='Calculated '+new Date(data.generatedAt).toLocaleString()+'. Same first 16 early-voting days; these are separate from the article snapshot above. Displays round to four decimal places; calculations use unrounded values.';results.append(note);
+  const note=document.createElement('p');note.textContent='Calculated '+new Date(data.generatedAt).toLocaleString()+'. Same full 17-day early-voting periods; these are separate from the article snapshot above. Displays round to four decimal places; calculations use unrounded values.';results.append(note);
   const number=n=>n.toLocaleString(undefined,{maximumFractionDigits:4});
   for(const row of data.results){
    const detail=document.createElement('details'),label=document.createElement('summary'),steps=document.createElement('ol');
@@ -28,14 +28,14 @@
    const [figures,context]=await Promise.all([get('data/processed/comparison/figure_sources.json'),get('data/processed/comparison/comparison.json')]);
    const sources=[2022,2026].map(year=>figures.records[`summary-${year}-campus-site-all-ages`].sources[0]);
    const expected=JSON.parse(document.getElementById('reference-data').textContent).rows;
-   worker=new Worker('article-excel-worker.js?v=3');
+   worker=new Worker('article-excel-worker.js?v=full17');
    worker.onmessage=({data})=>{
     if(data.type==='status')status.textContent=data.text;
     if(data.type==='export-error')fail(data.message,data.code);
     if(data.type==='download'){
      if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(new Blob([data.bytes],{type:'application/zip'}));
      const link=document.createElement('a');link.href=url;link.download=data.filename;link.textContent='Save originals + Excel ZIP';
-     const message=data.mode==='updated'?'Ready. Recalculated from the updated files using the same first 16 days. These results may differ from the saved article. ':'Ready. Both original file hashes and all 20 ballot counts match the article. ';
+     const message=data.mode==='updated'?'Ready. Recalculated from the updated files using the same full 17-day periods. These results may differ from the saved article. ':'Ready. Both original file hashes and all 20 ballot counts match the article. ';
      status.replaceChildren(document.createTextNode(message),link,document.createTextNode(' Extract the entire ZIP, then open Excel in 02 Working copy.'));
      showResults(data);
      button.disabled=false;savedButton.disabled=false;worker.terminate();link.click();

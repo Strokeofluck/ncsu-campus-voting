@@ -1,158 +1,29 @@
 # NC State Campus Voting
 
-## November 4, 2026: full midterm early-voting comparison
+Updated November 4, 2026. The article, charts, references and Excel calculator now compare **all 17 early-voting days** in 2022 and 2026. The 2026 NCSBE records remain preliminary during canvass.
 
-**New preliminary full-period snapshot:** [2022 Talley vs. 2026 Western Boulevard](data/processed/nov2026/README.md) · [Technician reporting notes and precinct shifts](docs/nov2026-reporting-notes.md). All 17 early-voting days are included for each midterm. The campus location recorded **10,390 → 14,496 accepted early ballots (+39.5%)**, including **3,402 → 4,639 ballots from ages 18–24 (+36.4%)**. Its share of all Wake 18–24 early ballots changed **25.39% → 18.14%**. The separate interactive article and charts below remain an **October 30 partial-period snapshot** with a selectable 2024 presidential benchmark; do not mix their 16-day figures with this new 17-day comparison. The 2026 data remain preliminary and are not Election Day results.
+**[Article draft](https://strokeofluck.github.io/ncsu-campus-voting/article/index.html?view=1) · [References and step-by-step math](https://strokeofluck.github.io/ncsu-campus-voting/references.html) · [Interactive research report](https://strokeofluck.github.io/ncsu-campus-voting/index.html?view=1) · [Map editor preview](https://strokeofluck.github.io/ncsu-campus-voting/editor-maps/index.html?view=1)**
 
-**Article — work in progress** leads with the college-age growth gap, with five maps ordered youngest to oldest and campus polling-site counts directly below each map. **References and step-by-step math** now follow the four counts, site growth, county growth and percentage-point gap for each of the five age groups. The earlier original-record viewer and full workbook remain optional audit tools.
+College-age early ballots at the campus-area location increased **3,402 → 4,639 (+36.4%)**, while Wake County increased **13,398 → 25,570 (+90.8%)**. The growth gap is **54.5 percentage points**. The site's share of Wake's ages 18–24 early ballots fell **25.4% → 18.1%**. These are site-use counts and county shares, not turnout rates among enrolled or eligible students.
 
-**Download the article’s original CSVs and working Excel.** The two-year package keeps untouched government CSVs separate from ten Excel tabs showing complete copies, formula-linked source fields, highlighted inclusion rules, running sums, COUNTIFS totals and worked growth/gap calculations. It also works out the supporting 26.6% → 18.3% countywide college-age share. [Exact cell map and export checks](docs/article-excel-audit.md). The site-use map now shows that supporting share calculation beneath the map, clearly distinguished from individual precinct percentages.
+All-age campus-site early ballots increased **10,390 → 14,496 (+39.5%)**. Wake County increased **219,169 → 334,088 (+52.4%)**. Campus-site same-day registrations increased **763 → 993 (+30.1%)**, and are already included in the total ballots.
 
-The five age-group maps now open on **Growth versus Wake County**. Each residential precinct’s percentage growth is compared with the full county’s growth in the same age group, using the matched first 16 early-voting days in 2022 and 2026. Orange means slower growth and blue means faster growth; a count can increase and still fall behind the county. Exact precinct counts, growth, and percentage-point gaps accompany every map. White circles identify the two university voting locations; their tooltips and the separate site comparison use ballots cast at Talley in 2022 and Western Boulevard in 2026, regardless of home precinct. [Download the age-specific county and site benchmarks](data/processed/comparison/age_growth_benchmarks.csv). The observed cutoff remains October 30, 2026, and 2026 records are preliminary.
+Periods: **October 20–November 5, 2022**, and **October 15–31, 2026**. 2024 is retained only as a separate presidential-election benchmark in the research prototype. The old first-16-day article figures are superseded; the uploaded October 31 statewide screenshot remains explicitly labeled as historical.
 
-Data and reporting workspace for a Technician follow-up on voting at NC State.
+## Sources and reporting files
 
-Compare cumulative ballots by party registration in three simultaneous charts: Talley Student Union in 2022 and 2024, and Western Boulevard Business Services in 2026. Shared controls select all ages or separate age bands (18–24, 25–34, 35–44, 45–64 and 65+), plus the named locations, other Wake sites or countywide. Unknown/outside-range ages remain available when observed. A shared ceiling guide gives the three charts matching vertical scales and aligned day 1–16 positions. Unaffiliated registrations stay separate from other registered parties. Final summary tables include counts, shares and changes against both historical baselines. A same-day-registration trend and summary follow, using the same age and location controls. Exact totals and [daily counts with running totals](data/processed/comparison/matched_party_daily.csv) accompany the charts. Legacy 18–22 sensitivity rows stay in the data download, outside the non-overlapping age menu. These are accepted in-person early ballots, not candidate choices.
+- [Current reporting notes, all five ages, sources and rebuild commands](docs/2026-early-voting-update.md)
+- [Independent November 4 two-year research](docs/nov2026-reporting-notes.md)
+- [All reviewed comparison CSVs](data/processed/comparison/)
+- [Independent two-year CSVs](data/processed/nov2026/)
+- [Methodology](methodology.md)
+- [Article/Excel calculations and audit design](docs/article-excel-audit.md)
+- [Authored report and build instructions](report-source/README.md)
 
-**Open the interactive report** · [Findings and methods](docs/2026-early-voting-update.md) · References
+The references page provides both a live official-file recalculation and an exact saved-snapshot mode. Both use the complete 17-day windows. Excel contains untouched source CSVs, full original-record copies, linked fields, rule flags, COUNTIFS totals and worked percentage/gap formulas. Later source corrections may produce different results; input hashes and calculation dates remain visible.
 
-The reporting reference page focuses on the article’s matched 2022–2026 comparison. Choose an age group, inspect the four ballot counts, calculate campus-site and county growth, then subtract the rates to find the percentage-point gap. Two official source cards document the matched windows and file hashes. Original-record and workbook tools remain available in an optional audit section. Rebuild it with `python scripts/build_reporting_references.py` after updating the reviewed snapshot.
+## Interpretation and privacy
 
-**Preview original CSV rows, running counts and calculations.** The three tabs separate the original Wake County CSV, the rows used for each numerator or denominator, and the arithmetic. Choose **Load official CSVs and recount** to count the original NCSBE records locally in your browser. The last matching row shows the final count. Source hashes and every intermediate result must match before the preview calls the recount verified.
+Early voting and Election Day are separate analyses. Election Day and mail ballots are excluded from this comparison. A complete early period does not mean certified final results. Age does not verify student enrollment, party registration does not identify candidate choices, and current precinct polygons do not reconstruct historical boundaries. These descriptive comparisons cannot isolate the effect of relocating the site.
 
-Choose **Download originals + step-by-step Excel (.zip)** for the full audit trail. The browser downloads the complete unchanged 2022, 2024 and 2026 Wake County CSV members from NCSBE and verifies their hashes. Extract the entire ZIP, preserving its folders: **01 Original files** holds the untouched CSV bytes; **02 Working copy** holds Excel; **03 Source checks** holds the manifest. Follow thirteen tabs: **0 Original files → Copy 2022 → Copy 2024 → Copy 2026 → 1 Source rows → 2 Filter flags → 3 Counts → 4 Math**. The Copy tabs include all 1,135,800 original records and all 42 columns per year, in original order, with every field stored as text. Source rows extracts seven relevant fields for 45,398 campus-site records; actual formulas link each field to its full-copy cell. Later formulas highlight qualifying ballots, maintain running counts, count age bands, and calculate shares and changes. Editing a referenced full-copy value recalculates the later tabs without changing the originals. Extraction membership is fixed to the snapshot; rebuild the download after changing site membership. The download is about 430 MiB and may take several minutes to build and open. It is assembled locally in the viewer’s browser; original records and generated workbooks are not uploaded to or hosted by this site.
-
-[Download calculation results and literal formula text](data/processed/comparison/campus_age_calculations.csv). This CSV contains only the same eight aggregate comparison rows shown in the report, for all three years. Shares, growth and percentage-point changes match the report's one-decimal display. The workbook formulas retain unrounded precision. Formulas in the CSV are literal text and match the Math tab; use the Excel ZIP download for working formulas and the original source files. The public site does not host that workbook or its detailed grouped source extract. Original ZIP links are available in the browser preview.
-
-## October 31, 2026 update: Talley to Western Boulevard
-
-The latest downloaded NCSBE file covers voting through **October 30, 2026**. The report opens with **Talley Student Union in 2022 versus Western Boulevard Business Services in 2026**, using the same first **16 early-voting days**. **2022 and 2026 are midterms.** A selector retains 2024 as a presidential-election benchmark. Early voting and Election Day remain separate.
-
-The primary midterm comparison shows **40.5% more ages 18–24 ballots at the campus site** and **103.6% more across Wake County** than in 2022. All-age Wake early voting grew **55.1%**.
-
-### Counts, composition and county share are different
-
-The campus site's college-age count increased **2,999 → 4,214**. Its college-age share of site ballots was almost unchanged (**32.1% → 31.8%**). Its share of Wake's college-age early ballots fell (**26.6% → 18.3%**). The latter uses a countywide denominator and does not mean the campus count or resident turnout declined. None of these measures is turnout among registered or eligible residents.
-
-The report now includes a broader count table and [24 downloadable comparisons](data/processed/comparison/expanded_matched_comparisons.csv), covering both historical baselines, all three scopes and four ballot cohorts. [The expansion plan](docs/comparison-expansion-plan.md) distinguishes calculations available now from further original-record cuts and evidence needed to assess the move's effect on participation. College-age participation is the central question; same-day registration supplies supporting context.
-
-Explore residential precincts and ZIP codes: compare Talley/Western Boulevard with other Wake sites for each area and age band. The searchable table and count/share chart retain all three years; area changes describe location use, not resident turnout. [Download aggregate geography](data/processed/comparison/matched_geography.csv).
-
-### Same-day registration grew more slowly than total campus-site voting
-
-Over the same first 16 days, campus-site same-day registrations rose from **646 to 877 (+35.8%)**, while all accepted ballots rose from **9,339 to 13,266 (+42.0%)**. Same-day registration's share of site ballots edged down from **6.9% to 6.6%**, a **0.3 percentage-point decline**. Both counts increased; the change in share is modest. This includes all ages and does not identify students or establish an effect of the location move.
-
-![Growth in all ballots and same-day registration at the campus site, 2026 versus matched 2022](docs/images/same-day-registration-growth.png)
-
-[Exact same-day-registration comparison, both historical baselines and all scopes](data/processed/comparison/same_day_registration_comparison.csv) · Verify the share change and its inputs.
-
-### Retained 2024 presidential-election benchmark
-
-| Measure | Talley, 2024 | Western Boulevard, 2026 | Change |
-| --- | ---: | ---: | ---: |
-| Accepted early ballots, all ages | 20,350 | 13,266 | -34.8% |
-| Accepted early ballots, ages 18–24 | 8,950 | 4,214 | -52.9% |
-| Ages 18–24 share of site ballots | 44.0% | 31.8% | -12.2 percentage points |
-| Site share of Wake’s 18–24 early ballots | 22.1% | 18.3% | -3.8 percentage points |
-| Accepted early ballots, ages 18–22 | 7,410 | 3,340 | -54.9% |
-
-College-age ballots at the campus site were **52.9% lower** than in the matched 2024 period, while Wake County’s college-age ballots were **43.2% lower**. The site’s college-age share fell **12.2 percentage points**. These descriptive comparisons cannot isolate the move from election-cycle or other changes. Ages 18–24 are an age proxy, not verified NC State students.
-
-### Exact campus-site counts, all three years
-
-| Site / year | All ages | Ages 18–24 | Ages 18–22 | 18–24 share | Same-day registration | Same-day share |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Talley Student Union · 2022 | 9,339 | 2,999 | 2,313 | 32.1% | 646 | 6.9% |
-| Talley Student Union · 2024 | 20,350 | 8,950 | 7,410 | 44.0% | 2,084 | 10.2% |
-| Western Boulevard · 2026 | 13,266 | 4,214 | 3,340 | 31.8% | 877 | 6.6% |
-
-Dates: **October 20, 2022–November 4, 2022**; **October 17, 2024–November 1, 2024**; **October 15, 2026–October 30, 2026**. Each row covers 16 days. 2026 is preliminary; same-day registrations include all ages. Both shares use all site ballots as the denominator. Same-day-registration ballots are included in all ballots and must not be added to them.
-
-**Verify every highlighted figure against its source and arithmetic.** Campus totals and percentages are project calculations from NCSBE records. [Download the campus-site CSV](data/processed/comparison/campus_site_matched_counts.csv).
-
-![Age composition at Talley in 2022 and 2024 and Western Boulevard in 2026, matched first 16 days](docs/images/campus-age-composition-2022-2024-2026.png)
-
-Underlined figures in the exact-count, age, voter-profile and benchmark tables open a dedicated evidence page showing the selected calculation, exact inputs, record filters, original CSV member and NCSBE download. The executive-summary figures are linked too. Example: verify the 2024 ages 18–24 share. Choose **Preview the original file** to see the actual ZIP member list and CSV header, a filtered grouped extract retaining original field values, and an embedded live NCSBE file listing. Names, addresses and voter IDs are omitted. NCSBE does not print these calculated percentages on its download catalog; the official archive is the underlying record source.
-
-The report compares ballot volume, age composition, individual ages 18 through 24, cumulative voting and the site's share of countywide college-age early votes. The individual-age chart switches between counts and share of all site ballots. The age-group table switches between 2026 versus 2024 and 2026 versus 2022, keeping rows in age order and showing the count and denominator behind each share. Party registration, gender, race and ethnicity remain separate selectable site-user breakdowns. [Download both age-group comparisons](data/processed/comparison/age_group_changes.csv).
-
-![Individual ages 18–24 at Talley in 2024 and Western Boulevard in 2026, matched first 16 days](docs/images/talley-2024-vs-western-2026-college-ages.png)
-
-### Retained 2022 midterm comparison
-
-- Campus-site ballots, ages 18–24: **2,999 → 4,214 (+40.5%)**.
-- Campus site share of Wake’s 18–24 early ballots: **26.6% → 18.3% (-8.2 percentage points)**.
-- Ages 18–24 share of the site’s ballots: **32.1% → 31.8%**.
-
-More college-age ballots were recorded at the replacement site, while countywide college-age early voting grew faster. The records cannot establish the move’s causal effect on student participation: enrollment and eligible-student denominators are unavailable, and mail/Election Day voting is outside this comparison.
-
-![Talley versus Western Boulevard: accepted early ballots from ages 18–24, matched first 16 days](docs/images/talley-to-western-comparison.png)
-
-### Rebuild the comparison
-
-```bash
-python scripts/download_early_voting_sources.py
-python scripts/build_early_voting_comparison.py --cutoff-date 2026-10-30
-python scripts/validate_early_voting_comparison.py
-python scripts/audit_campus_figures.py
-python scripts/build_reference_page.py
-python scripts/build_figure_sources.py
-python scripts/build_source_previews.py
-python scripts/refresh_report_snapshot.py
-```
-
-Use a complete voting day covered by the downloaded file. The report is a dated snapshot and does not fetch live data. After refreshing the snapshot, rebuild the interactive app and update date-specific narrative and chart exports as described in [report-source/README.md](report-source/README.md). Raw voter-level data stay ignored; the locked full-period 2022 baseline remains unchanged.
-
-Clickable figure references also embed an actual original CSV viewer. On request, it reads the Wake County CSV directly from the live official NCSBE ZIP into the visitor's browser, checks its hash against the report snapshot, and offers original rows, all original columns, CSV text and pagination. Links open both the official file listing and the original ZIP URL. This supplemental live viewer does not change the report's saved figures; individual records are never added to this repository.
-
-## Main research questions
-
-- How many people used the NC State early-voting site in 2022 and 2026?
-- Who used it by age, party registration, race, ethnicity and gender / sex field?
-- How did the campus-area site compare with Wake County early voting overall?
-- After the early-voting location changed, did site use, voter composition or voting method change?
-- What happened in nearby Election Day precincts, without assuming precinct residents are NC State students?
-
-## Project structure
-
-- `references.html` — reporting source sheet with direct links and notes
-- `methodology.md` — short methodology index
-- `docs/early-voting-methodology.md` — early-voting source, filters and outputs
-- `docs/election-day-methodology.md` — Election Day source, filters and outputs
-- `docs/story-plan.md` — exact 2022-to-2026 reporting plan
-- `scripts/build_2022_early_voting.py` — builds the Talley / Wake early-voting baseline
-- `scripts/build_2022_election_day.py` — builds Wake Election Day precinct and polling-place baseline
-- `data/processed/early_voting/` — publication-safe early-voting aggregates
-- `data/processed/election_day/` — publication-safe Election Day aggregates
-- `data/raw/` — ignored by Git; downloaded source files live here locally or temporarily in Actions
-
-## 2022 early-voting source
-
-North Carolina State Board of Elections, November 8, 2022 Absentee by County file:
-
-https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip
-
-The early-voting pipeline validates the Talley total against Wake County's published **10,390 ballots**.
-
-## 2022 Election Day sources
-
-NCSBE historical voter-history statistics:
-
-https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/history_stats_20221108.zip
-
-NCSBE polling places:
-
-https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/polling_place_20221108.csv
-
-## Reproducibility
-
-Run the two baselines separately:
-
-```bash
-python scripts/build_2022_early_voting.py
-python scripts/build_2022_election_day.py
-```
-
-GitHub Actions also rebuilds each side separately when its script or workflow changes. Raw voter-level data are not committed to this public repository.
-
-Open the precinct map: current Wake GIS polygons and official NC State site coordinates, age/year controls, keyboard and pointer tooltips, and a selected-precinct panel comparing all three years. The light street map and detail interaction follow the housing-affordability article’s approach. Historical ballots join by recorded code; current shapes do not reconstruct earlier boundaries. Missing outlines are disclosed, not merged.
+Public outputs contain aggregates only. Names, addresses and voter identifiers remain in ignored `data/raw/` storage and browser-local downloads. No original voter-level records or populated workbooks are hosted in this public repository.

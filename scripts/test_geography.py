@@ -11,7 +11,7 @@ assert len(rows)==len(export)==5670
 for a,b in zip(rows,export):assert {k:('' if v is None else str(v)) for k,v in a.items()}==b
 expected=Counter();groups=defaultdict(list);lookup={}
 for r in s['queries']['party_daily']['rows']:
- if r['day']==16:expected[r['year'],r['scope'],r['cohort']]+=r['cumulative']
+ if r['day']==s['comparison']['matched_days']:expected[r['year'],r['scope'],r['cohort']]+=r['cumulative']
 for r in rows:
  assert set(r)=={'year','dimension','area','cohort','area_present','site_ballots','other_wake_ballots','wake_ballots','site_share_pct'}
  key=r['year'],r['dimension'],r['area'],r['cohort'];assert key not in lookup;lookup[key]=r

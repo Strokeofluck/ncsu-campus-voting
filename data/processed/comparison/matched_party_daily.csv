@@ -63,6 +63,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,All ages,16,2022-11-04,Republican,131,1005
 2022,Campus site,All ages,16,2022-11-04,Unaffiliated,595,4120
 2022,Campus site,All ages,16,2022-11-04,Other registered parties,5,45
+2022,Campus site,All ages,17,2022-11-05,Democratic,427,4596
+2022,Campus site,All ages,17,2022-11-05,Republican,114,1119
+2022,Campus site,All ages,17,2022-11-05,Unaffiliated,504,4624
+2022,Campus site,All ages,17,2022-11-05,Other registered parties,6,51
 2022,Campus site,18–24,1,2022-10-20,Democratic,31,31
 2022,Campus site,18–24,1,2022-10-20,Republican,5,5
 2022,Campus site,18–24,1,2022-10-20,Unaffiliated,56,56
@@ -127,6 +131,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,18–24,16,2022-11-04,Republican,36,257
 2022,Campus site,18–24,16,2022-11-04,Unaffiliated,286,1650
 2022,Campus site,18–24,16,2022-11-04,Other registered parties,2,23
+2022,Campus site,18–24,17,2022-11-05,Democratic,133,1202
+2022,Campus site,18–24,17,2022-11-05,Republican,36,293
+2022,Campus site,18–24,17,2022-11-05,Unaffiliated,233,1883
+2022,Campus site,18–24,17,2022-11-05,Other registered parties,1,24
 2022,Campus site,25–34,1,2022-10-20,Democratic,30,30
 2022,Campus site,25–34,1,2022-10-20,Republican,3,3
 2022,Campus site,25–34,1,2022-10-20,Unaffiliated,28,28
@@ -191,6 +199,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,25–34,16,2022-11-04,Republican,30,159
 2022,Campus site,25–34,16,2022-11-04,Unaffiliated,133,829
 2022,Campus site,25–34,16,2022-11-04,Other registered parties,1,7
+2022,Campus site,25–34,17,2022-11-05,Democratic,139,1061
+2022,Campus site,25–34,17,2022-11-05,Republican,15,174
+2022,Campus site,25–34,17,2022-11-05,Unaffiliated,131,960
+2022,Campus site,25–34,17,2022-11-05,Other registered parties,1,8
 2022,Campus site,35–44,1,2022-10-20,Democratic,14,14
 2022,Campus site,35–44,1,2022-10-20,Republican,3,3
 2022,Campus site,35–44,1,2022-10-20,Unaffiliated,14,14
@@ -255,6 +267,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,35–44,16,2022-11-04,Republican,11,77
 2022,Campus site,35–44,16,2022-11-04,Unaffiliated,71,446
 2022,Campus site,35–44,16,2022-11-04,Other registered parties,1,8
+2022,Campus site,35–44,17,2022-11-05,Democratic,58,532
+2022,Campus site,35–44,17,2022-11-05,Republican,14,91
+2022,Campus site,35–44,17,2022-11-05,Unaffiliated,53,499
+2022,Campus site,35–44,17,2022-11-05,Other registered parties,2,10
 2022,Campus site,45–64,1,2022-10-20,Democratic,49,49
 2022,Campus site,45–64,1,2022-10-20,Republican,11,11
 2022,Campus site,45–64,1,2022-10-20,Unaffiliated,35,35
@@ -319,6 +335,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,45–64,16,2022-11-04,Republican,44,357
 2022,Campus site,45–64,16,2022-11-04,Unaffiliated,79,886
 2022,Campus site,45–64,16,2022-11-04,Other registered parties,1,6
+2022,Campus site,45–64,17,2022-11-05,Democratic,78,1081
+2022,Campus site,45–64,17,2022-11-05,Republican,40,397
+2022,Campus site,45–64,17,2022-11-05,Unaffiliated,72,958
+2022,Campus site,45–64,17,2022-11-05,Other registered parties,1,7
 2022,Campus site,65+,1,2022-10-20,Democratic,62,62
 2022,Campus site,65+,1,2022-10-20,Republican,14,14
 2022,Campus site,65+,1,2022-10-20,Unaffiliated,30,30
@@ -383,6 +403,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,65+,16,2022-11-04,Republican,10,155
 2022,Campus site,65+,16,2022-11-04,Unaffiliated,26,309
 2022,Campus site,65+,16,2022-11-04,Other registered parties,0,1
+2022,Campus site,65+,17,2022-11-05,Democratic,19,720
+2022,Campus site,65+,17,2022-11-05,Republican,9,164
+2022,Campus site,65+,17,2022-11-05,Unaffiliated,15,324
+2022,Campus site,65+,17,2022-11-05,Other registered parties,1,2
 2022,Campus site,Unknown / outside range,1,2022-10-20,Democratic,0,0
 2022,Campus site,Unknown / outside range,1,2022-10-20,Republican,0,0
 2022,Campus site,Unknown / outside range,1,2022-10-20,Unaffiliated,0,0
@@ -447,6 +471,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,Unknown / outside range,16,2022-11-04,Republican,0,0
 2022,Campus site,Unknown / outside range,16,2022-11-04,Unaffiliated,0,0
 2022,Campus site,Unknown / outside range,16,2022-11-04,Other registered parties,0,0
+2022,Campus site,Unknown / outside range,17,2022-11-05,Democratic,0,0
+2022,Campus site,Unknown / outside range,17,2022-11-05,Republican,0,0
+2022,Campus site,Unknown / outside range,17,2022-11-05,Unaffiliated,0,0
+2022,Campus site,Unknown / outside range,17,2022-11-05,Other registered parties,0,0
 2022,Campus site,18–22,1,2022-10-20,Democratic,27,27
 2022,Campus site,18–22,1,2022-10-20,Republican,5,5
 2022,Campus site,18–22,1,2022-10-20,Unaffiliated,41,41
@@ -511,6 +539,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Campus site,18–22,16,2022-11-04,Republican,29,217
 2022,Campus site,18–22,16,2022-11-04,Unaffiliated,217,1286
 2022,Campus site,18–22,16,2022-11-04,Other registered parties,1,16
+2022,Campus site,18–22,17,2022-11-05,Democratic,83,877
+2022,Campus site,18–22,17,2022-11-05,Republican,29,246
+2022,Campus site,18–22,17,2022-11-05,Unaffiliated,178,1464
+2022,Campus site,18–22,17,2022-11-05,Other registered parties,1,17
 2022,Wake County,All ages,1,2022-10-20,Democratic,5173,5173
 2022,Wake County,All ages,1,2022-10-20,Republican,3021,3021
 2022,Wake County,All ages,1,2022-10-20,Unaffiliated,3834,3834
@@ -575,6 +607,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,All ages,16,2022-11-04,Republican,4944,45109
 2022,Wake County,All ages,16,2022-11-04,Unaffiliated,9191,71079
 2022,Wake County,All ages,16,2022-11-04,Other registered parties,104,725
+2022,Wake County,All ages,17,2022-11-05,Democratic,8276,91683
+2022,Wake County,All ages,17,2022-11-05,Republican,3082,48191
+2022,Wake County,All ages,17,2022-11-05,Unaffiliated,7389,78468
+2022,Wake County,All ages,17,2022-11-05,Other registered parties,102,827
 2022,Wake County,18–24,1,2022-10-20,Democratic,151,151
 2022,Wake County,18–24,1,2022-10-20,Republican,53,53
 2022,Wake County,18–24,1,2022-10-20,Unaffiliated,185,185
@@ -639,6 +675,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,18–24,16,2022-11-04,Republican,260,1508
 2022,Wake County,18–24,16,2022-11-04,Unaffiliated,1030,5504
 2022,Wake County,18–24,16,2022-11-04,Other registered parties,16,82
+2022,Wake County,18–24,17,2022-11-05,Democratic,818,5011
+2022,Wake County,18–24,17,2022-11-05,Republican,247,1755
+2022,Wake County,18–24,17,2022-11-05,Unaffiliated,1026,6530
+2022,Wake County,18–24,17,2022-11-05,Other registered parties,20,102
 2022,Wake County,25–34,1,2022-10-20,Democratic,271,271
 2022,Wake County,25–34,1,2022-10-20,Republican,98,98
 2022,Wake County,25–34,1,2022-10-20,Unaffiliated,248,248
@@ -703,6 +743,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,25–34,16,2022-11-04,Republican,513,2760
 2022,Wake County,25–34,16,2022-11-04,Unaffiliated,1737,9039
 2022,Wake County,25–34,16,2022-11-04,Other registered parties,26,172
+2022,Wake County,25–34,17,2022-11-05,Democratic,1594,10645
+2022,Wake County,25–34,17,2022-11-05,Republican,406,3166
+2022,Wake County,25–34,17,2022-11-05,Unaffiliated,1705,10744
+2022,Wake County,25–34,17,2022-11-05,Other registered parties,30,202
 2022,Wake County,35–44,1,2022-10-20,Democratic,405,405
 2022,Wake County,35–44,1,2022-10-20,Republican,164,164
 2022,Wake County,35–44,1,2022-10-20,Unaffiliated,420,420
@@ -767,6 +811,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,35–44,16,2022-11-04,Republican,726,4129
 2022,Wake County,35–44,16,2022-11-04,Unaffiliated,2025,11721
 2022,Wake County,35–44,16,2022-11-04,Other registered parties,24,163
+2022,Wake County,35–44,17,2022-11-05,Democratic,1677,12870
+2022,Wake County,35–44,17,2022-11-05,Republican,423,4552
+2022,Wake County,35–44,17,2022-11-05,Unaffiliated,1562,13283
+2022,Wake County,35–44,17,2022-11-05,Other registered parties,24,187
 2022,Wake County,45–64,1,2022-10-20,Democratic,1635,1635
 2022,Wake County,45–64,1,2022-10-20,Republican,993,993
 2022,Wake County,45–64,1,2022-10-20,Unaffiliated,1254,1254
@@ -831,6 +879,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,45–64,16,2022-11-04,Republican,2261,19086
 2022,Wake County,45–64,16,2022-11-04,Unaffiliated,3285,27606
 2022,Wake County,45–64,16,2022-11-04,Other registered parties,26,243
+2022,Wake County,45–64,17,2022-11-05,Democratic,3187,34679
+2022,Wake County,45–64,17,2022-11-05,Republican,1556,20642
+2022,Wake County,45–64,17,2022-11-05,Unaffiliated,2626,30232
+2022,Wake County,45–64,17,2022-11-05,Other registered parties,23,266
 2022,Wake County,65+,1,2022-10-20,Democratic,2711,2711
 2022,Wake County,65+,1,2022-10-20,Republican,1713,1713
 2022,Wake County,65+,1,2022-10-20,Unaffiliated,1727,1727
@@ -895,6 +947,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,65+,16,2022-11-04,Republican,1184,17626
 2022,Wake County,65+,16,2022-11-04,Unaffiliated,1114,17209
 2022,Wake County,65+,16,2022-11-04,Other registered parties,12,65
+2022,Wake County,65+,17,2022-11-05,Democratic,1000,28478
+2022,Wake County,65+,17,2022-11-05,Republican,450,18076
+2022,Wake County,65+,17,2022-11-05,Unaffiliated,470,17679
+2022,Wake County,65+,17,2022-11-05,Other registered parties,5,70
 2022,Wake County,Unknown / outside range,1,2022-10-20,Democratic,0,0
 2022,Wake County,Unknown / outside range,1,2022-10-20,Republican,0,0
 2022,Wake County,Unknown / outside range,1,2022-10-20,Unaffiliated,0,0
@@ -959,6 +1015,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,Unknown / outside range,16,2022-11-04,Republican,0,0
 2022,Wake County,Unknown / outside range,16,2022-11-04,Unaffiliated,0,0
 2022,Wake County,Unknown / outside range,16,2022-11-04,Other registered parties,0,0
+2022,Wake County,Unknown / outside range,17,2022-11-05,Democratic,0,0
+2022,Wake County,Unknown / outside range,17,2022-11-05,Republican,0,0
+2022,Wake County,Unknown / outside range,17,2022-11-05,Unaffiliated,0,0
+2022,Wake County,Unknown / outside range,17,2022-11-05,Other registered parties,0,0
 2022,Wake County,18–22,1,2022-10-20,Democratic,105,105
 2022,Wake County,18–22,1,2022-10-20,Republican,38,38
 2022,Wake County,18–22,1,2022-10-20,Unaffiliated,139,139
@@ -1023,6 +1083,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Wake County,18–22,16,2022-11-04,Republican,177,1071
 2022,Wake County,18–22,16,2022-11-04,Unaffiliated,714,3865
 2022,Wake County,18–22,16,2022-11-04,Other registered parties,11,53
+2022,Wake County,18–22,17,2022-11-05,Democratic,536,3399
+2022,Wake County,18–22,17,2022-11-05,Republican,167,1238
+2022,Wake County,18–22,17,2022-11-05,Unaffiliated,719,4584
+2022,Wake County,18–22,17,2022-11-05,Other registered parties,12,65
 2022,Other Wake sites,All ages,1,2022-10-20,Democratic,4987,4987
 2022,Other Wake sites,All ages,1,2022-10-20,Republican,2985,2985
 2022,Other Wake sites,All ages,1,2022-10-20,Unaffiliated,3671,3671
@@ -1087,6 +1151,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,All ages,16,2022-11-04,Republican,4813,44104
 2022,Other Wake sites,All ages,16,2022-11-04,Unaffiliated,8596,66959
 2022,Other Wake sites,All ages,16,2022-11-04,Other registered parties,99,680
+2022,Other Wake sites,All ages,17,2022-11-05,Democratic,7849,87087
+2022,Other Wake sites,All ages,17,2022-11-05,Republican,2968,47072
+2022,Other Wake sites,All ages,17,2022-11-05,Unaffiliated,6885,73844
+2022,Other Wake sites,All ages,17,2022-11-05,Other registered parties,96,776
 2022,Other Wake sites,18–24,1,2022-10-20,Democratic,120,120
 2022,Other Wake sites,18–24,1,2022-10-20,Republican,48,48
 2022,Other Wake sites,18–24,1,2022-10-20,Unaffiliated,129,129
@@ -1151,6 +1219,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,18–24,16,2022-11-04,Republican,224,1251
 2022,Other Wake sites,18–24,16,2022-11-04,Unaffiliated,744,3854
 2022,Other Wake sites,18–24,16,2022-11-04,Other registered parties,14,59
+2022,Other Wake sites,18–24,17,2022-11-05,Democratic,685,3809
+2022,Other Wake sites,18–24,17,2022-11-05,Republican,211,1462
+2022,Other Wake sites,18–24,17,2022-11-05,Unaffiliated,793,4647
+2022,Other Wake sites,18–24,17,2022-11-05,Other registered parties,19,78
 2022,Other Wake sites,25–34,1,2022-10-20,Democratic,241,241
 2022,Other Wake sites,25–34,1,2022-10-20,Republican,95,95
 2022,Other Wake sites,25–34,1,2022-10-20,Unaffiliated,220,220
@@ -1215,6 +1287,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,25–34,16,2022-11-04,Republican,483,2601
 2022,Other Wake sites,25–34,16,2022-11-04,Unaffiliated,1604,8210
 2022,Other Wake sites,25–34,16,2022-11-04,Other registered parties,25,165
+2022,Other Wake sites,25–34,17,2022-11-05,Democratic,1455,9584
+2022,Other Wake sites,25–34,17,2022-11-05,Republican,391,2992
+2022,Other Wake sites,25–34,17,2022-11-05,Unaffiliated,1574,9784
+2022,Other Wake sites,25–34,17,2022-11-05,Other registered parties,29,194
 2022,Other Wake sites,35–44,1,2022-10-20,Democratic,391,391
 2022,Other Wake sites,35–44,1,2022-10-20,Republican,161,161
 2022,Other Wake sites,35–44,1,2022-10-20,Unaffiliated,406,406
@@ -1279,6 +1355,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,35–44,16,2022-11-04,Republican,715,4052
 2022,Other Wake sites,35–44,16,2022-11-04,Unaffiliated,1954,11275
 2022,Other Wake sites,35–44,16,2022-11-04,Other registered parties,23,155
+2022,Other Wake sites,35–44,17,2022-11-05,Democratic,1619,12338
+2022,Other Wake sites,35–44,17,2022-11-05,Republican,409,4461
+2022,Other Wake sites,35–44,17,2022-11-05,Unaffiliated,1509,12784
+2022,Other Wake sites,35–44,17,2022-11-05,Other registered parties,22,177
 2022,Other Wake sites,45–64,1,2022-10-20,Democratic,1586,1586
 2022,Other Wake sites,45–64,1,2022-10-20,Republican,982,982
 2022,Other Wake sites,45–64,1,2022-10-20,Unaffiliated,1219,1219
@@ -1343,6 +1423,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,45–64,16,2022-11-04,Republican,2217,18729
 2022,Other Wake sites,45–64,16,2022-11-04,Unaffiliated,3206,26720
 2022,Other Wake sites,45–64,16,2022-11-04,Other registered parties,25,237
+2022,Other Wake sites,45–64,17,2022-11-05,Democratic,3109,33598
+2022,Other Wake sites,45–64,17,2022-11-05,Republican,1516,20245
+2022,Other Wake sites,45–64,17,2022-11-05,Unaffiliated,2554,29274
+2022,Other Wake sites,45–64,17,2022-11-05,Other registered parties,22,259
 2022,Other Wake sites,65+,1,2022-10-20,Democratic,2649,2649
 2022,Other Wake sites,65+,1,2022-10-20,Republican,1699,1699
 2022,Other Wake sites,65+,1,2022-10-20,Unaffiliated,1697,1697
@@ -1407,6 +1491,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,65+,16,2022-11-04,Republican,1174,17471
 2022,Other Wake sites,65+,16,2022-11-04,Unaffiliated,1088,16900
 2022,Other Wake sites,65+,16,2022-11-04,Other registered parties,12,64
+2022,Other Wake sites,65+,17,2022-11-05,Democratic,981,27758
+2022,Other Wake sites,65+,17,2022-11-05,Republican,441,17912
+2022,Other Wake sites,65+,17,2022-11-05,Unaffiliated,455,17355
+2022,Other Wake sites,65+,17,2022-11-05,Other registered parties,4,68
 2022,Other Wake sites,Unknown / outside range,1,2022-10-20,Democratic,0,0
 2022,Other Wake sites,Unknown / outside range,1,2022-10-20,Republican,0,0
 2022,Other Wake sites,Unknown / outside range,1,2022-10-20,Unaffiliated,0,0
@@ -1471,6 +1559,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,Unknown / outside range,16,2022-11-04,Republican,0,0
 2022,Other Wake sites,Unknown / outside range,16,2022-11-04,Unaffiliated,0,0
 2022,Other Wake sites,Unknown / outside range,16,2022-11-04,Other registered parties,0,0
+2022,Other Wake sites,Unknown / outside range,17,2022-11-05,Democratic,0,0
+2022,Other Wake sites,Unknown / outside range,17,2022-11-05,Republican,0,0
+2022,Other Wake sites,Unknown / outside range,17,2022-11-05,Unaffiliated,0,0
+2022,Other Wake sites,Unknown / outside range,17,2022-11-05,Other registered parties,0,0
 2022,Other Wake sites,18–22,1,2022-10-20,Democratic,78,78
 2022,Other Wake sites,18–22,1,2022-10-20,Republican,33,33
 2022,Other Wake sites,18–22,1,2022-10-20,Unaffiliated,98,98
@@ -1535,6 +1627,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2022,Other Wake sites,18–22,16,2022-11-04,Republican,148,854
 2022,Other Wake sites,18–22,16,2022-11-04,Unaffiliated,497,2579
 2022,Other Wake sites,18–22,16,2022-11-04,Other registered parties,10,37
+2022,Other Wake sites,18–22,17,2022-11-05,Democratic,453,2522
+2022,Other Wake sites,18–22,17,2022-11-05,Republican,138,992
+2022,Other Wake sites,18–22,17,2022-11-05,Unaffiliated,541,3120
+2022,Other Wake sites,18–22,17,2022-11-05,Other registered parties,11,48
 2024,Campus site,All ages,1,2024-10-17,Democratic,554,554
 2024,Campus site,All ages,1,2024-10-17,Republican,142,142
 2024,Campus site,All ages,1,2024-10-17,Unaffiliated,604,604
@@ -1599,6 +1695,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,All ages,16,2024-11-01,Republican,185,2379
 2024,Campus site,All ages,16,2024-11-01,Unaffiliated,965,10415
 2024,Campus site,All ages,16,2024-11-01,Other registered parties,12,134
+2024,Campus site,All ages,17,2024-11-02,Democratic,401,7823
+2024,Campus site,All ages,17,2024-11-02,Republican,139,2518
+2024,Campus site,All ages,17,2024-11-02,Unaffiliated,720,11135
+2024,Campus site,All ages,17,2024-11-02,Other registered parties,14,148
 2024,Campus site,18–24,1,2024-10-17,Democratic,149,149
 2024,Campus site,18–24,1,2024-10-17,Republican,46,46
 2024,Campus site,18–24,1,2024-10-17,Unaffiliated,265,265
@@ -1663,6 +1763,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,18–24,16,2024-11-01,Republican,116,1101
 2024,Campus site,18–24,16,2024-11-01,Unaffiliated,623,5391
 2024,Campus site,18–24,16,2024-11-01,Other registered parties,8,76
+2024,Campus site,18–24,17,2024-11-02,Democratic,135,2517
+2024,Campus site,18–24,17,2024-11-02,Republican,68,1169
+2024,Campus site,18–24,17,2024-11-02,Unaffiliated,395,5786
+2024,Campus site,18–24,17,2024-11-02,Other registered parties,6,82
 2024,Campus site,25–34,1,2024-10-17,Democratic,106,106
 2024,Campus site,25–34,1,2024-10-17,Republican,17,17
 2024,Campus site,25–34,1,2024-10-17,Unaffiliated,95,95
@@ -1727,6 +1831,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,25–34,16,2024-11-01,Republican,26,359
 2024,Campus site,25–34,16,2024-11-01,Unaffiliated,169,1919
 2024,Campus site,25–34,16,2024-11-01,Other registered parties,3,36
+2024,Campus site,25–34,17,2024-11-02,Democratic,131,1785
+2024,Campus site,25–34,17,2024-11-02,Republican,26,385
+2024,Campus site,25–34,17,2024-11-02,Unaffiliated,190,2109
+2024,Campus site,25–34,17,2024-11-02,Other registered parties,6,42
 2024,Campus site,35–44,1,2024-10-17,Democratic,44,44
 2024,Campus site,35–44,1,2024-10-17,Republican,9,9
 2024,Campus site,35–44,1,2024-10-17,Unaffiliated,50,50
@@ -1791,6 +1899,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,35–44,16,2024-11-01,Republican,13,171
 2024,Campus site,35–44,16,2024-11-01,Unaffiliated,62,886
 2024,Campus site,35–44,16,2024-11-01,Other registered parties,0,10
+2024,Campus site,35–44,17,2024-11-02,Democratic,61,886
+2024,Campus site,35–44,17,2024-11-02,Republican,18,189
+2024,Campus site,35–44,17,2024-11-02,Unaffiliated,52,938
+2024,Campus site,35–44,17,2024-11-02,Other registered parties,2,12
 2024,Campus site,45–64,1,2024-10-17,Democratic,126,126
 2024,Campus site,45–64,1,2024-10-17,Republican,39,39
 2024,Campus site,45–64,1,2024-10-17,Unaffiliated,120,120
@@ -1855,6 +1967,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,45–64,16,2024-11-01,Republican,24,515
 2024,Campus site,45–64,16,2024-11-01,Unaffiliated,90,1659
 2024,Campus site,45–64,16,2024-11-01,Other registered parties,1,10
+2024,Campus site,45–64,17,2024-11-02,Democratic,53,1609
+2024,Campus site,45–64,17,2024-11-02,Republican,23,538
+2024,Campus site,45–64,17,2024-11-02,Unaffiliated,74,1733
+2024,Campus site,45–64,17,2024-11-02,Other registered parties,0,10
 2024,Campus site,65+,1,2024-10-17,Democratic,129,129
 2024,Campus site,65+,1,2024-10-17,Republican,31,31
 2024,Campus site,65+,1,2024-10-17,Unaffiliated,74,74
@@ -1919,6 +2035,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,65+,16,2024-11-01,Republican,6,233
 2024,Campus site,65+,16,2024-11-01,Unaffiliated,21,560
 2024,Campus site,65+,16,2024-11-01,Other registered parties,0,2
+2024,Campus site,65+,17,2024-11-02,Democratic,21,1026
+2024,Campus site,65+,17,2024-11-02,Republican,4,237
+2024,Campus site,65+,17,2024-11-02,Unaffiliated,9,569
+2024,Campus site,65+,17,2024-11-02,Other registered parties,0,2
 2024,Campus site,Unknown / outside range,1,2024-10-17,Democratic,0,0
 2024,Campus site,Unknown / outside range,1,2024-10-17,Republican,0,0
 2024,Campus site,Unknown / outside range,1,2024-10-17,Unaffiliated,0,0
@@ -1983,6 +2103,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,Unknown / outside range,16,2024-11-01,Republican,0,0
 2024,Campus site,Unknown / outside range,16,2024-11-01,Unaffiliated,0,0
 2024,Campus site,Unknown / outside range,16,2024-11-01,Other registered parties,0,0
+2024,Campus site,Unknown / outside range,17,2024-11-02,Democratic,0,0
+2024,Campus site,Unknown / outside range,17,2024-11-02,Republican,0,0
+2024,Campus site,Unknown / outside range,17,2024-11-02,Unaffiliated,0,0
+2024,Campus site,Unknown / outside range,17,2024-11-02,Other registered parties,0,0
 2024,Campus site,18–22,1,2024-10-17,Democratic,116,116
 2024,Campus site,18–22,1,2024-10-17,Republican,42,42
 2024,Campus site,18–22,1,2024-10-17,Unaffiliated,213,213
@@ -2047,6 +2171,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Campus site,18–22,16,2024-11-01,Republican,99,933
 2024,Campus site,18–22,16,2024-11-01,Unaffiliated,533,4570
 2024,Campus site,18–22,16,2024-11-01,Other registered parties,8,60
+2024,Campus site,18–22,17,2024-11-02,Democratic,94,1941
+2024,Campus site,18–22,17,2024-11-02,Republican,53,986
+2024,Campus site,18–22,17,2024-11-02,Unaffiliated,314,4884
+2024,Campus site,18–22,17,2024-11-02,Other registered parties,4,64
 2024,Wake County,All ages,1,2024-10-17,Democratic,13226,13226
 2024,Wake County,All ages,1,2024-10-17,Republican,6905,6905
 2024,Wake County,All ages,1,2024-10-17,Unaffiliated,10542,10542
@@ -2111,6 +2239,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,All ages,16,2024-11-01,Republican,7505,100012
 2024,Wake County,All ages,16,2024-11-01,Unaffiliated,16652,174698
 2024,Wake County,All ages,16,2024-11-01,Other registered parties,444,3427
+2024,Wake County,All ages,17,2024-11-02,Democratic,9856,170534
+2024,Wake County,All ages,17,2024-11-02,Republican,4748,104760
+2024,Wake County,All ages,17,2024-11-02,Unaffiliated,12269,186967
+2024,Wake County,All ages,17,2024-11-02,Other registered parties,387,3814
 2024,Wake County,18–24,1,2024-10-17,Democratic,630,630
 2024,Wake County,18–24,1,2024-10-17,Republican,249,249
 2024,Wake County,18–24,1,2024-10-17,Unaffiliated,914,914
@@ -2175,6 +2307,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,18–24,16,2024-11-01,Republican,728,6737
 2024,Wake County,18–24,16,2024-11-01,Unaffiliated,2602,21170
 2024,Wake County,18–24,16,2024-11-01,Other registered parties,63,495
+2024,Wake County,18–24,17,2024-11-02,Democratic,1250,13313
+2024,Wake County,18–24,17,2024-11-02,Republican,593,7330
+2024,Wake County,18–24,17,2024-11-02,Unaffiliated,2284,23454
+2024,Wake County,18–24,17,2024-11-02,Other registered parties,68,563
 2024,Wake County,25–34,1,2024-10-17,Democratic,1169,1169
 2024,Wake County,25–34,1,2024-10-17,Republican,423,423
 2024,Wake County,25–34,1,2024-10-17,Unaffiliated,1102,1102
@@ -2239,6 +2375,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,25–34,16,2024-11-01,Republican,1328,10646
 2024,Wake County,25–34,16,2024-11-01,Unaffiliated,4015,29238
 2024,Wake County,25–34,16,2024-11-01,Other registered parties,160,945
+2024,Wake County,25–34,17,2024-11-02,Democratic,2572,26423
+2024,Wake County,25–34,17,2024-11-02,Republican,992,11638
+2024,Wake County,25–34,17,2024-11-02,Unaffiliated,3249,32487
+2024,Wake County,25–34,17,2024-11-02,Other registered parties,139,1084
 2024,Wake County,35–44,1,2024-10-17,Democratic,1314,1314
 2024,Wake County,35–44,1,2024-10-17,Republican,506,506
 2024,Wake County,35–44,1,2024-10-17,Unaffiliated,1313,1313
@@ -2303,6 +2443,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,35–44,16,2024-11-01,Republican,1452,11987
 2024,Wake County,35–44,16,2024-11-01,Unaffiliated,3867,31437
 2024,Wake County,35–44,16,2024-11-01,Other registered parties,120,845
+2024,Wake County,35–44,17,2024-11-02,Democratic,2189,27898
+2024,Wake County,35–44,17,2024-11-02,Republican,869,12856
+2024,Wake County,35–44,17,2024-11-02,Unaffiliated,2620,34057
+2024,Wake County,35–44,17,2024-11-02,Other registered parties,87,932
 2024,Wake County,45–64,1,2024-10-17,Democratic,4484,4484
 2024,Wake County,45–64,1,2024-10-17,Republican,2322,2322
 2024,Wake County,45–64,1,2024-10-17,Unaffiliated,3844,3844
@@ -2367,6 +2511,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,45–64,16,2024-11-01,Republican,2925,39674
 2024,Wake County,45–64,16,2024-11-01,Unaffiliated,5015,61737
 2024,Wake County,45–64,16,2024-11-01,Other registered parties,97,952
+2024,Wake County,45–64,17,2024-11-02,Democratic,3064,59526
+2024,Wake County,45–64,17,2024-11-02,Republican,1840,41514
+2024,Wake County,45–64,17,2024-11-02,Unaffiliated,3613,65350
+2024,Wake County,45–64,17,2024-11-02,Other registered parties,86,1038
 2024,Wake County,65+,1,2024-10-17,Democratic,5629,5629
 2024,Wake County,65+,1,2024-10-17,Republican,3405,3405
 2024,Wake County,65+,1,2024-10-17,Unaffiliated,3369,3369
@@ -2431,6 +2579,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,65+,16,2024-11-01,Republican,1072,30968
 2024,Wake County,65+,16,2024-11-01,Unaffiliated,1153,31116
 2024,Wake County,65+,16,2024-11-01,Other registered parties,4,190
+2024,Wake County,65+,17,2024-11-02,Democratic,781,43374
+2024,Wake County,65+,17,2024-11-02,Republican,454,31422
+2024,Wake County,65+,17,2024-11-02,Unaffiliated,503,31619
+2024,Wake County,65+,17,2024-11-02,Other registered parties,7,197
 2024,Wake County,Unknown / outside range,1,2024-10-17,Democratic,0,0
 2024,Wake County,Unknown / outside range,1,2024-10-17,Republican,0,0
 2024,Wake County,Unknown / outside range,1,2024-10-17,Unaffiliated,0,0
@@ -2495,6 +2647,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,Unknown / outside range,16,2024-11-01,Republican,0,0
 2024,Wake County,Unknown / outside range,16,2024-11-01,Unaffiliated,0,0
 2024,Wake County,Unknown / outside range,16,2024-11-01,Other registered parties,0,0
+2024,Wake County,Unknown / outside range,17,2024-11-02,Democratic,0,0
+2024,Wake County,Unknown / outside range,17,2024-11-02,Republican,0,0
+2024,Wake County,Unknown / outside range,17,2024-11-02,Unaffiliated,0,0
+2024,Wake County,Unknown / outside range,17,2024-11-02,Other registered parties,0,0
 2024,Wake County,18–22,1,2024-10-17,Democratic,453,453
 2024,Wake County,18–22,1,2024-10-17,Republican,177,177
 2024,Wake County,18–22,1,2024-10-17,Unaffiliated,684,684
@@ -2559,6 +2715,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Wake County,18–22,16,2024-11-01,Republican,488,4581
 2024,Wake County,18–22,16,2024-11-01,Unaffiliated,1796,15240
 2024,Wake County,18–22,16,2024-11-01,Other registered parties,49,361
+2024,Wake County,18–22,17,2024-11-02,Democratic,749,8750
+2024,Wake County,18–22,17,2024-11-02,Republican,367,4948
+2024,Wake County,18–22,17,2024-11-02,Unaffiliated,1562,16802
+2024,Wake County,18–22,17,2024-11-02,Other registered parties,55,416
 2024,Other Wake sites,All ages,1,2024-10-17,Democratic,12672,12672
 2024,Other Wake sites,All ages,1,2024-10-17,Republican,6763,6763
 2024,Other Wake sites,All ages,1,2024-10-17,Unaffiliated,9938,9938
@@ -2623,6 +2783,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,All ages,16,2024-11-01,Republican,7320,97633
 2024,Other Wake sites,All ages,16,2024-11-01,Unaffiliated,15687,164283
 2024,Other Wake sites,All ages,16,2024-11-01,Other registered parties,432,3293
+2024,Other Wake sites,All ages,17,2024-11-02,Democratic,9455,162711
+2024,Other Wake sites,All ages,17,2024-11-02,Republican,4609,102242
+2024,Other Wake sites,All ages,17,2024-11-02,Unaffiliated,11549,175832
+2024,Other Wake sites,All ages,17,2024-11-02,Other registered parties,373,3666
 2024,Other Wake sites,18–24,1,2024-10-17,Democratic,481,481
 2024,Other Wake sites,18–24,1,2024-10-17,Republican,203,203
 2024,Other Wake sites,18–24,1,2024-10-17,Unaffiliated,649,649
@@ -2687,6 +2851,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,18–24,16,2024-11-01,Republican,612,5636
 2024,Other Wake sites,18–24,16,2024-11-01,Unaffiliated,1979,15779
 2024,Other Wake sites,18–24,16,2024-11-01,Other registered parties,55,419
+2024,Other Wake sites,18–24,17,2024-11-02,Democratic,1115,10796
+2024,Other Wake sites,18–24,17,2024-11-02,Republican,525,6161
+2024,Other Wake sites,18–24,17,2024-11-02,Unaffiliated,1889,17668
+2024,Other Wake sites,18–24,17,2024-11-02,Other registered parties,62,481
 2024,Other Wake sites,25–34,1,2024-10-17,Democratic,1063,1063
 2024,Other Wake sites,25–34,1,2024-10-17,Republican,406,406
 2024,Other Wake sites,25–34,1,2024-10-17,Unaffiliated,1007,1007
@@ -2751,6 +2919,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,25–34,16,2024-11-01,Republican,1302,10287
 2024,Other Wake sites,25–34,16,2024-11-01,Unaffiliated,3846,27319
 2024,Other Wake sites,25–34,16,2024-11-01,Other registered parties,157,909
+2024,Other Wake sites,25–34,17,2024-11-02,Democratic,2441,24638
+2024,Other Wake sites,25–34,17,2024-11-02,Republican,966,11253
+2024,Other Wake sites,25–34,17,2024-11-02,Unaffiliated,3059,30378
+2024,Other Wake sites,25–34,17,2024-11-02,Other registered parties,133,1042
 2024,Other Wake sites,35–44,1,2024-10-17,Democratic,1270,1270
 2024,Other Wake sites,35–44,1,2024-10-17,Republican,497,497
 2024,Other Wake sites,35–44,1,2024-10-17,Unaffiliated,1263,1263
@@ -2815,6 +2987,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,35–44,16,2024-11-01,Republican,1439,11816
 2024,Other Wake sites,35–44,16,2024-11-01,Unaffiliated,3805,30551
 2024,Other Wake sites,35–44,16,2024-11-01,Other registered parties,120,835
+2024,Other Wake sites,35–44,17,2024-11-02,Democratic,2128,27012
+2024,Other Wake sites,35–44,17,2024-11-02,Republican,851,12667
+2024,Other Wake sites,35–44,17,2024-11-02,Unaffiliated,2568,33119
+2024,Other Wake sites,35–44,17,2024-11-02,Other registered parties,85,920
 2024,Other Wake sites,45–64,1,2024-10-17,Democratic,4358,4358
 2024,Other Wake sites,45–64,1,2024-10-17,Republican,2283,2283
 2024,Other Wake sites,45–64,1,2024-10-17,Unaffiliated,3724,3724
@@ -2879,6 +3055,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,45–64,16,2024-11-01,Republican,2901,39159
 2024,Other Wake sites,45–64,16,2024-11-01,Unaffiliated,4925,60078
 2024,Other Wake sites,45–64,16,2024-11-01,Other registered parties,96,942
+2024,Other Wake sites,45–64,17,2024-11-02,Democratic,3011,57917
+2024,Other Wake sites,45–64,17,2024-11-02,Republican,1817,40976
+2024,Other Wake sites,45–64,17,2024-11-02,Unaffiliated,3539,63617
+2024,Other Wake sites,45–64,17,2024-11-02,Other registered parties,86,1028
 2024,Other Wake sites,65+,1,2024-10-17,Democratic,5500,5500
 2024,Other Wake sites,65+,1,2024-10-17,Republican,3374,3374
 2024,Other Wake sites,65+,1,2024-10-17,Unaffiliated,3295,3295
@@ -2943,6 +3123,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,65+,16,2024-11-01,Republican,1066,30735
 2024,Other Wake sites,65+,16,2024-11-01,Unaffiliated,1132,30556
 2024,Other Wake sites,65+,16,2024-11-01,Other registered parties,4,188
+2024,Other Wake sites,65+,17,2024-11-02,Democratic,760,42348
+2024,Other Wake sites,65+,17,2024-11-02,Republican,450,31185
+2024,Other Wake sites,65+,17,2024-11-02,Unaffiliated,494,31050
+2024,Other Wake sites,65+,17,2024-11-02,Other registered parties,7,195
 2024,Other Wake sites,Unknown / outside range,1,2024-10-17,Democratic,0,0
 2024,Other Wake sites,Unknown / outside range,1,2024-10-17,Republican,0,0
 2024,Other Wake sites,Unknown / outside range,1,2024-10-17,Unaffiliated,0,0
@@ -3007,6 +3191,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,Unknown / outside range,16,2024-11-01,Republican,0,0
 2024,Other Wake sites,Unknown / outside range,16,2024-11-01,Unaffiliated,0,0
 2024,Other Wake sites,Unknown / outside range,16,2024-11-01,Other registered parties,0,0
+2024,Other Wake sites,Unknown / outside range,17,2024-11-02,Democratic,0,0
+2024,Other Wake sites,Unknown / outside range,17,2024-11-02,Republican,0,0
+2024,Other Wake sites,Unknown / outside range,17,2024-11-02,Unaffiliated,0,0
+2024,Other Wake sites,Unknown / outside range,17,2024-11-02,Other registered parties,0,0
 2024,Other Wake sites,18–22,1,2024-10-17,Democratic,337,337
 2024,Other Wake sites,18–22,1,2024-10-17,Republican,135,135
 2024,Other Wake sites,18–22,1,2024-10-17,Unaffiliated,471,471
@@ -3071,6 +3259,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2024,Other Wake sites,18–22,16,2024-11-01,Republican,389,3648
 2024,Other Wake sites,18–22,16,2024-11-01,Unaffiliated,1263,10670
 2024,Other Wake sites,18–22,16,2024-11-01,Other registered parties,41,301
+2024,Other Wake sites,18–22,17,2024-11-02,Democratic,655,6809
+2024,Other Wake sites,18–22,17,2024-11-02,Republican,314,3962
+2024,Other Wake sites,18–22,17,2024-11-02,Unaffiliated,1248,11918
+2024,Other Wake sites,18–22,17,2024-11-02,Other registered parties,51,352
 2026,Campus site,All ages,1,2026-10-15,Democratic,400,400
 2026,Campus site,All ages,1,2026-10-15,Republican,63,63
 2026,Campus site,All ages,1,2026-10-15,Unaffiliated,365,365
@@ -3079,62 +3271,66 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,All ages,2,2026-10-16,Republican,36,99
 2026,Campus site,All ages,2,2026-10-16,Unaffiliated,369,734
 2026,Campus site,All ages,2,2026-10-16,Other registered parties,2,4
-2026,Campus site,All ages,3,2026-10-17,Democratic,208,1004
+2026,Campus site,All ages,3,2026-10-17,Democratic,209,1005
 2026,Campus site,All ages,3,2026-10-17,Republican,16,115
 2026,Campus site,All ages,3,2026-10-17,Unaffiliated,240,974
 2026,Campus site,All ages,3,2026-10-17,Other registered parties,2,6
-2026,Campus site,All ages,4,2026-10-18,Democratic,189,1193
+2026,Campus site,All ages,4,2026-10-18,Democratic,189,1194
 2026,Campus site,All ages,4,2026-10-18,Republican,13,128
 2026,Campus site,All ages,4,2026-10-18,Unaffiliated,196,1170
 2026,Campus site,All ages,4,2026-10-18,Other registered parties,0,6
-2026,Campus site,All ages,5,2026-10-19,Democratic,341,1534
+2026,Campus site,All ages,5,2026-10-19,Democratic,341,1535
 2026,Campus site,All ages,5,2026-10-19,Republican,46,174
 2026,Campus site,All ages,5,2026-10-19,Unaffiliated,296,1466
 2026,Campus site,All ages,5,2026-10-19,Other registered parties,1,7
-2026,Campus site,All ages,6,2026-10-20,Democratic,357,1891
+2026,Campus site,All ages,6,2026-10-20,Democratic,357,1892
 2026,Campus site,All ages,6,2026-10-20,Republican,37,211
 2026,Campus site,All ages,6,2026-10-20,Unaffiliated,329,1795
 2026,Campus site,All ages,6,2026-10-20,Other registered parties,2,9
-2026,Campus site,All ages,7,2026-10-21,Democratic,332,2223
+2026,Campus site,All ages,7,2026-10-21,Democratic,332,2224
 2026,Campus site,All ages,7,2026-10-21,Republican,60,271
 2026,Campus site,All ages,7,2026-10-21,Unaffiliated,338,2133
 2026,Campus site,All ages,7,2026-10-21,Other registered parties,4,13
-2026,Campus site,All ages,8,2026-10-22,Democratic,322,2545
+2026,Campus site,All ages,8,2026-10-22,Democratic,322,2546
 2026,Campus site,All ages,8,2026-10-22,Republican,41,312
 2026,Campus site,All ages,8,2026-10-22,Unaffiliated,360,2493
 2026,Campus site,All ages,8,2026-10-22,Other registered parties,6,19
-2026,Campus site,All ages,9,2026-10-23,Democratic,448,2993
+2026,Campus site,All ages,9,2026-10-23,Democratic,448,2994
 2026,Campus site,All ages,9,2026-10-23,Republican,43,355
 2026,Campus site,All ages,9,2026-10-23,Unaffiliated,512,3005
 2026,Campus site,All ages,9,2026-10-23,Other registered parties,1,20
-2026,Campus site,All ages,10,2026-10-24,Democratic,267,3260
+2026,Campus site,All ages,10,2026-10-24,Democratic,267,3261
 2026,Campus site,All ages,10,2026-10-24,Republican,45,400
 2026,Campus site,All ages,10,2026-10-24,Unaffiliated,258,3263
 2026,Campus site,All ages,10,2026-10-24,Other registered parties,1,21
-2026,Campus site,All ages,11,2026-10-25,Democratic,205,3465
+2026,Campus site,All ages,11,2026-10-25,Democratic,205,3466
 2026,Campus site,All ages,11,2026-10-25,Republican,34,434
 2026,Campus site,All ages,11,2026-10-25,Unaffiliated,276,3539
 2026,Campus site,All ages,11,2026-10-25,Other registered parties,2,23
-2026,Campus site,All ages,12,2026-10-26,Democratic,422,3887
+2026,Campus site,All ages,12,2026-10-26,Democratic,422,3888
 2026,Campus site,All ages,12,2026-10-26,Republican,66,500
 2026,Campus site,All ages,12,2026-10-26,Unaffiliated,443,3982
 2026,Campus site,All ages,12,2026-10-26,Other registered parties,6,29
-2026,Campus site,All ages,13,2026-10-27,Democratic,420,4307
+2026,Campus site,All ages,13,2026-10-27,Democratic,420,4308
 2026,Campus site,All ages,13,2026-10-27,Republican,76,576
 2026,Campus site,All ages,13,2026-10-27,Unaffiliated,469,4451
 2026,Campus site,All ages,13,2026-10-27,Other registered parties,6,35
-2026,Campus site,All ages,14,2026-10-28,Democratic,454,4761
+2026,Campus site,All ages,14,2026-10-28,Democratic,454,4762
 2026,Campus site,All ages,14,2026-10-28,Republican,98,674
 2026,Campus site,All ages,14,2026-10-28,Unaffiliated,571,5022
 2026,Campus site,All ages,14,2026-10-28,Other registered parties,5,40
-2026,Campus site,All ages,15,2026-10-29,Democratic,516,5277
+2026,Campus site,All ages,15,2026-10-29,Democratic,514,5276
 2026,Campus site,All ages,15,2026-10-29,Republican,83,757
-2026,Campus site,All ages,15,2026-10-29,Unaffiliated,667,5689
+2026,Campus site,All ages,15,2026-10-29,Unaffiliated,669,5691
 2026,Campus site,All ages,15,2026-10-29,Other registered parties,9,49
-2026,Campus site,All ages,16,2026-10-30,Democratic,531,5808
+2026,Campus site,All ages,16,2026-10-30,Democratic,531,5807
 2026,Campus site,All ages,16,2026-10-30,Republican,111,868
-2026,Campus site,All ages,16,2026-10-30,Unaffiliated,840,6529
+2026,Campus site,All ages,16,2026-10-30,Unaffiliated,840,6531
 2026,Campus site,All ages,16,2026-10-30,Other registered parties,12,61
+2026,Campus site,All ages,17,2026-10-31,Democratic,463,6270
+2026,Campus site,All ages,17,2026-10-31,Republican,87,955
+2026,Campus site,All ages,17,2026-10-31,Unaffiliated,672,7203
+2026,Campus site,All ages,17,2026-10-31,Other registered parties,7,68
 2026,Campus site,18–24,1,2026-10-15,Democratic,59,59
 2026,Campus site,18–24,1,2026-10-15,Republican,15,15
 2026,Campus site,18–24,1,2026-10-15,Unaffiliated,81,81
@@ -3143,62 +3339,66 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,18–24,2,2026-10-16,Republican,4,19
 2026,Campus site,18–24,2,2026-10-16,Unaffiliated,91,172
 2026,Campus site,18–24,2,2026-10-16,Other registered parties,1,1
-2026,Campus site,18–24,3,2026-10-17,Democratic,31,146
+2026,Campus site,18–24,3,2026-10-17,Democratic,32,147
 2026,Campus site,18–24,3,2026-10-17,Republican,0,19
 2026,Campus site,18–24,3,2026-10-17,Unaffiliated,40,212
 2026,Campus site,18–24,3,2026-10-17,Other registered parties,1,2
-2026,Campus site,18–24,4,2026-10-18,Democratic,25,171
+2026,Campus site,18–24,4,2026-10-18,Democratic,25,172
 2026,Campus site,18–24,4,2026-10-18,Republican,0,19
 2026,Campus site,18–24,4,2026-10-18,Unaffiliated,43,255
 2026,Campus site,18–24,4,2026-10-18,Other registered parties,0,2
-2026,Campus site,18–24,5,2026-10-19,Democratic,54,225
+2026,Campus site,18–24,5,2026-10-19,Democratic,54,226
 2026,Campus site,18–24,5,2026-10-19,Republican,5,24
 2026,Campus site,18–24,5,2026-10-19,Unaffiliated,70,325
 2026,Campus site,18–24,5,2026-10-19,Other registered parties,0,2
-2026,Campus site,18–24,6,2026-10-20,Democratic,72,297
+2026,Campus site,18–24,6,2026-10-20,Democratic,72,298
 2026,Campus site,18–24,6,2026-10-20,Republican,4,28
 2026,Campus site,18–24,6,2026-10-20,Unaffiliated,113,438
 2026,Campus site,18–24,6,2026-10-20,Other registered parties,1,3
-2026,Campus site,18–24,7,2026-10-21,Democratic,87,384
+2026,Campus site,18–24,7,2026-10-21,Democratic,87,385
 2026,Campus site,18–24,7,2026-10-21,Republican,7,35
 2026,Campus site,18–24,7,2026-10-21,Unaffiliated,134,572
 2026,Campus site,18–24,7,2026-10-21,Other registered parties,1,4
-2026,Campus site,18–24,8,2026-10-22,Democratic,84,468
+2026,Campus site,18–24,8,2026-10-22,Democratic,84,469
 2026,Campus site,18–24,8,2026-10-22,Republican,11,46
 2026,Campus site,18–24,8,2026-10-22,Unaffiliated,155,727
 2026,Campus site,18–24,8,2026-10-22,Other registered parties,1,5
-2026,Campus site,18–24,9,2026-10-23,Democratic,138,606
+2026,Campus site,18–24,9,2026-10-23,Democratic,138,607
 2026,Campus site,18–24,9,2026-10-23,Republican,6,52
 2026,Campus site,18–24,9,2026-10-23,Unaffiliated,194,921
 2026,Campus site,18–24,9,2026-10-23,Other registered parties,0,5
-2026,Campus site,18–24,10,2026-10-24,Democratic,61,667
+2026,Campus site,18–24,10,2026-10-24,Democratic,61,668
 2026,Campus site,18–24,10,2026-10-24,Republican,3,55
 2026,Campus site,18–24,10,2026-10-24,Unaffiliated,75,996
 2026,Campus site,18–24,10,2026-10-24,Other registered parties,1,6
-2026,Campus site,18–24,11,2026-10-25,Democratic,45,712
+2026,Campus site,18–24,11,2026-10-25,Democratic,45,713
 2026,Campus site,18–24,11,2026-10-25,Republican,4,59
 2026,Campus site,18–24,11,2026-10-25,Unaffiliated,90,1086
 2026,Campus site,18–24,11,2026-10-25,Other registered parties,2,8
-2026,Campus site,18–24,12,2026-10-26,Democratic,102,814
+2026,Campus site,18–24,12,2026-10-26,Democratic,102,815
 2026,Campus site,18–24,12,2026-10-26,Republican,10,69
 2026,Campus site,18–24,12,2026-10-26,Unaffiliated,184,1270
 2026,Campus site,18–24,12,2026-10-26,Other registered parties,3,11
-2026,Campus site,18–24,13,2026-10-27,Democratic,114,928
+2026,Campus site,18–24,13,2026-10-27,Democratic,114,929
 2026,Campus site,18–24,13,2026-10-27,Republican,19,88
 2026,Campus site,18–24,13,2026-10-27,Unaffiliated,194,1464
 2026,Campus site,18–24,13,2026-10-27,Other registered parties,1,12
-2026,Campus site,18–24,14,2026-10-28,Democratic,178,1106
+2026,Campus site,18–24,14,2026-10-28,Democratic,178,1107
 2026,Campus site,18–24,14,2026-10-28,Republican,20,108
 2026,Campus site,18–24,14,2026-10-28,Unaffiliated,272,1736
 2026,Campus site,18–24,14,2026-10-28,Other registered parties,4,16
-2026,Campus site,18–24,15,2026-10-29,Democratic,208,1314
+2026,Campus site,18–24,15,2026-10-29,Democratic,206,1313
 2026,Campus site,18–24,15,2026-10-29,Republican,15,123
-2026,Campus site,18–24,15,2026-10-29,Unaffiliated,321,2057
+2026,Campus site,18–24,15,2026-10-29,Unaffiliated,323,2059
 2026,Campus site,18–24,15,2026-10-29,Other registered parties,3,19
-2026,Campus site,18–24,16,2026-10-30,Democratic,210,1524
+2026,Campus site,18–24,16,2026-10-30,Democratic,210,1523
 2026,Campus site,18–24,16,2026-10-30,Republican,42,165
-2026,Campus site,18–24,16,2026-10-30,Unaffiliated,446,2503
+2026,Campus site,18–24,16,2026-10-30,Unaffiliated,446,2505
 2026,Campus site,18–24,16,2026-10-30,Other registered parties,3,22
+2026,Campus site,18–24,17,2026-10-31,Democratic,134,1657
+2026,Campus site,18–24,17,2026-10-31,Republican,16,181
+2026,Campus site,18–24,17,2026-10-31,Unaffiliated,274,2779
+2026,Campus site,18–24,17,2026-10-31,Other registered parties,0,22
 2026,Campus site,25–34,1,2026-10-15,Democratic,66,66
 2026,Campus site,25–34,1,2026-10-15,Republican,6,6
 2026,Campus site,25–34,1,2026-10-15,Unaffiliated,47,47
@@ -3263,6 +3463,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,25–34,16,2026-10-30,Republican,15,107
 2026,Campus site,25–34,16,2026-10-30,Unaffiliated,177,1299
 2026,Campus site,25–34,16,2026-10-30,Other registered parties,9,26
+2026,Campus site,25–34,17,2026-10-31,Democratic,144,1398
+2026,Campus site,25–34,17,2026-10-31,Republican,18,125
+2026,Campus site,25–34,17,2026-10-31,Unaffiliated,192,1491
+2026,Campus site,25–34,17,2026-10-31,Other registered parties,3,29
 2026,Campus site,35–44,1,2026-10-15,Democratic,29,29
 2026,Campus site,35–44,1,2026-10-15,Republican,5,5
 2026,Campus site,35–44,1,2026-10-15,Unaffiliated,42,42
@@ -3327,6 +3531,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,35–44,16,2026-10-30,Republican,12,58
 2026,Campus site,35–44,16,2026-10-30,Unaffiliated,76,716
 2026,Campus site,35–44,16,2026-10-30,Other registered parties,0,9
+2026,Campus site,35–44,17,2026-10-31,Democratic,54,729
+2026,Campus site,35–44,17,2026-10-31,Republican,10,68
+2026,Campus site,35–44,17,2026-10-31,Unaffiliated,72,788
+2026,Campus site,35–44,17,2026-10-31,Other registered parties,3,12
 2026,Campus site,45–64,1,2026-10-15,Democratic,108,108
 2026,Campus site,45–64,1,2026-10-15,Republican,23,23
 2026,Campus site,45–64,1,2026-10-15,Unaffiliated,104,104
@@ -3391,6 +3599,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,45–64,16,2026-10-30,Republican,23,282
 2026,Campus site,45–64,16,2026-10-30,Unaffiliated,103,1355
 2026,Campus site,45–64,16,2026-10-30,Other registered parties,0,2
+2026,Campus site,45–64,17,2026-10-31,Democratic,111,1328
+2026,Campus site,45–64,17,2026-10-31,Republican,34,316
+2026,Campus site,45–64,17,2026-10-31,Unaffiliated,113,1468
+2026,Campus site,45–64,17,2026-10-31,Other registered parties,1,3
 2026,Campus site,65+,1,2026-10-15,Democratic,138,138
 2026,Campus site,65+,1,2026-10-15,Republican,14,14
 2026,Campus site,65+,1,2026-10-15,Unaffiliated,91,91
@@ -3455,6 +3667,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,65+,16,2026-10-30,Republican,19,256
 2026,Campus site,65+,16,2026-10-30,Unaffiliated,38,656
 2026,Campus site,65+,16,2026-10-30,Other registered parties,0,2
+2026,Campus site,65+,17,2026-10-31,Democratic,20,1158
+2026,Campus site,65+,17,2026-10-31,Republican,9,265
+2026,Campus site,65+,17,2026-10-31,Unaffiliated,21,677
+2026,Campus site,65+,17,2026-10-31,Other registered parties,0,2
 2026,Campus site,Unknown / outside range,1,2026-10-15,Democratic,0,0
 2026,Campus site,Unknown / outside range,1,2026-10-15,Republican,0,0
 2026,Campus site,Unknown / outside range,1,2026-10-15,Unaffiliated,0,0
@@ -3519,6 +3735,10 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,Unknown / outside range,16,2026-10-30,Republican,0,0
 2026,Campus site,Unknown / outside range,16,2026-10-30,Unaffiliated,0,0
 2026,Campus site,Unknown / outside range,16,2026-10-30,Other registered parties,0,0
+2026,Campus site,Unknown / outside range,17,2026-10-31,Democratic,0,0
+2026,Campus site,Unknown / outside range,17,2026-10-31,Republican,0,0
+2026,Campus site,Unknown / outside range,17,2026-10-31,Unaffiliated,0,0
+2026,Campus site,Unknown / outside range,17,2026-10-31,Other registered parties,0,0
 2026,Campus site,18–22,1,2026-10-15,Democratic,41,41
 2026,Campus site,18–22,1,2026-10-15,Republican,14,14
 2026,Campus site,18–22,1,2026-10-15,Unaffiliated,69,69
@@ -3575,142 +3795,154 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Campus site,18–22,14,2026-10-28,Republican,17,93
 2026,Campus site,18–22,14,2026-10-28,Unaffiliated,214,1381
 2026,Campus site,18–22,14,2026-10-28,Other registered parties,1,12
-2026,Campus site,18–22,15,2026-10-29,Democratic,168,998
+2026,Campus site,18–22,15,2026-10-29,Democratic,167,997
 2026,Campus site,18–22,15,2026-10-29,Republican,12,105
-2026,Campus site,18–22,15,2026-10-29,Unaffiliated,247,1628
+2026,Campus site,18–22,15,2026-10-29,Unaffiliated,248,1629
 2026,Campus site,18–22,15,2026-10-29,Other registered parties,3,15
-2026,Campus site,18–22,16,2026-10-30,Democratic,172,1170
+2026,Campus site,18–22,16,2026-10-30,Democratic,172,1169
 2026,Campus site,18–22,16,2026-10-30,Republican,35,140
-2026,Campus site,18–22,16,2026-10-30,Unaffiliated,387,2015
+2026,Campus site,18–22,16,2026-10-30,Unaffiliated,387,2016
 2026,Campus site,18–22,16,2026-10-30,Other registered parties,0,15
+2026,Campus site,18–22,17,2026-10-31,Democratic,87,1256
+2026,Campus site,18–22,17,2026-10-31,Republican,11,151
+2026,Campus site,18–22,17,2026-10-31,Unaffiliated,199,2215
+2026,Campus site,18–22,17,2026-10-31,Other registered parties,0,15
 2026,Wake County,All ages,1,2026-10-15,Democratic,10491,10491
 2026,Wake County,All ages,1,2026-10-15,Republican,2808,2808
-2026,Wake County,All ages,1,2026-10-15,Unaffiliated,8399,8399
+2026,Wake County,All ages,1,2026-10-15,Unaffiliated,8398,8398
 2026,Wake County,All ages,1,2026-10-15,Other registered parties,40,40
 2026,Wake County,All ages,2,2026-10-16,Democratic,10231,20722
 2026,Wake County,All ages,2,2026-10-16,Republican,2834,5642
-2026,Wake County,All ages,2,2026-10-16,Unaffiliated,9065,17464
+2026,Wake County,All ages,2,2026-10-16,Unaffiliated,9065,17463
 2026,Wake County,All ages,2,2026-10-16,Other registered parties,59,99
-2026,Wake County,All ages,3,2026-10-17,Democratic,5496,26218
+2026,Wake County,All ages,3,2026-10-17,Democratic,5497,26219
 2026,Wake County,All ages,3,2026-10-17,Republican,1292,6934
-2026,Wake County,All ages,3,2026-10-17,Unaffiliated,5358,22822
+2026,Wake County,All ages,3,2026-10-17,Unaffiliated,5358,22821
 2026,Wake County,All ages,3,2026-10-17,Other registered parties,50,149
-2026,Wake County,All ages,4,2026-10-18,Democratic,4714,30932
+2026,Wake County,All ages,4,2026-10-18,Democratic,4714,30933
 2026,Wake County,All ages,4,2026-10-18,Republican,902,7836
-2026,Wake County,All ages,4,2026-10-18,Unaffiliated,4223,27045
+2026,Wake County,All ages,4,2026-10-18,Unaffiliated,4223,27044
 2026,Wake County,All ages,4,2026-10-18,Other registered parties,22,171
-2026,Wake County,All ages,5,2026-10-19,Democratic,9705,40637
+2026,Wake County,All ages,5,2026-10-19,Democratic,9705,40638
 2026,Wake County,All ages,5,2026-10-19,Republican,3286,11122
-2026,Wake County,All ages,5,2026-10-19,Unaffiliated,8726,35771
+2026,Wake County,All ages,5,2026-10-19,Unaffiliated,8726,35770
 2026,Wake County,All ages,5,2026-10-19,Other registered parties,59,230
-2026,Wake County,All ages,6,2026-10-20,Democratic,8914,49551
+2026,Wake County,All ages,6,2026-10-20,Democratic,8914,49552
 2026,Wake County,All ages,6,2026-10-20,Republican,3345,14467
-2026,Wake County,All ages,6,2026-10-20,Unaffiliated,8149,43920
+2026,Wake County,All ages,6,2026-10-20,Unaffiliated,8149,43919
 2026,Wake County,All ages,6,2026-10-20,Other registered parties,43,273
-2026,Wake County,All ages,7,2026-10-21,Democratic,8174,57725
+2026,Wake County,All ages,7,2026-10-21,Democratic,8174,57726
 2026,Wake County,All ages,7,2026-10-21,Republican,3411,17878
-2026,Wake County,All ages,7,2026-10-21,Unaffiliated,7637,51557
+2026,Wake County,All ages,7,2026-10-21,Unaffiliated,7636,51555
 2026,Wake County,All ages,7,2026-10-21,Other registered parties,57,330
-2026,Wake County,All ages,8,2026-10-22,Democratic,7278,65003
+2026,Wake County,All ages,8,2026-10-22,Democratic,7278,65004
 2026,Wake County,All ages,8,2026-10-22,Republican,3392,21270
-2026,Wake County,All ages,8,2026-10-22,Unaffiliated,7455,59012
+2026,Wake County,All ages,8,2026-10-22,Unaffiliated,7455,59010
 2026,Wake County,All ages,8,2026-10-22,Other registered parties,70,400
-2026,Wake County,All ages,9,2026-10-23,Democratic,8685,73688
+2026,Wake County,All ages,9,2026-10-23,Democratic,8685,73689
 2026,Wake County,All ages,9,2026-10-23,Republican,3551,24821
-2026,Wake County,All ages,9,2026-10-23,Unaffiliated,8811,67823
+2026,Wake County,All ages,9,2026-10-23,Unaffiliated,8810,67820
 2026,Wake County,All ages,9,2026-10-23,Other registered parties,78,478
-2026,Wake County,All ages,10,2026-10-24,Democratic,5594,79282
+2026,Wake County,All ages,10,2026-10-24,Democratic,5594,79283
 2026,Wake County,All ages,10,2026-10-24,Republican,1701,26522
-2026,Wake County,All ages,10,2026-10-24,Unaffiliated,5527,73350
+2026,Wake County,All ages,10,2026-10-24,Unaffiliated,5527,73347
 2026,Wake County,All ages,10,2026-10-24,Other registered parties,52,530
-2026,Wake County,All ages,11,2026-10-25,Democratic,4393,83675
+2026,Wake County,All ages,11,2026-10-25,Democratic,4393,83676
 2026,Wake County,All ages,11,2026-10-25,Republican,1270,27792
-2026,Wake County,All ages,11,2026-10-25,Unaffiliated,4534,77884
+2026,Wake County,All ages,11,2026-10-25,Unaffiliated,4534,77881
 2026,Wake County,All ages,11,2026-10-25,Other registered parties,39,569
-2026,Wake County,All ages,12,2026-10-26,Democratic,8229,91904
+2026,Wake County,All ages,12,2026-10-26,Democratic,8229,91905
 2026,Wake County,All ages,12,2026-10-26,Republican,4274,32066
-2026,Wake County,All ages,12,2026-10-26,Unaffiliated,8500,86384
+2026,Wake County,All ages,12,2026-10-26,Unaffiliated,8500,86381
 2026,Wake County,All ages,12,2026-10-26,Other registered parties,72,641
-2026,Wake County,All ages,13,2026-10-27,Democratic,8276,100180
+2026,Wake County,All ages,13,2026-10-27,Democratic,8276,100181
 2026,Wake County,All ages,13,2026-10-27,Republican,4259,36325
-2026,Wake County,All ages,13,2026-10-27,Unaffiliated,8828,95212
+2026,Wake County,All ages,13,2026-10-27,Unaffiliated,8828,95209
 2026,Wake County,All ages,13,2026-10-27,Other registered parties,94,735
-2026,Wake County,All ages,14,2026-10-28,Democratic,8416,108596
+2026,Wake County,All ages,14,2026-10-28,Democratic,8416,108597
 2026,Wake County,All ages,14,2026-10-28,Republican,4754,41079
-2026,Wake County,All ages,14,2026-10-28,Unaffiliated,9556,104768
+2026,Wake County,All ages,14,2026-10-28,Unaffiliated,9556,104765
 2026,Wake County,All ages,14,2026-10-28,Other registered parties,72,807
-2026,Wake County,All ages,15,2026-10-29,Democratic,9114,117710
-2026,Wake County,All ages,15,2026-10-29,Republican,4878,45957
-2026,Wake County,All ages,15,2026-10-29,Unaffiliated,10469,115237
+2026,Wake County,All ages,15,2026-10-29,Democratic,9102,117699
+2026,Wake County,All ages,15,2026-10-29,Republican,4874,45953
+2026,Wake County,All ages,15,2026-10-29,Unaffiliated,10485,115250
 2026,Wake County,All ages,15,2026-10-29,Other registered parties,95,902
-2026,Wake County,All ages,16,2026-10-30,Democratic,11352,129062
-2026,Wake County,All ages,16,2026-10-30,Republican,5728,51685
-2026,Wake County,All ages,16,2026-10-30,Unaffiliated,13739,128976
-2026,Wake County,All ages,16,2026-10-30,Other registered parties,134,1036
+2026,Wake County,All ages,16,2026-10-30,Democratic,11341,129040
+2026,Wake County,All ages,16,2026-10-30,Republican,5727,51680
+2026,Wake County,All ages,16,2026-10-30,Unaffiliated,13750,129000
+2026,Wake County,All ages,16,2026-10-30,Other registered parties,133,1035
+2026,Wake County,All ages,17,2026-10-31,Democratic,8990,138030
+2026,Wake County,All ages,17,2026-10-31,Republican,3773,55453
+2026,Wake County,All ages,17,2026-10-31,Unaffiliated,10451,139451
+2026,Wake County,All ages,17,2026-10-31,Other registered parties,119,1154
 2026,Wake County,18–24,1,2026-10-15,Democratic,367,367
 2026,Wake County,18–24,1,2026-10-15,Republican,48,48
-2026,Wake County,18–24,1,2026-10-15,Unaffiliated,477,477
+2026,Wake County,18–24,1,2026-10-15,Unaffiliated,476,476
 2026,Wake County,18–24,1,2026-10-15,Other registered parties,3,3
 2026,Wake County,18–24,2,2026-10-16,Democratic,482,849
 2026,Wake County,18–24,2,2026-10-16,Republican,59,107
-2026,Wake County,18–24,2,2026-10-16,Unaffiliated,660,1137
+2026,Wake County,18–24,2,2026-10-16,Unaffiliated,660,1136
 2026,Wake County,18–24,2,2026-10-16,Other registered parties,5,8
-2026,Wake County,18–24,3,2026-10-17,Democratic,414,1263
+2026,Wake County,18–24,3,2026-10-17,Democratic,415,1264
 2026,Wake County,18–24,3,2026-10-17,Republican,44,151
-2026,Wake County,18–24,3,2026-10-17,Unaffiliated,599,1736
+2026,Wake County,18–24,3,2026-10-17,Unaffiliated,599,1735
 2026,Wake County,18–24,3,2026-10-17,Other registered parties,3,11
-2026,Wake County,18–24,4,2026-10-18,Democratic,346,1609
+2026,Wake County,18–24,4,2026-10-18,Democratic,346,1610
 2026,Wake County,18–24,4,2026-10-18,Republican,35,186
-2026,Wake County,18–24,4,2026-10-18,Unaffiliated,485,2221
+2026,Wake County,18–24,4,2026-10-18,Unaffiliated,485,2220
 2026,Wake County,18–24,4,2026-10-18,Other registered parties,3,14
-2026,Wake County,18–24,5,2026-10-19,Democratic,432,2041
+2026,Wake County,18–24,5,2026-10-19,Democratic,432,2042
 2026,Wake County,18–24,5,2026-10-19,Republican,68,254
-2026,Wake County,18–24,5,2026-10-19,Unaffiliated,652,2873
+2026,Wake County,18–24,5,2026-10-19,Unaffiliated,652,2872
 2026,Wake County,18–24,5,2026-10-19,Other registered parties,2,16
-2026,Wake County,18–24,6,2026-10-20,Democratic,467,2508
+2026,Wake County,18–24,6,2026-10-20,Democratic,467,2509
 2026,Wake County,18–24,6,2026-10-20,Republican,73,327
-2026,Wake County,18–24,6,2026-10-20,Unaffiliated,618,3491
+2026,Wake County,18–24,6,2026-10-20,Unaffiliated,618,3490
 2026,Wake County,18–24,6,2026-10-20,Other registered parties,6,22
-2026,Wake County,18–24,7,2026-10-21,Democratic,397,2905
+2026,Wake County,18–24,7,2026-10-21,Democratic,397,2906
 2026,Wake County,18–24,7,2026-10-21,Republican,48,375
-2026,Wake County,18–24,7,2026-10-21,Unaffiliated,513,4004
+2026,Wake County,18–24,7,2026-10-21,Unaffiliated,512,4002
 2026,Wake County,18–24,7,2026-10-21,Other registered parties,4,26
-2026,Wake County,18–24,8,2026-10-22,Democratic,394,3299
+2026,Wake County,18–24,8,2026-10-22,Democratic,394,3300
 2026,Wake County,18–24,8,2026-10-22,Republican,68,443
-2026,Wake County,18–24,8,2026-10-22,Unaffiliated,573,4577
+2026,Wake County,18–24,8,2026-10-22,Unaffiliated,573,4575
 2026,Wake County,18–24,8,2026-10-22,Other registered parties,9,35
-2026,Wake County,18–24,9,2026-10-23,Democratic,619,3918
+2026,Wake County,18–24,9,2026-10-23,Democratic,619,3919
 2026,Wake County,18–24,9,2026-10-23,Republican,94,537
-2026,Wake County,18–24,9,2026-10-23,Unaffiliated,871,5448
+2026,Wake County,18–24,9,2026-10-23,Unaffiliated,870,5445
 2026,Wake County,18–24,9,2026-10-23,Other registered parties,7,42
-2026,Wake County,18–24,10,2026-10-24,Democratic,548,4466
+2026,Wake County,18–24,10,2026-10-24,Democratic,548,4467
 2026,Wake County,18–24,10,2026-10-24,Republican,86,623
-2026,Wake County,18–24,10,2026-10-24,Unaffiliated,734,6182
+2026,Wake County,18–24,10,2026-10-24,Unaffiliated,734,6179
 2026,Wake County,18–24,10,2026-10-24,Other registered parties,7,49
-2026,Wake County,18–24,11,2026-10-25,Democratic,472,4938
+2026,Wake County,18–24,11,2026-10-25,Democratic,472,4939
 2026,Wake County,18–24,11,2026-10-25,Republican,79,702
-2026,Wake County,18–24,11,2026-10-25,Unaffiliated,701,6883
+2026,Wake County,18–24,11,2026-10-25,Unaffiliated,701,6880
 2026,Wake County,18–24,11,2026-10-25,Other registered parties,10,59
-2026,Wake County,18–24,12,2026-10-26,Democratic,586,5524
+2026,Wake County,18–24,12,2026-10-26,Democratic,586,5525
 2026,Wake County,18–24,12,2026-10-26,Republican,119,821
-2026,Wake County,18–24,12,2026-10-26,Unaffiliated,784,7667
+2026,Wake County,18–24,12,2026-10-26,Unaffiliated,784,7664
 2026,Wake County,18–24,12,2026-10-26,Other registered parties,12,71
-2026,Wake County,18–24,13,2026-10-27,Democratic,614,6138
+2026,Wake County,18–24,13,2026-10-27,Democratic,614,6139
 2026,Wake County,18–24,13,2026-10-27,Republican,100,921
-2026,Wake County,18–24,13,2026-10-27,Unaffiliated,772,8439
+2026,Wake County,18–24,13,2026-10-27,Unaffiliated,772,8436
 2026,Wake County,18–24,13,2026-10-27,Other registered parties,8,79
-2026,Wake County,18–24,14,2026-10-28,Democratic,719,6857
+2026,Wake County,18–24,14,2026-10-28,Democratic,719,6858
 2026,Wake County,18–24,14,2026-10-28,Republican,143,1064
-2026,Wake County,18–24,14,2026-10-28,Unaffiliated,1013,9452
+2026,Wake County,18–24,14,2026-10-28,Unaffiliated,1013,9449
 2026,Wake County,18–24,14,2026-10-28,Other registered parties,8,87
-2026,Wake County,18–24,15,2026-10-29,Democratic,822,7679
-2026,Wake County,18–24,15,2026-10-29,Republican,176,1240
-2026,Wake County,18–24,15,2026-10-29,Unaffiliated,1212,10664
+2026,Wake County,18–24,15,2026-10-29,Democratic,818,7676
+2026,Wake County,18–24,15,2026-10-29,Republican,175,1239
+2026,Wake County,18–24,15,2026-10-29,Unaffiliated,1217,10666
 2026,Wake County,18–24,15,2026-10-29,Other registered parties,12,99
-2026,Wake County,18–24,16,2026-10-30,Democratic,1154,8833
-2026,Wake County,18–24,16,2026-10-30,Republican,283,1523
-2026,Wake County,18–24,16,2026-10-30,Unaffiliated,1848,12512
+2026,Wake County,18–24,16,2026-10-30,Democratic,1151,8827
+2026,Wake County,18–24,16,2026-10-30,Republican,283,1522
+2026,Wake County,18–24,16,2026-10-30,Unaffiliated,1851,12517
 2026,Wake County,18–24,16,2026-10-30,Other registered parties,13,112
+2026,Wake County,18–24,17,2026-10-31,Democratic,873,9700
+2026,Wake County,18–24,17,2026-10-31,Republican,203,1725
+2026,Wake County,18–24,17,2026-10-31,Unaffiliated,1503,14020
+2026,Wake County,18–24,17,2026-10-31,Other registered parties,13,125
 2026,Wake County,25–34,1,2026-10-15,Democratic,707,707
 2026,Wake County,25–34,1,2026-10-15,Republican,80,80
 2026,Wake County,25–34,1,2026-10-15,Unaffiliated,679,679
@@ -3767,14 +3999,18 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Wake County,25–34,14,2026-10-28,Republican,282,1750
 2026,Wake County,25–34,14,2026-10-28,Unaffiliated,1614,13119
 2026,Wake County,25–34,14,2026-10-28,Other registered parties,23,186
-2026,Wake County,25–34,15,2026-10-29,Democratic,1788,15047
+2026,Wake County,25–34,15,2026-10-29,Democratic,1783,15042
 2026,Wake County,25–34,15,2026-10-29,Republican,338,2088
-2026,Wake County,25–34,15,2026-10-29,Unaffiliated,1920,15039
+2026,Wake County,25–34,15,2026-10-29,Unaffiliated,1925,15044
 2026,Wake County,25–34,15,2026-10-29,Other registered parties,23,209
-2026,Wake County,25–34,16,2026-10-30,Democratic,2444,17491
-2026,Wake County,25–34,16,2026-10-30,Republican,512,2600
-2026,Wake County,25–34,16,2026-10-30,Unaffiliated,2842,17881
-2026,Wake County,25–34,16,2026-10-30,Other registered parties,39,248
+2026,Wake County,25–34,16,2026-10-30,Democratic,2441,17483
+2026,Wake County,25–34,16,2026-10-30,Republican,511,2599
+2026,Wake County,25–34,16,2026-10-30,Unaffiliated,2847,17891
+2026,Wake County,25–34,16,2026-10-30,Other registered parties,38,247
+2026,Wake County,25–34,17,2026-10-31,Democratic,2213,19696
+2026,Wake County,25–34,17,2026-10-31,Republican,451,3050
+2026,Wake County,25–34,17,2026-10-31,Unaffiliated,2431,20322
+2026,Wake County,25–34,17,2026-10-31,Other registered parties,35,282
 2026,Wake County,35–44,1,2026-10-15,Democratic,909,909
 2026,Wake County,35–44,1,2026-10-15,Republican,155,155
 2026,Wake County,35–44,1,2026-10-15,Unaffiliated,954,954
@@ -3831,14 +4067,18 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Wake County,35–44,14,2026-10-28,Republican,390,2753
 2026,Wake County,35–44,14,2026-10-28,Unaffiliated,1725,15864
 2026,Wake County,35–44,14,2026-10-28,Other registered parties,20,190
-2026,Wake County,35–44,15,2026-10-29,Democratic,1739,16684
+2026,Wake County,35–44,15,2026-10-29,Democratic,1737,16682
 2026,Wake County,35–44,15,2026-10-29,Republican,493,3246
-2026,Wake County,35–44,15,2026-10-29,Unaffiliated,2052,17916
+2026,Wake County,35–44,15,2026-10-29,Unaffiliated,2054,17918
 2026,Wake County,35–44,15,2026-10-29,Other registered parties,24,214
-2026,Wake County,35–44,16,2026-10-30,Democratic,2388,19072
-2026,Wake County,35–44,16,2026-10-30,Republican,739,3985
-2026,Wake County,35–44,16,2026-10-30,Unaffiliated,2913,20829
+2026,Wake County,35–44,16,2026-10-30,Democratic,2385,19067
+2026,Wake County,35–44,16,2026-10-30,Republican,738,3984
+2026,Wake County,35–44,16,2026-10-30,Unaffiliated,2916,20834
 2026,Wake County,35–44,16,2026-10-30,Other registered parties,30,244
+2026,Wake County,35–44,17,2026-10-31,Democratic,1840,20907
+2026,Wake County,35–44,17,2026-10-31,Republican,492,4476
+2026,Wake County,35–44,17,2026-10-31,Unaffiliated,2125,22959
+2026,Wake County,35–44,17,2026-10-31,Other registered parties,34,278
 2026,Wake County,45–64,1,2026-10-15,Democratic,3165,3165
 2026,Wake County,45–64,1,2026-10-15,Republican,770,770
 2026,Wake County,45–64,1,2026-10-15,Unaffiliated,2847,2847
@@ -3895,14 +4135,18 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Wake County,45–64,14,2026-10-28,Republican,1872,14498
 2026,Wake County,45–64,14,2026-10-28,Unaffiliated,3340,38653
 2026,Wake County,45–64,14,2026-10-28,Other registered parties,13,264
-2026,Wake County,45–64,15,2026-10-29,Democratic,2983,39839
-2026,Wake County,45–64,15,2026-10-29,Republican,2017,16515
-2026,Wake County,45–64,15,2026-10-29,Unaffiliated,3670,42323
+2026,Wake County,45–64,15,2026-10-29,Democratic,2982,39838
+2026,Wake County,45–64,15,2026-10-29,Republican,2016,16514
+2026,Wake County,45–64,15,2026-10-29,Unaffiliated,3672,42325
 2026,Wake County,45–64,15,2026-10-29,Other registered parties,29,293
-2026,Wake County,45–64,16,2026-10-30,Democratic,3658,43497
-2026,Wake County,45–64,16,2026-10-30,Republican,2478,18993
-2026,Wake County,45–64,16,2026-10-30,Unaffiliated,4599,46922
+2026,Wake County,45–64,16,2026-10-30,Democratic,3657,43495
+2026,Wake County,45–64,16,2026-10-30,Republican,2479,18993
+2026,Wake County,45–64,16,2026-10-30,Unaffiliated,4598,46923
 2026,Wake County,45–64,16,2026-10-30,Other registered parties,48,341
+2026,Wake County,45–64,17,2026-10-31,Democratic,3096,46591
+2026,Wake County,45–64,17,2026-10-31,Republican,1797,20790
+2026,Wake County,45–64,17,2026-10-31,Unaffiliated,3645,50568
+2026,Wake County,45–64,17,2026-10-31,Other registered parties,32,373
 2026,Wake County,65+,1,2026-10-15,Democratic,5343,5343
 2026,Wake County,65+,1,2026-10-15,Republican,1755,1755
 2026,Wake County,65+,1,2026-10-15,Unaffiliated,3442,3442
@@ -3960,13 +4204,17 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Wake County,65+,14,2026-10-28,Unaffiliated,1864,27680
 2026,Wake County,65+,14,2026-10-28,Other registered parties,8,80
 2026,Wake County,65+,15,2026-10-29,Democratic,1782,38461
-2026,Wake County,65+,15,2026-10-29,Republican,1854,22868
-2026,Wake County,65+,15,2026-10-29,Unaffiliated,1615,29295
+2026,Wake County,65+,15,2026-10-29,Republican,1852,22866
+2026,Wake County,65+,15,2026-10-29,Unaffiliated,1617,29297
 2026,Wake County,65+,15,2026-10-29,Other registered parties,7,87
-2026,Wake County,65+,16,2026-10-30,Democratic,1708,40169
-2026,Wake County,65+,16,2026-10-30,Republican,1716,24584
-2026,Wake County,65+,16,2026-10-30,Unaffiliated,1537,30832
+2026,Wake County,65+,16,2026-10-30,Democratic,1707,40168
+2026,Wake County,65+,16,2026-10-30,Republican,1716,24582
+2026,Wake County,65+,16,2026-10-30,Unaffiliated,1538,30835
 2026,Wake County,65+,16,2026-10-30,Other registered parties,4,91
+2026,Wake County,65+,17,2026-10-31,Democratic,968,41136
+2026,Wake County,65+,17,2026-10-31,Republican,830,25412
+2026,Wake County,65+,17,2026-10-31,Unaffiliated,747,31582
+2026,Wake County,65+,17,2026-10-31,Other registered parties,5,96
 2026,Wake County,Unknown / outside range,1,2026-10-15,Democratic,0,0
 2026,Wake County,Unknown / outside range,1,2026-10-15,Republican,0,0
 2026,Wake County,Unknown / outside range,1,2026-10-15,Unaffiliated,0,0
@@ -4031,198 +4279,214 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Wake County,Unknown / outside range,16,2026-10-30,Republican,0,0
 2026,Wake County,Unknown / outside range,16,2026-10-30,Unaffiliated,0,0
 2026,Wake County,Unknown / outside range,16,2026-10-30,Other registered parties,0,0
+2026,Wake County,Unknown / outside range,17,2026-10-31,Democratic,0,0
+2026,Wake County,Unknown / outside range,17,2026-10-31,Republican,0,0
+2026,Wake County,Unknown / outside range,17,2026-10-31,Unaffiliated,0,0
+2026,Wake County,Unknown / outside range,17,2026-10-31,Other registered parties,0,0
 2026,Wake County,18–22,1,2026-10-15,Democratic,235,235
 2026,Wake County,18–22,1,2026-10-15,Republican,38,38
-2026,Wake County,18–22,1,2026-10-15,Unaffiliated,360,360
+2026,Wake County,18–22,1,2026-10-15,Unaffiliated,359,359
 2026,Wake County,18–22,1,2026-10-15,Other registered parties,3,3
 2026,Wake County,18–22,2,2026-10-16,Democratic,336,571
 2026,Wake County,18–22,2,2026-10-16,Republican,38,76
-2026,Wake County,18–22,2,2026-10-16,Unaffiliated,478,838
+2026,Wake County,18–22,2,2026-10-16,Unaffiliated,478,837
 2026,Wake County,18–22,2,2026-10-16,Other registered parties,3,6
 2026,Wake County,18–22,3,2026-10-17,Democratic,277,848
 2026,Wake County,18–22,3,2026-10-17,Republican,33,109
-2026,Wake County,18–22,3,2026-10-17,Unaffiliated,449,1287
+2026,Wake County,18–22,3,2026-10-17,Unaffiliated,449,1286
 2026,Wake County,18–22,3,2026-10-17,Other registered parties,3,9
 2026,Wake County,18–22,4,2026-10-18,Democratic,252,1100
 2026,Wake County,18–22,4,2026-10-18,Republican,27,136
-2026,Wake County,18–22,4,2026-10-18,Unaffiliated,373,1660
+2026,Wake County,18–22,4,2026-10-18,Unaffiliated,373,1659
 2026,Wake County,18–22,4,2026-10-18,Other registered parties,1,10
 2026,Wake County,18–22,5,2026-10-19,Democratic,283,1383
 2026,Wake County,18–22,5,2026-10-19,Republican,46,182
-2026,Wake County,18–22,5,2026-10-19,Unaffiliated,453,2113
+2026,Wake County,18–22,5,2026-10-19,Unaffiliated,453,2112
 2026,Wake County,18–22,5,2026-10-19,Other registered parties,1,11
 2026,Wake County,18–22,6,2026-10-20,Democratic,308,1691
 2026,Wake County,18–22,6,2026-10-20,Republican,54,236
-2026,Wake County,18–22,6,2026-10-20,Unaffiliated,447,2560
+2026,Wake County,18–22,6,2026-10-20,Unaffiliated,447,2559
 2026,Wake County,18–22,6,2026-10-20,Other registered parties,3,14
 2026,Wake County,18–22,7,2026-10-21,Democratic,255,1946
 2026,Wake County,18–22,7,2026-10-21,Republican,27,263
-2026,Wake County,18–22,7,2026-10-21,Unaffiliated,339,2899
+2026,Wake County,18–22,7,2026-10-21,Unaffiliated,339,2898
 2026,Wake County,18–22,7,2026-10-21,Other registered parties,2,16
 2026,Wake County,18–22,8,2026-10-22,Democratic,250,2196
 2026,Wake County,18–22,8,2026-10-22,Republican,42,305
-2026,Wake County,18–22,8,2026-10-22,Unaffiliated,390,3289
+2026,Wake County,18–22,8,2026-10-22,Unaffiliated,390,3288
 2026,Wake County,18–22,8,2026-10-22,Other registered parties,2,18
 2026,Wake County,18–22,9,2026-10-23,Democratic,431,2627
 2026,Wake County,18–22,9,2026-10-23,Republican,65,370
-2026,Wake County,18–22,9,2026-10-23,Unaffiliated,613,3902
+2026,Wake County,18–22,9,2026-10-23,Unaffiliated,612,3900
 2026,Wake County,18–22,9,2026-10-23,Other registered parties,5,23
 2026,Wake County,18–22,10,2026-10-24,Democratic,377,3004
 2026,Wake County,18–22,10,2026-10-24,Republican,64,434
-2026,Wake County,18–22,10,2026-10-24,Unaffiliated,551,4453
+2026,Wake County,18–22,10,2026-10-24,Unaffiliated,551,4451
 2026,Wake County,18–22,10,2026-10-24,Other registered parties,4,27
 2026,Wake County,18–22,11,2026-10-25,Democratic,311,3315
 2026,Wake County,18–22,11,2026-10-25,Republican,61,495
-2026,Wake County,18–22,11,2026-10-25,Unaffiliated,515,4968
+2026,Wake County,18–22,11,2026-10-25,Unaffiliated,515,4966
 2026,Wake County,18–22,11,2026-10-25,Other registered parties,6,33
 2026,Wake County,18–22,12,2026-10-26,Democratic,356,3671
 2026,Wake County,18–22,12,2026-10-26,Republican,76,571
-2026,Wake County,18–22,12,2026-10-26,Unaffiliated,538,5506
+2026,Wake County,18–22,12,2026-10-26,Unaffiliated,538,5504
 2026,Wake County,18–22,12,2026-10-26,Other registered parties,10,43
 2026,Wake County,18–22,13,2026-10-27,Democratic,378,4049
 2026,Wake County,18–22,13,2026-10-27,Republican,79,650
-2026,Wake County,18–22,13,2026-10-27,Unaffiliated,514,6020
+2026,Wake County,18–22,13,2026-10-27,Unaffiliated,514,6018
 2026,Wake County,18–22,13,2026-10-27,Other registered parties,7,50
 2026,Wake County,18–22,14,2026-10-28,Democratic,460,4509
 2026,Wake County,18–22,14,2026-10-28,Republican,94,744
-2026,Wake County,18–22,14,2026-10-28,Unaffiliated,680,6700
+2026,Wake County,18–22,14,2026-10-28,Unaffiliated,680,6698
 2026,Wake County,18–22,14,2026-10-28,Other registered parties,3,53
-2026,Wake County,18–22,15,2026-10-29,Democratic,518,5027
-2026,Wake County,18–22,15,2026-10-29,Republican,112,856
-2026,Wake County,18–22,15,2026-10-29,Unaffiliated,793,7493
+2026,Wake County,18–22,15,2026-10-29,Democratic,517,5026
+2026,Wake County,18–22,15,2026-10-29,Republican,111,855
+2026,Wake County,18–22,15,2026-10-29,Unaffiliated,795,7493
 2026,Wake County,18–22,15,2026-10-29,Other registered parties,8,61
-2026,Wake County,18–22,16,2026-10-30,Democratic,750,5777
-2026,Wake County,18–22,16,2026-10-30,Republican,194,1050
-2026,Wake County,18–22,16,2026-10-30,Unaffiliated,1294,8787
+2026,Wake County,18–22,16,2026-10-30,Democratic,749,5775
+2026,Wake County,18–22,16,2026-10-30,Republican,194,1049
+2026,Wake County,18–22,16,2026-10-30,Unaffiliated,1295,8788
 2026,Wake County,18–22,16,2026-10-30,Other registered parties,7,68
+2026,Wake County,18–22,17,2026-10-31,Democratic,522,6297
+2026,Wake County,18–22,17,2026-10-31,Republican,139,1188
+2026,Wake County,18–22,17,2026-10-31,Unaffiliated,1009,9797
+2026,Wake County,18–22,17,2026-10-31,Other registered parties,6,74
 2026,Other Wake sites,All ages,1,2026-10-15,Democratic,10091,10091
 2026,Other Wake sites,All ages,1,2026-10-15,Republican,2745,2745
-2026,Other Wake sites,All ages,1,2026-10-15,Unaffiliated,8034,8034
+2026,Other Wake sites,All ages,1,2026-10-15,Unaffiliated,8033,8033
 2026,Other Wake sites,All ages,1,2026-10-15,Other registered parties,38,38
 2026,Other Wake sites,All ages,2,2026-10-16,Democratic,9835,19926
 2026,Other Wake sites,All ages,2,2026-10-16,Republican,2798,5543
-2026,Other Wake sites,All ages,2,2026-10-16,Unaffiliated,8696,16730
+2026,Other Wake sites,All ages,2,2026-10-16,Unaffiliated,8696,16729
 2026,Other Wake sites,All ages,2,2026-10-16,Other registered parties,57,95
 2026,Other Wake sites,All ages,3,2026-10-17,Democratic,5288,25214
 2026,Other Wake sites,All ages,3,2026-10-17,Republican,1276,6819
-2026,Other Wake sites,All ages,3,2026-10-17,Unaffiliated,5118,21848
+2026,Other Wake sites,All ages,3,2026-10-17,Unaffiliated,5118,21847
 2026,Other Wake sites,All ages,3,2026-10-17,Other registered parties,48,143
 2026,Other Wake sites,All ages,4,2026-10-18,Democratic,4525,29739
 2026,Other Wake sites,All ages,4,2026-10-18,Republican,889,7708
-2026,Other Wake sites,All ages,4,2026-10-18,Unaffiliated,4027,25875
+2026,Other Wake sites,All ages,4,2026-10-18,Unaffiliated,4027,25874
 2026,Other Wake sites,All ages,4,2026-10-18,Other registered parties,22,165
 2026,Other Wake sites,All ages,5,2026-10-19,Democratic,9364,39103
 2026,Other Wake sites,All ages,5,2026-10-19,Republican,3240,10948
-2026,Other Wake sites,All ages,5,2026-10-19,Unaffiliated,8430,34305
+2026,Other Wake sites,All ages,5,2026-10-19,Unaffiliated,8430,34304
 2026,Other Wake sites,All ages,5,2026-10-19,Other registered parties,58,223
 2026,Other Wake sites,All ages,6,2026-10-20,Democratic,8557,47660
 2026,Other Wake sites,All ages,6,2026-10-20,Republican,3308,14256
-2026,Other Wake sites,All ages,6,2026-10-20,Unaffiliated,7820,42125
+2026,Other Wake sites,All ages,6,2026-10-20,Unaffiliated,7820,42124
 2026,Other Wake sites,All ages,6,2026-10-20,Other registered parties,41,264
 2026,Other Wake sites,All ages,7,2026-10-21,Democratic,7842,55502
 2026,Other Wake sites,All ages,7,2026-10-21,Republican,3351,17607
-2026,Other Wake sites,All ages,7,2026-10-21,Unaffiliated,7299,49424
+2026,Other Wake sites,All ages,7,2026-10-21,Unaffiliated,7298,49422
 2026,Other Wake sites,All ages,7,2026-10-21,Other registered parties,53,317
 2026,Other Wake sites,All ages,8,2026-10-22,Democratic,6956,62458
 2026,Other Wake sites,All ages,8,2026-10-22,Republican,3351,20958
-2026,Other Wake sites,All ages,8,2026-10-22,Unaffiliated,7095,56519
+2026,Other Wake sites,All ages,8,2026-10-22,Unaffiliated,7095,56517
 2026,Other Wake sites,All ages,8,2026-10-22,Other registered parties,64,381
 2026,Other Wake sites,All ages,9,2026-10-23,Democratic,8237,70695
 2026,Other Wake sites,All ages,9,2026-10-23,Republican,3508,24466
-2026,Other Wake sites,All ages,9,2026-10-23,Unaffiliated,8299,64818
+2026,Other Wake sites,All ages,9,2026-10-23,Unaffiliated,8298,64815
 2026,Other Wake sites,All ages,9,2026-10-23,Other registered parties,77,458
 2026,Other Wake sites,All ages,10,2026-10-24,Democratic,5327,76022
 2026,Other Wake sites,All ages,10,2026-10-24,Republican,1656,26122
-2026,Other Wake sites,All ages,10,2026-10-24,Unaffiliated,5269,70087
+2026,Other Wake sites,All ages,10,2026-10-24,Unaffiliated,5269,70084
 2026,Other Wake sites,All ages,10,2026-10-24,Other registered parties,51,509
 2026,Other Wake sites,All ages,11,2026-10-25,Democratic,4188,80210
 2026,Other Wake sites,All ages,11,2026-10-25,Republican,1236,27358
-2026,Other Wake sites,All ages,11,2026-10-25,Unaffiliated,4258,74345
+2026,Other Wake sites,All ages,11,2026-10-25,Unaffiliated,4258,74342
 2026,Other Wake sites,All ages,11,2026-10-25,Other registered parties,37,546
 2026,Other Wake sites,All ages,12,2026-10-26,Democratic,7807,88017
 2026,Other Wake sites,All ages,12,2026-10-26,Republican,4208,31566
-2026,Other Wake sites,All ages,12,2026-10-26,Unaffiliated,8057,82402
+2026,Other Wake sites,All ages,12,2026-10-26,Unaffiliated,8057,82399
 2026,Other Wake sites,All ages,12,2026-10-26,Other registered parties,66,612
 2026,Other Wake sites,All ages,13,2026-10-27,Democratic,7856,95873
 2026,Other Wake sites,All ages,13,2026-10-27,Republican,4183,35749
-2026,Other Wake sites,All ages,13,2026-10-27,Unaffiliated,8359,90761
+2026,Other Wake sites,All ages,13,2026-10-27,Unaffiliated,8359,90758
 2026,Other Wake sites,All ages,13,2026-10-27,Other registered parties,88,700
 2026,Other Wake sites,All ages,14,2026-10-28,Democratic,7962,103835
 2026,Other Wake sites,All ages,14,2026-10-28,Republican,4656,40405
-2026,Other Wake sites,All ages,14,2026-10-28,Unaffiliated,8985,99746
+2026,Other Wake sites,All ages,14,2026-10-28,Unaffiliated,8985,99743
 2026,Other Wake sites,All ages,14,2026-10-28,Other registered parties,67,767
-2026,Other Wake sites,All ages,15,2026-10-29,Democratic,8598,112433
-2026,Other Wake sites,All ages,15,2026-10-29,Republican,4795,45200
-2026,Other Wake sites,All ages,15,2026-10-29,Unaffiliated,9802,109548
+2026,Other Wake sites,All ages,15,2026-10-29,Democratic,8588,112423
+2026,Other Wake sites,All ages,15,2026-10-29,Republican,4791,45196
+2026,Other Wake sites,All ages,15,2026-10-29,Unaffiliated,9816,109559
 2026,Other Wake sites,All ages,15,2026-10-29,Other registered parties,86,853
-2026,Other Wake sites,All ages,16,2026-10-30,Democratic,10821,123254
-2026,Other Wake sites,All ages,16,2026-10-30,Republican,5617,50817
-2026,Other Wake sites,All ages,16,2026-10-30,Unaffiliated,12899,122447
-2026,Other Wake sites,All ages,16,2026-10-30,Other registered parties,122,975
+2026,Other Wake sites,All ages,16,2026-10-30,Democratic,10810,123233
+2026,Other Wake sites,All ages,16,2026-10-30,Republican,5616,50812
+2026,Other Wake sites,All ages,16,2026-10-30,Unaffiliated,12910,122469
+2026,Other Wake sites,All ages,16,2026-10-30,Other registered parties,121,974
+2026,Other Wake sites,All ages,17,2026-10-31,Democratic,8527,131760
+2026,Other Wake sites,All ages,17,2026-10-31,Republican,3686,54498
+2026,Other Wake sites,All ages,17,2026-10-31,Unaffiliated,9779,132248
+2026,Other Wake sites,All ages,17,2026-10-31,Other registered parties,112,1086
 2026,Other Wake sites,18–24,1,2026-10-15,Democratic,308,308
 2026,Other Wake sites,18–24,1,2026-10-15,Republican,33,33
-2026,Other Wake sites,18–24,1,2026-10-15,Unaffiliated,396,396
+2026,Other Wake sites,18–24,1,2026-10-15,Unaffiliated,395,395
 2026,Other Wake sites,18–24,1,2026-10-15,Other registered parties,3,3
 2026,Other Wake sites,18–24,2,2026-10-16,Democratic,426,734
 2026,Other Wake sites,18–24,2,2026-10-16,Republican,55,88
-2026,Other Wake sites,18–24,2,2026-10-16,Unaffiliated,569,965
+2026,Other Wake sites,18–24,2,2026-10-16,Unaffiliated,569,964
 2026,Other Wake sites,18–24,2,2026-10-16,Other registered parties,4,7
 2026,Other Wake sites,18–24,3,2026-10-17,Democratic,383,1117
 2026,Other Wake sites,18–24,3,2026-10-17,Republican,44,132
-2026,Other Wake sites,18–24,3,2026-10-17,Unaffiliated,559,1524
+2026,Other Wake sites,18–24,3,2026-10-17,Unaffiliated,559,1523
 2026,Other Wake sites,18–24,3,2026-10-17,Other registered parties,2,9
 2026,Other Wake sites,18–24,4,2026-10-18,Democratic,321,1438
 2026,Other Wake sites,18–24,4,2026-10-18,Republican,35,167
-2026,Other Wake sites,18–24,4,2026-10-18,Unaffiliated,442,1966
+2026,Other Wake sites,18–24,4,2026-10-18,Unaffiliated,442,1965
 2026,Other Wake sites,18–24,4,2026-10-18,Other registered parties,3,12
 2026,Other Wake sites,18–24,5,2026-10-19,Democratic,378,1816
 2026,Other Wake sites,18–24,5,2026-10-19,Republican,63,230
-2026,Other Wake sites,18–24,5,2026-10-19,Unaffiliated,582,2548
+2026,Other Wake sites,18–24,5,2026-10-19,Unaffiliated,582,2547
 2026,Other Wake sites,18–24,5,2026-10-19,Other registered parties,2,14
 2026,Other Wake sites,18–24,6,2026-10-20,Democratic,395,2211
 2026,Other Wake sites,18–24,6,2026-10-20,Republican,69,299
-2026,Other Wake sites,18–24,6,2026-10-20,Unaffiliated,505,3053
+2026,Other Wake sites,18–24,6,2026-10-20,Unaffiliated,505,3052
 2026,Other Wake sites,18–24,6,2026-10-20,Other registered parties,5,19
 2026,Other Wake sites,18–24,7,2026-10-21,Democratic,310,2521
 2026,Other Wake sites,18–24,7,2026-10-21,Republican,41,340
-2026,Other Wake sites,18–24,7,2026-10-21,Unaffiliated,379,3432
+2026,Other Wake sites,18–24,7,2026-10-21,Unaffiliated,378,3430
 2026,Other Wake sites,18–24,7,2026-10-21,Other registered parties,3,22
 2026,Other Wake sites,18–24,8,2026-10-22,Democratic,310,2831
 2026,Other Wake sites,18–24,8,2026-10-22,Republican,57,397
-2026,Other Wake sites,18–24,8,2026-10-22,Unaffiliated,418,3850
+2026,Other Wake sites,18–24,8,2026-10-22,Unaffiliated,418,3848
 2026,Other Wake sites,18–24,8,2026-10-22,Other registered parties,8,30
 2026,Other Wake sites,18–24,9,2026-10-23,Democratic,481,3312
 2026,Other Wake sites,18–24,9,2026-10-23,Republican,88,485
-2026,Other Wake sites,18–24,9,2026-10-23,Unaffiliated,677,4527
+2026,Other Wake sites,18–24,9,2026-10-23,Unaffiliated,676,4524
 2026,Other Wake sites,18–24,9,2026-10-23,Other registered parties,7,37
 2026,Other Wake sites,18–24,10,2026-10-24,Democratic,487,3799
 2026,Other Wake sites,18–24,10,2026-10-24,Republican,83,568
-2026,Other Wake sites,18–24,10,2026-10-24,Unaffiliated,659,5186
+2026,Other Wake sites,18–24,10,2026-10-24,Unaffiliated,659,5183
 2026,Other Wake sites,18–24,10,2026-10-24,Other registered parties,6,43
 2026,Other Wake sites,18–24,11,2026-10-25,Democratic,427,4226
 2026,Other Wake sites,18–24,11,2026-10-25,Republican,75,643
-2026,Other Wake sites,18–24,11,2026-10-25,Unaffiliated,611,5797
+2026,Other Wake sites,18–24,11,2026-10-25,Unaffiliated,611,5794
 2026,Other Wake sites,18–24,11,2026-10-25,Other registered parties,8,51
 2026,Other Wake sites,18–24,12,2026-10-26,Democratic,484,4710
 2026,Other Wake sites,18–24,12,2026-10-26,Republican,109,752
-2026,Other Wake sites,18–24,12,2026-10-26,Unaffiliated,600,6397
+2026,Other Wake sites,18–24,12,2026-10-26,Unaffiliated,600,6394
 2026,Other Wake sites,18–24,12,2026-10-26,Other registered parties,9,60
 2026,Other Wake sites,18–24,13,2026-10-27,Democratic,500,5210
 2026,Other Wake sites,18–24,13,2026-10-27,Republican,81,833
-2026,Other Wake sites,18–24,13,2026-10-27,Unaffiliated,578,6975
+2026,Other Wake sites,18–24,13,2026-10-27,Unaffiliated,578,6972
 2026,Other Wake sites,18–24,13,2026-10-27,Other registered parties,7,67
 2026,Other Wake sites,18–24,14,2026-10-28,Democratic,541,5751
 2026,Other Wake sites,18–24,14,2026-10-28,Republican,123,956
-2026,Other Wake sites,18–24,14,2026-10-28,Unaffiliated,741,7716
+2026,Other Wake sites,18–24,14,2026-10-28,Unaffiliated,741,7713
 2026,Other Wake sites,18–24,14,2026-10-28,Other registered parties,4,71
-2026,Other Wake sites,18–24,15,2026-10-29,Democratic,614,6365
-2026,Other Wake sites,18–24,15,2026-10-29,Republican,161,1117
-2026,Other Wake sites,18–24,15,2026-10-29,Unaffiliated,891,8607
+2026,Other Wake sites,18–24,15,2026-10-29,Democratic,612,6363
+2026,Other Wake sites,18–24,15,2026-10-29,Republican,160,1116
+2026,Other Wake sites,18–24,15,2026-10-29,Unaffiliated,894,8607
 2026,Other Wake sites,18–24,15,2026-10-29,Other registered parties,9,80
-2026,Other Wake sites,18–24,16,2026-10-30,Democratic,944,7309
-2026,Other Wake sites,18–24,16,2026-10-30,Republican,241,1358
-2026,Other Wake sites,18–24,16,2026-10-30,Unaffiliated,1402,10009
+2026,Other Wake sites,18–24,16,2026-10-30,Democratic,941,7304
+2026,Other Wake sites,18–24,16,2026-10-30,Republican,241,1357
+2026,Other Wake sites,18–24,16,2026-10-30,Unaffiliated,1405,10012
 2026,Other Wake sites,18–24,16,2026-10-30,Other registered parties,10,90
+2026,Other Wake sites,18–24,17,2026-10-31,Democratic,739,8043
+2026,Other Wake sites,18–24,17,2026-10-31,Republican,187,1544
+2026,Other Wake sites,18–24,17,2026-10-31,Unaffiliated,1229,11241
+2026,Other Wake sites,18–24,17,2026-10-31,Other registered parties,13,103
 2026,Other Wake sites,25–34,1,2026-10-15,Democratic,641,641
 2026,Other Wake sites,25–34,1,2026-10-15,Republican,74,74
 2026,Other Wake sites,25–34,1,2026-10-15,Unaffiliated,632,632
@@ -4279,14 +4543,18 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Other Wake sites,25–34,14,2026-10-28,Republican,260,1671
 2026,Other Wake sites,25–34,14,2026-10-28,Unaffiliated,1496,12169
 2026,Other Wake sites,25–34,14,2026-10-28,Other registered parties,22,172
-2026,Other Wake sites,25–34,15,2026-10-29,Democratic,1661,13937
+2026,Other Wake sites,25–34,15,2026-10-29,Democratic,1656,13932
 2026,Other Wake sites,25–34,15,2026-10-29,Republican,325,1996
-2026,Other Wake sites,25–34,15,2026-10-29,Unaffiliated,1748,13917
+2026,Other Wake sites,25–34,15,2026-10-29,Unaffiliated,1753,13922
 2026,Other Wake sites,25–34,15,2026-10-29,Other registered parties,20,192
-2026,Other Wake sites,25–34,16,2026-10-30,Democratic,2300,16237
-2026,Other Wake sites,25–34,16,2026-10-30,Republican,497,2493
-2026,Other Wake sites,25–34,16,2026-10-30,Unaffiliated,2665,16582
-2026,Other Wake sites,25–34,16,2026-10-30,Other registered parties,30,222
+2026,Other Wake sites,25–34,16,2026-10-30,Democratic,2297,16229
+2026,Other Wake sites,25–34,16,2026-10-30,Republican,496,2492
+2026,Other Wake sites,25–34,16,2026-10-30,Unaffiliated,2670,16592
+2026,Other Wake sites,25–34,16,2026-10-30,Other registered parties,29,221
+2026,Other Wake sites,25–34,17,2026-10-31,Democratic,2069,18298
+2026,Other Wake sites,25–34,17,2026-10-31,Republican,433,2925
+2026,Other Wake sites,25–34,17,2026-10-31,Unaffiliated,2239,18831
+2026,Other Wake sites,25–34,17,2026-10-31,Other registered parties,32,253
 2026,Other Wake sites,35–44,1,2026-10-15,Democratic,880,880
 2026,Other Wake sites,35–44,1,2026-10-15,Republican,150,150
 2026,Other Wake sites,35–44,1,2026-10-15,Unaffiliated,912,912
@@ -4343,14 +4611,18 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Other Wake sites,35–44,14,2026-10-28,Republican,384,2712
 2026,Other Wake sites,35–44,14,2026-10-28,Unaffiliated,1663,15285
 2026,Other Wake sites,35–44,14,2026-10-28,Other registered parties,20,183
-2026,Other Wake sites,35–44,15,2026-10-29,Democratic,1681,16074
+2026,Other Wake sites,35–44,15,2026-10-29,Democratic,1679,16072
 2026,Other Wake sites,35–44,15,2026-10-29,Republican,488,3200
-2026,Other Wake sites,35–44,15,2026-10-29,Unaffiliated,1991,17276
+2026,Other Wake sites,35–44,15,2026-10-29,Unaffiliated,1993,17278
 2026,Other Wake sites,35–44,15,2026-10-29,Other registered parties,22,205
-2026,Other Wake sites,35–44,16,2026-10-30,Democratic,2323,18397
-2026,Other Wake sites,35–44,16,2026-10-30,Republican,727,3927
-2026,Other Wake sites,35–44,16,2026-10-30,Unaffiliated,2837,20113
+2026,Other Wake sites,35–44,16,2026-10-30,Democratic,2320,18392
+2026,Other Wake sites,35–44,16,2026-10-30,Republican,726,3926
+2026,Other Wake sites,35–44,16,2026-10-30,Unaffiliated,2840,20118
 2026,Other Wake sites,35–44,16,2026-10-30,Other registered parties,30,235
+2026,Other Wake sites,35–44,17,2026-10-31,Democratic,1786,20178
+2026,Other Wake sites,35–44,17,2026-10-31,Republican,482,4408
+2026,Other Wake sites,35–44,17,2026-10-31,Unaffiliated,2053,22171
+2026,Other Wake sites,35–44,17,2026-10-31,Other registered parties,31,266
 2026,Other Wake sites,45–64,1,2026-10-15,Democratic,3057,3057
 2026,Other Wake sites,45–64,1,2026-10-15,Republican,747,747
 2026,Other Wake sites,45–64,1,2026-10-15,Unaffiliated,2743,2743
@@ -4407,14 +4679,18 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Other Wake sites,45–64,14,2026-10-28,Republican,1845,14273
 2026,Other Wake sites,45–64,14,2026-10-28,Unaffiliated,3255,37495
 2026,Other Wake sites,45–64,14,2026-10-28,Other registered parties,13,262
-2026,Other Wake sites,45–64,15,2026-10-29,Democratic,2904,38684
-2026,Other Wake sites,45–64,15,2026-10-29,Republican,1983,16256
-2026,Other Wake sites,45–64,15,2026-10-29,Unaffiliated,3576,41071
+2026,Other Wake sites,45–64,15,2026-10-29,Democratic,2903,38683
+2026,Other Wake sites,45–64,15,2026-10-29,Republican,1982,16255
+2026,Other Wake sites,45–64,15,2026-10-29,Unaffiliated,3578,41073
 2026,Other Wake sites,45–64,15,2026-10-29,Other registered parties,29,291
-2026,Other Wake sites,45–64,16,2026-10-30,Democratic,3596,42280
-2026,Other Wake sites,45–64,16,2026-10-30,Republican,2455,18711
-2026,Other Wake sites,45–64,16,2026-10-30,Unaffiliated,4496,45567
+2026,Other Wake sites,45–64,16,2026-10-30,Democratic,3595,42278
+2026,Other Wake sites,45–64,16,2026-10-30,Republican,2456,18711
+2026,Other Wake sites,45–64,16,2026-10-30,Unaffiliated,4495,45568
 2026,Other Wake sites,45–64,16,2026-10-30,Other registered parties,48,339
+2026,Other Wake sites,45–64,17,2026-10-31,Democratic,2985,45263
+2026,Other Wake sites,45–64,17,2026-10-31,Republican,1763,20474
+2026,Other Wake sites,45–64,17,2026-10-31,Unaffiliated,3532,49100
+2026,Other Wake sites,45–64,17,2026-10-31,Other registered parties,31,370
 2026,Other Wake sites,65+,1,2026-10-15,Democratic,5205,5205
 2026,Other Wake sites,65+,1,2026-10-15,Republican,1741,1741
 2026,Other Wake sites,65+,1,2026-10-15,Unaffiliated,3351,3351
@@ -4472,13 +4748,17 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Other Wake sites,65+,14,2026-10-28,Unaffiliated,1830,27081
 2026,Other Wake sites,65+,14,2026-10-28,Other registered parties,8,79
 2026,Other Wake sites,65+,15,2026-10-29,Democratic,1738,37373
-2026,Other Wake sites,65+,15,2026-10-29,Republican,1838,22631
-2026,Other Wake sites,65+,15,2026-10-29,Unaffiliated,1596,28677
+2026,Other Wake sites,65+,15,2026-10-29,Republican,1836,22629
+2026,Other Wake sites,65+,15,2026-10-29,Unaffiliated,1598,28679
 2026,Other Wake sites,65+,15,2026-10-29,Other registered parties,6,85
-2026,Other Wake sites,65+,16,2026-10-30,Democratic,1658,39031
-2026,Other Wake sites,65+,16,2026-10-30,Republican,1697,24328
-2026,Other Wake sites,65+,16,2026-10-30,Unaffiliated,1499,30176
+2026,Other Wake sites,65+,16,2026-10-30,Democratic,1657,39030
+2026,Other Wake sites,65+,16,2026-10-30,Republican,1697,24326
+2026,Other Wake sites,65+,16,2026-10-30,Unaffiliated,1500,30179
 2026,Other Wake sites,65+,16,2026-10-30,Other registered parties,4,89
+2026,Other Wake sites,65+,17,2026-10-31,Democratic,948,39978
+2026,Other Wake sites,65+,17,2026-10-31,Republican,821,25147
+2026,Other Wake sites,65+,17,2026-10-31,Unaffiliated,726,30905
+2026,Other Wake sites,65+,17,2026-10-31,Other registered parties,5,94
 2026,Other Wake sites,Unknown / outside range,1,2026-10-15,Democratic,0,0
 2026,Other Wake sites,Unknown / outside range,1,2026-10-15,Republican,0,0
 2026,Other Wake sites,Unknown / outside range,1,2026-10-15,Unaffiliated,0,0
@@ -4543,67 +4823,75 @@ year,scope,cohort,day,date,party_registration,votes,cumulative
 2026,Other Wake sites,Unknown / outside range,16,2026-10-30,Republican,0,0
 2026,Other Wake sites,Unknown / outside range,16,2026-10-30,Unaffiliated,0,0
 2026,Other Wake sites,Unknown / outside range,16,2026-10-30,Other registered parties,0,0
+2026,Other Wake sites,Unknown / outside range,17,2026-10-31,Democratic,0,0
+2026,Other Wake sites,Unknown / outside range,17,2026-10-31,Republican,0,0
+2026,Other Wake sites,Unknown / outside range,17,2026-10-31,Unaffiliated,0,0
+2026,Other Wake sites,Unknown / outside range,17,2026-10-31,Other registered parties,0,0
 2026,Other Wake sites,18–22,1,2026-10-15,Democratic,194,194
 2026,Other Wake sites,18–22,1,2026-10-15,Republican,24,24
-2026,Other Wake sites,18–22,1,2026-10-15,Unaffiliated,291,291
+2026,Other Wake sites,18–22,1,2026-10-15,Unaffiliated,290,290
 2026,Other Wake sites,18–22,1,2026-10-15,Other registered parties,3,3
 2026,Other Wake sites,18–22,2,2026-10-16,Democratic,294,488
 2026,Other Wake sites,18–22,2,2026-10-16,Republican,35,59
-2026,Other Wake sites,18–22,2,2026-10-16,Unaffiliated,409,700
+2026,Other Wake sites,18–22,2,2026-10-16,Unaffiliated,409,699
 2026,Other Wake sites,18–22,2,2026-10-16,Other registered parties,2,5
 2026,Other Wake sites,18–22,3,2026-10-17,Democratic,260,748
 2026,Other Wake sites,18–22,3,2026-10-17,Republican,33,92
-2026,Other Wake sites,18–22,3,2026-10-17,Unaffiliated,420,1120
+2026,Other Wake sites,18–22,3,2026-10-17,Unaffiliated,420,1119
 2026,Other Wake sites,18–22,3,2026-10-17,Other registered parties,2,7
 2026,Other Wake sites,18–22,4,2026-10-18,Democratic,235,983
 2026,Other Wake sites,18–22,4,2026-10-18,Republican,27,119
-2026,Other Wake sites,18–22,4,2026-10-18,Unaffiliated,341,1461
+2026,Other Wake sites,18–22,4,2026-10-18,Unaffiliated,341,1460
 2026,Other Wake sites,18–22,4,2026-10-18,Other registered parties,1,8
 2026,Other Wake sites,18–22,5,2026-10-19,Democratic,245,1228
 2026,Other Wake sites,18–22,5,2026-10-19,Republican,44,163
-2026,Other Wake sites,18–22,5,2026-10-19,Unaffiliated,403,1864
+2026,Other Wake sites,18–22,5,2026-10-19,Unaffiliated,403,1863
 2026,Other Wake sites,18–22,5,2026-10-19,Other registered parties,1,9
 2026,Other Wake sites,18–22,6,2026-10-20,Democratic,249,1477
 2026,Other Wake sites,18–22,6,2026-10-20,Republican,50,213
-2026,Other Wake sites,18–22,6,2026-10-20,Unaffiliated,351,2215
+2026,Other Wake sites,18–22,6,2026-10-20,Unaffiliated,351,2214
 2026,Other Wake sites,18–22,6,2026-10-20,Other registered parties,2,11
 2026,Other Wake sites,18–22,7,2026-10-21,Democratic,186,1663
 2026,Other Wake sites,18–22,7,2026-10-21,Republican,21,234
-2026,Other Wake sites,18–22,7,2026-10-21,Unaffiliated,238,2453
+2026,Other Wake sites,18–22,7,2026-10-21,Unaffiliated,238,2452
 2026,Other Wake sites,18–22,7,2026-10-21,Other registered parties,1,12
 2026,Other Wake sites,18–22,8,2026-10-22,Democratic,187,1850
 2026,Other Wake sites,18–22,8,2026-10-22,Republican,34,268
-2026,Other Wake sites,18–22,8,2026-10-22,Unaffiliated,260,2713
+2026,Other Wake sites,18–22,8,2026-10-22,Unaffiliated,260,2712
 2026,Other Wake sites,18–22,8,2026-10-22,Other registered parties,1,13
 2026,Other Wake sites,18–22,9,2026-10-23,Democratic,318,2168
 2026,Other Wake sites,18–22,9,2026-10-23,Republican,59,327
-2026,Other Wake sites,18–22,9,2026-10-23,Unaffiliated,455,3168
+2026,Other Wake sites,18–22,9,2026-10-23,Unaffiliated,454,3166
 2026,Other Wake sites,18–22,9,2026-10-23,Other registered parties,5,18
 2026,Other Wake sites,18–22,10,2026-10-24,Democratic,343,2511
 2026,Other Wake sites,18–22,10,2026-10-24,Republican,61,388
-2026,Other Wake sites,18–22,10,2026-10-24,Unaffiliated,496,3664
+2026,Other Wake sites,18–22,10,2026-10-24,Unaffiliated,496,3662
 2026,Other Wake sites,18–22,10,2026-10-24,Other registered parties,3,21
 2026,Other Wake sites,18–22,11,2026-10-25,Democratic,276,2787
 2026,Other Wake sites,18–22,11,2026-10-25,Republican,57,445
-2026,Other Wake sites,18–22,11,2026-10-25,Unaffiliated,441,4105
+2026,Other Wake sites,18–22,11,2026-10-25,Unaffiliated,441,4103
 2026,Other Wake sites,18–22,11,2026-10-25,Other registered parties,5,26
 2026,Other Wake sites,18–22,12,2026-10-26,Democratic,279,3066
 2026,Other Wake sites,18–22,12,2026-10-26,Republican,68,513
-2026,Other Wake sites,18–22,12,2026-10-26,Unaffiliated,395,4500
+2026,Other Wake sites,18–22,12,2026-10-26,Unaffiliated,395,4498
 2026,Other Wake sites,18–22,12,2026-10-26,Other registered parties,7,33
 2026,Other Wake sites,18–22,13,2026-10-27,Democratic,291,3357
 2026,Other Wake sites,18–22,13,2026-10-27,Republican,61,574
-2026,Other Wake sites,18–22,13,2026-10-27,Unaffiliated,353,4853
+2026,Other Wake sites,18–22,13,2026-10-27,Unaffiliated,353,4851
 2026,Other Wake sites,18–22,13,2026-10-27,Other registered parties,6,39
 2026,Other Wake sites,18–22,14,2026-10-28,Democratic,322,3679
 2026,Other Wake sites,18–22,14,2026-10-28,Republican,77,651
-2026,Other Wake sites,18–22,14,2026-10-28,Unaffiliated,466,5319
+2026,Other Wake sites,18–22,14,2026-10-28,Unaffiliated,466,5317
 2026,Other Wake sites,18–22,14,2026-10-28,Other registered parties,2,41
 2026,Other Wake sites,18–22,15,2026-10-29,Democratic,350,4029
-2026,Other Wake sites,18–22,15,2026-10-29,Republican,100,751
-2026,Other Wake sites,18–22,15,2026-10-29,Unaffiliated,546,5865
+2026,Other Wake sites,18–22,15,2026-10-29,Republican,99,750
+2026,Other Wake sites,18–22,15,2026-10-29,Unaffiliated,547,5864
 2026,Other Wake sites,18–22,15,2026-10-29,Other registered parties,5,46
-2026,Other Wake sites,18–22,16,2026-10-30,Democratic,578,4607
-2026,Other Wake sites,18–22,16,2026-10-30,Republican,159,910
-2026,Other Wake sites,18–22,16,2026-10-30,Unaffiliated,907,6772
+2026,Other Wake sites,18–22,16,2026-10-30,Democratic,577,4606
+2026,Other Wake sites,18–22,16,2026-10-30,Republican,159,909
+2026,Other Wake sites,18–22,16,2026-10-30,Unaffiliated,908,6772
 2026,Other Wake sites,18–22,16,2026-10-30,Other registered parties,7,53
+2026,Other Wake sites,18–22,17,2026-10-31,Democratic,435,5041
+2026,Other Wake sites,18–22,17,2026-10-31,Republican,128,1037
+2026,Other Wake sites,18–22,17,2026-10-31,Unaffiliated,810,7582
+2026,Other Wake sites,18–22,17,2026-10-31,Other registered parties,6,59

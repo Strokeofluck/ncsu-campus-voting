@@ -2,9 +2,9 @@
 
 The primary download on `references.html#excel-download` recalculates the article's 2022–2026 comparison and five nonoverlapping age groups from the latest official NCSBE Wake CSV members. Readers can also choose downloaded CSVs using the adjacent official ZIP links and numbered instructions. No original voter records or populated workbook are published to the website.
 
-The ZIP separates untouched input bytes in `01 Original files/2022/` and `01 Original files/2026/`, the editable workbook in `02 Working copy/`, and the source manifest in `03 Source checks/`. Updated mode records the input hashes and freshly calculated counts; snapshot mode requires both hashes and all 20 counts to match the saved article. The matched windows remain October 20–November 4, 2022 and October 15–30, 2026.
+The ZIP separates untouched input bytes in `01 Original files/2022/` and `01 Original files/2026/`, the editable workbook in `02 Working copy/`, and the source manifest in `03 Source checks/`. Updated mode records the input hashes and freshly calculated counts; snapshot mode requires both hashes and all 20 counts to match the saved article. The matched windows remain October 20–November 5, 2022 and October 15–31, 2026.
 
-NCSBE replaces the live 2026 archive. Updated mode (the default) accepts changed source bytes and computes new counts, growth and gaps while retaining the original matched 16-day windows. It records actual input CSV hashes, retrieval/read time, input kind, original snapshot metadata and both old/new result sets in the manifest. The workbook cover, source sheet, README and separate updated-results note clearly identify the revised calculation. An additional CSV exports the five updated result rows. The dated article and its reference figures are not refreshed by this calculator.
+NCSBE replaces the live 2026 archive. Updated mode (the default) accepts changed source bytes and computes new counts, growth and gaps while retaining the complete matched 17-day windows. It records actual input CSV hashes, retrieval/read time, input kind, original snapshot metadata and both old/new result sets in the manifest. The workbook cover, source sheet, README and separate updated-results note clearly identify the revised calculation. An additional CSV exports the five updated result rows. The dated article and its reference figures are not refreshed by this calculator.
 
 The optional **Article snapshot** calculation for chosen CSVs still requires both original hashes and all 20 saved age/scope/year counts to match. Choose the saved CSVs from `01 Original files` in the original download for that mode. Files stay local. Historical S3 versions are listed but return HTTP 403 for public downloads, so the default updated mode does not depend on recovering an older upstream file.
 
@@ -12,7 +12,7 @@ The optional **Article snapshot** calculation for chosen CSVs still requires bot
 
 1. **Growth gaps** links the five completed results.
 2. **0 Sources** documents exact locations, dates, source URLs, hashes and original record totals. Relative hyperlinks open the separate untouched CSVs after the entire ZIP is extracted.
-3. **Copy 2022 / Copy 2026** contain every input row and all source columns, in order, stored as text. Six highlighted headers identify the fields used. The saved snapshot contains 267,949 and 327,240 records respectively; updated input lengths are determined at export time.
+3. **Copy 2022 / Copy 2026** contain every input row and all source columns, in order, stored as text. Six highlighted headers identify the fields used. Original record totals are recorded in each package manifest; updated input lengths are determined at export time.
 4. **1 Fields 2022 / 1 Fields 2026** retain every original record. Six actual blank-preserving Excel formulas link to the corresponding Copy cells; the added record number identifies the original CSV record, with header as record 1.
 5. **2 Rules 2022 / 2 Rules 2026** parse dates and ages and test county, early-voting type, acceptance, matched dates and exact location. County and named-site contributions add 1 or 0, with conditional highlights and running SUMs. These flags include all ages; the next step applies each age band's limits.
 6. **3 Counts** uses bounded COUNTIFS for the five inclusive age ranges, separately by year and county/site scope.
@@ -22,9 +22,9 @@ All original records remain in the fields and rules tabs, including rejected, ma
 
 ## Snapshot example: exact worked cells
 
-`4 Growth math!B6:C6` link the ages 18–24 Talley/Western counts, 2,999 and 4,214. D6 subtracts, E6 divides by B6 and F6 multiplies by 100, yielding 40.5135045…%. G6:H6 link the Wake counts, 11,287 and 22,980. I6 subtracts, J6 divides by G6 and K6 multiplies by 100, yielding 103.5970586…%. L6 is `=F6-K6`, yielding −63.0835541… percentage points.
+`4 Growth math!B6:C6 links 3,402 and 4,639 site ballots, giving 36.3609641% growth. G6:H6 links 13,398 and 25,570 Wake ballots, giving 90.8493805% growth. L6 is =F6-K6, yielding −54.4884164 percentage points.
 
-The supporting share calculation uses `D15=B15/C15` (2,999 / 11,287, formatted as 26.6%) and `D16=B16/C16` (4,214 / 22,980, formatted as 18.3%). D17 is `=(D16-D15)*100`, yielding −8.2327058… percentage points. Only displays are rounded. These are shares of the same age group's early ballots across the whole county, not turnout rates or shares of a single precinct.
+The county-share calculation is 3,402 / 13,398 = 25.3918495% and 4,639 / 25,570 = 18.1423543%. The unrounded change is −7.2494952 percentage points. These shares use the same age group across Wake County, not a registered-student denominator.
 
 ## Build and checks
 

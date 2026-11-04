@@ -22,11 +22,11 @@ function setup(s,title,cols){
 function head(s,labels){set(s,`A5:${String.fromCharCode(64+labels.length)}5`,[labels]);s.getRange(`A5:${String.fromCharCode(64+labels.length)}5`).format={fill:'#273D52',font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},wrapText:true,rowHeight:42,horizontalAlignment:'center',verticalAlignment:'center'};s.freezePanes.freezeRows(5);}
 const result=sheet('Growth gaps');setup(result,'Talley to Western Boulevard: growth gaps','H');head(result,['Age group','Talley to Western growth (%)','Wake growth (%)','Gap (percentage points)']);
 result.getRange('A:D').format.columnWidth=25;result.tabColor='#273D52';
-set(result,'A3',[['Matched first 16 early-voting days. 2022 at Talley; 2026 at Western Boulevard.']]);
+set(result,'A3',[[`Full ${context.matched_days}-day early-voting periods. 2022 at Talley; 2026 at Western Boulevard.`]]);
 for(let i=0;i<5;i++){let r=i+6;set(result,`A${r}`,[[Plan.bands[i][2]]]);result.getRange(`B${r}:D${r}`).formulas=[[`='4 Growth math'!F${r}`,`='4 Growth math'!K${r}`,`='4 Growth math'!L${r}`]];}
 result.getRange('B6:D10').setNumberFormat('0.0');result.getRange('D6:D10').conditionalFormats.addCustom('D6<0',{fill:'#FFE3C7'});result.getRange('D6:D10').conditionalFormats.addCustom('D6>0',{fill:'#D8EAF4'});
 set(result,'A13',[['Read tabs left to right: original files, full copies, selected fields, rule flags, counts, then growth math.']]);
-set(result,'A15',[['2026 is preliminary through October 30. Age is not verified student status.']]);
+set(result,'A15',[[`2026 is preliminary through ${context.as_of}. Age is not verified student status.`]]);
 set(result,'A16',[['Wake includes Talley / Western Boulevard. These are ballot counts, not turnout rates.']]);
 set(result,'A18',[['Editing any copied record updates its field links, flags, counts and growth formulas in Excel.']]);
 const meta=sheet('0 Sources');setup(meta,'Original CSVs and matched windows','I');head(meta,['Year','CSV member','Open untouched CSV','Exact location','First date','Last date','Records','Original CSV SHA-256','Official archive']);
@@ -37,7 +37,7 @@ for(const [j,year] of Plan.years.entries()){
  const raw=[];
  for(const [lo]of Plan.bands)for(let k=0;k<(year===2022?2:4);k++){const v=headers.map(()=> '');for(const [key,val]of Object.entries({county_desc:'WAKE',ballot_req_type:'ONE-STOP',ballot_rtn_status:'ACCEPTED',ballot_rtn_dt:year===2022?'10/20/2022':'10/15/2026',site_name:k%2===0?context.site_mapping[year]:'ANOTHER WAKE SITE',age:String(lo)}))v[headers.indexOf(key)]=val;raw.push(v);}
  const excluded=[...raw[0]];excluded[headers.indexOf('ballot_rtn_status')]='REJECTED';raw.push(excluded);
- const late=[...raw[0]];late[headers.indexOf('ballot_rtn_dt')]=year===2022?'11/05/2022':'10/31/2026';raw.push(late);
+ const late=[...raw[0]];late[headers.indexOf('ballot_rtn_dt')]=year===2022?'11/06/2022':'11/01/2026';raw.push(late);
  const m={...window,site:context.site_mapping[year]};datasets.push({year,raw,meta:m});
  const r=j+6;set(meta,`A${r}:I${r}`,[[year,source.member,'Open untouched CSV',m.site,Plan.serial(m.start_date),Plan.serial(m.end_date),raw.length,source.wake_csv_sha256,'Official NCSBE archive']]);
  meta.getRange(`C${r}`).formulas=[[`=HYPERLINK("../01 Original files/${year}/${source.member}","Open untouched CSV")`]];

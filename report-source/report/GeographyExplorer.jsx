@@ -31,7 +31,7 @@ export function GeographyExplorer(){
   <ReportSection id="voting-geography-intro" title="Where voters came from" queryId="geography" sourceRows={source} showHeading={false}>
    <RichNarrative id="voting-geography-intro:body" value={`## Where voters came from
 
-Did early voters from the same residential areas use Talley or Western Boulevard, or other Wake locations? Explore their recorded precincts and ZIP codes across the first 16 early-voting days in each year.`}/>
+Did early voters from the same residential areas use Talley or Western Boulevard, or other Wake locations? Explore their recorded precincts and ZIP codes across the full 17-day early-voting periods in each year.`}/>
   </ReportSection>
   <div className="voting-controls voting-geography-controls">
    <label>Group residence by <select value={dimension} onChange={reset(setDimension)}><option>Precinct</option><option>ZIP code</option></select></label>
