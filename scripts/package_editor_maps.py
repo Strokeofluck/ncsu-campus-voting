@@ -1,4 +1,4 @@
-"""Package the verified maps-only editor preview."""
+"""Package the verified maps-and-charts editor preview."""
 import argparse
 from pathlib import Path
 from package_article import ROOT,package

@@ -5,5 +5,6 @@
 .voting-editor-maps .editor-maps-title{width:min(800px,100%);margin:0 auto;}
 .voting-editor-maps .editor-maps-title h1{font:700 44px/1.35 'Technician Story',Georgia,serif;white-space:normal;margin:8px 0 12px;}
 .voting-editor-maps .article-routine-map{margin-top:24px!important;}
+.voting-editor-maps .voting-article-growth-chart-wrap,.voting-editor-maps .voting-article-benchmark-wrap{margin-top:32px;}
 .voting-article.voting-editor-maps .article-walk-average-label{color:#000;}
 @media(max-width:600px){.voting-editor-maps .editor-maps-title h1{font-size:32px;}}
