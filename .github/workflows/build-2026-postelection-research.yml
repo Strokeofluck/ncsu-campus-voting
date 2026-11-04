@@ -1,0 +1,40 @@
+name: Build November 2026 Talley vs Western early-voting research
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_2026_postelection_snapshot.py'
+      - '.github/workflows/build-2026-postelection-research.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: campus-voting-nov-2026-research
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch 2022 and 2026 official NCSBE archives and compute aggregates
+        run: python scripts/build_2026_postelection_snapshot.py
+      - name: Commit aggregate files only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/nov2026/
+          if git diff --cached --quiet; then
+            echo "Research snapshot unchanged"
+          else
+            git commit -m "Refresh preliminary 2026 early-voting site comparison"
+            git pull --rebase origin main
+            git push origin main
+          fi
