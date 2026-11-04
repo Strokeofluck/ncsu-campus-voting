@@ -1,0 +1,96 @@
+year,scope,dimension,value,ballots,share_pct
+2022,Campus site,age_band,18-24,3402,32.743
+2022,Campus site,age_band,25-34,2203,21.203
+2022,Campus site,age_band,35-44,1132,10.895
+2022,Campus site,age_band,45-64,2443,23.513
+2022,Campus site,age_band,65+,1210,11.646
+2022,Campus site,ethnicity,HISPANIC or LATINO,278,2.676
+2022,Campus site,ethnicity,NOT HISPANIC or NOT LATINO,6941,66.805
+2022,Campus site,ethnicity,UNDESIGNATED,3171,30.52
+2022,Campus site,gender,F,4474,43.061
+2022,Campus site,gender,M,4265,41.049
+2022,Campus site,gender,U,1651,15.89
+2022,Campus site,party,DEM,4596,44.235
+2022,Campus site,party,GRE,4,0.038
+2022,Campus site,party,LIB,47,0.452
+2022,Campus site,party,REP,1119,10.77
+2022,Campus site,party,UNA,4624,44.504
+2022,Campus site,race,ASIAN,382,3.677
+2022,Campus site,race,BLACK or AFRICAN AMERICAN,620,5.967
+2022,Campus site,race,INDIAN AMERICAN or ALASKA NATIVE,16,0.154
+2022,Campus site,race,OTHER,318,3.061
+2022,Campus site,race,TWO or MORE RACES,97,0.934
+2022,Campus site,race,UNDESIGNATED,1643,15.813
+2022,Campus site,race,WHITE,7314,70.395
+2022,Wake County,age_band,18-24,13398,6.113
+2022,Wake County,age_band,25-34,24757,11.296
+2022,Wake County,age_band,35-44,30892,14.095
+2022,Wake County,age_band,45-64,85819,39.157
+2022,Wake County,age_band,65+,64303,29.339
+2022,Wake County,ethnicity,HISPANIC or LATINO,4822,2.2
+2022,Wake County,ethnicity,NOT HISPANIC or NOT LATINO,159447,72.751
+2022,Wake County,ethnicity,UNDESIGNATED,54900,25.049
+2022,Wake County,gender,F,111286,50.776
+2022,Wake County,gender,M,92513,42.211
+2022,Wake County,gender,U,15370,7.013
+2022,Wake County,party,DEM,91683,41.832
+2022,Wake County,party,GRE,27,0.012
+2022,Wake County,party,LIB,800,0.365
+2022,Wake County,party,REP,48191,21.988
+2022,Wake County,party,UNA,78468,35.803
+2022,Wake County,race,ASIAN,6540,2.984
+2022,Wake County,race,BLACK or AFRICAN AMERICAN,38886,17.742
+2022,Wake County,race,INDIAN AMERICAN or ALASKA NATIVE,421,0.192
+2022,Wake County,race,NATIVE HAWAIIAN or PACIFIC ISLANDER,8,0.004
+2022,Wake County,race,OTHER,6409,2.924
+2022,Wake County,race,TWO or MORE RACES,1156,0.527
+2022,Wake County,race,UNDESIGNATED,16843,7.685
+2022,Wake County,race,WHITE,148906,67.941
+2026,Campus site,age_band,18-24,4639,32.002
+2026,Campus site,age_band,25-34,3043,20.992
+2026,Campus site,age_band,35-44,1597,11.017
+2026,Campus site,age_band,45-64,3115,21.489
+2026,Campus site,age_band,65+,2102,14.501
+2026,Campus site,ethnicity,HISPANIC or LATINO,702,4.843
+2026,Campus site,ethnicity,NOT HISPANIC or NOT LATINO,8412,58.03
+2026,Campus site,ethnicity,UNDESIGNATED,5382,37.127
+2026,Campus site,gender,F,6795,46.875
+2026,Campus site,gender,M,5983,41.273
+2026,Campus site,gender,U,1718,11.852
+2026,Campus site,party,DEM,6270,43.253
+2026,Campus site,party,GRE,30,0.207
+2026,Campus site,party,LIB,38,0.262
+2026,Campus site,party,REP,955,6.588
+2026,Campus site,party,UNA,7203,49.69
+2026,Campus site,race,ASIAN,762,5.257
+2026,Campus site,race,BLACK or AFRICAN AMERICAN,1286,8.871
+2026,Campus site,race,INDIAN AMERICAN or ALASKA NATIVE,45,0.31
+2026,Campus site,race,NATIVE HAWAIIAN or PACIFIC ISLANDER,1,0.007
+2026,Campus site,race,OTHER,749,5.167
+2026,Campus site,race,TWO or MORE RACES,128,0.883
+2026,Campus site,race,UNDESIGNATED,1939,13.376
+2026,Campus site,race,WHITE,9586,66.129
+2026,Wake County,age_band,18-24,25570,7.654
+2026,Wake County,age_band,25-34,43350,12.976
+2026,Wake County,age_band,35-44,48620,14.553
+2026,Wake County,age_band,45-64,118322,35.416
+2026,Wake County,age_band,65+,98226,29.401
+2026,Wake County,ethnicity,HISPANIC or LATINO,12915,3.866
+2026,Wake County,ethnicity,NOT HISPANIC or NOT LATINO,221855,66.406
+2026,Wake County,ethnicity,UNDESIGNATED,99318,29.728
+2026,Wake County,gender,F,174187,52.138
+2026,Wake County,gender,M,136532,40.867
+2026,Wake County,gender,U,23369,6.995
+2026,Wake County,party,DEM,138030,41.315
+2026,Wake County,party,GRE,190,0.057
+2026,Wake County,party,LIB,964,0.289
+2026,Wake County,party,REP,55453,16.598
+2026,Wake County,party,UNA,139451,41.741
+2026,Wake County,race,ASIAN,14320,4.286
+2026,Wake County,race,BLACK or AFRICAN AMERICAN,62574,18.73
+2026,Wake County,race,INDIAN AMERICAN or ALASKA NATIVE,807,0.242
+2026,Wake County,race,NATIVE HAWAIIAN or PACIFIC ISLANDER,28,0.008
+2026,Wake County,race,OTHER,16369,4.9
+2026,Wake County,race,TWO or MORE RACES,1701,0.509
+2026,Wake County,race,UNDESIGNATED,26746,8.006
+2026,Wake County,race,WHITE,211543,63.32

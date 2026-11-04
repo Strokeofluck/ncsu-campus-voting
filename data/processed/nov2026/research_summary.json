@@ -1,0 +1,124 @@
+{
+  "snapshot_date": "2026-11-04",
+  "status": "PRELIMINARY: post-election source can change until canvass",
+  "period_2022": "2022-10-20 to 2022-11-05 (17 days)",
+  "period_2026": "2026-10-15 to 2026-10-31 (17 days)",
+  "metrics": [
+    {
+      "measure": "Campus-site accepted early ballots",
+      "2022": 10390,
+      "2026": 14496,
+      "difference": 4106,
+      "change_type": "percent",
+      "change": 39.519
+    },
+    {
+      "measure": "Wake accepted early ballots",
+      "2022": 219169,
+      "2026": 334088,
+      "difference": 114919,
+      "change_type": "percent",
+      "change": 52.434
+    },
+    {
+      "measure": "Campus-site accepted early ballots, age 18-24",
+      "2022": 3402,
+      "2026": 4639,
+      "difference": 1237,
+      "change_type": "percent",
+      "change": 36.361
+    },
+    {
+      "measure": "Wake accepted early ballots, age 18-24",
+      "2022": 13398,
+      "2026": 25570,
+      "difference": 12172,
+      "change_type": "percent",
+      "change": 90.849
+    },
+    {
+      "measure": "Campus-site accepted same-day-registration ballots",
+      "2022": 763,
+      "2026": 993,
+      "difference": 230,
+      "change_type": "percent",
+      "change": 30.144
+    },
+    {
+      "measure": "Campus site share of Wake early ballots",
+      "2022": 4.741,
+      "2026": 4.339,
+      "difference": null,
+      "change_type": "percentage points",
+      "change": -0.402
+    },
+    {
+      "measure": "Age 18-24 share of campus-site ballots",
+      "2022": 32.743,
+      "2026": 32.002,
+      "difference": null,
+      "change_type": "percentage points",
+      "change": -0.741
+    },
+    {
+      "measure": "Campus site share of Wake age 18-24 ballots",
+      "2022": 25.392,
+      "2026": 18.142,
+      "difference": null,
+      "change_type": "percentage points",
+      "change": -7.25
+    },
+    {
+      "measure": "Same-day registration share of campus-site ballots",
+      "2022": 7.344,
+      "2026": 6.85,
+      "difference": null,
+      "change_type": "percentage points",
+      "change": -0.494
+    }
+  ],
+  "sources": [
+    {
+      "year": 2022,
+      "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+      "zip_sha256": "929aa047d71207270a4030a99ee472bc6b49d020ec818e9a2c38333f2cc8f11e",
+      "zip_last_modified_utc": "Sat, 19 Nov 2022 10:33:49 GMT",
+      "zip_bytes": 99765322,
+      "csv_member": "WAKE_absentee_20221108.csv",
+      "retrieved_utc": "2026-11-04T13:58:01.185073+00:00"
+    },
+    {
+      "year": 2026,
+      "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+      "zip_sha256": "1b76f903f2732fdf668953550f43aabeb8d3166b0d4ef5ba7935b1811f5a755c",
+      "zip_last_modified_utc": "Wed, 04 Nov 2026 10:28:57 GMT",
+      "zip_bytes": 127276818,
+      "csv_member": "WAKE_absentee_20261103.csv",
+      "retrieved_utc": "2026-11-04T13:58:10.735624+00:00"
+    }
+  ],
+  "qa": {
+    "2022": {
+      "wake_early": 219169,
+      "campus_early": 10390,
+      "unique_early_voters": 219169,
+      "last_voting_date": "2022-11-05",
+      "site_name": "TA - NCSU TALLEY STUDENT CENTER"
+    },
+    "2026": {
+      "wake_early": 334088,
+      "campus_early": 14496,
+      "unique_early_voters": 334088,
+      "last_voting_date": "2026-10-31",
+      "site_name": "NCSU WESTERN BLVD BUSINESS SERVICES"
+    }
+  },
+  "notes": [
+    "Party is voter registration, not candidate selection.",
+    "Ages 18-24 are a proxy, not verified NC State students.",
+    "Residential-precinct changes compare separate populations, not same-person movement.",
+    "Poll site move cannot be causally evaluated from these counts alone.",
+    "Election Day voting is excluded; 2024 is excluded from this midterm study.",
+    "Names, addresses and voter identifiers are omitted from published outputs."
+  ]
+}
