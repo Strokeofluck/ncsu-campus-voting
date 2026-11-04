@@ -30,11 +30,20 @@
  }
  async function build(templateBytes,sources,context,expected,readSource,progress,JSZip,Stream,Pako){
   if(sources.map(s=>s.year).join(',')!=='2022,2026')throw Error('The article audit requires 2022 and 2026 sources');
+  const originals=[];
+  for(const source of sources){
+   progress(`Checking the ${source.year} original CSV against the article snapshot…`);
+   const bytes=await readSource(source);
+   const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
+   if(hash!==source.wake_csv_sha256){
+    const error=Error(`NCSBE has updated the ${source.year} file. Choose the saved original CSVs below to reproduce this article's snapshot.`);
+    error.code='SOURCE_SNAPSHOT_CHANGED';throw error;
+   }
+   originals.push(bytes);
+  }
   const template=await JSZip.loadAsync(templateBytes),book=new Stream.Archive(),bundle=new Stream.Archive(),replaced=new Map(),datasets=[];
   for(let j=0;j<sources.length;j++){
-   const source=sources[j],year=source.year,bytes=await readSource(source);
-   const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
-   if(hash!==source.wake_csv_sha256)throw Error(`The ${year} original has changed since the article snapshot. Update the evidence before exporting.`);
+   const source=sources[j],year=source.year,bytes=originals[j];
    const original=Stream.packed(`01 Original files/${year}/${source.member}`,Pako);original.push(bytes);bundle.add(original.finish());
    const text=new TextDecoder('windows-1252').decode(bytes),bounds=root.CsvOriginalCopy.indexRecords(text),at=i=>text.slice(bounds[2*i],bounds[2*i+1]);
    const headers=root.CsvOriginalCopy.cells(at(0)),total=bounds.length/2-1,columns=P.fields.map(f=>headers.indexOf(f));if(columns.some(i=>i<0))throw Error('Official CSV fields changed');
@@ -54,6 +63,7 @@
    for(const writer of writers){const entry=writer.finish();replaced.set(entry.name,entry);}
    for(let b=0;b<5;b++)for(const scope of ['site','county'])if(counts[b][scope]!==expected[b][`${scope}_ballots_${year}`])throw Error(`Original ${year} ${P.bands[b][2]} ${scope} count differs from the article`);
    datasets.push({source,total,headers,meta,counts});
+   originals[j]=null;
   }
   function fill(text,body,end,col,keepTail=false){const {p,rows}=layout(text);return text.replace(new RegExp(`<${p}sheetData[^>]*>[\\s\\S]*?<\\/${p}sheetData>`),`<${p}sheetData>${rows.filter(v=>Number(v[1])<6).map(v=>v[0]).join('')}${body}${keepTail?rows.filter(v=>Number(v[1])>10).map(v=>v[0]).join(''):''}</${p}sheetData>`).replace(new RegExp(`<${p}dimension\\b[^>]*/>`),`<${p}dimension ref="A1:${col}${end}"/>`);}
   for(const index of [1,2,9,10]){

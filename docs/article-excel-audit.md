@@ -4,6 +4,8 @@ The primary download on `references.html#excel-download` covers only the article
 
 The ZIP separates untouched bytes in `01 Original files/2022/` and `01 Original files/2026/`, the editable workbook in `02 Working copy/`, and the source manifest in `03 Source checks/`. Both original CSV SHA-256 hashes and all 20 age/scope/year counts must match the saved article before export succeeds. The matched windows remain October 20–November 4, 2022 and October 15–30, 2026. The 2026 evidence is preliminary through October 30.
 
+NCSBE replaces the live 2026 archive. Its historical S3 versions are listed but return HTTP 403 for public downloads. The live file checked November 3 changes three of the saved age/site/county counts, so it cannot reproduce this snapshot. If a source hash has changed, the page opens **Rebuild from saved original CSVs**. Choose both untouched CSVs from `01 Original files` in the original download. They are passed directly to the local worker, never uploaded, and the existing hash and all 20 count checks remain mandatory. Both source hashes are checked before expensive workbook generation begins. A changed source or count cannot produce a success download.
+
 ## Workbook sequence
 
 1. **Growth gaps** links the five completed results.
