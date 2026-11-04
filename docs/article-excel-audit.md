@@ -1,16 +1,18 @@
 # Talley to Western Boulevard: worked Excel audit
 
-The primary download on `references.html#excel-download` covers only the article's 2022–2026 comparison and five nonoverlapping age groups. It is generated locally from the official NCSBE Wake CSV members. No original voter records or populated workbook are published to the website.
+The primary download on `references.html#excel-download` recalculates the article's 2022–2026 comparison and five nonoverlapping age groups from the latest official NCSBE Wake CSV members. Readers can also choose downloaded CSVs using the adjacent official ZIP links and numbered instructions. No original voter records or populated workbook are published to the website.
 
-The ZIP separates untouched bytes in `01 Original files/2022/` and `01 Original files/2026/`, the editable workbook in `02 Working copy/`, and the source manifest in `03 Source checks/`. Both original CSV SHA-256 hashes and all 20 age/scope/year counts must match the saved article before export succeeds. The matched windows remain October 20–November 4, 2022 and October 15–30, 2026. The 2026 evidence is preliminary through October 30.
+The ZIP separates untouched input bytes in `01 Original files/2022/` and `01 Original files/2026/`, the editable workbook in `02 Working copy/`, and the source manifest in `03 Source checks/`. Updated mode records the input hashes and freshly calculated counts; snapshot mode requires both hashes and all 20 counts to match the saved article. The matched windows remain October 20–November 4, 2022 and October 15–30, 2026.
 
-NCSBE replaces the live 2026 archive. Its historical S3 versions are listed but return HTTP 403 for public downloads. The live file checked November 3 changes three of the saved age/site/county counts, so it cannot reproduce this snapshot. If a source hash has changed, the page opens **Rebuild from saved original CSVs**. Choose both untouched CSVs from `01 Original files` in the original download. They are passed directly to the local worker, never uploaded, and the existing hash and all 20 count checks remain mandatory. Both source hashes are checked before expensive workbook generation begins. A changed source or count cannot produce a success download.
+NCSBE replaces the live 2026 archive. Updated mode (the default) accepts changed source bytes and computes new counts, growth and gaps while retaining the original matched 16-day windows. It records actual input CSV hashes, retrieval/read time, input kind, original snapshot metadata and both old/new result sets in the manifest. The workbook cover, source sheet, README and separate updated-results note clearly identify the revised calculation. An additional CSV exports the five updated result rows. The dated article and its reference figures are not refreshed by this calculator.
+
+The optional **Article snapshot** calculation for chosen CSVs still requires both original hashes and all 20 saved age/scope/year counts to match. Choose the saved CSVs from `01 Original files` in the original download for that mode. Files stay local. Historical S3 versions are listed but return HTTP 403 for public downloads, so the default updated mode does not depend on recovering an older upstream file.
 
 ## Workbook sequence
 
 1. **Growth gaps** links the five completed results.
 2. **0 Sources** documents exact locations, dates, source URLs, hashes and original record totals. Relative hyperlinks open the separate untouched CSVs after the entire ZIP is extracted.
-3. **Copy 2022 / Copy 2026** contain every original row and all 42 original columns, in order, stored as text. Six highlighted headers identify the fields used. There are 267,949 and 327,240 data records respectively.
+3. **Copy 2022 / Copy 2026** contain every input row and all source columns, in order, stored as text. Six highlighted headers identify the fields used. The saved snapshot contains 267,949 and 327,240 records respectively; updated input lengths are determined at export time.
 4. **1 Fields 2022 / 1 Fields 2026** retain every original record. Six actual blank-preserving Excel formulas link to the corresponding Copy cells; the added record number identifies the original CSV record, with header as record 1.
 5. **2 Rules 2022 / 2 Rules 2026** parse dates and ages and test county, early-voting type, acceptance, matched dates and exact location. County and named-site contributions add 1 or 0, with conditional highlights and running SUMs. These flags include all ages; the next step applies each age band's limits.
 6. **3 Counts** uses bounded COUNTIFS for the five inclusive age ranges, separately by year and county/site scope.
@@ -18,7 +20,7 @@ NCSBE replaces the live 2026 archive. Its historical S3 versions are listed but 
 
 All original records remain in the fields and rules tabs, including rejected, mail and outside-window records. Changing a copied source value updates the affected links, rules, counts and formulas; there is no fixed candidate extract. Adding records requires rebuilding or extending all relevant ranges. Original CSV files remain unchanged.
 
-## Exact worked cells
+## Snapshot example: exact worked cells
 
 `4 Growth math!B6:C6` link the ages 18–24 Talley/Western counts, 2,999 and 4,214. D6 subtracts, E6 divides by B6 and F6 multiplies by 100, yielding 40.5135045…%. G6:H6 link the Wake counts, 11,287 and 22,980. I6 subtracts, J6 divides by G6 and K6 multiplies by 100, yielding 103.5970586…%. L6 is `=F6-K6`, yielding −63.0835541… percentage points.
 

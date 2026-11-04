@@ -1,11 +1,12 @@
 /* The download is generated on the reader's computer from official files. */
-importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','article-excel-plan.js?v=1','article-excel-export.js?v=2');
+importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','article-excel-plan.js?v=1','article-excel-export.js?v=3');
 onmessage=async({data})=>{
  try{
   const response=await fetch('article-excel-template.json?v=1');if(!response.ok)throw Error('Excel template unavailable');
   const t=await response.json(),bytes=Uint8Array.from(atob(t.base64),c=>c.charCodeAt(0));
   const readSource=data.originals?async source=>new Uint8Array(await data.originals[source.year].arrayBuffer()):wakeBytes;
-  const result=await ArticleExcelExport.build(bytes,data.sources,data.context,data.expected,readSource,say,JSZip,CsvZipStream,pako);
-  postMessage({type:'download',bytes:result.bytes.buffer,filename:'talley-western-originals-and-excel.zip'},[result.bytes.buffer]);
+  const mode=data.mode==='snapshot'?'snapshot':'updated';
+  const result=await ArticleExcelExport.build(bytes,data.sources,data.context,data.expected,readSource,say,JSZip,CsvZipStream,pako,{mode,inputKind:data.originals?'selected_csv':'live_ncsbe_zip',filenames:data.originals?Object.fromEntries(Object.entries(data.originals).map(([year,file])=>[year,file.name])):{}});
+  postMessage({type:'download',bytes:result.bytes.buffer,filename:mode==='updated'?'talley-western-updated-files-and-excel.zip':'talley-western-originals-and-excel.zip',mode,results:result.manifest.results,generatedAt:result.manifest.generated_at_utc},[result.bytes.buffer]);
  }catch(error){postMessage({type:'export-error',message:error.message||String(error),code:error.code});}
 };
