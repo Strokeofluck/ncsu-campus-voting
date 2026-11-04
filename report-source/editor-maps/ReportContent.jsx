@@ -13,9 +13,9 @@ export function ReportContent(){
  return <article className="report-content voting-report voting-article voting-editor-maps" aria-label="NC State voting visuals — editor preview">
   <TechnicianHeader/>
   <div className="editor-maps-title"><RichNarrative id="editor-maps:title" value="# NC State voting visuals"/></div>
+  <YoungestBenchmark row={youngest}/>
   <CampusWalkingMap article editorPreview/>
   <CampusPassbyMap article editorPreview/>
   <AgeGrowthChart/>
-  <YoungestBenchmark row={youngest}/>
  </article>;
 }
