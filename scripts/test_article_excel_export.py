@@ -35,6 +35,23 @@ codecs.register_error('browser1252',lambda e:(''.join(chr(b) for b in e.object[e
 expected=json.loads((repo/'report-source/snapshot.json').read_text(encoding='utf-8'))['queries']['age_growth_benchmarks']['rows']
 fields=['county_desc','ballot_req_type','ballot_rtn_status','ballot_rtn_dt','site_name','age']
 bands=[(18,24),(25,34),(35,44),(45,64),(65,120)]
+if manifest.get('mode')=='updated':
+ expected=manifest['results']
+ if args.summary_only:
+  for source in manifest['sources']:
+   year=source['year'];path=f'01 Original files/{year}/{source["member"]}';totals=[[0,0] for _ in bands]
+   with outer.open(path) as raw:assert hashlib.file_digest(raw,'sha256').hexdigest()==source['wake_csv_sha256']
+   with outer.open(path) as raw:
+    for row in csv.DictReader(io.TextIOWrapper(raw,encoding='cp1252',errors='browser1252',newline='')):
+     if row['county_desc'].strip()!='WAKE' or row['ballot_req_type'].strip().upper() not in ['ONE-STOP','ONE STOP','EARLY VOTING'] or row['ballot_rtn_status'].strip()!='ACCEPTED':continue
+     parts=row['ballot_rtn_dt'].strip().split('/');day=f'{parts[2]}-{parts[0].zfill(2)}-{parts[1].zfill(2)}' if len(parts)==3 else '';age=row['age'].strip()
+     start,end=('2022-10-20','2022-11-04') if year==2022 else ('2026-10-15','2026-10-30')
+     if not start<=day<=end or not age.isdigit():continue
+     site='TA - NCSU TALLEY STUDENT CENTER' if year==2022 else 'NCSU WESTERN BLVD BUSINESS SERVICES'
+     for b,(lo,hi) in enumerate(bands):
+      if lo<=int(age)<=hi:totals[b][0]+=int(row['site_name'].strip()==site);totals[b][1]+=1
+   for b,row in enumerate(expected):assert totals[b]==[row[f'site_ballots_{year}'],row[f'county_ballots_{year}']]
+  print('Updated input hashes and all 20 counts independently verified from included original CSVs.',flush=True)
 if not args.summary_only:
  for j,source in enumerate(manifest['sources']):
   year=source['year'];path=f'01 Original files/{year}/{source["member"]}'

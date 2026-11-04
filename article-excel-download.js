@@ -7,13 +7,13 @@
   if(!results)return;
   results.replaceChildren();if(data.mode!=='updated')return;
   const heading=document.createElement('h4');heading.textContent='Updated-file calculations';results.append(heading);
-  const note=document.createElement('p');note.textContent='Calculated '+new Date(data.generatedAt).toLocaleString()+'. Same first 16 early-voting days; these are separate from the article snapshot above.';results.append(note);
+  const note=document.createElement('p');note.textContent='Calculated '+new Date(data.generatedAt).toLocaleString()+'. Same first 16 early-voting days; these are separate from the article snapshot above. Displays round to four decimal places; calculations use unrounded values.';results.append(note);
   const number=n=>n.toLocaleString(undefined,{maximumFractionDigits:4});
   for(const row of data.results){
    const detail=document.createElement('details'),label=document.createElement('summary'),steps=document.createElement('ol');
    label.textContent='Ages '+row.cohort+' — counts and step-by-step math';detail.append(label,steps);
    const a=row.site_ballots_2022,z=row.site_ballots_2026,c=row.county_ballots_2022,d=row.county_ballots_2026;
-   for(const text of [`Talley 2022: ${number(a)}; Western 2026: ${number(z)}. All Wake 2022: ${number(c)}; all Wake 2026: ${number(d)}.`,`Site growth: (${number(z)} − ${number(a)}) ÷ ${number(a)} × 100 = ${number(row.site_growth_pct)}%.`,`Wake growth: (${number(d)} − ${number(c)}) ÷ ${number(c)} × 100 = ${number(row.county_growth_pct)}%.`,`Gap: ${number(row.site_growth_pct)}% − ${number(row.county_growth_pct)}% = ${number(row.site_growth_gap_pp)} percentage points.`]){const item=document.createElement('li');item.textContent=text;steps.append(item);}
+   for(const text of [`Talley 2022: ${number(a)}; Western 2026: ${number(z)}. All Wake 2022: ${number(c)}; all Wake 2026: ${number(d)}.`,`Site growth: (${number(z)} − ${number(a)}) ÷ ${number(a)} × 100 ≈ ${number(row.site_growth_pct)}%.`,`Wake growth: (${number(d)} − ${number(c)}) ÷ ${number(c)} × 100 ≈ ${number(row.county_growth_pct)}%.`,`Gap: ${number(row.site_growth_pct)}% − ${number(row.county_growth_pct)}% ≈ ${number(row.site_growth_gap_pp)} percentage points.`]){const item=document.createElement('li');item.textContent=text;steps.append(item);}
    results.append(detail);
   }
  };
