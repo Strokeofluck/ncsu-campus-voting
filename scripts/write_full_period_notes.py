@@ -1,4 +1,5 @@
 """Write the reporting handoff from the same reviewed rows as the article."""
+import csv
 import json
 from pathlib import Path
 
@@ -13,6 +14,26 @@ y = rows[0]
 change = lambda a, b: (b/a-1)*100
 share = lambda a, b: a/b*100
 benchmark = y['site_ballots_2022']*y['county_ballots_2026']/y['county_ballots_2022']
+# Preserve the existing three-year workbook's literal formula columns while
+# refreshing its public aggregate calculation CSV to the same reviewed period.
+calculation_path = ROOT/'data/processed/comparison/campus_age_calculations.csv'
+with calculation_path.open(encoding='utf-8-sig',newline='') as stream:
+    reader=csv.DictReader(stream); fieldnames=reader.fieldnames; calculation_rows=list(reader)
+for row in calculation_rows:
+    group=row['Group']; counts={}
+    for year in [2022,2024,2026]:
+        if group=='All site ballots': count=campus[year]['all_ages']
+        elif group.startswith('18–22'): count=campus[year]['age_18_22']
+        elif group.startswith('Same-day'): count=campus[year]['same_day_registration']
+        else: count=next(r['votes'] for r in d['demographics'] if r['year']==year and r['scope']=='Campus site' and r['dimension']=='age_group' and r['value']==group)
+        counts[year]=count
+        row[f'{year} '+('Western' if year==2026 else 'Talley')+' ballots']=str(count)
+        row[f'{year} share']=f'{share(count,campus[year]["all_ages"]):.1f}%'
+    row['Ballot change 2022–26']=str(counts[2026]-counts[2022])
+    row['Ballot growth 2022–26']=f'{change(counts[2022],counts[2026]):.1f}%'
+    row['Share change (pp)']=f'{share(counts[2026],campus[2026]["all_ages"])-share(counts[2022],campus[2022]["all_ages"]):.1f}'
+with calculation_path.open('w',encoding='utf-8-sig',newline='') as stream:
+    writer=csv.DictWriter(stream,fieldnames=fieldnames); writer.writeheader();writer.writerows(calculation_rows)
 lines = [
     '# November 4, 2026: complete early-voting comparison', '',
     'Preliminary NCSBE accepted in-person early-voting records. All 17 days: October 20–November 5, 2022, and October 15–31, 2026. The article compares two midterms. The prototype retains the complete 2024 presidential period as a separately labeled benchmark.', '',
