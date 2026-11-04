@@ -1,5 +1,9 @@
 # NC State Campus Voting
 
+## November 4, 2026: full midterm early-voting comparison
+
+**New preliminary full-period snapshot:** [2022 Talley vs. 2026 Western Boulevard](data/processed/nov2026/README.md) · [Technician reporting notes and precinct shifts](docs/nov2026-reporting-notes.md). All 17 early-voting days are included for each midterm. The campus location recorded **10,390 → 14,496 accepted early ballots (+39.5%)**, including **3,402 → 4,639 ballots from ages 18–24 (+36.4%)**. Its share of all Wake 18–24 early ballots changed **25.39% → 18.14%**. The separate interactive article and charts below remain an **October 30 partial-period snapshot** with a selectable 2024 presidential benchmark; do not mix their 16-day figures with this new 17-day comparison. The 2026 data remain preliminary and are not Election Day results.
+
 **Article — work in progress** leads with the college-age growth gap, with five maps ordered youngest to oldest and campus polling-site counts directly below each map. **References and step-by-step math** now follow the four counts, site growth, county growth and percentage-point gap for each of the five age groups. The earlier original-record viewer and full workbook remain optional audit tools.
 
 **Download the article’s original CSVs and working Excel.** The two-year package keeps untouched government CSVs separate from ten Excel tabs showing complete copies, formula-linked source fields, highlighted inclusion rules, running sums, COUNTIFS totals and worked growth/gap calculations. It also works out the supporting 26.6% → 18.3% countywide college-age share. [Exact cell map and export checks](docs/article-excel-audit.md). The site-use map now shows that supporting share calculation beneath the map, clearly distinguished from individual precinct percentages.
