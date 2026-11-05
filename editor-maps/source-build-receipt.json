@@ -1,0 +1,10 @@
+{
+  "buildKind": "authorized-source-build",
+  "htmlSha256": "5e7c1351273a44235e879862935a9b9633bea584a0ff7e3063647ce42b614365",
+  "reviewedSnapshotSha256": "0e550982dc2f307a4e0f0a2530ece4ff8a70913470c8f0034769f0e2be50457a",
+  "protectedRuntimeManifestSha256": "dc18d336f2adcc8d294c67700df8888f6667b6b26ce413c8eaf2ce70731380dc",
+  "authorizedRuntimeFiles": [
+    "src/DataAppShell.jsx"
+  ],
+  "authorization": "User requested removal of the entire preview toolbar; omitted only in opted-in report view mode."
+}

@@ -1,0 +1,20 @@
+--- a/src/DataAppShell.jsx
++++ b/src/DataAppShell.jsx
+@@ -1128,7 +1128,7 @@
+           onStatus={setActionStatus}
+         >
+           <div className="dashboard-root">
+-            <DataAppTopbar
++            {!(snapshot.report?.hideTopbar === true && mode === "view") && <DataAppTopbar
+               title={appTitle}
+               buildStatus={snapshot.buildStatus}
+               generatedAt={snapshot.generatedAt}
+@@ -1165,7 +1165,7 @@
+               activeTabId={activeTabId}
+               onTabChange={navigateDashboardTab}
+               onReorderTabs={setTabs}
+-            />
++            />}
+             <DataAppThemeDrawer
+               open={themesOpen}
+               activeTheme={displayedTheme}
