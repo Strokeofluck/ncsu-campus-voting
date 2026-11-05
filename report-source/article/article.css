@@ -138,11 +138,14 @@
 .voting-article .age-growth-gap{display:flex;flex-direction:column;gap:2px;font-size:11px;line-height:1.4;}
 .voting-article .age-growth-gap strong{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;}
 .voting-article .age-growth-counts{margin:0;display:flex;flex-direction:column;gap:3px;font-size:12px;line-height:1.4;font-variant-numeric:tabular-nums;}
+.voting-article .age-growth-counts>span{display:grid;grid-template-columns:30px minmax(0,1fr);gap:6px;align-items:baseline;}
+.voting-article .age-growth-counts small{font-size:10px;color:var(--secondary);}
+.voting-article .age-growth-counts>span>span{white-space:nowrap;}
 .voting-article .age-growth-counts a{font-size:11px;}
 .voting-article .age-growth-tooltip{display:none;position:absolute;z-index:5;top:100%;left:0;min-width:190px;max-width:300px;padding:8px 10px;border:1px solid var(--border);background:var(--background);color:var(--text);font-size:11px;line-height:1.5;box-shadow:0 2px 8px #0002;}
 .voting-article .age-growth-series:hover .age-growth-tooltip,.voting-article .age-growth-series:focus .age-growth-tooltip{display:block;}
 .voting-article .age-growth-compact figcaption{font-size:11px;line-height:1.5;margin-top:12px;padding-top:10px;}
-@media(max-width:600px){.voting-article .age-growth-compact{--age-columns:50px minmax(0,1fr) 80px;--age-gap:8px;}.voting-article .age-growth-head>span:last-child{display:none;}.voting-article .age-growth-counts{grid-column:2/-1;flex-direction:row;gap:8px;font-size:11px;}.voting-article .age-growth-counts>span::before{content:'Talley → Western: ';font-size:10px;}.voting-article .age-growth-row{row-gap:6px;padding:8px 0;}.voting-article .age-growth-axis span:nth-child(even){display:none;}.voting-article .age-growth-series{grid-template-columns:minmax(0,1fr) 49px;gap:5px;}.voting-article .age-growth-axis{margin-right:54px;}.voting-article .age-growth-series>strong{font-size:11px;}.voting-article .age-growth-tooltip{min-width:150px;max-width:220px;}.voting-article .age-growth-row h3{font-size:13px;}}
+@media(max-width:600px){.voting-article .age-growth-compact{--age-columns:50px minmax(0,1fr) 80px;--age-gap:8px;}.voting-article .age-growth-head>span:last-child{display:none;}.voting-article .age-growth-counts{grid-column:2/-1;gap:3px;font-size:11px;}.voting-article .age-growth-row{row-gap:6px;padding:8px 0;}.voting-article .age-growth-axis span:nth-child(even){display:none;}.voting-article .age-growth-series{grid-template-columns:minmax(0,1fr) 49px;gap:5px;}.voting-article .age-growth-axis{margin-right:54px;}.voting-article .age-growth-series>strong{font-size:11px;}.voting-article .age-growth-tooltip{min-width:150px;max-width:220px;}.voting-article .age-growth-row h3{font-size:13px;}}
 
 /* One spacing system: avoid stacking page gaps with map section margins. */
 .voting-article{gap:16px;}
