@@ -117,7 +117,7 @@
 .voting-article .article-walk-average-source{font-size:11px;line-height:1.45;color:var(--secondary);margin:8px 0 0;}
 @media(max-width:600px){.voting-article .article-walk-average-grid{grid-template-columns:1fr 1fr;gap:10px;}.voting-article .article-walk-average-delta{grid-column:1/-1;border-left:0;border-top:1px solid var(--border);padding:7px 0 0;}.voting-article .article-walk-average-delta dd{flex-direction:row;align-items:baseline;flex-wrap:wrap;gap:5px 12px;}.voting-article .article-walk-average-grid strong{font-size:20px;}}
 /* Dense horizontal rows keep all five age comparisons in one view. */
-.voting-article .age-growth-compact{--age-columns:62px minmax(0,1fr) 100px 146px;--age-gap:14px;}
+.voting-article .age-growth-compact{--age-columns:62px minmax(0,1fr) 100px 180px;--age-gap:14px;}
 .voting-article .age-growth-scope{font-size:12px;color:var(--secondary);margin:0 0 8px;}
 .voting-article .age-growth-legend{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:12px;margin:0 0 14px;}
 .voting-article .age-growth-legend>span{display:flex;align-items:center;gap:7px;}
@@ -138,7 +138,7 @@
 .voting-article .age-growth-gap{display:flex;flex-direction:column;gap:2px;font-size:11px;line-height:1.4;}
 .voting-article .age-growth-gap strong{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;}
 .voting-article .age-growth-counts{margin:0;display:flex;flex-direction:column;gap:3px;font-size:12px;line-height:1.4;font-variant-numeric:tabular-nums;}
-.voting-article .age-growth-counts>span{display:grid;grid-template-columns:30px minmax(0,1fr);gap:6px;align-items:baseline;}
+.voting-article .age-growth-counts>span{display:grid;grid-template-columns:64px minmax(0,1fr);gap:6px;align-items:baseline;}
 .voting-article .age-growth-counts small{font-size:10px;color:var(--secondary);}
 .voting-article .age-growth-counts>span>span{white-space:nowrap;}
 .voting-article .age-growth-counts a{font-size:11px;}
