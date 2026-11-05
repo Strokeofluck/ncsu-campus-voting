@@ -82,7 +82,12 @@ if not args.summary_only:
     for b,(lo,hi) in enumerate(bands):
      if age is not None and lo<=age<=hi:totals[b][0]+=named;totals[b][1]+=included
     if count%100000==0:print('Verified every original cell, linked field, flag and running sum:',year,count,flush=True)
-  assert count==source['original_records'];assert next(copy,None) is None and next(field,None) is None and next(rules,None) is None
+  assert count==source['original_records'];assert next(copy,None) is None and next(field,None) is None
+  total_row,total_cells=next(rules);end=count+5
+  assert total_row==end+1 and total_cells['A'][0]=='TOTAL' and total_cells['H'][0]=='Total of 1s'
+  for column,want in zip(['I','J'],running):
+   assert total_cells[column]==(want,f'SUM({column}6:{column}{end})')
+  assert next(rules,None) is None
   for b,r in enumerate(expected):assert totals[b]==[r[f'site_ballots_{year}'],r[f'county_ballots_{year}']]
   print('Complete year verified:',year,count,'records',flush=True)
 for n in [1,9,10]:

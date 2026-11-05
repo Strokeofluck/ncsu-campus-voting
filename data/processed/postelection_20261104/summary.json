@@ -1,0 +1,98 @@
+{
+  "as_of": "2026-11-04",
+  "retrieved_utc": "2026-11-05T00:49:01.760711+00:00",
+  "certification_status_2026": "Unofficial",
+  "comparisons": [
+    {
+      "scope": "Wake County",
+      "ballots_2022": 454488,
+      "ballots_2026": 525061,
+      "ballot_change": 70573,
+      "growth_pct": 15.528022742074587,
+      "reported_turnout_pct_2022": 55.86,
+      "reported_turnout_pct_2026": 60.48,
+      "turnout_change_pp": 4.619999999999997,
+      "registered_2022": 813690,
+      "registered_2026": 868114,
+      "precincts_reported_2026": 216,
+      "precincts_total_2026": 216,
+      "status_2022": "Official",
+      "status_2026": "Unofficial",
+      "source_2022": "https://er.ncsbe.gov/enr/20221108/data/county.txt",
+      "source_2026": "https://er.ncsbe.gov/enr/20261103/data/county.txt"
+    },
+    {
+      "scope": "North Carolina",
+      "ballots_2022": 3790202,
+      "ballots_2026": 4223102,
+      "ballot_change": 432900,
+      "growth_pct": 11.421554840612714,
+      "reported_turnout_pct_2022": 51.14,
+      "reported_turnout_pct_2026": 53.56,
+      "turnout_change_pp": 2.4200000000000017,
+      "registered_2022": 7412050,
+      "registered_2026": 7885046,
+      "precincts_reported_2026": 2626,
+      "precincts_total_2026": 2626,
+      "status_2022": "Official",
+      "status_2026": "Unofficial",
+      "source_2022": "https://er.ncsbe.gov/enr/20221108/data/county.txt",
+      "source_2026": "https://er.ncsbe.gov/enr/20261103/data/county.txt"
+    }
+  ],
+  "accepted_method_counts": [
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "method": "Accepted in-person early ballots",
+      "ballots": 219169,
+      "status": "Historical accepted-ballot extract",
+      "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip"
+    },
+    {
+      "year": 2022,
+      "scope": "Wake County",
+      "method": "Accepted mail ballots",
+      "ballots": 36240,
+      "status": "Historical accepted-ballot extract",
+      "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip"
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "method": "Accepted in-person early ballots",
+      "ballots": 334088,
+      "status": "Preliminary",
+      "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip"
+    },
+    {
+      "year": 2026,
+      "scope": "Wake County",
+      "method": "Accepted mail ballots",
+      "ballots": 19334,
+      "status": "Preliminary",
+      "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip"
+    },
+    {
+      "year": 2026,
+      "scope": "North Carolina",
+      "method": "Accepted in-person early ballots",
+      "ballots": 2728716,
+      "status": "Preliminary",
+      "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv"
+    },
+    {
+      "year": 2026,
+      "scope": "North Carolina",
+      "method": "Accepted mail ballots",
+      "ballots": 108142,
+      "status": "Preliminary",
+      "source_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv"
+    }
+  ],
+  "wake_provisional_status": {
+    "PENDING": 547
+  },
+  "election_day_demographics": "Unavailable: 2026 Nov. 3 history_stats not published; current voter history last modified Nov. 2 UTC.",
+  "reconciliation": "Dashboard ballots, accepted absentee extracts and pending provisionals have separate source cutoffs. Do not subtract them to manufacture an Election Day voter count. Contest totals count choices, not unique voters."
+}

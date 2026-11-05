@@ -1,0 +1,7 @@
+year,scope,method,ballots,status,source_url
+2022,Wake County,Accepted in-person early ballots,219169,Historical accepted-ballot extract,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip
+2022,Wake County,Accepted mail ballots,36240,Historical accepted-ballot extract,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip
+2026,Wake County,Accepted in-person early ballots,334088,Preliminary,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip
+2026,Wake County,Accepted mail ballots,19334,Preliminary,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip
+2026,North Carolina,Accepted in-person early ballots,2728716,Preliminary,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv
+2026,North Carolina,Accepted mail ballots,108142,Preliminary,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv

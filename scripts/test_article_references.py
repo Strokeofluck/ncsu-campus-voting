@@ -64,7 +64,7 @@ assert 50/80*60==37.5
 assert 'Wolf Village apartments · 8 / 8 buildings · 0.63 mi closer' in html
 assert article['id']!=prototype['id']
 for key in article['queries']:
- if key not in {'statewide_early_voting_context','article_opening_context'}:assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
+ if key not in {'statewide_early_voting_context','article_opening_context','full_election_context'}:assert article['queries'][key]['rows']==prototype['queries'][key]['rows'],key
 opening=article['queries']['article_opening_context']
 assert len(opening['rows'])==3 and all(r['source_url'] in opening['source']['files'] for r in opening['rows'])
 assert opening['rows'][0]['reported_at']=='2026-11-02' and 'midterm early' in opening['rows'][0]['claim']
@@ -81,5 +81,16 @@ if 'statewide_early_voting_context' in article['queries']:
  assert context['accepted_early_ballots']==2612240 and context['growth_vs_2022_same_day_pct_displayed']==32
  assert context['in_person_ballots']+context['mail_ballots']==context['accepted_early_ballots']
  assert context['ballots_through']=='2026-10-30' and context['election_day']=='2026-11-03'
-assert article['report']['asOf']==prototype['report']['asOf']
+assert article['report']['asOf']=='2026-11-04' and prototype['report']['asOf']=='2026-10-31'
 print('PASS: original aggregate inputs, all five exact growth/gap calculations, matched windows, focused reference scope, local links, and distinct article identity with unchanged evidence.')
+
+full=json.loads((ROOT/'data/processed/postelection_20261104/summary.json').read_text(encoding='utf-8'))
+assert 'id="full-election-data"' in html and '525,061' in html and '4,223,102' in html
+assert 'Election Day age counts are not available yet.' in html
+for actual,want in zip(article['queries']['full_election_context']['rows'],full['comparisons']):
+ for key,value in want.items():assert actual[key]==value
+wake=article['queries']['full_election_context']['rows'][0]
+assert wake['ballots_2022']==454488 and wake['ballots_2026']==525061
+assert wake['early_2026']==334088 and wake['mail_2026']==19334 and wake['mail_2022']==36240
+assert wake['pending_provisionals']==547 and wake['status_2026']=='Unofficial'
+print('PASS: all-method context, accepted mail variants, provisional status and unavailable Election Day ages agree with source aggregates.')

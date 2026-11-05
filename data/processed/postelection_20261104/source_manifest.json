@@ -1,0 +1,140 @@
+[
+  {
+    "file": "county_2026.json",
+    "url": "https://er.ncsbe.gov/enr/20261103/data/county.txt",
+    "http_status": 200,
+    "last_modified": "Wed, 04 Nov 2026 21:14:36 GMT",
+    "bytes": 26951,
+    "sha256": "ae2fe4f65951a8d48731414107944647008b94bda4245a34e922345ba97a5730",
+    "retrieved_utc": "2026-11-05T00:49:01.760711+00:00",
+    "summary": [
+      {
+        "cid": "0",
+        "cnm": "STATE",
+        "tle": "11/03/2026 UNOFFICIAL GENERAL ELECTION RESULTS - STATEWIDE",
+        "prt": "2626",
+        "ptl": "2626",
+        "ppt": "100.00%",
+        "bct": "4223102",
+        "rtl": "7885046",
+        "bpt": "53.56%",
+        "imp": "November 4, 2026 4:13 pm",
+        "sub": "November 4, 2026 4:13 pm",
+        "vwp": "-8 -9 403 166"
+      },
+      {
+        "cid": "92",
+        "cnm": "WAKE",
+        "tle": "11/03/2026 UNOFFICIAL GENERAL ELECTION RESULTS - WAKE",
+        "prt": "216",
+        "ptl": "216",
+        "ppt": "100.00%",
+        "bct": "525061",
+        "rtl": "868114",
+        "bpt": "60.48%",
+        "imp": "November 3, 2026 11:56 pm",
+        "sub": "November 3, 2026 11:58 pm",
+        "vwp": "2320 282 339 315"
+      }
+    ]
+  },
+  {
+    "file": "county_2022.json",
+    "url": "https://er.ncsbe.gov/enr/20221108/data/county.txt",
+    "http_status": 200,
+    "last_modified": "Thu, 01 Dec 2022 20:38:15 GMT",
+    "bytes": 26969,
+    "sha256": "400b1f83a16d63517e3fb19f81fe0e49c1bcfdad2350e6381959561ac8d5d007",
+    "retrieved_utc": "2026-11-05T00:49:01.791991+00:00",
+    "summary": [
+      {
+        "cid": "0",
+        "cnm": "STATE",
+        "tle": "11/08/2022 OFFICIAL GENERAL ELECTION RESULTS - STATEWIDE",
+        "prt": "2655",
+        "ptl": "2655",
+        "ppt": "100.00%",
+        "bct": "3790202",
+        "rtl": "7412050",
+        "bpt": "51.14%",
+        "imp": "November 28, 2022 8:46 pm",
+        "sub": "November 28, 2022 8:46 pm",
+        "vwp": "-8 -9 403 166"
+      },
+      {
+        "cid": "92",
+        "cnm": "WAKE",
+        "tle": "11/08/2022 OFFICIAL GENERAL ELECTION RESULTS - WAKE",
+        "prt": "208",
+        "ptl": "208",
+        "ppt": "100.00%",
+        "bct": "454488",
+        "rtl": "813690",
+        "bpt": "55.86%",
+        "imp": "November 18, 2022 10:03 am",
+        "sub": "November 18, 2022 10:06 am",
+        "vwp": "2320 282 339 315"
+      }
+    ]
+  },
+  {
+    "file": "results_2026.zip",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/results_pct_20261103.zip",
+    "http_status": 200,
+    "last_modified": "Wed, 04 Nov 2026 21:14:49 GMT",
+    "bytes": 2033810,
+    "sha256": "1d542e51b688deef41965adbe59e0e85f136ee16b83f22ceaac7f4e7cc2a09a3",
+    "retrieved_utc": "2026-11-05T00:49:01.988668+00:00",
+    "members": [
+      "results_pct_20261103.txt"
+    ]
+  },
+  {
+    "file": "absentee_counts_county_2026.csv",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_county_20261103.csv",
+    "http_status": 200,
+    "last_modified": "Wed, 04 Nov 2026 09:41:57 GMT",
+    "bytes": 22917354,
+    "sha256": "bd7a7c3d6b668985a8547b724734026c2b011aeacd6190b12dcc107733ab2ea4",
+    "retrieved_utc": "2026-11-05T00:49:02.648822+00:00"
+  },
+  {
+    "file": "absentee_counts_state_2026.csv",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv",
+    "http_status": 200,
+    "last_modified": "Wed, 04 Nov 2026 09:42:00 GMT",
+    "bytes": 204382,
+    "sha256": "f89a9e5b6eb16c39114da1047a6d16348b740c34d1ba19260f6542c9a9b3b75b",
+    "retrieved_utc": "2026-11-05T00:49:01.892606+00:00"
+  },
+  {
+    "file": "provisional_2026.txt",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/provisional_20261103.txt",
+    "http_status": 200,
+    "last_modified": "Wed, 04 Nov 2026 16:00:16 GMT",
+    "bytes": 6066690,
+    "sha256": "a0a38d1f873c82f90ab885fbbefde6488c6add9215a72e2778e323c2d1f29e79",
+    "retrieved_utc": "2026-11-05T00:49:02.880513+00:00"
+  },
+  {
+    "file": "polling_place_2026.csv",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/polling_place_20261103.csv",
+    "http_status": 200,
+    "last_modified": "Sun, 01 Nov 2026 10:25:05 GMT",
+    "bytes": 520024,
+    "sha256": "9b843796315620cdd44b98f6db16ede74fad747fde9b6800111ef34427402cc8",
+    "retrieved_utc": "2026-11-05T00:49:02.094747+00:00"
+  },
+  {
+    "file": "voter_stats_2026.zip",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/voter_stats_20261103.zip",
+    "http_status": 200,
+    "last_modified": "Tue, 03 Nov 2026 21:29:35 GMT",
+    "bytes": 6354056,
+    "sha256": "2de662d51cfb46084b4e02b47f527d164934439c3a20eb905baceb1aac70dbb0",
+    "retrieved_utc": "2026-11-05T00:49:03.607370+00:00",
+    "members": [
+      "voter_stats_20261103.txt"
+    ]
+  }
+]

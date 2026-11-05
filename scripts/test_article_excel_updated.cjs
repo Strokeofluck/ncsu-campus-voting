@@ -28,6 +28,13 @@ for(const year of [2022,2026]){
  const zip=await JSZip.loadAsync(result.bytes),book=await JSZip.loadAsync(await zip.file('02 Working copy/talley-western-growth-step-by-step.xlsx').async('uint8array'));
  for(const s of result.manifest.sources){assert.equal(s.sha256,null);assert.equal(s.matches_article_snapshot,false);assert.equal(s.wake_csv_sha256,Buffer.from(await crypto.subtle.digest('SHA-256',inputs[s.year])).toString('hex'));assert.equal(s.article_snapshot.wake_csv_sha256,sources.find(v=>v.year===s.year).wake_csv_sha256);assert.deepEqual(Buffer.from(await zip.file(`01 Original files/${s.year}/${s.member}`).async('uint8array')),inputs[s.year]);}
  const math=await book.file('xl/worksheets/sheet10.xml').async('string');assert.match(math,/<(?:\w+:)?c r="L6"[^>]*>[\s\S]*?<(?:(?:\w+):)?f>F6-K6<\//);assert.match(math,/>150<\//);
+ for(const [j,source] of result.manifest.sources.entries()){
+  const xml=await book.file(`xl/worksheets/sheet${7+j}.xml`).async('string'),end=source.original_records+5;
+  assert(xml.includes(`SUM(I6:I${end})`));assert(xml.includes(`SUM(J6:J${end})`));
+  assert(xml.includes(`r="I${end+1}"`));assert(xml.includes(`r="J${end+1}"`));
+  assert(xml.includes(`autoFilter ref="A5:L${end}"`),'Filter excludes the totals');
+  assert(!xml.includes(`SUM(K6:K${end})`),'Running totals must not be summed');
+ }
  assert.match(await zip.file('READ FIRST.txt').async('string'),/^UPDATED FILES:/);assert.match(await zip.file('UPDATED RESULTS.txt').async('string'),/Later voting dates are excluded/);assert(zip.file('03 Source checks/updated-calculations.csv'));
  assert.match(await book.file('xl/worksheets/sheet1.xml').async('string'),/UPDATED FILES/);
   assert.equal(expected[0].site_ballots_2026,4639);

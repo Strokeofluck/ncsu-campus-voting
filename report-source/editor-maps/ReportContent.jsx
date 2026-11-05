@@ -4,6 +4,7 @@ import {CampusWalkingMap} from './CampusWalkingMap.jsx';
 import {CampusPassbyMap} from './CampusPassbyMap.jsx';
 import {AgeGrowthChart} from './AgeGrowthChart.jsx';
 import {YoungestBenchmark} from './YoungestBenchmark.jsx';
+import {FullElectionContext} from './FullElectionContext.jsx';
 import './article.css';
 import './editor-maps.css';
 
@@ -13,6 +14,7 @@ export function ReportContent(){
   <div className="editor-maps-title"><RichNarrative id="editor-maps:title" value="# NC State voting visuals"/></div>
   <AgeGrowthChart/>
   <YoungestBenchmark row={youngest}/>
+  <FullElectionContext/>
   <CampusWalkingMap article editorPreview/>
   <CampusPassbyMap article editorPreview/>
  </article>;

@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/history_stats_20261103.zip",
+    "http_status": 404,
+    "checked_utc": "2026-11-05T00:57:28.628526+00:00"
+  },
+  {
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/data/ncvhis_Statewide.zip",
+    "http_status": 200,
+    "last_modified": "Mon, 02 Nov 2026 01:18:00 GMT",
+    "bytes": "351220317",
+    "checked_utc": "2026-11-05T00:57:28.771799+00:00"
+  },
+  {
+    "finding": "2026 general-election demographic voter-history statistics absent from official directory; current statewide voter history predates Election Day. Missing is not zero.",
+    "source": "https://www.ncsbe.gov/results-data/voter-history-data"
+  }
+]

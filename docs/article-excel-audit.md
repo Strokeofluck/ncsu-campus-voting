@@ -35,3 +35,13 @@ The county-share calculation is 3,402 / 13,398 = 25.3918495% and 4,639 / 25,570 
 `python scripts/test_article_excel_export.py /absolute/package.zip` verifies every copied cell, linked field, cached inclusion flag and running sum against the separate original CSVs, then checks counts, growth, share formulas and full-range highlights. `--summary-only` checks finished counts, arithmetic, share formulas and recalculation metadata without repeating every unchanged source row. The browser workflow is also checked with small source fixtures, including range reads, source-hash checks, count mismatch rejection, retry and a real ZIP download.
 
 Full-workbook recalculation in desktop Microsoft Excel was not run. The Artifact Tool boundary fixture was recalculated, including a source-cell edit; the populated export's formula XML and cached results are checked separately.
+
+## Portfolio styling and bottom totals, November 4
+
+The workbook now follows Sean's portfolio palette: white backgrounds, charcoal `#343A40` text, blue `#2780E3` titles, pale-blue source/highlight cues and `#DEE2E6` rules. Light gray column headers replace the navy bands. Raw CSV bytes and the ten-tab calculation structure are preserved.
+
+Each Rules sheet ends with a labeled TOTAL row immediately after its final source record. Column I uses `SUM(I6:I<last detail row>)`; J uses the corresponding SUM over site contributions. K and L remain running totals and are not summed. Filters and conditional highlights stop at the last detail record so the totals stay separate. All ages are included in these sums; age-specific COUNTIFS on the next tab are unchanged.
+
+The source fixture recalculates both SUM totals with Artifact Tool. The full-export verifier checks the bottom-row formulas and cached sums against every original source record, including excluded records. Updated-file fixtures check that row bounds follow the actual input length. Browser assets have new version keys so fresh downloads use the revised template and totals.
+
+The Excel age comparison still covers in-person early voting only. Separately labeled all-method results, accepted mail, provisional status and Election Day contest-vote files are available in `data/processed/postelection_20261104/` and its aggregate-only download. Election Day age statistics had not been published at this pull.

@@ -1,0 +1,3 @@
+scope,ballots_2022,ballots_2026,ballot_change,growth_pct,reported_turnout_pct_2022,reported_turnout_pct_2026,turnout_change_pp,registered_2022,registered_2026,precincts_reported_2026,precincts_total_2026,status_2022,status_2026,source_2022,source_2026
+Wake County,454488,525061,70573,15.528022742074587,55.86,60.48,4.619999999999997,813690,868114,216,216,Official,Unofficial,https://er.ncsbe.gov/enr/20221108/data/county.txt,https://er.ncsbe.gov/enr/20261103/data/county.txt
+North Carolina,3790202,4223102,432900,11.421554840612714,51.14,53.56,2.4200000000000017,7412050,7885046,2626,2626,Official,Unofficial,https://er.ncsbe.gov/enr/20221108/data/county.txt,https://er.ncsbe.gov/enr/20261103/data/county.txt

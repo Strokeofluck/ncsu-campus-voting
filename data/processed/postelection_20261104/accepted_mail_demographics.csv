@@ -1,0 +1,48 @@
+year,scope,dimension,value,accepted_mail_ballots
+2022,Wake County,age_group,18–24,4368
+2022,Wake County,age_group,25–34,5192
+2022,Wake County,age_group,35–44,4751
+2022,Wake County,age_group,45–64,9490
+2022,Wake County,age_group,65+,12439
+2022,Wake County,ethnicity,HISPANIC or LATINO,919
+2022,Wake County,ethnicity,NOT HISPANIC or NOT LATINO,25634
+2022,Wake County,ethnicity,UNDESIGNATED,9687
+2022,Wake County,gender,F,19186
+2022,Wake County,gender,M,14225
+2022,Wake County,gender,U,2829
+2022,Wake County,race,ASIAN,2125
+2022,Wake County,race,BLACK or AFRICAN AMERICAN,3051
+2022,Wake County,race,INDIAN AMERICAN or ALASKA NATIVE,93
+2022,Wake County,race,OTHER,1353
+2022,Wake County,race,TWO or MORE RACES,252
+2022,Wake County,race,UNDESIGNATED,3117
+2022,Wake County,race,WHITE,26249
+2022,Wake County,voter_party_code,DEM,15079
+2022,Wake County,voter_party_code,GRE,2
+2022,Wake County,voter_party_code,LIB,127
+2022,Wake County,voter_party_code,REP,5332
+2022,Wake County,voter_party_code,UNA,15700
+2026,Wake County,age_group,18–24,2549
+2026,Wake County,age_group,25–34,2291
+2026,Wake County,age_group,35–44,2204
+2026,Wake County,age_group,45–64,4736
+2026,Wake County,age_group,65+,7554
+2026,Wake County,ethnicity,HISPANIC or LATINO,594
+2026,Wake County,ethnicity,NOT HISPANIC or NOT LATINO,12616
+2026,Wake County,ethnicity,UNDESIGNATED,6124
+2026,Wake County,gender,F,10025
+2026,Wake County,gender,M,7675
+2026,Wake County,gender,U,1634
+2026,Wake County,race,ASIAN,1317
+2026,Wake County,race,BLACK or AFRICAN AMERICAN,1661
+2026,Wake County,race,INDIAN AMERICAN or ALASKA NATIVE,46
+2026,Wake County,race,NATIVE HAWAIIAN or PACIFIC ISLANDER,2
+2026,Wake County,race,OTHER,913
+2026,Wake County,race,TWO or MORE RACES,122
+2026,Wake County,race,UNDESIGNATED,1944
+2026,Wake County,race,WHITE,13329
+2026,Wake County,voter_party_code,DEM,7728
+2026,Wake County,voter_party_code,GRE,14
+2026,Wake County,voter_party_code,LIB,44
+2026,Wake County,voter_party_code,REP,2659
+2026,Wake County,voter_party_code,UNA,8889

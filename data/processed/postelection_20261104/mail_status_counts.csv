@@ -1,0 +1,20 @@
+year,scope,mail_status,records,included_in_accepted_mail
+2022,Wake County,,7294,False
+2022,Wake County,ACCEPTED,36161,True
+2022,Wake County,ACCEPTED - CURED,79,True
+2022,Wake County,PENDING CURE,34,False
+2022,Wake County,RETURNED AFTER DEADLINE,206,False
+2022,Wake County,SIGNATURE DIFFERENT,3,False
+2022,Wake County,SPOILED,4486,False
+2022,Wake County,WITNESS INFO INCOMPLETE,196,False
+2026,Wake County,,5172,False
+2026,Wake County,ACCEPTED,17496,True
+2026,Wake County,ACCEPTED - CURED,354,True
+2026,Wake County,ACCEPTED - EXCEPTION,1484,True
+2026,Wake County,NOT PROPERLY NOTARIZED,2,False
+2026,Wake County,PENDING,14,False
+2026,Wake County,PENDING CURE,159,False
+2026,Wake County,RETURNED UNDELIVERABLE,35,False
+2026,Wake County,SPOILED,743,False
+2026,Wake County,SPOILED-EV,3477,False
+2026,Wake County,WITNESS INFO INCOMPLETE,281,False

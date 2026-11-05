@@ -1,8 +1,8 @@
 /* The download is generated on the reader's computer from official files. */
-importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','article-excel-plan.js?v=1','article-excel-export.js?v=full17');
+importScripts('csv-viewer-worker.js','vendor/pako.min.js','vendor/jszip.min.js','csv-zip-stream.js','article-excel-plan.js?v=1','article-excel-export.js?v=portfolio-sums-1');
 onmessage=async({data})=>{
  try{
-  const response=await fetch('article-excel-template.json?v=full17');if(!response.ok)throw Error('Excel template unavailable');
+  const response=await fetch('article-excel-template.json?v=portfolio-sums-1');if(!response.ok)throw Error('Excel template unavailable');
   const t=await response.json(),bytes=Uint8Array.from(atob(t.base64),c=>c.charCodeAt(0));
   const readSource=data.originals?async source=>new Uint8Array(await data.originals[source.year].arrayBuffer()):wakeBytes;
   const mode=data.mode==='snapshot'?'snapshot':'updated';

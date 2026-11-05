@@ -28,7 +28,7 @@
    const [figures,context]=await Promise.all([get('data/processed/comparison/figure_sources.json'),get('data/processed/comparison/comparison.json')]);
    const sources=[2022,2026].map(year=>figures.records[`summary-${year}-campus-site-all-ages`].sources[0]);
    const expected=JSON.parse(document.getElementById('reference-data').textContent).rows;
-   worker=new Worker('article-excel-worker.js?v=full17');
+   worker=new Worker('article-excel-worker.js?v=portfolio-sums-1');
    worker.onmessage=({data})=>{
     if(data.type==='status')status.textContent=data.text;
     if(data.type==='export-error')fail(data.message,data.code);

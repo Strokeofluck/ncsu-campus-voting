@@ -15,16 +15,16 @@ const context=JSON.parse(await fs.readFile(root+'/data/processed/comparison/comp
 const wb=Workbook.create();for(const name of Plan.names)wb.worksheets.add(name);
 const sheet=name=>wb.worksheets.getItem(name),set=(s,r,v)=>s.getRange(r).values=v;
 function setup(s,title,cols){
- s.showGridLines=false;s.getRange(`A1:${cols}24`).format.font={name:'Arial',size:10,color:'#202B35'};
+ s.showGridLines=false;s.getRange(`A1:${cols}24`).format.font={name:'Arial',size:10,color:'#343A40'};
  s.getRange(`A1:${cols}24`).format.verticalAlignment='center';s.getRange(`A1:${cols}24`).format.rowHeight=23;
- s.getRange(`A:${cols}`).format.columnWidth=20;set(s,'A2',[[title]]);s.getRange('A2').format.font={name:'Arial',size:15,bold:true};
+ s.getRange(`A:${cols}`).format.columnWidth=20;set(s,'A2',[[title]]);s.getRange('A2').format.font={name:'Arial',size:15,bold:true,color:'#2780E3'};
 }
-function head(s,labels){set(s,`A5:${String.fromCharCode(64+labels.length)}5`,[labels]);s.getRange(`A5:${String.fromCharCode(64+labels.length)}5`).format={fill:'#273D52',font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},wrapText:true,rowHeight:42,horizontalAlignment:'center',verticalAlignment:'center'};s.freezePanes.freezeRows(5);}
+function head(s,labels){set(s,`A5:${String.fromCharCode(64+labels.length)}5`,[labels]);s.getRange(`A5:${String.fromCharCode(64+labels.length)}5`).format={fill:'#F8F9FA',font:{name:'Arial',size:10,bold:true,color:'#343A40'},wrapText:true,rowHeight:42,horizontalAlignment:'center',verticalAlignment:'center'};s.freezePanes.freezeRows(5);}
 const result=sheet('Growth gaps');setup(result,'Talley to Western Boulevard: growth gaps','H');head(result,['Age group','Talley to Western growth (%)','Wake growth (%)','Gap (percentage points)']);
-result.getRange('A:D').format.columnWidth=25;result.tabColor='#273D52';
+result.getRange('A:D').format.columnWidth=25;result.tabColor='#2780E3';
 set(result,'A3',[[`Full ${context.matched_days}-day early-voting periods. 2022 at Talley; 2026 at Western Boulevard.`]]);
 for(let i=0;i<5;i++){let r=i+6;set(result,`A${r}`,[[Plan.bands[i][2]]]);result.getRange(`B${r}:D${r}`).formulas=[[`='4 Growth math'!F${r}`,`='4 Growth math'!K${r}`,`='4 Growth math'!L${r}`]];}
-result.getRange('B6:D10').setNumberFormat('0.0');result.getRange('D6:D10').conditionalFormats.addCustom('D6<0',{fill:'#FFE3C7'});result.getRange('D6:D10').conditionalFormats.addCustom('D6>0',{fill:'#D8EAF4'});
+result.getRange('B6:D10').setNumberFormat('0.0');result.getRange('D6:D10').conditionalFormats.addCustom('D6<0',{fill:'#F2F7FD'});result.getRange('D6:D10').conditionalFormats.addCustom('D6>0',{fill:'#EAF3FE'});
 set(result,'A13',[['Read tabs left to right: original files, full copies, selected fields, rule flags, counts, then growth math.']]);
 set(result,'A15',[[`2026 is preliminary through ${context.as_of}. Age is not verified student status.`]]);
 set(result,'A16',[['Wake includes Talley / Western Boulevard. These are ballot counts, not turnout rates.']]);
@@ -42,12 +42,18 @@ for(const [j,year] of Plan.years.entries()){
  const r=j+6;set(meta,`A${r}:I${r}`,[[year,source.member,'Open untouched CSV',m.site,Plan.serial(m.start_date),Plan.serial(m.end_date),raw.length,source.wake_csv_sha256,'Official NCSBE archive']]);
  meta.getRange(`C${r}`).formulas=[[`=HYPERLINK("../01 Original files/${year}/${source.member}","Open untouched CSV")`]];
  meta.getRange(`I${r}`).formulas=[[`=HYPERLINK("${source.url}","Official NCSBE archive")`]];
- const copy=sheet('Copy '+year);copy.showGridLines=false;copy.getRange('A:AP').format.columnWidth=21;set(copy,'A1',[headers,...raw]);copy.getRange('A1:AP1').format={fill:'#273D52',font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},wrapText:true,rowHeight:46};copy.getRange(`A2:AP${raw.length+1}`).setNumberFormat('@');copy.freezePanes.freezeRows(1);
- for(const f of Plan.fields){const c=String.fromCharCode(65+headers.indexOf(f)%26);const index=headers.indexOf(f),col=index<26?c:'A'+c;copy.getRange(`${col}1`).format={fill:'#FFE9A8',font:{name:'Arial',size:10,bold:true,color:'#202B35'}};}
- const field=sheet('1 Fields '+year);setup(field,'Step 1: link the six source fields','G');head(field,['Original CSV record',...Plan.fields]);field.getRange('F:F').format.columnWidth=47;field.getRange('B:G').format.columnWidth=24;field.getRange('F:F').format.columnWidth=47;set(field,'A3',[['All original records remain in order. Yellow headers identify the six fields used.']]);field.getRange('B5:G5').format={fill:'#FFE9A8',font:{name:'Arial',size:10,bold:true,color:'#202B35'}};
- const rules=sheet('2 Rules '+year);setup(rules,'Step 2: test each record','L');head(rules,['Original CSV record','WAKE? 1=yes','Early type?','Accepted?','Parsed date','Matched dates?','Parsed age','Named location?','County adds 1','Named site adds 1','County running SUM','Site running SUM']);set(rules,'A3',[['Each test is an Excel formula. Green contributions count county ballots; amber marks Talley / Western ballots.']]);
+ const copy=sheet('Copy '+year);copy.showGridLines=false;copy.getRange('A:AP').format.columnWidth=21;set(copy,'A1',[headers,...raw]);copy.getRange('A1:AP1').format={fill:'#F8F9FA',font:{name:'Arial',size:10,bold:true,color:'#343A40'},wrapText:true,rowHeight:46};copy.getRange(`A2:AP${raw.length+1}`).setNumberFormat('@');copy.freezePanes.freezeRows(1);
+ for(const f of Plan.fields){const c=String.fromCharCode(65+headers.indexOf(f)%26);const index=headers.indexOf(f),col=index<26?c:'A'+c;copy.getRange(`${col}1`).format={fill:'#EAF3FE',font:{name:'Arial',size:10,bold:true,color:'#343A40'}};}
+ const field=sheet('1 Fields '+year);setup(field,'Step 1: link the six source fields','G');head(field,['Original CSV record',...Plan.fields]);field.getRange('F:F').format.columnWidth=47;field.getRange('B:G').format.columnWidth=24;field.getRange('F:F').format.columnWidth=47;set(field,'A3',[['All original records remain in order. Blue headers identify the six fields used.']]);field.getRange('B5:G5').format={fill:'#EAF3FE',font:{name:'Arial',size:10,bold:true,color:'#343A40'}};
+ const rules=sheet('2 Rules '+year);setup(rules,'Step 2: test each record','L');head(rules,['Original CSV record','WAKE? 1=yes','Early type?','Accepted?','Parsed date','Matched dates?','Parsed age','Named location?','County adds 1','Named site adds 1','County running SUM','Site running SUM']);set(rules,'A3',[['Each test is an Excel formula. Light blue counts county ballots; darker blue marks Talley / Western. Totals below sum the 1s.']]);
  for(let i=0;i<raw.length;i++){const r=i+6,record=i+2;set(field,`A${r}`,[[record]]);field.getRange(`B${r}:G${r}`).formulas=[Plan.fields.map(f=>{let n=headers.indexOf(f)+1,c='';while(n){c=String.fromCharCode(65+(n-1)%26)+c;n=Math.floor((n-1)/26);}const ref=`'Copy ${year}'!${c}${record}`;return `=IF(${ref}="","",${ref})`;} )];rules.getRange(`A${r}:L${r}`).formulas=[Plan.rules(year,r)];}
- rules.getRange(`E6:E${raw.length+5}`).setNumberFormat('mm/dd/yyyy');rules.getRange(`I6:I${raw.length+5}`).conditionalFormats.addCustom('I6=1',{fill:'#DDEDDD'});rules.getRange(`J6:J${raw.length+5}`).conditionalFormats.addCustom('J6=1',{fill:'#FFE9A8'});
+ rules.getRange(`E6:E${raw.length+5}`).setNumberFormat('mm/dd/yyyy');rules.getRange(`I6:I${raw.length+5}`).conditionalFormats.addCustom('I6=1',{fill:'#F2F7FD'});rules.getRange(`J6:J${raw.length+5}`).conditionalFormats.addCustom('J6=1',{fill:'#DCEBFC'});
+ rules.getRange(`I6:L${raw.length+5}`).setNumberFormat('#,##0');
+ const totalRow=raw.length+6;
+ set(rules,`A${totalRow}:L${totalRow}`,[['TOTAL','','','','','','','Total of 1s',null,null,'','']]);
+ rules.getRange(`I${totalRow}:J${totalRow}`).formulas=[[`=SUM(I6:I${totalRow-1})`,`=SUM(J6:J${totalRow-1})`]];
+ rules.getRange(`A${totalRow}:L${totalRow}`).format={fill:'#F2F7FD',font:{name:'Arial',size:10,bold:true,color:'#343A40'},borders:{top:{style:'thin',color:'#2780E3'}},rowHeight:28};
+ rules.getRange(`I${totalRow}:J${totalRow}`).setNumberFormat('#,##0');
 }
 meta.getRange('E6:F7').setNumberFormat('mm/dd/yyyy');meta.getRange('A6:A7').setNumberFormat('0');
 const counts=sheet('3 Counts');setup(counts,'Step 3: count each age group','G');head(counts,['Age group','Talley 2022','Western 2026','Wake 2022','Wake 2026','Age minimum','Age maximum']);set(counts,'A3',[['COUNTIFS reads each rule flag and numeric age. Bounds are inclusive.']]);
@@ -61,13 +67,15 @@ counts.getRange('B6:G10').setNumberFormat('#,##0');math.getRange('B6:D10').setNu
 set(math,'A13',[['Countywide share of early ballots from ages 18–24']]);set(math,'A14:D14',[['Year and location','Location ballots','All Wake ages 18–24','Location / Wake']]);
 set(math,'A15',[['2022 Talley']]);set(math,'A16',[['2026 Western Boulevard']]);set(math,'A17',[['Change (percentage points)']]);
 math.getRange('B15:D15').formulas=[["=B6","=G6","=B15/C15"]];math.getRange('B16:D16').formulas=[["=C6","=H6","=B16/C16"]];math.getRange('D17').formulas=[['=(D16-D15)*100']];
-math.getRange('A14:D14').format={fill:'#273D52',font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},wrapText:true,rowHeight:42};math.getRange('B15:C16').setNumberFormat('#,##0');math.getRange('D15:D16').setNumberFormat('0.0%');math.getRange('D17').setNumberFormat('0.0');math.getRange('A:A').format.columnWidth=31;
+math.getRange('A14:D14').format={fill:'#F8F9FA',font:{name:'Arial',size:10,bold:true,color:'#343A40'},wrapText:true,rowHeight:42};math.getRange('B15:C16').setNumberFormat('#,##0');math.getRange('D15:D16').setNumberFormat('0.0%');math.getRange('D17').setNumberFormat('0.0');math.getRange('A:A').format.columnWidth=31;
+for(const name of Plan.names){const s=sheet(name),raw=name.startsWith('Copy'),last=raw?'AP':name==='0 Sources'?'I':name==='Growth gaps'?'D':name.startsWith('1 Fields')||name==='3 Counts'?'G':'L';s.getRange(`A${raw?1:5}:${last}${raw?1:5}`).format.borders={bottom:{style:'thin',color:'#DEE2E6'}};if(raw)s.getRange(`A2:AP${datasets.find(d=>name.endsWith(String(d.year))).raw.length+1}`).format.font={name:'Arial',size:10,color:'#343A40'};}
 wb.recalculate();
+for(const d of datasets){const s=sheet('2 Rules '+d.year),r=d.raw.length+6;const totals=s.getRange(`I${r}:J${r}`).values[0];if(totals[0]!==d.raw.length-2||totals[1]!==Math.floor((d.raw.length-2)/2))throw Error('SUM totals failed');}
 let baseline=result.getRange('B6:D10').values;for(const row of baseline)if(Math.abs(row[0]-100)>1e-8||Math.abs(row[1]-100)>1e-8||Math.abs(row[2])>1e-8)throw Error('Fixture math failed '+JSON.stringify(baseline));
 const copy=sheet('Copy 2022'),ageIndex=headers.indexOf('age');let ageCol='';for(let n=ageIndex+1;n;n=Math.floor((n-1)/26))ageCol=String.fromCharCode(65+(n-1)%26)+ageCol;
 copy.getRange(ageCol+'2').values=[['25']];wb.recalculate();if(result.getRange('B6').values[0][0]===baseline[0][0])throw Error('Copied age edit did not update growth');copy.getRange(ageCol+'2').values=[['18']];wb.recalculate();
 console.log((await wb.inspect({kind:'table',range:'Growth gaps!A5:D10',include:'values,formulas',tableMaxRows:6,tableMaxCols:4,maxChars:1500})).ndjson);
-for(const name of Plan.names){const blob=await wb.render({sheetName:name,range:name.startsWith('Copy')?'A1:G5':name==='0 Sources'?'A2:G7':name.includes('Rules')?'A2:L10':name.includes('math')?'A2:L18':'A2:G11',scale:1,format:'png'});await fs.writeFile(out+'/excel-'+name.replaceAll(' ','-')+'.png',new Uint8Array(await blob.arrayBuffer()));}
+for(const name of Plan.names){const blob=await wb.render({sheetName:name,range:name.startsWith('Copy')?'A1:G5':name==='0 Sources'?'A2:G7':name.includes('Rules')?`H${datasets.find(d=>name.endsWith(String(d.year))).raw.length+3}:L${datasets.find(d=>name.endsWith(String(d.year))).raw.length+6}`:name.includes('math')?'A2:L18':'A2:G11',scale:1,format:'png'});await fs.writeFile(out+'/excel-'+name.replaceAll(' ','-')+'.png',new Uint8Array(await blob.arrayBuffer()));}
 await (await SpreadsheetFile.exportXlsx(wb)).save(out+'/article-excel-template.xlsx');
 const bytes=await fs.readFile(out+'/article-excel-template.xlsx');await fs.writeFile(root+'/article-excel-template.json',JSON.stringify({version:1,names:Plan.names,base64:bytes.toString('base64')}));
 console.log('Created and recalculated ten-tab Excel template; copied-age edit propagates through counts and growth.');
