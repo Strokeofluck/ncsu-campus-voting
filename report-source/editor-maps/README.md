@@ -1,6 +1,6 @@
 # Visual editor preview
 
-`editor-preview.html` opens `editor-maps/index.html?view=1`. This independent Data report presents the original walking-distance and routine-route maps, followed by the five-age growth chart and the college-age actual-versus-county-share benchmark. It is intended for sharing with interviewees. Article narrative, byline and election opening are omitted. Chart captions, source links, map controls, numeric summaries, legends and evidence actions are retained.
+`editor-preview.html` opens `editor-maps/index.html?view=1`. This independent Data report presents the five-age growth chart first, then the college-age actual-versus-county-share benchmark, followed by the original walking-distance and routine-route maps. It is intended for sharing with interviewees. The Technician masthead and section links, article narrative, byline and election opening are omitted. Chart captions, source links, map controls, numeric summaries, legends and evidence actions are retained.
 
 The permanent app ID is stored in `identity.json`. `scripts/prepare_editor_maps.py --project-dir <prepared-project>` copies the current article’s reviewed evidence and shared map dependencies, then applies this composition while preserving the preview’s independent identity. Build with the installed Data compiler using `--separate-data`, and package with `python scripts/package_editor_maps.py --dist <project>/dist`.
 
