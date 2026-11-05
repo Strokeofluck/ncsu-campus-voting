@@ -19,7 +19,7 @@ export function AgeGrowthChart(){
     <div className="age-growth-gap"><strong>{Math.abs(row.site_growth_gap_pp).toFixed(1)} pp</strong><span><span className={row.site_growth_gap_pp<0?'growth-behind':'growth-ahead'}>{row.site_growth_gap_pp<0?'behind':'ahead'}</span> {row.site_growth_gap_pp<0?'Wake':'of Wake'}</span></div>
     <p className="age-growth-counts"><span>{n(row.site_ballots_2022)} → {n(row.site_ballots_2026)}</span></p>
    </section>)}</div>
-   <figcaption>pp = percentage points. Each age group is compared with Wake’s growth in that same age group; Wake includes the named site. All counts increased. Election Day and mail ballots are excluded. These are ballot counts, not turnout rates or verified student enrollment. Matched periods: October 20–November 5, 2022, and October 15–31, 2026 (preliminary). Source: NCSBE. Hover or focus a bar for counts and its calculation. <a href="../references.html?v=20261104full17#math">Counts and worked calculations →</a></figcaption>
+   <figcaption>pp = percentage points. Each age group is compared with Wake’s growth in that same age group; Wake includes the named site. All counts increased. Election Day and mail ballots are excluded from this comparison. We’re awaiting finalized full-election data, including Election Day counts by age, before expanding the analysis. These are ballot counts, not turnout rates or verified student enrollment. Matched periods: October 20–November 5, 2022, and October 15–31, 2026 (preliminary). Source: NCSBE. Hover or focus a bar for counts and its calculation. <a href="../references.html?v=20261104full17#math">Counts and worked calculations →</a></figcaption>
   </figure>
  </DataComponent></section>;
 }

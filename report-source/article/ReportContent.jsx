@@ -27,7 +27,7 @@ Early ballots cast by voters ages **18–24** grew **36.4%** from **Talley Stude
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/). The comparison describes changes in ballot counts and site use; it does not isolate the relocation’s effect.`}/></ReportSection>
   <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`The campus-site count for ages 18–24 increased from **3,402 to 4,639**, while Wake’s increased from **13,398 to 25,570**. The location’s share of Wake’s early ballots in that age group fell from **25.4% to 18.1%**.
 
-*Accepted in-person early ballots across all 17 days: October 20–November 5, 2022, and October 15–31, 2026. Downloaded November 4; 2026 remains preliminary. Election Day and mail ballots are excluded. Ages 18–24 do not verify student enrollment.*`}/></ReportSection>
+*Accepted in-person early ballots across all 17 days: October 20–November 5, 2022, and October 15–31, 2026. Downloaded November 4; 2026 remains preliminary. Election Day and mail ballots are excluded from this comparison. We’re awaiting finalized full-election data, including Election Day counts by age, before expanding the analysis. Ages 18–24 do not verify student enrollment.*`}/></ReportSection>
   <AgeGrowthChart/>
   {otherAges}
   <YoungestBenchmark row={youngest}/>
