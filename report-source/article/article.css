@@ -161,12 +161,3 @@
 @media(min-width:1000px){.voting-article h1{font-size:clamp(28px,2.55vw,36px);white-space:nowrap;letter-spacing:-.025em;}}
 
 .voting-article .report-narrative-section:has(h1) .rich-narrative-content>h1+p{font-size:18px;line-height:1.45;color:var(--secondary);margin-top:10px;margin-bottom:20px;}
-/* All-method results are distinct from the early-voting age comparison. */
-.voting-article .full-election-context{margin:2rem auto;width:min(800px,100%);min-width:0}
-.voting-article .full-election-body{width:100%;margin-inline:auto}
-.voting-article .full-election-table{overflow-x:auto;margin:1rem 0}
-.voting-article .full-election-table table{width:100%;border-collapse:collapse;font:400 .88rem/1.45 Arial,sans-serif;color:var(--text)}
-.voting-article .full-election-table caption{text-align:left;color:var(--secondary);font-size:.78rem;margin-bottom:.6rem}
-.voting-article .full-election-table th,.voting-article .full-election-table td{padding:.65rem .5rem;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap}
-.voting-article .full-election-table th:first-child{text-align:left;white-space:normal}
-.voting-article .full-election-note{font-size:.8rem;line-height:1.5;color:var(--secondary)}

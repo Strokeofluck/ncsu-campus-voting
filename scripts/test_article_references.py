@@ -81,7 +81,7 @@ if 'statewide_early_voting_context' in article['queries']:
  assert context['accepted_early_ballots']==2612240 and context['growth_vs_2022_same_day_pct_displayed']==32
  assert context['in_person_ballots']+context['mail_ballots']==context['accepted_early_ballots']
  assert context['ballots_through']=='2026-10-30' and context['election_day']=='2026-11-03'
-assert article['report']['asOf']=='2026-11-04' and prototype['report']['asOf']=='2026-10-31'
+assert article['report']['asOf']==prototype['report']['asOf']=='2026-11-04'
 print('PASS: original aggregate inputs, all five exact growth/gap calculations, matched windows, focused reference scope, local links, and distinct article identity with unchanged evidence.')
 
 full=json.loads((ROOT/'data/processed/postelection_20261104/summary.json').read_text(encoding='utf-8'))

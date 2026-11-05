@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CampusPassbyMap } from './CampusPassbyMap.jsx';
 import { CampusWalkingMap } from './CampusWalkingMap.jsx';
 import { SiteAgeMaps } from './SiteAgeMaps.jsx';
+import { FullElectionContext } from './FullElectionContext.jsx';
 import './site-map-prototype.css';
 import { GeographyExplorer } from './GeographyExplorer.jsx';
 import { AgeDistribution } from './AgeDistribution.jsx';
@@ -305,5 +306,6 @@ For a stronger impact analysis, complete early voting and include finalized mail
 
 [Data, archive hashes and reporting methods](https://github.com/Strokeofluck/ncsu-campus-voting/blob/main/docs/2026-early-voting-update.md) · [Downloadable aggregate tables](https://github.com/Strokeofluck/ncsu-campus-voting/tree/main/data/processed/comparison)`}/>
   </ReportSection>
+  <FullElectionContext/>
  </article>;
 }

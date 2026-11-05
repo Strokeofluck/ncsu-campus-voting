@@ -1,0 +1,9 @@
+.voting-report .full-election-context{margin:2rem auto;width:min(800px,100%);min-width:0}
+.voting-report .full-election-body{width:100%;margin-inline:auto}
+.voting-report .full-election-context .age-growth-scope{font-size:12px;color:var(--secondary);margin:0 0 8px}
+.voting-report .full-election-table{overflow-x:auto;margin:1rem 0}
+.voting-report .full-election-table table{width:100%;border-collapse:collapse;font:400 .88rem/1.45 Arial,sans-serif;color:var(--text)}
+.voting-report .full-election-table caption{text-align:left;color:var(--secondary);font-size:.78rem;margin-bottom:.6rem}
+.voting-report .full-election-table th,.voting-report .full-election-table td{padding:.65rem .5rem;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap}
+.voting-report .full-election-table th:first-child{text-align:left;white-space:normal}
+.voting-report .full-election-note{font-size:.8rem;line-height:1.5;color:var(--secondary)}

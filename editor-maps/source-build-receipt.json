@@ -1,7 +1,7 @@
 {
   "buildKind": "authorized-source-build",
-  "htmlSha256": "97146e593469cdcba20ce02d239597924cb0cfcd93a2ca4de6f0c3799fcfc85a",
-  "reviewedSnapshotSha256": "a4fcd2de09b32bd6e12c5db3a3dfedea22a112d9321323e358d444a73d5493c2",
+  "htmlSha256": "283f6b25b1490397bc1be30fe715f67e626edd38b0f10996b2ef2fab2b59a3d0",
+  "reviewedSnapshotSha256": "bc3dc97b55c30f293155b6f231e9365ca706588eaa0cd329da4ec514922ae36b",
   "protectedRuntimeManifestSha256": "dc18d336f2adcc8d294c67700df8888f6667b6b26ce413c8eaf2ce70731380dc",
   "authorizedRuntimeFiles": [
     "src/DataAppShell.jsx"

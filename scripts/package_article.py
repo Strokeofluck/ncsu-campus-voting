@@ -14,7 +14,7 @@ def package(dist,target):
    if stale.name==manifest['snapshot']['path']:continue
    tracked=subprocess.run(['git','ls-files','--error-unmatch','--',str(stale.relative_to(ROOT))],cwd=ROOT,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
    if not tracked:stale.unlink()
- print('Packaged verified article build:',target)
+ print('Packaged verified Data app build:',target)
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--dist',type=Path,required=True);p.add_argument('--preview-root',type=Path)
  args=p.parse_args();package(args.dist,ROOT/'article')

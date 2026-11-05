@@ -553209,6 +553209,88 @@
           }
         ]
       }
+    },
+    "full_election_context": {
+      "rows": [
+        {
+          "scope": "Wake County",
+          "ballots_2022": 454488,
+          "ballots_2026": 525061,
+          "ballot_change": 70573,
+          "growth_pct": 15.528022742074587,
+          "reported_turnout_pct_2022": 55.86,
+          "reported_turnout_pct_2026": 60.48,
+          "turnout_change_pp": 4.619999999999997,
+          "registered_2022": 813690,
+          "registered_2026": 868114,
+          "precincts_reported_2026": 216,
+          "precincts_total_2026": 216,
+          "status_2022": "Official",
+          "status_2026": "Unofficial",
+          "source_2022": "https://er.ncsbe.gov/enr/20221108/data/county.txt",
+          "source_2026": "https://er.ncsbe.gov/enr/20261103/data/county.txt",
+          "early_2022": 219169,
+          "mail_2022": 36240,
+          "early_2026": 334088,
+          "mail_2026": 19334,
+          "pending_provisionals": 547
+        },
+        {
+          "scope": "North Carolina",
+          "ballots_2022": 3790202,
+          "ballots_2026": 4223102,
+          "ballot_change": 432900,
+          "growth_pct": 11.421554840612714,
+          "reported_turnout_pct_2022": 51.14,
+          "reported_turnout_pct_2026": 53.56,
+          "turnout_change_pp": 2.4200000000000017,
+          "registered_2022": 7412050,
+          "registered_2026": 7885046,
+          "precincts_reported_2026": 2626,
+          "precincts_total_2026": 2626,
+          "status_2022": "Official",
+          "status_2026": "Unofficial",
+          "source_2022": "https://er.ncsbe.gov/enr/20221108/data/county.txt",
+          "source_2026": "https://er.ncsbe.gov/enr/20261103/data/county.txt"
+        }
+      ],
+      "source": {
+        "label": "NCSBE all-method ballot totals and accepted early/mail extracts, November 4 pull",
+        "provider": "North Carolina State Board of Elections",
+        "executedAt": "2026-11-05T00:49:01.760711+00:00",
+        "period": "2022 and 2026 general elections; all-method results through November 4, 2026",
+        "files": [
+          "https://er.ncsbe.gov/enr/20221108/data/county.txt",
+          "https://er.ncsbe.gov/enr/20261103/data/county.txt",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_county_20221108.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_county_20261103.zip",
+          "https://www.ncsbe.gov/results-data/voter-history-data"
+        ],
+        "filters": [
+          "Dashboard bct = ballots cast; rtl = registered voters; bpt = reported turnout",
+          "Absentee county = WAKE; early status = ACCEPTED; mail status starts with ACCEPTED"
+        ],
+        "caveats": [
+          "2022 official; 2026 unofficial. Precincts reported is not certification.",
+          "Unavailable: 2026 Nov. 3 history_stats not published; current voter history last modified Nov. 2 UTC.",
+          "Dashboard ballots, accepted absentee extracts and pending provisionals have separate source cutoffs. Do not subtract them to manufacture an Election Day voter count. Contest totals count choices, not unique voters."
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Source hashes and dates",
+            "detail": "data/processed/postelection_20261104/source_manifest.json"
+          },
+          {
+            "title": "Reproduce aggregate tables",
+            "detail": "scripts/build_full_election_context.py; 2026 Wake accepted early/mail totals independently reconcile to published absentee aggregates."
+          }
+        ]
+      },
+      "methods": {
+        "description": "Dashboard ballots, accepted absentee extracts and pending provisionals have separate source cutoffs. Do not subtract them to manufacture an Election Day voter count. Contest totals count choices, not unique voters."
+      }
     }
   },
   "comparison": {
@@ -566570,7 +566652,7 @@
   },
   "id": "report:280801c5-2e0b-43cf-b10c-322b5c90a10e",
   "report": {
-    "asOf": "2026-10-31"
+    "asOf": "2026-11-04"
   },
   "exportPreferences": {
     "selected": null,
@@ -573262,5 +573344,6 @@
       "name": "James B Hunt Jr Centennial Campus Library",
       "use_name": "Library"
     }
-  }
+  },
+  "authoredRevision": 1
 }

@@ -6,7 +6,7 @@ The permanent app ID is stored in `identity.json`. `scripts/prepare_editor_maps.
 
 The preview follows the retained Technician article’s 800px story column and 44px desktop headline. Chart reference links open the worked calculations. Map-provider credits and source qualifications remain visible as plain text; source evidence is retained in the Data actions. Both charts reuse the article's exact components and reviewed full-period data, including 4,639 actual college-age ballots and the hypothetical 6,493 county-share benchmark.
 
-The full article remains at `article/index.html?view=1`.
+The full article remains at `article/index.html?view=1`. Wider all-method election context is kept in the research prototype at `index.html?view=1#full-election-context`, with its tables also available in References. It is omitted from the interview preview and article.
 
 ## Preview toolbar exception
 
@@ -14,4 +14,4 @@ Sean explicitly requested removing the entire top toolbar strip. This preview se
 
 This requires the authorized source build rather than the prebuilt compiler. The project uses its locked dependencies (installation was approved by Sean). For a fresh prepared project, apply `hide-topbar.patch` with `git apply --ignore-space-change` to `src/DataAppShell.jsx`, then run the project's `scripts/authorize-protected-change.mjs` with `DATA_APP_USER_CONFIRMED=1`, `--confirmed`, `--scope src/DataAppShell.jsx`, and the explicit removal request as the reason. Do not authorize unrelated files.
 
-Prepare the preview as above, build using `data-app.mjs build --project-dir <prepared-project> --source`, then package with `python scripts/package_editor_maps.py --dist <project>/dist --source-project <project>`. The standalone source build embeds the reviewed snapshot. Packaging verifies the build's snapshot hash and writes `source-build-receipt.json`, replacing the previous split-build receipt. The toolbar patch itself does not change ballot values. The preview also includes the separately labeled November 4 all-method election context.
+Prepare the preview as above, build using `data-app.mjs build --project-dir <prepared-project> --source`, then package with `python scripts/package_editor_maps.py --dist <project>/dist --source-project <project>`. The standalone source build embeds the reviewed snapshot. Packaging verifies the build's snapshot hash and writes `source-build-receipt.json`, replacing the previous split-build receipt. The toolbar patch itself does not change ballot values. The wider-election context lives in the research prototype.

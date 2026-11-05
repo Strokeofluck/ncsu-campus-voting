@@ -134,10 +134,16 @@ article['queries']['full_election_context']={'rows':display_rows,'source':{
  'caveats':['2022 official; 2026 unofficial. Precincts reported is not certification.',summary['election_day_demographics'],summary['reconciliation']],
  'evidenceFlow':[{'title':'Source hashes and dates','detail':'data/processed/postelection_20261104/source_manifest.json'},{'title':'Reproduce aggregate tables','detail':'scripts/build_full_election_context.py; 2026 Wake accepted early/mail totals independently reconcile to published absentee aggregates.'}]},
  'methods':{'description':summary['reconciliation']}}
-article['authoredRevision']=7
+article.setdefault('authoredRevision',8)
 article['report']['asOf']='2026-11-04'
 article['buildStatus']='complete'
 article_path.write_text(json.dumps(article,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+prototype_path=ROOT/'report-source/snapshot.json'
+prototype=load(prototype_path)
+prototype['queries']['full_election_context']=article['queries']['full_election_context']
+prototype['report']['asOf']='2026-11-04'
+prototype['buildStatus']='complete'
+prototype_path.write_text(json.dumps(prototype,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 notes='''# Post-election data, November 4, 2026
 
 2026 results are unofficial. These aggregates include current reported all-method ballot totals, accepted early/mail extracts, provisional status, and Election Day choice votes by contest. They do not yet provide Election Day or all-method age-18–24 participation. NCSBE updates current voter history weekly, and county finalization can take multiple weeks.

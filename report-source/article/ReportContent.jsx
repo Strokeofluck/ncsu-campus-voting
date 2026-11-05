@@ -4,7 +4,6 @@ import {CampusPassbyMap} from './CampusPassbyMap.jsx';
 import {CampusWalkingMap} from './CampusWalkingMap.jsx';
 import {AgeGrowthChart} from './AgeGrowthChart.jsx';
 import {YoungestBenchmark} from './YoungestBenchmark.jsx';
-import {FullElectionContext} from './FullElectionContext.jsx';
 import {TechnicianHeader} from './TechnicianHeader.jsx';
 import './article.css';
 
@@ -31,7 +30,6 @@ The findings offer a first look at use of NC State’s replacement early-voting 
   <AgeGrowthChart/>
   {otherAges}
   <YoungestBenchmark row={youngest}/>
-  <FullElectionContext/>
   <ReportSection id="voting-article-location-context" queryId="article_opening_context" queryIds={['article_opening_context','campus_parking']} sourceRowsByQuery={{article_opening_context:snapshot.queries.article_opening_context.rows,campus_parking:snapshot.queries.campus_parking.rows}} showHeading={false} title="Why the voting site moved"><RichNarrative id="voting-article-location-context:body" value={`## Why the voting site moved
 
 The Wake County Board of Elections moved the early-voting site from Talley to Western Boulevard Business Services for the 2026 general election. Parking was one argument for the move: board members said the Western Boulevard location would be easier for off-campus voters to reach by car, [according to NC Newsline’s meeting coverage](https://ncnewsline.com/2026/06/12/republicans-axe-nc-state-student-center-as-an-early-voting-site/).
