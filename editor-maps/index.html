@@ -264,7 +264,13 @@ ${l}`:l)}return o.join(`
 /*$vite$:1*/</style>
     <meta name="data-app-snapshot-sha256" content="bc3dc97b55c30f293155b6f231e9365ca706588eaa0cd329da4ec514922ae36b">
     <meta name="data-app-local-thread" content="01a1951f-f9c9-7a83-a851-ce2c35cc2dda">
-  </head>
+  <style id="publication-reader-controls">
+/* Reader-facing pages: remove ChatGPT question controls at every viewport size. */
+.dashboard-ask-button,
+.dashboard-action-menu-item:has([data-dashboard-icon="chatBubble"]),
+option[value="ask"] { display: none !important; }
+</style>
+</head>
   <body>
     <div id="root"></div>
   </body>
