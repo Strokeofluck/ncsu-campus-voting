@@ -24,3 +24,8 @@
   --data-app-chrome-background: #ffffff;
   --data-app-chrome-text: #242424;
 }
+
+/* Reader-facing pages: remove ChatGPT question controls at every viewport size. */
+.dashboard-ask-button,
+.dashboard-action-menu-item:has([data-dashboard-icon="chatBubble"]),
+option[value="ask"] { display: none !important; }
