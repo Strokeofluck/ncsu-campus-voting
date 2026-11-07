@@ -28,7 +28,7 @@ The findings offer a first look at use of NC State’s replacement early-voting 
 
 “Whether those people just didn’t vote or they voted in another spot, we can’t say,” Hamrick said.
 
-*This analysis covers in-person early voting only. Election Day and mail ballots are excluded. As of November 7, election results remain unofficial, and NCSBE has not yet listed November 2026 full-election voter-history statistics by age and sex on its [voter-history data page](https://www.ncsbe.gov/results-data/voter-history-data).*`}/></ReportSection>
+*This analysis covers in-person early voting only. Election Day and mail ballots are excluded. [Data availability and methods](../references.html#data-availability).*`}/></ReportSection>
   <AgeGrowthChart/>
   {otherAges}
   <YoungestBenchmark row={youngest}/>
