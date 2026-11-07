@@ -26,6 +26,10 @@ Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake Count
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/). The comparison describes changes in ballot counts and site use; it does not isolate the relocation’s effect.`}/></ReportSection>
   <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`The campus-site count for ages 18–24 increased from **3,402 to 4,639**, while Wake’s increased from **13,398 to 25,570**. The location’s share of Wake’s early ballots in that age group fell from **25.4% to 18.1%**.
 
+Spencer Hamrick, a statistics lecturer at NC State, cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location.
+
+“Whether those people just didn’t vote or they voted in another spot, we can’t say,” Hamrick said.
+
 *Accepted in-person early ballots across all 17 days: October 20–November 5, 2022, and October 15–31, 2026. Downloaded November 4; 2026 remains preliminary. Election Day and mail ballots are excluded from this comparison. We’re awaiting finalized full-election data, including Election Day counts by age, before expanding the analysis. Ages 18–24 do not verify student enrollment.*`}/></ReportSection>
   <AgeGrowthChart/>
   {otherAges}
@@ -35,6 +39,10 @@ The findings offer a first look at use of NC State’s replacement early-voting 
 The Wake County Board of Elections moved the early-voting site from Talley to Western Boulevard Business Services for the 2026 general election. Parking was one argument for the move: board members said the Western Boulevard location would be easier for off-campus voters to reach by car, [according to NC Newsline’s meeting coverage](https://ncnewsline.com/2026/06/12/republicans-axe-nc-state-student-center-as-an-early-voting-site/).
 
 University GIS records list **2,192 spaces in Coliseum Deck beside Talley**, compared with **660 across the McKimmon lots**—about **3.3 times as many**. These are total parking inventories; they do not measure how many spaces were available to voters or how easy either location was to reach. At McKimmon, only part of the lot was reserved for early voters, as shown in [NC State’s map of general and accessible voter parking](https://transportation.ncsu.edu/2026/10/early-voting-at-nc-state-october-15-31/).
+
+Hamrick, who has voted at both Talley and the replacement site, said both experiences went pretty well. He previously voted at Talley after his morning workout and used the replacement site while driving home from work.
+
+“Yeah, I don’t have a super strong opinion, but I did think it was more convenient when it was at Talley,” Hamrick said.
 
 Access on foot varied by residence. The map below compares the two locations from student housing, with estimated walking times and distances for each building.`}/></ReportSection>
   <CampusWalkingMap article/>
