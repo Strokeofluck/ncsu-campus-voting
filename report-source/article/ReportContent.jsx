@@ -11,7 +11,9 @@ export function ReportContent(){
  const {snapshot}=useDataApp(),rows=snapshot.queries.age_growth_benchmarks.rows,youngest=rows.find(r=>r.cohort==='18–24');
  const otherAges=<ReportSection id="voting-article-reading" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Every age group under 65 lagged Wake’s growth at the new Western Boulevard site"><RichNarrative id="voting-article-reading:body" value={`## Every age group under 65 lagged Wake’s growth at the new Western Boulevard site
 
-Early voting grew more slowly at the replacement site than across Wake County in **every age group under 65**. Voters **65 and older** were the only group to outpace their countywide counterparts, with **73.7% growth at the site compared with 52.8% countywide**.`}/></ReportSection>;
+Early voting grew more slowly at the replacement site than across Wake County in **every age group under 65**. Voters **65 and older** were the only group to outpace their countywide counterparts, with **73.7% growth at the site compared with 52.8% countywide**.
+
+Of all in-person early ballots cast by **18–24-year-olds in Wake County**, **25.4% were cast at Talley in 2022**, compared with **18.1% at Western Boulevard in 2026**.`}/></ReportSection>;
  return <article className="report-content voting-report voting-article" aria-label="Article work in progress: NC State early voting">
   <TechnicianHeader/>
   <nav className="voting-page-nav technician-preview-links" aria-label="Preview and evidence"><a href="index.html?view=1" aria-current="page">Full article · Draft</a><a href="../editor-preview.html">Map editor preview</a><a href="../references.html?v=20261104full17">References and step-by-step math</a></nav>
@@ -22,8 +24,6 @@ Growth at the replacement site lagged Wake County’s in every age group under 6
    <RichNarrative id="voting-article-intro:opening" value={`
 
 Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake County from 2022 to 2026**, compared with **36.4%** from **Talley Student Union in 2022 to Western Boulevard Business Services in 2026**. In fact, the **18–24 age group** had the largest growth gap of the five age groups, trailing its countywide counterpart by **54.5 percentage points**.
-
-Of all in-person early ballots cast by **18–24-year-olds in Wake County**, **25.4% were cast at Talley in 2022**, compared with **18.1% at Western Boulevard in 2026**.
 
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/).`}/></ReportSection>
 
