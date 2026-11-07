@@ -11,7 +11,7 @@ export function ReportContent(){
  const {snapshot}=useDataApp(),rows=snapshot.queries.age_growth_benchmarks.rows,youngest=rows.find(r=>r.cohort==='18–24');
  const otherAges=<ReportSection id="voting-article-reading" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Every age group under 65 lagged Wake’s growth at the new Western Boulevard site"><RichNarrative id="voting-article-reading:body" value={`## Every age group under 65 lagged Wake’s growth at the new Western Boulevard site
 
-The gap extended beyond college-age voters. Growth from **Talley in 2022 to Western Boulevard in 2026** fell behind Wake’s same-age growth among voters **25–34, 35–44 and 45–64**. Voters **65 and older** were the exception: **73.7%** growth at the two locations, versus **52.8%** countywide. All five groups cast more early ballots; the difference is how quickly their counts grew.`}/></ReportSection>;
+Early voting grew more slowly at the replacement site than across Wake County in **every age group under 65**. Voters **65 and older** were the only group to outpace their countywide counterparts, with **73.7% growth at the site compared with 52.8% countywide**.`}/></ReportSection>;
  return <article className="report-content voting-report voting-article" aria-label="Article work in progress: NC State early voting">
   <TechnicianHeader/>
   <nav className="voting-page-nav technician-preview-links" aria-label="Preview and evidence"><a href="index.html?view=1" aria-current="page">Full article · Draft</a><a href="../editor-preview.html">Map editor preview</a><a href="../references.html?v=20261104full17">References and step-by-step math</a></nav>
