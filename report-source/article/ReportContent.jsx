@@ -52,9 +52,9 @@ A simulation modeled **756 routes from housing to classroom and dining buildings
 
 **334 routes (44.2%) passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.`}/></ReportSection>
   <CampusPassbyMap article/>
-  <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`These figures describe early-ballot counts and location use. They do not establish whether the relocation caused the growth gap. Ages 18–24 are an age proxy, not verified student enrollment.
+  <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`Hamrick emphasized that voters who no longer used the campus-associated site may have voted elsewhere. The site comparison cannot distinguish those voters from people who did not vote.
 
-[Follow the original counts and calculations, step by step](../references.html?v=20261104full17).`}/></ReportSection>
+Still, the early-voting figures establish a consistent pattern: from Talley in 2022 to Western Boulevard in 2026, ballot counts grew more slowly in every age group under 65 than they did among the same age groups across Wake County. Voters 65 and older were the only group whose growth at the replacement site exceeded their countywide counterparts.`}/></ReportSection>
   <footer className="technician-preview-footer">Editor preview · Work in progress · <a href="../references.html#statewide-early-voting">Sources and original chart reference</a></footer>
  </article>;
 }
