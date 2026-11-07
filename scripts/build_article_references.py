@@ -26,7 +26,7 @@ def main():
   for name in growth:assert abs(r[name+'_growth_pct']-growth[name])<1e-10
   assert abs(r['site_growth_gap_pp']-(growth['site']-growth['county']))<1e-10
  periods={y:next(r for r in s['queries']['summary']['rows'] if r['year']==y and r['scope']=='Campus site') for y in [2022,2026]}
- period=f"Talley: {nice(periods[2022]['start_date'])}–{nice(periods[2022]['end_date'])}. Western Boulevard: {nice(periods[2026]['start_date'])}–{nice(periods[2026]['end_date'])}. All {s['comparison']['matched_days']} early-voting days in both years; downloaded November 4, 2026; 2026 is preliminary."
+ period=f"Talley: {nice(periods[2022]['start_date'])}–{nice(periods[2022]['end_date'])}. Western Boulevard: {nice(periods[2026]['start_date'])}–{nice(periods[2026]['end_date'])}. All {s['comparison']['matched_days']} early-voting days in both years; 2026 is preliminary."
  records=json.loads((ROOT/'data/processed/comparison/figure_sources.json').read_text(encoding='utf-8'))['records']
  sources=[]
  for year in [2022,2026]:
