@@ -24,11 +24,11 @@ Growth at the replacement site lagged Wake County’s in every age group under 6
 Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake County from 2022 to 2026**, compared with **36.4%** from **Talley Student Union in 2022 to Western Boulevard Business Services in 2026**. The **54.5 percentage-point growth gap** was the largest of the five age groups in the comparison.
 
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/).`}/></ReportSection>
-  <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`Spencer Hamrick, a statistics lecturer at NC State, cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location.
+  <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`Spencer Hamrick, a statistics lecturer at NC State, cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location. The age categories identify college-age voters, not confirmed NC State students.
 
 “Whether those people just didn’t vote or they voted in another spot, we can’t say,” Hamrick said.
 
-*Accepted in-person early ballots across all 17 days: October 20–November 5, 2022, and October 15–31, 2026. Downloaded November 4; 2026 remains preliminary. Election Day and mail ballots are excluded from this comparison. We’re awaiting finalized full-election data, including Election Day counts by age, before expanding the analysis. Ages 18–24 do not verify student enrollment.*`}/></ReportSection>
+*This analysis covers in-person early voting only. Election Day and mail ballots are excluded. As of November 7, election results remain unofficial, and NCSBE has not yet listed November 2026 full-election voter-history statistics by age and sex on its [voter-history data page](https://www.ncsbe.gov/results-data/voter-history-data).*`}/></ReportSection>
   <AgeGrowthChart/>
   {otherAges}
   <YoungestBenchmark row={youngest}/>
