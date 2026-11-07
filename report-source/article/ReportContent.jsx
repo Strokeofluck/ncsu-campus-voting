@@ -26,11 +26,7 @@ Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake Count
 Of all in-person early ballots cast by **18–24-year-olds in Wake County**, **25.4% were cast at Talley in 2022**, compared with **18.1% at Western Boulevard in 2026**.
 
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/).`}/></ReportSection>
-  <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`Spencer Hamrick, a statistics lecturer at NC State, cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location. The age categories identify college-age voters, not confirmed NC State students.
-
-“Whether those people just didn’t vote or they voted in another spot, we can’t say,” Hamrick said.
-
-*This analysis covers in-person early voting only. Election Day and mail ballots are excluded. [Data availability and methods](../references.html#data-availability).*`}/></ReportSection>
+  <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`*This analysis covers in-person early voting only. Election Day and mail ballots are excluded. [Data availability and methods](../references.html#data-availability).*`}/></ReportSection>
   <AgeGrowthChart/>
   {otherAges}
   <YoungestBenchmark row={youngest}/>
@@ -40,7 +36,7 @@ The Wake County Board of Elections moved the early-voting site from Talley to We
 
 University GIS records list **2,192 spaces in Coliseum Deck beside Talley**, compared with **660 across the McKimmon lots**—about **3.3 times as many**. These are total parking inventories; they do not measure how many spaces were available to voters or how easy either location was to reach. At McKimmon, only part of the lot was reserved for early voters, as shown in [NC State’s map of general and accessible voter parking](https://transportation.ncsu.edu/2026/10/early-voting-at-nc-state-october-15-31/).
 
-Hamrick, who has voted at both Talley and the replacement site, said both experiences went pretty well. He previously voted at Talley after his morning workout and used the replacement site while driving home from work.
+Spencer Hamrick, a statistics lecturer at NC State who has voted at both Talley and the replacement site, said both experiences went pretty well. He previously voted at Talley after his morning workout and used the replacement site while driving home from work.
 
 “Yeah, I don’t have a super strong opinion, but I did think it was more convenient when it was at Talley,” Hamrick said.
 
@@ -52,7 +48,9 @@ A simulation modeled **756 routes from housing to classroom and dining buildings
 
 **334 routes (44.2%) passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.`}/></ReportSection>
   <CampusPassbyMap article/>
-  <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`Hamrick emphasized that voters who no longer used the campus-associated site may have voted elsewhere. The site comparison cannot distinguish those voters from people who did not vote.
+  <ReportSection id="voting-article-closing" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Reading the comparison"><RichNarrative id="voting-article-closing:body" value={`Hamrick cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location. The age categories identify college-age voters, not confirmed NC State students.
+
+“Whether those people just didn’t vote or they voted in another spot, we can’t say,” Hamrick said.
 
 Still, the early-voting figures establish a consistent pattern: from Talley in 2022 to Western Boulevard in 2026, ballot counts grew more slowly in every age group under 65 than they did among the same age groups across Wake County. Voters 65 and older were the only group whose growth at the replacement site exceeded their countywide counterparts.`}/></ReportSection>
   <footer className="technician-preview-footer">Editor preview · Work in progress · <a href="../references.html#statewide-early-voting">Sources and original chart reference</a></footer>
