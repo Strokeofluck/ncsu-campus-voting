@@ -26,7 +26,7 @@ Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake Count
 Of all in-person early ballots cast by **18–24-year-olds in Wake County**, **25.4% were cast at Talley in 2022**, compared with **18.1% at Western Boulevard in 2026**.
 
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/).`}/></ReportSection>
-  <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`*This analysis covers in-person early voting only. Election Day and mail ballots are excluded. [Data availability and methods](../references.html#data-availability).*`}/></ReportSection>
+
   <AgeGrowthChart/>
   {otherAges}
   <YoungestBenchmark row={youngest}/>
