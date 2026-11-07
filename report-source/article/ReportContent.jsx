@@ -21,7 +21,7 @@ Growth at the replacement site lagged Wake County’s in every age group under 6
    <div className="technician-preview-byline"><a href="https://technicianonline.com/staff_name/sean-ryan/">Sean Ryan</a>, Correspondent · Draft</div>
    <RichNarrative id="voting-article-intro:opening" value={`
 
-Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake County from 2022 to 2026**, compared with **36.4%** from **Talley Student Union in 2022 to Western Boulevard Business Services in 2026**. The **54.5 percentage-point growth gap** was the largest of the five age groups in the comparison.
+Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake County from 2022 to 2026**, compared with **36.4%** from **Talley Student Union in 2022 to Western Boulevard Business Services in 2026**. In fact, the **18–24 age group** had the largest growth gap of the five age groups, trailing its countywide counterpart by **54.5 percentage points**.
 
 Of all in-person early ballots cast by **18–24-year-olds in Wake County**, **25.4% were cast at Talley in 2022**, compared with **18.1% at Western Boulevard in 2026**.
 
