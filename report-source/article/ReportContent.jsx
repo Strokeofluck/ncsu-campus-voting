@@ -9,9 +9,7 @@ import './article.css';
 
 export function ReportContent(){
  const {snapshot}=useDataApp(),rows=snapshot.queries.age_growth_benchmarks.rows,youngest=rows.find(r=>r.cohort==='18–24');
- const otherAges=<ReportSection id="voting-article-reading" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Every age group under 65 lagged Wake’s growth at the new Western Boulevard site"><RichNarrative id="voting-article-reading:body" value={`## Every age group under 65 lagged Wake’s growth at the new Western Boulevard site
-
-Early voting grew more slowly at the replacement site than across Wake County in **every age group under 65**. Voters **65 and older** were the only group to outpace their countywide counterparts, with **73.7% growth at the site compared with 52.8% countywide**.`}/></ReportSection>;
+ const otherAges=<ReportSection id="voting-article-reading" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="Every age group under 65 lagged Wake’s growth at the new Western Boulevard site"><RichNarrative id="voting-article-reading:body" value={`Every age group under 65 lagged Wake’s growth at the new Western Boulevard site. Voters 65 and older were the exception, with **73.7% growth at the site compared with 52.8% among the same age group countywide**.`}/></ReportSection>;
  return <article className="report-content voting-report voting-article" aria-label="Article work in progress: NC State early voting">
   <TechnicianHeader/>
   <nav className="voting-page-nav technician-preview-links" aria-label="Preview and evidence"><a href="index.html?view=1" aria-current="page">Full article · Draft</a><a href="../editor-preview.html">Map editor preview</a><a href="../references.html?v=20261104full17">References and step-by-step math</a></nav>
@@ -34,7 +32,7 @@ The findings offer a first look at use of NC State’s replacement early-voting 
 
 The Wake County Board of Elections moved the early-voting site from Talley to Western Boulevard Business Services for the 2026 general election. Parking was one argument for the move: board members said the Western Boulevard location would be easier for off-campus voters to reach by car, [according to NC Newsline’s meeting coverage](https://ncnewsline.com/2026/06/12/republicans-axe-nc-state-student-center-as-an-early-voting-site/).
 
-University GIS records list **2,192 spaces in Coliseum Deck beside Talley**, compared with **660 across the McKimmon lots**—about **3.3 times as many**. These are total parking inventories; they do not measure how many spaces were available to voters or how easy either location was to reach. At McKimmon, only part of the lot was reserved for early voters, as shown in [NC State’s map of general and accessible voter parking](https://transportation.ncsu.edu/2026/10/early-voting-at-nc-state-october-15-31/).
+University GIS records list **2,192 spaces in Coliseum Deck beside Talley**, compared with **660 across the McKimmon lots**, about **3.3 times as many**. These are total parking inventories; they do not measure how many spaces were available to voters or how easy either location was to reach. At McKimmon, only part of the lot was reserved for early voters, as shown in [NC State’s map of general and accessible voter parking](https://transportation.ncsu.edu/2026/10/early-voting-at-nc-state-october-15-31/).
 
 Spencer Hamrick, a statistics lecturer at NC State who has voted at both Talley and the replacement site, said both experiences went pretty well. He previously voted at Talley after his morning workout and used the replacement site while driving home from work.
 
