@@ -23,6 +23,8 @@ Growth at the replacement site lagged Wake County’s in every age group under 6
 
 Early ballots cast by voters ages **18–24** grew **90.8%** across **Wake County from 2022 to 2026**, compared with **36.4%** from **Talley Student Union in 2022 to Western Boulevard Business Services in 2026**. The **54.5 percentage-point growth gap** was the largest of the five age groups in the comparison.
 
+Of all in-person early ballots cast by **18–24-year-olds in Wake County**, **25.4% were cast at Talley in 2022**, compared with **18.1% at Western Boulevard in 2026**.
+
 The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://ncnewsline.com/2026/11/02/democrats-and-unaffiliated-voters-cast-about-73-of-ballots-in-ncs-record-setting-early-turnout/).`}/></ReportSection>
   <ReportSection id="voting-article-turnout" queryId="age_growth_benchmarks" sourceRows={rows} showHeading={false} title="College-age voting grew, but fell behind Wake"><RichNarrative id="voting-article-turnout:body" value={`Spencer Hamrick, a statistics lecturer at NC State, cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location. The age categories identify college-age voters, not confirmed NC State students.
 
