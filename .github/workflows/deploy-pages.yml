@@ -19,9 +19,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Stage published website files only
+        shell: python
+        run: |
+          import pathlib, shutil, subprocess
+          target = pathlib.Path('_public')
+          target.mkdir()
+          public_dirs = {'article', 'editor-maps', 'vendor', 'downloads'}
+          for name in subprocess.check_output(['git', 'ls-files'], text=True).splitlines():
+              p = pathlib.Path(name)
+              allowed = (len(p.parts) == 1 and p.suffix in {'.html', '.js', '.css', '.json'}) or p.parts[0] in public_dirs or name.startswith(('docs/images/', 'data/processed/', 'data/sources/')) or (p.parts[0] == 'docs' and p.suffix == '.md')
+              if allowed:
+                  dest = target / p
+                  dest.parent.mkdir(parents=True, exist_ok=True)
+                  shutil.copyfile(p, dest)
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _public
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
