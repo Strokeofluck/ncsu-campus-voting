@@ -50,7 +50,7 @@ A simulation modeled **756 routes from housing to classroom and dining buildings
 
 “Whether those people just didn’t vote or they voted in another spot, we can’t say,” Hamrick said.
 
-Of all in-person early ballots cast by 18–24-year-olds in Wake County, 25.4% were cast at Talley in 2022, compared with 18.1% at Western Boulevard in 2026. The slower growth extended beyond college-age voters: every age group under 65 lagged its countywide counterpart. Voters 65 and older were the only group whose growth at the replacement site exceeded the countywide rate for their age group.`}/></ReportSection>
+Of all in-person early ballots cast by 18–24-year-olds in Wake County, 25.4% were cast at Talley in 2022, compared with 18.1% at Western Boulevard in 2026. The numbers show that every age group under 65 lagged its countywide counterpart in early-voting growth. Voters 65 and older were the only group whose growth at the replacement site exceeded the countywide rate for their age group.`}/></ReportSection>
   <footer className="technician-preview-footer">Editor preview · Work in progress · <a href="../references.html#statewide-early-voting">Sources and original chart reference</a></footer>
  </article>;
 }
