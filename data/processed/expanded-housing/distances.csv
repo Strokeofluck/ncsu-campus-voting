@@ -74,3 +74,12 @@ id,name,group,available,unavailable_reason,entrance_id,talley_m,western_m,differ
 222F,Mackenzie Hall,Wolf Village apartments,True,,423,1613.0948547248536,631.1260480819134,-981.9688066429402
 222D,Red Hall,Wolf Village apartments,True,,454,1740.321293950503,412.49632651577696,-1327.8249674347262
 222E,Timber Hall,Wolf Village apartments,True,,424,1624.4310927760496,642.4622861331093,-981.9688066429403
+281,Western Manor Apartments ABC,Western Manor apartments,True,,-1,1611.4833328593634,1536.257560620975,-75.22577223838834
+282,Western Manor Apartments DEF,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+283,Western Manor Apartments GH,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+284,Western Manor Apartments IJ,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+285,Western Manor Apartments K,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+286,Western Manor Apartments L,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+287,Western Manor Apartments M,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+288,Western Manor Apartments NO,Western Manor apartments,False,No unblocked mapped-entrance or estimated building-edge connection within 30 m of connected GIS paths,,,,
+289,Western Manor Apartments PQ,Western Manor apartments,True,,-1,1676.2074802706998,1483.2656700961638,-192.94181017453593
