@@ -1,0 +1,362 @@
+[
+  {
+    "id": "291",
+    "building": "Pi Kappa Phi",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 2.3,
+    "walking_minutes_displayed": 51,
+    "via": "Avent Ferry Rd",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.76603979%2C-78.6990489&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.6990489,
+      35.76603979
+    ],
+    "resolved_origin": "Pi Kappa Phi - NC State University, 3501 Avent Ferry Rd",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "291",
+    "building": "Pi Kappa Phi",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.8,
+    "walking_minutes_displayed": 41,
+    "via": "Gorman St",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.76603979%2C-78.6990489&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.6990489,
+      35.76603979
+    ],
+    "resolved_origin": "Pi Kappa Phi - NC State University, 3501 Avent Ferry Rd",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "127H",
+    "building": "Johnston Hall",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.4,
+    "walking_minutes_displayed": 30,
+    "via": "Wolf Village Way",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.78758489%2C-78.69135522&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.69135522,
+      35.78758489
+    ],
+    "resolved_origin": "King Village Johnston Hall H, 3950 Jackson St",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "127H",
+    "building": "Johnston Hall",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 0.5,
+    "walking_minutes_displayed": 12,
+    "via": "Jackson St and Gorman St",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.78758489%2C-78.69135522&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.69135522,
+      35.78758489
+    ],
+    "resolved_origin": "King Village Johnston Hall H, 3950 Jackson St",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "282",
+    "building": "Western Manor Apartments DEF",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 0.9,
+    "walking_minutes_displayed": 21,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "Google warns this route has restricted usage or private roads.",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77719225%2C-78.67992835&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.67992835,
+      35.77719225
+    ],
+    "resolved_origin": "1531 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "282",
+    "building": "Western Manor Apartments DEF",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.0,
+    "walking_minutes_displayed": 24,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "Google warns this route has restricted usage or private roads.",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77719225%2C-78.67992835&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.67992835,
+      35.77719225
+    ],
+    "resolved_origin": "1531 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "283",
+    "building": "Western Manor Apartments GH",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.0,
+    "walking_minutes_displayed": 24,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77769672%2C-78.67995263&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.67995263,
+      35.77769672
+    ],
+    "resolved_origin": "Western Manor Apartments, Building G-H, 1521 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "283",
+    "building": "Western Manor Apartments GH",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.1,
+    "walking_minutes_displayed": 26,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77769672%2C-78.67995263&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.67995263,
+      35.77769672
+    ],
+    "resolved_origin": "Western Manor Apartments, Building G-H, 1521 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "284",
+    "building": "Western Manor Apartments IJ",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.0,
+    "walking_minutes_displayed": 24,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77785225%2C-78.68046655&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.68046655,
+      35.77785225
+    ],
+    "resolved_origin": "1500 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "284",
+    "building": "Western Manor Apartments IJ",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.1,
+    "walking_minutes_displayed": 26,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77785225%2C-78.68046655&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.68046655,
+      35.77785225
+    ],
+    "resolved_origin": "1500 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "285",
+    "building": "Western Manor Apartments K",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.1,
+    "walking_minutes_displayed": 24,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77776102%2C-78.68108762&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.68108762,
+      35.77776102
+    ],
+    "resolved_origin": "1510 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "285",
+    "building": "Western Manor Apartments K",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.2,
+    "walking_minutes_displayed": 27,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77776102%2C-78.68108762&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.68108762,
+      35.77776102
+    ],
+    "resolved_origin": "1510 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "286",
+    "building": "Western Manor Apartments L",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.0,
+    "walking_minutes_displayed": 24,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77738433%2C-78.68122028&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.68122028,
+      35.77738433
+    ],
+    "resolved_origin": "1520 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "286",
+    "building": "Western Manor Apartments L",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.1,
+    "walking_minutes_displayed": 26,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77738433%2C-78.68122028&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.68122028,
+      35.77738433
+    ],
+    "resolved_origin": "1520 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "287",
+    "building": "Western Manor Apartments M",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.0,
+    "walking_minutes_displayed": 23,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77716769%2C-78.68078574&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.68078574,
+      35.77716769
+    ],
+    "resolved_origin": "1530 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "287",
+    "building": "Western Manor Apartments M",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.1,
+    "walking_minutes_displayed": 26,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77716769%2C-78.68078574&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.68078574,
+      35.77716769
+    ],
+    "resolved_origin": "1530 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  },
+  {
+    "id": "288",
+    "building": "Western Manor Apartments NO",
+    "site": "talley",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.0,
+    "walking_minutes_displayed": 23,
+    "via": "Avent Ferry Rd and Morrill Dr",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77678264%2C-78.68045776&destination=35.78404092003609%2C-78.67087626427747",
+    "origin_coordinates": [
+      -78.68045776,
+      35.77678264
+    ],
+    "resolved_origin": "1540 Lilley Ct",
+    "resolved_destination": "Port City Java, 2610 Cates Ave (Talley GIS pin)"
+  },
+  {
+    "id": "288",
+    "building": "Western Manor Apartments NO",
+    "site": "western",
+    "checked_date": "2026-11-09",
+    "provider": "Google Maps",
+    "mode": "walking",
+    "selected_route": "First recommended route",
+    "distance_miles_displayed": 1.1,
+    "walking_minutes_displayed": 26,
+    "via": "Avent Ferry Rd and Rocky Branch Trl",
+    "warning": "",
+    "url": "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.77678264%2C-78.68045776&destination=35.784512725066264%2C-78.68522579542082",
+    "origin_coordinates": [
+      -78.68045776,
+      35.77678264
+    ],
+    "resolved_origin": "1540 Lilley Ct",
+    "resolved_destination": "Western Boulevard Buisness Services, 1220 Varsity Dr"
+  }
+]

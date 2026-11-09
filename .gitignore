@@ -12,3 +12,6 @@ __pycache__/
 # OS/editor
 .DS_Store
 .vscode/
+
+# Portable local preview is regenerated from the verified article build.
+article/local-preview.html
