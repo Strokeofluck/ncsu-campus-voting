@@ -2,7 +2,7 @@
 
 Updated November 4, 2026. The article, charts, references and Excel calculator now compare **all 17 early-voting days** in 2022 and 2026. The 2026 NCSBE records remain preliminary during canvass.
 
-**[Article draft](https://strokeofluck.github.io/ncsu-campus-voting/article/index.html?view=1) · [References and step-by-step math](https://strokeofluck.github.io/ncsu-campus-voting/references.html) · [Interactive research report](https://strokeofluck.github.io/ncsu-campus-voting/index.html?view=1) · [Map editor preview](https://strokeofluck.github.io/ncsu-campus-voting/editor-maps/index.html?view=1)**
+**[Article draft](https://strokeofluck.github.io/ncsu-campus-voting/article/index.html?view=1) · [References and step-by-step math](https://strokeofluck.github.io/ncsu-campus-voting/references.html) · [Interactive research report](https://strokeofluck.github.io/ncsu-campus-voting/index.html?view=1)**
 
 College-age early ballots at the campus-area location increased **3,402 → 4,639 (+36.4%)**, while Wake County increased **13,398 → 25,570 (+90.8%)**. The growth gap is **54.5 percentage points**. The site's share of Wake's ages 18–24 early ballots fell **25.4% → 18.1%**. These are site-use counts and county shares, not turnout rates among enrolled or eligible students.
 
