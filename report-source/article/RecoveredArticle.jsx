@@ -29619,9 +29619,7 @@ A separate simulation modeled **1,764 trips from all 84 housing buildings** to c
 
 Both comparisons cover **all 84 housing buildings**. Nine manually traced, approximate walking connections link the additional buildings to the existing GIS network for the campus-trip simulation. [Methods, Google estimates and walking links](../references.html#housing-distance-sources). Each building-to-destination pair has equal weight, without adjustment for building occupancy. The percentages describe this modeled selection rather than all students or their actual walking trips.
 
-Cohen noted that the replacement location is closer to Greek Village, highlighting how the move could affect students differently depending on where they live.
-
-“Yeah, that's basically across Varsity Drive. So, I mean, for some students, it's a lot closer,” Cohen said.`,})})
+Cohen noted that the replacement location is closer to Greek Village, highlighting how the move could affect students differently depending on where they live.`,})})
   , jsxRuntime.jsx(CampusPassbyMap, { article: true,})
   , jsxRuntime.jsx(RegistrationComparison, {})
   , jsxRuntime.jsx(dataApp.ReportSection, { id: "voting-article-closing", queryId: "age_growth_benchmarks", sourceRows: rows, showHeading: false, title: "Reading the comparison"  , children: jsxRuntime.jsx(dataApp.RichNarrative, { id: "voting-article-closing:body", value: `Hamrick cautioned that the comparison does not establish whether students voted less overall. Some voters may have used a different location. The age categories identify college-age voters, not confirmed NC State students.
