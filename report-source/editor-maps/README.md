@@ -1,3 +1,5 @@
+Current November 9 editor link: `editor-preview.html` opens `article/index.html?view=1&preview=maps`. This maps-and-charts view uses the current article build and data, so the editor link and full article cannot drift. It includes all 84 housing buildings in both distance and routine-route comparisons. The older standalone editor-maps build remains in Git history; its older toolbar-free source-build notes are retained below as historical build documentation.
+
 # Visual editor preview
 
 `editor-preview.html` opens `editor-maps/index.html?view=1`. This independent Data report presents the five-age growth chart first, then the college-age actual-versus-county-share benchmark, followed by the original walking-distance and routine-route maps. It is intended for sharing with interviewees. The Technician masthead and section links, article narrative, byline and election opening are omitted. Chart captions, source links, map controls, numeric summaries, legends and evidence actions are retained.
