@@ -40,7 +40,7 @@ Spencer Hamrick, a statistics lecturer at NC State who has voted at both Talley 
 
 “Yeah, I don’t have a super strong opinion, but I did think it was more convenient when it was at Talley,” Hamrick said.
 
-Western Boulevard was closer to **51 of the 73 housing buildings analyzed**, though it was farther from **22 of the 26 residence halls**. Buildings count equally, so the comparison does not establish how many residents had a shorter walk. [Housing results and access notes](../expanded-housing-references.html).
+Western Boulevard was closer to **51 of the 73 housing buildings analyzed**, though it was farther from **22 of the 26 residence halls**.
 
 But a shorter walk from home does not necessarily put voting along the way to class, dining or the library. **In the expanded route model shown below, 526 of 1,533 campus trips passed within 50 meters of Talley. None passed that close to Western Boulevard.** The housing map compares walks to each site; the following map shows modeled trips to campus destinations.`}/></ReportSection>
   <CampusWalkingMap article/>
