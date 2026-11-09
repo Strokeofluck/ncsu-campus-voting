@@ -40,11 +40,15 @@ Spencer Hamrick, a statistics lecturer at NC State who has voted at both Talley 
 
 “Yeah, I don’t have a super strong opinion, but I did think it was more convenient when it was at Talley,” Hamrick said.
 
-Access on foot varied by residence. The map below compares the two locations from student housing, with estimated walking times and distances for each building.`}/></ReportSection>
+Western Boulevard was closer to most housing buildings in the expanded GIS comparison: **51 of the 73 buildings with usable routes had a shorter modeled walk to Western than to Talley**. Across those buildings, the average one-way walk fell from about **1.05 miles to 0.82 miles**. The comparison includes residence halls, Wolf Village, Wolf Ridge, Greek Village and King Village.
+
+The pattern was different for residence halls. **Western was farther from 22 of the 26 residence halls**, with the average modeled walk increasing from about **0.44 miles to 1.01 miles**. Each building counts equally, regardless of how many students live there, so these findings do not establish whether the move brought voting closer to most residents. Of the 75 housing buildings selected, two lacked usable routes; 23 of the 73 routed buildings use estimated building-edge access. [Expanded housing results and access notes](../expanded-housing-references.html).
+
+Distance from home is one measure of access. Whether a voting site lies along a trip to class, dining or a library is another. The map below compares the two voting locations from individual housing buildings; the following section examines modeled campus routes.`}/></ReportSection>
   <CampusWalkingMap article/>
   <ReportSection id="voting-article-routine-intro" queryId="campus_passby" sourceRows={snapshot.queries.campus_passby.rows.filter(r=>!r.ends_at_talley)} showHeading={false} title="Would routine walks bring students near the site?"><RichNarrative id="voting-article-routine-intro:body" value={`## Would routine walks bring students near the site?
 
-A simulation modeled **756 routes from housing to classroom and dining buildings identified in NC State’s GIS, plus Hill and Hunt libraries**, to test whether routine walks would pass near either voting site. [GIS labels and exclusions](../references.html?v=20261104full17#destination-gis-sources).
+A separate simulation, using the earlier **36-building housing baseline rather than the expanded 73-building comparison**, modeled **756 routes from housing to classroom and dining buildings identified in NC State’s GIS, plus Hill and Hunt libraries**, to test whether routine walks would pass near either voting site. [GIS labels and exclusions](../references.html?v=20261104full17#destination-gis-sources).
 
 **334 routes (44.2%) passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.`}/></ReportSection>
   <CampusPassbyMap article/>
