@@ -316,6 +316,11 @@ main.report-page,.report-page:has(>.voting-article){width:100%!important;max-wid
 </style><style id="group-ballot-labels">
 .voting-article .age-growth-counts>span{grid-template-columns:max-content max-content!important;justify-content:end!important;column-gap:12px!important}
 .voting-article .age-growth-counts small{text-align:right!important}
+</style><style id="walking-intro-gap">
+/* Connect the housing comparison to its introductory paragraph. */
+.voting-article>.report-section:has(+#article-walking-map) .rich-narrative-content>p:last-child,.voting-article>.report-section:has(+#article-walking-map) .report-rich-editable>p:last-child{margin-bottom:0!important}
+.voting-article>#article-walking-map{margin-top:-12px!important}
+@media(max-width:640px){.voting-article>#article-walking-map{margin-top:-6px!important}}
 </style></head>
 <body>
 <div id="root"></div>
