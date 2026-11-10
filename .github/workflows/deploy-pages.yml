@@ -43,6 +43,10 @@ jobs:
                   dest = target / p
                   dest.parent.mkdir(parents=True, exist_ok=True)
                   shutil.copyfile(p, dest)
+                  if name == 'article/editor-preview-20261109-v2.html':
+                      html = dest.read_text(encoding='utf-8')
+                      stylesheet = '<link rel="stylesheet" href="benchmark-layout.css">'
+                      dest.write_text(html.replace('</head>', stylesheet + '</head>', 1), encoding='utf-8')
                   # The current embeds contain the same reviewed snapshot.
                   # Use their existing external-snapshot loader on the hosted
                   # site, while keeping Git and downloaded HTML self-contained.
