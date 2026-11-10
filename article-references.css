@@ -32,3 +32,15 @@
 .reference-group-body>.visual-link{margin-top:14px;}
 .reference-group-body>details{padding:10px 0;border-bottom:1px solid var(--line);margin:4px 0;}
 @media(max-width:650px){.reference-group>summary{padding:14px;}.reference-group>summary h2{font-size:18px;}.reference-group-body{padding:2px 14px 16px;}}
+
+/* Keep age comparisons aligned as the selected counts change digit lengths. */
+#math .counts{table-layout:fixed;width:100%}
+#math .counts th:first-child{width:46%}
+#math .counts th:nth-child(2),#math .counts th:nth-child(3){width:27%}
+#math .counts td{white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}
+#math .growth-math-pair{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+#math .growth-math-pair>.step{min-width:0;margin-top:14px}
+#math #site-steps,#math #county-steps{font-variant-numeric:tabular-nums lining-nums;overflow-wrap:anywhere}
+#math .growth-math-pair .result{min-height:3.2em;overflow-wrap:anywhere}
+#math .section-heading select{width:92px;flex-shrink:0}
+@media(max-width:650px){#math .growth-math-pair{grid-template-columns:minmax(0,1fr)}#math .growth-math-pair .result{min-height:0}}
