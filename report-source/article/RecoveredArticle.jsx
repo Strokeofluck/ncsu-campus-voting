@@ -29603,7 +29603,7 @@ Cohen questioned the emphasis on parking for students who do not drive.
 
 “The higher the cost of voting, the fewer people vote,” Greene said.
 
-Across all housing types analyzed, Western Boulevard was closer to **55 of the 84 housing buildings analyzed** and farther from **29**. The comparison includes all 84 housing buildings in the inventory. [Distance estimates and sources](../references.html#housing-distance-sources).
+Across all housing types analyzed, Western Boulevard was closer to **43 of the 84 housing buildings analyzed** and farther from **41**. The comparison includes all 84 housing buildings in the inventory. [Distance estimates and sources](../references.html#housing-distance-sources).
 
 But a shorter walk from home does not necessarily mean a more convenient trip to vote. At Talley, students could vote along the way to class, dining or the library. **In the expanded route model shown below, 699 of 1,764 campus trips passed within 50 meters of Talley. None passed that close to Western Boulevard.** The housing map compares walks to each site; the following map shows modeled trips to campus destinations.`,})})
   , jsxRuntime.jsx(CampusWalkingMap, { article: true,})
