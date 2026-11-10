@@ -22,7 +22,7 @@ jobs:
       - name: Stage published website files only
         shell: python
         run: |
-          import pathlib, re, shutil, subprocess
+          import hashlib, json, os, pathlib, re, shutil, subprocess
           target = pathlib.Path('_public')
           target.mkdir()
           public_dirs = {'article', 'editor-maps', 'vendor', 'downloads'}
@@ -43,6 +43,24 @@ jobs:
                   dest = target / p
                   dest.parent.mkdir(parents=True, exist_ok=True)
                   shutil.copyfile(p, dest)
+                  # The current embeds contain the same reviewed snapshot.
+                  # Use their existing external-snapshot loader on the hosted
+                  # site, while keeping Git and downloaded HTML self-contained.
+                  if p.suffix == '.html' and (p.name.endswith('-20261109-v2.html') or p.parent.name == 'editor-maps'):
+                      text = dest.read_text(encoding='utf-8')
+                      match = re.search(r'(<script[^>]*id="data-app-reviewed-snapshot"[^>]*>)(.*?)(</script>)', text, re.S)
+                      if match and 'data-app-local-snapshot' not in text and len(match[2]) > 1024 * 1024:
+                          raw = match[2].encode('utf-8')
+                          digest = hashlib.sha256(raw).hexdigest()
+                          shared = target / '_shared' / ('snapshot.' + digest + '.json')
+                          shared.parent.mkdir(exist_ok=True)
+                          shared.write_bytes(raw)
+                          stub = json.loads(match[2])
+                          stub['queries'] = {}
+                          text = text[:match.start(2)] + json.dumps(stub, separators=(',', ':')).replace('</', '<\\/') + text[match.end(2):]
+                          relative = os.path.relpath(shared, dest.parent).replace(os.sep, '/')
+                          text = text.replace('</head>', '<meta name="data-app-local-snapshot" content="' + relative + '"></head>', 1)
+                          dest.write_text(text, encoding='utf-8')
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _public
