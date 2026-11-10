@@ -305,6 +305,10 @@ main.report-page,.report-page:has(>.voting-article){width:100%!important;max-wid
 .voting-article .age-growth-series{grid-template-columns:minmax(0,1fr) 50px!important;gap:8px!important}
 .voting-article .age-growth-axis{margin-right:58px!important}
 @media(max-width:700px){.voting-article .age-growth-head,.voting-article .age-growth-row{grid-template-columns:46px minmax(0,1fr) 120px!important;column-gap:12px!important}.voting-article .age-growth-head>span:last-child{display:none!important}.voting-article .age-growth-counts{grid-column:2/-1!important;width:220px!important;justify-self:end!important;margin-top:5px!important}.voting-article .age-growth-row{row-gap:8px!important}}
+</style><style id="remove-sticky-preview-line">
+/* Reader preview has no theme drawer or global filter toolbar. Remove their sticky layer. */
+.theme-drawer,.filters.filter-bar,.dashboard-root>.dashboard-topbar{display:none!important;height:0!important;min-height:0!important;max-height:0!important;padding:0!important;margin:0!important;border:0!important;outline:0!important;box-shadow:none!important;backdrop-filter:none!important;position:static!important;pointer-events:none!important}
+:root{--dashboard-topbar-base-height:0px;--dashboard-tabs-visible-height:0px}
 </style></head>
 <body>
 <div id="root"></div>
