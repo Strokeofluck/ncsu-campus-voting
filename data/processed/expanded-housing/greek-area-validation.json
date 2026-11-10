@@ -1,0 +1,20 @@
+{
+  "route_pairs_checked": 1932,
+  "Greek_origins_checked": 18,
+  "Greek_pairs_checked": 414,
+  "shorter_pairs_over_1m": 457,
+  "longer_pairs": 0,
+  "max_geometry_length_error_m": 3.4216327549074776e-08,
+  "delivery_pages_checked": 9,
+  "unique_authored_scripts_checked": 9,
+  "housing_comparison": [
+    43,
+    41
+  ],
+  "near_Talley": [
+    530,
+    1764,
+    30.0
+  ],
+  "Google_observations_preserved": 9
+}

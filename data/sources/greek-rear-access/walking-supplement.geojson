@@ -1,0 +1,466 @@
+{
+  "type": "FeatureCollection",
+  "name": "Greek west-row rear parking access supplement",
+  "retrieved_at": "2026-11-10",
+  "scope": "Kappa Alpha Theta, Zeta Tau Alpha, Sigma Kappa and Alpha Delta Pi. Existing front access remains eligible; the model chooses the shorter connected option per trip.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812224",
+        "source_url": "https://www.openstreetmap.org/way/758812224",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.682952,
+            35.7797537
+          ],
+          [
+            -78.6830081,
+            35.7798239
+          ],
+          [
+            -78.683099,
+            35.7799378
+          ],
+          [
+            -78.6831246,
+            35.7799699
+          ],
+          [
+            -78.683128,
+            35.7800305
+          ],
+          [
+            -78.6832048,
+            35.7803216
+          ],
+          [
+            -78.6833603,
+            35.780911
+          ],
+          [
+            -78.6834114,
+            35.7811046
+          ]
+        ]
+      },
+      "node_ids": [
+        "6647984784",
+        "7087027820",
+        "7087027818",
+        "7087027796",
+        "7087027797",
+        "7087027806",
+        "7087027800",
+        "7087027798"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812225",
+        "source_url": "https://www.openstreetmap.org/way/758812225",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6843155,
+            35.7807529
+          ],
+          [
+            -78.6836118,
+            35.7808694
+          ],
+          [
+            -78.6833603,
+            35.780911
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027799",
+        "7087027801",
+        "7087027800"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812226",
+        "source_url": "https://www.openstreetmap.org/way/758812226",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6836118,
+            35.7808694
+          ],
+          [
+            -78.6834544,
+            35.7802786
+          ],
+          [
+            -78.6833758,
+            35.7799837
+          ],
+          [
+            -78.6833147,
+            35.779941
+          ],
+          [
+            -78.6832247,
+            35.779952
+          ],
+          [
+            -78.6831246,
+            35.7799699
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027801",
+        "7087027805",
+        "7087027802",
+        "7087027803",
+        "7087027804",
+        "7087027796"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812227",
+        "source_url": "https://www.openstreetmap.org/way/758812227",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6834544,
+            35.7802786
+          ],
+          [
+            -78.6832048,
+            35.7803216
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027805",
+        "7087027806"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812228",
+        "source_url": "https://www.openstreetmap.org/way/758812228",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6839638,
+            35.7793117
+          ],
+          [
+            -78.6839356,
+            35.7793166
+          ],
+          [
+            -78.6836817,
+            35.7793604
+          ],
+          [
+            -78.6835677,
+            35.77941
+          ],
+          [
+            -78.6835094,
+            35.779446
+          ],
+          [
+            -78.6834567,
+            35.7794786
+          ],
+          [
+            -78.6833538,
+            35.7795595
+          ],
+          [
+            -78.6832021,
+            35.7796834
+          ],
+          [
+            -78.6831013,
+            35.7797611
+          ],
+          [
+            -78.6830769,
+            35.7797791
+          ],
+          [
+            -78.6830372,
+            35.7798049
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027807",
+        "7087035515",
+        "7087027808",
+        "7087027809",
+        "7087035521",
+        "7087027810",
+        "7087027811",
+        "7087027812",
+        "7087027813",
+        "7087027814",
+        "7087027819"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812229",
+        "source_url": "https://www.openstreetmap.org/way/758812229",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6830769,
+            35.7797791
+          ],
+          [
+            -78.6831319,
+            35.7798445
+          ],
+          [
+            -78.6831492,
+            35.7798734
+          ],
+          [
+            -78.6831431,
+            35.7799024
+          ],
+          [
+            -78.683099,
+            35.7799378
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027814",
+        "7087027815",
+        "7087027816",
+        "7087027817",
+        "7087027818"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812230",
+        "source_url": "https://www.openstreetmap.org/way/758812230",
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6830372,
+            35.7798049
+          ],
+          [
+            -78.6830081,
+            35.7798239
+          ],
+          [
+            -78.6829649,
+            35.779847
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027819",
+        "7087027820",
+        "7087027821"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758812231",
+        "source_url": "https://www.openstreetmap.org/way/758812231",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6829649,
+            35.779847
+          ],
+          [
+            -78.6828132,
+            35.7799321
+          ],
+          [
+            -78.682694,
+            35.7799883
+          ],
+          [
+            -78.6825841,
+            35.7800304
+          ],
+          [
+            -78.6825364,
+            35.7800461
+          ],
+          [
+            -78.6825189,
+            35.7800519
+          ],
+          [
+            -78.6824843,
+            35.7800593
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027821",
+        "7087027822",
+        "7087027823",
+        "7087027824",
+        "7087027828",
+        "7087027825",
+        "7087027826"
+      ]
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "1307692126",
+        "source_url": "https://www.openstreetmap.org/way/1307692126",
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6843155,
+            35.7807529
+          ],
+          [
+            -78.6844277,
+            35.7807411
+          ]
+        ]
+      },
+      "node_ids": [
+        "7087027799",
+        "12110059326"
+      ]
+    }
+  ],
+  "estimated_rear_access_points": [
+    {
+      "building_id": "252M",
+      "point": [
+        -78.68318739946353,
+        35.78099128806502
+      ],
+      "aisle_point": [
+        -78.68337291027562,
+        35.7809587760063
+      ],
+      "connector_m": 17.154557993206037,
+      "status": "Estimated rear building-edge access across paved apron to mapped parking aisle; not a verified door",
+      "evidence": "Rear paved apron and parking aisle visible in reviewed aerial; rear parking exit also offered by Google walking directions for Kappa Alpha Theta."
+    },
+    {
+      "building_id": "252K",
+      "point": [
+        -78.6831618010712,
+        35.78073293596694
+      ],
+      "aisle_point": [
+        -78.68330662800768,
+        35.780707565171426
+      ],
+      "connector_m": 13.392218818253212,
+      "status": "Estimated rear building-edge access across paved apron to mapped parking aisle; not a verified door",
+      "evidence": "Rear paved apron and parking aisle visible in reviewed aerial; rear parking exit also offered by Google walking directions for Kappa Alpha Theta."
+    },
+    {
+      "building_id": "252J",
+      "point": [
+        -78.68302766283635,
+        35.78037858282061
+      ],
+      "aisle_point": [
+        -78.6832113443326,
+        35.78034640551474
+      ],
+      "connector_m": 16.985190176496182,
+      "status": "Estimated rear building-edge access across paved apron to mapped parking aisle; not a verified door",
+      "evidence": "Rear paved apron and parking aisle visible in reviewed aerial; rear parking exit also offered by Google walking directions for Kappa Alpha Theta."
+    },
+    {
+      "building_id": "252H",
+      "point": [
+        -78.68294779542107,
+        35.780072228791944
+      ],
+      "aisle_point": [
+        -78.68313056213731,
+        35.78004021146957
+      ],
+      "connector_m": 16.900666988327856,
+      "status": "Estimated rear building-edge access across paved apron to mapped parking aisle; not a verified door",
+      "evidence": "Rear paved apron and parking aisle visible in reviewed aerial; rear parking exit also offered by Google walking directions for Kappa Alpha Theta."
+    }
+  ],
+  "join_nodes": [
+    "12110059326",
+    "7087027826"
+  ],
+  "join_coordinates": [
+    [
+      -78.6844277,
+      35.7807411
+    ],
+    [
+      -78.6824843,
+      35.7800593
+    ]
+  ],
+  "google_route_check": "https://www.google.com/maps/dir/?api=1&origin=35.781125,-78.683064&destination=35.784512725066264,-78.68522579542082&travelmode=walking",
+  "google_observed": "November 10: walking route exits rear parking toward Gorman Street, 0.6 mile / 14 minutes; used as corroboration of rear parking connectivity, not as model distance or proof of door access.",
+  "limitations": "Rear access points are estimated building-edge points, not mapped or field-verified entrances. Parking aisles and a shared access-drive crossing of Varsity Drive are included; this is not a designated-crosswalk, traffic-safety, accessibility or October-conditions assessment. Public arterial road centerlines are not added.",
+  "license": "\u00a9 OpenStreetMap contributors, ODbL 1.0"
+}

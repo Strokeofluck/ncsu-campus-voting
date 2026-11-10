@@ -29605,7 +29605,7 @@ Cohen questioned the emphasis on parking for students who do not drive.
 
 Across all housing types analyzed, Western Boulevard was closer to **43 of the 84 housing buildings analyzed** and farther from **41**. The comparison includes all 84 housing buildings in the inventory. [Distance estimates and sources](../references.html#housing-distance-sources).
 
-But a shorter walk from home does not necessarily mean a more convenient trip to vote. At Talley, students could vote along the way to class, dining or the library. **In the expanded route model shown below, 595 of 1,764 campus trips passed within 50 meters of Talley. None passed that close to Western Boulevard.** The housing map compares walks to each site; the following map shows modeled trips to campus destinations.`,})})
+But a shorter walk from home does not necessarily mean a more convenient trip to vote. At Talley, students could vote along the way to class, dining or the library. **In the expanded route model shown below, 530 of 1,764 campus trips passed within 50 meters of Talley. None passed that close to Western Boulevard.** The housing map compares walks to each site; the following map shows modeled trips to campus destinations.`,})})
   , jsxRuntime.jsx(CampusWalkingMap, { article: true,})
   , jsxRuntime.jsx(dataApp.ReportSection, { id: "voting-article-routine-intro", queryId: "campus_passby", sourceRows: snapshot.queries.campus_passby.rows.filter(r=>!r.ends_at_talley), showHeading: false, title: "Would routine walks bring students near the site?"       , children: jsxRuntime.jsx(dataApp.RichNarrative, { id: "voting-article-routine-intro:body", value: `
 
@@ -29615,7 +29615,7 @@ A separate simulation modeled **1,764 trips from all 84 housing buildings** to c
 
 
 
-**595 routes (33.7%) passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.
+**530 routes (30.0%) passed within 50 meters of Talley’s building outline**, the former early-voting location. **None passed within 50 meters of Western Boulevard’s building outline**. The simulation describes opportunities to pass nearby; it does not measure how many students actually walked those routes, noticed the site or voted.
 
 Both comparisons cover **all 84 housing buildings**. Nine manually traced, approximate walking connections link the additional buildings to the existing GIS network for the campus-trip simulation. [Methods, Google estimates and walking links](../references.html#housing-distance-sources). Each building-to-destination pair has equal weight, without adjustment for building occupancy. The percentages describe this modeled selection rather than all students or their actual walking trips.
 
