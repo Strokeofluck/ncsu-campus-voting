@@ -351,6 +351,11 @@ main.report-page,.report-page:has(>.voting-article){width:100%!important;max-wid
 </style><meta name="robots" content="noindex,nofollow"><style>
 /* Hide the reader selection assistant, including its floating prompt. */
 .dashboard-ask-anchor,.dashboard-ask-mobile-scrim,.dashboard-ask-panel{display:none!important}
+</style><style id="parking-mini-shared-rows">
+/* Share title, subtitle, map and detail rows so wrapped text cannot stagger maps. */
+.parking-mini-grid{align-items:start;row-gap:0!important}
+.parking-mini-card{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
+.parking-mini-map{align-self:start}
 </style></head>
 <body>
 <div id="root"></div>

@@ -32,3 +32,8 @@ option[value="ask"] { display: none !important; }
 
 /* Hide the reader selection assistant, including its floating prompt. */
 .dashboard-ask-anchor,.dashboard-ask-mobile-scrim,.dashboard-ask-panel{display:none!important}
+
+/* Share title, subtitle, map and detail rows so wrapped text cannot stagger maps. */
+.parking-mini-grid{align-items:start;row-gap:0!important}
+.parking-mini-card{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
+.parking-mini-map{align-self:start}
