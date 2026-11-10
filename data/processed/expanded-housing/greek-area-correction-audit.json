@@ -3,7 +3,7 @@
   "pairs_recalculated": 1932,
   "greek_buildings_checked": 18,
   "greek_pairs_checked": 414,
-  "shorter_pairs_over_1m": 457,
+  "shorter_pairs_over_1m": 458,
   "longer_pairs": 0,
   "prior_near_talley": 595,
   "near_talley": 530,
@@ -19,10 +19,10 @@
       "building_id": "142",
       "name": "Kappa Kappa Gamma",
       "pairs_checked": 23,
-      "shorter_pairs": 22,
+      "shorter_pairs": 23,
       "longer_pairs": 0,
       "talley_m": 1394.7994610601074,
-      "western_m": 1149.242536842777,
+      "western_m": 1084.5492679744825,
       "available_access_types": [
         346
       ],
@@ -3203,8 +3203,8 @@
       "destination_id": "131",
       "destination": "Western Boulevard Business Services",
       "before_m": 1149.6004292605946,
-      "after_m": 1149.242536842777,
-      "saving_m": 0.35789241781753844,
+      "after_m": 1084.5492679744825,
+      "saving_m": 65.05116128611212,
       "origin_access": 346,
       "before_near_talley": false,
       "after_near_talley": false

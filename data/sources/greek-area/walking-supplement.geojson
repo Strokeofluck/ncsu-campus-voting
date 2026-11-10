@@ -6372,6 +6372,32 @@
       "gap_m": 0.15972604895450965
     }
   ],
+  "reviewed_junction_repairs": [
+    {
+      "gis_vertex": [
+        -78.68254740347713,
+        35.78007045283193
+      ],
+      "pedestrian_line_point": [
+        -78.68254262706246,
+        35.78007123846328
+      ],
+      "alignment_m": 0.4405240968068414,
+      "reason": "Reviewed same-grade pedestrian junction; avoid source-alignment backtrack"
+    },
+    {
+      "gis_vertex": [
+        -78.68267135305007,
+        35.78360721287468
+      ],
+      "pedestrian_line_point": [
+        -78.68266457562684,
+        35.78360706582101
+      ],
+      "alignment_m": 0.612907972014552,
+      "reason": "Reviewed same-grade pedestrian junction; avoid source-alignment backtrack"
+    }
+  ],
   "maximum_alignment_m": 1.5,
   "rejected_segments": [],
   "additional_mapped_path_access": [],

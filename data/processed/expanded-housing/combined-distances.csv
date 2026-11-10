@@ -9,7 +9,7 @@ id,name,group,distance_source,routing_available,talley_m,western_m,difference_m,
 252Z,Greek Village Townhomes,Greek Village,NC State GIS,True,1230.641109509466,997.8522412683386,-232.7888682411275,,,,
 252M,Kappa Alpha Theta,Greek Village,NC State GIS,True,1407.4194896717847,763.4420712099685,-643.9774184618162,,,,
 252C,Kappa Delta,Greek Village,NC State GIS,True,1426.3986644087659,1130.669930535979,-295.72873387278696,,,,
-142,Kappa Kappa Gamma,Greek Village,NC State GIS,True,1394.7994610601074,1149.242536842777,-245.55692421733033,,,,
+142,Kappa Kappa Gamma,Greek Village,NC State GIS,True,1394.7994610601074,1084.5492679744825,-310.2501930856249,,,,
 252V,Lambda Chi Alpha,Greek Village,NC State GIS,True,1259.2899400707836,1026.5010718296564,-232.78886824112715,,,,
 143,Pi Kappa Alpha,Greek Village,NC State GIS,True,1306.6003137826717,1073.8114455415443,-232.78886824112737,,,,
 291,Pi Kappa Phi,Greek Village,Google Maps,False,3701.4912,2896.8192000000004,-804.6719999999996,51,41,https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.76603979%2C-78.6990489&destination=35.78404092003609%2C-78.67087626427747,https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=35.76603979%2C-78.6990489&destination=35.784512725066264%2C-78.68522579542082

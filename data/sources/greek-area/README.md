@@ -12,4 +12,6 @@ Sources and file hashes:
 - pedestrian-source.xml: e6d27d36f2666804a5a7b7c8ae1d5f6f26dc3373194a938e90f8cae8e94b3064
 - raleigh-sidewalks.json: f8f505ed4d3727d495211b448b2d5d0257bebbd65a84b97296328f3717041ed2
 - reviewed-aerial.png: 69c142cd9e310e98fc1e604d47b0e9b680c25599cb06519fe174a9b270861211
-- walking-supplement.geojson: 4166af616eee9d0378ae11f253f3504e7a2d88515d2aa08851ce09feaef03886
+- walking-supplement.geojson: 6e7e50261b5d3e75841759951d260c6d9f0742815044f620125a8d17f24e8b35
+
+Two explicitly reviewed same-grade GIS-to-pedestrian-line junction seams were split and aligned by 0.4405 m and 0.6129 m. Coordinates are retained in walking-supplement.geojson under reviewed_junction_repairs. An independent destination-to-origin shortest-path calculation validates all 1,932 pairs; see ../../processed/expanded-housing/shortest-path-stress-test.json.

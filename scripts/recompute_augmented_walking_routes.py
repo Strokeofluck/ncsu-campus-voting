@@ -136,6 +136,21 @@ for i,values in by_existing_edge.items():
  for (d1,a),(d2,b) in zip(chain,chain[1:]):
   if a!=b:g.add_edge(a,b,weight=d2-d1)
 g.update(pg)
+# Two reviewed same-grade path seams: source GIS vertices meet the interior
+# of the supplementary pedestrian line within one metre. Explicitly split
+# those two lines, rather than connecting arbitrary geometric crossings.
+junction_repairs=[]
+for lonlat in [(-78.68254740347713,35.78007045283193),(-78.68267135305007,35.78360721287468)]:
+ point=Point(P.transform(*lonlat));node=min(g,key=lambda n:point.distance(Point(n[:2])))
+ assert point.distance(Point(node[:2]))<.01
+ ped_edges=list(pg.edges);ped_lines=[LineString([a[:2],b[:2]]) for a,b in ped_edges];ped_tree=STRtree(ped_lines);idx=int(ped_tree.nearest(point));line=ped_lines[idx];a,b=ped_edges[idx];snap=line.interpolate(line.project(point));gap=point.distance(snap)
+ assert gap<1 and g.has_edge(a,b)
+ connector=LineString([point,snap]);assert not any(connector.intersection(poly).length>2.5 for poly in polys.values())
+ split=tuple(snap.coords[0])+('reviewed-greek-path-seam',len(junction_repairs));offset=line.project(snap)
+ for graph in [g,pg]:
+  graph.remove_edge(a,b);graph.add_edge(a,split,weight=offset);graph.add_edge(split,b,weight=line.length-offset)
+ g.add_edge(node,split,weight=gap)
+ junction_repairs.append({'gis_vertex':list(lonlat),'pedestrian_line_point':list(U.transform(snap.x,snap.y)),'alignment_m':gap,'reason':'Reviewed same-grade pedestrian junction; avoid source-alignment backtrack'})
 # Existing campus walkway termini at a building boundary provide additional
 # mapped path access options, not assumptions that all sides have doors.
 termini=[]
@@ -150,7 +165,7 @@ for o in origins:
   if not any(a['point'].distance(p)<.25 for a in entries[code]):
    entries[code].append({'id':'mapped-GIS-walkway-terminus','point':p,'node':node,'gap':0});termini.append({'building_id':code,'point':list(U.transform(*node)),'status':'Mapped path terminus at footprint; door permissions not verified'})
 outaudit=R/'work/greek-area-recalculation';outaudit.mkdir(parents=True,exist_ok=True)
-(outaudit/'neighborhood-supplement.geojson').write_text(json.dumps({'type':'FeatureCollection','features':selected_features,'retrieved_at':'2026-11-10','alignment_joins':joins,'maximum_alignment_m':1.5,'rejected_segments':rejected,'additional_mapped_path_access':termini,'limitations':'Only public mapped pedestrian paths; residential and arterial road centerlines are not imported. Parking access is separately documented. Source alignment does not certify field conditions, door permissions, crossing safety or accessibility.'},indent=2))
+(outaudit/'neighborhood-supplement.geojson').write_text(json.dumps({'type':'FeatureCollection','features':selected_features,'retrieved_at':'2026-11-10','alignment_joins':joins,'reviewed_junction_repairs':junction_repairs,'maximum_alignment_m':1.5,'rejected_segments':rejected,'additional_mapped_path_access':termini,'limitations':'Only public mapped pedestrian paths; residential and arterial road centerlines are not imported. Parking access is separately documented. Source alignment does not certify field conditions, door permissions, crossing safety or accessibility.'},indent=2))
 print('Greek-area public pedestrian ways',len(selected_features),'short alignment joins',len(joins),'additional mapped path termini',len(termini),flush=True)
 
 old={(r['origin_id'],r['destination_id']):r for r in d['rows']};result=[];fixed_errors=[]

@@ -29,3 +29,6 @@
 .dashboard-ask-button,
 .dashboard-action-menu-item:has([data-dashboard-icon="chatBubble"]),
 option[value="ask"] { display: none !important; }
+
+/* Hide the reader selection assistant, including its floating prompt. */
+.dashboard-ask-anchor,.dashboard-ask-mobile-scrim,.dashboard-ask-panel{display:none!important}

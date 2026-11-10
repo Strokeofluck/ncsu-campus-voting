@@ -1,0 +1,52 @@
+{
+  "pairs_checked": 1932,
+  "independent_reverse_shortest_path_max_error_m": 7.275957614183426e-12,
+  "missing_pairs": [],
+  "shorter_after_junction_repairs": 1,
+  "longer_after_repairs": 0,
+  "max_saved_m": 64.69326886829458,
+  "thresholds": [
+    {
+      "radius_m": 50,
+      "count": 530,
+      "total": 1764
+    },
+    {
+      "radius_m": 55,
+      "count": 530,
+      "total": 1764
+    },
+    {
+      "radius_m": 60,
+      "count": 1078,
+      "total": 1764
+    }
+  ],
+  "junction_repairs": [
+    {
+      "gis_vertex": [
+        -78.68254740347713,
+        35.78007045283193
+      ],
+      "pedestrian_line_point": [
+        -78.68254262706246,
+        35.78007123846328
+      ],
+      "alignment_m": 0.4405240968068414,
+      "reason": "Reviewed same-grade pedestrian junction; avoid source-alignment backtrack"
+    },
+    {
+      "gis_vertex": [
+        -78.68267135305007,
+        35.78360721287468
+      ],
+      "pedestrian_line_point": [
+        -78.68266457562684,
+        35.78360706582101
+      ],
+      "alignment_m": 0.612907972014552,
+      "reason": "Reviewed same-grade pedestrian junction; avoid source-alignment backtrack"
+    }
+  ],
+  "scope": "Optimal within the augmented mapped network; does not establish completeness of real-world paths or door access."
+}
