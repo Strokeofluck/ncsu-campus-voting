@@ -3,8 +3,8 @@
   "kind": "standalone-html",
   "html": {
     "path": "index.html",
-    "sha256": "78f024d71562ee49b37457c1a324ce628e556fec99e2567323e9b2d9b58fd500",
-    "bytes": 13154204
+    "sha256": "07eba767cd78eb4fb4e36b13ef16c7fd949c1d220c6ce44b82b72cd6473c5fad",
+    "bytes": 13154856
   },
   "snapshot": {
     "path": "snapshot.407160eea1a00684d30f57ed2bec90a15b010b00695db2f23778f7b76a615226.json",
