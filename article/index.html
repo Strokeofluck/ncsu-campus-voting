@@ -277,6 +277,12 @@ main.report-page,.report-page:has(>.voting-article){width:100%!important;max-wid
 .voting-article .voting-article-bar.voting-article-bar-benchmark{background:#181818!important}
 #same-day-registration-comparison .sdr-growth-row:first-of-type .sdr-track>div{background:#b8b8b8!important}
 #same-day-registration-comparison .sdr-growth-row:nth-of-type(2) .sdr-track>div{background:#181818!important}
+</style><style id="benchmark-section-spacing">
+/* Remove stacked paragraph and section spacing before the ballot benchmark. */
+.voting-article>.report-section:has(+.voting-article-benchmark-wrap) .rich-narrative-content>p:last-child,.voting-article>.report-section:has(+.voting-article-benchmark-wrap) .report-rich-editable>p:last-child{margin-bottom:0!important}
+.voting-article>.voting-article-benchmark-wrap{margin-top:-12px!important}
+.voting-article>.voting-article-benchmark-wrap>.data-component{margin-top:0!important;padding-top:0!important}
+@media(max-width:640px){.voting-article>.voting-article-benchmark-wrap{margin-top:-6px!important}}
 </style></head>
 <body>
 <div id="root"></div>
