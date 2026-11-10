@@ -1,0 +1,17 @@
+{
+  "href": "https://server.arcgisonline.com/arcgis/rest/directories/arcgisoutput/World_Imagery_MapServer/_ags_mapdec181a17ec644e1868921bcdd3e80ac.png",
+  "width": 1400,
+  "height": 1200,
+  "extent": {
+    "xmin": -78.6815,
+    "ymin": 35.7797857142857,
+    "xmax": -78.6796,
+    "ymax": 35.78141428571428,
+    "spatialReference": {
+      "wkid": 4326,
+      "latestWkid": 4326
+    }
+  },
+  "scale": 570.9964710745058,
+  "source_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?f=json&bbox=-78.6815%2C35.7799%2C-78.6796%2C35.7813&bboxSR=4326&imageSR=4326&size=1400%2C1200&format=png"
+}

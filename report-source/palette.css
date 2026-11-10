@@ -37,3 +37,5 @@ option[value="ask"] { display: none !important; }
 .parking-mini-grid{align-items:start;row-gap:0!important}
 .parking-mini-card{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
 .parking-mini-map{align-self:start}
+
+.voting-article .rich-narrative-content>h1{white-space:normal!important;max-width:100%!important;box-sizing:border-box;overflow-wrap:break-word!important}.voting-article .rich-narrative-content{min-width:0}

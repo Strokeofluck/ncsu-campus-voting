@@ -1,0 +1,696 @@
+{
+  "pairs_checked": 1932,
+  "independent_shortest_path_error_m": 7.275957614183426e-12,
+  "geometry_length_error_m": 3.4216327549074776e-08,
+  "reviewed_area_loops_over_3m": [],
+  "target_building_interior_flags": [],
+  "thresholds": {
+    "50": 530,
+    "55": 530,
+    "60": 1078
+  },
+  "eligible_pairs": 1764,
+  "western_near_50m": 0,
+  "closer_to_western": 43,
+  "farther_from_western": 41,
+  "shorter_pairs_over_1m": 256,
+  "longer_pairs_over_1m": 80,
+  "other_2d_crossings_preserved_for_grade_review": [
+    {
+      "origin": "Chapter Commons",
+      "destination": "1911 Bldg",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Chapter Commons",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Chapter Commons",
+      "destination": "Caldwell Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Chapter Commons",
+      "destination": "Ricks Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Chapter Commons",
+      "destination": "Tompkins Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Chapter Commons",
+      "destination": "Winston Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Chapter Commons",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "1911 Bldg",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "Caldwell Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "Ricks Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "Tompkins Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "Winston Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Apartments",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "1911 Bldg",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "Caldwell Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "Ricks Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "Tompkins Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "Winston Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Greek Village Townhomes",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments ABC",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments ABC",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments ABC",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments ABC",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments ABC",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments ABC",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments PQ",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments PQ",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments PQ",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments PQ",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments PQ",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments PQ",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments DEF",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments DEF",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments DEF",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments DEF",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments DEF",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments DEF",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments GH",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments GH",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments GH",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments GH",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments GH",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments GH",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098903,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments IJ",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments IJ",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments IJ",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments IJ",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments IJ",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments IJ",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098903,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments K",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments K",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments K",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments K",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments K",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments K",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098903,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments L",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments L",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments L",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments L",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments L",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments L",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098903,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments M",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments M",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments M",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments M",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments M",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments M",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments NO",
+      "destination": "1911 Bldg",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments NO",
+      "destination": "1911 Bldg",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments NO",
+      "destination": "Broughton Hall",
+      "loop_m": 50.827998570125864,
+      "coordinates": [
+        -78.6694118218879,
+        35.78621020269675
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments NO",
+      "destination": "Ricks Hall",
+      "loop_m": 75.55171854021671,
+      "coordinates": [
+        -78.66755424092658,
+        35.78523270130029
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments NO",
+      "destination": "Ricks Hall",
+      "loop_m": 26.43348734741803,
+      "coordinates": [
+        -78.66729724241655,
+        35.785167245756654
+      ]
+    },
+    {
+      "origin": "Western Manor Apartments NO",
+      "destination": "Withers Hall",
+      "loop_m": 17.279352678098675,
+      "coordinates": [
+        -78.66934540693273,
+        35.78635658949846
+      ]
+    }
+  ],
+  "scope": "Self-crossing-loop assertions apply to the two aerial-reviewed, ground-level areas. Elsewhere a 2D crossing can be grade-separated; those crossings are recorded without inventing a connection."
+}

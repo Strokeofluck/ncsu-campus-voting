@@ -1,0 +1,4956 @@
+{
+  "removed_building_interior_edges": [
+    [
+      [
+        -78.6803590959081,
+        35.78078265450874
+      ],
+      [
+        -78.68034203175995,
+        35.780762149136905
+      ]
+    ],
+    [
+      [
+        -78.68034203175995,
+        35.780762149136905
+      ],
+      [
+        -78.68030263219002,
+        35.780711480129504
+      ]
+    ],
+    [
+      [
+        -78.68029360290627,
+        35.78070109093265
+      ],
+      [
+        -78.68023178305894,
+        35.78061376833318
+      ]
+    ],
+    [
+      [
+        -78.68023178305894,
+        35.78061376833318
+      ],
+      [
+        -78.68017240359255,
+        35.78052473954508
+      ]
+    ],
+    [
+      [
+        -78.68017240359255,
+        35.78052473954508
+      ],
+      [
+        -78.6801454635587,
+        35.78048164226062
+      ]
+    ],
+    [
+      [
+        -78.68105534553847,
+        35.78021023051765
+      ],
+      [
+        -78.68110269758509,
+        35.78023586263051
+      ]
+    ],
+    [
+      [
+        -78.68105534553847,
+        35.78021023051765
+      ],
+      [
+        -78.68101352248422,
+        35.7801917499845
+      ]
+    ]
+  ],
+  "removed_manual_manor_edges": 18,
+  "access_points": [
+    {
+      "building_id": "252X",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated building-edge point, not a verified door",
+      "coordinates": [
+        -78.68101352248422,
+        35.7801917499845
+      ],
+      "network_coordinates": [
+        -78.68101352248422,
+        35.7801917499845
+      ],
+      "connector_m": 7.039277478149058e-10
+    },
+    {
+      "building_id": "252Y",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated building-edge point, not a verified door",
+      "coordinates": [
+        -78.6801454635587,
+        35.78048164226062
+      ],
+      "network_coordinates": [
+        -78.6801454635587,
+        35.78048164226062
+      ],
+      "connector_m": 6.643072824525488e-10
+    },
+    {
+      "building_id": "252Z",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated building-edge point, not a verified door",
+      "coordinates": [
+        -78.6802179841559,
+        35.780870092842505
+      ],
+      "network_coordinates": [
+        -78.68027401131062,
+        35.7808217053568
+      ],
+      "connector_m": 7.380713963221345
+    },
+    {
+      "building_id": "281",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated building-edge point, not a verified door",
+      "coordinates": [
+        -78.67959549568145,
+        35.77655969641783
+      ],
+      "network_coordinates": [
+        -78.67947784184803,
+        35.77643791797185
+      ],
+      "connector_m": 17.19555792628077
+    },
+    {
+      "building_id": "282",
+      "access_id": 157,
+      "status": "Mapped GIS entrance aligned to adjacent footprint boundary by 1.115 m",
+      "coordinates": [
+        -78.67987327483758,
+        35.7773261594303
+      ],
+      "network_coordinates": [
+        -78.67972711366149,
+        35.77733297059248
+      ],
+      "connector_m": 13.23583779890684
+    },
+    {
+      "building_id": "283",
+      "access_id": 159,
+      "status": "Mapped GIS entrance",
+      "coordinates": [
+        -78.68007027597035,
+        35.777749144004005
+      ],
+      "network_coordinates": [
+        -78.680191,
+        35.77768700000001
+      ],
+      "connector_m": 12.909715191494229
+    },
+    {
+      "building_id": "283",
+      "access_id": 160,
+      "status": "Mapped GIS entrance",
+      "coordinates": [
+        -78.67987457798571,
+        35.77778162201949
+      ],
+      "network_coordinates": [
+        -78.67975924611284,
+        35.77779923421028
+      ],
+      "connector_m": 10.60845814494701
+    },
+    {
+      "building_id": "284",
+      "access_id": 158,
+      "status": "Mapped GIS entrance",
+      "coordinates": [
+        -78.68029071625288,
+        35.77779791713945
+      ],
+      "network_coordinates": [
+        -78.680191,
+        35.77768700000001
+      ],
+      "connector_m": 15.254665507115785
+    },
+    {
+      "building_id": "285",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated paved access prefix joined at its first mapped parking-path junction, not a verified door",
+      "coordinates": [
+        -78.68090629631179,
+        35.777773692060194
+      ],
+      "connector_m": 0,
+      "retained_prefix_m": 50.338843378732754,
+      "junction_alignment_m": 0.0,
+      "retained_prefix_coordinates": [
+        [
+          -78.68090629631179,
+          35.777773692060194
+        ],
+        [
+          -78.680861,
+          35.77768300000002
+        ],
+        [
+          -78.680695,
+          35.777639000000015
+        ],
+        [
+          -78.680679,
+          35.777574
+        ],
+        [
+          -78.68050055726687,
+          35.77759730858791
+        ]
+      ]
+    },
+    {
+      "building_id": "286",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated paved access prefix joined at its first mapped parking-path junction, not a verified door",
+      "coordinates": [
+        -78.68114615937282,
+        35.77738051732406
+      ],
+      "connector_m": 0,
+      "retained_prefix_m": 91.6588213571585,
+      "junction_alignment_m": 0.0,
+      "retained_prefix_coordinates": [
+        [
+          -78.68114615937282,
+          35.77738051732406
+        ],
+        [
+          -78.681028,
+          35.77743000000001
+        ],
+        [
+          -78.680609,
+          35.777317
+        ],
+        [
+          -78.680475,
+          35.777300000000004
+        ],
+        [
+          -78.680341,
+          35.777235
+        ],
+        [
+          -78.68020039126091,
+          35.777272818905324
+        ]
+      ]
+    },
+    {
+      "building_id": "287",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated building-edge point, not a verified door",
+      "coordinates": [
+        -78.68056383194703,
+        35.77715280376925
+      ],
+      "network_coordinates": [
+        -78.68053427385696,
+        35.777307519836754
+      ],
+      "connector_m": 17.371807404640702
+    },
+    {
+      "building_id": "288",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated paved access prefix joined at its first mapped parking-path junction, not a verified door",
+      "coordinates": [
+        -78.68034652768317,
+        35.776791016172034
+      ],
+      "connector_m": 0,
+      "retained_prefix_m": 19.988134592201348,
+      "junction_alignment_m": 0.0,
+      "retained_prefix_coordinates": [
+        [
+          -78.68034652768317,
+          35.776791016172034
+        ],
+        [
+          -78.680234,
+          35.77683900000001
+        ],
+        [
+          -78.680153,
+          35.776878
+        ]
+      ]
+    },
+    {
+      "building_id": "289",
+      "access_id": "retained-estimated-access-reconnected",
+      "status": "Retained estimated building-edge point, not a verified door",
+      "coordinates": [
+        -78.68015479755712,
+        35.776305226127896
+      ],
+      "network_coordinates": [
+        -78.68001085324423,
+        35.776133620651194
+      ],
+      "connector_m": 23.061686367391303
+    }
+  ],
+  "manor_source_segments": [
+    {
+      "osm_way_id": "130808410",
+      "tags": {
+        "highway": "path",
+        "surface": "dirt"
+      },
+      "coordinates": [
+        [
+          -78.6788947,
+          35.77560779999999
+        ],
+        [
+          -78.6787883,
+          35.7755896
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "130808410",
+      "tags": {
+        "highway": "path",
+        "surface": "dirt"
+      },
+      "coordinates": [
+        [
+          -78.6787883,
+          35.7755896
+        ],
+        [
+          -78.6787575,
+          35.775586299999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "130808410",
+      "tags": {
+        "highway": "path",
+        "surface": "dirt"
+      },
+      "coordinates": [
+        [
+          -78.6787575,
+          35.775586299999986
+        ],
+        [
+          -78.6787267,
+          35.77558519999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "130808410",
+      "tags": {
+        "highway": "path",
+        "surface": "dirt"
+      },
+      "coordinates": [
+        [
+          -78.6787267,
+          35.77558519999998
+        ],
+        [
+          -78.6787034,
+          35.7755858
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "130808410",
+      "tags": {
+        "highway": "path",
+        "surface": "dirt"
+      },
+      "coordinates": [
+        [
+          -78.6787034,
+          35.7755858
+        ],
+        [
+          -78.6786801,
+          35.77558860000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "297306513",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      },
+      "coordinates": [
+        [
+          -78.680697,
+          35.77522040000001
+        ],
+        [
+          -78.6808677,
+          35.77531580000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "297306513",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      },
+      "coordinates": [
+        [
+          -78.6808677,
+          35.77531580000001
+        ],
+        [
+          -78.6808909,
+          35.7753372
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6818472,
+          35.77830560000002
+        ],
+        [
+          -78.6817626,
+          35.778310700000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6817626,
+          35.778310700000006
+        ],
+        [
+          -78.6817276,
+          35.77830740000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6817276,
+          35.77830740000001
+        ],
+        [
+          -78.6815786,
+          35.7783155
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6815786,
+          35.7783155
+        ],
+        [
+          -78.6812694,
+          35.7783415
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6812694,
+          35.7783415
+        ],
+        [
+          -78.6810949,
+          35.77837250000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6810949,
+          35.77837250000002
+        ],
+        [
+          -78.6805896,
+          35.77850920000003
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392319",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6805317,
+          35.77852629999999
+        ],
+        [
+          -78.6804475,
+          35.77835120000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392320",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6812694,
+          35.7783415
+        ],
+        [
+          -78.6811107,
+          35.7781313
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392320",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6811107,
+          35.7781313
+        ],
+        [
+          -78.6809291,
+          35.778184699999976
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392320",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6809291,
+          35.778184699999976
+        ],
+        [
+          -78.6804475,
+          35.77835120000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392320",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6804475,
+          35.77835120000001
+        ],
+        [
+          -78.6801185,
+          35.77843229999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6801512,
+          35.77684880000001
+        ],
+        [
+          -78.6797781,
+          35.776983200000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797781,
+          35.776983200000004
+        ],
+        [
+          -78.6797493,
+          35.77699890000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797493,
+          35.77699890000001
+        ],
+        [
+          -78.6797248,
+          35.777022399999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797248,
+          35.777022399999986
+        ],
+        [
+          -78.6797135,
+          35.777049700000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797135,
+          35.777049700000006
+        ],
+        [
+          -78.6797105,
+          35.777096300000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797105,
+          35.777096300000004
+        ],
+        [
+          -78.6797341,
+          35.77743259999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797341,
+          35.77743259999999
+        ],
+        [
+          -78.6797303,
+          35.777453
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797303,
+          35.777453
+        ],
+        [
+          -78.6797224,
+          35.77746900000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "346392321",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797224,
+          35.77746900000001
+        ],
+        [
+          -78.6796921,
+          35.77749219999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352415555",
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6784227,
+          35.7769479
+        ],
+        [
+          -78.6785581,
+          35.7770331
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352415555",
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6785581,
+          35.7770331
+        ],
+        [
+          -78.6786608,
+          35.7771081
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6809282,
+          35.77568500000002
+        ],
+        [
+          -78.6809233,
+          35.77570760000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6809233,
+          35.77570760000002
+        ],
+        [
+          -78.6809243,
+          35.77573
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6809243,
+          35.77573
+        ],
+        [
+          -78.6809335,
+          35.77575330000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6809335,
+          35.77575330000002
+        ],
+        [
+          -78.680954,
+          35.7757732
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.680954,
+          35.7757732
+        ],
+        [
+          -78.6810688,
+          35.7758273
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6810688,
+          35.7758273
+        ],
+        [
+          -78.6812859,
+          35.77592030000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6812859,
+          35.77592030000002
+        ],
+        [
+          -78.6813771,
+          35.775961099999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6813771,
+          35.775961099999996
+        ],
+        [
+          -78.681414,
+          35.77598769999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.681414,
+          35.77598769999999
+        ],
+        [
+          -78.6814263,
+          35.77601010000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6814263,
+          35.77601010000002
+        ],
+        [
+          -78.6814283,
+          35.77603250000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6814283,
+          35.77603250000001
+        ],
+        [
+          -78.6814212,
+          35.776053300000015
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6814212,
+          35.776053300000015
+        ],
+        [
+          -78.6814089,
+          35.7760633
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6814089,
+          35.7760633
+        ],
+        [
+          -78.68138630000001,
+          35.7760758
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.68138630000001,
+          35.7760758
+        ],
+        [
+          -78.6812685,
+          35.77611149999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6812685,
+          35.77611149999999
+        ],
+        [
+          -78.6812235,
+          35.77613230000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6812235,
+          35.77613230000001
+        ],
+        [
+          -78.6812429,
+          35.77617800000003
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416344",
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6812429,
+          35.77617800000003
+        ],
+        [
+          -78.6812654,
+          35.7762181
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416345",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6814302,
+          35.777139499999976
+        ],
+        [
+          -78.6818918,
+          35.776985800000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808555,
+          35.775639900000016
+        ],
+        [
+          -78.6808755,
+          35.775670399999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808755,
+          35.775670399999996
+        ],
+        [
+          -78.6809282,
+          35.77568500000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6809282,
+          35.77568500000002
+        ],
+        [
+          -78.6810165,
+          35.7757191
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6810165,
+          35.7757191
+        ],
+        [
+          -78.6812875,
+          35.77583899999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6812875,
+          35.77583899999998
+        ],
+        [
+          -78.6815656,
+          35.77597059999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6815656,
+          35.77597059999998
+        ],
+        [
+          -78.6818162,
+          35.776087000000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6818162,
+          35.776087000000004
+        ],
+        [
+          -78.6819872,
+          35.776180999999994
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416346",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6819872,
+          35.776180999999994
+        ],
+        [
+          -78.6821248,
+          35.77626799999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6818067,
+          35.7764951
+        ],
+        [
+          -78.6817639,
+          35.77649389999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6817639,
+          35.77649389999999
+        ],
+        [
+          -78.681721,
+          35.776487700000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.681721,
+          35.776487700000004
+        ],
+        [
+          -78.6816782,
+          35.776477700000015
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6816782,
+          35.776477700000015
+        ],
+        [
+          -78.6816445,
+          35.776466600000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6816445,
+          35.776466600000006
+        ],
+        [
+          -78.68162,
+          35.776454199999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.68162,
+          35.776454199999996
+        ],
+        [
+          -78.6815925,
+          35.776435500000005
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6815925,
+          35.776435500000005
+        ],
+        [
+          -78.681568,
+          35.776411900000014
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.681568,
+          35.776411900000014
+        ],
+        [
+          -78.6815466,
+          35.77638459999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6815466,
+          35.77638459999999
+        ],
+        [
+          -78.6814639,
+          35.7762592
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6814639,
+          35.7762592
+        ],
+        [
+          -78.6814486,
+          35.77623929999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6814486,
+          35.77623929999999
+        ],
+        [
+          -78.68142570000002,
+          35.776222
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.68142570000002,
+          35.776222
+        ],
+        [
+          -78.6814042,
+          35.776211999999994
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6814042,
+          35.776211999999994
+        ],
+        [
+          -78.6813782,
+          35.77620460000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6813782,
+          35.77620460000001
+        ],
+        [
+          -78.6813507,
+          35.77620210000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6813507,
+          35.77620210000002
+        ],
+        [
+          -78.681317,
+          35.7762058
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.681317,
+          35.7762058
+        ],
+        [
+          -78.6812654,
+          35.7762181
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6812654,
+          35.7762181
+        ],
+        [
+          -78.6810277,
+          35.77631010000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6810277,
+          35.77631010000001
+        ],
+        [
+          -78.6810124,
+          35.7763213
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6810124,
+          35.7763213
+        ],
+        [
+          -78.6810063,
+          35.7763374
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6810063,
+          35.7763374
+        ],
+        [
+          -78.6810048,
+          35.7763536
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6810048,
+          35.7763536
+        ],
+        [
+          -78.6811364,
+          35.7765684
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6811364,
+          35.7765684
+        ],
+        [
+          -78.6812711,
+          35.776805499999995
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6812711,
+          35.776805499999995
+        ],
+        [
+          -78.6813828,
+          35.7770588
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6813828,
+          35.7770588
+        ],
+        [
+          -78.6814302,
+          35.777139499999976
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6814302,
+          35.777139499999976
+        ],
+        [
+          -78.6816078,
+          35.77741150000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6816078,
+          35.77741150000001
+        ],
+        [
+          -78.6816568,
+          35.77747359999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6816568,
+          35.77747359999999
+        ],
+        [
+          -78.6816858,
+          35.777498399999985
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6816858,
+          35.777498399999985
+        ],
+        [
+          -78.6817333,
+          35.7775245
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6817333,
+          35.7775245
+        ],
+        [
+          -78.6817899,
+          35.777539400000016
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416347",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6817899,
+          35.777539400000016
+        ],
+        [
+          -78.6818572,
+          35.77754060000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416839",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6818258,
+          35.777797699999994
+        ],
+        [
+          -78.6817748,
+          35.777876
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416839",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6817748,
+          35.777876
+        ],
+        [
+          -78.6817285,
+          35.777969999999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416839",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6817285,
+          35.777969999999996
+        ],
+        [
+          -78.6816951,
+          35.77806329999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416839",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6816951,
+          35.77806329999998
+        ],
+        [
+          -78.6816719,
+          35.778144499999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352416839",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "coordinates": [
+        [
+          -78.6816719,
+          35.778144499999996
+        ],
+        [
+          -78.6816543,
+          35.7782235
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693072",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6805032,
+          35.77761160000001
+        ],
+        [
+          -78.6804621,
+          35.77738900000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693073",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6809635,
+          35.77747260000004
+        ],
+        [
+          -78.6805318,
+          35.77731620000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693074",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.679681,
+          35.7780505
+        ],
+        [
+          -78.679813,
+          35.77803299999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693074",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.679813,
+          35.77803299999999
+        ],
+        [
+          -78.6801184,
+          35.7779926
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693076",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6790671,
+          35.7778808
+        ],
+        [
+          -78.6785218,
+          35.77798109999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693077",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6800497,
+          35.77667489999999
+        ],
+        [
+          -78.6802256,
+          35.77658579999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693077",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6802256,
+          35.77658579999999
+        ],
+        [
+          -78.6805926,
+          35.77644280000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693077",
+      "tags": {
+        "highway": "service"
+      },
+      "coordinates": [
+        [
+          -78.6805926,
+          35.77644280000001
+        ],
+        [
+          -78.6808477,
+          35.7769262
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693078",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6796921,
+          35.77749219999999
+        ],
+        [
+          -78.6796423,
+          35.77750490000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693078",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6796423,
+          35.77750490000001
+        ],
+        [
+          -78.6795656,
+          35.777519599999984
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693078",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6795656,
+          35.777519599999984
+        ],
+        [
+          -78.6789933,
+          35.77762179999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693079",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797248,
+          35.777022399999986
+        ],
+        [
+          -78.6796316,
+          35.777015200000015
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693079",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6796316,
+          35.777015200000015
+        ],
+        [
+          -78.6795935,
+          35.7770076
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693079",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6795935,
+          35.7770076
+        ],
+        [
+          -78.6795637,
+          35.7769918
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693079",
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6795637,
+          35.7769918
+        ],
+        [
+          -78.6792308,
+          35.776705800000016
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693080",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6803047,
+          35.7771135
+        ],
+        [
+          -78.6802019,
+          35.77726769999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693080",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6802019,
+          35.77726769999999
+        ],
+        [
+          -78.6801861,
+          35.7773211
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693080",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6801861,
+          35.7773211
+        ],
+        [
+          -78.6801888,
+          35.7775228
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693080",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6801888,
+          35.7775228
+        ],
+        [
+          -78.6802164,
+          35.777645500000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693080",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6802164,
+          35.777645500000006
+        ],
+        [
+          -78.6805032,
+          35.77761160000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693080",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6805032,
+          35.77761160000001
+        ],
+        [
+          -78.6806228,
+          35.77759749999997
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693500",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6796921,
+          35.77749219999999
+        ],
+        [
+          -78.6796957,
+          35.77752290000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "352693500",
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6796957,
+          35.77752290000001
+        ],
+        [
+          -78.679813,
+          35.77803299999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "371640749",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6811053,
+          35.775476
+        ],
+        [
+          -78.6812741,
+          35.775346800000015
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "371640749",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6812741,
+          35.775346800000015
+        ],
+        [
+          -78.6814487,
+          35.775195599999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "371640754",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.68158240000001,
+          35.77511089999997
+        ],
+        [
+          -78.6814762,
+          35.7752156
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "371640754",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6814762,
+          35.7752156
+        ],
+        [
+          -78.6814487,
+          35.775195599999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "371640755",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6814762,
+          35.7752156
+        ],
+        [
+          -78.6815057,
+          35.77523500000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406118900",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.682209,
+          35.776102099999996
+        ],
+        [
+          -78.6816711,
+          35.77580029999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406118900",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6816711,
+          35.77580029999999
+        ],
+        [
+          -78.6814924,
+          35.7756984
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406118900",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6814924,
+          35.7756984
+        ],
+        [
+          -78.6812245,
+          35.775544000000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406118900",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6812245,
+          35.775544000000004
+        ],
+        [
+          -78.6811053,
+          35.775476
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119040",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6805948,
+          35.77557310000001
+        ],
+        [
+          -78.6807296,
+          35.775597800000014
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119040",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6807296,
+          35.775597800000014
+        ],
+        [
+          -78.6808555,
+          35.775639900000016
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119042",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "crossing:signals": "yes",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6809016,
+          35.775634
+        ],
+        [
+          -78.6809504,
+          35.775598299999984
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119042",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "crossing:signals": "yes",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6809504,
+          35.775598299999984
+        ],
+        [
+          -78.6810508,
+          35.775517699999995
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119042",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "crossing:signals": "yes",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6810508,
+          35.775517699999995
+        ],
+        [
+          -78.6810965,
+          35.7754841
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119043",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6810965,
+          35.7754841
+        ],
+        [
+          -78.6811053,
+          35.775476
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119044",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6810943,
+          35.77546820000002
+        ],
+        [
+          -78.6811053,
+          35.775476
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119045",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6808909,
+          35.7753372
+        ],
+        [
+          -78.6810028,
+          35.77541029999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119045",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6810028,
+          35.77541029999998
+        ],
+        [
+          -78.6810943,
+          35.77546820000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119046",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      },
+      "coordinates": [
+        [
+          -78.6808487,
+          35.77532720000001
+        ],
+        [
+          -78.6808677,
+          35.77531580000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119046",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      },
+      "coordinates": [
+        [
+          -78.6808677,
+          35.77531580000001
+        ],
+        [
+          -78.6809881,
+          35.7752651
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119047",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6805993,
+          35.77552850000001
+        ],
+        [
+          -78.6806958,
+          35.77544610000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119047",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6806958,
+          35.77544610000001
+        ],
+        [
+          -78.6808049,
+          35.775360099999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406119047",
+      "tags": {
+        "crossing": "marked",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6808049,
+          35.775360099999986
+        ],
+        [
+          -78.6808487,
+          35.77532720000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406185311",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6821626,
+          35.77600080000001
+        ],
+        [
+          -78.6818505,
+          35.77582390000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406185311",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6818505,
+          35.77582390000001
+        ],
+        [
+          -78.6817128,
+          35.77574589999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406185311",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817128,
+          35.77574589999999
+        ],
+        [
+          -78.6816912,
+          35.7757454
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406185311",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6816912,
+          35.7757454
+        ],
+        [
+          -78.6815382,
+          35.77566170000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406185311",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6815382,
+          35.77566170000001
+        ],
+        [
+          -78.6815298,
+          35.77564409999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "406185311",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6815298,
+          35.77564409999998
+        ],
+        [
+          -78.6812777,
+          35.775500500000014
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "411112016",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6798435,
+          35.7747365
+        ],
+        [
+          -78.680697,
+          35.77522040000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "411122765",
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6818505,
+          35.77582390000001
+        ],
+        [
+          -78.6821644,
+          35.7754422
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.678396,
+          35.77696440000001
+        ],
+        [
+          -78.6784227,
+          35.7769479
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6784227,
+          35.7769479
+        ],
+        [
+          -78.6784409,
+          35.776934800000014
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6784409,
+          35.776934800000014
+        ],
+        [
+          -78.6785273,
+          35.77684930000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6785273,
+          35.77684930000001
+        ],
+        [
+          -78.6785793,
+          35.77680829999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6785793,
+          35.77680829999999
+        ],
+        [
+          -78.6786783,
+          35.776732500000016
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6786783,
+          35.776732500000016
+        ],
+        [
+          -78.67882930000002,
+          35.77661450000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.67882930000002,
+          35.77661450000001
+        ],
+        [
+          -78.678929,
+          35.776535300000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.678929,
+          35.776535300000006
+        ],
+        [
+          -78.6789866,
+          35.776494299999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6789866,
+          35.776494299999996
+        ],
+        [
+          -78.6791137,
+          35.77640790000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6791137,
+          35.77640790000002
+        ],
+        [
+          -78.6792453,
+          35.77632760000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6792453,
+          35.77632760000001
+        ],
+        [
+          -78.679376,
+          35.7762489
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.679376,
+          35.7762489
+        ],
+        [
+          -78.6795108,
+          35.77617519999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6795108,
+          35.77617519999998
+        ],
+        [
+          -78.6796261,
+          35.77611219999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6796261,
+          35.77611219999999
+        ],
+        [
+          -78.6797537,
+          35.7760427
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6797537,
+          35.7760427
+        ],
+        [
+          -78.6799312,
+          35.77594239999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6799312,
+          35.77594239999999
+        ],
+        [
+          -78.68025790000002,
+          35.77575720000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.68025790000002,
+          35.77575720000001
+        ],
+        [
+          -78.6805181,
+          35.775614299999994
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805181,
+          35.775614299999994
+        ],
+        [
+          -78.6805422,
+          35.7755955
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805422,
+          35.7755955
+        ],
+        [
+          -78.680562,
+          35.77557370000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.680562,
+          35.77557370000001
+        ],
+        [
+          -78.6805689,
+          35.77555329999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557360",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805689,
+          35.77555329999999
+        ],
+        [
+          -78.6805993,
+          35.77552850000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557361",
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "foot": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "segregated": "no",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.67854760000002,
+          35.77723859999998
+        ],
+        [
+          -78.6785944,
+          35.77717740000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557361",
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "foot": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "segregated": "no",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6785944,
+          35.77717740000002
+        ],
+        [
+          -78.6786608,
+          35.7771081
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6786608,
+          35.7771081
+        ],
+        [
+          -78.6787294,
+          35.777019599999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6787294,
+          35.777019599999996
+        ],
+        [
+          -78.6788548,
+          35.77689329999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6788548,
+          35.77689329999999
+        ],
+        [
+          -78.6790326,
+          35.776737000000026
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6790326,
+          35.776737000000026
+        ],
+        [
+          -78.67917570000002,
+          35.77663300000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.67917570000002,
+          35.77663300000001
+        ],
+        [
+          -78.6793235,
+          35.776524
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6793235,
+          35.776524
+        ],
+        [
+          -78.6794726,
+          35.7764362
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "590557362",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6794726,
+          35.7764362
+        ],
+        [
+          -78.6797404,
+          35.77627890000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240250",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.682029,
+          35.77776129999998
+        ],
+        [
+          -78.6819282,
+          35.77790029999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240250",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6819282,
+          35.77790029999999
+        ],
+        [
+          -78.6818704,
+          35.77800510000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240250",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6818704,
+          35.77800510000001
+        ],
+        [
+          -78.6818274,
+          35.77810839999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240250",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6818274,
+          35.77810839999999
+        ],
+        [
+          -78.6817755,
+          35.778263300000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240251",
+      "tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817755,
+          35.778263300000006
+        ],
+        [
+          -78.6817626,
+          35.778310700000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240251",
+      "tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817626,
+          35.778310700000006
+        ],
+        [
+          -78.68175200000002,
+          35.7783554
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240252",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.68175200000002,
+          35.7783554
+        ],
+        [
+          -78.6817551,
+          35.7783919
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240252",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817551,
+          35.7783919
+        ],
+        [
+          -78.68175880000001,
+          35.77843480000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240252",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.68175880000001,
+          35.77843480000001
+        ],
+        [
+          -78.6817598,
+          35.778708
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240252",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817598,
+          35.778708
+        ],
+        [
+          -78.6817598,
+          35.7787885
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240252",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817598,
+          35.7787885
+        ],
+        [
+          -78.6817598,
+          35.7788343
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240253",
+      "tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817598,
+          35.7788343
+        ],
+        [
+          -78.6817628,
+          35.7788753
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240253",
+      "tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817628,
+          35.7788753
+        ],
+        [
+          -78.6817667,
+          35.77890819999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240254",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817667,
+          35.77890819999999
+        ],
+        [
+          -78.6817814,
+          35.77897490000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240254",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817814,
+          35.77897490000001
+        ],
+        [
+          -78.6818332,
+          35.7790456
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240254",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6818332,
+          35.7790456
+        ],
+        [
+          -78.6818988,
+          35.779089299999995
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240254",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6818988,
+          35.779089299999995
+        ],
+        [
+          -78.6820418,
+          35.7791584
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817911,
+          35.7783919
+        ],
+        [
+          -78.6817551,
+          35.7783919
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6817551,
+          35.7783919
+        ],
+        [
+          -78.6815053,
+          35.77840780000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6815053,
+          35.77840780000002
+        ],
+        [
+          -78.6812106,
+          35.77844360000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6812106,
+          35.77844360000002
+        ],
+        [
+          -78.6809795,
+          35.77849600000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6809795,
+          35.77849600000001
+        ],
+        [
+          -78.6806888,
+          35.7785762
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6806888,
+          35.7785762
+        ],
+        [
+          -78.6804176,
+          35.778691399999985
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6804176,
+          35.778691399999985
+        ],
+        [
+          -78.6804019,
+          35.77868100000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6804019,
+          35.77868100000001
+        ],
+        [
+          -78.6803921,
+          35.7786604
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6803921,
+          35.7786604
+        ],
+        [
+          -78.6803725,
+          35.778664400000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6803725,
+          35.778664400000004
+        ],
+        [
+          -78.6803618,
+          35.77867309999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6803618,
+          35.77867309999999
+        ],
+        [
+          -78.6803608,
+          35.778698500000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6803608,
+          35.778698500000004
+        ],
+        [
+          -78.6802805,
+          35.7787208
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6802805,
+          35.7787208
+        ],
+        [
+          -78.6802286,
+          35.7784952
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "629240256",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6802286,
+          35.7784952
+        ],
+        [
+          -78.6803716,
+          35.778469
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.679982,
+          35.77514769999999
+        ],
+        [
+          -78.6800739,
+          35.775220499999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6800739,
+          35.775220499999996
+        ],
+        [
+          -78.6801216,
+          35.77525370000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6801216,
+          35.77525370000001
+        ],
+        [
+          -78.6804917,
+          35.77545690000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6804917,
+          35.77545690000001
+        ],
+        [
+          -78.6805393,
+          35.77550359999998
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805393,
+          35.77550359999998
+        ],
+        [
+          -78.6805603,
+          35.775527900000014
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805603,
+          35.775527900000014
+        ],
+        [
+          -78.6805689,
+          35.77555329999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "664943535",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805689,
+          35.77555329999999
+        ],
+        [
+          -78.6805948,
+          35.77557310000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "665169980",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6809881,
+          35.7752651
+        ],
+        [
+          -78.6811674,
+          35.775113100000006
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6804837,
+          35.77922199999998
+        ],
+        [
+          -78.6805855,
+          35.7791151
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6805855,
+          35.7791151
+        ],
+        [
+          -78.680691,
+          35.779029499999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.680691,
+          35.779029499999986
+        ],
+        [
+          -78.680903,
+          35.77894210000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.680903,
+          35.77894210000001
+        ],
+        [
+          -78.681181,
+          35.77885849999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.681181,
+          35.77885849999999
+        ],
+        [
+          -78.6813727,
+          35.77882149999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6813727,
+          35.77882149999999
+        ],
+        [
+          -78.6816842,
+          35.77879430000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "674130134",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6816842,
+          35.77879430000002
+        ],
+        [
+          -78.6817598,
+          35.7787885
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947095",
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "segregated": "no",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797404,
+          35.77627890000001
+        ],
+        [
+          -78.6797983,
+          35.77624809999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947095",
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "segregated": "no",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6797983,
+          35.77624809999999
+        ],
+        [
+          -78.6798568,
+          35.77621789999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6798568,
+          35.77621789999999
+        ],
+        [
+          -78.6799878,
+          35.776136
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6799878,
+          35.776136
+        ],
+        [
+          -78.6803625,
+          35.7759308
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6803625,
+          35.7759308
+        ],
+        [
+          -78.6806015,
+          35.77579779999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6806015,
+          35.77579779999999
+        ],
+        [
+          -78.6808051,
+          35.775682399999994
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808051,
+          35.775682399999994
+        ],
+        [
+          -78.6808252,
+          35.77567530000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808252,
+          35.77567530000001
+        ],
+        [
+          -78.6808473,
+          35.775671999999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808473,
+          35.775671999999986
+        ],
+        [
+          -78.6808755,
+          35.775670399999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808755,
+          35.775670399999996
+        ],
+        [
+          -78.6808901,
+          35.77565210000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "770947096",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "coordinates": [
+        [
+          -78.6808901,
+          35.77565210000001
+        ],
+        [
+          -78.6809016,
+          35.775634
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "923577853",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6788921,
+          35.77730170000002
+        ],
+        [
+          -78.678831,
+          35.77725630000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "923577853",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.678831,
+          35.77725630000001
+        ],
+        [
+          -78.6787444,
+          35.77720930000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "923577853",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6787444,
+          35.77720930000002
+        ],
+        [
+          -78.6787052,
+          35.777182299999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "923577853",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6787052,
+          35.777182299999986
+        ],
+        [
+          -78.6786767,
+          35.7771492
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "923577853",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6786767,
+          35.7771492
+        ],
+        [
+          -78.6786694,
+          35.77711600000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "923577853",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6786694,
+          35.77711600000001
+        ],
+        [
+          -78.6786608,
+          35.7771081
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6820922,
+          35.77652650000002
+        ],
+        [
+          -78.6818907,
+          35.77661179999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6818907,
+          35.77661179999999
+        ],
+        [
+          -78.6818418,
+          35.776632199999995
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6818418,
+          35.776632199999995
+        ],
+        [
+          -78.6818179,
+          35.7765938
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6818179,
+          35.7765938
+        ],
+        [
+          -78.6818112,
+          35.77659059999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6818112,
+          35.77659059999999
+        ],
+        [
+          -78.6817927,
+          35.77658919999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817927,
+          35.77658919999999
+        ],
+        [
+          -78.6817267,
+          35.77658740000002
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817267,
+          35.77658740000002
+        ],
+        [
+          -78.6816573,
+          35.77658159999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6816573,
+          35.77658159999999
+        ],
+        [
+          -78.6816206,
+          35.776571199999985
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6816206,
+          35.776571199999985
+        ],
+        [
+          -78.6815883,
+          35.776557899999986
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6815883,
+          35.776557899999986
+        ],
+        [
+          -78.6815569,
+          35.7765439
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6815569,
+          35.7765439
+        ],
+        [
+          -78.6815255,
+          35.776515199999984
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6815255,
+          35.776515199999984
+        ],
+        [
+          -78.6815215,
+          35.77650800000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6815215,
+          35.77650800000001
+        ],
+        [
+          -78.6815255,
+          35.77649979999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "946807066",
+      "tags": {
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6815255,
+          35.77649979999999
+        ],
+        [
+          -78.68162,
+          35.776454199999996
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1017734126",
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.67854760000002,
+          35.77723859999998
+        ],
+        [
+          -78.6784085,
+          35.777202899999985
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1017734126",
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "coordinates": [
+        [
+          -78.6784085,
+          35.777202899999985
+        ],
+        [
+          -78.6782085,
+          35.77714899999999
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1028519405",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "coordinates": [
+        [
+          -78.6784227,
+          35.7769479
+        ],
+        [
+          -78.6783713,
+          35.77694960000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387625",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6821607,
+          35.77881810000002
+        ],
+        [
+          -78.6819063,
+          35.778794599999976
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387625",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6819063,
+          35.778794599999976
+        ],
+        [
+          -78.681888,
+          35.77879300000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387626",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.681888,
+          35.77879300000001
+        ],
+        [
+          -78.681834,
+          35.7787911
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387626",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.681834,
+          35.7787911
+        ],
+        [
+          -78.6817598,
+          35.7787885
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387627",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6819063,
+          35.778794599999976
+        ],
+        [
+          -78.6819039,
+          35.778711699999995
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387627",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6819039,
+          35.778711699999995
+        ],
+        [
+          -78.6819041,
+          35.77838580000001
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387627",
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6819041,
+          35.77838580000001
+        ],
+        [
+          -78.681923,
+          35.778342800000004
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387628",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.6817911,
+          35.7783919
+        ],
+        [
+          -78.68183960000002,
+          35.7783893
+        ]
+      ]
+    },
+    {
+      "osm_way_id": "1490387628",
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "coordinates": [
+        [
+          -78.68183960000002,
+          35.7783893
+        ],
+        [
+          -78.6819041,
+          35.77838580000001
+        ]
+      ]
+    }
+  ],
+  "mapped_entrances_without_usable_connection": [
+    {
+      "building_id": "288",
+      "entrance_ids": [
+        156
+      ],
+      "reason": "No outside-footprint connector within 30 m; keep the documented estimated frontage access instead of inventing an indoor/perimeter shortcut"
+    }
+  ],
+  "method": "Reviewed, ground-level path intersections were noded in the Chapter Commons/Townhomes/Apartments plazas and Western Manor parking area; old GIS segments through the three Greek building interiors and older Western Manor manual parking traces were removed. Public OSM pedestrian ways and service/parking aisles were added for Western Manor; arterial/residential road centerlines, private/no-foot ways and grade-separated ways were excluded. Available mapped GIS entrances are restored for Western Manor; otherwise the retained estimated building-edge point is reconnected without crossing building interiors or arterial-road centerlines. No door or all-sides access is invented."
+}
