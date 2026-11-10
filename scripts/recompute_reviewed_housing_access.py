@@ -71,7 +71,7 @@ for endpoint in [suppcoords[0],suppcoords[-1]]:
  joins.append({'coordinates':list(U.transform(*endpoint)),'gap_m':gap,'network_coordinates':list(U.transform(*node[:2]))})
 for a,b in zip(suppcoords,suppcoords[1:]):g.add_edge(a,b,weight=math.dist(a,b),source='Bilyeuâ€“Pullen supplement')
 (R/'work/pullen-corridor-model').mkdir(parents=True,exist_ok=True)
-(W/'outputs/pullen-corridor-model/endpoint-joins.json').write_text(json.dumps(joins,indent=2))
+(R/'work/pullen-corridor-model/endpoint-joins.json').write_text(json.dumps(joins,indent=2))
 print('Supplement endpoint alignment connectors',joins,flush=True)
 
 
