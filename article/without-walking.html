@@ -309,6 +309,10 @@ main.report-page,.report-page:has(>.voting-article){width:100%!important;max-wid
 /* Reader preview has no theme drawer or global filter toolbar. Remove their sticky layer. */
 .theme-drawer,.filters.filter-bar,.dashboard-root>.dashboard-topbar{display:none!important;height:0!important;min-height:0!important;max-height:0!important;padding:0!important;margin:0!important;border:0!important;outline:0!important;box-shadow:none!important;backdrop-filter:none!important;position:static!important;pointer-events:none!important}
 :root{--dashboard-topbar-base-height:0px;--dashboard-tabs-visible-height:0px}
+</style><style id="tight-ballot-pairs">
+/* Pack ballot pairs around a shared arrow, preserving right-edge alignment. */
+.voting-article .age-growth-counts>span{grid-template-columns:minmax(0,1fr) auto!important;column-gap:10px!important}
+.voting-article .age-growth-counts .age-ballot-pair{grid-template-columns:7ch 14px 7ch!important;gap:2px!important;justify-content:end!important}
 </style></head>
 <body>
 <div id="root"></div>
