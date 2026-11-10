@@ -22,13 +22,23 @@ jobs:
       - name: Stage published website files only
         shell: python
         run: |
-          import pathlib, shutil, subprocess
+          import pathlib, re, shutil, subprocess
           target = pathlib.Path('_public')
           target.mkdir()
           public_dirs = {'article', 'editor-maps', 'vendor', 'downloads'}
-          for name in subprocess.check_output(['git', 'ls-files'], text=True).splitlines():
+          tracked = subprocess.check_output(['git', 'ls-files'], text=True).splitlines()
+          # Keep every snapshot referenced by a published HTML page. Historical,
+          # unreferenced root snapshots stay in Git without inflating each deploy.
+          snapshots = set()
+          for name in tracked:
+              p = pathlib.Path(name)
+              if p.suffix == '.html':
+                  snapshots.update(re.findall(r'snapshot\.[a-f0-9]+\.json', p.read_text(encoding='utf-8')))
+          for name in tracked:
               p = pathlib.Path(name)
               allowed = (len(p.parts) == 1 and p.suffix in {'.html', '.js', '.css', '.json'}) or p.parts[0] in public_dirs or name.startswith(('docs/images/', 'data/processed/', 'data/sources/')) or (p.parts[0] == 'docs' and p.suffix == '.md')
+              if len(p.parts) == 1 and p.name.startswith('snapshot.') and p.name not in snapshots:
+                  allowed = False
               if allowed:
                   dest = target / p
                   dest.parent.mkdir(parents=True, exist_ok=True)
@@ -40,4 +50,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          timeout: 1800000
+          timeout: 600000
