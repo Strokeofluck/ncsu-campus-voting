@@ -1,0 +1,1592 @@
+{
+  "type": "FeatureCollection",
+  "name": "Bilyeu\u2013Pullen walking corridor supplement",
+  "retrieved_at": "2026-11-10",
+  "geometry_source": "OpenStreetMap pedestrian geometry corroborated with City of Raleigh sidewalks and public aerial imagery. A city NotSurveyed segment was independently checked against imagery; a short marked crossing/curb approach is an explicit approximate trace. No MissingSidewalk geometry or road centerline is used.",
+  "city_source": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/City_Of_Raleigh_Sidewalks_14_view/FeatureServer/0",
+  "osm_license": "ODbL 1.0; \u00a9 OpenStreetMap contributors",
+  "scope": "Bilyeu sidewalk and marked roundabout crossing, Pullen sidewalks and bridge over Western Boulevard, marked northern-junction crossings and northbound pedestrian path to existing campus GIS. No geometric crossing is automatically joined; the bridge is not joined to Western Boulevard underneath.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "113350722",
+        "source_url": "https://www.openstreetmap.org/way/113350722",
+        "bicycle": "yes",
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6674052,
+            35.7791211
+          ],
+          [
+            -78.6674047,
+            35.7790431
+          ],
+          [
+            -78.6674063,
+            35.7789499
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "113350725",
+        "source_url": "https://www.openstreetmap.org/way/113350725",
+        "bicycle": "yes",
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.667296,
+            35.7792789
+          ],
+          [
+            -78.6672759,
+            35.7795997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "113350727",
+        "source_url": "https://www.openstreetmap.org/way/113350727",
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6672759,
+            35.7795997
+          ],
+          [
+            -78.6672662,
+            35.7798886
+          ],
+          [
+            -78.6672753,
+            35.7799072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "113350728",
+        "source_url": "https://www.openstreetmap.org/way/113350728",
+        "bicycle": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.667454,
+            35.7791332
+          ],
+          [
+            -78.6674407,
+            35.7791275
+          ],
+          [
+            -78.6674245,
+            35.7791223
+          ],
+          [
+            -78.6674052,
+            35.7791211
+          ],
+          [
+            -78.6673844,
+            35.7791222
+          ],
+          [
+            -78.6673706,
+            35.7791246
+          ],
+          [
+            -78.6673571,
+            35.7791296
+          ],
+          [
+            -78.6673463,
+            35.7791366
+          ],
+          [
+            -78.6673373,
+            35.7791447
+          ],
+          [
+            -78.667328,
+            35.779156
+          ],
+          [
+            -78.6673205,
+            35.7791684
+          ],
+          [
+            -78.6673134,
+            35.7791868
+          ],
+          [
+            -78.6673065,
+            35.7792157
+          ],
+          [
+            -78.667296,
+            35.7792789
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "113354277",
+        "source_url": "https://www.openstreetmap.org/way/113354277",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.667212,
+            35.7804852
+          ],
+          [
+            -78.6672385,
+            35.78026
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "172870048",
+        "source_url": "https://www.openstreetmap.org/way/172870048",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "lit": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6640294,
+            35.7823327
+          ],
+          [
+            -78.664172,
+            35.7823228
+          ],
+          [
+            -78.6642742,
+            35.7823157
+          ],
+          [
+            -78.6644861,
+            35.78232
+          ],
+          [
+            -78.6646497,
+            35.78232
+          ],
+          [
+            -78.6647543,
+            35.7823309
+          ],
+          [
+            -78.6648508,
+            35.7823744
+          ],
+          [
+            -78.6650145,
+            35.7824658
+          ],
+          [
+            -78.6651057,
+            35.7825311
+          ],
+          [
+            -78.6652264,
+            35.7826312
+          ],
+          [
+            -78.6653707,
+            35.782739
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "172870055",
+        "source_url": "https://www.openstreetmap.org/way/172870055",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "segregated": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6651057,
+            35.7825311
+          ],
+          [
+            -78.6651781,
+            35.7824745
+          ],
+          [
+            -78.6652049,
+            35.7824179
+          ],
+          [
+            -78.6652156,
+            35.7823396
+          ],
+          [
+            -78.6652129,
+            35.782209
+          ],
+          [
+            -78.6652317,
+            35.7821503
+          ],
+          [
+            -78.6652746,
+            35.782085
+          ],
+          [
+            -78.6653605,
+            35.7820219
+          ],
+          [
+            -78.665449,
+            35.7819893
+          ],
+          [
+            -78.6655134,
+            35.7819544
+          ],
+          [
+            -78.6655536,
+            35.7819044
+          ],
+          [
+            -78.6656287,
+            35.7818457
+          ],
+          [
+            -78.6657038,
+            35.7817717
+          ],
+          [
+            -78.6658012,
+            35.7817204
+          ],
+          [
+            -78.6659031,
+            35.7816859
+          ],
+          [
+            -78.6660311,
+            35.7816481
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "234357710",
+        "source_url": "https://www.openstreetmap.org/way/234357710",
+        "bicycle": "yes",
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6672753,
+            35.7799072
+          ],
+          [
+            -78.6672865,
+            35.7799553
+          ],
+          [
+            -78.6672967,
+            35.7800012
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "287979656",
+        "source_url": "https://www.openstreetmap.org/way/287979656",
+        "bicycle": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "no",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6672555,
+            35.7801144
+          ],
+          [
+            -78.6672577,
+            35.7800884
+          ],
+          [
+            -78.6672631,
+            35.7800457
+          ],
+          [
+            -78.6672687,
+            35.7800311
+          ],
+          [
+            -78.667278,
+            35.7800176
+          ],
+          [
+            -78.6672967,
+            35.7800012
+          ],
+          [
+            -78.6673697,
+            35.7799519
+          ],
+          [
+            -78.6675114,
+            35.7798664
+          ],
+          [
+            -78.6677561,
+            35.7797385
+          ],
+          [
+            -78.6679016,
+            35.7796662
+          ],
+          [
+            -78.6679754,
+            35.779639
+          ],
+          [
+            -78.668011,
+            35.7796298
+          ],
+          [
+            -78.6680472,
+            35.7796199
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "287979660",
+        "source_url": "https://www.openstreetmap.org/way/287979660",
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6672385,
+            35.78026
+          ],
+          [
+            -78.6672555,
+            35.7801144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568644",
+        "source_url": "https://www.openstreetmap.org/way/758568644",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6702528,
+            35.7761645
+          ],
+          [
+            -78.6702349,
+            35.7762031
+          ],
+          [
+            -78.6701971,
+            35.7762465
+          ],
+          [
+            -78.6700822,
+            35.7762603
+          ],
+          [
+            -78.6693692,
+            35.7762825
+          ],
+          [
+            -78.6685022,
+            35.7763143
+          ],
+          [
+            -78.6682006,
+            35.7763609
+          ],
+          [
+            -78.6678872,
+            35.7764351
+          ],
+          [
+            -78.667579,
+            35.7765167
+          ],
+          [
+            -78.6673205,
+            35.776594
+          ],
+          [
+            -78.6672316,
+            35.7766169
+          ],
+          [
+            -78.6672056,
+            35.7766237
+          ],
+          [
+            -78.6671272,
+            35.7766194
+          ],
+          [
+            -78.6670476,
+            35.7765855
+          ],
+          [
+            -78.6669379,
+            35.7765717
+          ],
+          [
+            -78.6668347,
+            35.7765993
+          ],
+          [
+            -78.6667773,
+            35.7766406
+          ],
+          [
+            -78.6667381,
+            35.7766957
+          ],
+          [
+            -78.6667159,
+            35.7767434
+          ],
+          [
+            -78.6666728,
+            35.7767751
+          ],
+          [
+            -78.6666389,
+            35.7767868
+          ],
+          [
+            -78.6666506,
+            35.776808
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568645",
+        "source_url": "https://www.openstreetmap.org/way/758568645",
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "crossing:signals": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6666506,
+            35.776808
+          ],
+          [
+            -78.6666657,
+            35.7768331
+          ],
+          [
+            -78.666687,
+            35.7768646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568646",
+        "source_url": "https://www.openstreetmap.org/way/758568646",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6667394,
+            35.7769393
+          ],
+          [
+            -78.6667418,
+            35.776952
+          ],
+          [
+            -78.6668179,
+            35.7769421
+          ],
+          [
+            -78.6668923,
+            35.7769572
+          ],
+          [
+            -78.6669425,
+            35.7769901
+          ],
+          [
+            -78.666985,
+            35.7770404
+          ],
+          [
+            -78.6669951,
+            35.7770524
+          ],
+          [
+            -78.6671691,
+            35.7773669
+          ],
+          [
+            -78.6672087,
+            35.7774739
+          ],
+          [
+            -78.667233,
+            35.7775684
+          ],
+          [
+            -78.6672435,
+            35.7776794
+          ],
+          [
+            -78.6672459,
+            35.7777306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568647",
+        "source_url": "https://www.openstreetmap.org/way/758568647",
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6672459,
+            35.7777306
+          ],
+          [
+            -78.6672426,
+            35.7777801
+          ],
+          [
+            -78.6672378,
+            35.7778671
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568648",
+        "source_url": "https://www.openstreetmap.org/way/758568648",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6672378,
+            35.7778671
+          ],
+          [
+            -78.667216,
+            35.778045
+          ],
+          [
+            -78.6671812,
+            35.7781855
+          ],
+          [
+            -78.6671675,
+            35.7783037
+          ],
+          [
+            -78.667161,
+            35.7785164
+          ],
+          [
+            -78.6671594,
+            35.7786352
+          ],
+          [
+            -78.6671683,
+            35.7786929
+          ],
+          [
+            -78.6671496,
+            35.7788498
+          ],
+          [
+            -78.667128,
+            35.7789158
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568649",
+        "source_url": "https://www.openstreetmap.org/way/758568649",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "horse": "no",
+        "segregated": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6675157,
+            35.7778727
+          ],
+          [
+            -78.6675042,
+            35.7780865
+          ],
+          [
+            -78.6674684,
+            35.7783939
+          ],
+          [
+            -78.6674247,
+            35.7786605
+          ],
+          [
+            -78.6673924,
+            35.7788011
+          ],
+          [
+            -78.6673865,
+            35.7788827
+          ],
+          [
+            -78.6674022,
+            35.7789215
+          ],
+          [
+            -78.6674063,
+            35.7789499
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568661",
+        "source_url": "https://www.openstreetmap.org/way/758568661",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "name": "Rocky Branch Trail",
+        "segregated": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6673723,
+            35.7789216
+          ],
+          [
+            -78.6674022,
+            35.7789215
+          ],
+          [
+            -78.6674516,
+            35.7789308
+          ],
+          [
+            -78.6684636,
+            35.7789764
+          ],
+          [
+            -78.6691318,
+            35.7790217
+          ],
+          [
+            -78.6695827,
+            35.7790628
+          ],
+          [
+            -78.669946,
+            35.7791026
+          ],
+          [
+            -78.6705066,
+            35.7792119
+          ],
+          [
+            -78.6705882,
+            35.7792186
+          ],
+          [
+            -78.6706648,
+            35.779159
+          ],
+          [
+            -78.6706841,
+            35.7790849
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "758568662",
+        "source_url": "https://www.openstreetmap.org/way/758568662",
+        "bicycle": "designated",
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "cycleway": "crossing",
+        "foot": "yes",
+        "highway": "cycleway",
+        "name": "Rocky Branch Trail",
+        "segregated": "no",
+        "surface": "asphalt",
+        "traffic_signals": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.667128,
+            35.7789158
+          ],
+          [
+            -78.6672304,
+            35.7789218
+          ],
+          [
+            -78.6673105,
+            35.7789275
+          ],
+          [
+            -78.6673723,
+            35.7789216
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "770083420",
+        "source_url": "https://www.openstreetmap.org/way/770083420",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "cycleway",
+        "segregated": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6668047,
+            35.7813384
+          ],
+          [
+            -78.6667841,
+            35.7813215
+          ],
+          [
+            -78.6666152,
+            35.7814196
+          ],
+          [
+            -78.6664147,
+            35.7815043
+          ],
+          [
+            -78.6661009,
+            35.7816267
+          ],
+          [
+            -78.6660311,
+            35.7816481
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "1017728765",
+        "source_url": "https://www.openstreetmap.org/way/1017728765",
+        "crossing": "unmarked",
+        "crossing:signals": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "traffic_signals": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6668047,
+            35.7813384
+          ],
+          [
+            -78.6668335,
+            35.7813661
+          ],
+          [
+            -78.6668954,
+            35.7814207
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "1482087176",
+        "source_url": "https://www.openstreetmap.org/way/1482087176",
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "crossing:signals": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6666996,
+            35.7768832
+          ],
+          [
+            -78.6667131,
+            35.7769031
+          ],
+          [
+            -78.6667394,
+            35.7769393
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_way_id": "1482087177",
+        "source_url": "https://www.openstreetmap.org/way/1482087177",
+        "footway": "traffic_island",
+        "highway": "footway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.666687,
+            35.7768646
+          ],
+          [
+            -78.6666996,
+            35.7768832
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "City of Raleigh OBJECTID 14465; NotSurveyed geometry independently checked against aerial",
+        "classification": "reviewed supplemental sidewalk",
+        "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/City_Of_Raleigh_Sidewalks_14_view/FeatureServer/0"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.667212,
+            35.7804852
+          ],
+          [
+            -78.6672133046547,
+            35.7804935988241
+          ],
+          [
+            -78.6672104381307,
+            35.7808231661007
+          ],
+          [
+            -78.667210436334,
+            35.780823374528
+          ],
+          [
+            -78.6672099907696,
+            35.7808745412327
+          ],
+          [
+            -78.6671587787136,
+            35.7810665243035
+          ],
+          [
+            -78.6671580528749,
+            35.7810692462393
+          ],
+          [
+            -78.6670296126538,
+            35.78130189161
+          ],
+          [
+            -78.6670296126538,
+            35.78130189161
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "source": "Public Esri World Imagery aerial reviewed November 10, 2026",
+        "classification": "approximate marked crossing and curb approach",
+        "source_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "imagery_bbox": [
+          -78.668,
+          35.7788,
+          -78.6664,
+          35.7818
+        ],
+        "length_m": 24.094400895832038
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.6670296126538,
+            35.78130189161
+          ],
+          [
+            -78.6670296126538,
+            35.78130189161
+          ],
+          [
+            -78.667056,
+            35.781341
+          ],
+          [
+            -78.666941,
+            35.781435
+          ],
+          [
+            -78.6668954,
+            35.7814207
+          ],
+          [
+            -78.6668954,
+            35.7814207
+          ]
+        ]
+      }
+    }
+  ],
+  "route_coordinates": [
+    [
+      -78.6702528,
+      35.7761645
+    ],
+    [
+      -78.6702349,
+      35.7762031
+    ],
+    [
+      -78.6701971,
+      35.7762465
+    ],
+    [
+      -78.6700822,
+      35.7762603
+    ],
+    [
+      -78.6693692,
+      35.7762825
+    ],
+    [
+      -78.6685022,
+      35.7763143
+    ],
+    [
+      -78.6682006,
+      35.7763609
+    ],
+    [
+      -78.6678872,
+      35.7764351
+    ],
+    [
+      -78.667579,
+      35.7765167
+    ],
+    [
+      -78.6673205,
+      35.776594
+    ],
+    [
+      -78.6672316,
+      35.7766169
+    ],
+    [
+      -78.6672056,
+      35.7766237
+    ],
+    [
+      -78.6671272,
+      35.7766194
+    ],
+    [
+      -78.6670476,
+      35.7765855
+    ],
+    [
+      -78.6669379,
+      35.7765717
+    ],
+    [
+      -78.6668347,
+      35.7765993
+    ],
+    [
+      -78.6667773,
+      35.7766406
+    ],
+    [
+      -78.6667381,
+      35.7766957
+    ],
+    [
+      -78.6667159,
+      35.7767434
+    ],
+    [
+      -78.6666728,
+      35.7767751
+    ],
+    [
+      -78.6666389,
+      35.7767868
+    ],
+    [
+      -78.6666506,
+      35.776808
+    ],
+    [
+      -78.6666657,
+      35.7768331
+    ],
+    [
+      -78.666687,
+      35.7768646
+    ],
+    [
+      -78.6666996,
+      35.7768832
+    ],
+    [
+      -78.6667131,
+      35.7769031
+    ],
+    [
+      -78.6667394,
+      35.7769393
+    ],
+    [
+      -78.6667418,
+      35.776952
+    ],
+    [
+      -78.6668179,
+      35.7769421
+    ],
+    [
+      -78.6668923,
+      35.7769572
+    ],
+    [
+      -78.6669425,
+      35.7769901
+    ],
+    [
+      -78.666985,
+      35.7770404
+    ],
+    [
+      -78.6669951,
+      35.7770524
+    ],
+    [
+      -78.6671691,
+      35.7773669
+    ],
+    [
+      -78.6672087,
+      35.7774739
+    ],
+    [
+      -78.667233,
+      35.7775684
+    ],
+    [
+      -78.6672435,
+      35.7776794
+    ],
+    [
+      -78.6672459,
+      35.7777306
+    ],
+    [
+      -78.6672426,
+      35.7777801
+    ],
+    [
+      -78.6672378,
+      35.7778671
+    ],
+    [
+      -78.667216,
+      35.778045
+    ],
+    [
+      -78.6671812,
+      35.7781855
+    ],
+    [
+      -78.6671675,
+      35.7783037
+    ],
+    [
+      -78.667161,
+      35.7785164
+    ],
+    [
+      -78.6671594,
+      35.7786352
+    ],
+    [
+      -78.6671683,
+      35.7786929
+    ],
+    [
+      -78.6671496,
+      35.7788498
+    ],
+    [
+      -78.667128,
+      35.7789158
+    ],
+    [
+      -78.6672304,
+      35.7789218
+    ],
+    [
+      -78.6673105,
+      35.7789275
+    ],
+    [
+      -78.6673723,
+      35.7789216
+    ],
+    [
+      -78.6674022,
+      35.7789215
+    ],
+    [
+      -78.6674063,
+      35.7789499
+    ],
+    [
+      -78.6674047,
+      35.7790431
+    ],
+    [
+      -78.6674052,
+      35.7791211
+    ],
+    [
+      -78.6673844,
+      35.7791222
+    ],
+    [
+      -78.6673706,
+      35.7791246
+    ],
+    [
+      -78.6673571,
+      35.7791296
+    ],
+    [
+      -78.6673463,
+      35.7791366
+    ],
+    [
+      -78.6673373,
+      35.7791447
+    ],
+    [
+      -78.667328,
+      35.779156
+    ],
+    [
+      -78.6673205,
+      35.7791684
+    ],
+    [
+      -78.6673134,
+      35.7791868
+    ],
+    [
+      -78.6673065,
+      35.7792157
+    ],
+    [
+      -78.667296,
+      35.7792789
+    ],
+    [
+      -78.6672759,
+      35.7795997
+    ],
+    [
+      -78.6672662,
+      35.7798886
+    ],
+    [
+      -78.6672753,
+      35.7799072
+    ],
+    [
+      -78.6672865,
+      35.7799553
+    ],
+    [
+      -78.6672967,
+      35.7800012
+    ],
+    [
+      -78.667278,
+      35.7800176
+    ],
+    [
+      -78.6672687,
+      35.7800311
+    ],
+    [
+      -78.6672631,
+      35.7800457
+    ],
+    [
+      -78.6672577,
+      35.7800884
+    ],
+    [
+      -78.6672555,
+      35.7801144
+    ],
+    [
+      -78.6672385,
+      35.78026
+    ],
+    [
+      -78.667212,
+      35.7804852
+    ],
+    [
+      -78.6672133046547,
+      35.7804935988241
+    ],
+    [
+      -78.6672104381307,
+      35.7808231661007
+    ],
+    [
+      -78.667210436334,
+      35.780823374528
+    ],
+    [
+      -78.6672099907696,
+      35.7808745412327
+    ],
+    [
+      -78.6671587787136,
+      35.7810665243035
+    ],
+    [
+      -78.6671580528749,
+      35.7810692462393
+    ],
+    [
+      -78.6670296126538,
+      35.78130189161
+    ],
+    [
+      -78.667056,
+      35.781341
+    ],
+    [
+      -78.666941,
+      35.781435
+    ],
+    [
+      -78.6668954,
+      35.7814207
+    ],
+    [
+      -78.6668335,
+      35.7813661
+    ],
+    [
+      -78.6668047,
+      35.7813384
+    ],
+    [
+      -78.6667841,
+      35.7813215
+    ],
+    [
+      -78.6666152,
+      35.7814196
+    ],
+    [
+      -78.6664147,
+      35.7815043
+    ],
+    [
+      -78.6661009,
+      35.7816267
+    ],
+    [
+      -78.6660311,
+      35.7816481
+    ],
+    [
+      -78.6659031,
+      35.7816859
+    ],
+    [
+      -78.6658012,
+      35.7817204
+    ],
+    [
+      -78.6657038,
+      35.7817717
+    ],
+    [
+      -78.6656287,
+      35.7818457
+    ],
+    [
+      -78.6655536,
+      35.7819044
+    ],
+    [
+      -78.6655134,
+      35.7819544
+    ],
+    [
+      -78.665449,
+      35.7819893
+    ],
+    [
+      -78.6653605,
+      35.7820219
+    ],
+    [
+      -78.6652746,
+      35.782085
+    ],
+    [
+      -78.6652317,
+      35.7821503
+    ],
+    [
+      -78.6652129,
+      35.782209
+    ],
+    [
+      -78.6652156,
+      35.7823396
+    ],
+    [
+      -78.6652049,
+      35.7824179
+    ],
+    [
+      -78.6651781,
+      35.7824745
+    ],
+    [
+      -78.6651057,
+      35.7825311
+    ],
+    [
+      -78.6652264,
+      35.7826312
+    ],
+    [
+      -78.6653707,
+      35.782739
+    ]
+  ],
+  "audit": {
+    "length_m": 1198.0352086584724,
+    "city_sidewalk_max_separation_m": 54.74119072998491,
+    "city_sidewalk_within_3m_pct": 82.23519599666389,
+    "city_sidewalk_objectids_within_3m": [
+      111571,
+      134144,
+      134150,
+      111560,
+      134182,
+      134199,
+      134145,
+      134156,
+      134185,
+      134148,
+      134157,
+      111558,
+      111564,
+      111575,
+      111540,
+      134202,
+      111565,
+      111574,
+      134147,
+      111562,
+      134184,
+      14468,
+      113800,
+      134146,
+      134181,
+      134195,
+      134149,
+      111573,
+      134201,
+      134183,
+      134200,
+      111561,
+      111572
+    ],
+    "approximate_imagery_crossing_m": 24.094400895832038,
+    "explicit_crossing_way_ids": [
+      "113350722",
+      "234357710",
+      "758568645",
+      "758568647",
+      "758568662",
+      "1017728765",
+      "1482087176"
+    ],
+    "traffic_island_way_id": "1482087177",
+    "limitations": "Sources establish mapped pedestrian connections, not October-specific closures, operating conditions, accessibility certification or crossing delay. Aerial capture date has not been established."
+  }
+}

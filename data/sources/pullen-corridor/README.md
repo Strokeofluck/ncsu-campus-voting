@@ -1,0 +1,7 @@
+# Bilyeu–Pullen pedestrian supplement
+
+Shortest connected modeled walk across eligible mapped entrances at both buildings, using the frozen November 1 NC State GIS network plus a November 10 Bilyeu–Pullen pedestrian supplement. The supplement records OpenStreetMap footways and crossings corroborated with Raleigh sidewalk data and public aerial imagery, including an explicitly approximate 24.1 m marked-crossing/curb-approach trace. Road centerlines and city MissingSidewalk features are excluded; the Pullen bridge is not connected to Western Boulevard underneath. Nine existing manual housing access paths and fallback entrance connectors are preserved. Public access, door hours, October-specific closures and crossing delay are not verified.
+
+Sources were retrieved/reviewed November 10, 2026, not contemporaneously with October voting. Raleigh OBJECTID 14465 is NotSurveyed, not an existing-sidewalk assertion; this short northern approach was independently checked against the aerial. No MissingSidewalk line was used. OSM geometry uses ODbL 1.0 and requires OpenStreetMap attribution. The aerial capture date has not been established. Public Esri imagery source: https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer .
+
+The supplement is joined only at its two reviewed endpoints (0.14 m and 0.79 m alignment connectors). Other geometric crossings and nearby underpasses are not joined. The coordinate trace across the Cates/Morrill junction is approximate (24.1 m), not a surveyed crosswalk centerline.
