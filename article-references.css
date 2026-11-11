@@ -44,3 +44,12 @@
 #math .growth-math-pair .result{min-height:3.2em;overflow-wrap:anywhere}
 #math .section-heading select{width:92px;flex-shrink:0}
 @media(max-width:650px){#math .growth-math-pair{grid-template-columns:minmax(0,1fr)}#math .growth-math-pair .result{min-height:0}}
+
+/* Visitor designations stay visible without relying on color alone. */
+#parking-permit-breakdown .parking-visitor-row{background:#edf6ed;color:#183b26}
+#parking-permit-breakdown .parking-visitor-row a{color:#174d34}
+#parking-permit-breakdown .parking-visitor-badge{display:block;font-size:.8em;font-weight:700;color:#285b39}
+#parking-permit-breakdown th,#parking-permit-breakdown td{vertical-align:top}
+#parking-permit-breakdown td:last-child{white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+#parking-permit-breakdown tfoot{font-weight:700;border-top:2px solid var(--line)}
+#parking-permit-breakdown h4{margin:20px 0 8px;font-size:1.08em}

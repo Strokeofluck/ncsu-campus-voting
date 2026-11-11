@@ -29542,7 +29542,7 @@ function ReportContent(){
 
  const mapsOnly=typeof window!=='undefined'&&(new URLSearchParams(window.location.search).get('preview')==='maps'||document.querySelector('meta[name="article-preview"]')?.content==='maps');
  if(mapsOnly)return jsxRuntime.jsxs('article',{className:'report-content voting-report voting-article voting-editor-maps','aria-label':'NC State voting visuals — editor preview',children:[jsxRuntime.jsx('h1',{children:'NC State voting visuals'}),jsxRuntime.jsxs('p',{children:[jsxRuntime.jsx('a',{href:'index.html?view=1',children:'Full article'}),' · ',jsxRuntime.jsx('a',{href:'../references.html',children:'References and methods'})]}),jsxRuntime.jsx(AgeGrowthChart,{}),jsxRuntime.jsx(RegistrationComparison,{}),jsxRuntime.jsx(YoungestBenchmark,{row:youngest}),jsxRuntime.jsx(CampusWalkingMap,{article:true,editorPreview:true}),jsxRuntime.jsx(CampusPassbyMap,{article:true,editorPreview:true})]});
- const otherAges=jsxRuntime.jsx(dataApp.ReportSection, { id: "voting-article-reading", queryId: "age_growth_benchmarks", sourceRows: rows, showHeading: false, title: "Every age group under 65 lagged Wake’s growth at the new Western Boulevard site"             , children: jsxRuntime.jsx(dataApp.RichNarrative, { id: "voting-article-reading:body", value: `Every age group under 65 lagged Wake’s growth at the new Western Boulevard site. Voters 65 and older were the exception, with **73.7% growth at the site compared with 52.8% among the same age group countywide**.`,})});
+ const otherAges=jsxRuntime.jsx(dataApp.ReportSection, { id: "voting-article-reading", queryId: "age_growth_benchmarks", sourceRows: rows, showHeading: false, title: "Every age group under 65 lagged Wake County’s growth at the new Western Boulevard site"             , children: jsxRuntime.jsx(dataApp.RichNarrative, { id: "voting-article-reading:body", value: `Every age group under 65 lagged Wake County’s growth at the new Western Boulevard site. Voters 65 and older were the exception, with **73.7% growth at the site compared with 52.8% among the same age group countywide**.`,})});
 
  return jsxRuntime.jsxs('article', { className: "report-content voting-report voting-article"  , 'aria-label': "Article work in progress: NC State early voting"       , children: [
   jsxRuntime.jsx(TechnicianHeader, {})
@@ -29569,7 +29569,7 @@ Gerry Cohen, secretary of the Wake County Board of Elections and one of its two 
 
 “It is still larger than it was, but a lower percentage increase,” Cohen said.
 
-The findings offer a first look at use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://technicianonline.com/166518/news/2026-midterm-elections-live-updates/).`,})]})
+The findings offer a first look at the use of NC State’s replacement early-voting location after a [record midterm early-voting period statewide](https://technicianonline.com/166518/news/2026-midterm-elections-live-updates/).`,})]})
 
   , jsxRuntime.jsx(AgeGrowthChart, {})
   
@@ -29646,7 +29646,7 @@ He characterized the move as part of a broader effort to restrict student voting
 
 That is Cohen’s interpretation of the decision. The comparison of early-voting records does not establish the intent behind the move or its effect on overall student turnout.
 
-Looking ahead, Greene said, “the really telling decision is what happens next time.”
+Looking ahead to the future of the voting site, Greene said, “The really telling decision is what happens next time.”
 
 Cohen said he favored returning early voting to Talley in 2028.
 

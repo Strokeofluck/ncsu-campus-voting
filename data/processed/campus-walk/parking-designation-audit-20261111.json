@@ -1,0 +1,88 @@
+{
+  "as_of": "2026-11-01",
+  "checked": "2026-11-11",
+  "grain": "One GIS parking area per OBJECTID; a zone can contain specialty spaces",
+  "talley": [
+    [
+      "Coliseum Deck, CD area",
+      "CD permit",
+      1694,
+      92,
+      false
+    ],
+    [
+      "Coliseum Deck, RE area",
+      "Resident East permit",
+      223,
+      166,
+      false
+    ],
+    [
+      "Coliseum Deck, visitor area",
+      "Visitor pay",
+      275,
+      26,
+      true
+    ],
+    [
+      "Jeter Bays",
+      "C permit",
+      226,
+      143,
+      false
+    ],
+    [
+      "Connected outdoor visitor area",
+      "56 visitor pay + 10 EV",
+      66,
+      144,
+      true
+    ]
+  ],
+  "western": [
+    [
+      "McKimmon North Lot",
+      "C permit",
+      45,
+      34,
+      false
+    ],
+    [
+      "McKimmon South Lot",
+      "C permit",
+      62,
+      38,
+      false
+    ],
+    [
+      "McKimmon visitor lot, north",
+      "PRIVATE visitor lot",
+      266,
+      55,
+      true
+    ],
+    [
+      "McKimmon visitor lot, south",
+      "PRIVATE visitor lot",
+      287,
+      56,
+      true
+    ]
+  ],
+  "calculations": {
+    "talley_total": 2484,
+    "talley_permit_area_inventory": 2143,
+    "talley_visitor_area_inventory": 341,
+    "talley_visitor_pay_inventory_including_accessible": 331,
+    "talley_EV": 10,
+    "western_total": 660,
+    "western_permit_area_inventory": 107,
+    "western_private_visitor_inventory": 553
+  },
+  "limits": [
+    "Inventory is not vacancy or voter allocation.",
+    "PRIVATE designation does not establish public access.",
+    "Current GIS does not reconstruct 2022 parking.",
+    "Permit area inventory includes specialty spaces; it is not an exact count of ordinary permit stalls."
+  ]
+}
