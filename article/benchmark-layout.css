@@ -1,0 +1,19 @@
+.voting-article > .voting-article-benchmark-wrap {
+  box-sizing: border-box !important;
+  width: min(800px, calc(100% - 40px)) !important;
+  max-width: 800px !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+}
+
+.voting-article .voting-article-benchmark .voting-article-bar-row {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.voting-article .voting-article-benchmark .voting-article-bar-label {
+  display: flex;
+  gap: .5em;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
