@@ -39,3 +39,5 @@ option[value="ask"] { display: none !important; }
 .parking-mini-map{align-self:start}
 
 .voting-article .rich-narrative-content>h1{white-space:normal!important;max-width:100%!important;box-sizing:border-box;overflow-wrap:break-word!important}.voting-article .rich-narrative-content{min-width:0}
+
+.parking-mini-map{position:relative}.parking-mini-card .parking-mini-tally{margin:6px 0 4px!important;font-size:12px!important;line-height:1.4!important;color:#344c26;font-variant-numeric:tabular-nums}.parking-mini-tally strong{font-weight:700}.parking-mini-card .parking-mini-detail{margin-top:4px!important}@media(max-width:600px){.parking-mini-card .parking-mini-tally{font-size:11px!important}}
