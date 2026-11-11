@@ -1,6 +1,6 @@
 // Both paths share one preview clock; the displayed walking estimates are unchanged.
-export function tracePairedWalkingRoutes({L,layer,routes,container,onComplete,seconds=1.8}){
- const maxMinutes=Math.max(...routes.map(r=>r.minutes)),duration=Math.min(seconds*1000,maxMinutes*65);
+export function tracePairedWalkingRoutes({L,layer,routes,container,onComplete,seconds=1}){
+ const maxMinutes=Math.max(...routes.map(r=>r.minutes)),duration=Math.min(seconds*1000,maxMinutes*35);
  const tracks=routes.map(({coordinates,color,decorateLine,minutes})=>{
   const points=coordinates.map(p=>L.latLng(p[1],p[0])),lengths=[0];
   for(let i=1;i<points.length;i++)lengths.push(lengths[i-1]+points[i-1].distanceTo(points[i]));
@@ -15,7 +15,7 @@ export function tracePairedWalkingRoutes({L,layer,routes,container,onComplete,se
  const tick=time=>{if(cancelled)return;const rect=container.getBoundingClientRect(),inView=rect.bottom>0&&rect.top<innerHeight;
   if(last!==null&&!document.hidden&&inView)elapsed+=Math.min(time-last,150);last=time;
   const fraction=reduced?1:Math.min(1,elapsed/duration);draw(fraction);
-  if(elapsed>=(reduced?0:duration)+500){onComplete();return;}frame=requestAnimationFrame(tick);
+  if(elapsed>=(reduced?0:duration)+250){onComplete();return;}frame=requestAnimationFrame(tick);
  };
  draw(reduced?1:0);frame=requestAnimationFrame(tick);
  return()=>{cancelled=true;cancelAnimationFrame(frame);tracks.forEach(t=>{t.line.remove();t.dot.remove();});delete container.dataset.walkingProgress;delete container.dataset.walkingPhase;};
