@@ -18,7 +18,7 @@ function tooltip(lines){const box=document.createElement('div');box.className='v
 function fitTooltip(marker,map){marker.on('tooltipopen',()=>{map.eachLayer(other=>{if(other!==marker&&other.getTooltip?.()?.isOpen())other.closeTooltip();});const tip=marker.getTooltip(),node=tip.getElement(),limit=Math.min(240,map.getSize().x-24);node.style.width='max-content';node.style.minWidth='0';node.style.maxWidth=`${limit}px`;const w=node.getBoundingClientRect().width,p=map.latLngToContainerPoint(marker.getLatLng());tip.options.direction=p.y<90?'bottom':'top';tip.options.offset=L.point(Math.max(w/2+8,Math.min(map.getSize().x-w/2-8,p.x))-p.x,0);tip.update();});}
 export function CampusWalkingMap({article=false,editorPreview=false}){
  const {snapshot,visible}=useDataApp(),rows=snapshot.queries.campus_walking_routes.rows,sites=snapshot.queries.campus_walk_sites.rows;
- const [autoplay,setAutoplay]=useState(()=>!window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+ const [autoplay,setAutoplay]=useState(true);
  const [selected,setSelected]=useState('088'),[pace,setPace]=useState(80),[group,setGroup]=useState('All housing');
  const [routeView,setRouteView]=useState('selected'),[focusSite,setFocusSite]=useState('talley'),[showParking,setShowParking]=useState(true);
  const estimates=snapshot.queries.campus_estimated_access.rows,displayRows=useMemo(()=>rows.map(r=>r.available?r:{...estimates.find(e=>e.id===r.id),available:true,entrance_coordinates:estimates.find(e=>e.id===r.id)?.access_coordinates}),[rows,estimates]);

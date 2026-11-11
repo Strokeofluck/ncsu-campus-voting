@@ -8,7 +8,7 @@ export function tracePairedWalkingRoutes({L,layer,routes,container,onComplete,se
   const dot=L.circleMarker(points[0],{pane:'walking-routes',radius:5,color:'#fff',weight:2,fillColor:color,fillOpacity:1,interactive:false,className:'walking-paired-dot'}).addTo(layer);
   return {points,lengths,total:lengths.at(-1),line,dot};
  });
- const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const reduced=false;
  let frame,last=null,elapsed=0,cancelled=false;
  const draw=fraction=>{for(const t of tracks){const target=t.total*fraction;let i=1;while(i<t.lengths.length-1&&t.lengths[i]<target)i++;const a=t.points[i-1],b=t.points[i]||a,part=(target-t.lengths[i-1])/(t.lengths[i]-t.lengths[i-1]||1),tip=L.latLng(a.lat+(b.lat-a.lat)*part,a.lng+(b.lng-a.lng)*part);t.line.setLatLngs(fraction===1?t.points:[...t.points.slice(0,i),tip]);t.dot.setLatLng(tip);}container.dataset.walkingProgress=String(fraction);container.dataset.walkingPhase=fraction===1?'complete':'drawing';};
  const tick=time=>{if(cancelled)return;const rect=container.getBoundingClientRect(),inView=rect.bottom>0&&rect.top<innerHeight;
