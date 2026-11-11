@@ -1,7 +1,7 @@
 // GIS inventory callouts and a one-time, scroll-triggered tally.
 export function addParkingCountAnimation({L,map,container,collection,onTotal}){
- // Interior anchors are computed inside each frozen GIS polygon, not its bounding box.
- const anchors={"34":[[-78.6851461705496,35.783694264296514]],"38":[[-78.68443770311129,35.7827578368216],[-78.68552858725808,35.782237462104554]],"55":[[-78.68617994680751,35.78407796481407]],"56":[[-78.68634840773922,35.782721307906066]],"82":[[-78.6854651482026,35.78421115411476]],"26":[[-78.66791928764458,35.78246994111685]],"92":[[-78.66765457277545,35.78290854572615]],"143":[[-78.66907181765056,35.78345242836043]],"144":[[-78.66789585608252,35.78208580169797]],"166":[[-78.66822419123784,35.78348409231382]]};
+ // Area-weighted centers of each displayed GIS parking section, verified inside its outline.
+ const anchors={"34":[[-78.6851568331318,35.78369792831575]],"38":[[-78.68448552216013,35.78265831723482],[-78.68550750727539,35.782268507564076]],"55":[[-78.6860075351467,35.78397469960517]],"56":[[-78.68635846367135,35.782609007066355]],"82":[[-78.68544903344134,35.78432418283589]],"26":[[-78.66818036536134,35.7825655352369]],"92":[[-78.6679349092057,35.783010148547646]],"143":[[-78.66906611617752,35.78346270342479]],"144":[[-78.6682864926996,35.782232910067215]],"166":[[-78.66776974773997,35.7833189538502]]};
  const groups=collection.features.map(f=>({ids:[Number(f.properties.objectid)],anchor:Number(f.properties.objectid),label:f.properties.name}));
  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('class','parking-count-callouts');svg.setAttribute('aria-hidden','true');Object.assign(svg.style,{position:'absolute',inset:'0',width:'100%',height:'100%',zIndex:'490',pointerEvents:'none'});container.append(svg);
  const make=(tag,attrs)=>{const n=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);return n;};
