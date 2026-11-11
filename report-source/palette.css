@@ -43,3 +43,5 @@ option[value="ask"] { display: none !important; }
 .parking-mini-map{position:relative}.parking-mini-card .parking-mini-tally{margin:6px 0 4px!important;font-size:12px!important;line-height:1.4!important;color:#344c26;font-variant-numeric:tabular-nums}.parking-mini-tally strong{font-weight:700}.parking-mini-card .parking-mini-detail{margin-top:4px!important}@media(max-width:600px){.parking-mini-card .parking-mini-tally{font-size:11px!important}}
 
 .parking-mini-card{grid-row:span 5!important}.parking-mini-card .parking-mini-tally{min-height:0!important;height:auto!important;align-self:start!important}
+
+.parking-mini-map .campus-site-point{display:flex;align-items:center;justify-content:center;background:transparent;border:0}.parking-mini-map .campus-site-point .campus-place-symbol{width:11px!important;height:11px!important;border:1.5px solid #fff;box-shadow:0 0 0 1px #7b8b96;transform:rotate(45deg)!important;border-radius:0!important;opacity:1!important;background:var(--place-color)!important}
