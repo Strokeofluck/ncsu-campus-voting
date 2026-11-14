@@ -55,7 +55,7 @@ jobs:
                   # The current embeds contain the same reviewed snapshot.
                   # Use their existing external-snapshot loader on the hosted
                   # site, while keeping Git and downloaded HTML self-contained.
-                  if p.suffix == '.html' and (p.name.endswith('-20261109-v2.html') or p.parent.name == 'editor-maps'):
+                  if p.suffix == '.html' and (p.name.endswith('-20261109-v2.html') or (p.name.startswith('test-') and p.name.endswith('-20261113.html')) or p.parent.name == 'editor-maps'):
                       text = dest.read_text(encoding='utf-8')
                       match = re.search(r'(<script[^>]*id="data-app-reviewed-snapshot"[^>]*>)(.*?)(</script>)', text, re.S)
                       if match and 'data-app-local-snapshot' not in text and len(match[2]) > 1024 * 1024:
