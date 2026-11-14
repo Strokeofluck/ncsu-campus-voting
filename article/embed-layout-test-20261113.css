@@ -1,5 +1,5 @@
 /* Publication layout test: scoped to the isolated visual. */
-.report-page{padding-bottom:0!important}
+.dashboard-root>.page.report-page{padding-bottom:0!important}
 .component-header,.component-header-main,.component-title,.component-title-text{min-width:0!important;max-width:100%!important;height:auto!important;max-height:none!important;overflow:visible!important}
 .component-title,.component-title-text{white-space:normal!important;overflow-wrap:break-word!important;text-overflow:clip!important;-webkit-line-clamp:unset!important;line-clamp:unset!important}
 .component-title{display:block!important;line-height:1.35!important}
