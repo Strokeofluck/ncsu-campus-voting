@@ -1,0 +1,7 @@
+/* Publication layout test: scoped to the isolated visual. */
+.component-header,.component-header-main,.component-title,.component-title-text{min-width:0!important;max-width:100%!important;height:auto!important;max-height:none!important;overflow:visible!important}
+.component-title,.component-title-text{white-space:normal!important;overflow-wrap:break-word!important;text-overflow:clip!important;-webkit-line-clamp:unset!important;line-clamp:unset!important}
+.component-title{display:block!important;line-height:1.35!important}
+#article-routine-map .walking-map{height:560px!important;min-height:520px!important;max-height:none!important}
+.campus-key-site-list li span{white-space:normal!important;overflow-wrap:break-word}
+@media(max-width:600px){.component-header{grid-template-columns:minmax(0,1fr)!important}.component-title-tail{white-space:normal!important}#article-routine-map .campus-map-with-key>.walking-map{height:520px!important;min-height:520px!important;max-height:none!important}}
